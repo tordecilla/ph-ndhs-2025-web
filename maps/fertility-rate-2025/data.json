@@ -1,0 +1,101 @@
+{
+  "title": "Total Fertility Rate",
+  "description": "Total fertility rate (children per woman aged 15–49) by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "maxDepth": "region",
+  "geoBasePath": "../../_template/philippines-json-maps",
+  "colorField": "tfr_2025",
+  "colorDomain": [
+    1,
+    2.5
+  ],
+  "colorScheme": "interpolateBlues",
+  "detailFields": [
+    {
+      "key": "tfr_2025",
+      "label": "Total Fertility Rate (2025)"
+    },
+    {
+      "key": "psa_note",
+      "label": "Note"
+    }
+  ],
+  "data": {
+    "region": [
+      {
+        "psgc": 1300000000,
+        "tfr_2025": 1.4
+      },
+      {
+        "psgc": 1400000000,
+        "tfr_2025": 1.7
+      },
+      {
+        "psgc": 100000000,
+        "tfr_2025": 1.8
+      },
+      {
+        "psgc": 200000000,
+        "tfr_2025": 1.7
+      },
+      {
+        "psgc": 300000000,
+        "tfr_2025": 1.9
+      },
+      {
+        "psgc": 400000000,
+        "tfr_2025": 1.3
+      },
+      {
+        "psgc": 1700000000,
+        "tfr_2025": 2.1
+      },
+      {
+        "psgc": 500000000,
+        "tfr_2025": 1.9
+      },
+      {
+        "psgc": 600000000,
+        "tfr_2025": 1.9
+      },
+      {
+        "psgc": 1800000000,
+        "tfr_2025": 1.4
+      },
+      {
+        "psgc": 700000000,
+        "tfr_2025": 1.7
+      },
+      {
+        "psgc": 800000000,
+        "tfr_2025": 2
+      },
+      {
+        "psgc": 900000000,
+        "tfr_2025": 2.3,
+        "psa_note": "Region IX includes the province of Sulu in 2025."
+      },
+      {
+        "psgc": 1000000000,
+        "tfr_2025": 1.9
+      },
+      {
+        "psgc": 1100000000,
+        "tfr_2025": 1.6
+      },
+      {
+        "psgc": 1200000000,
+        "tfr_2025": 1.9
+      },
+      {
+        "psgc": 1600000000,
+        "tfr_2025": 2.2
+      },
+      {
+        "psgc": 1900000000,
+        "tfr_2025": 2.4
+      }
+    ],
+    "province": [],
+    "municity": []
+  }
+}

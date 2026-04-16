@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Philippines Map</title>
+<script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
+<style>
+  /* ── Theme variables ── */
+  :root {
+    --bg:               #edf1f7;
+    --panel-bg:         #ffffff;
+    --panel-border:     rgba(0,0,0,0.09);
+    --panel-divider:    rgba(0,0,0,0.07);
+    --poly-fill:        #bacfe3;
+    --poly-stroke:      rgba(40,65,105,0.3);
+    --hover-stroke:     #2a3f60;
+    --label-fill:       #1a2840;
+    --label-stroke:     rgba(237,241,247,0.92);
+    --btn-bg:           rgba(0,0,0,0.06);
+    --btn-border:       rgba(0,0,0,0.18);
+    --btn-color:        #1a2840;
+    --btn-hover-bg:     rgba(0,0,0,0.11);
+    --status-color:     #556;
+    --status-bg:        rgba(255,255,255,0.88);
+    --close-color:      rgba(0,0,0,0.35);
+    --close-hover:      #000;
+    --eyebrow-color:    rgba(0,0,0,0.38);
+    --lgu-name-color:   #1a2840;
+    --region-color:     rgba(0,0,0,0.48);
+    --scroll-thumb:     rgba(0,0,0,0.1);
+    --card-bg:          rgba(0,0,0,0.03);
+    --card-border:      rgba(0,0,0,0.08);
+    --year-color:       rgba(0,0,0,0.45);
+    --year-bg:          rgba(0,0,0,0.05);
+    --text-color:       rgba(0,0,0,0.68);
+    --expand-color:     rgba(0,0,0,0.35);
+    --expand-hover:     #000;
+    --no-data-color:    rgba(0,0,0,0.28);
+    --section-color:    rgba(0,0,0,0.28);
+    --drag-handle:      rgba(0,0,0,0.12);
+    --mobile-border:    rgba(0,0,0,0.1);
+    --ring-color:       rgba(0,0,0,0.3);
+    --strong-color:     rgba(0,0,0,0.65);
+    --data-label-color: rgba(0,0,0,0.42);
+    --data-value-color: rgba(0,0,0,0.85);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; background: var(--bg); overflow: hidden;
+    transition: background 0.25s; }
+  svg { display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; }
+  svg:active { cursor: grabbing; }
+
+  .region   { fill: var(--poly-fill); stroke: var(--poly-stroke); stroke-width: 0.8; cursor: pointer; }
+  .region:hover   { opacity: 0.8; stroke: var(--hover-stroke); stroke-width: 1.5; }
+  .province { fill: var(--poly-fill); stroke: var(--poly-stroke); stroke-width: 0.5; cursor: pointer; }
+  .province:hover { opacity: 0.8; stroke: var(--hover-stroke); stroke-width: 1; }
+  .huc-city { fill: var(--poly-fill); stroke: var(--poly-stroke); stroke-width: 0.3; cursor: pointer; }
+  .huc-city:hover { opacity: 0.8; stroke: var(--hover-stroke); stroke-width: 0.8; }
+  .huc-label { cursor: pointer; }
+  .municity { fill: var(--poly-fill); stroke: var(--poly-stroke); stroke-width: 0.3; cursor: pointer; }
+  .region-bg { fill: var(--poly-fill); pointer-events: none; }
+  .municity:hover { opacity: 0.8; stroke: var(--hover-stroke); stroke-width: 0.8; }
+  .leaf { cursor: default; }
+  .leaf:hover { opacity: 1; stroke: var(--poly-stroke); stroke-width: inherit; }
+  .svg-bg    { fill: var(--poly-fill); }
+
+  .map-label {
+    fill: var(--label-fill);
+    font-family: monospace;
+    font-weight: 700;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    pointer-events: none;
+    letter-spacing: 0.3px;
+  }
+
+  /* ── Overlay buttons ── */
+  #back-btn, #info-btn {
+    position: fixed;
+    background: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    color: var(--btn-color); font: 13px monospace;
+    padding: 6px 14px; cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    z-index: 10;
+    display: none;
+  }
+  #back-btn { top: 16px; right: 16px; }
+  #info-btn { bottom: 16px; right: 16px; font-size: 15px; padding: 6px 12px; }
+  #back-btn:hover, #info-btn:hover { background: var(--btn-hover-bg); }
+
+  #status {
+    position: fixed; bottom: 8px; left: 12px;
+    color: var(--status-color); font: 11px monospace;
+    background: var(--status-bg); padding: 3px 8px;
+    pointer-events: none; z-index: 10;
+    transition: color 0.25s, background 0.25s;
+  }
+
+  /* ── Detail panel — desktop ── */
+  #detail {
+    position: fixed; top: 0; right: -380px; bottom: 0; width: 360px;
+    background: var(--panel-bg); border-left: 1px solid var(--panel-border);
+    display: flex; flex-direction: column;
+    transition: right 0.35s cubic-bezier(0.4,0,0.2,1),
+                background 0.25s, border-color 0.25s;
+    z-index: 20; overflow: hidden;
+  }
+  #detail.open { right: 0; }
+  #detail.peek { right: -285px; }
+
+  /* ── Detail panel — mobile ── */
+  @media (pointer: coarse) {
+    #detail {
+      width: 100%; right: 0; top: auto; bottom: 0; height: 55vh;
+      border-left: none; border-top: 1px solid var(--mobile-border);
+      border-radius: 14px 14px 0 0;
+      transform: translateY(100%);
+      transition: transform 0.38s cubic-bezier(0.4,0,0.2,1),
+                  background 0.25s;
+    }
+    #detail.open  { right: 0; transform: translateY(0); }
+    #detail.peek  { right: 0; transform: translateY(calc(100% - 56px)); }
+    #detail-header { padding-top: 22px; }
+  }
+
+  #detail::before {
+    content: ''; display: none;
+    width: 36px; height: 4px;
+    background: var(--drag-handle);
+    border-radius: 2px;
+    position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+  }
+  @media (pointer: coarse) { #detail::before { display: block; } }
+
+  @keyframes info-ring {
+    0%   { box-shadow: 0 0 0 0 var(--ring-color); }
+    100% { box-shadow: 0 0 0 12px transparent; }
+  }
+  #info-btn.ring { animation: info-ring 0.7s ease-out 3; }
+
+  #detail-close {
+    background: none; border: none;
+    color: var(--close-color); font-size: 18px; cursor: pointer;
+    transition: color 0.15s; line-height: 1;
+  }
+  #detail-close:hover { color: var(--close-hover); }
+  #detail-header {
+    padding: 16px 20px 14px;
+    border-bottom: 1px solid var(--panel-divider); flex-shrink: 0;
+  }
+  #detail-header-row {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 10px;
+  }
+  .detail-eyebrow {
+    font: 10px/1 monospace; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--eyebrow-color); margin-bottom: 6px;
+  }
+  .detail-lgu-name { font-size: 22px; font-weight: 600; color: var(--lgu-name-color); line-height: 1.2; margin-bottom: 4px; }
+  .detail-region   { font-size: 12px; color: var(--region-color); }
+  #detail-body { flex: 1; overflow-y: auto; padding: 16px 20px; }
+  #detail-body::-webkit-scrollbar { width: 3px; }
+  #detail-body::-webkit-scrollbar-thumb { background: var(--scroll-thumb); }
+
+  /* ── Data field rows ── */
+  .data-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 8px 0; border-bottom: 1px solid var(--panel-divider);
+    gap: 12px;
+  }
+  .data-row:last-child { border-bottom: none; }
+  .data-label { font: 10px monospace; letter-spacing: 0.8px; text-transform: uppercase; color: var(--data-label-color); flex-shrink: 0; }
+  .data-value { font-size: 13px; color: var(--data-value-color); text-align: right; }
+
+  .no-findings { text-align: center; padding: 40px 0; color: var(--no-data-color); font-size: 13px; line-height: 1.8; }
+  .section-head { font: 10px monospace; letter-spacing: 1.5px; text-transform: uppercase; color: var(--section-color); margin: 16px 0 8px; }
+
+  /* ── Legend ── */
+  .legend-bar { height: 10px; border-radius: 2px; margin: 6px 0 4px; }
+  .legend-ends { display: flex; justify-content: space-between; font: 10px monospace; color: var(--data-label-color); }
+
+  /* ── Metric toggle ── */
+  #metric-toggle {
+    position: fixed; top: 12px; left: 50%; transform: translateX(-50%);
+    z-index: 10;
+    background: rgba(255,255,255,0.92);
+    border-radius: 20px; padding: 4px;
+    display: flex; gap: 2px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+    font-size: 11px; user-select: none;
+  }
+  #metric-toggle input[type=radio] { display: none; }
+  #metric-toggle label {
+    padding: 5px 11px; border-radius: 16px; cursor: pointer;
+    color: var(--text-color); white-space: nowrap;
+    transition: background 0.15s, color 0.15s;
+  }
+  #metric-toggle label:has(input:checked) {
+    background: var(--hover-stroke); color: #fff;
+  }
+
+  /* ── Ranked list ── */
+  .ranked-row {
+    display: flex; align-items: center; gap: 7px;
+    padding: 5px 0; border-bottom: 1px solid var(--panel-divider);
+  }
+  .ranked-row:last-child { border-bottom: none; }
+  .ranked-i { font: 10px monospace; color: var(--data-label-color); min-width: 20px; text-align: right; flex-shrink: 0; }
+  .ranked-swatch { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .ranked-name { flex: 1; font-size: 12px; color: var(--text-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  .ranked-row.is-active .ranked-name { color: var(--lgu-name-color); font-weight: 600; }
+  .ranked-val { font: 12px monospace; color: var(--data-value-color); flex-shrink: 0; }
+  .ranked-row.is-active .ranked-val { color: var(--lgu-name-color); }
+</style>
+</head>
+<body>
+<svg id="map"></svg>
+<button id="back-btn">← Back</button>
+<button id="info-btn">ℹ Details</button>
+<div id="status">Loading…</div>
+<div id="metric-toggle">
+  <label><input type="radio" name="metric" value="non_violent_pct" checked><span>Non-violent only</span></label>
+  <label><input type="radio" name="metric" value="psych_aggression_pct"><span>Psychological aggression</span></label>
+  <label><input type="radio" name="metric" value="any_physical_pct"><span>Any physical punishment</span></label>
+  <label><input type="radio" name="metric" value="severe_physical_pct"><span>Severe physical punishment</span></label>
+  <label><input type="radio" name="metric" value="any_violent_pct"><span>Any violent discipline</span></label>
+</div>
+<div id="detail">
+  <div id="detail-header">
+    <div id="detail-header-row">
+      <div class="detail-eyebrow" id="detail-eyebrow">—</div>
+      <button id="detail-close">✕</button>
+    </div>
+    <div class="detail-lgu-name" id="detail-lgu-name">—</div>
+    <div class="detail-region"   id="detail-region">—</div>
+  </div>
+  <div id="detail-body"></div>
+</div>
+
+<script>
+const status   = document.getElementById('status');
+const backBtn  = document.getElementById('back-btn');
+const infoBtn  = document.getElementById('info-btn');
+const svgEl    = document.getElementById('map');
+const svg      = d3.select('#map');
+svg.insert('rect', ':first-child').attr('class', 'svg-bg').attr('width', '100%').attr('height', '100%').style('pointer-events', 'none');
+const g        = svg.append('g');
+
+// ── Config & data ─────────────────────────────────────────────────────────────
+let config = {};
+let dataByLevel = { region: {}, province: {}, municity: {} };
+let colorScale  = null;
+let GEO_BASE    = './philippines-json-maps';
+
+// PSGC → display name, populated from psgc-index.json at boot + GeoJSON lazily
+const nameRegistry = {};
+// child PSGC (string) → parent PSGC (string): province→region, municity→province
+const parentMap = {};
+// province PSGCs (strings) that have at least one municity data record — gates drill-down
+let provincesWithMunicity = new Set();
+
+function registerNames(features, psgcKey, nameKey) {
+  for (const f of (features || [])) {
+    const p = f.properties;
+    if (p[psgcKey] != null && p[nameKey]) nameRegistry[String(p[psgcKey])] = p[nameKey];
+  }
+}
+
+async function loadConfig() {
+  try {
+    config = await d3.json('./data.json');
+  } catch(e) {
+    config = {};
+  }
+
+  GEO_BASE = config.geoBasePath || './philippines-json-maps';
+
+  // Build PSGC-keyed lookup maps for each geographic level
+  if (config.data) {
+    for (const level of ['region', 'province', 'municity']) {
+      dataByLevel[level] = {};
+      for (const record of (config.data[level] || [])) {
+        if (record.psgc != null) dataByLevel[level][String(record.psgc)] = record;
+      }
+    }
+  }
+
+  // Build D3 color scale if config specifies one
+  if (config.colorField && config.colorDomain && config.colorScheme && d3[config.colorScheme]) {
+    colorScale = d3.scaleSequential(d3[config.colorScheme]).domain(config.colorDomain);
+  }
+
+  // Pre-populate name registry and parent map from psgc-index.json (optional; graceful fallback if absent)
+  try {
+    const idx = await d3.json('./psgc-index.json');
+    for (const r of [...(idx.regions?.nir || []), ...(idx.regions?.standard || [])]) {
+      if (r.psgc && r.name) nameRegistry[String(r.psgc)] = r.name;
+    }
+    for (const p of (idx.provinces || [])) {
+      if (p.psgc && p.name) nameRegistry[String(p.psgc)] = p.name;
+      if (p.psgc && p.region_psgc) parentMap[String(p.psgc)] = String(p.region_psgc);
+    }
+    for (const m of (idx.municities || [])) {
+      if (m.psgc && m.name) nameRegistry[String(m.psgc)] = m.name;
+      // If this municity is stored in data.province (HUC city), its ranked-list parent is the region.
+      // Otherwise it's a regular municity whose parent is its province.
+      if (m.psgc) {
+        if (dataByLevel.province[String(m.psgc)]) {
+          parentMap[String(m.psgc)] = String(m.region_psgc);
+        } else if (m.region_psgc === 1300000000) {
+          parentMap[String(m.psgc)] = String(m.region_psgc);
+        } else {
+          parentMap[String(m.psgc)] = String(m.province_psgc);
+        }
+      }
+    }
+    // Compute which provinces have at least one municity data record (gates drill-down)
+    provincesWithMunicity = new Set(
+      Object.values(dataByLevel.municity)
+        .map(r => parentMap[String(r.psgc)])
+        .filter(Boolean)
+    );
+  } catch(e) { /* psgc-index.json absent — names populated lazily from GeoJSON */ }
+}
+
+// Returns a fill color for a given level + PSGC, or null to fall back to CSS
+function getFill(level, psgc) {
+  if (!colorScale || !config.colorField) return null;
+  const record = dataByLevel[level][String(psgc)];
+  if (record && record[config.colorField] != null) return colorScale(record[config.colorField]);
+  return null;
+}
+
+let currentContext = null; // { name, parentName, psgc, type }
+const isMobile = window.matchMedia('(pointer: coarse)').matches;
+let infoBtnFirstShown = false;
+// HUC city polygons keyed by parent_prov_psgc and by region PSGC, populated from huc-boundaries.json
+const hucFeaturesByProvince = {};
+const hucFeaturesByRegion   = {};
+
+const W = window.innerWidth, H = window.innerHeight;
+svgEl.setAttribute('viewBox', `0 0 ${W} ${H}`);
+
+// ── Zoom & pan ────────────────────────────────────────────────────────────────
+const zoom = d3.zoom()
+  .scaleExtent([0.5, 20])
+  .on('zoom', event => { g.attr('transform', event.transform); });
+
+svg.call(zoom);
+svg.on('dblclick.zoom', null); // disable dblclick zoom — we use click for drill-down
+
+function resetZoom(duration) {
+  (duration ? svg.transition().duration(duration) : svg)
+    .call(zoom.transform, d3.zoomIdentity);
+}
+
+const LON_MIN = 116.93, LON_MAX = 126.60;
+const LAT_MIN = 4.64,   LAT_MAX = 20.84;
+const PAD = 30;
+
+
+const GEO_VER = '?v=4';
+const NCR_PSGC = 1300000000;
+
+let viewStack   = [];
+let currentView = 'idle';
+let nationalFeatures = [], nationalPath;
+
+// ── Projection ────────────────────────────────────────────────────────────────
+function makePathFn(lonMin, lonMax, latMin, latMax) {
+  const lonSpan = lonMax - lonMin, latSpan = latMax - latMin;
+  const scale   = Math.min((W - 2*PAD) / lonSpan, (H - 2*PAD) / latSpan);
+  const offX    = (W - lonSpan * scale) / 2;
+  const offY    = (H - latSpan * scale) / 2;
+  const proj = d3.geoTransform({
+    point: function(lon, lat) {
+      this.stream.point(offX + (lon - lonMin) * scale, offY + (latMax - lat) * scale);
+    }
+  });
+  return d3.geoPath().projection(proj);
+}
+
+function boundsFromFeatures(features) {
+  const coords = features.flatMap(f => {
+    const g = f.geometry;
+    if (!g) return [];
+    const polys = g.type === 'Polygon' ? [g.coordinates] : g.coordinates;
+    return polys.flatMap(p => p.flatMap(r => r));
+  });
+  return {
+    lonMin: d3.min(coords, c => c[0]), lonMax: d3.max(coords, c => c[0]),
+    latMin: d3.min(coords, c => c[1]), latMax: d3.max(coords, c => c[1]),
+  };
+}
+
+// ── Labels ────────────────────────────────────────────────────────────────────
+function shortenName(name, nameKey) {
+  if (!name) return '';
+  // For region names like "Region I (Ilocos Region)" extract the parenthetical
+  if (nameKey === 'adm1_en') {
+    const m = name.match(/\(([^)]+)\)/);
+    if (m) return m[1];   // e.g. "Ilocos Region", "NCR", "CAR"
+    return name;          // e.g. "CARAGA", "MIMAROPA"
+  }
+  // For provinces / cities: truncate only if very long
+  return name.length > 20 ? name.slice(0, 18) + '…' : name;
+}
+
+function addLabels(features, pathFn, nameKey, fontSize) {
+  g.selectAll('text.map-label').remove();
+  g.selectAll('text.map-label')
+    .data(features)
+    .join('text')
+    .attr('class', 'map-label')
+    .attr('font-size', fontSize)
+    .attr('opacity', 0)
+    .each(function(d) {
+      const c = pathFn.centroid(d);
+      if (!c || isNaN(c[0]) || isNaN(c[1])) return;
+      const label = shortenName(d.properties[nameKey], nameKey);
+      d3.select(this).attr('x', c[0]).attr('y', c[1]).text(label);
+    })
+    .transition().delay(350).duration(300)
+    .attr('opacity', 1);
+}
+
+// ── Fade helpers ──────────────────────────────────────────────────────────────
+function fadeIn(sel) {
+  sel.attr('opacity', 0).transition().duration(400).ease(d3.easeCubicOut).attr('opacity', 1);
+}
+
+function zoomThenRender(pathFn, feature, callback) {
+  const [[x0,y0],[x1,y1]] = pathFn.bounds(feature);
+  const scale = 0.85 * Math.min(W / (x1 - x0), H / (y1 - y0));
+  const tx = W/2 - scale*(x0+x1)/2, ty = H/2 - scale*(y0+y1)/2;
+  g.transition().duration(700).ease(d3.easeCubicInOut)
+    .attr('transform', `translate(${tx},${ty}) scale(${scale})`)
+    .on('end', () => {
+      zoom.transform(svg, d3.zoomIdentity); // sync zoom state before redraw
+      callback();
+    });
+}
+
+// ── URL routing ───────────────────────────────────────────────────────────────
+function pushURL(hash, replace = false) {
+  try { window.parent.postMessage({ type: 'child-hash', hash }, '*'); } catch (e) {}
+  if (replace) {
+    history.replaceState({ hash }, '', '#' + hash);
+  } else {
+    history.pushState({ hash }, '', '#' + hash);
+  }
+}
+
+function parseHash() {
+  return location.hash.replace(/^#/, '');
+}
+
+function metricToSlug(metric) {
+  return String(metric || '').replace(/_(pct|rate)\b/g, '').replace(/_/g, '');
+}
+
+function slugToMetric(slug) {
+  const fields = Object.keys(config.colorDomains || {});
+  return fields.find(field => metricToSlug(field) === slug) || null;
+}
+
+function buildStateHash(viewHash = '/') {
+  const defaultField = config.colorField || Object.keys(config.colorDomains || {})[0] || 'non_violent_pct';
+  const parts = ['m' + metricToSlug(defaultField)];
+  const cleanView = String(viewHash || '/').replace(/^\/+/, '');
+  if (cleanView && cleanView !== '/') parts.push('v' + cleanView.replace(/\//g, '-'));
+  return parts.join('--');
+}
+
+window.addEventListener('popstate', e => {
+  const hash = (e.state && e.state.hash) || '';
+  restoreFromHash(hash);
+});
+
+async function restoreFromHash(hash) {
+  if (!hash || hash === '/') { drawNational(); return; }
+  const parts = hash.split('--').filter(Boolean);
+  const metricToken = parts.find(p => p.startsWith('m'));
+  const viewToken = parts.find(p => p.startsWith('v'));
+  const metric = metricToken ? slugToMetric(metricToken.slice(1)) : null;
+  const pathParts = viewToken ? viewToken.slice(1).split('-').filter(Boolean) : [];
+
+  if (metric) {
+    const radio = document.querySelector(`input[name="metric"][value="${metric}"]`);
+    if (radio) radio.checked = true;
+    if ((config.colorDomains || {})[metric]) {
+      config.colorField = metric;
+      config.colorDomain = config.colorDomains[metric];
+      if (config.colorScheme && d3[config.colorScheme]) {
+        colorScale = d3.scaleSequential(d3[config.colorScheme]).domain(config.colorDomain);
+      }
+    }
+  }
+
+  if (!pathParts.length) { drawNational(); return; }
+  if (pathParts[0] !== 'region' || !pathParts[1]) { drawNational(); return; }
+
+  const regionPsgc = parseInt(pathParts[1]);
+  await ensureNational();
+
+  const regionFeature = nationalFeatures.find(f => f.properties.adm1_psgc === regionPsgc);
+  if (!regionFeature) { drawNational(); return; }
+
+  // drillRegion guards against currentView==='idle', so prime it first
+  currentView = 'national';
+
+  // /region/{r}
+  if (!pathParts[2]) {
+    drillRegion(regionFeature, true);
+    return;
+  }
+
+  // /region/{r}/province/{p}
+  if (pathParts[2] === 'province' && pathParts[3]) {
+    const provPsgc = parseInt(pathParts[3]);
+    drillRegion(regionFeature, true, (provPath, features, nameKey) => {
+      const provFeature = features.find(f => f.properties.adm2_psgc === provPsgc);
+      if (provFeature) drillProvince(provFeature, provPath, nameKey, true);
+    });
+    return;
+  }
+
+  // /region/{r}/province/{p}/municity/{m}
+  if (pathParts[2] === 'province' && pathParts[3] && pathParts[4] === 'municity' && pathParts[5]) {
+    const provPsgc = parseInt(pathParts[3]);
+    const munPsgc  = parseInt(pathParts[5]);
+    drillRegion(regionFeature, true, (provPath, features, nameKey) => {
+      const provFeature = features.find(f => f.properties.adm2_psgc === provPsgc);
+      if (!provFeature) return;
+      drillProvince(provFeature, provPath, nameKey, true, (munPath, munFeatures) => {
+        const munFeature = munFeatures.find(f => f.properties.adm3_psgc === munPsgc);
+        if (munFeature) drillMunicity(munFeature, munPath, provFeature.properties.adm2_en, true);
+      });
+    });
+    return;
+  }
+
+
+}
+
+async function ensureNational() {
+  if (nationalFeatures.length) return;
+  const [countryData, hucData] = await Promise.all([
+    d3.json(`./geo-nir/country.0.001.json${GEO_VER}`),
+    d3.json(`./huc-boundaries.json${GEO_VER}`).catch(() => ({ features: [] })),
+  ]);
+  nationalFeatures = countryData.features;
+  registerNames(nationalFeatures, 'adm1_psgc', 'adm1_en');
+  nationalPath = makePathFn(LON_MIN, LON_MAX, LAT_MIN, LAT_MAX);
+  // Index HUC features by parent province and by region.
+  // Use parentMap for region lookup so NIR-realigned provinces (e.g. Negros Occidental)
+  // correctly map to NIR (1800000000) instead of their standard R6/R7 region.
+  for (const f of hucData.features) {
+    const prov = f.properties.parent_prov_psgc;
+    const reg  = Number(parentMap[String(prov)]) || f.properties.adm1_psgc;
+    if (!hucFeaturesByProvince[prov]) hucFeaturesByProvince[prov] = [];
+    hucFeaturesByProvince[prov].push(f);
+    if (!hucFeaturesByRegion[reg]) hucFeaturesByRegion[reg] = [];
+    hucFeaturesByRegion[reg].push(f);
+  }
+}
+
+function getHUCsForProvince(provPsgc) {
+  return hucFeaturesByProvince[provPsgc] || [];
+}
+
+// ── Back ──────────────────────────────────────────────────────────────────────
+function goBack() {
+  if (viewStack.length < 2) return;
+  currentView = 'idle';
+  closeDetail();
+  viewStack.pop();
+  const prev = viewStack[viewStack.length - 1];
+  g.selectAll('path').transition().duration(200).attr('opacity', 0)
+    .on('end', function() {
+      if (this !== g.selectAll('path').nodes().at(-1)) return;
+      g.selectAll('*').remove();
+      prev.render();
+    });
+  history.back();
+}
+
+backBtn.addEventListener('click', () => {
+  if (currentView === 'idle') return;
+  goBack();
+});
+
+// ── National ──────────────────────────────────────────────────────────────────
+async function loadNational() {
+  await ensureNational();
+  viewStack = [{ render: drawNational }];
+  const initHash = parseHash();
+  if (initHash && initHash !== '/') {
+    restoreFromHash(initHash);
+  } else {
+    pushURL(buildStateHash('/'), true);
+    drawNational();
+    if (isMobile) {
+      // Peek the bottom sheet after a beat to hint it exists
+      setTimeout(() => {
+        detail.classList.add('peek');
+        setTimeout(() => detail.classList.remove('peek'), 1600);
+      }, 1400);
+    }
+  }
+}
+
+function openWelcome() {
+  document.getElementById('detail-eyebrow').textContent  = config.title || 'Philippines Map';
+  document.getElementById('detail-lgu-name').textContent = 'Philippines';
+  document.getElementById('detail-region').textContent   = config.maxDepth === 'region' ? '' : 'Select a region to begin';
+  const desc = config.description
+    ? `<p style="font-size:12px;color:var(--text-color);line-height:1.8;margin-top:8px">${config.description}</p>`
+    : '';
+  detailBody.innerHTML = `<div class="no-findings" style="text-align:left;padding:20px 0">${desc}</div>` + noteHTML() + legendHTML() + rankedListHTML('region', null);
+  detail.classList.add('open');
+  infoBtn.style.display = 'none';
+}
+
+function showInfoBtn() {
+  infoBtn.style.display = 'block';
+  if (isMobile && !infoBtnFirstShown) {
+    infoBtnFirstShown = true;
+    infoBtn.classList.add('ring');
+    infoBtn.addEventListener('animationend', () => infoBtn.classList.remove('ring'), { once: true });
+  }
+}
+
+function drawNational() {
+  currentView = 'national';
+  currentContext = null;
+  backBtn.style.display = 'none';
+  setPageTitle(config.title || 'Philippines Map');
+  if (isMobile) { closeDetail(); infoBtn.style.display = 'block'; } else openWelcome();
+  resetZoom();
+  g.selectAll('*').remove();
+
+  g.selectAll('path')
+    .data(nationalFeatures)
+    .join('path')
+    .attr('class', 'region')
+    .attr('d', nationalPath)
+    .style('fill', d => getFill('region', d.properties.adm1_psgc))
+    .call(fadeIn)
+    .on('click', (e, d) => {
+      if (config.maxDepth !== 'region') drillRegion(d);
+    });
+
+  addLabels(nationalFeatures, nationalPath, 'adm1_en', 10);
+  status.textContent = nationalFeatures.length + ' regions — click to drill in';
+  pushURL(buildStateHash('/'), true);
+}
+
+// ── Region → provinces ────────────────────────────────────────────────────────
+function drillRegion(regionFeature, skipAnimation, afterRender) {
+  if (currentView === 'idle') return;
+  currentView = 'idle';
+  const psgc = regionFeature.properties.adm1_psgc;
+  const name = regionFeature.properties.adm1_en;
+
+  const loadAndRender = (features, nameKey, bgFeatures) => {
+    const { lonMin, lonMax, latMin, latMax } = boundsFromFeatures(features);
+    const lp  = (lonMax - lonMin) * 0.08, ltp = (latMax - latMin) * 0.08;
+    const provPath = makePathFn(lonMin - lp, lonMax + lp, latMin - ltp, latMax + ltp);
+
+    const renderFn = () => {
+      currentView = 'region';
+      currentContext = { name, parentName: 'Philippines', psgc, type: 'region' };
+      backBtn.style.display = 'block';
+      backBtn.textContent = '← Philippines';
+      setPageTitle(name + ' — ' + config.title);
+      showInfoBtn();
+      if (detail.classList.contains('open')) populateDetail(name, 'Philippines', psgc, 'region');
+      resetZoom();
+      g.selectAll('*').remove();
+
+      // Background fill layer (used for NCR to cover gaps between independently-simplified municipality polygons)
+      if (bgFeatures && bgFeatures.length) {
+        g.selectAll('path.region-bg')
+          .data(bgFeatures)
+          .join('path')
+          .attr('class', 'region-bg')
+          .attr('d', provPath)
+          .style('fill', 'var(--poly-fill)')
+          .attr('stroke', 'none')
+          .style('pointer-events', 'none');
+      }
+
+      const isMunicity = nameKey === 'adm3_en';
+      registerNames(features, isMunicity ? 'adm3_psgc' : 'adm2_psgc', nameKey);
+      g.selectAll('path.mun-fg')
+        .data(features)
+        .join('path')
+        .attr('class', d => {
+          if (isMunicity) return 'municity mun-fg leaf';
+          const canDrill = config.maxDepth !== 'province' && provincesWithMunicity.has(String(d.properties.adm2_psgc));
+          return 'province mun-fg' + (canDrill ? '' : ' leaf');
+        })
+        .attr('d', provPath)
+        .style('fill', d => isMunicity
+          ? getFill('municity', d.properties.adm3_psgc)
+          : getFill('province', d.properties.adm2_psgc))
+        .call(fadeIn)
+        .on('click', (e, d) => {
+          if (!isMunicity && config.maxDepth !== 'province' && provincesWithMunicity.has(String(d.properties.adm2_psgc))) {
+            drillProvince(d, provPath, nameKey);
+          }
+        });
+
+      // HUC cities: overlay on province polygons in the region view, colored at province level
+      if (!isMunicity) {
+        const hucFeatures = hucFeaturesByRegion[psgc] || [];
+        if (hucFeatures.length) {
+          registerNames(hucFeatures, 'adm3_psgc', 'adm3_en');
+          g.selectAll('path.huc-city.region-huc')
+            .data(hucFeatures)
+            .join('path')
+            .attr('class', 'huc-city region-huc leaf')
+            .attr('d', provPath)
+            .style('fill', d => getFill('province', d.properties.adm3_psgc))
+            .call(fadeIn);
+        }
+      }
+
+      addLabels(features, provPath, nameKey, 9);
+
+      // HUC labels added after addLabels so they aren't wiped by its .map-label cleanup
+      if (!isMunicity) {
+        const hucFeatures = hucFeaturesByRegion[psgc] || [];
+        if (hucFeatures.length) {
+          g.selectAll('text.huc-region-label')
+            .data(hucFeatures)
+            .join('text')
+            .attr('class', 'map-label huc-region-label')
+            .attr('font-size', 7)
+            .attr('opacity', 0)
+            .each(function(d) {
+              const c = provPath.centroid(d);
+              if (!c || isNaN(c[0]) || isNaN(c[1])) return;
+              d3.select(this).attr('x', c[0]).attr('y', c[1]).text(d.properties.adm3_en || '');
+            })
+            .transition().delay(350).duration(300).attr('opacity', 1);
+        }
+      }
+
+      const unit = isMunicity ? 'cities/municipalities' : 'provinces';
+      status.textContent = `${name} — ${features.length} ${unit}`;
+
+      if (afterRender) afterRender(provPath, features, nameKey);
+    };
+
+    viewStack.push({ render: renderFn });
+    if (!skipAnimation) pushURL(buildStateHash(`/region/${psgc}`));
+
+    if (skipAnimation) {
+      g.selectAll('*').remove();
+      renderFn();
+    } else {
+      zoomThenRender(nationalPath, regionFeature, renderFn);
+    }
+  };
+
+  if (psgc === NCR_PSGC) {
+    // NCR skips the district level for UX. Uses medres municipality files for better
+    // polygon fidelity, and uses the already-loaded NCR region feature as a background
+    // fill to cover seams between independently-simplified municipality boundaries.
+    const districtPsgcs = [1303900000, 1307400000, 1307500000, 1307600000];
+    Promise.all(
+      districtPsgcs.map(d => d3.json(`${GEO_BASE}/2023/geojson/provdists/medres/municities-provdist-${d}.0.01.json${GEO_VER}`))
+    ).then(munDatas => {
+      const munFeatures = munDatas.flatMap(d => d.features);
+      loadAndRender(munFeatures, 'adm3_en', [regionFeature]);
+    }).catch(err => { status.textContent = 'Error: ' + err; currentView = 'national'; });
+  } else {
+    // R6, R7, and NIR (1800000000) use geo-nir/ overrides in the NIR alignment
+    const NIR_REGION_OVERRIDES = new Set([600000000, 700000000, 1800000000, ...(config.geoOverrides || [])]);
+    const regionFileURL = NIR_REGION_OVERRIDES.has(psgc)
+      ? `./geo-nir/provdists-region-${psgc}.0.001.json${GEO_VER}`
+      : `${GEO_BASE}/2023/geojson/regions/lowres/provdists-region-${psgc}.0.001.json${GEO_VER}`;
+    d3.json(regionFileURL)
+      .then(data => loadAndRender(data.features, 'adm2_en'))
+      .catch(err => { status.textContent = 'Error: ' + err; currentView = 'national'; });
+  }
+}
+
+// ── Municipality → isolated city view ────────────────────────────────────────
+function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
+  if (currentView === 'idle') return;
+  currentView = 'idle';
+
+  const name    = munFeature.properties.adm3_en;
+  const psgc    = munFeature.properties.adm3_psgc;
+  const regPsgc = munFeature.properties.adm1_psgc;
+  const provPsgc = munFeature.properties.adm2_psgc;
+
+  const { lonMin, lonMax, latMin, latMax } = boundsFromFeatures([munFeature]);
+  const lp  = Math.max((lonMax - lonMin) * 0.25, 0.02);
+  const ltp = Math.max((latMax - latMin) * 0.25, 0.02);
+  const munPath = makePathFn(lonMin - lp, lonMax + lp, latMin - ltp, latMax + ltp);
+
+  const renderFn = () => {
+    currentView = 'municity';
+    currentContext = { name, parentName, psgc, type: 'municity' };
+    backBtn.style.display = 'block';
+    backBtn.textContent = '← ' + parentName;
+    setPageTitle(name + ' — ' + config.title);
+    showInfoBtn();
+    resetZoom();
+    g.selectAll('*').remove();
+
+    g.selectAll('path')
+      .data([munFeature])
+      .join('path')
+      .attr('class', 'municity')
+      .attr('d', munPath)
+      .style('fill', getFill('municity', psgc))
+      .call(fadeIn)
+      .on('click', () => openDetail(name, parentName, psgc, 'municity'));
+
+    addLabels([munFeature], munPath, 'adm3_en', 13);
+    status.textContent = name;
+    openDetail(name, parentName, psgc, 'municity');
+  };
+
+  viewStack.push({ render: renderFn });
+  if (provPsgc) {
+    pushURL(buildStateHash(`/region/${regPsgc}/province/${provPsgc}/municity/${psgc}`));
+  } else {
+    pushURL(buildStateHash(`/region/${regPsgc}/municity/${psgc}`));
+  }
+
+  if (skipAnimation) {
+    g.selectAll('*').remove();
+    renderFn();
+  } else {
+    zoomThenRender(parentPathFn, munFeature, renderFn);
+  }
+}
+
+// ── Province → municipalities ─────────────────────────────────────────────────
+function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afterRender) {
+  if (currentView === 'idle') return;
+  currentView = 'idle';
+
+  const psgc    = provFeature.properties.adm2_psgc;
+  const regPsgc = provFeature.properties.adm1_psgc;
+  const name    = provFeature.properties[parentNameKey] || provFeature.properties.adm2_en;
+
+  d3.json(`${GEO_BASE}/2023/geojson/provdists/lowres/municities-provdist-${psgc}.0.001.json${GEO_VER}`)
+  .then(data => {
+      const munFeatures = data.features.filter(f => f.geometry != null);
+      const hucFeatures = getHUCsForProvince(psgc);
+      registerNames(munFeatures, 'adm3_psgc', 'adm3_en');
+      registerNames(hucFeatures, 'adm3_psgc', 'adm3_en');
+      const { lonMin, lonMax, latMin, latMax } = boundsFromFeatures([...munFeatures, ...hucFeatures]);
+      const lp = (lonMax - lonMin) * 0.08, ltp = (latMax - latMin) * 0.08;
+      const munPath = makePathFn(lonMin - lp, lonMax + lp, latMin - ltp, latMax + ltp);
+
+      const renderFn = () => {
+        currentView = 'province';
+        const regionName = currentContext ? currentContext.name : '';
+        currentContext = { name, parentName: regionName, psgc, type: 'province' };
+        backBtn.style.display = 'block';
+        backBtn.textContent = '← ' + regionName;
+        setPageTitle(name + ' — ' + config.title);
+        showInfoBtn();
+        if (detail.classList.contains('open')) populateDetail(name, regionName, psgc, 'province');
+        resetZoom();
+        g.selectAll('*').remove();
+
+        // Municipality polygons
+        g.selectAll('path.municity')
+          .data(munFeatures)
+          .join('path')
+          .attr('class', 'municity')
+          .attr('d', munPath)
+          .style('fill', d => getFill('municity', d.properties.adm3_psgc))
+          .call(fadeIn)
+          .on('click', (e, d) => drillMunicity(d, munPath, name));
+
+        // Municipality labels — pointer-events enabled so tiny polygons (e.g. islands)
+        // are still clickable via their label even when the polygon itself is too small to hit
+        g.selectAll('text.mun-label')
+          .data(munFeatures)
+          .join('text').attr('class', 'map-label mun-label').attr('font-size', 8).attr('opacity', 0)
+          .style('pointer-events', 'auto').style('cursor', 'pointer')
+          .each(function(d) {
+            const c = munPath.centroid(d);
+            if (!c || isNaN(c[0]) || isNaN(c[1])) return;
+            d3.select(this).attr('x', c[0]).attr('y', c[1]).text(d.properties.adm3_en || '');
+          })
+          .on('click', (e, d) => drillMunicity(d, munPath, name))
+          .transition().delay(350).duration(300).attr('opacity', 1);
+
+        // HUC cities: proper polygon features from huc-boundaries.json,
+        // rendered with the same munPath projection so they fill the geographic
+        // voids left by the province municipality data.
+        if (hucFeatures.length) {
+          g.selectAll('path.huc-city')
+            .data(hucFeatures)
+            .join('path')
+            .attr('class', 'huc-city')
+            .attr('d', munPath)
+            .style('fill', d => getFill('province', d.properties.adm3_psgc))
+            .call(fadeIn)
+            .on('click', (e, d) => drillMunicity(d, munPath, name));
+
+          g.selectAll('text.huc-label')
+            .data(hucFeatures)
+            .join('text').attr('class', 'map-label huc-label').attr('font-size', 8).attr('opacity', 0)
+            .style('pointer-events', 'auto').style('cursor', 'pointer')
+            .each(function(d) {
+              const c = munPath.centroid(d);
+              if (!c || isNaN(c[0]) || isNaN(c[1])) return;
+              d3.select(this).attr('x', c[0]).attr('y', c[1]).text(d.properties.adm3_en || '');
+            })
+            .on('click', (e, d) => drillMunicity(d, munPath, name))
+            .transition().delay(350).duration(300).attr('opacity', 1);
+        }
+
+        status.textContent = `${name} — ${munFeatures.length} municipalities/cities (${data.features.length} total)${hucFeatures.length ? ' + ' + hucFeatures.length + ' HUC' + (hucFeatures.length > 1 ? 's' : '') : ''}`;
+        if (afterRender) afterRender(munPath, munFeatures);
+      };
+
+      viewStack.push({ render: renderFn });
+      if (!skipAnimation) pushURL(buildStateHash(`/region/${regPsgc}/province/${psgc}`));
+
+      if (skipAnimation) {
+        g.selectAll('*').remove();
+        renderFn();
+      } else {
+        zoomThenRender(provPath, provFeature, renderFn);
+      }
+    })
+    .catch(() => {
+      status.textContent = 'No municipality data for ' + name;
+      currentView = 'region';
+    });
+}
+
+// ── Detail panel ──────────────────────────────────────────────────────────────
+const detail      = document.getElementById('detail');
+const detailClose = document.getElementById('detail-close');
+const detailBody  = document.getElementById('detail-body');
+detailClose.addEventListener('click', closeDetail);
+
+const LEVEL_LABEL = { region: 'Region', province: 'Province / District', municity: 'City / Municipality' };
+
+function noteHTML() {
+  const def  = config.definitions?.[config.colorField];
+  const note = config.note;
+  const style = 'font-size:11px;color:var(--data-label-color);line-height:1.6;margin:10px 0 4px';
+  return (def  ? `<p style="${style}">${def}</p>`  : '')
+       + (note ? `<p style="${style}">${note}</p>` : '');
+}
+
+function legendHTML() {
+  if (!colorScale || !config.colorDomain) return '';
+  const [lo, hi] = config.colorDomain;
+  const N = 24;
+  const stops = Array.from({length: N}, (_, i) => colorScale(lo + (hi - lo) * i / (N - 1))).join(',');
+  const suffix = config.valueSuffix || '';
+  const fieldLabel = config.detailFields?.[0]?.label || config.colorField || '';
+  return `<div class="section-head">${fieldLabel}</div>` +
+    `<div class="legend-bar" style="background:linear-gradient(to right,${stops})"></div>` +
+    `<div class="legend-ends"><span>${lo}${suffix}</span><span>${hi}${suffix}</span></div>`;
+}
+
+function rankedListHTML(level, activePsgc, filterParentPsgc) {
+  let records = Object.values(dataByLevel[level] || {});
+  if (!records.length || !config.colorField) return '';
+  if (filterParentPsgc != null) {
+    const fp = String(filterParentPsgc);
+    records = records.filter(r => parentMap[String(r.psgc)] === fp);
+  }
+  const sorted = [...records]
+    .filter(r => r[config.colorField] != null)
+    .sort((a, b) => (b[config.colorField] ?? -Infinity) - (a[config.colorField] ?? -Infinity));
+  if (!sorted.length) return '';
+  const suffix = config.valueSuffix || '';
+  const levelLabel = LEVEL_LABEL[level] || level;
+  const displayField = config.colorField + '_display';
+  const superscripts = ['¹','²','³','⁴','⁵','⁶','⁷','⁸','⁹'];
+  const notedPsgcs = new Map();
+  let noteCounter = 0;
+  sorted.forEach(r => { if (r.psa_note) notedPsgcs.set(String(r.psgc), superscripts[noteCounter++] || String(noteCounter)); });
+  const rows = sorted.map((r, i) => {
+    const rawName = nameRegistry[String(r.psgc)] || ('PSGC ' + r.psgc);
+    const sup  = notedPsgcs.get(String(r.psgc));
+    const name = sup ? `${rawName}<sup style="font-size:9px">${sup}</sup>` : rawName;
+    const val  = r[config.colorField];
+    const fill = colorScale ? colorScale(val) : 'transparent';
+    const active = activePsgc != null && String(r.psgc) === String(activePsgc);
+    const display = r[displayField] ?? (val + suffix);
+    return `<div class="ranked-row${active ? ' is-active' : ''}">` +
+      `<span class="ranked-i">${i + 1}</span>` +
+      `<span class="ranked-swatch" style="background:${fill}"></span>` +
+      `<span class="ranked-name">${name}</span>` +
+      `<span class="ranked-val">${display}</span>` +
+      `</div>`;
+  }).join('');
+  const notes = [...notedPsgcs.entries()].map(([psgc, sup]) => {
+    const rec = sorted.find(r => String(r.psgc) === psgc);
+    return `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:10px 0 0">${sup} ${rec.psa_note}</p>`;
+  }).join('');
+  const heading = filterParentPsgc != null
+    ? `${levelLabel}s in ${nameRegistry[String(filterParentPsgc)] || ''}`
+    : `All ${levelLabel}s`;
+  return `<div class="section-head">${heading}</div><div>${rows}</div>${notes}`;
+}
+
+function populateDetail(lguName, parentName, psgc, type = 'municity') {
+  document.getElementById('detail-eyebrow').textContent  = LEVEL_LABEL[type] || type;
+  document.getElementById('detail-lgu-name').textContent = lguName;
+  document.getElementById('detail-region').textContent   = parentName;
+
+  const record = dataByLevel[type]?.[String(psgc)];
+  const fields  = config.detailFields || [];
+
+  let dataHTML = '';
+  if (record && fields.length) {
+    const rows = fields
+      .filter(f => f.key in record)
+      .map(f => {
+        const val = record[f.key];
+        if (f.key === 'psa_note') {
+          return val != null
+            ? `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:8px 0 0">${val}</p>`
+            : '';
+        }
+        const display = record[f.key + '_display'] ?? (val == null ? '-' : val);
+        return `<div class="data-row"><span class="data-label">${f.label}</span><span class="data-value">${display}</span></div>`;
+      })
+      .join('');
+    dataHTML = rows || `<div class="no-findings">No data for this area.</div>`;
+  } else {
+    dataHTML = `<div class="no-findings">No data for this area.</div>`;
+  }
+  let listHTML = '';
+  if (type === 'region') {
+    listHTML = rankedListHTML('province', null, psgc) || rankedListHTML('municity', null, psgc);
+  } else if (type === 'province') {
+    listHTML = rankedListHTML('municity', null, psgc);
+  } else {
+    listHTML = rankedListHTML('municity', psgc, parentMap[String(psgc)]);
+  }
+  detailBody.innerHTML = dataHTML + noteHTML() + legendHTML() + listHTML;
+}
+
+function openDetail(lguName, parentName, psgc, type = 'municity') {
+  populateDetail(lguName, parentName, psgc, type);
+  detail.classList.remove('peek');
+  detail.classList.add('open');
+  infoBtn.style.display = 'none';
+}
+
+function closeDetail() {
+  detail.classList.remove('open');
+  infoBtn.style.display = 'block';
+}
+
+infoBtn.addEventListener('click', () => {
+  if (currentContext) {
+    openDetail(currentContext.name, currentContext.parentName, currentContext.psgc, currentContext.type);
+  } else {
+    openWelcome();
+  }
+});
+
+// ── Page title ────────────────────────────────────────────────────────────────
+function setPageTitle(title) {
+  document.title = title;
+  try { window.parent.document.title = title; } catch(e) {}
+}
+
+// ── Metric toggle ─────────────────────────────────────────────────────────────
+document.querySelectorAll('input[name="metric"]').forEach(radio => {
+  radio.addEventListener('change', function () {
+    if (!this.checked) return;
+    const field  = this.value;
+    const domain = (config.colorDomains || {})[field] || config.colorDomain;
+    config.colorField  = field;
+    config.colorDomain = domain;
+    if (config.colorScheme && d3[config.colorScheme]) {
+      colorScale = d3.scaleSequential(d3[config.colorScheme]).domain(domain);
+    }
+    d3.selectAll('path.region').style('fill', d => getFill('region', d.properties.adm1_psgc));
+    if (detail.classList.contains('open')) {
+      if (currentContext) {
+        populateDetail(currentContext.name, currentContext.parentName, currentContext.psgc, currentContext.type);
+      } else {
+        openWelcome();
+      }
+    }
+    const current = parseHash();
+    const viewToken = current.split('--').find(p => p.startsWith('v'));
+    pushURL(buildStateHash(viewToken ? viewToken.slice(1).replace(/-/g, '/') : '/'), true);
+  });
+});
+
+// ── Boot ──────────────────────────────────────────────────────────────────────
+async function boot() {
+  await loadConfig();
+  setPageTitle(config.title || 'Philippines Map');
+  await loadNational();
+}
+boot();
+</script>
+</body>
+</html>
