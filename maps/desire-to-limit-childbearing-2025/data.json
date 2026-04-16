@@ -1,0 +1,754 @@
+{
+  "title": "Desire to Limit Childbearing",
+  "description": "Percentage of currently married women aged 15-49 years who want no more children or are sterilized, by region and number of living children. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "maxDepth": "region",
+  "geoBasePath": "../../_template/philippines-json-maps",
+  "colorField": "children_total_pct",
+  "colorDomain": [
+    0,
+    100
+  ],
+  "colorDomains": {
+    "children_0_pct": [
+      0,
+      100
+    ],
+    "children_1_pct": [
+      0,
+      100
+    ],
+    "children_2_pct": [
+      0,
+      100
+    ],
+    "children_3_pct": [
+      0,
+      100
+    ],
+    "children_4_pct": [
+      0,
+      100
+    ],
+    "children_5_pct": [
+      0,
+      100
+    ],
+    "children_6plus_pct": [
+      0,
+      100
+    ],
+    "children_total_pct": [
+      0,
+      100
+    ]
+  },
+  "colorScheme": "interpolateYlGn",
+  "valueSuffix": "%",
+  "notes": {
+    "children_0_pct": "\"0.0\" indicates that an estimate is less than 0.05 percent."
+  },
+  "note": "The number of living children includes a woman's current pregnancy. An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed. Figures in parentheses are based on 25-49 unweighted cases. Women who are sterilized or whose husbands are sterilized are assumed not to want any more children.",
+  "definitions": {
+    "children_0_pct": "No living children: Share of currently married women aged 15-49 who want no more children or are sterilized among those with no living children.",
+    "children_1_pct": "1 living child: Share of currently married women aged 15-49 who want no more children or are sterilized among those with 1 living child.",
+    "children_2_pct": "2 living children: Share of currently married women aged 15-49 who want no more children or are sterilized among those with 2 living children.",
+    "children_3_pct": "3 living children: Share of currently married women aged 15-49 who want no more children or are sterilized among those with 3 living children.",
+    "children_4_pct": "4 living children: Share of currently married women aged 15-49 who want no more children or are sterilized among those with 4 living children.",
+    "children_5_pct": "5 living children: Share of currently married women aged 15-49 who want no more children or are sterilized among those with 5 living children.",
+    "children_6plus_pct": "6 or more living children: Share of currently married women aged 15-49 who want no more children or are sterilized among those with 6 or more living children.",
+    "children_total_pct": "Total: Share of currently married women aged 15-49 who want no more children or are sterilized."
+  },
+  "detailFields": [
+    {
+      "key": "children_total_pct",
+      "label": "Total (%, 2025)"
+    },
+    {
+      "key": "children_0_pct",
+      "label": "No living children (%, 2025)"
+    },
+    {
+      "key": "children_1_pct",
+      "label": "1 living child (%, 2025)"
+    },
+    {
+      "key": "children_2_pct",
+      "label": "2 living children (%, 2025)"
+    },
+    {
+      "key": "children_3_pct",
+      "label": "3 living children (%, 2025)"
+    },
+    {
+      "key": "children_4_pct",
+      "label": "4 living children (%, 2025)"
+    },
+    {
+      "key": "children_5_pct",
+      "label": "5 living children (%, 2025)"
+    },
+    {
+      "key": "children_6plus_pct",
+      "label": "6 or more living children (%, 2025)"
+    },
+    {
+      "key": "psa_note",
+      "label": "Note"
+    }
+  ],
+  "data": {
+    "region": [
+      {
+        "psgc": 1300000000,
+        "children_0_pct": 10.5,
+        "children_1_pct": 34.3,
+        "children_2_pct": 68.2,
+        "children_3_pct": 89.7,
+        "children_4_pct": 94.9,
+        "children_5_pct": 94.5,
+        "children_5_pct_display": "(94.5)",
+        "children_6plus_pct": 100,
+        "children_6plus_pct_display": "(100.0)",
+        "children_total_pct": 61.5
+      },
+      {
+        "psgc": 1400000000,
+        "children_0_pct": 3,
+        "children_0_pct_display": "3.0",
+        "children_1_pct": 31.9,
+        "children_2_pct": 68.4,
+        "children_3_pct": 87.2,
+        "children_4_pct": 90.5,
+        "children_5_pct": 89.1,
+        "children_5_pct_display": "(89.1)",
+        "children_6plus_pct": 90.4,
+        "children_6plus_pct_display": "(90.4)",
+        "children_total_pct": 63.7
+      },
+      {
+        "psgc": 100000000,
+        "children_0_pct": 15.5,
+        "children_1_pct": 12.4,
+        "children_2_pct": 56.6,
+        "children_3_pct": 74.9,
+        "children_4_pct": 98.7,
+        "children_5_pct": null,
+        "children_5_pct_display": "*",
+        "children_6plus_pct": null,
+        "children_6plus_pct_display": "*",
+        "children_total_pct": 51.5
+      },
+      {
+        "psgc": 200000000,
+        "children_0_pct": 10,
+        "children_0_pct_display": "10.0",
+        "children_1_pct": 21.2,
+        "children_2_pct": 68.8,
+        "children_3_pct": 84.3,
+        "children_4_pct": 78.4,
+        "children_5_pct": null,
+        "children_5_pct_display": "*",
+        "children_6plus_pct": 95.5,
+        "children_6plus_pct_display": "(95.5)",
+        "children_total_pct": 58.6
+      },
+      {
+        "psgc": 300000000,
+        "children_0_pct": 6.7,
+        "children_1_pct": 25.5,
+        "children_2_pct": 66.2,
+        "children_3_pct": 83,
+        "children_3_pct_display": "83.0",
+        "children_4_pct": 87.9,
+        "children_5_pct": 83.3,
+        "children_6plus_pct": 91.9,
+        "children_total_pct": 59.4
+      },
+      {
+        "psgc": 400000000,
+        "children_0_pct": 0,
+        "children_0_pct_display": "0.0",
+        "children_1_pct": 28.5,
+        "children_2_pct": 67.9,
+        "children_3_pct": 86.8,
+        "children_4_pct": 91.7,
+        "children_5_pct": 86.1,
+        "children_5_pct_display": "(86.1)",
+        "children_6plus_pct": 92.9,
+        "children_6plus_pct_display": "(92.9)",
+        "children_total_pct": 59,
+        "children_total_pct_display": "59.0"
+      },
+      {
+        "psgc": 1700000000,
+        "children_0_pct": 9.5,
+        "children_1_pct": 31.6,
+        "children_2_pct": 65.8,
+        "children_3_pct": 77.7,
+        "children_4_pct": 81.1,
+        "children_5_pct": 92.4,
+        "children_5_pct_display": "(92.4)",
+        "children_6plus_pct": 88.6,
+        "children_total_pct": 63.2
+      },
+      {
+        "psgc": 500000000,
+        "children_0_pct": 4.8,
+        "children_0_pct_display": "(4.8)",
+        "children_1_pct": 25.6,
+        "children_2_pct": 57.3,
+        "children_3_pct": 83.1,
+        "children_4_pct": 86.6,
+        "children_5_pct": 87.4,
+        "children_6plus_pct": 97.4,
+        "children_total_pct": 62.3
+      },
+      {
+        "psgc": 600000000,
+        "children_0_pct": 10.9,
+        "children_1_pct": 26.3,
+        "children_2_pct": 66.1,
+        "children_3_pct": 81.9,
+        "children_4_pct": 92.3,
+        "children_5_pct": 78.3,
+        "children_5_pct_display": "(78.3)",
+        "children_6plus_pct": 88.2,
+        "children_6plus_pct_display": "(88.2)",
+        "children_total_pct": 58.5
+      },
+      {
+        "psgc": 1800000000,
+        "children_0_pct": 4.7,
+        "children_1_pct": 36.4,
+        "children_2_pct": 69.9,
+        "children_3_pct": 81,
+        "children_3_pct_display": "81.0",
+        "children_4_pct": 90.1,
+        "children_4_pct_display": "(90.1)",
+        "children_5_pct": null,
+        "children_5_pct_display": "*",
+        "children_6plus_pct": null,
+        "children_6plus_pct_display": "*",
+        "children_total_pct": 61,
+        "children_total_pct_display": "61.0"
+      },
+      {
+        "psgc": 700000000,
+        "children_0_pct": 2.7,
+        "children_0_pct_display": "(2.7)",
+        "children_1_pct": 37.2,
+        "children_2_pct": 63.4,
+        "children_3_pct": 69.1,
+        "children_4_pct": 90,
+        "children_4_pct_display": "90.0",
+        "children_5_pct": 95.1,
+        "children_5_pct_display": "(95.1)",
+        "children_6plus_pct": null,
+        "children_6plus_pct_display": "*",
+        "children_total_pct": 59.6
+      },
+      {
+        "psgc": 800000000,
+        "children_0_pct": 4.9,
+        "children_1_pct": 26.5,
+        "children_2_pct": 57.5,
+        "children_3_pct": 84.5,
+        "children_4_pct": 89.8,
+        "children_5_pct": 91.6,
+        "children_6plus_pct": 93.3,
+        "children_total_pct": 60.6
+      },
+      {
+        "psgc": 900000000,
+        "children_0_pct": 4.5,
+        "children_1_pct": 18.1,
+        "children_2_pct": 44.6,
+        "children_3_pct": 55.1,
+        "children_4_pct": 62.4,
+        "children_5_pct": 72.7,
+        "children_6plus_pct": 68.4,
+        "children_total_pct": 42.7,
+        "psa_note": "Region IX includes the province of Sulu in 2025."
+      },
+      {
+        "psgc": 1000000000,
+        "children_0_pct": 2.1,
+        "children_1_pct": 25.9,
+        "children_2_pct": 66.6,
+        "children_3_pct": 76.1,
+        "children_4_pct": 91.4,
+        "children_5_pct": 84.2,
+        "children_6plus_pct": 92.5,
+        "children_total_pct": 59.5
+      },
+      {
+        "psgc": 1100000000,
+        "children_0_pct": 7,
+        "children_0_pct_display": "7.0",
+        "children_1_pct": 22.1,
+        "children_2_pct": 67.1,
+        "children_3_pct": 72.9,
+        "children_4_pct": 90.6,
+        "children_5_pct": 92.6,
+        "children_6plus_pct": 95.7,
+        "children_6plus_pct_display": "(95.7)",
+        "children_total_pct": 59.2
+      },
+      {
+        "psgc": 1200000000,
+        "children_0_pct": 5.9,
+        "children_1_pct": 18.8,
+        "children_2_pct": 60.1,
+        "children_3_pct": 76.3,
+        "children_4_pct": 78.9,
+        "children_5_pct": 72.7,
+        "children_5_pct_display": "(72.7)",
+        "children_6plus_pct": 84.1,
+        "children_6plus_pct_display": "(84.1)",
+        "children_total_pct": 55.2
+      },
+      {
+        "psgc": 1600000000,
+        "children_0_pct": 3,
+        "children_0_pct_display": "3.0",
+        "children_1_pct": 22.9,
+        "children_2_pct": 64.1,
+        "children_3_pct": 77,
+        "children_3_pct_display": "77.0",
+        "children_4_pct": 86.9,
+        "children_5_pct": 84.5,
+        "children_6plus_pct": 87.9,
+        "children_total_pct": 59.4
+      },
+      {
+        "psgc": 1900000000,
+        "children_0_pct": 2.2,
+        "children_1_pct": 10.1,
+        "children_2_pct": 26.4,
+        "children_3_pct": 34.9,
+        "children_4_pct": 42.5,
+        "children_5_pct": 43.2,
+        "children_6plus_pct": 58.8,
+        "children_total_pct": 29.7
+      }
+    ],
+    "province": [],
+    "municity": []
+  },
+  "chartData": {
+    "title": "Desire to Limit Childbearing",
+    "subtitle": "Percentage of currently married women aged 15 to 49 years who want no more children or are sterilized",
+    "yMax": 100,
+    "yLabel": "Percent",
+    "series": [
+      {
+        "key": "children_0",
+        "label": "No living children",
+        "color": "#0b7a75"
+      },
+      {
+        "key": "children_1",
+        "label": "1 living child",
+        "color": "#1f9d8a"
+      },
+      {
+        "key": "children_2",
+        "label": "2 living children",
+        "color": "#4cb39f"
+      },
+      {
+        "key": "children_3",
+        "label": "3 living children",
+        "color": "#7bc8b3"
+      },
+      {
+        "key": "children_4",
+        "label": "4 living children",
+        "color": "#a8dbc7"
+      },
+      {
+        "key": "children_5",
+        "label": "5 living children",
+        "color": "#d3ede1"
+      },
+      {
+        "key": "children_6plus",
+        "label": "6+ living children",
+        "color": "#5b6c94"
+      }
+    ],
+    "blocks": [
+      {
+        "title": "Residence",
+        "year": "2025",
+        "rows": [
+          {
+            "label": "Urban",
+            "children_0": 7.4,
+            "children_1": 29.1,
+            "children_2": 65.2,
+            "children_3": 79.9,
+            "children_4": 87.2,
+            "children_5": 84.6,
+            "children_6plus": 91.8
+          },
+          {
+            "label": "Rural",
+            "children_0": 4.9,
+            "children_1": 22.2,
+            "children_2": 61,
+            "children_3": 76.7,
+            "children_4": 84.5,
+            "children_5": 82.4,
+            "children_6plus": 87.7
+          }
+        ]
+      },
+      {
+        "title": "Residence",
+        "year": "2022",
+        "rows": [
+          {
+            "label": "Urban",
+            "children_0": 5.6,
+            "children_1": 21.6,
+            "children_2": 64.5,
+            "children_3": 80.3,
+            "children_4": 87.9,
+            "children_5": 87.1,
+            "children_6plus": 85.1
+          },
+          {
+            "label": "Rural",
+            "children_0": 3.4,
+            "children_1": 22.9,
+            "children_2": 59.9,
+            "children_3": 78.2,
+            "children_4": 82.3,
+            "children_5": 78.2,
+            "children_6plus": 83.3
+          }
+        ]
+      },
+      {
+        "title": "Educational attainment",
+        "year": "2025",
+        "rows": [
+          {
+            "label": "No education",
+            "children_0": null,
+            "children_0_display": "*",
+            "children_1": 38,
+            "children_1_display": "(38.0)",
+            "children_2": 49.4,
+            "children_2_display": "(49.4)",
+            "children_3": 57.4,
+            "children_3_display": "(57.4)",
+            "children_4": 53.1,
+            "children_4_display": "(53.1)",
+            "children_5": null,
+            "children_5_display": "*",
+            "children_6plus": 89.2,
+            "children_6plus_display": "(89.2)"
+          },
+          {
+            "label": "Grades 1-6",
+            "children_0": 2.6,
+            "children_1": 34.8,
+            "children_2": 59.4,
+            "children_3": 71.5,
+            "children_4": 81.6,
+            "children_5": 81.2,
+            "children_6plus": 85.4
+          },
+          {
+            "label": "Grades 7-10",
+            "children_0": 11.8,
+            "children_1": 29.5,
+            "children_2": 63.6,
+            "children_3": 78.6,
+            "children_4": 87.8,
+            "children_5": 84.4,
+            "children_6plus": 92.6
+          },
+          {
+            "label": "Grades 11-12",
+            "children_0": 0.9,
+            "children_1": 14.2,
+            "children_2": 48.8,
+            "children_3": 62.4,
+            "children_3_display": "(62.4)",
+            "children_4": null,
+            "children_4_display": "*",
+            "children_5": null,
+            "children_5_display": "*",
+            "children_6plus": null,
+            "children_6plus_display": "*"
+          },
+          {
+            "label": "Post-secondary",
+            "children_0": null,
+            "children_0_display": "*",
+            "children_1": 42.4,
+            "children_2": 64.9,
+            "children_3": 79.3,
+            "children_4": 80.9,
+            "children_4_display": "(80.9)",
+            "children_5": null,
+            "children_5_display": "*",
+            "children_6plus": null,
+            "children_6plus_display": "*"
+          },
+          {
+            "label": "College",
+            "children_0": 5.3,
+            "children_1": 24.9,
+            "children_2": 65.1,
+            "children_3": 81.6,
+            "children_4": 87.3,
+            "children_5": 86.2,
+            "children_6plus": 92.4
+          }
+        ]
+      },
+      {
+        "title": "Educational attainment",
+        "year": "2022",
+        "rows": [
+          {
+            "label": "No education",
+            "children_0": null,
+            "children_0_display": "*",
+            "children_1": null,
+            "children_1_display": "*",
+            "children_2": 51.5,
+            "children_2_display": "(51.5)",
+            "children_3": 51.4,
+            "children_3_display": "(51.4)",
+            "children_4": 79.4,
+            "children_4_display": "(79.4)",
+            "children_5": 62.1,
+            "children_5_display": "(62.1)",
+            "children_6plus": 73.7
+          },
+          {
+            "label": "Grades 1-6",
+            "children_0": 15.4,
+            "children_1": 28.8,
+            "children_2": 56.7,
+            "children_3": 74.6,
+            "children_4": 78.9,
+            "children_5": 85.5,
+            "children_6plus": 85.5
+          },
+          {
+            "label": "Grades 7-10",
+            "children_0": 4.3,
+            "children_1": 23.7,
+            "children_2": 62.3,
+            "children_3": 80.5,
+            "children_4": 86.8,
+            "children_5": 80.9,
+            "children_6plus": 85
+          },
+          {
+            "label": "Grades 11-12",
+            "children_0": 0.6,
+            "children_1": 18.4,
+            "children_2": 30.6,
+            "children_3": null,
+            "children_3_display": "*",
+            "children_4": 0,
+            "children_4_display": "-",
+            "children_5": 0,
+            "children_5_display": "-",
+            "children_6plus": 0,
+            "children_6plus_display": "-"
+          },
+          {
+            "label": "Post-secondary",
+            "children_0": 0.8,
+            "children_0_display": "(0.8)",
+            "children_1": 27.3,
+            "children_2": 66.9,
+            "children_3": 89.5,
+            "children_4": 85.3,
+            "children_4_display": "(85.3)",
+            "children_5": null,
+            "children_5_display": "*",
+            "children_6plus": null,
+            "children_6plus_display": "*"
+          },
+          {
+            "label": "College",
+            "children_0": 4.2,
+            "children_1": 19.9,
+            "children_2": 64.8,
+            "children_3": 78.7,
+            "children_4": 87.3,
+            "children_5": 82.8,
+            "children_6plus": 77.9
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2025",
+        "rows": [
+          {
+            "label": "Lowest",
+            "children_0": 13.9,
+            "children_1": 21.9,
+            "children_2": 54.2,
+            "children_3": 69.7,
+            "children_4": 79.7,
+            "children_5": 77.8,
+            "children_6plus": 86
+          },
+          {
+            "label": "Second",
+            "children_0": 5.1,
+            "children_1": 23.5,
+            "children_2": 61.9,
+            "children_3": 76.1,
+            "children_4": 84.9,
+            "children_5": 89.7,
+            "children_6plus": 90
+          },
+          {
+            "label": "Middle",
+            "children_0": 4.1,
+            "children_1": 27.6,
+            "children_2": 61.8,
+            "children_3": 76,
+            "children_4": 87.1,
+            "children_5": 85.1,
+            "children_6plus": 92.7
+          },
+          {
+            "label": "Fourth",
+            "children_0": 6.5,
+            "children_1": 28,
+            "children_2": 69,
+            "children_3": 86.3,
+            "children_4": 90.5,
+            "children_5": 85.3,
+            "children_6plus": 98.2
+          },
+          {
+            "label": "Highest",
+            "children_0": 4.9,
+            "children_1": 27.7,
+            "children_2": 67.9,
+            "children_3": 86.1,
+            "children_4": 94.2,
+            "children_5": 84.1,
+            "children_6plus": null,
+            "children_6plus_display": "*"
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2022",
+        "rows": [
+          {
+            "label": "Lowest",
+            "children_0": 4.8,
+            "children_1": 22.4,
+            "children_2": 53.7,
+            "children_3": 69.5,
+            "children_4": 74.5,
+            "children_5": 71.6,
+            "children_6plus": 78.4
+          },
+          {
+            "label": "Second",
+            "children_0": 3.8,
+            "children_1": 19.1,
+            "children_2": 58.8,
+            "children_3": 80.7,
+            "children_4": 86.1,
+            "children_5": 88.6,
+            "children_6plus": 89.4
+          },
+          {
+            "label": "Middle",
+            "children_0": 5.8,
+            "children_1": 22.9,
+            "children_2": 61.8,
+            "children_3": 81.8,
+            "children_4": 88.3,
+            "children_5": 86.2,
+            "children_6plus": 93.3
+          },
+          {
+            "label": "Fourth",
+            "children_0": 5.7,
+            "children_1": 21.1,
+            "children_2": 65.9,
+            "children_3": 76.4,
+            "children_4": 92.1,
+            "children_5": 88.2,
+            "children_6plus": 79.2
+          },
+          {
+            "label": "Highest",
+            "children_0": 3.5,
+            "children_1": 24.5,
+            "children_2": 68.6,
+            "children_3": 87.3,
+            "children_4": 92,
+            "children_5": 93.6,
+            "children_5_display": "(93.6)",
+            "children_6plus": 88.5,
+            "children_6plus_display": "(88.5)"
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "The number of living children includes a woman's current pregnancy.",
+      "An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.",
+      "A dash indicates zero or no cases.",
+      "Figures in parentheses are based on 25-49 unweighted cases.",
+      "Women who are sterilized or whose husbands are sterilized are assumed not to want any more children."
+    ]
+  },
+  "insights": {
+    "title": "Insights on Desire to Limit Childbearing",
+    "subtitle": "AI-generated insights based on National Demographic and Health Survey data on desire to limit childbearing",
+    "overview": "The regional totals matter, but the more revealing story is how sharply the regional picture changes at each stage of family size. Some places already have relatively many women with no children who say they want no more children or are sterilized, while others remain low even after women have had three or four children. That means the question is not just where the desire to stop childbearing is highest overall. It is where that shift starts early, where it takes hold more slowly, and how the regional order changes as the number of living children rises.",
+    "sections": [
+      {
+        "heading": "The early-parity map already looks very different from one region to another",
+        "body": "Among women with no living children, Ilocos Region stands highest at 15.5 percent, followed by Western Visayas at 10.9 percent and NCR at 10.5 percent. At the other end, CALABARZON is at 0.0 percent, with Northern Mindanao at 2.1 percent and BARMM at 2.2 percent. These are wide differences for women who have not yet had a child. They suggest that in some regions, the desire to stop childbearing or reliance on sterilization is already present very early, while in others it is almost absent at that stage."
+      },
+      {
+        "heading": "By one and two children, a new regional order takes shape",
+        "body": "The leaders at low parity are not exactly the same as the leaders in the total. At one child, Central Visayas is highest at 37.2 percent, followed by Negros Island Region at 36.4 percent and NCR at 34.3 percent, while BARMM remains lowest at 10.1 percent. By two children, Negros Island Region moves to the top at 69.9 percent, with Cagayan Valley, CAR, NCR, and CALABARZON all clustered just behind it. BARMM is still far lower at 26.4 percent, and Zamboanga Peninsula remains low at 44.6 percent. The ranking is therefore not fixed. Some places move into the stopping stage early and sharply, while others continue to lag even after two children."
+      },
+      {
+        "heading": "Three and four children separate the fast-shifting regions from the slow-shifting ones",
+        "body": "By three children, NCR reaches 89.7 percent and CAR 87.2 percent, while CALABARZON is at 86.8 percent. BARMM, by contrast, is still only at 34.9 percent, and Zamboanga Peninsula is at 55.1 percent. At four children, Ilocos Region jumps to 98.7 percent, NCR reaches 94.9 percent, and Western Visayas 92.3 percent, but BARMM is still at just 42.5 percent and Zamboanga Peninsula at 62.4 percent. Even at this stage, the country is not converging into one pattern. Some regions are almost universally at the point of wanting no more children, while others remain far from that level."
+      },
+      {
+        "heading": "Some regions stay low even at five or more children",
+        "body": "At five children, Central Visayas is highest at 95.1 percent and NCR is at 94.5 percent, but BARMM is still only at 43.2 percent. Zamboanga Peninsula and SOCCSKSARGEN are both at 72.7 percent, much lower than the top regions. At six or more children, NCR reaches 100.0 percent, Bicol Region 97.4 percent, and Davao Region 95.7 percent, while BARMM remains the clear outlier at 58.8 percent and Zamboanga Peninsula is still low at 68.4 percent. The persistence of these gaps at high parity makes the regional divide especially notable. In some places, even larger families are not translating into the same level of desire to stop childbearing seen elsewhere."
+      },
+      {
+        "heading": "Wealth and education tell their own version of early versus late transition",
+        "body": "The social differences are clearest at lower parity. In 2025, women in the lowest wealth quintile were at 13.9 percent with no children, compared with 4.9 percent in the highest quintile, but by two children the highest and fourth quintiles were already near 68 to 69 percent, while the lowest quintile was still at 54.2 percent. Education shows a similarly uneven early transition. At one child, post-secondary women were at 42.4 percent, college women at 24.9 percent, and women with Grades 11-12 at 14.2 percent. These differences narrow later, but they matter because they show which groups reach the stopping point earlier in family building."
+      },
+      {
+        "heading": "The 2022 to 2025 shift is selective, not one-directional",
+        "body": "The non-regional comparisons do not point to one clean national shift from 2022 to 2025. Urban women moved higher at low parity, with the share among women with no children rising from 5.6 percent to 7.4 percent and among women with one child from 21.6 percent to 29.1 percent, while the rural pattern moved more modestly. Across wealth groups, the lowest quintile rose sharply among women with no children, from 4.8 percent in 2022 to 13.9 percent in 2025, but the highest quintile did not move the same way. Education also shifted unevenly. Grades 7-10 rose strongly among women with no children, while Grades 11-12 remained low and several upper-parity cells are too sparse to read confidently. The more defensible conclusion is not a uniform increase or decrease, but a patchwork of changes concentrated in specific groups and stages."
+      }
+    ],
+    "takeaways": [
+      "The regional total is only part of the story; the sharper finding is how differently regions behave at each parity level.",
+      "Some regions are already relatively high among women with no children or one child, while BARMM and Zamboanga Peninsula stay low even after women have had several children.",
+      "Residence differences are modest compared with the wider gaps by region, wealth, and education in the earlier stages of family building."
+    ]
+  }
+}

@@ -68,6 +68,168 @@
       "label": "Note"
     }
   ],
+  "chartData": {
+    "title": "Teenage Pregnancy",
+    "subtitle": "Percentage of women aged 15-19 years by childbearing indicator",
+    "yMax": 21,
+    "series": [
+      {
+        "key": "ever_pregnant",
+        "label": "Have ever been pregnant\u00b2",
+        "color": "#8f1f4b"
+      },
+      {
+        "key": "live_birth",
+        "label": "Have ever had a live birth",
+        "color": "#b53d3d"
+      },
+      {
+        "key": "pregnancy_loss",
+        "label": "Have ever had a pregnancy loss\u00b9",
+        "color": "#d87a5c"
+      },
+      {
+        "key": "currently_pregnant",
+        "label": "Are currently pregnant",
+        "color": "#e9b66d"
+      },
+      {
+        "key": "begun_childbearing",
+        "label": "Have begun childbearing\u00b3",
+        "color": "#7f1d1d"
+      }
+    ],
+    "blocks": [
+      {
+        "title": "Age in years",
+        "year": "2025",
+        "rows": [
+          { "age": "15", "ever_pregnant": 1.5, "live_birth": 0.7, "pregnancy_loss": 0.2, "currently_pregnant": 0.7, "begun_childbearing": 1.4 },
+          { "age": "16", "ever_pregnant": 2.5, "live_birth": 1.6, "pregnancy_loss": 0.2, "currently_pregnant": 1.0, "begun_childbearing": 2.5 },
+          { "age": "17", "ever_pregnant": 5.1, "live_birth": 3.1, "pregnancy_loss": 0.4, "currently_pregnant": 2.3, "begun_childbearing": 5.0 },
+          { "age": "18", "ever_pregnant": 6.9, "live_birth": 5.3, "pregnancy_loss": 1.4, "currently_pregnant": 1.5, "begun_childbearing": 6.8 },
+          { "age": "19", "ever_pregnant": 9.7, "live_birth": 8.1, "pregnancy_loss": 0.5, "currently_pregnant": 1.4, "begun_childbearing": 9.3 }
+        ]
+      },
+      {
+        "title": "Age in years",
+        "year": "2022",
+        "rows": [
+          { "age": "15", "ever_pregnant": 1.4, "live_birth": 0.1, "pregnancy_loss": 0.4, "currently_pregnant": 1.2, "begun_childbearing": 1.4 },
+          { "age": "16", "ever_pregnant": 1.7, "live_birth": 0.9, "pregnancy_loss": 0.0, "pregnancy_loss_display": "0.0", "currently_pregnant": 0.8, "begun_childbearing": 1.6 },
+          { "age": "17", "ever_pregnant": 5.6, "live_birth": 3.6, "pregnancy_loss": 0.2, "currently_pregnant": 1.8, "begun_childbearing": 5.4 },
+          { "age": "18", "ever_pregnant": 5.9, "live_birth": 4.7, "pregnancy_loss": 0.2, "currently_pregnant": 1.3, "begun_childbearing": 5.8 },
+          { "age": "19", "ever_pregnant": 13.3, "live_birth": 10.2, "pregnancy_loss": 1.6, "currently_pregnant": 3.3, "begun_childbearing": 12.7 }
+        ]
+      },
+      {
+        "title": "Residence",
+        "year": "2025",
+        "rows": [
+          { "age": "Urban", "ever_pregnant": 4.2, "live_birth": 3.1, "pregnancy_loss": 0.3, "currently_pregnant": 1.1, "begun_childbearing": 4.1 },
+          { "age": "Rural", "ever_pregnant": 5.8, "live_birth": 4.0, "pregnancy_loss": 0.8, "currently_pregnant": 1.6, "begun_childbearing": 5.6 }
+        ]
+      },
+      {
+        "title": "Residence",
+        "year": "2022",
+        "rows": [
+          { "age": "Urban", "ever_pregnant": 4.8, "live_birth": 3.3, "pregnancy_loss": 0.3, "currently_pregnant": 1.7, "begun_childbearing": 4.6 },
+          { "age": "Rural", "ever_pregnant": 6.1, "live_birth": 4.4, "pregnancy_loss": 0.6, "currently_pregnant": 1.6, "begun_childbearing": 5.9 }
+        ]
+      },
+      {
+        "title": "Educational attainment",
+        "year": "2025",
+        "rows": [
+          { "age": "No education", "ever_pregnant": 7.4, "ever_pregnant_display": "(7.4)", "live_birth": 6.3, "live_birth_display": "(6.3)", "pregnancy_loss": 0.0, "pregnancy_loss_display": "0.0", "currently_pregnant": 1.1, "currently_pregnant_display": "(1.1)", "begun_childbearing": 7.4, "begun_childbearing_display": "(7.4)" },
+          { "age": "Grades 1-6", "ever_pregnant": 17.2, "live_birth": 15.1, "pregnancy_loss": 1.7, "currently_pregnant": 3.0, "begun_childbearing": 16.2 },
+          { "age": "Grades 7-10", "ever_pregnant": 4.7, "live_birth": 3.7, "pregnancy_loss": 0.4, "currently_pregnant": 1.0, "begun_childbearing": 4.6 },
+          { "age": "Grades 11-12", "ever_pregnant": 5.1, "live_birth": 3.1, "pregnancy_loss": 0.8, "currently_pregnant": 1.8, "begun_childbearing": 4.9 },
+          { "age": "Post-secondary", "ever_pregnant": null, "ever_pregnant_display": "*", "live_birth": null, "live_birth_display": "*", "pregnancy_loss": null, "pregnancy_loss_display": "*", "currently_pregnant": null, "currently_pregnant_display": "*", "begun_childbearing": null, "begun_childbearing_display": "*" },
+          { "age": "College", "ever_pregnant": 2.6, "live_birth": 1.9, "pregnancy_loss": 0.0, "pregnancy_loss_display": "0.0", "currently_pregnant": 0.7, "begun_childbearing": 2.6 }
+        ]
+      },
+      {
+        "title": "Educational attainment",
+        "year": "2022",
+        "rows": [
+          { "age": "No education", "ever_pregnant": null, "ever_pregnant_display": "*", "live_birth": null, "live_birth_display": "*", "pregnancy_loss": null, "pregnancy_loss_display": "*", "currently_pregnant": null, "currently_pregnant_display": "*", "begun_childbearing": null, "begun_childbearing_display": "*" },
+          { "age": "Grades 1-6", "ever_pregnant": 19.1, "live_birth": 14.9, "pregnancy_loss": 1.8, "currently_pregnant": 2.8, "begun_childbearing": 17.6 },
+          { "age": "Grades 7-10", "ever_pregnant": 5.3, "live_birth": 3.6, "pregnancy_loss": 0.6, "currently_pregnant": 1.8, "begun_childbearing": 5.2 },
+          { "age": "Grades 11-12", "ever_pregnant": 4.8, "live_birth": 3.5, "pregnancy_loss": 0.1, "currently_pregnant": 1.4, "begun_childbearing": 4.7 },
+          { "age": "Post-secondary", "ever_pregnant": null, "ever_pregnant_display": "*", "live_birth": null, "live_birth_display": "*", "pregnancy_loss": null, "pregnancy_loss_display": "*", "currently_pregnant": null, "currently_pregnant_display": "*", "begun_childbearing": null, "begun_childbearing_display": "*" },
+          { "age": "College", "ever_pregnant": 1.9, "live_birth": 1.9, "pregnancy_loss": 0.0, "pregnancy_loss_display": "0.0", "currently_pregnant": 0.1, "begun_childbearing": 1.9 }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2025",
+        "rows": [
+          { "age": "Lowest", "ever_pregnant": 9.4, "live_birth": 6.1, "pregnancy_loss": 1.9, "currently_pregnant": 3.1, "begun_childbearing": 9.0 },
+          { "age": "Second", "ever_pregnant": 6.2, "live_birth": 4.7, "pregnancy_loss": 0.3, "currently_pregnant": 1.5, "begun_childbearing": 5.9 },
+          { "age": "Middle", "ever_pregnant": 4.4, "live_birth": 3.0, "pregnancy_loss": 0.3, "currently_pregnant": 1.4, "begun_childbearing": 4.3 },
+          { "age": "Fourth", "ever_pregnant": 2.8, "live_birth": 2.3, "pregnancy_loss": 0.1, "currently_pregnant": 0.5, "begun_childbearing": 2.7 },
+          { "age": "Highest", "ever_pregnant": 1.4, "live_birth": 1.3, "pregnancy_loss": 0.0, "pregnancy_loss_display": "0.0", "currently_pregnant": 0.1, "begun_childbearing": 1.4 }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2022",
+        "rows": [
+          { "age": "Lowest", "ever_pregnant": 10.3, "live_birth": 7.7, "pregnancy_loss": 0.8, "currently_pregnant": 2.8, "begun_childbearing": 10.1 },
+          { "age": "Second", "ever_pregnant": 5.5, "live_birth": 3.8, "pregnancy_loss": 0.3, "currently_pregnant": 2.1, "begun_childbearing": 5.4 },
+          { "age": "Middle", "ever_pregnant": 7.5, "live_birth": 5.0, "pregnancy_loss": 1.1, "currently_pregnant": 2.0, "begun_childbearing": 7.0 },
+          { "age": "Fourth", "ever_pregnant": 2.7, "live_birth": 1.9, "pregnancy_loss": 0.1, "currently_pregnant": 0.8, "begun_childbearing": 2.7 },
+          { "age": "Highest", "ever_pregnant": 1.8, "live_birth": 1.1, "pregnancy_loss": 0.0, "pregnancy_loss_display": "0.0", "currently_pregnant": 0.7, "begun_childbearing": 1.8 }
+        ]
+      }
+    ],
+    "notes": [
+      "\u00b9 Stillbirth, miscarriage, or abortion.",
+      "\u00b2 Includes those who have ever had a live birth, are currently pregnant, or have ever had a pregnancy loss.",
+      "\u00b3 Includes those who have had a live birth or who are currently pregnant; excludes women who have had only a pregnancy that resulted in stillbirth, miscarriage, or abortion. This indicator should be used when making comparisons with NDHS surveys implemented prior to 2022.",
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.",
+      "Figures in parentheses are based on 25-49 unweighted cases."
+    ]
+  },
+  "insights": {
+    "title": "Insights on Teenage Pregnancy",
+    "subtitle": "AI-generated insights based on National Demographic and Health Survey data on teen pregnancy",
+    "overview": "Teen pregnancy in the survey data is marked less by one national pattern than by sharp regional differences. In 2025, the share of teens who had experienced pregnancy ranged from 1.8 percent in NCR to 9.3 percent in Zamboanga Peninsula, with MIMAROPA and SOCCSKSARGEN also high at 8.2 percent each. Those are wide gaps for one country. They suggest that the pressures and circumstances shaping teen pregnancy are not unfolding in the same way across the Philippines.",
+    "sections": [
+      {
+        "heading": "A few places carry much more of the burden",
+        "body": "Zamboanga Peninsula stands out most clearly, with 9.3 percent of teens having experienced pregnancy. MIMAROPA and SOCCSKSARGEN follow at 8.2 percent, while Central Luzon is at 6.8 percent and both NIR and Caraga are at 6.5 percent. On the other end, NCR is at 1.8 percent, CAR at 2.7 percent, and Central Visayas at 3.3 percent. That means teenage pregnancy is not simply a little higher in some places than others. In the highest-burden regions, the level is several times what it is in the lowest-burden ones."
+      },
+      {
+        "heading": "High-rate regions do not all share the same profile",
+        "body": "Some places have high shares of teens who had experienced pregnancy, but the makeup of that experience differs. In SOCCSKSARGEN, 7.6 percent of teens had already had a live birth, very close to its 8.2 percent share of teens who had experienced pregnancy overall. In MIMAROPA, the share of teens who had experienced pregnancy is also 8.2 percent, but 3.1 percent are currently pregnant, much higher than in many other regions. Zamboanga Peninsula has the highest share of teens who had experienced pregnancy at 9.3 percent and also a high live-birth figure at 6.9 percent, but it does not stand out in current pregnancy as much as NIR or Ilocos Region do. Similar headline figures can therefore point to quite different situations for young women."
+      },
+      {
+        "heading": "Some places stand out because more pregnancies are still ongoing",
+        "body": "NIR is one of the clearest examples. Its share of teens who had experienced pregnancy is 6.5 percent, lower than Zamboanga Peninsula, MIMAROPA, or SOCCSKSARGEN, but it records the highest estimate for teens who were currently pregnant at 3.8 percent. Ilocos Region is even more unusual. Only 3.7 percent of teens had experienced pregnancy there, but 3.5 percent were currently pregnant, live birth was just 0.1 percent, and pregnancy loss was 2.3 percent. The survey data cannot explain why that profile looks so different, but it does show that some regions are shaped more by ongoing pregnancies or pregnancies that did not result in live birth than others."
+      },
+      {
+        "heading": "Pregnancy loss adds an important layer to the story",
+        "body": "Pregnancy loss is smaller than the other measures in most places, but it still changes how the table reads. Ilocos Region records the highest reported level at 2.3 percent, followed by Northern Mindanao at 1.6 percent. Davao Region, SOCCSKSARGEN, and Caraga are each at 0.9 percent, while many regions are at 0.0 or near zero. Outside the regional rows, pregnancy loss is also more common in more disadvantaged groups, reaching 1.9 percent in the lowest wealth quintile and 1.7 percent among those with only Grades 1-6 education. These estimates should be read carefully, especially where sample warnings apply, but they are too substantial to treat as background detail."
+      },
+      {
+        "heading": "Outside the regional view, the sharpest gaps are social and economic",
+        "body": "The clearest national divides appear in education and wealth. In 2025, 17.2 percent of teens with only Grades 1-6 education had experienced pregnancy, compared with 2.6 percent among those with college education. The wealth gap is similarly wide, from 9.4 percent in the lowest quintile to 1.4 percent in the highest. The rural-urban difference is real, but smaller: 5.8 percent in rural areas versus 4.2 percent in urban areas. In this dataset, schooling and household resources separate outcomes more sharply than residence alone."
+      },
+      {
+        "heading": "The change from 2022 to 2025 is uneven",
+        "body": "There are signs of improvement in some high-burden groups, but not a clean downward trend across the board. Among 19-year-olds, the share who had experienced pregnancy fell from 13.3 percent in 2022 to 9.7 percent in 2025. In the lowest wealth quintile, it fell from 10.3 percent to 9.4 percent. But some groups were steady or moved up slightly, including teens with Grades 11-12 education, where the share rose from 4.8 percent to 5.1 percent. If comparisons with pre-2022 NDHS rounds are needed, begun childbearing remains the more comparable measure, but here it works better as background context than as the main way of reading the data."
+      }
+    ],
+    "takeaways": [
+      "Teen pregnancy is highly uneven across the country, with Zamboanga Peninsula, MIMAROPA, and SOCCSKSARGEN standing far above NCR and other low-burden areas.",
+      "The regional picture is richer than a single ranking because some places are shaped more by live birth, while others stand out for current pregnancy or reported pregnancy loss.",
+      "Outside the regional rows, the strongest concentration remains among teens with less schooling and fewer economic resources, while change from 2022 to 2025 is mixed rather than uniform."
+    ]
+  },
   "data": {
     "region": [
       {

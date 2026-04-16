@@ -121,7 +121,12 @@
     .chart-grid { grid-template-columns: repeat(2, 1fr); }
   }
 
-  .chart-group { margin-bottom: 36px; }
+  .chart-group {
+    margin-bottom: 36px;
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-divider);
+    padding: 16px 16px 14px;
+  }
   .chart-group-label {
     font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
     color: var(--section-color); margin-bottom: 14px;
@@ -291,6 +296,7 @@ let appData       = null;
 let mapReady      = false;
 let chartsReady   = false;
 let activeTab     = 'map';
+const TITLE_SUFFIX = ' | 2025 NDHS Key Indicators';
 
 function notifyParentHash(hash) {
   try { window.parent.postMessage({ type: 'child-hash', hash }, '*'); } catch (e) {}
@@ -330,7 +336,7 @@ window.addEventListener('hashchange', () => {
 // ─────────────────────────────────────────────────────────────────────────────
 d3.json('./data.json').then(d => {
   appData = d;
-  document.title = d.title + ' — NDHS 2025';
+  document.title = d.title + TITLE_SUFFIX;
   mapReady = true;
   initMap(d.mapConfig);
   switchTab(location.hash.replace(/^#/, '') || 'map', true);
@@ -384,6 +390,10 @@ function renderCharts(data) {
 }
 
 function drawGroupChart(container, group) {
+  if (group.layout === 'vertical-comparison') {
+    drawVerticalGroupChart(container, group);
+    return;
+  }
   // Layout constants (in SVG user units, viewBox width = 640)
   const VW      = 640;
   const ML      = 172;   // left margin — room for longest category labels
@@ -392,7 +402,7 @@ function drawGroupChart(container, group) {
   const MB      = 4;
   const INNER_W = VW - ML - MR;
   const BAR_H   = 14;
-  const PAIR_GAP = 3;    // px between 2025 bar and 2022 bar
+  const PAIR_GAP = 3;    // px between 2022 bar and 2025 bar
   const CAT_GAP  = 16;   // px between category pairs
   const PAIR_H   = BAR_H * 2 + PAIR_GAP;
 
@@ -412,8 +422,8 @@ function drawGroupChart(container, group) {
   // Legend appended after SVG (set up container now, fill after SVG is built)
   const legendDiv = el('div', 'chart-legend');
   legendDiv.innerHTML =
-    `<span><span class="legend-swatch" style="background:var(--bar-2025)"></span>2025</span>` +
-    `<span><span class="legend-swatch s2022" style="background:var(--bar-2022)"></span>2022</span>`;
+    `<span><span class="legend-swatch s2022" style="background:var(--bar-2022)"></span>2022</span>` +
+    `<span><span class="legend-swatch" style="background:var(--bar-2025)"></span>2025</span>`;
 
   const svgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svgEl.setAttribute('viewBox', `0 0 ${VW} ${svgH}`);
@@ -447,19 +457,20 @@ function drawGroupChart(container, group) {
       .attr('fill', 'var(--text-color)')
       .text(cat.label);
 
-    // 2025 bar
-    if (cat.y2025 != null) {
-      const w = x(cat.y2025);
+    // 2022 bar
+    if (cat.y2022 != null) {
+      const w = x(cat.y2022);
       cg.append('rect')
         .attr('x', 0).attr('y', 0)
         .attr('width', w).attr('height', BAR_H)
-        .attr('fill', 'var(--bar-2025)');
+        .attr('fill', 'var(--bar-2022)')
+        .attr('stroke', 'rgba(0,0,0,0.12)').attr('stroke-width', 0.5);
       cg.append('text')
         .attr('x', w + 5).attr('y', BAR_H / 2)
         .attr('dominant-baseline', 'middle')
         .attr('font-size', 11).attr('font-family', 'monospace')
-        .attr('fill', 'var(--data-value-color)')
-        .text(cat.y2025 + '%');
+        .attr('fill', 'var(--data-label-color)')
+        .text(cat.y2022 + '%');
     } else {
       cg.append('text')
         .attr('x', 5).attr('y', BAR_H / 2)
@@ -469,21 +480,20 @@ function drawGroupChart(container, group) {
         .text('N/A');
     }
 
-    // 2022 bar
+    // 2025 bar
     const y2 = BAR_H + PAIR_GAP;
-    if (cat.y2022 != null) {
-      const w = x(cat.y2022);
+    if (cat.y2025 != null) {
+      const w = x(cat.y2025);
       cg.append('rect')
         .attr('x', 0).attr('y', y2)
         .attr('width', w).attr('height', BAR_H)
-        .attr('fill', 'var(--bar-2022)')
-        .attr('stroke', 'rgba(0,0,0,0.12)').attr('stroke-width', 0.5);
+        .attr('fill', 'var(--bar-2025)');
       cg.append('text')
         .attr('x', w + 5).attr('y', y2 + BAR_H / 2)
         .attr('dominant-baseline', 'middle')
         .attr('font-size', 11).attr('font-family', 'monospace')
-        .attr('fill', 'var(--data-label-color)')
-        .text(cat.y2022 + '%');
+        .attr('fill', 'var(--data-value-color)')
+        .text(cat.y2025 + '%');
     } else {
       cg.append('text')
         .attr('x', 5).attr('y', y2 + BAR_H / 2)
@@ -493,6 +503,136 @@ function drawGroupChart(container, group) {
         .text('N/A');
     }
   });
+}
+
+function drawVerticalGroupChart(container, group) {
+  const cats = group.categories;
+  const n = cats.length;
+  const VW = 640;
+  const VH = 360;
+  const ML = 42;
+  const MR = 16;
+  const MT = 10;
+  const MB = 82;
+  const INNER_W = VW - ML - MR;
+  const INNER_H = VH - MT - MB;
+  const maxLabelLen = d3.max(cats, d => String(d.label || '').length) || 0;
+  const tickEvery = group.showAllLabels ? 1 : ((n > 6 || maxLabelLen > 14) ? 2 : 1);
+
+  const allVals = cats.flatMap(c => [c.y2025, c.y2022].filter(v => v != null));
+  const rawMax = allVals.length ? d3.max(allVals) : 100;
+  const yMax = Math.ceil(rawMax * 1.15 / 5) * 5 || 5;
+  const x = d3.scaleBand()
+    .domain(cats.map(c => c.label))
+    .range([0, INNER_W])
+    .padding(0.18);
+  const xInner = d3.scaleBand()
+    .domain(['2022', '2025'])
+    .range([0, x.bandwidth()])
+    .padding(0.12);
+  const y = d3.scaleLinear()
+    .domain([0, yMax])
+    .range([INNER_H, 0]);
+
+  const wrap = el('div', 'chart-svg-wrap');
+  container.appendChild(wrap);
+
+  const legendDiv = el('div', 'chart-legend');
+  legendDiv.innerHTML =
+    `<span><span class="legend-swatch s2022" style="background:var(--bar-2022)"></span>2022</span>` +
+    `<span><span class="legend-swatch" style="background:var(--bar-2025)"></span>2025</span>`;
+
+  const svgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svgEl.setAttribute('viewBox', `0 0 ${VW} ${VH}`);
+  svgEl.setAttribute('preserveAspectRatio', 'xMinYMid meet');
+  wrap.appendChild(svgEl);
+
+  const svg = d3.select(svgEl);
+  const g = svg.append('g').attr('transform', `translate(${ML},${MT})`);
+
+  g.append('line')
+    .attr('x1', 0).attr('y1', INNER_H)
+    .attr('x2', INNER_W).attr('y2', INNER_H)
+    .attr('stroke', 'var(--chart-axis)').attr('stroke-width', 1);
+
+  const ticks = d3.range(0, yMax + 0.1, 5);
+  ticks.forEach(tick => {
+    const yy = y(tick);
+    g.append('line')
+      .attr('x1', 0).attr('y1', yy)
+      .attr('x2', INNER_W).attr('y2', yy)
+      .attr('stroke', 'var(--chart-axis)')
+      .attr('stroke-width', tick === 0 ? 0 : 1)
+      .attr('opacity', tick === 0 ? 0 : 0.55);
+    g.append('text')
+      .attr('x', -8).attr('y', yy)
+      .attr('text-anchor', 'end')
+      .attr('dominant-baseline', 'middle')
+      .attr('font-size', 10)
+      .attr('font-family', 'monospace')
+      .attr('fill', 'var(--data-label-color)')
+      .text(tick);
+  });
+
+  const groups = g.selectAll('g.cat')
+    .data(cats)
+    .join('g')
+    .attr('class', 'cat')
+    .attr('transform', d => `translate(${x(d.label)},0)`);
+
+  groups.each(function(cat, i) {
+    const cg = d3.select(this);
+    [
+      { key: 'y2022', label: '2022', fill: 'var(--bar-2022)', stroke: 'rgba(0,0,0,0.12)', textFill: 'var(--data-label-color)' },
+      { key: 'y2025', label: '2025', fill: 'var(--bar-2025)', stroke: null, textFill: 'var(--data-value-color)' },
+    ].forEach(series => {
+      const value = cat[series.key];
+      const barX = xInner(series.label);
+      if (value != null) {
+        const barY = y(value);
+        const barH = INNER_H - barY;
+        cg.append('rect')
+          .attr('x', barX)
+          .attr('y', barY)
+          .attr('width', xInner.bandwidth())
+          .attr('height', barH)
+          .attr('fill', series.fill)
+          .attr('stroke', series.stroke)
+          .attr('stroke-width', series.stroke ? 0.5 : 0);
+        cg.append('text')
+          .attr('x', barX + xInner.bandwidth() / 2)
+          .attr('y', Math.max(barY - 6, 10))
+          .attr('text-anchor', 'middle')
+          .attr('font-size', 10)
+          .attr('font-family', 'monospace')
+          .attr('fill', series.textFill)
+          .text(value + '%');
+      } else {
+        cg.append('text')
+          .attr('x', barX + xInner.bandwidth() / 2)
+          .attr('y', INNER_H - 6)
+          .attr('text-anchor', 'middle')
+          .attr('font-size', 9)
+          .attr('font-family', 'monospace')
+          .attr('fill', 'var(--no-data-color)')
+          .text('N/A');
+      }
+    });
+
+    if (i % tickEvery === 0) {
+      cg.append('text')
+        .attr('x', x.bandwidth() / 2)
+        .attr('y', INNER_H + 14)
+        .attr('text-anchor', 'end')
+        .attr('transform', `rotate(-36, ${x.bandwidth() / 2}, ${INNER_H + 14})`)
+        .attr('font-size', 11)
+        .attr('font-family', 'sans-serif')
+        .attr('fill', 'var(--text-color)')
+        .text(cat.label);
+    }
+  });
+
+  container.appendChild(legendDiv);
 }
 
 // ═════════════════════════════════════════════════════════════════════════════
@@ -580,8 +720,8 @@ function mapRankedListHTML(activePsgc) {
 }
 
 function openMapWelcome() {
-  document.getElementById('map-eyebrow').textContent    = 'Table 2';
-  document.getElementById('map-lgu-name').textContent   = 'Philippines';
+  document.getElementById('map-eyebrow').textContent    = 'Survey Profile';
+  document.getElementById('map-lgu-name').textContent   = 'Background Characteristics';
   document.getElementById('map-region-label').textContent = '';
   const desc = `<p style="font-size:12px;color:var(--text-color);line-height:1.8;margin-bottom:12px">` +
     `Distribution of survey respondents (women aged 15–49) by region. ` +

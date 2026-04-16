@@ -1,5 +1,21 @@
 [
   {
+    "slug": "fertility-preferences-2025",
+    "title": "Fertility Preferences",
+    "description": "Desire for children by region: want no more, timing preferences, sterilization, and declared infecundity (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-16"
+  },
+  {
+    "slug": "desire-to-limit-childbearing-2025",
+    "title": "Desire to Limit Childbearing",
+    "description": "Want no more children or sterilized by region and number of living children (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-16"
+  },
+  {
     "slug": "fertility-rate-2025",
     "title": "Total Fertility Rate",
     "description": "Total fertility rate by region (NDHS 2025)",
@@ -10,31 +26,7 @@
   {
     "slug": "teenage-pregnancy-2025",
     "title": "Teenage Pregnancy",
-    "description": "Percentage of women aged 15–19 who have ever been pregnant, by region (NDHS 2025)",
-    "year": "2025",
-    "group": "2025 National Demographic and Health Survey (NDHS)",
-    "addedAt": "2026-04-15"
-  },
-  {
-    "slug": "contraceptive-use-2025",
-    "title": "Contraceptive Use",
-    "description": "Current contraceptive use by region — any, modern, and traditional methods (NDHS 2025)",
-    "year": "2025",
-    "group": "2025 National Demographic and Health Survey (NDHS)",
-    "addedAt": "2026-04-15"
-  },
-  {
-    "slug": "childhood-mortality-2025",
-    "title": "Childhood Mortality Rates",
-    "description": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates by region (NDHS 2025)",
-    "year": "2025",
-    "group": "2025 National Demographic and Health Survey (NDHS)",
-    "addedAt": "2026-04-15"
-  },
-  {
-    "slug": "child-discipline-2025",
-    "title": "Child Discipline",
-    "description": "Child disciplining methods experienced by children aged 1–14, by region (NDHS 2025)",
+    "description": "Percentage of women aged 15-19 who have ever been pregnant, by region (NDHS 2025)",
     "year": "2025",
     "group": "2025 National Demographic and Health Survey (NDHS)",
     "addedAt": "2026-04-15"

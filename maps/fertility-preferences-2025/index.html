@@ -6,7 +6,7 @@
 <title>Philippines Map</title>
 <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
 <style>
-  /* ── Theme variables ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Theme variables Ã¢â€â‚¬Ã¢â€â‚¬ */
   :root {
     --bg:               #edf1f7;
     --panel-bg:         #ffffff;
@@ -52,6 +52,141 @@
   svg { display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; }
   svg:active { cursor: grabbing; }
 
+  #tab-bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 30;
+    display: flex; align-items: center; gap: 6px;
+    padding: 10px 16px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--panel-divider);
+    overflow-x: auto; white-space: nowrap;
+  }
+  #tab-bar::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    flex-shrink: 0;
+    background: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    color: var(--btn-color); font: 12px monospace;
+    padding: 5px 13px; cursor: pointer;
+    letter-spacing: 0.4px;
+    transition: background 0.15s, border-color 0.15s;
+    white-space: nowrap;
+  }
+  .tab-btn.active {
+    background: var(--btn-hover-bg);
+    border-color: rgba(0,0,0,0.36);
+  }
+  .tab-btn:hover { background: var(--btn-hover-bg); }
+
+  .tab-panel {
+    display: none;
+    position: fixed; top: 46px; left: 0; right: 0; bottom: 0;
+  }
+  .tab-panel.active { display: block; }
+  #tab-map { overflow: hidden; }
+  #tab-charts {
+    overflow-y: auto;
+    padding: 28px 28px 56px;
+  }
+  #tab-charts::-webkit-scrollbar { width: 4px; }
+  #tab-charts::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 2px; }
+  #charts-container {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+  #tab-insights {
+    overflow-y: auto;
+    padding: 28px 28px 56px;
+  }
+  #tab-insights::-webkit-scrollbar { width: 4px; }
+  #tab-insights::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 2px; }
+  #insights-container {
+    max-width: 920px;
+    margin: 0 auto;
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-divider);
+    padding: 24px 24px 20px;
+  }
+  .insights-page-title {
+    font-size: 20px; font-weight: 600; color: var(--lgu-name-color);
+    line-height: 1.25; margin-bottom: 4px;
+  }
+  .insights-page-subtitle {
+    font-size: 12px; color: var(--region-color); margin-bottom: 24px; line-height: 1.6;
+  }
+  .insight-card {
+    padding: 0;
+    margin-bottom: 22px;
+  }
+  .insight-heading {
+    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--section-color); margin-bottom: 10px;
+  }
+  .insight-text {
+    font-size: 13px; color: var(--text-color); line-height: 1.75;
+  }
+  .insight-takeaways {
+    display: grid;
+    gap: 10px;
+  }
+  .insight-takeaway {
+    font-size: 13px; color: var(--text-color); line-height: 1.7;
+    padding-left: 14px;
+    position: relative;
+  }
+  .insight-takeaway::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.28);
+  }
+  .chart-page-title {
+    font-size: 20px; font-weight: 600; color: var(--lgu-name-color);
+    line-height: 1.25; margin-bottom: 4px;
+  }
+  .chart-page-subtitle {
+    font-size: 12px; color: var(--region-color); margin-bottom: 24px; line-height: 1.6;
+  }
+  .chart-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .chart-block {
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-divider);
+    padding: 16px 16px 14px;
+  }
+  .chart-block-title {
+    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--section-color); margin-bottom: 8px;
+  }
+  .chart-block-subtitle {
+    font-size: 12px; color: var(--region-color); line-height: 1.55;
+    margin-bottom: 14px;
+  }
+  .chart-svg-wrap { width: 100%; }
+  .chart-svg-wrap svg { display: block; width: 100%; overflow: visible; }
+  .chart-legend {
+    display: flex; flex-wrap: wrap; gap: 10px 14px; margin-top: 12px;
+    font: 11px monospace; color: var(--data-label-color); align-items: center;
+  }
+  .legend-swatch {
+    display: inline-block; width: 12px; height: 12px;
+    border-radius: 2px; margin-right: 4px; vertical-align: middle;
+  }
+  .chart-footnotes {
+    margin-top: 28px; padding-top: 16px;
+    border-top: 1px solid var(--panel-divider);
+  }
+  .chart-note {
+    font-size: 11px; color: var(--data-label-color); line-height: 1.7;
+    margin-bottom: 4px;
+  }
+
   .region   { fill: var(--poly-fill); stroke: var(--poly-stroke); stroke-width: 0.8; cursor: pointer; }
   .region:hover   { opacity: 0.8; stroke: var(--hover-stroke); stroke-width: 1.5; }
   .province { fill: var(--poly-fill); stroke: var(--poly-stroke); stroke-width: 0.5; cursor: pointer; }
@@ -64,7 +199,7 @@
   .municity:hover { opacity: 0.8; stroke: var(--hover-stroke); stroke-width: 0.8; }
   .leaf { cursor: default; }
   .leaf:hover { opacity: 1; stroke: var(--poly-stroke); stroke-width: inherit; }
-  .svg-bg    { fill: var(--poly-fill); }
+  .svg-bg    { fill: var(--bg); }
 
   .map-label {
     fill: var(--label-fill);
@@ -76,7 +211,7 @@
     letter-spacing: 0.3px;
   }
 
-  /* ── Overlay buttons ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Overlay buttons Ã¢â€â‚¬Ã¢â€â‚¬ */
   #back-btn, #info-btn {
     position: fixed;
     background: var(--btn-bg);
@@ -88,7 +223,7 @@
     z-index: 10;
     display: none;
   }
-  #back-btn { top: 16px; right: 16px; }
+  #back-btn { top: 62px; right: 16px; }
   #info-btn { bottom: 16px; right: 16px; font-size: 15px; padding: 6px 12px; }
   #back-btn:hover, #info-btn:hover { background: var(--btn-hover-bg); }
 
@@ -100,9 +235,9 @@
     transition: color 0.25s, background 0.25s;
   }
 
-  /* ── Detail panel — desktop ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Detail panel Ã¢â‚¬â€ desktop Ã¢â€â‚¬Ã¢â€â‚¬ */
   #detail {
-    position: fixed; top: 0; right: -380px; bottom: 0; width: 360px;
+    position: fixed; top: 46px; right: -380px; bottom: 0; width: 360px;
     background: var(--panel-bg); border-left: 1px solid var(--panel-border);
     display: flex; flex-direction: column;
     transition: right 0.35s cubic-bezier(0.4,0,0.2,1),
@@ -112,7 +247,7 @@
   #detail.open { right: 0; }
   #detail.peek { right: -285px; }
 
-  /* ── Detail panel — mobile ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Detail panel Ã¢â‚¬â€ mobile Ã¢â€â‚¬Ã¢â€â‚¬ */
   @media (pointer: coarse) {
     #detail {
       width: 100%; right: 0; top: auto; bottom: 0; height: 55vh;
@@ -166,7 +301,7 @@
   #detail-body::-webkit-scrollbar { width: 3px; }
   #detail-body::-webkit-scrollbar-thumb { background: var(--scroll-thumb); }
 
-  /* ── Data field rows ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Data field rows Ã¢â€â‚¬Ã¢â€â‚¬ */
   .data-row {
     display: flex; justify-content: space-between; align-items: baseline;
     padding: 8px 0; border-bottom: 1px solid var(--panel-divider);
@@ -179,23 +314,23 @@
   .no-findings { text-align: center; padding: 40px 0; color: var(--no-data-color); font-size: 13px; line-height: 1.8; }
   .section-head { font: 10px monospace; letter-spacing: 1.5px; text-transform: uppercase; color: var(--section-color); margin: 16px 0 8px; }
 
-  /* ── Legend ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Legend Ã¢â€â‚¬Ã¢â€â‚¬ */
   .legend-bar { height: 10px; border-radius: 2px; margin: 6px 0 4px; }
   .legend-ends { display: flex; justify-content: space-between; font: 10px monospace; color: var(--data-label-color); }
 
-  /* ── Metric toggle ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Metric toggle Ã¢â€â‚¬Ã¢â€â‚¬ */
   #metric-toggle {
-    position: fixed; top: 12px; left: 50%; transform: translateX(-50%);
+    position: fixed; top: 58px; left: 50%; transform: translateX(-50%);
     z-index: 10;
     background: rgba(255,255,255,0.92);
     border-radius: 20px; padding: 4px;
     display: flex; gap: 2px;
     box-shadow: 0 1px 6px rgba(0,0,0,0.15);
-    font-size: 11px; user-select: none;
+    font-size: 12px; user-select: none;
   }
   #metric-toggle input[type=radio] { display: none; }
   #metric-toggle label {
-    padding: 5px 11px; border-radius: 16px; cursor: pointer;
+    padding: 5px 14px; border-radius: 16px; cursor: pointer;
     color: var(--text-color); white-space: nowrap;
     transition: background 0.15s, color 0.15s;
   }
@@ -203,7 +338,7 @@
     background: var(--hover-stroke); color: #fff;
   }
 
-  /* ── Ranked list ── */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Ranked list Ã¢â€â‚¬Ã¢â€â‚¬ */
   .ranked-row {
     display: flex; align-items: center; gap: 7px;
     padding: 5px 0; border-bottom: 1px solid var(--panel-divider);
@@ -219,24 +354,25 @@
 </head>
 <body>
 <svg id="map"></svg>
-<button id="back-btn">← Back</button>
-<button id="info-btn">ℹ Details</button>
-<div id="status">Loading…</div>
+<button id="back-btn">Ã¢â€ Â Back</button>
+<button id="info-btn">Ã¢â€žÂ¹ Details</button>
+<div id="status">LoadingÃ¢â‚¬Â¦</div>
 <div id="metric-toggle">
-  <label><input type="radio" name="metric" value="nn_rate" checked><span>Neonatal (NN)</span></label>
-  <label><input type="radio" name="metric" value="pnn_rate"><span>Post-neonatal (PNN)</span></label>
-  <label><input type="radio" name="metric" value="infant_rate"><span>Infant (1q0)</span></label>
-  <label><input type="radio" name="metric" value="child_rate"><span>Child (4q1)</span></label>
-  <label><input type="radio" name="metric" value="u5_rate"><span>Under-5 (5q0)</span></label>
+  <label><input type="radio" name="metric" value="want_no_more_pct" checked><span>Want no more</span></label>
+  <label><input type="radio" name="metric" value="another_soon_pct"><span>Have another soon</span></label>
+  <label><input type="radio" name="metric" value="another_later_pct"><span>Have another later</span></label>
+  <label><input type="radio" name="metric" value="another_undecided_pct"><span>Have another, undecided when</span></label>
+  <label><input type="radio" name="metric" value="sterilized_pct"><span>Sterilized</span></label>
+  <label><input type="radio" name="metric" value="declared_infecund_pct"><span>Declared infecund</span></label>
 </div>
 <div id="detail">
   <div id="detail-header">
     <div id="detail-header-row">
-      <div class="detail-eyebrow" id="detail-eyebrow">—</div>
-      <button id="detail-close">✕</button>
+      <div class="detail-eyebrow" id="detail-eyebrow">Ã¢â‚¬â€</div>
+      <button id="detail-close">X</button>
     </div>
-    <div class="detail-lgu-name" id="detail-lgu-name">—</div>
-    <div class="detail-region"   id="detail-region">—</div>
+    <div class="detail-lgu-name" id="detail-lgu-name">Ã¢â‚¬â€</div>
+    <div class="detail-region"   id="detail-region">Ã¢â‚¬â€</div>
   </div>
   <div id="detail-body"></div>
 </div>
@@ -247,20 +383,86 @@ const backBtn  = document.getElementById('back-btn');
 const infoBtn  = document.getElementById('info-btn');
 const svgEl    = document.getElementById('map');
 const svg      = d3.select('#map');
+const metricToggle = document.getElementById('metric-toggle');
+const detail = document.getElementById('detail');
 svg.insert('rect', ':first-child').attr('class', 'svg-bg').attr('width', '100%').attr('height', '100%').style('pointer-events', 'none');
 const g        = svg.append('g');
 
-// ── Config & data ─────────────────────────────────────────────────────────────
+let activeTab = 'map';
+let chartsReady = false;
+let chartsContainer = null;
+
+(function initTabbedLayout() {
+  const tabBar = document.createElement('div');
+  tabBar.id = 'tab-bar';
+  tabBar.innerHTML = `
+    <button class="tab-btn active" data-tab="map">Maps</button>
+    <button class="tab-btn" data-tab="charts">Data</button>
+    <button class="tab-btn" data-tab="insights">Insights</button>
+  `;
+
+  const mapPanel = document.createElement('div');
+  mapPanel.id = 'tab-map';
+  mapPanel.className = 'tab-panel active';
+
+  const chartsPanel = document.createElement('div');
+  chartsPanel.id = 'tab-charts';
+  chartsPanel.className = 'tab-panel';
+
+  const insightsPanel = document.createElement('div');
+  insightsPanel.id = 'tab-insights';
+  insightsPanel.className = 'tab-panel';
+
+  chartsContainer = document.createElement('div');
+  chartsContainer.id = 'charts-container';
+  chartsPanel.appendChild(chartsContainer);
+
+  const insightsContainer = document.createElement('div');
+  insightsContainer.id = 'insights-container';
+  insightsPanel.appendChild(insightsContainer);
+
+  [svgEl, backBtn, infoBtn, status, metricToggle, detail].forEach(node => mapPanel.appendChild(node));
+
+  document.body.insertBefore(tabBar, document.body.firstChild);
+  document.body.insertBefore(mapPanel, tabBar.nextSibling);
+  document.body.insertBefore(chartsPanel, mapPanel.nextSibling);
+  document.body.insertBefore(insightsPanel, chartsPanel.nextSibling);
+
+  tabBar.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => switchTab(btn.dataset.tab, false, true));
+  });
+})();
+
+function switchTab(tab, replace = false, syncHash = true) {
+  activeTab = tab === 'charts' ? 'charts' : tab === 'insights' ? 'insights' : 'map';
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === activeTab));
+  document.getElementById('tab-map').classList.toggle('active', activeTab === 'map');
+  document.getElementById('tab-charts').classList.toggle('active', activeTab === 'charts');
+  document.getElementById('tab-insights').classList.toggle('active', activeTab === 'insights');
+  if (activeTab === 'charts' && config.chartData && !chartsReady) {
+    renderCharts(config.chartData);
+    chartsReady = true;
+  }
+  if (activeTab === 'insights' && config.insights) {
+    renderInsights(config.insights);
+  }
+  if (syncHash) {
+    const current = parseStateHash(parseHash());
+    pushURL(buildStateHash(current.viewHash), replace);
+  }
+}
+
+// Ã¢â€â‚¬Ã¢â€â‚¬ Config & data Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 let config = {};
 let dataByLevel = { region: {}, province: {}, municity: {} };
 let colorScale  = null;
 let GEO_BASE    = './philippines-json-maps';
 
-// PSGC → display name, populated from psgc-index.json at boot + GeoJSON lazily
+// PSGC Ã¢â€ â€™ display name, populated from psgc-index.json at boot + GeoJSON lazily
 const nameRegistry = {};
-// child PSGC (string) → parent PSGC (string): province→region, municity→province
+// child PSGC (string) Ã¢â€ â€™ parent PSGC (string): provinceÃ¢â€ â€™region, municityÃ¢â€ â€™province
 const parentMap = {};
-// province PSGCs (strings) that have at least one municity data record — gates drill-down
+// province PSGCs (strings) that have at least one municity data record Ã¢â‚¬â€ gates drill-down
 let provincesWithMunicity = new Set();
 
 function registerNames(features, psgcKey, nameKey) {
@@ -324,7 +526,7 @@ async function loadConfig() {
         .map(r => parentMap[String(r.psgc)])
         .filter(Boolean)
     );
-  } catch(e) { /* psgc-index.json absent — names populated lazily from GeoJSON */ }
+  } catch(e) { /* psgc-index.json absent Ã¢â‚¬â€ names populated lazily from GeoJSON */ }
 }
 
 // Returns a fill color for a given level + PSGC, or null to fall back to CSS
@@ -333,6 +535,230 @@ function getFill(level, psgc) {
   const record = dataByLevel[level][String(psgc)];
   if (record && record[config.colorField] != null) return colorScale(record[config.colorField]);
   return null;
+}
+
+function renderCharts(chartData) {
+  if (!chartsContainer) return;
+  chartsContainer.innerHTML = '';
+
+  const header = document.createElement('div');
+  header.innerHTML = `
+    <div class="chart-page-title">${chartData.title || config.title}</div>
+    <div class="chart-page-subtitle">${chartData.subtitle || ''}</div>
+  `;
+  chartsContainer.appendChild(header);
+
+  const grid = document.createElement('div');
+  grid.className = 'chart-grid';
+  chartsContainer.appendChild(grid);
+
+  (chartData.blocks || []).forEach(block => {
+    const palette = getChartSeriesPalette(chartData.series || [], block.year);
+    const card = document.createElement('section');
+    card.className = 'chart-block';
+
+    const title = document.createElement('div');
+    title.className = 'chart-block-title';
+    title.textContent = block.title ? `${block.title} • ${block.year}` : String(block.year || '');
+    card.appendChild(title);
+
+    const subtitle = document.createElement('div');
+    subtitle.className = 'chart-block-subtitle';
+    subtitle.textContent = 'Currently married women aged 15-49 years, grouped by number of living children and fertility preference.';
+    card.appendChild(subtitle);
+
+    drawGroupedBars(card, chartData, block, palette);
+
+    const legend = document.createElement('div');
+    legend.className = 'chart-legend';
+    legend.innerHTML = palette.map(series =>
+      `<span><span class="legend-swatch" style="background:${series.displayColor}"></span>${series.label}</span>`
+    ).join('');
+    card.appendChild(legend);
+
+    grid.appendChild(card);
+  });
+
+  if (chartData.notes?.length) {
+    const foot = document.createElement('div');
+    foot.className = 'chart-footnotes';
+    chartData.notes.forEach(note => {
+      const row = document.createElement('div');
+      row.className = 'chart-note';
+      row.textContent = note;
+      foot.appendChild(row);
+    });
+    chartsContainer.appendChild(foot);
+  }
+}
+
+function getChartSeriesPalette(series, year) {
+  const useLighter = String(year) === '2022';
+  return series.map(item => {
+    const base = d3.color(item.color);
+    const displayColor = useLighter && base ? base.brighter(0.9).formatHex() : item.color;
+    return { ...item, displayColor };
+  });
+}
+
+function formatChartValue(row, key) {
+  const displayKey = `${key}_display`;
+  if (row[displayKey] != null) return String(row[displayKey]);
+  if (row[key] == null) return 'NA';
+  return String(row[key]);
+}
+
+function drawGroupedBars(container, chartData, block, series) {
+  const rows = block.rows || [];
+  const VW = 760;
+  const VH = 400;
+  const ML = 48;
+  const MR = 18;
+  const MT = 10;
+  const MB = 74;
+  const INNER_W = VW - ML - MR;
+  const INNER_H = VH - MT - MB;
+  const yMax = chartData.yMax || 100;
+
+  const wrap = document.createElement('div');
+  wrap.className = 'chart-svg-wrap';
+  container.appendChild(wrap);
+
+  const svgNode = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svgNode.setAttribute('viewBox', `0 0 ${VW} ${VH}`);
+  svgNode.setAttribute('preserveAspectRatio', 'xMinYMid meet');
+  wrap.appendChild(svgNode);
+
+  const chartSvg = d3.select(svgNode);
+  const chart = chartSvg.append('g').attr('transform', `translate(${ML},${MT})`);
+  const x = d3.scaleBand().domain(rows.map(r => r.label)).range([0, INNER_W]).padding(0.2);
+  const xInner = d3.scaleBand().domain(series.map(s => s.key)).range([0, x.bandwidth()]).padding(0.1);
+  const y = d3.scaleLinear().domain([0, yMax]).range([INNER_H, 0]);
+
+  chart.append('line')
+    .attr('x1', 0).attr('y1', INNER_H)
+    .attr('x2', INNER_W).attr('y2', INNER_H)
+    .attr('stroke', 'var(--panel-divider)');
+
+  d3.range(0, yMax + 0.01, 10).forEach(tick => {
+    const yy = y(tick);
+    chart.append('line')
+      .attr('x1', 0).attr('y1', yy)
+      .attr('x2', INNER_W).attr('y2', yy)
+      .attr('stroke', 'var(--panel-divider)')
+      .attr('stroke-dasharray', tick === 0 ? null : '2,3');
+    chart.append('text')
+      .attr('x', -8).attr('y', yy)
+      .attr('text-anchor', 'end')
+      .attr('dominant-baseline', 'middle')
+      .attr('font-size', 10)
+      .attr('font-family', 'monospace')
+      .attr('fill', 'var(--data-label-color)')
+      .text(tick);
+  });
+
+  const groups = chart.selectAll('g.child-group')
+    .data(rows)
+    .join('g')
+    .attr('class', 'child-group')
+    .attr('transform', d => `translate(${x(d.label)},0)`);
+
+  groups.each(function(row) {
+    const cg = d3.select(this);
+    series.forEach(s => {
+      const value = row[s.key];
+      if (value == null) return;
+      cg.append('rect')
+        .attr('x', xInner(s.key))
+        .attr('y', y(value))
+        .attr('width', xInner.bandwidth())
+        .attr('height', INNER_H - y(value))
+        .attr('fill', s.displayColor);
+      cg.append('text')
+        .attr('x', xInner(s.key) + xInner.bandwidth() / 2)
+        .attr('y', Math.max(y(value) - 5, 10))
+        .attr('text-anchor', 'middle')
+        .attr('font-size', 7.5)
+        .attr('font-family', 'monospace')
+        .attr('fill', 'var(--data-label-color)')
+        .text(formatChartValue(row, s.key));
+    });
+
+    cg.append('text')
+      .attr('x', x.bandwidth() / 2)
+      .attr('y', INNER_H + 16)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', 11)
+      .attr('font-family', 'sans-serif')
+      .attr('fill', 'var(--text-color)')
+      .text(row.label);
+  });
+
+  chartSvg.append('text')
+    .attr('x', ML + INNER_W / 2)
+    .attr('y', VH - 18)
+    .attr('text-anchor', 'middle')
+    .attr('font-size', 11)
+    .attr('font-family', 'sans-serif')
+    .attr('fill', 'var(--data-label-color)')
+    .text(chartData.xLabel || block.title || 'Category');
+
+  chartSvg.append('text')
+    .attr('transform', `translate(16 ${MT + INNER_H / 2}) rotate(-90)`)
+    .attr('text-anchor', 'middle')
+    .attr('font-size', 11)
+    .attr('font-family', 'sans-serif')
+    .attr('fill', 'var(--data-label-color)')
+    .text(chartData.yLabel || 'Percent');
+}
+
+function renderInsights(insights) {
+  const container = document.getElementById('insights-container');
+  if (!container || !insights) return;
+  container.innerHTML = '';
+
+  const header = document.createElement('div');
+  header.innerHTML = `
+    <div class="insights-page-title">${insights.title || config.title}</div>
+    <div class="insights-page-subtitle">${insights.subtitle || ''}</div>
+  `;
+  container.appendChild(header);
+
+  if (insights.overview) {
+    const block = document.createElement('section');
+    block.className = 'insight-card';
+    block.innerHTML = `
+      <div class="insight-heading">Overview</div>
+      <div class="insight-text">${insights.overview}</div>
+    `;
+    container.appendChild(block);
+  }
+
+  (insights.sections || []).forEach(section => {
+    const block = document.createElement('section');
+    block.className = 'insight-card';
+    block.innerHTML = `
+      <div class="insight-heading">${section.heading || ''}</div>
+      <div class="insight-text">${section.body || ''}</div>
+    `;
+    container.appendChild(block);
+  });
+
+  if (insights.takeaways?.length) {
+    const block = document.createElement('section');
+    block.className = 'insight-card';
+    block.innerHTML = `<div class="insight-heading">Key Takeaways</div>`;
+    const wrap = document.createElement('div');
+    wrap.className = 'insight-takeaways';
+    insights.takeaways.forEach(item => {
+      const row = document.createElement('div');
+      row.className = 'insight-takeaway';
+      row.textContent = item;
+      wrap.appendChild(row);
+    });
+    block.appendChild(wrap);
+    container.appendChild(block);
+  }
 }
 
 let currentContext = null; // { name, parentName, psgc, type }
@@ -345,13 +771,13 @@ const hucFeaturesByRegion   = {};
 const W = window.innerWidth, H = window.innerHeight;
 svgEl.setAttribute('viewBox', `0 0 ${W} ${H}`);
 
-// ── Zoom & pan ────────────────────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ Zoom & pan Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 const zoom = d3.zoom()
   .scaleExtent([0.5, 20])
   .on('zoom', event => { g.attr('transform', event.transform); });
 
 svg.call(zoom);
-svg.on('dblclick.zoom', null); // disable dblclick zoom — we use click for drill-down
+svg.on('dblclick.zoom', null); // disable dblclick zoom Ã¢â‚¬â€ we use click for drill-down
 
 function resetZoom(duration) {
   (duration ? svg.transition().duration(duration) : svg)
@@ -370,7 +796,7 @@ let viewStack   = [];
 let currentView = 'idle';
 let nationalFeatures = [], nationalPath;
 
-// ── Projection ────────────────────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ Projection Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function makePathFn(lonMin, lonMax, latMin, latMax) {
   const lonSpan = lonMax - lonMin, latSpan = latMax - latMin;
   const scale   = Math.min((W - 2*PAD) / lonSpan, (H - 2*PAD) / latSpan);
@@ -397,7 +823,7 @@ function boundsFromFeatures(features) {
   };
 }
 
-// ── Labels ────────────────────────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ Labels Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function shortenName(name, nameKey) {
   if (!name) return '';
   // For region names like "Region I (Ilocos Region)" extract the parenthetical
@@ -407,7 +833,7 @@ function shortenName(name, nameKey) {
     return name;          // e.g. "CARAGA", "MIMAROPA"
   }
   // For provinces / cities: truncate only if very long
-  return name.length > 20 ? name.slice(0, 18) + '…' : name;
+  return name.length > 20 ? name.slice(0, 18) + 'Ã¢â‚¬Â¦' : name;
 }
 
 function addLabels(features, pathFn, nameKey, fontSize) {
@@ -428,7 +854,7 @@ function addLabels(features, pathFn, nameKey, fontSize) {
     .attr('opacity', 1);
 }
 
-// ── Fade helpers ──────────────────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ Fade helpers Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function fadeIn(sel) {
   sel.attr('opacity', 0).transition().duration(400).ease(d3.easeCubicOut).attr('opacity', 1);
 }
@@ -445,7 +871,7 @@ function zoomThenRender(pathFn, feature, callback) {
     });
 }
 
-// ── URL routing ───────────────────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ URL routing Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function pushURL(hash, replace = false) {
   try { window.parent.postMessage({ type: 'child-hash', hash }, '*'); } catch (e) {}
   if (replace) {
@@ -459,6 +885,18 @@ function parseHash() {
   return location.hash.replace(/^#/, '');
 }
 
+function parseStateHash(hash = parseHash()) {
+  const parts = String(hash || '').split('--').filter(Boolean);
+  const tab = parts.includes('tinsights') ? 'insights' : parts.includes('tdata') ? 'charts' : 'map';
+  const metricToken = parts.find(p => p.startsWith('m'));
+  const viewToken = parts.find(p => p.startsWith('v'));
+  return {
+    tab,
+    metric: metricToken ? slugToMetric(metricToken.slice(1)) : null,
+    viewHash: viewToken ? '/' + viewToken.slice(1).split('-').filter(Boolean).join('/') : '/',
+  };
+}
+
 function metricToSlug(metric) {
   return String(metric || '').replace(/_(pct|rate)\b/g, '').replace(/_/g, '');
 }
@@ -469,8 +907,9 @@ function slugToMetric(slug) {
 }
 
 function buildStateHash(viewHash = '/') {
-  const defaultField = config.colorField || Object.keys(config.colorDomains || {})[0] || 'nn_rate';
-  const parts = ['m' + metricToSlug(defaultField)];
+  const defaultField = config.colorField || Object.keys(config.colorDomains || {})[0] || 'want_no_more_pct';
+  const tabToken = activeTab === 'insights' ? 'tinsights' : activeTab === 'charts' ? 'tdata' : 'tmap';
+  const parts = [tabToken, 'm' + metricToSlug(defaultField)];
   const cleanView = String(viewHash || '/').replace(/^\/+/, '');
   if (cleanView && cleanView !== '/') parts.push('v' + cleanView.replace(/\//g, '-'));
   return parts.join('--');
@@ -482,12 +921,10 @@ window.addEventListener('popstate', e => {
 });
 
 async function restoreFromHash(hash) {
-  if (!hash || hash === '/') { drawNational(); return; }
-  const parts = hash.split('--').filter(Boolean);
-  const metricToken = parts.find(p => p.startsWith('m'));
-  const viewToken = parts.find(p => p.startsWith('v'));
-  const metric = metricToken ? slugToMetric(metricToken.slice(1)) : null;
-  const pathParts = viewToken ? viewToken.slice(1).split('-').filter(Boolean) : [];
+  const state = parseStateHash(hash);
+  const metric = state.metric;
+  const pathParts = state.viewHash === '/' ? [] : state.viewHash.replace(/^\/+/, '').split('/').filter(Boolean);
+  activeTab = state.tab;
 
   if (metric) {
     const radio = document.querySelector(`input[name="metric"][value="${metric}"]`);
@@ -501,14 +938,14 @@ async function restoreFromHash(hash) {
     }
   }
 
-  if (!pathParts.length) { drawNational(); return; }
-  if (pathParts[0] !== 'region' || !pathParts[1]) { drawNational(); return; }
+  if (!pathParts.length) { drawNational(); switchTab(state.tab, true, false); return; }
+  if (pathParts[0] !== 'region' || !pathParts[1]) { drawNational(); switchTab(state.tab, true, false); return; }
 
   const regionPsgc = parseInt(pathParts[1]);
   await ensureNational();
 
   const regionFeature = nationalFeatures.find(f => f.properties.adm1_psgc === regionPsgc);
-  if (!regionFeature) { drawNational(); return; }
+  if (!regionFeature) { drawNational(); switchTab(state.tab, true, false); return; }
 
   // drillRegion guards against currentView==='idle', so prime it first
   currentView = 'national';
@@ -516,6 +953,7 @@ async function restoreFromHash(hash) {
   // /region/{r}
   if (!pathParts[2]) {
     drillRegion(regionFeature, true);
+    switchTab(state.tab, true, false);
     return;
   }
 
@@ -526,6 +964,7 @@ async function restoreFromHash(hash) {
       const provFeature = features.find(f => f.properties.adm2_psgc === provPsgc);
       if (provFeature) drillProvince(provFeature, provPath, nameKey, true);
     });
+    switchTab(state.tab, true, false);
     return;
   }
 
@@ -541,6 +980,7 @@ async function restoreFromHash(hash) {
         if (munFeature) drillMunicity(munFeature, munPath, provFeature.properties.adm2_en, true);
       });
     });
+    switchTab(state.tab, true, false);
     return;
   }
 
@@ -573,7 +1013,7 @@ function getHUCsForProvince(provPsgc) {
   return hucFeaturesByProvince[provPsgc] || [];
 }
 
-// ── Back ──────────────────────────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ Back Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function goBack() {
   if (viewStack.length < 2) return;
   currentView = 'idle';
@@ -594,7 +1034,7 @@ backBtn.addEventListener('click', () => {
   goBack();
 });
 
-// ── National ──────────────────────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ National Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 async function loadNational() {
   await ensureNational();
   viewStack = [{ render: drawNational }];
@@ -615,13 +1055,13 @@ async function loadNational() {
 }
 
 function openWelcome() {
-  document.getElementById('detail-eyebrow').textContent  = config.title || 'Philippines Map';
-  document.getElementById('detail-lgu-name').textContent = 'Philippines';
+  document.getElementById('detail-eyebrow').textContent  = 'Fertility';
+  document.getElementById('detail-lgu-name').textContent = 'Fertility Preferences';
   document.getElementById('detail-region').textContent   = config.maxDepth === 'region' ? '' : 'Select a region to begin';
   const desc = config.description
     ? `<p style="font-size:12px;color:var(--text-color);line-height:1.8;margin-top:8px">${config.description}</p>`
     : '';
-  detailBody.innerHTML = `<div class="no-findings" style="text-align:left;padding:20px 0">${desc}</div>` + noteHTML() + legendHTML() + rankedListHTML('region', null);
+  detailBody.innerHTML = `<div class="no-findings" style="text-align:left;padding:20px 0">${desc}</div>` + legendHTML() + rankedListHTML('region', null) + noteHTML();
   detail.classList.add('open');
   infoBtn.style.display = 'none';
 }
@@ -656,11 +1096,11 @@ function drawNational() {
     });
 
   addLabels(nationalFeatures, nationalPath, 'adm1_en', 10);
-  status.textContent = nationalFeatures.length + ' regions — click to drill in';
+  status.textContent = nationalFeatures.length + ' regions Ã¢â‚¬â€ click to drill in';
   pushURL(buildStateHash('/'), true);
 }
 
-// ── Region → provinces ────────────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ Region Ã¢â€ â€™ provinces Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function drillRegion(regionFeature, skipAnimation, afterRender) {
   if (currentView === 'idle') return;
   currentView = 'idle';
@@ -676,8 +1116,8 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
       currentView = 'region';
       currentContext = { name, parentName: 'Philippines', psgc, type: 'region' };
       backBtn.style.display = 'block';
-      backBtn.textContent = '← Philippines';
-      setPageTitle(name + ' — ' + config.title);
+      backBtn.textContent = 'Ã¢â€ Â Philippines';
+      setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
       showInfoBtn();
       if (detail.classList.contains('open')) populateDetail(name, 'Philippines', psgc, 'region');
       resetZoom();
@@ -753,7 +1193,7 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
       }
 
       const unit = isMunicity ? 'cities/municipalities' : 'provinces';
-      status.textContent = `${name} — ${features.length} ${unit}`;
+      status.textContent = `${name} Ã¢â‚¬â€ ${features.length} ${unit}`;
 
       if (afterRender) afterRender(provPath, features, nameKey);
     };
@@ -792,7 +1232,7 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
   }
 }
 
-// ── Municipality → isolated city view ────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ Municipality Ã¢â€ â€™ isolated city view Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
   if (currentView === 'idle') return;
   currentView = 'idle';
@@ -811,8 +1251,8 @@ function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
     currentView = 'municity';
     currentContext = { name, parentName, psgc, type: 'municity' };
     backBtn.style.display = 'block';
-    backBtn.textContent = '← ' + parentName;
-    setPageTitle(name + ' — ' + config.title);
+    backBtn.textContent = 'Ã¢â€ Â ' + parentName;
+    setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
     showInfoBtn();
     resetZoom();
     g.selectAll('*').remove();
@@ -846,7 +1286,7 @@ function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
   }
 }
 
-// ── Province → municipalities ─────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ Province Ã¢â€ â€™ municipalities Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afterRender) {
   if (currentView === 'idle') return;
   currentView = 'idle';
@@ -870,8 +1310,8 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
         const regionName = currentContext ? currentContext.name : '';
         currentContext = { name, parentName: regionName, psgc, type: 'province' };
         backBtn.style.display = 'block';
-        backBtn.textContent = '← ' + regionName;
-        setPageTitle(name + ' — ' + config.title);
+        backBtn.textContent = 'Ã¢â€ Â ' + regionName;
+        setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
         showInfoBtn();
         if (detail.classList.contains('open')) populateDetail(name, regionName, psgc, 'province');
         resetZoom();
@@ -887,7 +1327,7 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
           .call(fadeIn)
           .on('click', (e, d) => drillMunicity(d, munPath, name));
 
-        // Municipality labels — pointer-events enabled so tiny polygons (e.g. islands)
+        // Municipality labels Ã¢â‚¬â€ pointer-events enabled so tiny polygons (e.g. islands)
         // are still clickable via their label even when the polygon itself is too small to hit
         g.selectAll('text.mun-label')
           .data(munFeatures)
@@ -927,7 +1367,7 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
             .transition().delay(350).duration(300).attr('opacity', 1);
         }
 
-        status.textContent = `${name} — ${munFeatures.length} municipalities/cities (${data.features.length} total)${hucFeatures.length ? ' + ' + hucFeatures.length + ' HUC' + (hucFeatures.length > 1 ? 's' : '') : ''}`;
+        status.textContent = `${name} Ã¢â‚¬â€ ${munFeatures.length} municipalities/cities (${data.features.length} total)${hucFeatures.length ? ' + ' + hucFeatures.length + ' HUC' + (hucFeatures.length > 1 ? 's' : '') : ''}`;
         if (afterRender) afterRender(munPath, munFeatures);
       };
 
@@ -947,8 +1387,7 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
     });
 }
 
-// ── Detail panel ──────────────────────────────────────────────────────────────
-const detail      = document.getElementById('detail');
+// Ã¢â€â‚¬Ã¢â€â‚¬ Detail panel Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 const detailClose = document.getElementById('detail-close');
 const detailBody  = document.getElementById('detail-body');
 detailClose.addEventListener('click', closeDetail);
@@ -957,9 +1396,9 @@ const LEVEL_LABEL = { region: 'Region', province: 'Province / District', municit
 
 function noteHTML() {
   const def  = config.definitions?.[config.colorField];
-  const note = config.note;
+  const note = config.notes?.[config.colorField] || config.note;
   const style = 'font-size:11px;color:var(--data-label-color);line-height:1.6;margin:10px 0 4px';
-  return (def  ? `<p style="${style}">${def}</p>`  : '')
+  return (def ? `<p style="${style}">${def}</p>` : '')
        + (note ? `<p style="${style}">${note}</p>` : '');
 }
 
@@ -969,7 +1408,7 @@ function legendHTML() {
   const N = 24;
   const stops = Array.from({length: N}, (_, i) => colorScale(lo + (hi - lo) * i / (N - 1))).join(',');
   const suffix = config.valueSuffix || '';
-  const fieldLabel = config.detailFields?.[0]?.label || config.colorField || '';
+  const fieldLabel = config.detailFields?.find(f => f.key === config.colorField)?.label || config.colorField || '';
   return `<div class="section-head">${fieldLabel}</div>` +
     `<div class="legend-bar" style="background:linear-gradient(to right,${stops})"></div>` +
     `<div class="legend-ends"><span>${lo}${suffix}</span><span>${hi}${suffix}</span></div>`;
@@ -989,7 +1428,7 @@ function rankedListHTML(level, activePsgc, filterParentPsgc) {
   const suffix = config.valueSuffix || '';
   const levelLabel = LEVEL_LABEL[level] || level;
   const displayField = config.colorField + '_display';
-  const superscripts = ['¹','²','³','⁴','⁵','⁶','⁷','⁸','⁹'];
+  const superscripts = ['&#185;','&#178;','&#179;','&#8308;','&#8309;','&#8310;','&#8311;','&#8312;','&#8313;'];
   const notedPsgcs = new Map();
   let noteCounter = 0;
   sorted.forEach(r => { if (r.psa_note) notedPsgcs.set(String(r.psgc), superscripts[noteCounter++] || String(noteCounter)); });
@@ -1012,9 +1451,14 @@ function rankedListHTML(level, activePsgc, filterParentPsgc) {
     const rec = sorted.find(r => String(r.psgc) === psgc);
     return `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:10px 0 0">${sup} ${rec.psa_note}</p>`;
   }).join('');
+  const pluralLabel = level === 'region'
+    ? 'regions'
+    : level === 'province'
+      ? 'provinces / districts'
+      : 'cities / municipalities';
   const heading = filterParentPsgc != null
-    ? `${levelLabel}s in ${nameRegistry[String(filterParentPsgc)] || ''}`
-    : `All ${levelLabel}s`;
+    ? `All ${pluralLabel} in ${nameRegistry[String(filterParentPsgc)] || ''}`
+    : `All ${pluralLabel}`;
   return `<div class="section-head">${heading}</div><div>${rows}</div>${notes}`;
 }
 
@@ -1053,7 +1497,7 @@ function populateDetail(lguName, parentName, psgc, type = 'municity') {
   } else {
     listHTML = rankedListHTML('municity', psgc, parentMap[String(psgc)]);
   }
-  detailBody.innerHTML = dataHTML + noteHTML() + legendHTML() + listHTML;
+  detailBody.innerHTML = dataHTML + legendHTML() + listHTML + noteHTML();
 }
 
 function openDetail(lguName, parentName, psgc, type = 'municity') {
@@ -1076,13 +1520,15 @@ infoBtn.addEventListener('click', () => {
   }
 });
 
-// ── Page title ────────────────────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ Page title Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+const TITLE_SUFFIX = ' | 2025 NDHS Key Indicators';
 function setPageTitle(title) {
-  document.title = title;
-  try { window.parent.document.title = title; } catch(e) {}
+  const fullTitle = title + TITLE_SUFFIX;
+  document.title = fullTitle;
+  try { window.parent.document.title = fullTitle; } catch(e) {}
 }
 
-// ── Metric toggle ─────────────────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ Metric toggle Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 document.querySelectorAll('input[name="metric"]').forEach(radio => {
   radio.addEventListener('change', function () {
     if (!this.checked) return;
@@ -1093,7 +1539,9 @@ document.querySelectorAll('input[name="metric"]').forEach(radio => {
     if (config.colorScheme && d3[config.colorScheme]) {
       colorScale = d3.scaleSequential(d3[config.colorScheme]).domain(domain);
     }
+    // Re-paint all rendered region polygons
     d3.selectAll('path.region').style('fill', d => getFill('region', d.properties.adm1_psgc));
+    // Refresh panel if open
     if (detail.classList.contains('open')) {
       if (currentContext) {
         populateDetail(currentContext.name, currentContext.parentName, currentContext.psgc, currentContext.type);
@@ -1107,7 +1555,7 @@ document.querySelectorAll('input[name="metric"]').forEach(radio => {
   });
 });
 
-// ── Boot ──────────────────────────────────────────────────────────────────────
+// Ã¢â€â‚¬Ã¢â€â‚¬ Boot Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 async function boot() {
   await loadConfig();
   setPageTitle(config.title || 'Philippines Map');

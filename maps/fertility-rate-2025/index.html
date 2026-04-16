@@ -1001,9 +1001,11 @@ infoBtn.addEventListener('click', () => {
 });
 
 // ── Page title ────────────────────────────────────────────────────────────────
+const TITLE_SUFFIX = ' | 2025 NDHS Key Indicators';
 function setPageTitle(title) {
-  document.title = title;
-  try { window.parent.document.title = title; } catch(e) {}
+  const fullTitle = title + TITLE_SUFFIX;
+  document.title = fullTitle;
+  try { window.parent.document.title = fullTitle; } catch(e) {}
 }
 
 // ── Boot ──────────────────────────────────────────────────────────────────────

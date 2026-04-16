@@ -12,6 +12,8 @@
     {
       "id": "age_group_years",
       "label": "Age group (years)",
+      "layout": "vertical-comparison",
+      "showAllLabels": true,
       "categories": [
         {
           "label": "15-19",
@@ -227,6 +229,7 @@
     {
       "id": "residence",
       "label": "Residence",
+      "layout": "vertical-comparison",
       "categories": [
         {
           "label": "Urban",
@@ -243,6 +246,7 @@
     {
       "id": "educational_attainment",
       "label": "Educational attainment",
+      "layout": "vertical-comparison",
       "categories": [
         {
           "label": "No education",
@@ -279,6 +283,7 @@
     {
       "id": "wealth_quintile",
       "label": "Wealth quintile",
+      "layout": "vertical-comparison",
       "categories": [
         {
           "label": "Lowest",

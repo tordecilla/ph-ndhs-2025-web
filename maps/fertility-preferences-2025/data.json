@@ -1,0 +1,488 @@
+{
+  "title": "Fertility Preferences",
+  "description": "Desire for children among currently married women aged 15-49 years by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "maxDepth": "region",
+  "geoBasePath": "../../_template/philippines-json-maps",
+  "colorField": "want_no_more_pct",
+  "colorDomain": [
+    0,
+    60
+  ],
+  "colorDomains": {
+    "want_no_more_pct": [
+      0,
+      60
+    ],
+    "another_soon_pct": [
+      0,
+      60
+    ],
+    "another_later_pct": [
+      0,
+      60
+    ],
+    "another_undecided_pct": [
+      0,
+      60
+    ],
+    "sterilized_pct": [
+      0,
+      60
+    ],
+    "declared_infecund_pct": [
+      0,
+      60
+    ]
+  },
+  "colorScheme": "interpolateYlGn",
+  "valueSuffix": "%",
+  "note": "Details may not add up to total due to rounding.",
+  "definitions": {
+    "want_no_more_pct": "Want no more: Share of currently married women aged 15-49 who say they do not want another child.",
+    "another_soon_pct": "Have another soon means the woman wants her next birth within 2 years.",
+    "another_later_pct": "Have another later means the woman wants to delay her next birth for 2 or more years.",
+    "another_undecided_pct": "Have another, undecided when: Share of women who want another child but are undecided about timing.",
+    "sterilized_pct": "Sterilized includes both female and male sterilization.",
+    "declared_infecund_pct": "Declared infecund: Share of women who report being unable to have another child."
+  },
+  "detailFields": [
+    {
+      "key": "want_no_more_pct",
+      "label": "Want no more (%, 2025)"
+    },
+    {
+      "key": "another_soon_pct",
+      "label": "Have another soon (%, 2025)"
+    },
+    {
+      "key": "another_later_pct",
+      "label": "Have another later (%, 2025)"
+    },
+    {
+      "key": "another_undecided_pct",
+      "label": "Have another, undecided when (%, 2025)"
+    },
+    {
+      "key": "sterilized_pct",
+      "label": "Sterilized (%, 2025)"
+    },
+    {
+      "key": "declared_infecund_pct",
+      "label": "Declared infecund (%, 2025)"
+    },
+    {
+      "key": "psa_note",
+      "label": "Note"
+    }
+  ],
+  "data": {
+    "region": [
+      {
+        "psgc": 1300000000,
+        "want_no_more_pct": 52.2,
+        "another_soon_pct": 12.1,
+        "another_later_pct": 16.2,
+        "another_undecided_pct": 0.2,
+        "sterilized_pct": 9.3,
+        "declared_infecund_pct": 1.2
+      },
+      {
+        "psgc": 1400000000,
+        "want_no_more_pct": 46.1,
+        "another_soon_pct": 13,
+        "another_later_pct": 12,
+        "another_undecided_pct": 0.1,
+        "sterilized_pct": 17.6,
+        "declared_infecund_pct": 3.8
+      },
+      {
+        "psgc": 100000000,
+        "want_no_more_pct": 41.1,
+        "another_soon_pct": 18.4,
+        "another_later_pct": 17,
+        "another_undecided_pct": 2.1,
+        "sterilized_pct": 10.4,
+        "declared_infecund_pct": 2.5
+      },
+      {
+        "psgc": 200000000,
+        "want_no_more_pct": 49.4,
+        "another_soon_pct": 12.7,
+        "another_later_pct": 14.7,
+        "another_undecided_pct": 0,
+        "sterilized_pct": 9.2,
+        "declared_infecund_pct": 7.7
+      },
+      {
+        "psgc": 300000000,
+        "want_no_more_pct": 44.9,
+        "another_soon_pct": 15.6,
+        "another_later_pct": 17.9,
+        "another_undecided_pct": 0.6,
+        "sterilized_pct": 14.4,
+        "declared_infecund_pct": 1.3
+      },
+      {
+        "psgc": 400000000,
+        "want_no_more_pct": 51.3,
+        "another_soon_pct": 14,
+        "another_later_pct": 15.2,
+        "another_undecided_pct": 0.6,
+        "sterilized_pct": 7.7,
+        "declared_infecund_pct": 2.7
+      },
+      {
+        "psgc": 1700000000,
+        "want_no_more_pct": 56.9,
+        "another_soon_pct": 10.9,
+        "another_later_pct": 14.7,
+        "another_undecided_pct": 0.6,
+        "sterilized_pct": 6.2,
+        "declared_infecund_pct": 3.1
+      },
+      {
+        "psgc": 500000000,
+        "want_no_more_pct": 57,
+        "another_soon_pct": 11.4,
+        "another_later_pct": 17.5,
+        "another_undecided_pct": 0.5,
+        "sterilized_pct": 5.3,
+        "declared_infecund_pct": 3.2
+      },
+      {
+        "psgc": 600000000,
+        "want_no_more_pct": 53.1,
+        "another_soon_pct": 12,
+        "another_later_pct": 17.8,
+        "another_undecided_pct": 0.1,
+        "sterilized_pct": 5.4,
+        "declared_infecund_pct": 4.5
+      },
+      {
+        "psgc": 1800000000,
+        "want_no_more_pct": 56.7,
+        "another_soon_pct": 9.2,
+        "another_later_pct": 12.5,
+        "another_undecided_pct": 0.4,
+        "sterilized_pct": 4.3,
+        "declared_infecund_pct": 4.6
+      },
+      {
+        "psgc": 700000000,
+        "want_no_more_pct": 54.7,
+        "another_soon_pct": 12.9,
+        "another_later_pct": 5.9,
+        "another_undecided_pct": 0.4,
+        "sterilized_pct": 4.9,
+        "declared_infecund_pct": 1.2
+      },
+      {
+        "psgc": 800000000,
+        "want_no_more_pct": 53.3,
+        "another_soon_pct": 12.2,
+        "another_later_pct": 19.2,
+        "another_undecided_pct": 0.4,
+        "sterilized_pct": 7.3,
+        "declared_infecund_pct": 1.8
+      },
+      {
+        "psgc": 900000000,
+        "want_no_more_pct": 39.9,
+        "another_soon_pct": 15,
+        "another_later_pct": 23.5,
+        "another_undecided_pct": 0.1,
+        "sterilized_pct": 2.8,
+        "declared_infecund_pct": 2.9,
+        "psa_note": "Region IX includes the province of Sulu in 2025."
+      },
+      {
+        "psgc": 1000000000,
+        "want_no_more_pct": 53.3,
+        "another_soon_pct": 11.6,
+        "another_later_pct": 17.7,
+        "another_undecided_pct": 0.5,
+        "sterilized_pct": 6.2,
+        "declared_infecund_pct": 1.8
+      },
+      {
+        "psgc": 1100000000,
+        "want_no_more_pct": 52.9,
+        "another_soon_pct": 11,
+        "another_later_pct": 17.5,
+        "another_undecided_pct": 0.9,
+        "sterilized_pct": 6.3,
+        "declared_infecund_pct": 0.7
+      },
+      {
+        "psgc": 1200000000,
+        "want_no_more_pct": 50.1,
+        "another_soon_pct": 11.7,
+        "another_later_pct": 14.9,
+        "another_undecided_pct": 0.6,
+        "sterilized_pct": 5.1,
+        "declared_infecund_pct": 4.2
+      },
+      {
+        "psgc": 1600000000,
+        "want_no_more_pct": 53.4,
+        "another_soon_pct": 12.2,
+        "another_later_pct": 17.1,
+        "another_undecided_pct": 0.1,
+        "sterilized_pct": 6.1,
+        "declared_infecund_pct": 1.8
+      },
+      {
+        "psgc": 1900000000,
+        "want_no_more_pct": 27.3,
+        "another_soon_pct": 17.3,
+        "another_later_pct": 20.4,
+        "another_undecided_pct": 0.3,
+        "sterilized_pct": 2.3,
+        "declared_infecund_pct": 4.6
+      }
+    ],
+    "province": [],
+    "municity": []
+  },
+  "chartData": {
+    "title": "Fertility preferences by number of living children",
+    "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, according to number of living children: Philippines",
+    "yMax": 80,
+    "xLabel": "Number of living children\u00b9",
+    "yLabel": "Percent",
+    "series": [
+      {
+        "key": "want_no_more",
+        "label": "Want no more",
+        "color": "#2f7d32"
+      },
+      {
+        "key": "another_soon",
+        "label": "Have another soon\u00b2",
+        "color": "#5a9b54"
+      },
+      {
+        "key": "another_later",
+        "label": "Have another later\u00b3",
+        "color": "#87b96a"
+      },
+      {
+        "key": "another_undecided",
+        "label": "Have another, undecided when",
+        "color": "#c8d96b"
+      },
+      {
+        "key": "undecided",
+        "label": "Undecided",
+        "color": "#d9a441"
+      },
+      {
+        "key": "sterilized",
+        "label": "Sterilized\u2074",
+        "color": "#c46a47"
+      },
+      {
+        "key": "declared_infecund",
+        "label": "Declared infecund",
+        "color": "#8b5e3c"
+      }
+    ],
+    "blocks": [
+      {
+        "title": "Number of living children",
+        "year": "2025",
+        "rows": [
+          {
+            "label": "0",
+            "another_soon": 54.9,
+            "another_later": 20.2,
+            "another_undecided": 1.3,
+            "undecided": 9.5,
+            "want_no_more": 6.2,
+            "sterilized": 0.3,
+            "declared_infecund": 7.7
+          },
+          {
+            "label": "1",
+            "another_soon": 22.8,
+            "another_later": 33.8,
+            "another_undecided": 1.3,
+            "undecided": 13.1,
+            "want_no_more": 25.3,
+            "sterilized": 0.8,
+            "declared_infecund": 2.8
+          },
+          {
+            "label": "2",
+            "another_soon": 7.7,
+            "another_later": 15.6,
+            "another_undecided": 0.2,
+            "undecided": 11.5,
+            "want_no_more": 57.5,
+            "sterilized": 5.8,
+            "declared_infecund": 1.7
+          },
+          {
+            "label": "3",
+            "another_soon": 4.5,
+            "another_later": 6.7,
+            "another_undecided": 0.3,
+            "undecided": 8.5,
+            "want_no_more": 63,
+            "sterilized": 15.4,
+            "declared_infecund": 1.6
+          },
+          {
+            "label": "4",
+            "another_soon": 2.1,
+            "another_later": 4.6,
+            "another_undecided": 0.1,
+            "undecided": 5.6,
+            "want_no_more": 69.5,
+            "sterilized": 16.3,
+            "declared_infecund": 1.9
+          },
+          {
+            "label": "5",
+            "another_soon": 3.6,
+            "another_later": 2.9,
+            "another_undecided": 0,
+            "undecided": 7.1,
+            "want_no_more": 71.7,
+            "sterilized": 11.8,
+            "declared_infecund": 2.9
+          },
+          {
+            "label": "6+",
+            "another_soon": 1.1,
+            "another_later": 2.3,
+            "another_undecided": 0,
+            "undecided": 5,
+            "want_no_more": 72.8,
+            "sterilized": 16.7,
+            "declared_infecund": 2.1
+          }
+        ]
+      },
+      {
+        "title": "Number of living children",
+        "year": "2022",
+        "rows": [
+          {
+            "label": "0",
+            "another_soon": 63.2,
+            "another_later": 17.9,
+            "another_undecided": 0.5,
+            "undecided": 5.7,
+            "want_no_more": 4.3,
+            "sterilized": 0.4,
+            "declared_infecund": 8
+          },
+          {
+            "label": "1",
+            "another_soon": 25.3,
+            "another_later": 40,
+            "another_undecided": 0.3,
+            "undecided": 10.4,
+            "want_no_more": 21.3,
+            "sterilized": 0.9,
+            "declared_infecund": 1.8
+          },
+          {
+            "label": "2",
+            "another_soon": 7.8,
+            "another_later": 18.2,
+            "another_undecided": 0.2,
+            "undecided": 9.2,
+            "want_no_more": 56.6,
+            "sterilized": 5.9,
+            "declared_infecund": 2.1
+          },
+          {
+            "label": "3",
+            "another_soon": 4.1,
+            "another_later": 7.7,
+            "another_undecided": 0.1,
+            "undecided": 6.9,
+            "want_no_more": 61.8,
+            "sterilized": 17.6,
+            "declared_infecund": 2
+          },
+          {
+            "label": "4",
+            "another_soon": 3.3,
+            "another_later": 3.5,
+            "another_undecided": 0,
+            "undecided": 5.6,
+            "want_no_more": 69,
+            "sterilized": 16.1,
+            "declared_infecund": 2.4
+          },
+          {
+            "label": "5",
+            "another_soon": 2.9,
+            "another_later": 3.9,
+            "another_undecided": 0.3,
+            "undecided": 6.9,
+            "want_no_more": 66.5,
+            "sterilized": 15.7,
+            "declared_infecund": 4
+          },
+          {
+            "label": "6+",
+            "another_soon": 1.4,
+            "another_later": 2.2,
+            "another_undecided": 0.1,
+            "undecided": 7.9,
+            "want_no_more": 72,
+            "sterilized": 12,
+            "declared_infecund": 4.4
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "\u00b9 The number of living children includes a woman's current pregnancy.",
+      "\u00b2 Wants next birth within 2 years.",
+      "\u00b3 Wants to delay next birth for 2 or more years.",
+      "\u2074 Includes both female and male sterilization.",
+      "Details may not add up to total due to rounding."
+    ]
+  },
+  "insights": {
+    "title": "Insights on Fertility Preferences",
+    "subtitle": "AI-generated insights based on National Demographic and Health Survey data on fertility preferences",
+    "overview": "Across much of the country, the strongest preference among currently married women is to stop having children, but that pattern is not equally strong everywhere. In 2025, the share saying they want no more children ranges from 57.0 percent in Bicol and 56.9 percent in MIMAROPA to just 27.3 percent in BARMM and 39.9 percent in Zamboanga Peninsula. Those are large gaps. They suggest that families in different regions are at very different points in the process of building or completing their families.",
+    "sections": [
+      {
+        "heading": "In most regions, the dominant preference is to stop childbearing",
+        "body": "The strongest national pattern is how often women say they want no more children. In 2025, that share is above 50 percent in Bicol, MIMAROPA, NIR, Central Visayas, Caraga, Eastern Visayas, Northern Mindanao, and Davao Region, while NCR also sits comfortably above the national middle. In much of the country, the balance has already shifted away from wanting another child and toward stopping. That makes BARMM and Zamboanga Peninsula stand out more sharply because many fewer women there say they want no more children."
+      },
+      {
+        "heading": "BARMM and Zamboanga Peninsula look meaningfully different from the rest",
+        "body": "BARMM is the clearest outlier. Only 27.3 percent of women there say they want no more children, while 17.3 percent want another child soon and 20.4 percent want another later. Zamboanga Peninsula is also unusual: 39.9 percent want no more, but it has the highest share wanting another child later at 23.5 percent. These are not small differences. They suggest that in some regions, family building is still much more active than in places where wanting no more children has become the dominant preference."
+      },
+      {
+        "heading": "The shift by number of living children is steep, not gradual",
+        "body": "The parity breakdown shows a strong turning point. Among women with no children, only 6.2 percent say they want no more, while 54.9 percent want another child soon. By one child, the share wanting no more rises to 25.3 percent. By two children, it jumps to 57.5 percent, and by three children it reaches 63.0 percent. From that point onward it remains very high, reaching 72.8 percent among women with six or more children. In other words, the transition from wanting another child to wanting no more happens quickly, especially between one and two children."
+      },
+      {
+        "heading": "Wanting another child soon and later tells different stories",
+        "body": "The desire for another child is not just about whether women want one at all, but also about timing. Among women with no children, wanting another child soon is much more common than wanting one later, at 54.9 percent versus 20.2 percent in 2025. By one child, that balance changes: 33.8 percent want another later, compared with 22.8 percent who want one soon. That suggests spacing becomes more important after the first child, even before the stronger move into wanting no more children takes over at higher parities."
+      },
+      {
+        "heading": "Sterilization and infecundity deepen the regional picture",
+        "body": "The share saying they are sterilized is especially high in CAR at 17.6 percent and in Central Luzon at 14.4 percent, much higher than in BARMM at 2.3 percent or Zamboanga Peninsula at 2.8 percent. Declared infecundity is highest in Cagayan Valley at 7.7 percent, with NIR, BARMM, and Western Visayas also elevated. These categories should not be treated as the same as simply wanting no more children, but they do help explain why the overall preference structure looks different from one region to another."
+      },
+      {
+        "heading": "The 2022 to 2025 shift leans more toward stopping, with some added hesitation",
+        "body": "The parity charts suggest a modest shift toward wanting no more children in 2025, especially among women with one child and five children. At the same time, uncertainty also rose in parts of the distribution. Among women with no children, the share who were undecided rose from 5.7 percent in 2022 to 9.5 percent in 2025, while among women with one child it rose from 10.4 percent to 13.1 percent. The change is therefore not just a movement toward stopping. In some groups, it also looks like growing hesitation about what comes next."
+      }
+    ],
+    "takeaways": [
+      "Wanting no more children is now the dominant preference in much of the country, but not everywhere.",
+      "BARMM and Zamboanga Peninsula stand apart because many more women there still want another child, especially later rather than immediately stopping.",
+      "By number of living children, the biggest shift happens between one and two children, where wanting no more becomes the majority position."
+    ]
+  }
+}

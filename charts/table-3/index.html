@@ -90,6 +90,56 @@
     max-width: 1680px;
     margin: 0 auto;
   }
+  #tab-insights {
+    overflow-y: auto;
+    padding: 28px 28px 56px;
+  }
+  #tab-insights::-webkit-scrollbar { width: 4px; }
+  #tab-insights::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 2px; }
+  #insights-container {
+    max-width: 920px;
+    margin: 0 auto;
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-divider);
+    padding: 24px 24px 20px;
+  }
+  .insights-page-title {
+    font-size: 20px; font-weight: 600; color: var(--lgu-name-color);
+    line-height: 1.25; margin-bottom: 4px;
+  }
+  .insights-page-subtitle {
+    font-size: 12px; color: var(--region-color); margin-bottom: 24px; line-height: 1.6;
+  }
+  .insight-card {
+    padding: 0;
+    margin-bottom: 22px;
+  }
+  .insight-heading {
+    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--section-color); margin-bottom: 10px;
+  }
+  .insight-text {
+    font-size: 13px; color: var(--text-color); line-height: 1.75;
+  }
+  .insight-takeaways {
+    display: grid;
+    gap: 10px;
+  }
+  .insight-takeaway {
+    font-size: 13px; color: var(--text-color); line-height: 1.7;
+    padding-left: 14px;
+    position: relative;
+  }
+  .insight-takeaway::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.28);
+  }
   #tab-charts::-webkit-scrollbar { width: 4px; }
   #tab-charts::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 2px; }
 
@@ -318,6 +368,7 @@
 <div id="tab-bar">
   <button class="tab-btn active" data-tab="map">Maps</button>
   <button class="tab-btn"        data-tab="charts">Data</button>
+  <button class="tab-btn"        data-tab="insights">Insights</button>
 </div>
 
 <!-- ══ Map panel ══ -->
@@ -344,6 +395,10 @@
   <div id="charts-container"></div>
 </div>
 
+<div id="tab-insights" class="tab-panel">
+  <div id="insights-container"></div>
+</div>
+
 <script>
 // ─────────────────────────────────────────────────────────────────────────────
 // Shared state
@@ -351,19 +406,25 @@
 let appData       = null;
 let mapReady      = false;
 let chartsReady   = false;
+let insightsReady = false;
 let activeTab     = 'map';
+const TITLE_SUFFIX = ' | 2025 NDHS Key Indicators';
 
 function notifyParentHash(hash) {
   try { window.parent.postMessage({ type: 'child-hash', hash }, '*'); } catch (e) {}
 }
 
 function switchTab(tab, replace = false) {
-  activeTab = tab === 'charts' ? 'charts' : 'map';
+  activeTab = tab === 'charts' ? 'charts' : tab === 'insights' ? 'insights' : 'map';
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === activeTab));
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.id === 'tab-' + activeTab));
   if (activeTab === 'charts' && appData && !chartsReady) {
     chartsReady = true;
     renderCharts(appData);
+  }
+  if (activeTab === 'insights' && appData && !insightsReady) {
+    insightsReady = true;
+    renderInsights(appData.insights);
   }
   const nextHash = '#' + activeTab;
   if (location.hash !== nextHash) {
@@ -391,7 +452,7 @@ window.addEventListener('hashchange', () => {
 // ─────────────────────────────────────────────────────────────────────────────
 d3.json('./data.json').then(d => {
   appData = d;
-  document.title = d.title + ' — NDHS 2025';
+  document.title = d.title + TITLE_SUFFIX;
   mapReady = true;
   initMap(d.mapConfig);
   switchTab(location.hash.replace(/^#/, '') || 'map', true);
@@ -486,15 +547,9 @@ function renderCharts(data) {
     }
 
     const legend = el('div', 'chart-legend');
-    if (block.type === 'vertical-comparison') {
-      legend.innerHTML =
-        `<span><span class="legend-swatch s2022" style="background:var(--bar-2022)"></span>2022</span>` +
-        `<span><span class="legend-swatch" style="background:var(--bar-2025)"></span>2025</span>`;
-    } else {
-      legend.innerHTML =
-        `<span><span class="legend-swatch" style="background:var(--bar-2025)"></span>2025</span>` +
-        `<span><span class="legend-swatch s2022" style="background:var(--bar-2022)"></span>2022</span>`;
-    }
+    legend.innerHTML =
+      `<span><span class="legend-swatch s2022" style="background:var(--bar-2022)"></span>2022</span>` +
+      `<span><span class="legend-swatch" style="background:var(--bar-2025)"></span>2025</span>`;
     blockEl.appendChild(legend);
 
     grid.appendChild(blockEl);
@@ -506,6 +561,50 @@ function renderCharts(data) {
     const src = el('div', 'source-line');
     src.textContent = 'Source: ' + data.source;
     container.appendChild(src);
+  }
+}
+
+function renderInsights(insights) {
+  const container = document.getElementById('insights-container');
+  if (!container || !insights) return;
+  container.innerHTML = '';
+
+  const header = el('div');
+  header.innerHTML = `
+    <div class="insights-page-title">${insights.title || appData.title}</div>
+    <div class="insights-page-subtitle">${insights.subtitle || ''}</div>
+  `;
+  container.appendChild(header);
+
+  if (insights.overview) {
+    const block = el('section', 'insight-card');
+    block.innerHTML = `
+      <div class="insight-heading">Overview</div>
+      <div class="insight-text">${insights.overview}</div>
+    `;
+    container.appendChild(block);
+  }
+
+  (insights.sections || []).forEach(section => {
+    const block = el('section', 'insight-card');
+    block.innerHTML = `
+      <div class="insight-heading">${section.heading || ''}</div>
+      <div class="insight-text">${section.body || ''}</div>
+    `;
+    container.appendChild(block);
+  });
+
+  if (insights.takeaways?.length) {
+    const block = el('section', 'insight-card');
+    block.innerHTML = `<div class="insight-heading">Key Takeaways</div>`;
+    const wrap = el('div', 'insight-takeaways');
+    insights.takeaways.forEach(item => {
+      const row = el('div', 'insight-takeaway');
+      row.textContent = item;
+      wrap.appendChild(row);
+    });
+    block.appendChild(wrap);
+    container.appendChild(block);
   }
 }
 
@@ -573,8 +672,8 @@ function drawHorizontalComparison(container, block) {
       .attr('fill', 'var(--text-color)')
       .text(withNoteRef(row.label, row));
 
-    drawHorizontalLane(rg, 0, row.y2025, formatDisplay(row.y2025Display, row.y2025), x, 'var(--bar-2025)', 'var(--data-value-color)');
-    drawHorizontalLane(rg, BAR_H + PAIR_GAP, row.y2022, formatDisplay(row.y2022Display, row.y2022), x, 'var(--bar-2022)', 'var(--data-label-color)', true);
+    drawHorizontalLane(rg, 0, row.y2022, formatDisplay(row.y2022Display, row.y2022), x, 'var(--bar-2022)', 'var(--data-label-color)', true);
+    drawHorizontalLane(rg, BAR_H + PAIR_GAP, row.y2025, formatDisplay(row.y2025Display, row.y2025), x, 'var(--bar-2025)', 'var(--data-value-color)');
   });
 }
 
@@ -670,10 +769,10 @@ function drawMirroredComparison(container, block) {
       .attr('fill', 'var(--text-color)')
       .text(label);
 
-    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase, row.left2025, formatDisplay(row.left2025Display, row.left2025), x, true, 'var(--bar-2025)', 'var(--data-value-color)');
-    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase, row.right2025, formatDisplay(row.right2025Display, row.right2025), x, false, 'var(--bar-2025)', 'var(--data-value-color)');
-    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.left2022, formatDisplay(row.left2022Display, row.left2022), x, true, 'var(--bar-2022)', 'var(--data-label-color)', true);
-    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.right2022, formatDisplay(row.right2022Display, row.right2022), x, false, 'var(--bar-2022)', 'var(--data-label-color)', true);
+    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase, row.left2022, formatDisplay(row.left2022Display, row.left2022), x, true, 'var(--bar-2022)', 'var(--data-label-color)', true);
+    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase, row.right2022, formatDisplay(row.right2022Display, row.right2022), x, false, 'var(--bar-2022)', 'var(--data-label-color)', true);
+    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.left2025, formatDisplay(row.left2025Display, row.left2025), x, true, 'var(--bar-2025)', 'var(--data-value-color)');
+    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.right2025, formatDisplay(row.right2025Display, row.right2025), x, false, 'var(--bar-2025)', 'var(--data-value-color)');
   });
 }
 
@@ -1071,7 +1170,7 @@ function mapRankedListHTML(activePsgc) {
 }
 
 function openMapWelcome() {
-  document.getElementById('map-eyebrow').textContent = 'Fertility Rate';
+  document.getElementById('map-eyebrow').textContent = 'Fertility';
   document.getElementById('map-lgu-name').textContent = 'Fertility Rate';
   document.getElementById('map-region-label').textContent = '';
   const desc = `<p style="font-size:12px;color:var(--text-color);line-height:1.8;margin-bottom:12px">` +

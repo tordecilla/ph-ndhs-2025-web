@@ -283,6 +283,38 @@
       ]
     }
   ],
+  "insights": {
+    "title": "Insights on Fertility Rate",
+    "subtitle": "AI-generated insights based on National Demographic and Health Survey data on fertility",
+    "overview": "Fertility in the Philippines continues to ease, but the pace is far from uniform. In 2025, regional total fertility rate ranged from 1.3 children per woman in CALABARZON and 1.4 in NCR and NIR to 2.4 in BARMM and 2.3 in Zamboanga Peninsula. That spread shows that the country is not moving through one shared fertility transition. Some regions are already deep into lower fertility, while others remain well above that level.",
+    "sections": [
+      {
+        "heading": "Lower fertility is now the norm in much of the country",
+        "body": "Several large regions are now clustered at relatively low fertility levels. CALABARZON is at 1.3 children per woman, while NCR and NIR are at 1.4. Davao Region is at 1.6, and Cagayan Valley and Central Visayas are both at 1.7. These are not isolated pockets. Together they suggest that lower fertility is now established across a substantial part of the country, especially in more urbanized and economically stronger areas."
+      },
+      {
+        "heading": "A smaller group of regions still stands clearly higher",
+        "body": "At the other end, BARMM records the highest total fertility rate at 2.4, followed by Zamboanga Peninsula at 2.3 and Caraga at 2.2. MIMAROPA is also above the national middle at 2.1, while Eastern Visayas remains at 2.0. These regions are not just modestly above the rest. They stand far enough apart to suggest that the fertility transition is moving at different speeds across the country."
+      },
+      {
+        "heading": "The largest declines happened in places that were already relatively high",
+        "body": "Some of the strongest movement from 2022 to 2025 happened in higher-fertility regions. BARMM fell from 3.1 to 2.4 children per woman, the largest drop in the regional table. SOCCSKSARGEN also fell sharply, from 2.5 to 1.9, while CALABARZON dropped from 1.8 to 1.3. That matters because the decline is not limited to places that were already low. Some higher-fertility regions are also moving down, even if they still remain above much of the country."
+      },
+      {
+        "heading": "Fertility remains concentrated in the middle reproductive ages",
+        "body": "The age pattern is still centered on the twenties and early thirties. In 2025, the highest age-specific fertility rates are at ages 25-29, reaching 85 births per 1,000 women in urban areas and 108 in rural areas. Ages 20-24 and 30-34 also remain high, especially in rural areas. By contrast, teenage fertility is much lower, at 20 in urban areas and 26 in rural areas for ages 15-19. In other words, most childbearing still happens after adolescence, especially outside urban areas."
+      },
+      {
+        "heading": "Education and wealth separate fertility levels more than residence alone",
+        "body": "The difference between urban and rural areas is real but moderate: total fertility rate is 1.5 in urban areas and 2.0 in rural areas in 2025. The education and wealth gradients are sharper. Women with Grades 1-6 education are at 3.1 children per woman, compared with 1.3 among those with college education. The lowest wealth quintile is at 2.8, compared with 1.1 in the highest quintile. In this set of comparisons, social and economic position appears to matter more than residence alone."
+      }
+    ],
+    "takeaways": [
+      "Fertility in 2025 is defined by continued decline paired with wide regional unevenness.",
+      "Lower fertility is already common in places like CALABARZON, NCR, and NIR, while BARMM, Zamboanga Peninsula, and Caraga still stand well above them.",
+      "Outside the regional map, fertility remains most concentrated in the middle reproductive ages and among women with less schooling and fewer economic resources."
+    ]
+  },
   "mapConfig": {
     "colorField": "tfr_2025",
     "colorDomain": [

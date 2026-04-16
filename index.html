@@ -69,7 +69,7 @@
   }
   #nav-pin {
     position: fixed;
-    top: 14px;
+    top: 50%;
     left: calc(var(--nav-w) - (var(--nav-toggle-size) / 2));
     width: var(--nav-toggle-size);
     height: var(--nav-toggle-size);
@@ -83,7 +83,8 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-    transition: left 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.2s, background 0.2s;
+    transform: translateY(-50%);
+    transition: left 0.3s cubic-bezier(0.4,0,0.2,1), background 0.2s;
   }
   #nav-pin:hover {
     background: #f5f7fb;
@@ -199,11 +200,11 @@
   </div>
   <div id="nav-list">
 
-    <div class="nav-section-head">Survey profile</div>
+    <div class="nav-section-head">Survey Profile</div>
 
     <a class="nav-item" data-route="backgroundcharacteristics" data-src="./charts/table-2/" href="#backgroundcharacteristics">
       <span class="nav-num">Table 2</span>
-      <span class="nav-title-text">Background characteristics</span>
+      <span class="nav-title-text">Background Characteristics</span>
     </a>
 
     <div class="nav-section-head">Fertility</div>
@@ -214,27 +215,16 @@
     </a>
     <a class="nav-item" data-route="teenage-pregnancy-2025" data-src="./maps/teenage-pregnancy-2025/" href="#teenage-pregnancy-2025">
       <span class="nav-num">Table 4</span>
-      <span class="nav-title-text">Teenage pregnancy</span>
+      <span class="nav-title-text">Teenage Pregnancy</span>
     </a>
-    <a class="nav-item" data-route="contraceptive-use-2025" data-src="./maps/contraceptive-use-2025/" href="#contraceptive-use-2025">
-      <span class="nav-num">Table 7a</span>
-      <span class="nav-title-text">Contraceptive use</span>
+    <a class="nav-item" data-route="fertility-preferences-2025" data-src="./maps/fertility-preferences-2025/" href="#fertility-preferences-2025">
+      <span class="nav-num">Table 5b</span>
+      <span class="nav-title-text">Fertility Preferences</span>
     </a>
-
-    <div class="nav-section-head">Child health</div>
-
-    <a class="nav-item" data-route="childhood-mortality-2025" data-src="./maps/childhood-mortality-2025/" href="#childhood-mortality-2025">
-      <span class="nav-num">Table 10c</span>
-      <span class="nav-title-text">Childhood mortality rates</span>
+    <a class="nav-item" data-route="desire-to-limit-childbearing-2025" data-src="./maps/desire-to-limit-childbearing-2025/" href="#desire-to-limit-childbearing-2025">
+      <span class="nav-num">Table 5c</span>
+      <span class="nav-title-text">Desire to Limit Childbearing</span>
     </a>
-
-    <div class="nav-section-head">Child welfare</div>
-
-    <a class="nav-item" data-route="child-discipline-2025" data-src="./maps/child-discipline-2025/" href="#child-discipline-2025">
-      <span class="nav-num">Table 12</span>
-      <span class="nav-title-text">Child discipline</span>
-    </a>
-
   </div><!-- /nav-list -->
 </nav>
 
