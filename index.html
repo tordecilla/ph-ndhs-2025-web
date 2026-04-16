@@ -26,6 +26,7 @@
     --tag-bg:        rgba(0,0,0,0.05);
     --tag-color:     rgba(0,0,0,0.40);
     --scroll-thumb:  rgba(0,0,0,0.10);
+    --nav-toggle-size: 38px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -40,9 +41,16 @@
   }
   #main {
     position: fixed; top: 0; left: var(--nav-w); right: 0; bottom: 0;
+    transition: left 0.3s cubic-bezier(0.4,0,0.2,1);
   }
   #main iframe {
     width: 100%; height: 100%; border: none; display: block;
+  }
+  body.nav-collapsed #nav {
+    transform: translateX(calc(-1 * var(--nav-w)));
+  }
+  body.nav-collapsed #main {
+    left: 0;
   }
 
   /* ══ Nav header ══ */
@@ -58,6 +66,39 @@
   #nav-subtitle {
     font: 9px/1 monospace; letter-spacing: 1.8px; text-transform: uppercase;
     color: var(--eyebrow);
+  }
+  #nav-pin {
+    position: fixed;
+    top: 14px;
+    left: calc(var(--nav-w) - (var(--nav-toggle-size) / 2));
+    width: var(--nav-toggle-size);
+    height: var(--nav-toggle-size);
+    border: 1px solid var(--nav-border);
+    border-radius: 999px;
+    background: var(--nav-bg);
+    color: var(--title-color);
+    cursor: pointer;
+    z-index: 31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    transition: left 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.2s, background 0.2s;
+  }
+  #nav-pin:hover {
+    background: #f5f7fb;
+  }
+  body.nav-collapsed #nav-pin {
+    left: 14px;
+  }
+  #nav-pin::before {
+    content: '\2039';
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+  }
+  body.nav-collapsed #nav-pin::before {
+    content: '\203A';
   }
 
   /* ══ Nav list ══ */
@@ -119,6 +160,12 @@
     #nav.open { transform: translateX(0); }
 
     #main { top: var(--topbar-h); left: 0; }
+    body.nav-collapsed #nav {
+      transform: translateX(-100%);
+    }
+    #nav-pin {
+      display: none;
+    }
 
     #nav-overlay {
       display: none; position: fixed; inset: 0; top: var(--topbar-h);
@@ -142,6 +189,7 @@
   <span id="topbar-title">2025 NDHS</span>
 </div>
 <div id="nav-overlay"></div>
+<button id="nav-pin" aria-label="Toggle menu" aria-expanded="true" title="Toggle menu"></button>
 
 <!-- Left nav -->
 <nav id="nav">
@@ -199,8 +247,17 @@
 const frame   = document.getElementById('content-frame');
 const navList = document.getElementById('nav-list');
 const navItems = Array.from(navList.querySelectorAll('.nav-item'));
+const topbarTitle = document.getElementById('topbar-title');
 let currentRoute = null;
 let frameHashSyncWindow = null;
+const DEFAULT_TITLE = '2025 NDHS Key Indicators — Philippines';
+
+function getRouteTitle(route) {
+  const item = findNavItem(route);
+  if (!item) return DEFAULT_TITLE;
+  const label = item.querySelector('.nav-title-text')?.textContent?.trim() || route;
+  return `${label} | 2025 NDHS Key Indicators`;
+}
 
 function findNavItem(route) {
   return navItems.find(item => item.dataset.route === route) || null;
@@ -222,6 +279,10 @@ function buildRouteHash(route, childHash = '') {
 
 function setActiveNav(route) {
   navItems.forEach(item => item.classList.toggle('active', item.dataset.route === route));
+  const item = findNavItem(route);
+  const label = item?.querySelector('.nav-title-text')?.textContent?.trim() || '2025 NDHS';
+  topbarTitle.textContent = label;
+  document.title = getRouteTitle(route);
 }
 
 function syncParentUrlFromValue(childHash, replace = false) {
@@ -309,12 +370,18 @@ navList.addEventListener('click', e => {
 const nav      = document.getElementById('nav');
 const overlay  = document.getElementById('nav-overlay');
 const hamburger = document.getElementById('hamburger');
+const navPin = document.getElementById('nav-pin');
 
 function openNav()  { nav.classList.add('open');     overlay.classList.add('visible'); }
 function closeNav() { nav.classList.remove('open');  overlay.classList.remove('visible'); }
+function toggleDesktopNav() {
+  document.body.classList.toggle('nav-collapsed');
+  navPin.setAttribute('aria-expanded', String(!document.body.classList.contains('nav-collapsed')));
+}
 
 hamburger.addEventListener('click', () => nav.classList.contains('open') ? closeNav() : openNav());
 overlay.addEventListener('click', closeNav);
+navPin.addEventListener('click', toggleDesktopNav);
 
 frame.addEventListener('load', () => {
   bindFrameHashSync();
