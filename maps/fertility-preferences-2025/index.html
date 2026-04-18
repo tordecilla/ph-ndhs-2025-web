@@ -324,10 +324,16 @@
     z-index: 10;
     background: rgba(255,255,255,0.92);
     border-radius: 20px; padding: 4px;
-    display: flex; gap: 2px;
+    display: flex; flex-wrap: nowrap; gap: 4px;
+    align-items: center; justify-content: center;
+    width: fit-content;
+    max-width: calc(100vw - 24px);
+    overflow-x: auto;
+    overflow-y: hidden;
     box-shadow: 0 1px 6px rgba(0,0,0,0.15);
     font-size: 12px; user-select: none;
   }
+  #metric-toggle::-webkit-scrollbar { display: none; }
   #metric-toggle input[type=radio] { display: none; }
   #metric-toggle label {
     padding: 5px 14px; border-radius: 16px; cursor: pointer;
@@ -336,6 +342,33 @@
   }
   #metric-toggle label:has(input:checked) {
     background: var(--hover-stroke); color: #fff;
+  }
+  #metric-select-wrap {
+    display: none;
+    width: 100%;
+  }
+  #metric-select {
+    width: 100%;
+    background: rgba(255,255,255,0.96);
+    border: 1px solid var(--btn-border);
+    border-radius: 12px;
+    color: var(--btn-color);
+    font: 12px monospace;
+    padding: 9px 12px;
+    outline: none;
+  }
+  @media (max-width: 780px) {
+    #metric-toggle {
+      top: 56px;
+      border-radius: 14px;
+      padding: 8px;
+    }
+    #metric-toggle label {
+      display: none;
+    }
+    #metric-select-wrap {
+      display: block;
+    }
   }
 
   /* Ã¢â€â‚¬Ã¢â€â‚¬ Ranked list Ã¢â€â‚¬Ã¢â€â‚¬ */
@@ -354,9 +387,9 @@
 </head>
 <body>
 <svg id="map"></svg>
-<button id="back-btn">Ã¢â€ Â Back</button>
-<button id="info-btn">Ã¢â€žÂ¹ Details</button>
-<div id="status">LoadingÃ¢â‚¬Â¦</div>
+<button id="back-btn">Back</button>
+<button id="info-btn">Details</button>
+<div id="status">Loading...</div>
 <div id="metric-toggle">
   <label><input type="radio" name="metric" value="want_no_more_pct" checked><span>Want no more</span></label>
   <label><input type="radio" name="metric" value="another_soon_pct"><span>Have another soon</span></label>
@@ -364,15 +397,24 @@
   <label><input type="radio" name="metric" value="another_undecided_pct"><span>Have another, undecided when</span></label>
   <label><input type="radio" name="metric" value="sterilized_pct"><span>Sterilized</span></label>
   <label><input type="radio" name="metric" value="declared_infecund_pct"><span>Declared infecund</span></label>
-</div>
+  <div id="metric-select-wrap">
+    <select id="metric-select" aria-label="Select map metric">
+      <option value="want_no_more_pct" selected>Want no more</option>
+      <option value="another_soon_pct">Have another soon</option>
+      <option value="another_later_pct">Have another later</option>
+      <option value="another_undecided_pct">Have another, undecided when</option>
+      <option value="sterilized_pct">Sterilized</option>
+      <option value="declared_infecund_pct">Declared infecund</option>
+    </select>
+  </div></div>
 <div id="detail">
   <div id="detail-header">
     <div id="detail-header-row">
-      <div class="detail-eyebrow" id="detail-eyebrow">Ã¢â‚¬â€</div>
+      <div class="detail-eyebrow" id="detail-eyebrow">-</div>
       <button id="detail-close">X</button>
     </div>
-    <div class="detail-lgu-name" id="detail-lgu-name">Ã¢â‚¬â€</div>
-    <div class="detail-region"   id="detail-region">Ã¢â‚¬â€</div>
+    <div class="detail-lgu-name" id="detail-lgu-name">-</div>
+    <div class="detail-region"   id="detail-region">-</div>
   </div>
   <div id="detail-body"></div>
 </div>
@@ -384,6 +426,7 @@ const infoBtn  = document.getElementById('info-btn');
 const svgEl    = document.getElementById('map');
 const svg      = d3.select('#map');
 const metricToggle = document.getElementById('metric-toggle');
+const metricSelect = document.getElementById('metric-select');
 const detail = document.getElementById('detail');
 svg.insert('rect', ':first-child').attr('class', 'svg-bg').attr('width', '100%').attr('height', '100%').style('pointer-events', 'none');
 const g        = svg.append('g');
@@ -927,15 +970,7 @@ async function restoreFromHash(hash) {
   activeTab = state.tab;
 
   if (metric) {
-    const radio = document.querySelector(`input[name="metric"][value="${metric}"]`);
-    if (radio) radio.checked = true;
-    if ((config.colorDomains || {})[metric]) {
-      config.colorField = metric;
-      config.colorDomain = config.colorDomains[metric];
-      if (config.colorScheme && d3[config.colorScheme]) {
-        colorScale = d3.scaleSequential(d3[config.colorScheme]).domain(config.colorDomain);
-      }
-    }
+    applyMetric(metric, true, false);
   }
 
   if (!pathParts.length) { drawNational(); switchTab(state.tab, true, false); return; }
@@ -1529,31 +1564,45 @@ function setPageTitle(title) {
 }
 
 // Ã¢â€â‚¬Ã¢â€â‚¬ Metric toggle Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
-document.querySelectorAll('input[name="metric"]').forEach(radio => {
-  radio.addEventListener('change', function () {
-    if (!this.checked) return;
-    const field  = this.value;
-    const domain = (config.colorDomains || {})[field] || config.colorDomain;
-    config.colorField  = field;
-    config.colorDomain = domain;
-    if (config.colorScheme && d3[config.colorScheme]) {
-      colorScale = d3.scaleSequential(d3[config.colorScheme]).domain(domain);
+function applyMetric(field, syncControls = true, updateURL = true) {
+  const domain = (config.colorDomains || {})[field] || config.colorDomain;
+  config.colorField = field;
+  config.colorDomain = domain;
+  if (config.colorScheme && d3[config.colorScheme]) {
+    colorScale = d3.scaleSequential(d3[config.colorScheme]).domain(domain);
+  }
+  if (syncControls) {
+    const radio = document.querySelector(`input[name="metric"][value="${field}"]`);
+    if (radio) radio.checked = true;
+    if (metricSelect) metricSelect.value = field;
+  }
+  d3.selectAll('path.region').style('fill', d => getFill('region', d.properties.adm1_psgc));
+  if (detail.classList.contains('open')) {
+    if (currentContext) {
+      populateDetail(currentContext.name, currentContext.parentName, currentContext.psgc, currentContext.type);
+    } else {
+      openWelcome();
     }
-    // Re-paint all rendered region polygons
-    d3.selectAll('path.region').style('fill', d => getFill('region', d.properties.adm1_psgc));
-    // Refresh panel if open
-    if (detail.classList.contains('open')) {
-      if (currentContext) {
-        populateDetail(currentContext.name, currentContext.parentName, currentContext.psgc, currentContext.type);
-      } else {
-        openWelcome();
-      }
-    }
+  }
+  if (updateURL) {
     const current = parseHash();
     const viewToken = current.split('--').find(p => p.startsWith('v'));
     pushURL(buildStateHash(viewToken ? viewToken.slice(1).replace(/-/g, '/') : '/'), true);
+  }
+}
+
+document.querySelectorAll('input[name="metric"]').forEach(radio => {
+  radio.addEventListener('change', function () {
+    if (!this.checked) return;
+    applyMetric(this.value);
   });
 });
+
+if (metricSelect) {
+  metricSelect.addEventListener('change', function () {
+    applyMetric(this.value);
+  });
+}
 
 // Ã¢â€â‚¬Ã¢â€â‚¬ Boot Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 async function boot() {

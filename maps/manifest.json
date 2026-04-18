@@ -1,5 +1,13 @@
 [
   {
+    "slug": "antenatal-care-2025",
+    "title": "Antenatal Care",
+    "description": "Maternal care indicators by region: antenatal care coverage, ANC visits, iron supplementation, and neonatal tetanus protection (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-18"
+  },
+  {
     "slug": "fertility-preferences-2025",
     "title": "Fertility Preferences",
     "description": "Desire for children by region: want no more, timing preferences, sterilization, and declared infecundity (NDHS 2025)",

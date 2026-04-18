@@ -224,9 +224,11 @@
     z-index: 10;
     background: rgba(255,255,255,0.92);
     border-radius: 20px; padding: 4px;
-    display: flex; gap: 2px;
+    display: flex; flex-wrap: nowrap; gap: 2px;
+    width: fit-content;
     max-width: calc(100vw - 24px);
     overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
     box-shadow: 0 1px 6px rgba(0,0,0,0.15);
     font-size: 12px; user-select: none;
@@ -240,6 +242,33 @@
   }
   #metric-toggle label:has(input:checked) {
     background: var(--hover-stroke); color: #fff;
+  }
+  #metric-select-wrap {
+    display: none;
+    width: 100%;
+  }
+  #metric-select {
+    width: 100%;
+    background: rgba(255,255,255,0.96);
+    border: 1px solid var(--btn-border);
+    border-radius: 12px;
+    color: var(--btn-color);
+    font: 12px monospace;
+    padding: 9px 12px;
+    outline: none;
+  }
+  @media (max-width: 780px) {
+    #metric-toggle {
+      top: 56px;
+      border-radius: 14px;
+      padding: 8px;
+    }
+    #metric-toggle label {
+      display: none;
+    }
+    #metric-select-wrap {
+      display: block;
+    }
   }
 
   /* ── Ranked list ── */
@@ -374,6 +403,15 @@
   <label><input type="radio" name="metric" value="pregnancy_loss_pct"><span>Have ever had a pregnancy loss</span></label>
   <label><input type="radio" name="metric" value="currently_pregnant_pct"><span>Are currently pregnant</span></label>
   <label><input type="radio" name="metric" value="begun_childbearing_pct"><span>Have begun childbearing</span></label>
+  <div id="metric-select-wrap">
+    <select id="metric-select" aria-label="Select map metric">
+      <option value="ever_pregnant_pct" selected>Have ever been pregnant</option>
+      <option value="live_birth_pct">Have ever had a live birth</option>
+      <option value="pregnancy_loss_pct">Have ever had a pregnancy loss</option>
+      <option value="currently_pregnant_pct">Are currently pregnant</option>
+      <option value="begun_childbearing_pct">Have begun childbearing</option>
+    </select>
+  </div>
 </div>
 <div id="detail">
   <div id="detail-header">
@@ -394,6 +432,7 @@ const infoBtn  = document.getElementById('info-btn');
 const svgEl    = document.getElementById('map');
 const svg      = d3.select('#map');
 const metricToggle = document.getElementById('metric-toggle');
+const metricSelect = document.getElementById('metric-select');
 const detail = document.getElementById('detail');
 svg.insert('rect', ':first-child').attr('class', 'svg-bg').attr('width', '100%').attr('height', '100%').style('pointer-events', 'none');
 const g        = svg.append('g');
@@ -961,15 +1000,7 @@ async function restoreFromHash(hash) {
   activeTab = state.tab;
 
   if (metric) {
-    const radio = document.querySelector(`input[name="metric"][value="${metric}"]`);
-    if (radio) radio.checked = true;
-    if ((config.colorDomains || {})[metric]) {
-      config.colorField = metric;
-      config.colorDomain = config.colorDomains[metric];
-      if (config.colorScheme && d3[config.colorScheme]) {
-        colorScale = d3.scaleSequential(d3[config.colorScheme]).domain(config.colorDomain);
-      }
-    }
+    applyMetric(metric, true, false);
   }
 
   if (!pathParts.length) {
@@ -1576,19 +1607,43 @@ function setPageTitle(title) {
 }
 
 // ── Boot ──────────────────────────────────────────────────────────────────────
+function applyMetric(field, syncControls = true, updateURL = true) {
+  const domain = (config.colorDomains || {})[field] || config.colorDomain;
+  config.colorField = field;
+  config.colorDomain = domain;
+  if (config.colorScheme && d3[config.colorScheme]) {
+    colorScale = d3.scaleSequential(d3[config.colorScheme]).domain(domain);
+  }
+  if (syncControls) {
+    const radio = document.querySelector(`input[name="metric"][value="${field}"]`);
+    if (radio) radio.checked = true;
+    if (metricSelect) metricSelect.value = field;
+  }
+  d3.selectAll('path.region').style('fill', d => getFill('region', d.properties.adm1_psgc));
+  if (detail.classList.contains('open')) {
+    if (currentContext) {
+      populateDetail(currentContext.name, currentContext.parentName, currentContext.psgc, currentContext.type);
+    } else {
+      openWelcome();
+    }
+  }
+  if (updateURL) {
+    const current = parseStateHash(parseHash());
+    pushURL(buildStateHash(current.viewHash), true);
+  }
+}
+
 document.querySelectorAll('input[name="metric"]').forEach(radio => {
   radio.addEventListener('change', function () {
-    if (!this.checked) return;
-    const field  = this.value;
-    const domain = (config.colorDomains || {})[field] || config.colorDomain;
-    config.colorField  = field;
-    config.colorDomain = domain;
-    if (config.colorScheme && d3[config.colorScheme]) {
-      colorScale = d3.scaleSequential(d3[config.colorScheme]).domain(domain);
-    }
-    drawNational();
+    if (this.checked) applyMetric(this.value);
   });
 });
+
+if (metricSelect) {
+  metricSelect.addEventListener('change', function () {
+    applyMetric(this.value);
+  });
+}
 
 async function boot() {
   await loadConfig();
