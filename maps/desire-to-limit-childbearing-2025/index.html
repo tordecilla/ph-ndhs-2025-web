@@ -93,6 +93,16 @@
     max-width: 1220px;
     margin: 0 auto;
   }
+  #tab-tables {
+    overflow-y: auto;
+    padding: 28px 28px 56px;
+  }
+  #tab-tables::-webkit-scrollbar { width: 4px; }
+  #tab-tables::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 2px; }
+  #tables-container {
+    max-width: 1380px;
+    margin: 0 auto;
+  }
   #tab-insights {
     overflow-y: auto;
     padding: 28px 28px 56px;
@@ -185,6 +195,110 @@
   .chart-note {
     font-size: 11px; color: var(--data-label-color); line-height: 1.7;
     margin-bottom: 4px;
+  }
+  .dt-page-title {
+    font-size: 20px; font-weight: 600; color: var(--lgu-name-color);
+    line-height: 1.25; margin-bottom: 4px;
+  }
+  .dt-page-subtitle {
+    font-size: 12px; color: var(--region-color); margin-bottom: 28px; line-height: 1.6;
+  }
+  .dt-section {
+    margin-bottom: 24px;
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-divider);
+    padding: 16px;
+  }
+  .dt-section-label {
+    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--section-color); margin-bottom: 12px;
+  }
+  .dt-table-wrap {
+    overflow-x: auto;
+  }
+  .dt-table-wrap::-webkit-scrollbar { height: 6px; }
+  .dt-table-wrap::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 3px; }
+  .dt-table {
+    width: 100%;
+    min-width: 1120px;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .dt-table thead th {
+    font: 10px/1.3 monospace; letter-spacing: 0.8px; text-transform: uppercase;
+    color: var(--data-label-color);
+    padding: 6px 10px 8px; text-align: right; vertical-align: bottom;
+    border-bottom: 2px solid var(--panel-border);
+    white-space: nowrap;
+  }
+  .dt-table thead th:first-child {
+    text-align: left;
+    min-width: 220px;
+    white-space: normal;
+  }
+  .dt-table thead th.col-group {
+    text-align: center;
+    border-bottom: 1px solid var(--panel-border);
+    border-right: 1px solid var(--panel-divider);
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+  }
+  .dt-table thead th.col-group:last-child { border-right: none; }
+  .dt-table thead tr.group-subrow th {
+    border-bottom: 1px solid var(--panel-divider);
+    border-right: 1px solid var(--panel-divider);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.2px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+  }
+  .dt-table thead tr.group-subrow th:last-child { border-right: none; }
+  .dt-table thead tr.sub-header th {
+    border-bottom: 2px solid var(--panel-border);
+    border-right: 1px solid var(--panel-divider);
+  }
+  .dt-table thead tr.sub-header th:last-child { border-right: none; }
+  .dt-table tbody tr { border-bottom: 1px solid var(--panel-divider); }
+  .dt-table tbody tr:last-child { border-bottom: none; }
+  .dt-table tbody td {
+    padding: 7px 10px; color: var(--text-color); text-align: right;
+    border-right: 1px solid var(--panel-divider);
+    white-space: nowrap;
+  }
+  .dt-table tbody td:last-child { border-right: none; }
+  .dt-table tbody td:first-child {
+    text-align: left;
+    color: var(--lgu-name-color);
+    white-space: normal;
+  }
+  .dt-table td.na { color: var(--no-data-color); font-style: italic; }
+  .dt-table tbody tr.dt-total-row td {
+    font-weight: 600;
+    border-top: 2px solid var(--panel-border);
+  }
+  .dt-table th.year-2022,
+  .dt-table td.year-2022 {
+    background: rgba(26,40,64,0.035);
+  }
+  .dt-table th.year-break,
+  .dt-table td.year-break {
+    border-left: 2px solid rgba(26,40,64,0.12);
+  }
+  .dt-footnotes {
+    margin-top: 32px; padding-top: 16px;
+    border-top: 1px solid var(--panel-divider);
+  }
+  .dt-note {
+    font-size: 11px; color: var(--data-label-color); line-height: 1.7;
+    margin-bottom: 2px;
+  }
+  .dt-source {
+    font-size: 11px; color: var(--data-label-color); margin-top: 10px; font-style: italic;
+  }
+  .dt-inline-sup {
+    font-size: 9px;
+    margin-left: 1px;
   }
 
   .region   { fill: var(--poly-fill); stroke: var(--poly-stroke); stroke-width: 0.8; cursor: pointer; }
@@ -388,7 +502,7 @@
 <body>
 <svg id="map"></svg>
 <button id="back-btn">Back</button>
-<button id="info-btn">(i) Details</button>
+<button id="info-btn">ℹ Details</button>
 <div id="status">Loading...</div>
 <div id="metric-toggle">
   <label><input type="radio" name="metric" value="children_total_pct" checked><span>Total</span></label>
@@ -438,6 +552,8 @@ const g        = svg.append('g');
 let activeTab = 'map';
 let chartsReady = false;
 let chartsContainer = null;
+let tablesReady = false;
+let tablesContainer = null;
 let insightsContainer = null;
 
 (function initTabbedLayout() {
@@ -446,6 +562,7 @@ let insightsContainer = null;
   tabBar.innerHTML = `
     <button class="tab-btn active" data-tab="map">Maps</button>
     <button class="tab-btn" data-tab="charts">Charts</button>
+    <button class="tab-btn" data-tab="tables">Data Tables</button>
     <button class="tab-btn" data-tab="insights">Insights</button>
   `;
 
@@ -457,6 +574,10 @@ let insightsContainer = null;
   chartsPanel.id = 'tab-charts';
   chartsPanel.className = 'tab-panel';
 
+  const tablesPanel = document.createElement('div');
+  tablesPanel.id = 'tab-tables';
+  tablesPanel.className = 'tab-panel';
+
   const insightsPanel = document.createElement('div');
   insightsPanel.id = 'tab-insights';
   insightsPanel.className = 'tab-panel';
@@ -464,6 +585,10 @@ let insightsContainer = null;
   chartsContainer = document.createElement('div');
   chartsContainer.id = 'charts-container';
   chartsPanel.appendChild(chartsContainer);
+
+  tablesContainer = document.createElement('div');
+  tablesContainer.id = 'tables-container';
+  tablesPanel.appendChild(tablesContainer);
 
   insightsContainer = document.createElement('div');
   insightsContainer.id = 'insights-container';
@@ -474,7 +599,8 @@ let insightsContainer = null;
   document.body.insertBefore(tabBar, document.body.firstChild);
   document.body.insertBefore(mapPanel, tabBar.nextSibling);
   document.body.insertBefore(chartsPanel, mapPanel.nextSibling);
-  document.body.insertBefore(insightsPanel, chartsPanel.nextSibling);
+  document.body.insertBefore(tablesPanel, chartsPanel.nextSibling);
+  document.body.insertBefore(insightsPanel, tablesPanel.nextSibling);
 
   tabBar.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => switchTab(btn.dataset.tab, false, true));
@@ -482,14 +608,19 @@ let insightsContainer = null;
 })();
 
 function switchTab(tab, replace = false, syncHash = true) {
-  activeTab = tab === 'charts' ? 'charts' : tab === 'insights' ? 'insights' : 'map';
+  activeTab = tab === 'charts' ? 'charts' : tab === 'tables' ? 'tables' : tab === 'insights' ? 'insights' : 'map';
   document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === activeTab));
   document.getElementById('tab-map').classList.toggle('active', activeTab === 'map');
   document.getElementById('tab-charts').classList.toggle('active', activeTab === 'charts');
+  document.getElementById('tab-tables').classList.toggle('active', activeTab === 'tables');
   document.getElementById('tab-insights').classList.toggle('active', activeTab === 'insights');
   if (activeTab === 'charts' && config.chartData && !chartsReady) {
     renderCharts(config.chartData);
     chartsReady = true;
+  }
+  if (activeTab === 'tables' && config.tableData && !tablesReady) {
+    renderTables(config);
+    tablesReady = true;
   }
   if (activeTab === 'insights' && config.insights) {
     renderInsights(config.insights);
@@ -808,6 +939,157 @@ function renderCharts(chartData) {
   }
 }
 
+function renderTables(data) {
+  if (!tablesContainer || !data.tableData) return;
+  tablesContainer.innerHTML = '';
+
+  const tableData = data.tableData;
+  const header = document.createElement('div');
+  header.innerHTML = `
+    <div class="dt-page-title">${tableData.title || config.title}</div>
+    <div class="dt-page-subtitle">${tableData.subtitle || ''}</div>
+  `;
+  tablesContainer.appendChild(header);
+
+  function appendTextWithNote(container, label, noteRef) {
+    container.appendChild(document.createTextNode(label || ''));
+    if (!noteRef) return;
+    const sup = document.createElement('sup');
+    sup.className = 'dt-inline-sup';
+    sup.textContent = noteRef;
+    container.appendChild(sup);
+  }
+
+  function applyYearClasses(node, group, groupIndex, colIndex) {
+    if (group && String(group.label || '').trim() === '2022') node.classList.add('year-2022');
+    if (groupIndex > 0 && colIndex === 0) node.classList.add('year-break');
+  }
+
+  function buildValueCell(value, group, groupIndex, colIndex) {
+    const cell = document.createElement('td');
+    const display = value == null ? 'NA' : String(value);
+    cell.textContent = display;
+    if (display === 'NA') cell.classList.add('na');
+    applyYearClasses(cell, group, groupIndex, colIndex);
+    return cell;
+  }
+
+  function recordValue(record, field) {
+    const displayKey = `${field}_display`;
+    if (record[displayKey] != null) return String(record[displayKey]);
+    if (record[field] == null) return 'NA';
+    return String(record[field]);
+  }
+
+  function buildRows(sectionConfig) {
+    if (!sectionConfig.useRegionData) return sectionConfig.rows || [];
+    return (data.data?.region || []).map(record => ({
+      label: nameRegistry[String(record.psgc)] || ('PSGC ' + record.psgc),
+      noteRef: record.noteRef || null,
+      values: (sectionConfig.colGroups || []).flatMap(group =>
+        (group.cols || []).map(col => recordValue(record, col.field))
+      )
+    }));
+  }
+
+  function createTableSection(sectionConfig) {
+    const section = document.createElement('section');
+    section.className = 'dt-section';
+
+    const title = document.createElement('div');
+    title.className = 'dt-section-label';
+    title.textContent = sectionConfig.title || '';
+    section.appendChild(title);
+
+    const wrap = document.createElement('div');
+    wrap.className = 'dt-table-wrap';
+    section.appendChild(wrap);
+
+    const table = document.createElement('table');
+    table.className = 'dt-table';
+    wrap.appendChild(table);
+
+    const colGroups = sectionConfig.colGroups || [];
+    const columnMeta = colGroups.flatMap((group, groupIndex) =>
+      (group.cols || []).map((col, colIndex) => ({ group, groupIndex, colIndex }))
+    );
+    const hasGroupSubLabels = colGroups.some(group => group.subLabel);
+
+    const thead = table.createTHead();
+    const groupRow = thead.insertRow();
+    const topLeft = document.createElement('th');
+    topLeft.rowSpan = hasGroupSubLabels ? 3 : 2;
+    groupRow.appendChild(topLeft);
+
+    colGroups.forEach((group, groupIndex) => {
+      const th = document.createElement('th');
+      th.className = 'col-group';
+      th.colSpan = (group.cols || []).length;
+      applyYearClasses(th, group, groupIndex, 0);
+      th.textContent = group.label || '';
+      groupRow.appendChild(th);
+    });
+
+    if (hasGroupSubLabels) {
+      const subLabelRow = thead.insertRow();
+      subLabelRow.className = 'group-subrow';
+      colGroups.forEach((group, groupIndex) => {
+        const th = document.createElement('th');
+        th.colSpan = (group.cols || []).length;
+        applyYearClasses(th, group, groupIndex, 0);
+        appendTextWithNote(th, group.subLabel || '', group.subLabelNoteRef);
+        subLabelRow.appendChild(th);
+      });
+    }
+
+    const subRow = thead.insertRow();
+    subRow.className = 'sub-header';
+    colGroups.forEach((group, groupIndex) => {
+      (group.cols || []).forEach((col, colIndex) => {
+        const th = document.createElement('th');
+        applyYearClasses(th, group, groupIndex, colIndex);
+        appendTextWithNote(th, col.label || '', col.noteRef);
+        subRow.appendChild(th);
+      });
+    });
+
+    const tbody = table.createTBody();
+    buildRows(sectionConfig).forEach(row => {
+      const tr = tbody.insertRow();
+      if (row.rowClass) tr.className = row.rowClass;
+      const labelCell = document.createElement('td');
+      appendTextWithNote(labelCell, row.label || '', row.noteRef);
+      tr.appendChild(labelCell);
+      (row.values || []).forEach((value, valueIndex) => {
+        const meta = columnMeta[valueIndex] || {};
+        tr.appendChild(buildValueCell(value, meta.group, meta.groupIndex || 0, meta.colIndex || 0));
+      });
+    });
+
+    tablesContainer.appendChild(section);
+  }
+
+  (tableData.tables || []).forEach(createTableSection);
+
+  if (tableData.footnotes?.length || tableData.source) {
+    const foot = document.createElement('div');
+    foot.className = 'dt-footnotes';
+    (tableData.footnotes || []).forEach(note => {
+      const row = document.createElement('div');
+      row.className = 'dt-note';
+      row.textContent = note;
+      foot.appendChild(row);
+    });
+    if (tableData.source) {
+      const source = document.createElement('div');
+      source.className = 'dt-source';
+      source.textContent = `Source: ${tableData.source}`;
+      foot.appendChild(source);
+    }
+    tablesContainer.appendChild(foot);
+  }
+}
+
 function formatChartValue(row, key) {
   const displayKey = `${key}_display`;
   if (row[displayKey] != null) return String(row[displayKey]);
@@ -1065,7 +1347,13 @@ function parseHash() {
 
 function parseStateHash(hash = parseHash()) {
   const parts = String(hash || '').split('--').filter(Boolean);
-  const tab = parts.includes('tinsights') ? 'insights' : parts.includes('tdata') ? 'charts' : 'map';
+  const tab = parts.includes('ttables')
+    ? 'tables'
+    : parts.includes('tinsights')
+      ? 'insights'
+      : (parts.includes('tcharts') || parts.includes('tdata'))
+        ? 'charts'
+        : 'map';
   const metricToken = parts.find(p => p.startsWith('m'));
   const viewToken = parts.find(p => p.startsWith('v'));
   return {
@@ -1086,7 +1374,13 @@ function slugToMetric(slug) {
 
 function buildStateHash(viewHash = '/') {
   const defaultField = config.colorField || Object.keys(config.colorDomains || {})[0] || 'children_total_pct';
-  const tabToken = activeTab === 'insights' ? 'tinsights' : activeTab === 'charts' ? 'tdata' : 'tmap';
+  const tabToken = activeTab === 'insights'
+    ? 'tinsights'
+    : activeTab === 'tables'
+      ? 'ttables'
+      : activeTab === 'charts'
+        ? 'tcharts'
+        : 'tmap';
   const parts = [tabToken, 'm' + metricToSlug(defaultField)];
   const cleanView = String(viewHash || '/').replace(/^\/+/, '');
   if (cleanView && cleanView !== '/') parts.push('v' + cleanView.replace(/\//g, '-'));
@@ -1566,7 +1860,10 @@ const LEVEL_LABEL = { region: 'Region', province: 'Province / District', municit
 
 function noteHTML() {
   const def  = config.definitions?.[config.colorField];
-  const note = config.notes?.[config.colorField] || config.note;
+  const fieldNote = config.notes?.[config.colorField];
+  const note = fieldNote && config.note
+    ? `${fieldNote} ${config.note}`
+    : (fieldNote || config.note);
   const style = 'font-size:11px;color:var(--data-label-color);line-height:1.6;margin:10px 0 4px';
   return (def ? `<p style="${style}">${def}</p>` : '')
        + (note ? `<p style="${style}">${note}</p>` : '');
@@ -1587,17 +1884,28 @@ function legendHTML() {
 function rankedListHTML(level, activePsgc, filterParentPsgc) {
   let records = Object.values(dataByLevel[level] || {});
   if (!records.length || !config.colorField) return '';
+  const displayField = config.colorField + '_display';
   if (filterParentPsgc != null) {
     const fp = String(filterParentPsgc);
     records = records.filter(r => parentMap[String(r.psgc)] === fp);
   }
   const sorted = [...records]
-    .filter(r => r[config.colorField] != null)
-    .sort((a, b) => (b[config.colorField] ?? -Infinity) - (a[config.colorField] ?? -Infinity));
+    .filter(r => r[config.colorField] != null || r[displayField] != null)
+    .sort((a, b) => {
+      const aHasValue = a[config.colorField] != null;
+      const bHasValue = b[config.colorField] != null;
+      if (aHasValue && bHasValue) return (b[config.colorField] ?? -Infinity) - (a[config.colorField] ?? -Infinity);
+      if (aHasValue) return -1;
+      if (bHasValue) return 1;
+      const aDisplay = String(a[displayField] ?? '');
+      const bDisplay = String(b[displayField] ?? '');
+      if (aDisplay === bDisplay) return 0;
+      if (aDisplay === '*') return -1;
+      if (bDisplay === '*') return 1;
+      return aDisplay.localeCompare(bDisplay);
+    });
   if (!sorted.length) return '';
-  const suffix = config.valueSuffix || '';
   const levelLabel = LEVEL_LABEL[level] || level;
-  const displayField = config.colorField + '_display';
   const superscripts = ['&#185;','&#178;','&#179;','&#8308;','&#8309;','&#8310;','&#8311;','&#8312;','&#8313;'];
   const notedPsgcs = new Map();
   let noteCounter = 0;
@@ -1607,9 +1915,9 @@ function rankedListHTML(level, activePsgc, filterParentPsgc) {
     const sup  = notedPsgcs.get(String(r.psgc));
     const name = sup ? `${rawName}<sup style="font-size:9px">${sup}</sup>` : rawName;
     const val  = r[config.colorField];
-    const fill = colorScale ? colorScale(val) : 'transparent';
+    const fill = val != null && colorScale ? colorScale(val) : 'rgba(0,0,0,0.16)';
     const active = activePsgc != null && String(r.psgc) === String(activePsgc);
-    const display = r[displayField] ?? (val + suffix);
+    const display = r[displayField] ?? (val == null ? '-' : String(val));
     return `<div class="ranked-row${active ? ' is-active' : ''}">` +
       `<span class="ranked-i">${i + 1}</span>` +
       `<span class="ranked-swatch" style="background:${fill}"></span>` +

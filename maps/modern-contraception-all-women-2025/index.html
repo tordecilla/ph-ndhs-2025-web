@@ -447,7 +447,7 @@
 <body>
 <svg id="map"></svg>
 <button id="back-btn">Back</button>
-<button id="info-btn">(i) Details</button>
+<button id="info-btn">ℹ Details</button>
 <div id="status">Loading...</div>
 <div id="metric-toggle"></div>
 <div id="detail">
@@ -514,7 +514,7 @@ function switchTab(tab, replace = false, syncHash = true) {
   document.getElementById('tab-map').classList.toggle('active', activeTab === 'map');
   document.getElementById('tab-charts').classList.toggle('active', activeTab === 'charts');
   if (activeTab === 'charts' && config.tableData && !chartsReady) {
-    renderDataTables(config.tableData);
+    renderCharts(config.tableData);
     chartsReady = true;
   }
   if (syncHash) {
@@ -675,7 +675,12 @@ function getFill(level, psgc) {
   return null;
 }
 
-function renderDataTables(tableData) {
+const CHART_PALETTE = [
+  '#4e79a7','#f28e2b','#e15759','#76b7b2','#59a14f',
+  '#edc948','#b07aa1','#ff9da7','#9c755f','#bab0ac'
+];
+
+function renderCharts(tableData) {
   if (!chartsContainer) return;
   chartsContainer.innerHTML = '';
 
@@ -686,11 +691,17 @@ function renderDataTables(tableData) {
   `;
   chartsContainer.appendChild(header);
 
+  const seriesWithColors = (tableData.series || []).map((s, i) => ({
+    ...s,
+    color: s.color || CHART_PALETTE[i % CHART_PALETTE.length]
+  }));
+
   const grid = document.createElement('div');
   grid.className = 'chart-grid';
   chartsContainer.appendChild(grid);
 
   (tableData.blocks || []).forEach(block => {
+    const palette = getChartSeriesPalette(seriesWithColors, block.year);
     const card = document.createElement('section');
     card.className = 'chart-block';
 
@@ -704,30 +715,14 @@ function renderDataTables(tableData) {
     subtitle.textContent = block.subtitle || tableData.blockSubtitle || '';
     card.appendChild(subtitle);
 
-    const wrap = document.createElement('div');
-    wrap.className = 'data-table-wrap';
+    drawGroupedBars(card, tableData, block, palette);
 
-    const table = document.createElement('table');
-    table.className = 'data-table';
-    table.style.minWidth = `${220 + ((tableData.series || []).length * 96)}px`;
-    table.innerHTML = `
-      <thead>
-        <tr>
-          <th>Category</th>
-          ${(tableData.series || []).map(series => `<th>${series.label}</th>`).join('')}
-        </tr>
-      </thead>
-      <tbody>
-        ${(block.rows || []).map(row => `
-          <tr>
-            <td>${row.label || ''}</td>
-            ${(tableData.series || []).map(series => `<td>${formatChartValue(row, series.key)}</td>`).join('')}
-          </tr>
-        `).join('')}
-      </tbody>
-    `;
-    wrap.appendChild(table);
-    card.appendChild(wrap);
+    const legend = document.createElement('div');
+    legend.className = 'chart-legend';
+    legend.innerHTML = palette.map(series =>
+      `<span><span class="legend-swatch" style="background:${series.displayColor}"></span>${series.label}</span>`
+    ).join('');
+    card.appendChild(legend);
 
     grid.appendChild(card);
   });
@@ -1558,7 +1553,6 @@ function rankedListHTML(level, activePsgc, filterParentPsgc) {
     .filter(r => r[config.colorField] != null)
     .sort((a, b) => (b[config.colorField] ?? -Infinity) - (a[config.colorField] ?? -Infinity));
   if (!sorted.length) return '';
-  const suffix = config.valueSuffix || '';
   const levelLabel = LEVEL_LABEL[level] || level;
   const displayField = config.colorField + '_display';
   const superscripts = ['¹','²','³','⁴','⁵','⁶','⁷','⁸','⁹'];
@@ -1572,7 +1566,7 @@ function rankedListHTML(level, activePsgc, filterParentPsgc) {
     const val  = r[config.colorField];
     const fill = colorScale ? colorScale(val) : 'transparent';
     const active = activePsgc != null && String(r.psgc) === String(activePsgc);
-    const display = r[displayField] ?? (val + suffix);
+    const display = r[displayField] ?? (val == null ? '-' : String(val));
     return `<div class="ranked-row${active ? ' is-active' : ''}">` +
       `<span class="ranked-i">${i + 1}</span>` +
       `<span class="ranked-swatch" style="background:${fill}"></span>` +

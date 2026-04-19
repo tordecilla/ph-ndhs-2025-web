@@ -515,19 +515,19 @@
   "detailFields": [
     {
       "key": "any_method_pct",
-      "label": "Any method (%, 2025)"
+      "label": "Any method (2025)"
     },
     {
       "key": "any_modern_method_pct",
-      "label": "Any modern method (%, 2025)"
+      "label": "Any modern method (2025)"
     },
     {
       "key": "any_traditional_method_pct",
-      "label": "Any traditional method (%, 2025)"
+      "label": "Any traditional method (2025)"
     },
     {
       "key": "not_using_pct",
-      "label": "Not currently using (%, 2025)"
+      "label": "Not currently using (2025)"
     },
     {
       "key": "women_total",

@@ -61,35 +61,35 @@
   "detailFields": [
     {
       "key": "children_total_pct",
-      "label": "Total (%, 2025)"
+      "label": "Total (2025)"
     },
     {
       "key": "children_0_pct",
-      "label": "No living children (%, 2025)"
+      "label": "No living children (2025)"
     },
     {
       "key": "children_1_pct",
-      "label": "1 living child (%, 2025)"
+      "label": "1 living child (2025)"
     },
     {
       "key": "children_2_pct",
-      "label": "2 living children (%, 2025)"
+      "label": "2 living children (2025)"
     },
     {
       "key": "children_3_pct",
-      "label": "3 living children (%, 2025)"
+      "label": "3 living children (2025)"
     },
     {
       "key": "children_4_pct",
-      "label": "4 living children (%, 2025)"
+      "label": "4 living children (2025)"
     },
     {
       "key": "children_5_pct",
-      "label": "5 living children (%, 2025)"
+      "label": "5 living children (2025)"
     },
     {
       "key": "children_6plus_pct",
-      "label": "6 or more living children (%, 2025)"
+      "label": "6 or more living children (2025)"
     },
     {
       "key": "psa_note",
@@ -109,7 +109,29 @@
         "children_5_pct_display": "(94.5)",
         "children_6plus_pct": 100,
         "children_6plus_pct_display": "(100.0)",
-        "children_total_pct": 61.5
+        "children_total_pct": 61.5,
+        "children_0_pct_display": "10.5",
+        "children_1_pct_display": "34.3",
+        "children_2_pct_display": "68.2",
+        "children_3_pct_display": "89.7",
+        "children_4_pct_display": "94.9",
+        "children_total_pct_display": "61.5",
+        "children_0_pct_2022": 5.3,
+        "children_0_pct_2022_display": "5.3",
+        "children_1_pct_2022": 25,
+        "children_1_pct_2022_display": "25.0",
+        "children_2_pct_2022": 65,
+        "children_2_pct_2022_display": "65.0",
+        "children_3_pct_2022": 86.6,
+        "children_3_pct_2022_display": "86.6",
+        "children_4_pct_2022": 89,
+        "children_4_pct_2022_display": "89.0",
+        "children_5_pct_2022": 85.3,
+        "children_5_pct_2022_display": "(85.3)",
+        "children_6plus_pct_2022": 96.5,
+        "children_6plus_pct_2022_display": "(96.5)",
+        "children_total_pct_2022": 57.8,
+        "children_total_pct_2022_display": "57.8"
       },
       {
         "psgc": 1400000000,
@@ -123,7 +145,28 @@
         "children_5_pct_display": "(89.1)",
         "children_6plus_pct": 90.4,
         "children_6plus_pct_display": "(90.4)",
-        "children_total_pct": 63.7
+        "children_total_pct": 63.7,
+        "children_1_pct_display": "31.9",
+        "children_2_pct_display": "68.4",
+        "children_3_pct_display": "87.2",
+        "children_4_pct_display": "90.5",
+        "children_total_pct_display": "63.7",
+        "children_0_pct_2022": 1.3,
+        "children_0_pct_2022_display": "1.3",
+        "children_1_pct_2022": 14.7,
+        "children_1_pct_2022_display": "14.7",
+        "children_2_pct_2022": 58.8,
+        "children_2_pct_2022_display": "58.8",
+        "children_3_pct_2022": 68.2,
+        "children_3_pct_2022_display": "68.2",
+        "children_4_pct_2022": 90.2,
+        "children_4_pct_2022_display": "90.2",
+        "children_5_pct_2022": 93.4,
+        "children_5_pct_2022_display": "93.4",
+        "children_6plus_pct_2022": 95.7,
+        "children_6plus_pct_2022_display": "(95.7)",
+        "children_total_pct_2022": 55.3,
+        "children_total_pct_2022_display": "55.3"
       },
       {
         "psgc": 100000000,
@@ -136,7 +179,29 @@
         "children_5_pct_display": "*",
         "children_6plus_pct": null,
         "children_6plus_pct_display": "*",
-        "children_total_pct": 51.5
+        "children_total_pct": 51.5,
+        "children_0_pct_display": "15.5",
+        "children_1_pct_display": "12.4",
+        "children_2_pct_display": "56.6",
+        "children_3_pct_display": "74.9",
+        "children_4_pct_display": "98.7",
+        "children_total_pct_display": "51.5",
+        "children_0_pct_2022": 2.5,
+        "children_0_pct_2022_display": "2.5",
+        "children_1_pct_2022": 14.8,
+        "children_1_pct_2022_display": "14.8",
+        "children_2_pct_2022": 73.6,
+        "children_2_pct_2022_display": "73.6",
+        "children_3_pct_2022": 86,
+        "children_3_pct_2022_display": "86.0",
+        "children_4_pct_2022": 86.1,
+        "children_4_pct_2022_display": "(86.1)",
+        "children_5_pct_2022": null,
+        "children_5_pct_2022_display": "*",
+        "children_6plus_pct_2022": null,
+        "children_6plus_pct_2022_display": "*",
+        "children_total_pct_2022": 58.8,
+        "children_total_pct_2022_display": "58.8"
       },
       {
         "psgc": 200000000,
@@ -150,7 +215,28 @@
         "children_5_pct_display": "*",
         "children_6plus_pct": 95.5,
         "children_6plus_pct_display": "(95.5)",
-        "children_total_pct": 58.6
+        "children_total_pct": 58.6,
+        "children_1_pct_display": "21.2",
+        "children_2_pct_display": "68.8",
+        "children_3_pct_display": "84.3",
+        "children_4_pct_display": "78.4",
+        "children_total_pct_display": "58.6",
+        "children_0_pct_2022": 0.1,
+        "children_0_pct_2022_display": "(0.1)",
+        "children_1_pct_2022": 12.3,
+        "children_1_pct_2022_display": "12.3",
+        "children_2_pct_2022": 60.1,
+        "children_2_pct_2022_display": "60.1",
+        "children_3_pct_2022": 85.6,
+        "children_3_pct_2022_display": "85.6",
+        "children_4_pct_2022": 91.7,
+        "children_4_pct_2022_display": "91.7",
+        "children_5_pct_2022": 83.2,
+        "children_5_pct_2022_display": "(83.2)",
+        "children_6plus_pct_2022": null,
+        "children_6plus_pct_2022_display": "*",
+        "children_total_pct_2022": 53.4,
+        "children_total_pct_2022_display": "53.4"
       },
       {
         "psgc": 300000000,
@@ -162,7 +248,30 @@
         "children_4_pct": 87.9,
         "children_5_pct": 83.3,
         "children_6plus_pct": 91.9,
-        "children_total_pct": 59.4
+        "children_total_pct": 59.4,
+        "children_0_pct_display": "6.7",
+        "children_1_pct_display": "25.5",
+        "children_2_pct_display": "66.2",
+        "children_4_pct_display": "87.9",
+        "children_5_pct_display": "83.3",
+        "children_6plus_pct_display": "91.9",
+        "children_total_pct_display": "59.4",
+        "children_0_pct_2022": 0.7,
+        "children_0_pct_2022_display": "0.7",
+        "children_1_pct_2022": 14.3,
+        "children_1_pct_2022_display": "14.3",
+        "children_2_pct_2022": 59.4,
+        "children_2_pct_2022_display": "59.4",
+        "children_3_pct_2022": 82,
+        "children_3_pct_2022_display": "82.0",
+        "children_4_pct_2022": 90.8,
+        "children_4_pct_2022_display": "90.8",
+        "children_5_pct_2022": 89.4,
+        "children_5_pct_2022_display": "89.4",
+        "children_6plus_pct_2022": 98.2,
+        "children_6plus_pct_2022_display": "98.2",
+        "children_total_pct_2022": 55.6,
+        "children_total_pct_2022_display": "55.6"
       },
       {
         "psgc": 400000000,
@@ -177,7 +286,27 @@
         "children_6plus_pct": 92.9,
         "children_6plus_pct_display": "(92.9)",
         "children_total_pct": 59,
-        "children_total_pct_display": "59.0"
+        "children_total_pct_display": "59.0",
+        "children_1_pct_display": "28.5",
+        "children_2_pct_display": "67.9",
+        "children_3_pct_display": "86.8",
+        "children_4_pct_display": "91.7",
+        "children_0_pct_2022": 6.7,
+        "children_0_pct_2022_display": "6.7",
+        "children_1_pct_2022": 28.3,
+        "children_1_pct_2022_display": "28.3",
+        "children_2_pct_2022": 64.3,
+        "children_2_pct_2022_display": "64.3",
+        "children_3_pct_2022": 84.7,
+        "children_3_pct_2022_display": "84.7",
+        "children_4_pct_2022": 94.7,
+        "children_4_pct_2022_display": "94.7",
+        "children_5_pct_2022": 88.9,
+        "children_5_pct_2022_display": "(88.9)",
+        "children_6plus_pct_2022": 77.4,
+        "children_6plus_pct_2022_display": "(77.4)",
+        "children_total_pct_2022": 60.3,
+        "children_total_pct_2022_display": "60.3"
       },
       {
         "psgc": 1700000000,
@@ -189,7 +318,30 @@
         "children_5_pct": 92.4,
         "children_5_pct_display": "(92.4)",
         "children_6plus_pct": 88.6,
-        "children_total_pct": 63.2
+        "children_total_pct": 63.2,
+        "children_0_pct_display": "9.5",
+        "children_1_pct_display": "31.6",
+        "children_2_pct_display": "65.8",
+        "children_3_pct_display": "77.7",
+        "children_4_pct_display": "81.1",
+        "children_6plus_pct_display": "88.6",
+        "children_total_pct_display": "63.2",
+        "children_0_pct_2022": 3.1,
+        "children_0_pct_2022_display": "(3.1)",
+        "children_1_pct_2022": 17.7,
+        "children_1_pct_2022_display": "17.7",
+        "children_2_pct_2022": 65.1,
+        "children_2_pct_2022_display": "65.1",
+        "children_3_pct_2022": 80.4,
+        "children_3_pct_2022_display": "80.4",
+        "children_4_pct_2022": 92.7,
+        "children_4_pct_2022_display": "92.7",
+        "children_5_pct_2022": 89,
+        "children_5_pct_2022_display": "(89.0)",
+        "children_6plus_pct_2022": 92,
+        "children_6plus_pct_2022_display": "92.0",
+        "children_total_pct_2022": 61.9,
+        "children_total_pct_2022_display": "61.9"
       },
       {
         "psgc": 500000000,
@@ -201,7 +353,30 @@
         "children_4_pct": 86.6,
         "children_5_pct": 87.4,
         "children_6plus_pct": 97.4,
-        "children_total_pct": 62.3
+        "children_total_pct": 62.3,
+        "children_1_pct_display": "25.6",
+        "children_2_pct_display": "57.3",
+        "children_3_pct_display": "83.1",
+        "children_4_pct_display": "86.6",
+        "children_5_pct_display": "87.4",
+        "children_6plus_pct_display": "97.4",
+        "children_total_pct_display": "62.3",
+        "children_0_pct_2022": 9.5,
+        "children_0_pct_2022_display": "(9.5)",
+        "children_1_pct_2022": 39.6,
+        "children_1_pct_2022_display": "39.6",
+        "children_2_pct_2022": 65.1,
+        "children_2_pct_2022_display": "65.1",
+        "children_3_pct_2022": 81,
+        "children_3_pct_2022_display": "81.0",
+        "children_4_pct_2022": 91.6,
+        "children_4_pct_2022_display": "91.6",
+        "children_5_pct_2022": 86,
+        "children_5_pct_2022_display": "86.0",
+        "children_6plus_pct_2022": 92.7,
+        "children_6plus_pct_2022_display": "92.7",
+        "children_total_pct_2022": 70.1,
+        "children_total_pct_2022_display": "70.1"
       },
       {
         "psgc": 600000000,
@@ -214,7 +389,29 @@
         "children_5_pct_display": "(78.3)",
         "children_6plus_pct": 88.2,
         "children_6plus_pct_display": "(88.2)",
-        "children_total_pct": 58.5
+        "children_total_pct": 58.5,
+        "children_0_pct_display": "10.9",
+        "children_1_pct_display": "26.3",
+        "children_2_pct_display": "66.1",
+        "children_3_pct_display": "81.9",
+        "children_4_pct_display": "92.3",
+        "children_total_pct_display": "58.5",
+        "children_0_pct_2022": 3,
+        "children_0_pct_2022_display": "3.0",
+        "children_1_pct_2022": 24.8,
+        "children_1_pct_2022_display": "24.8",
+        "children_2_pct_2022": 73.6,
+        "children_2_pct_2022_display": "73.6",
+        "children_3_pct_2022": 87.4,
+        "children_3_pct_2022_display": "87.4",
+        "children_4_pct_2022": 96.9,
+        "children_4_pct_2022_display": "96.9",
+        "children_5_pct_2022": 96.6,
+        "children_5_pct_2022_display": "96.6",
+        "children_6plus_pct_2022": 97,
+        "children_6plus_pct_2022_display": "97.0",
+        "children_total_pct_2022": 65,
+        "children_total_pct_2022_display": "65.0"
       },
       {
         "psgc": 1800000000,
@@ -230,7 +427,26 @@
         "children_6plus_pct": null,
         "children_6plus_pct_display": "*",
         "children_total_pct": 61,
-        "children_total_pct_display": "61.0"
+        "children_total_pct_display": "61.0",
+        "children_0_pct_display": "4.7",
+        "children_1_pct_display": "36.4",
+        "children_2_pct_display": "69.9",
+        "children_0_pct_2022": null,
+        "children_0_pct_2022_display": "NA",
+        "children_1_pct_2022": null,
+        "children_1_pct_2022_display": "NA",
+        "children_2_pct_2022": null,
+        "children_2_pct_2022_display": "NA",
+        "children_3_pct_2022": null,
+        "children_3_pct_2022_display": "NA",
+        "children_4_pct_2022": null,
+        "children_4_pct_2022_display": "NA",
+        "children_5_pct_2022": null,
+        "children_5_pct_2022_display": "NA",
+        "children_6plus_pct_2022": null,
+        "children_6plus_pct_2022_display": "NA",
+        "children_total_pct_2022": null,
+        "children_total_pct_2022_display": "NA"
       },
       {
         "psgc": 700000000,
@@ -245,7 +461,27 @@
         "children_5_pct_display": "(95.1)",
         "children_6plus_pct": null,
         "children_6plus_pct_display": "*",
-        "children_total_pct": 59.6
+        "children_total_pct": 59.6,
+        "children_1_pct_display": "37.2",
+        "children_2_pct_display": "63.4",
+        "children_3_pct_display": "69.1",
+        "children_total_pct_display": "59.6",
+        "children_0_pct_2022": 14.7,
+        "children_0_pct_2022_display": "14.7",
+        "children_1_pct_2022": 25.8,
+        "children_1_pct_2022_display": "25.8",
+        "children_2_pct_2022": 74,
+        "children_2_pct_2022_display": "74.0",
+        "children_3_pct_2022": 76.7,
+        "children_3_pct_2022_display": "76.7",
+        "children_4_pct_2022": 81.4,
+        "children_4_pct_2022_display": "81.4",
+        "children_5_pct_2022": 88.6,
+        "children_5_pct_2022_display": "(88.6)",
+        "children_6plus_pct_2022": 94,
+        "children_6plus_pct_2022_display": "(94.0)",
+        "children_total_pct_2022": 61.5,
+        "children_total_pct_2022_display": "61.5"
       },
       {
         "psgc": 800000000,
@@ -256,7 +492,31 @@
         "children_4_pct": 89.8,
         "children_5_pct": 91.6,
         "children_6plus_pct": 93.3,
-        "children_total_pct": 60.6
+        "children_total_pct": 60.6,
+        "children_0_pct_display": "4.9",
+        "children_1_pct_display": "26.5",
+        "children_2_pct_display": "57.5",
+        "children_3_pct_display": "84.5",
+        "children_4_pct_display": "89.8",
+        "children_5_pct_display": "91.6",
+        "children_6plus_pct_display": "93.3",
+        "children_total_pct_display": "60.6",
+        "children_0_pct_2022": 3,
+        "children_0_pct_2022_display": "3.0",
+        "children_1_pct_2022": 29.5,
+        "children_1_pct_2022_display": "29.5",
+        "children_2_pct_2022": 63.6,
+        "children_2_pct_2022_display": "63.6",
+        "children_3_pct_2022": 77.6,
+        "children_3_pct_2022_display": "77.6",
+        "children_4_pct_2022": 80.7,
+        "children_4_pct_2022_display": "80.7",
+        "children_5_pct_2022": 91.1,
+        "children_5_pct_2022_display": "91.1",
+        "children_6plus_pct_2022": 92.9,
+        "children_6plus_pct_2022_display": "92.9",
+        "children_total_pct_2022": 64.8,
+        "children_total_pct_2022_display": "64.8"
       },
       {
         "psgc": 900000000,
@@ -268,7 +528,32 @@
         "children_5_pct": 72.7,
         "children_6plus_pct": 68.4,
         "children_total_pct": 42.7,
-        "psa_note": "Region IX includes the province of Sulu in 2025."
+        "psa_note": "Region IX includes the province of Sulu in 2025.",
+        "children_0_pct_display": "4.5",
+        "children_1_pct_display": "18.1",
+        "children_2_pct_display": "44.6",
+        "children_3_pct_display": "55.1",
+        "children_4_pct_display": "62.4",
+        "children_5_pct_display": "72.7",
+        "children_6plus_pct_display": "68.4",
+        "children_total_pct_display": "42.7",
+        "children_0_pct_2022": 1.2,
+        "children_0_pct_2022_display": "(1.2)",
+        "children_1_pct_2022": 19,
+        "children_1_pct_2022_display": "19.0",
+        "children_2_pct_2022": 58.3,
+        "children_2_pct_2022_display": "58.3",
+        "children_3_pct_2022": 73.6,
+        "children_3_pct_2022_display": "73.6",
+        "children_4_pct_2022": 85.5,
+        "children_4_pct_2022_display": "85.5",
+        "children_5_pct_2022": 84.8,
+        "children_5_pct_2022_display": "84.8",
+        "children_6plus_pct_2022": 88.2,
+        "children_6plus_pct_2022_display": "88.2",
+        "children_total_pct_2022": 58.8,
+        "children_total_pct_2022_display": "58.8",
+        "noteRef": "²"
       },
       {
         "psgc": 1000000000,
@@ -279,7 +564,31 @@
         "children_4_pct": 91.4,
         "children_5_pct": 84.2,
         "children_6plus_pct": 92.5,
-        "children_total_pct": 59.5
+        "children_total_pct": 59.5,
+        "children_0_pct_display": "2.1",
+        "children_1_pct_display": "25.9",
+        "children_2_pct_display": "66.6",
+        "children_3_pct_display": "76.1",
+        "children_4_pct_display": "91.4",
+        "children_5_pct_display": "84.2",
+        "children_6plus_pct_display": "92.5",
+        "children_total_pct_display": "59.5",
+        "children_0_pct_2022": 3.7,
+        "children_0_pct_2022_display": "3.7",
+        "children_1_pct_2022": 22.1,
+        "children_1_pct_2022_display": "22.1",
+        "children_2_pct_2022": 50.8,
+        "children_2_pct_2022_display": "50.8",
+        "children_3_pct_2022": 75.2,
+        "children_3_pct_2022_display": "75.2",
+        "children_4_pct_2022": 74.4,
+        "children_4_pct_2022_display": "74.4",
+        "children_5_pct_2022": 79.1,
+        "children_5_pct_2022_display": "79.1",
+        "children_6plus_pct_2022": 80.7,
+        "children_6plus_pct_2022_display": "80.7",
+        "children_total_pct_2022": 54.2,
+        "children_total_pct_2022_display": "54.2"
       },
       {
         "psgc": 1100000000,
@@ -292,7 +601,29 @@
         "children_5_pct": 92.6,
         "children_6plus_pct": 95.7,
         "children_6plus_pct_display": "(95.7)",
-        "children_total_pct": 59.2
+        "children_total_pct": 59.2,
+        "children_1_pct_display": "22.1",
+        "children_2_pct_display": "67.1",
+        "children_3_pct_display": "72.9",
+        "children_4_pct_display": "90.6",
+        "children_5_pct_display": "92.6",
+        "children_total_pct_display": "59.2",
+        "children_0_pct_2022": 3.2,
+        "children_0_pct_2022_display": "3.2",
+        "children_1_pct_2022": 24.4,
+        "children_1_pct_2022_display": "24.4",
+        "children_2_pct_2022": 70,
+        "children_2_pct_2022_display": "70.0",
+        "children_3_pct_2022": 83.1,
+        "children_3_pct_2022_display": "83.1",
+        "children_4_pct_2022": 94.4,
+        "children_4_pct_2022_display": "94.4",
+        "children_5_pct_2022": 92.8,
+        "children_5_pct_2022_display": "92.8",
+        "children_6plus_pct_2022": 88.5,
+        "children_6plus_pct_2022_display": "88.5",
+        "children_total_pct_2022": 61.2,
+        "children_total_pct_2022_display": "61.2"
       },
       {
         "psgc": 1200000000,
@@ -305,7 +636,29 @@
         "children_5_pct_display": "(72.7)",
         "children_6plus_pct": 84.1,
         "children_6plus_pct_display": "(84.1)",
-        "children_total_pct": 55.2
+        "children_total_pct": 55.2,
+        "children_0_pct_display": "5.9",
+        "children_1_pct_display": "18.8",
+        "children_2_pct_display": "60.1",
+        "children_3_pct_display": "76.3",
+        "children_4_pct_display": "78.9",
+        "children_total_pct_display": "55.2",
+        "children_0_pct_2022": 5.6,
+        "children_0_pct_2022_display": "(5.6)",
+        "children_1_pct_2022": 18.4,
+        "children_1_pct_2022_display": "18.4",
+        "children_2_pct_2022": 50.3,
+        "children_2_pct_2022_display": "50.3",
+        "children_3_pct_2022": 61,
+        "children_3_pct_2022_display": "61.0",
+        "children_4_pct_2022": 79.4,
+        "children_4_pct_2022_display": "79.4",
+        "children_5_pct_2022": 84.1,
+        "children_5_pct_2022_display": "84.1",
+        "children_6plus_pct_2022": 88.9,
+        "children_6plus_pct_2022_display": "88.9",
+        "children_total_pct_2022": 51.3,
+        "children_total_pct_2022_display": "51.3"
       },
       {
         "psgc": 1600000000,
@@ -318,7 +671,29 @@
         "children_4_pct": 86.9,
         "children_5_pct": 84.5,
         "children_6plus_pct": 87.9,
-        "children_total_pct": 59.4
+        "children_total_pct": 59.4,
+        "children_1_pct_display": "22.9",
+        "children_2_pct_display": "64.1",
+        "children_4_pct_display": "86.9",
+        "children_5_pct_display": "84.5",
+        "children_6plus_pct_display": "87.9",
+        "children_total_pct_display": "59.4",
+        "children_0_pct_2022": 3.4,
+        "children_0_pct_2022_display": "3.4",
+        "children_1_pct_2022": 17.2,
+        "children_1_pct_2022_display": "17.2",
+        "children_2_pct_2022": 50.9,
+        "children_2_pct_2022_display": "50.9",
+        "children_3_pct_2022": 79.1,
+        "children_3_pct_2022_display": "79.1",
+        "children_4_pct_2022": 75.8,
+        "children_4_pct_2022_display": "75.8",
+        "children_5_pct_2022": 85.8,
+        "children_5_pct_2022_display": "85.8",
+        "children_6plus_pct_2022": 88.7,
+        "children_6plus_pct_2022_display": "88.7",
+        "children_total_pct_2022": 53.7,
+        "children_total_pct_2022_display": "53.7"
       },
       {
         "psgc": 1900000000,
@@ -329,7 +704,31 @@
         "children_4_pct": 42.5,
         "children_5_pct": 43.2,
         "children_6plus_pct": 58.8,
-        "children_total_pct": 29.7
+        "children_total_pct": 29.7,
+        "children_0_pct_display": "2.2",
+        "children_1_pct_display": "10.1",
+        "children_2_pct_display": "26.4",
+        "children_3_pct_display": "34.9",
+        "children_4_pct_display": "42.5",
+        "children_5_pct_display": "43.2",
+        "children_6plus_pct_display": "58.8",
+        "children_total_pct_display": "29.7",
+        "children_0_pct_2022": 0.4,
+        "children_0_pct_2022_display": "0.4",
+        "children_1_pct_2022": 9.6,
+        "children_1_pct_2022_display": "9.6",
+        "children_2_pct_2022": 15,
+        "children_2_pct_2022_display": "15.0",
+        "children_3_pct_2022": 20.7,
+        "children_3_pct_2022_display": "20.7",
+        "children_4_pct_2022": 35.1,
+        "children_4_pct_2022_display": "35.1",
+        "children_5_pct_2022": 26.1,
+        "children_5_pct_2022_display": "26.1",
+        "children_6plus_pct_2022": 39,
+        "children_6plus_pct_2022_display": "39.0",
+        "children_total_pct_2022": 22.6,
+        "children_total_pct_2022_display": "22.6"
       }
     ],
     "province": [],
@@ -713,6 +1112,683 @@
       "A dash indicates zero or no cases.",
       "Figures in parentheses are based on 25-49 unweighted cases.",
       "Women who are sterilized or whose husbands are sterilized are assumed not to want any more children."
+    ]
+  },
+  "tableData": {
+    "title": "Desire to Limit Childbearing",
+    "subtitle": "Percentage of currently married women aged 15 to 49 years who want no more children or are sterilized, by number of living children and background characteristics: Philippines.",
+    "footnotes": [
+      "¹ The number of living children includes a woman's current pregnancy.",
+      "² Region IX includes the province of Sulu in 2025.",
+      "“NA” denotes that an estimate is not reported.",
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "1. An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.",
+      "2. A dash indicates zero or no cases.",
+      "3. Figures in parentheses are based on 25-49 unweighted cases.",
+      "4. Women who are sterilized or whose husbands are sterilized are assumed not to want any more children."
+    ],
+    "source": "Philippine Statistics Authority, 2025 National Demographic and Health Survey",
+    "tables": [
+      {
+        "id": "residence",
+        "title": "Residence",
+        "colGroups": [
+          {
+            "label": "2025",
+            "subLabel": "Number of living children",
+            "subLabelNoteRef": "¹",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "subLabel": "Number of living children",
+            "subLabelNoteRef": "¹",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "values": [
+              "7.4",
+              "29.1",
+              "65.2",
+              "79.9",
+              "87.2",
+              "84.6",
+              "91.8",
+              "57.5",
+              "5.6",
+              "21.6",
+              "64.5",
+              "80.3",
+              "87.9",
+              "87.1",
+              "85.1",
+              "57.0"
+            ]
+          },
+          {
+            "label": "Rural",
+            "values": [
+              "4.9",
+              "22.2",
+              "61.0",
+              "76.7",
+              "84.5",
+              "82.4",
+              "87.7",
+              "57.1",
+              "3.4",
+              "22.9",
+              "59.9",
+              "78.2",
+              "82.3",
+              "78.2",
+              "83.3",
+              "58.3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "educational-attainment",
+        "title": "Educational Attainment",
+        "colGroups": [
+          {
+            "label": "2025",
+            "subLabel": "Number of living children",
+            "subLabelNoteRef": "¹",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "subLabel": "Number of living children",
+            "subLabelNoteRef": "¹",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "values": [
+              "*",
+              "(38.0)",
+              "(49.4)",
+              "(57.4)",
+              "(53.1)",
+              "*",
+              "(89.2)",
+              "52.5",
+              "*",
+              "*",
+              "(51.5)",
+              "(51.4)",
+              "(79.4)",
+              "(62.1)",
+              "73.7",
+              "63.7"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "values": [
+              "2.6",
+              "34.8",
+              "59.4",
+              "71.5",
+              "81.6",
+              "81.2",
+              "85.4",
+              "68.1",
+              "15.4",
+              "28.8",
+              "56.7",
+              "74.6",
+              "78.9",
+              "85.5",
+              "85.5",
+              "68.0"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "values": [
+              "11.8",
+              "29.5",
+              "63.6",
+              "78.6",
+              "87.8",
+              "84.4",
+              "92.6",
+              "63.6",
+              "4.3",
+              "23.7",
+              "62.3",
+              "80.5",
+              "86.8",
+              "80.9",
+              "85.0",
+              "62.0"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "values": [
+              "0.9",
+              "14.2",
+              "48.8",
+              "(62.4)",
+              "*",
+              "*",
+              "*",
+              "23.1",
+              "0.6",
+              "18.4",
+              "30.6",
+              "*",
+              "-",
+              "-",
+              "-",
+              "17.0"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "values": [
+              "*",
+              "42.4",
+              "64.9",
+              "79.3",
+              "(80.9)",
+              "*",
+              "*",
+              "60.5",
+              "(0.8)",
+              "27.3",
+              "66.9",
+              "89.5",
+              "(85.3)",
+              "*",
+              "*",
+              "57.1"
+            ]
+          },
+          {
+            "label": "College",
+            "values": [
+              "5.3",
+              "24.9",
+              "65.1",
+              "81.6",
+              "87.3",
+              "86.2",
+              "92.4",
+              "51.2",
+              "4.2",
+              "19.9",
+              "64.8",
+              "78.7",
+              "87.3",
+              "82.8",
+              "77.9",
+              "49.9"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth-quintile",
+        "title": "Wealth Quintile",
+        "colGroups": [
+          {
+            "label": "2025",
+            "subLabel": "Number of living children",
+            "subLabelNoteRef": "¹",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "subLabel": "Number of living children",
+            "subLabelNoteRef": "¹",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "values": [
+              "13.9",
+              "21.9",
+              "54.2",
+              "69.7",
+              "79.7",
+              "77.8",
+              "86.0",
+              "58.4",
+              "4.8",
+              "22.4",
+              "53.7",
+              "69.5",
+              "74.5",
+              "71.6",
+              "78.4",
+              "58.1"
+            ]
+          },
+          {
+            "label": "Second",
+            "values": [
+              "5.1",
+              "23.5",
+              "61.9",
+              "76.1",
+              "84.9",
+              "89.7",
+              "90.0",
+              "59.4",
+              "3.8",
+              "19.1",
+              "58.8",
+              "80.7",
+              "86.1",
+              "88.6",
+              "89.4",
+              "60.9"
+            ]
+          },
+          {
+            "label": "Middle",
+            "values": [
+              "4.1",
+              "27.6",
+              "61.8",
+              "76.0",
+              "87.1",
+              "85.1",
+              "92.7",
+              "55.5",
+              "5.8",
+              "22.9",
+              "61.8",
+              "81.8",
+              "88.3",
+              "86.2",
+              "93.3",
+              "58.3"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "values": [
+              "6.5",
+              "28.0",
+              "69.0",
+              "86.3",
+              "90.5",
+              "85.3",
+              "98.2",
+              "57.9",
+              "5.7",
+              "21.1",
+              "65.9",
+              "76.4",
+              "92.1",
+              "88.2",
+              "79.2",
+              "54.2"
+            ]
+          },
+          {
+            "label": "Highest",
+            "values": [
+              "4.9",
+              "27.7",
+              "67.9",
+              "86.1",
+              "94.2",
+              "84.1",
+              "*",
+              "55.4",
+              "3.5",
+              "24.5",
+              "68.6",
+              "87.3",
+              "92.0",
+              "(93.6)",
+              "(88.5)",
+              "56.2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "total",
+        "title": "Total",
+        "colGroups": [
+          {
+            "label": "2025",
+            "subLabel": "Number of living children",
+            "subLabelNoteRef": "¹",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "subLabel": "Number of living children",
+            "subLabelNoteRef": "¹",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "values": [
+              "6.4",
+              "26.1",
+              "63.3",
+              "78.4",
+              "85.8",
+              "83.4",
+              "89.5",
+              "57.3",
+              "4.7",
+              "22.2",
+              "62.5",
+              "79.3",
+              "85.2",
+              "82.1",
+              "84.0",
+              "57.6"
+            ],
+            "rowClass": "dt-total-row"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "useRegionData": true,
+        "colGroups": [
+          {
+            "label": "2025",
+            "subLabel": "Number of living children",
+            "subLabelNoteRef": "¹",
+            "cols": [
+              {
+                "label": "0",
+                "field": "children_0_pct"
+              },
+              {
+                "label": "1",
+                "field": "children_1_pct"
+              },
+              {
+                "label": "2",
+                "field": "children_2_pct"
+              },
+              {
+                "label": "3",
+                "field": "children_3_pct"
+              },
+              {
+                "label": "4",
+                "field": "children_4_pct"
+              },
+              {
+                "label": "5",
+                "field": "children_5_pct"
+              },
+              {
+                "label": "6+",
+                "field": "children_6plus_pct"
+              },
+              {
+                "label": "Total",
+                "field": "children_total_pct"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "subLabel": "Number of living children",
+            "subLabelNoteRef": "¹",
+            "cols": [
+              {
+                "label": "0",
+                "field": "children_0_pct_2022"
+              },
+              {
+                "label": "1",
+                "field": "children_1_pct_2022"
+              },
+              {
+                "label": "2",
+                "field": "children_2_pct_2022"
+              },
+              {
+                "label": "3",
+                "field": "children_3_pct_2022"
+              },
+              {
+                "label": "4",
+                "field": "children_4_pct_2022"
+              },
+              {
+                "label": "5",
+                "field": "children_5_pct_2022"
+              },
+              {
+                "label": "6+",
+                "field": "children_6plus_pct_2022"
+              },
+              {
+                "label": "Total",
+                "field": "children_total_pct_2022"
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   "insights": {

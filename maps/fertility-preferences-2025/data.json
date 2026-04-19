@@ -48,27 +48,27 @@
   "detailFields": [
     {
       "key": "want_no_more_pct",
-      "label": "Want no more (%, 2025)"
+      "label": "Want no more (2025)"
     },
     {
       "key": "another_soon_pct",
-      "label": "Have another soon (%, 2025)"
+      "label": "Have another soon (2025)"
     },
     {
       "key": "another_later_pct",
-      "label": "Have another later (%, 2025)"
+      "label": "Have another later (2025)"
     },
     {
       "key": "another_undecided_pct",
-      "label": "Have another, undecided when (%, 2025)"
+      "label": "Have another, undecided when (2025)"
     },
     {
       "key": "sterilized_pct",
-      "label": "Sterilized (%, 2025)"
+      "label": "Sterilized (2025)"
     },
     {
       "key": "declared_infecund_pct",
-      "label": "Declared infecund (%, 2025)"
+      "label": "Declared infecund (2025)"
     },
     {
       "key": "psa_note",
@@ -84,7 +84,37 @@
         "another_later_pct": 16.2,
         "another_undecided_pct": 0.2,
         "sterilized_pct": 9.3,
-        "declared_infecund_pct": 1.2
+        "declared_infecund_pct": 1.2,
+        "another_soon_pct_display": "12.1",
+        "another_later_pct_display": "16.2",
+        "another_undecided_pct_display": "0.2",
+        "undecided_pct": 8.8,
+        "undecided_pct_display": "8.8",
+        "want_no_more_pct_display": "52.2",
+        "sterilized_pct_display": "9.3",
+        "declared_infecund_pct_display": "1.2",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 2022,
+        "women_total_display": "2,022",
+        "another_soon_pct_2022": 17.7,
+        "another_soon_pct_2022_display": "17.7",
+        "another_later_pct_2022": 13.3,
+        "another_later_pct_2022_display": "13.3",
+        "another_undecided_pct_2022": 0.6,
+        "another_undecided_pct_2022_display": "0.6",
+        "undecided_pct_2022": 7.1,
+        "undecided_pct_2022_display": "7.1",
+        "want_no_more_pct_2022": 47.2,
+        "want_no_more_pct_2022_display": "47.2",
+        "sterilized_pct_2022": 10.6,
+        "sterilized_pct_2022_display": "10.6",
+        "declared_infecund_pct_2022": 3.5,
+        "declared_infecund_pct_2022_display": "3.5",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 2058,
+        "women_total_2022_display": "2,058"
       },
       {
         "psgc": 1400000000,
@@ -93,7 +123,37 @@
         "another_later_pct": 12,
         "another_undecided_pct": 0.1,
         "sterilized_pct": 17.6,
-        "declared_infecund_pct": 3.8
+        "declared_infecund_pct": 3.8,
+        "another_soon_pct_display": "13.0",
+        "another_later_pct_display": "12.0",
+        "another_undecided_pct_display": "0.1",
+        "undecided_pct": 7.4,
+        "undecided_pct_display": "7.4",
+        "want_no_more_pct_display": "46.1",
+        "sterilized_pct_display": "17.6",
+        "declared_infecund_pct_display": "3.8",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 269,
+        "women_total_display": "269",
+        "another_soon_pct_2022": 15,
+        "another_soon_pct_2022_display": "15.0",
+        "another_later_pct_2022": 17.6,
+        "another_later_pct_2022_display": "17.6",
+        "another_undecided_pct_2022": 0.9,
+        "another_undecided_pct_2022_display": "0.9",
+        "undecided_pct_2022": 6.5,
+        "undecided_pct_2022_display": "6.5",
+        "want_no_more_pct_2022": 40.5,
+        "want_no_more_pct_2022_display": "40.5",
+        "sterilized_pct_2022": 14.8,
+        "sterilized_pct_2022_display": "14.8",
+        "declared_infecund_pct_2022": 4.6,
+        "declared_infecund_pct_2022_display": "4.6",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 229,
+        "women_total_2022_display": "229"
       },
       {
         "psgc": 100000000,
@@ -102,7 +162,37 @@
         "another_later_pct": 17,
         "another_undecided_pct": 2.1,
         "sterilized_pct": 10.4,
-        "declared_infecund_pct": 2.5
+        "declared_infecund_pct": 2.5,
+        "another_soon_pct_display": "18.4",
+        "another_later_pct_display": "17.0",
+        "another_undecided_pct_display": "2.1",
+        "undecided_pct": 8.6,
+        "undecided_pct_display": "8.6",
+        "want_no_more_pct_display": "41.1",
+        "sterilized_pct_display": "10.4",
+        "declared_infecund_pct_display": "2.5",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 1303,
+        "women_total_display": "1,303",
+        "another_soon_pct_2022": 11.4,
+        "another_soon_pct_2022_display": "11.4",
+        "another_later_pct_2022": 20.5,
+        "another_later_pct_2022_display": "20.5",
+        "another_undecided_pct_2022": 0.3,
+        "another_undecided_pct_2022_display": "0.3",
+        "undecided_pct_2022": 6.8,
+        "undecided_pct_2022_display": "6.8",
+        "want_no_more_pct_2022": 44.1,
+        "want_no_more_pct_2022_display": "44.1",
+        "sterilized_pct_2022": 14.7,
+        "sterilized_pct_2022_display": "14.7",
+        "declared_infecund_pct_2022": 2.1,
+        "declared_infecund_pct_2022_display": "2.1",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 820,
+        "women_total_2022_display": "820"
       },
       {
         "psgc": 200000000,
@@ -111,7 +201,37 @@
         "another_later_pct": 14.7,
         "another_undecided_pct": 0,
         "sterilized_pct": 9.2,
-        "declared_infecund_pct": 7.7
+        "declared_infecund_pct": 7.7,
+        "another_soon_pct_display": "12.7",
+        "another_later_pct_display": "14.7",
+        "another_undecided_pct_display": "0.0",
+        "undecided_pct": 6.3,
+        "undecided_pct_display": "6.3",
+        "want_no_more_pct_display": "49.4",
+        "sterilized_pct_display": "9.2",
+        "declared_infecund_pct_display": "7.7",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 468,
+        "women_total_display": "468",
+        "another_soon_pct_2022": 13.9,
+        "another_soon_pct_2022_display": "13.9",
+        "another_later_pct_2022": 26.1,
+        "another_later_pct_2022_display": "26.1",
+        "another_undecided_pct_2022": 0.2,
+        "another_undecided_pct_2022_display": "0.2",
+        "undecided_pct_2022": 4.4,
+        "undecided_pct_2022_display": "4.4",
+        "want_no_more_pct_2022": 39.8,
+        "want_no_more_pct_2022_display": "39.8",
+        "sterilized_pct_2022": 13.6,
+        "sterilized_pct_2022_display": "13.6",
+        "declared_infecund_pct_2022": 2,
+        "declared_infecund_pct_2022_display": "2.0",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 479,
+        "women_total_2022_display": "479"
       },
       {
         "psgc": 300000000,
@@ -120,7 +240,37 @@
         "another_later_pct": 17.9,
         "another_undecided_pct": 0.6,
         "sterilized_pct": 14.4,
-        "declared_infecund_pct": 1.3
+        "declared_infecund_pct": 1.3,
+        "another_soon_pct_display": "15.6",
+        "another_later_pct_display": "17.9",
+        "another_undecided_pct_display": "0.6",
+        "undecided_pct": 5.2,
+        "undecided_pct_display": "5.2",
+        "want_no_more_pct_display": "44.9",
+        "sterilized_pct_display": "14.4",
+        "declared_infecund_pct_display": "1.3",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 2011,
+        "women_total_display": "2,011",
+        "another_soon_pct_2022": 16.1,
+        "another_soon_pct_2022_display": "16.1",
+        "another_later_pct_2022": 21.7,
+        "another_later_pct_2022_display": "21.7",
+        "another_undecided_pct_2022": 0,
+        "another_undecided_pct_2022_display": "0.0",
+        "undecided_pct_2022": 5.2,
+        "undecided_pct_2022_display": "5.2",
+        "want_no_more_pct_2022": 43.2,
+        "want_no_more_pct_2022_display": "43.2",
+        "sterilized_pct_2022": 12.3,
+        "sterilized_pct_2022_display": "12.3",
+        "declared_infecund_pct_2022": 1.4,
+        "declared_infecund_pct_2022_display": "1.4",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 1764,
+        "women_total_2022_display": "1,764"
       },
       {
         "psgc": 400000000,
@@ -129,7 +279,37 @@
         "another_later_pct": 15.2,
         "another_undecided_pct": 0.6,
         "sterilized_pct": 7.7,
-        "declared_infecund_pct": 2.7
+        "declared_infecund_pct": 2.7,
+        "another_soon_pct_display": "14.0",
+        "another_later_pct_display": "15.2",
+        "another_undecided_pct_display": "0.6",
+        "undecided_pct": 8.6,
+        "undecided_pct_display": "8.6",
+        "want_no_more_pct_display": "51.3",
+        "sterilized_pct_display": "7.7",
+        "declared_infecund_pct_display": "2.7",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 2069,
+        "women_total_display": "2,069",
+        "another_soon_pct_2022": 13.5,
+        "another_soon_pct_2022_display": "13.5",
+        "another_later_pct_2022": 19.1,
+        "another_later_pct_2022_display": "19.1",
+        "another_undecided_pct_2022": 0,
+        "another_undecided_pct_2022_display": "0.0",
+        "undecided_pct_2022": 5.1,
+        "undecided_pct_2022_display": "5.1",
+        "want_no_more_pct_2022": 51.4,
+        "want_no_more_pct_2022_display": "51.4",
+        "sterilized_pct_2022": 8.9,
+        "sterilized_pct_2022_display": "8.9",
+        "declared_infecund_pct_2022": 2,
+        "declared_infecund_pct_2022_display": "2.0",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 2261,
+        "women_total_2022_display": "2,261"
       },
       {
         "psgc": 1700000000,
@@ -138,7 +318,37 @@
         "another_later_pct": 14.7,
         "another_undecided_pct": 0.6,
         "sterilized_pct": 6.2,
-        "declared_infecund_pct": 3.1
+        "declared_infecund_pct": 3.1,
+        "another_soon_pct_display": "10.9",
+        "another_later_pct_display": "14.7",
+        "another_undecided_pct_display": "0.6",
+        "undecided_pct": 7.5,
+        "undecided_pct_display": "7.5",
+        "want_no_more_pct_display": "56.9",
+        "sterilized_pct_display": "6.2",
+        "declared_infecund_pct_display": "3.1",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 440,
+        "women_total_display": "440",
+        "another_soon_pct_2022": 11.4,
+        "another_soon_pct_2022_display": "11.4",
+        "another_later_pct_2022": 17.6,
+        "another_later_pct_2022_display": "17.6",
+        "another_undecided_pct_2022": 0.8,
+        "another_undecided_pct_2022_display": "0.8",
+        "undecided_pct_2022": 5.4,
+        "undecided_pct_2022_display": "5.4",
+        "want_no_more_pct_2022": 56.4,
+        "want_no_more_pct_2022_display": "56.4",
+        "sterilized_pct_2022": 5.5,
+        "sterilized_pct_2022_display": "5.5",
+        "declared_infecund_pct_2022": 2.9,
+        "declared_infecund_pct_2022_display": "2.9",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 402,
+        "women_total_2022_display": "402"
       },
       {
         "psgc": 500000000,
@@ -147,7 +357,37 @@
         "another_later_pct": 17.5,
         "another_undecided_pct": 0.5,
         "sterilized_pct": 5.3,
-        "declared_infecund_pct": 3.2
+        "declared_infecund_pct": 3.2,
+        "another_soon_pct_display": "11.4",
+        "another_later_pct_display": "17.5",
+        "another_undecided_pct_display": "0.5",
+        "undecided_pct": 5.2,
+        "undecided_pct_display": "5.2",
+        "want_no_more_pct_display": "57.0",
+        "sterilized_pct_display": "5.3",
+        "declared_infecund_pct_display": "3.2",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 728,
+        "women_total_display": "728",
+        "another_soon_pct_2022": 8.9,
+        "another_soon_pct_2022_display": "8.9",
+        "another_later_pct_2022": 14.4,
+        "another_later_pct_2022_display": "14.4",
+        "another_undecided_pct_2022": 0.1,
+        "another_undecided_pct_2022_display": "0.1",
+        "undecided_pct_2022": 4.2,
+        "undecided_pct_2022_display": "4.2",
+        "want_no_more_pct_2022": 63.9,
+        "want_no_more_pct_2022_display": "63.9",
+        "sterilized_pct_2022": 6.2,
+        "sterilized_pct_2022_display": "6.2",
+        "declared_infecund_pct_2022": 2.3,
+        "declared_infecund_pct_2022_display": "2.3",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 730,
+        "women_total_2022_display": "730"
       },
       {
         "psgc": 600000000,
@@ -156,7 +396,37 @@
         "another_later_pct": 17.8,
         "another_undecided_pct": 0.1,
         "sterilized_pct": 5.4,
-        "declared_infecund_pct": 4.5
+        "declared_infecund_pct": 4.5,
+        "another_soon_pct_display": "12.0",
+        "another_later_pct_display": "17.8",
+        "another_undecided_pct_display": "0.1",
+        "undecided_pct": 7.1,
+        "undecided_pct_display": "7.1",
+        "want_no_more_pct_display": "53.1",
+        "sterilized_pct_display": "5.4",
+        "declared_infecund_pct_display": "4.5",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 626,
+        "women_total_display": "626",
+        "another_soon_pct_2022": 10.8,
+        "another_soon_pct_2022_display": "10.8",
+        "another_later_pct_2022": 18,
+        "another_later_pct_2022_display": "18.0",
+        "another_undecided_pct_2022": 0.1,
+        "another_undecided_pct_2022_display": "0.1",
+        "undecided_pct_2022": 4.6,
+        "undecided_pct_2022_display": "4.6",
+        "want_no_more_pct_2022": 57.9,
+        "want_no_more_pct_2022_display": "57.9",
+        "sterilized_pct_2022": 7.1,
+        "sterilized_pct_2022_display": "7.1",
+        "declared_infecund_pct_2022": 1.5,
+        "declared_infecund_pct_2022_display": "1.5",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 994,
+        "women_total_2022_display": "994"
       },
       {
         "psgc": 1800000000,
@@ -165,7 +435,37 @@
         "another_later_pct": 12.5,
         "another_undecided_pct": 0.4,
         "sterilized_pct": 4.3,
-        "declared_infecund_pct": 4.6
+        "declared_infecund_pct": 4.6,
+        "another_soon_pct_display": "9.2",
+        "another_later_pct_display": "12.5",
+        "another_undecided_pct_display": "0.4",
+        "undecided_pct": 12.3,
+        "undecided_pct_display": "12.3",
+        "want_no_more_pct_display": "56.7",
+        "sterilized_pct_display": "4.3",
+        "declared_infecund_pct_display": "4.6",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 712,
+        "women_total_display": "712",
+        "another_soon_pct_2022": null,
+        "another_soon_pct_2022_display": "NA",
+        "another_later_pct_2022": null,
+        "another_later_pct_2022_display": "NA",
+        "another_undecided_pct_2022": null,
+        "another_undecided_pct_2022_display": "NA",
+        "undecided_pct_2022": null,
+        "undecided_pct_2022_display": "NA",
+        "want_no_more_pct_2022": null,
+        "want_no_more_pct_2022_display": "NA",
+        "sterilized_pct_2022": null,
+        "sterilized_pct_2022_display": "NA",
+        "declared_infecund_pct_2022": null,
+        "declared_infecund_pct_2022_display": "NA",
+        "total_pct_2022": null,
+        "total_pct_2022_display": "NA",
+        "women_total_2022": null,
+        "women_total_2022_display": "NA"
       },
       {
         "psgc": 700000000,
@@ -174,7 +474,37 @@
         "another_later_pct": 5.9,
         "another_undecided_pct": 0.4,
         "sterilized_pct": 4.9,
-        "declared_infecund_pct": 1.2
+        "declared_infecund_pct": 1.2,
+        "another_soon_pct_display": "12.9",
+        "another_later_pct_display": "5.9",
+        "another_undecided_pct_display": "0.4",
+        "undecided_pct": 20.1,
+        "undecided_pct_display": "20.1",
+        "want_no_more_pct_display": "54.7",
+        "sterilized_pct_display": "4.9",
+        "declared_infecund_pct_display": "1.2",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 1034,
+        "women_total_display": "1,034",
+        "another_soon_pct_2022": 12.1,
+        "another_soon_pct_2022_display": "12.1",
+        "another_later_pct_2022": 15.5,
+        "another_later_pct_2022_display": "15.5",
+        "another_undecided_pct_2022": 0.1,
+        "another_undecided_pct_2022_display": "0.1",
+        "undecided_pct_2022": 6.9,
+        "undecided_pct_2022_display": "6.9",
+        "want_no_more_pct_2022": 54.5,
+        "want_no_more_pct_2022_display": "54.5",
+        "sterilized_pct_2022": 6.9,
+        "sterilized_pct_2022_display": "6.9",
+        "declared_infecund_pct_2022": 3.9,
+        "declared_infecund_pct_2022_display": "3.9",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 1181,
+        "women_total_2022_display": "1,181"
       },
       {
         "psgc": 800000000,
@@ -183,7 +513,37 @@
         "another_later_pct": 19.2,
         "another_undecided_pct": 0.4,
         "sterilized_pct": 7.3,
-        "declared_infecund_pct": 1.8
+        "declared_infecund_pct": 1.8,
+        "another_soon_pct_display": "12.2",
+        "another_later_pct_display": "19.2",
+        "another_undecided_pct_display": "0.4",
+        "undecided_pct": 5.9,
+        "undecided_pct_display": "5.9",
+        "want_no_more_pct_display": "53.3",
+        "sterilized_pct_display": "7.3",
+        "declared_infecund_pct_display": "1.8",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 612,
+        "women_total_display": "612",
+        "another_soon_pct_2022": 12.6,
+        "another_soon_pct_2022_display": "12.6",
+        "another_later_pct_2022": 19.8,
+        "another_later_pct_2022_display": "19.8",
+        "another_undecided_pct_2022": 0,
+        "another_undecided_pct_2022_display": "0.0",
+        "undecided_pct_2022": 1,
+        "undecided_pct_2022_display": "1.0",
+        "want_no_more_pct_2022": 57.6,
+        "want_no_more_pct_2022_display": "57.6",
+        "sterilized_pct_2022": 7.2,
+        "sterilized_pct_2022_display": "7.2",
+        "declared_infecund_pct_2022": 1.9,
+        "declared_infecund_pct_2022_display": "1.9",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 545,
+        "women_total_2022_display": "545"
       },
       {
         "psgc": 900000000,
@@ -193,7 +553,38 @@
         "another_undecided_pct": 0.1,
         "sterilized_pct": 2.8,
         "declared_infecund_pct": 2.9,
-        "psa_note": "Region IX includes the province of Sulu in 2025."
+        "psa_note": "Region IX includes the province of Sulu in 2025.",
+        "another_soon_pct_display": "15.0",
+        "another_later_pct_display": "23.5",
+        "another_undecided_pct_display": "0.1",
+        "undecided_pct": 15.9,
+        "undecided_pct_display": "15.9",
+        "want_no_more_pct_display": "39.9",
+        "sterilized_pct_display": "2.8",
+        "declared_infecund_pct_display": "2.9",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 712,
+        "women_total_display": "712",
+        "another_soon_pct_2022": 14.6,
+        "another_soon_pct_2022_display": "14.6",
+        "another_later_pct_2022": 14.9,
+        "another_later_pct_2022_display": "14.9",
+        "another_undecided_pct_2022": 0.8,
+        "another_undecided_pct_2022_display": "0.8",
+        "undecided_pct_2022": 10.4,
+        "undecided_pct_2022_display": "10.4",
+        "want_no_more_pct_2022": 54.9,
+        "want_no_more_pct_2022_display": "54.9",
+        "sterilized_pct_2022": 3.9,
+        "sterilized_pct_2022_display": "3.9",
+        "declared_infecund_pct_2022": 0.6,
+        "declared_infecund_pct_2022_display": "0.6",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 566,
+        "women_total_2022_display": "566",
+        "noteRef": "⁴"
       },
       {
         "psgc": 1000000000,
@@ -202,7 +593,37 @@
         "another_later_pct": 17.7,
         "another_undecided_pct": 0.5,
         "sterilized_pct": 6.2,
-        "declared_infecund_pct": 1.8
+        "declared_infecund_pct": 1.8,
+        "another_soon_pct_display": "11.6",
+        "another_later_pct_display": "17.7",
+        "another_undecided_pct_display": "0.5",
+        "undecided_pct": 8.9,
+        "undecided_pct_display": "8.9",
+        "want_no_more_pct_display": "53.3",
+        "sterilized_pct_display": "6.2",
+        "declared_infecund_pct_display": "1.8",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 676,
+        "women_total_display": "676",
+        "another_soon_pct_2022": 14.3,
+        "another_soon_pct_2022_display": "14.3",
+        "another_later_pct_2022": 14.9,
+        "another_later_pct_2022_display": "14.9",
+        "another_undecided_pct_2022": 0,
+        "another_undecided_pct_2022_display": "0.0",
+        "undecided_pct_2022": 12.8,
+        "undecided_pct_2022_display": "12.8",
+        "want_no_more_pct_2022": 47,
+        "want_no_more_pct_2022_display": "47.0",
+        "sterilized_pct_2022": 7.3,
+        "sterilized_pct_2022_display": "7.3",
+        "declared_infecund_pct_2022": 3.7,
+        "declared_infecund_pct_2022_display": "3.7",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 606,
+        "women_total_2022_display": "606"
       },
       {
         "psgc": 1100000000,
@@ -211,7 +632,37 @@
         "another_later_pct": 17.5,
         "another_undecided_pct": 0.9,
         "sterilized_pct": 6.3,
-        "declared_infecund_pct": 0.7
+        "declared_infecund_pct": 0.7,
+        "another_soon_pct_display": "11.0",
+        "another_later_pct_display": "17.5",
+        "another_undecided_pct_display": "0.9",
+        "undecided_pct": 10.7,
+        "undecided_pct_display": "10.7",
+        "want_no_more_pct_display": "52.9",
+        "sterilized_pct_display": "6.3",
+        "declared_infecund_pct_display": "0.7",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 855,
+        "women_total_display": "855",
+        "another_soon_pct_2022": 14.1,
+        "another_soon_pct_2022_display": "14.1",
+        "another_later_pct_2022": 14.9,
+        "another_later_pct_2022_display": "14.9",
+        "another_undecided_pct_2022": 0,
+        "another_undecided_pct_2022_display": "0.0",
+        "undecided_pct_2022": 8.7,
+        "undecided_pct_2022_display": "8.7",
+        "want_no_more_pct_2022": 53.3,
+        "want_no_more_pct_2022_display": "53.3",
+        "sterilized_pct_2022": 7.9,
+        "sterilized_pct_2022_display": "7.9",
+        "declared_infecund_pct_2022": 1.1,
+        "declared_infecund_pct_2022_display": "1.1",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 901,
+        "women_total_2022_display": "901"
       },
       {
         "psgc": 1200000000,
@@ -220,7 +671,37 @@
         "another_later_pct": 14.9,
         "another_undecided_pct": 0.6,
         "sterilized_pct": 5.1,
-        "declared_infecund_pct": 4.2
+        "declared_infecund_pct": 4.2,
+        "another_soon_pct_display": "11.7",
+        "another_later_pct_display": "14.9",
+        "another_undecided_pct_display": "0.6",
+        "undecided_pct": 13.4,
+        "undecided_pct_display": "13.4",
+        "want_no_more_pct_display": "50.1",
+        "sterilized_pct_display": "5.1",
+        "declared_infecund_pct_display": "4.2",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 600,
+        "women_total_display": "600",
+        "another_soon_pct_2022": 14.4,
+        "another_soon_pct_2022_display": "14.4",
+        "another_later_pct_2022": 19.4,
+        "another_later_pct_2022_display": "19.4",
+        "another_undecided_pct_2022": 0.1,
+        "another_undecided_pct_2022_display": "0.1",
+        "undecided_pct_2022": 13.5,
+        "undecided_pct_2022_display": "13.5",
+        "want_no_more_pct_2022": 46.5,
+        "want_no_more_pct_2022_display": "46.5",
+        "sterilized_pct_2022": 4.8,
+        "sterilized_pct_2022_display": "4.8",
+        "declared_infecund_pct_2022": 1.3,
+        "declared_infecund_pct_2022_display": "1.3",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 700,
+        "women_total_2022_display": "700"
       },
       {
         "psgc": 1600000000,
@@ -229,7 +710,37 @@
         "another_later_pct": 17.1,
         "another_undecided_pct": 0.1,
         "sterilized_pct": 6.1,
-        "declared_infecund_pct": 1.8
+        "declared_infecund_pct": 1.8,
+        "another_soon_pct_display": "12.2",
+        "another_later_pct_display": "17.1",
+        "another_undecided_pct_display": "0.1",
+        "undecided_pct": 9.3,
+        "undecided_pct_display": "9.3",
+        "want_no_more_pct_display": "53.4",
+        "sterilized_pct_display": "6.1",
+        "declared_infecund_pct_display": "1.8",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 350,
+        "women_total_display": "350",
+        "another_soon_pct_2022": 16.6,
+        "another_soon_pct_2022_display": "16.6",
+        "another_later_pct_2022": 16.7,
+        "another_later_pct_2022_display": "16.7",
+        "another_undecided_pct_2022": 0,
+        "another_undecided_pct_2022_display": "0.0",
+        "undecided_pct_2022": 11,
+        "undecided_pct_2022_display": "11.0",
+        "want_no_more_pct_2022": 47.4,
+        "want_no_more_pct_2022_display": "47.4",
+        "sterilized_pct_2022": 6.3,
+        "sterilized_pct_2022_display": "6.3",
+        "declared_infecund_pct_2022": 2,
+        "declared_infecund_pct_2022_display": "2.0",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 372,
+        "women_total_2022_display": "372"
       },
       {
         "psgc": 1900000000,
@@ -238,7 +749,37 @@
         "another_later_pct": 20.4,
         "another_undecided_pct": 0.3,
         "sterilized_pct": 2.3,
-        "declared_infecund_pct": 4.6
+        "declared_infecund_pct": 4.6,
+        "another_soon_pct_display": "17.3",
+        "another_later_pct_display": "20.4",
+        "another_undecided_pct_display": "0.3",
+        "undecided_pct": 27.8,
+        "undecided_pct_display": "27.8",
+        "want_no_more_pct_display": "27.3",
+        "sterilized_pct_display": "2.3",
+        "declared_infecund_pct_display": "4.6",
+        "total_pct": 100,
+        "total_pct_display": "100.0",
+        "women_total": 605,
+        "women_total_display": "605",
+        "another_soon_pct_2022": 14.1,
+        "another_soon_pct_2022_display": "14.1",
+        "another_later_pct_2022": 13,
+        "another_later_pct_2022_display": "13.0",
+        "another_undecided_pct_2022": 0.4,
+        "another_undecided_pct_2022_display": "0.4",
+        "undecided_pct_2022": 37.2,
+        "undecided_pct_2022_display": "37.2",
+        "want_no_more_pct_2022": 18.6,
+        "want_no_more_pct_2022_display": "18.6",
+        "sterilized_pct_2022": 4,
+        "sterilized_pct_2022_display": "4.0",
+        "declared_infecund_pct_2022": 12.7,
+        "declared_infecund_pct_2022_display": "12.7",
+        "total_pct_2022": 100,
+        "total_pct_2022_display": "100.0",
+        "women_total_2022": 700,
+        "women_total_2022_display": "700"
       }
     ],
     "province": [],
@@ -248,7 +789,7 @@
     "title": "Fertility preferences by number of living children",
     "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, according to number of living children: Philippines",
     "yMax": 80,
-    "xLabel": "Number of living children\u00b9",
+    "xLabel": "Number of living children¹",
     "yLabel": "Percent",
     "series": [
       {
@@ -258,12 +799,12 @@
       },
       {
         "key": "another_soon",
-        "label": "Have another soon\u00b2",
+        "label": "Have another soon²",
         "color": "#5a9b54"
       },
       {
         "key": "another_later",
-        "label": "Have another later\u00b3",
+        "label": "Have another later³",
         "color": "#87b96a"
       },
       {
@@ -278,7 +819,7 @@
       },
       {
         "key": "sterilized",
-        "label": "Sterilized\u2074",
+        "label": "Sterilized⁴",
         "color": "#c46a47"
       },
       {
@@ -442,11 +983,417 @@
       }
     ],
     "notes": [
-      "\u00b9 The number of living children includes a woman's current pregnancy.",
-      "\u00b2 Wants next birth within 2 years.",
-      "\u00b3 Wants to delay next birth for 2 or more years.",
-      "\u2074 Includes both female and male sterilization.",
+      "¹ The number of living children includes a woman's current pregnancy.",
+      "² Wants next birth within 2 years.",
+      "³ Wants to delay next birth for 2 or more years.",
+      "⁴ Includes both female and male sterilization.",
       "Details may not add up to total due to rounding."
+    ]
+  },
+  "tableData": {
+    "title": "Fertility Preferences",
+    "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, shown by number of living children and by region in the Philippines.",
+    "tables": [
+      {
+        "id": "living-children",
+        "title": "By Number of Living Children",
+        "titleNoteRef": "¹",
+        "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, according to number of living children: Philippines",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Have another soon",
+            "values": [
+              "54.9",
+              "22.8",
+              "7.7",
+              "4.5",
+              "2.1",
+              "3.6",
+              "1.1",
+              "13.4",
+              "63.2",
+              "25.3",
+              "7.8",
+              "4.1",
+              "3.3",
+              "2.9",
+              "1.4",
+              "13.9"
+            ],
+            "noteRef": "²"
+          },
+          {
+            "label": "Have another later",
+            "values": [
+              "20.2",
+              "33.8",
+              "15.6",
+              "6.7",
+              "4.6",
+              "2.9",
+              "2.3",
+              "16.2",
+              "17.9",
+              "40.0",
+              "18.2",
+              "7.7",
+              "3.5",
+              "3.9",
+              "2.2",
+              "17.4"
+            ],
+            "noteRef": "³"
+          },
+          {
+            "label": "Have another, undecided when",
+            "values": [
+              "1.3",
+              "1.3",
+              "0.2",
+              "0.3",
+              "0.1",
+              "0.0",
+              "0.0",
+              "0.6",
+              "0.5",
+              "0.3",
+              "0.2",
+              "0.1",
+              "0.0",
+              "0.3",
+              "0.1",
+              "0.2"
+            ]
+          },
+          {
+            "label": "Undecided",
+            "values": [
+              "9.5",
+              "13.1",
+              "11.5",
+              "8.5",
+              "5.6",
+              "7.1",
+              "5.0",
+              "10.0",
+              "5.7",
+              "10.4",
+              "9.2",
+              "6.9",
+              "5.6",
+              "6.9",
+              "7.9",
+              "8.1"
+            ]
+          },
+          {
+            "label": "Want no more",
+            "values": [
+              "6.2",
+              "25.3",
+              "57.5",
+              "63.0",
+              "69.5",
+              "71.7",
+              "72.8",
+              "49.4",
+              "4.3",
+              "21.3",
+              "56.6",
+              "61.8",
+              "69.0",
+              "66.5",
+              "72.0",
+              "48.8"
+            ]
+          },
+          {
+            "label": "Sterilized",
+            "values": [
+              "0.3",
+              "0.8",
+              "5.8",
+              "15.4",
+              "16.3",
+              "11.8",
+              "16.7",
+              "7.9",
+              "0.4",
+              "0.9",
+              "5.9",
+              "17.6",
+              "16.1",
+              "15.7",
+              "12.0",
+              "8.7"
+            ],
+            "noteRef": "⁴"
+          },
+          {
+            "label": "Declared infecund",
+            "values": [
+              "7.7",
+              "2.8",
+              "1.7",
+              "1.6",
+              "1.9",
+              "2.9",
+              "2.1",
+              "2.5",
+              "8.0",
+              "1.8",
+              "2.1",
+              "2.0",
+              "2.4",
+              "4.0",
+              "4.4",
+              "2.8"
+            ]
+          },
+          {
+            "label": "Total",
+            "values": [
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100",
+              "100"
+            ],
+            "rowClass": "dt-total-row"
+          },
+          {
+            "label": "Number of women",
+            "values": [
+              "1,321",
+              "3,757",
+              "4,729",
+              "3,197",
+              "1,625",
+              "746",
+              "716",
+              "16,092",
+              "1,164",
+              "3,364",
+              "4,212",
+              "2,988",
+              "1,747",
+              "829",
+              "1,002",
+              "15,306"
+            ],
+            "rowClass": "dt-summary-row"
+          }
+        ],
+        "footnotes": [
+          "¹ The number of living children includes a woman's current pregnancy",
+          "² Wants next birth within 2 years",
+          "³ Wants to delay next birth for 2 or more years",
+          "⁴ Includes both female and male sterilization",
+          "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+          "1. Details may not add up to total due to rounding."
+        ],
+        "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+      },
+      {
+        "id": "region",
+        "title": "By Region",
+        "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, by region: Philippines",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "field": "another_soon_pct",
+                "label": "Have another soon",
+                "noteRef": "¹"
+              },
+              {
+                "field": "another_later_pct",
+                "label": "Have another later",
+                "noteRef": "²"
+              },
+              {
+                "field": "another_undecided_pct",
+                "label": "Have another, undecided when"
+              },
+              {
+                "field": "undecided_pct",
+                "label": "Undecided"
+              },
+              {
+                "field": "want_no_more_pct",
+                "label": "Want no more"
+              },
+              {
+                "field": "sterilized_pct",
+                "label": "Sterilized",
+                "noteRef": "³"
+              },
+              {
+                "field": "declared_infecund_pct",
+                "label": "Declared infecund"
+              },
+              {
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "field": "another_soon_pct_2022",
+                "label": "Have another soon",
+                "noteRef": "¹"
+              },
+              {
+                "field": "another_later_pct_2022",
+                "label": "Have another later",
+                "noteRef": "²"
+              },
+              {
+                "field": "another_undecided_pct_2022",
+                "label": "Have another, undecided when"
+              },
+              {
+                "field": "undecided_pct_2022",
+                "label": "Undecided"
+              },
+              {
+                "field": "want_no_more_pct_2022",
+                "label": "Want no more"
+              },
+              {
+                "field": "sterilized_pct_2022",
+                "label": "Sterilized",
+                "noteRef": "³"
+              },
+              {
+                "field": "declared_infecund_pct_2022",
+                "label": "Declared infecund"
+              },
+              {
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years"
+              }
+            ]
+          }
+        ],
+        "totalRow": {
+          "label": "Total",
+          "rowClass": "dt-total-row",
+          "values": [
+            "13.4",
+            "16.2",
+            "0.6",
+            "10.0",
+            "49.4",
+            "7.9",
+            "2.5",
+            "100.0",
+            "16,092",
+            "13.9",
+            "17.4",
+            "0.2",
+            "8.1",
+            "48.8",
+            "8.7",
+            "2.8",
+            "100.0",
+            "15,306"
+          ]
+        },
+        "footnotes": [
+          "¹ Wants next birth within 2 years",
+          "² Wants to delay next birth for 2 or more years",
+          "³ Includes both female and male sterilization",
+          "⁴ Region IX includes the province of Sulu in 2025.",
+          "“NA” denotes that an estimate is not reported.",
+          "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+          "1. Details may not add up to total due to rounding."
+        ],
+        "source": "Philippine Statistics Authority, 2025 National Demographic and Health Survey"
+      }
     ]
   },
   "insights": {

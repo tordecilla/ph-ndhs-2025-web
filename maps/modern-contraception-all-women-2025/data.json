@@ -973,43 +973,43 @@
   "detailFields": [
     {
       "key": "any_modern_method_pct",
-      "label": "Any modern method (%, 2025)"
+      "label": "Any modern method (2025)"
     },
     {
       "key": "female_sterilization_pct",
-      "label": "Female sterilization (%, 2025)"
+      "label": "Female sterilization (2025)"
     },
     {
       "key": "male_sterilization_pct",
-      "label": "Male sterilization (%, 2025)"
+      "label": "Male sterilization (2025)"
     },
     {
       "key": "iud_pct",
-      "label": "IUD (%, 2025)"
+      "label": "IUD (2025)"
     },
     {
       "key": "injectables_pct",
-      "label": "Injectables (%, 2025)"
+      "label": "Injectables (2025)"
     },
     {
       "key": "implants_pct",
-      "label": "Implants (%, 2025)"
+      "label": "Implants (2025)"
     },
     {
       "key": "pill_pct",
-      "label": "Pill (%, 2025)"
+      "label": "Pill (2025)"
     },
     {
       "key": "male_condom_pct",
-      "label": "Male condom (%, 2025)"
+      "label": "Male condom (2025)"
     },
     {
       "key": "lam_pct",
-      "label": "LAM (%, 2025)"
+      "label": "LAM (2025)"
     },
     {
       "key": "modern_other_pct",
-      "label": "Other modern methods (%, 2025)"
+      "label": "Other modern methods (2025)"
     },
     {
       "key": "women_total",

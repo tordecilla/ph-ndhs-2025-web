@@ -546,19 +546,19 @@
   "detailFields": [
     {
       "key": "any_traditional_method_pct",
-      "label": "Any traditional method (%, 2025)"
+      "label": "Any traditional method (2025)"
     },
     {
       "key": "calendar_rhythm_pct",
-      "label": "Calendar/rhythm (%, 2025)"
+      "label": "Calendar/rhythm (2025)"
     },
     {
       "key": "withdrawal_pct",
-      "label": "Withdrawal (%, 2025)"
+      "label": "Withdrawal (2025)"
     },
     {
       "key": "traditional_other_pct",
-      "label": "Other traditional methods (%, 2025)"
+      "label": "Other traditional methods (2025)"
     },
     {
       "key": "women_total",
