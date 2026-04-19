@@ -1,0 +1,700 @@
+{
+  "sectionTitle": "CONTRACEPTION",
+  "title": "Contraception Among All Women",
+  "description": "Current contraceptive use among all women aged 15 to 49 years, by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "maxDepth": "region",
+  "geoBasePath": "../../_template/philippines-json-maps",
+  "colorField": "any_method_pct",
+  "colorDomain": [
+    0,
+    100
+  ],
+  "colorDomains": {
+    "any_method_pct": [
+      0,
+      100
+    ],
+    "any_modern_method_pct": [
+      0,
+      100
+    ],
+    "any_traditional_method_pct": [
+      0,
+      100
+    ],
+    "not_using_pct": [
+      0,
+      100
+    ]
+  },
+  "colorScheme": "interpolateYlGnBu",
+  "valueSuffix": "%",
+  "metricOptions": [
+    {
+      "key": "any_method_pct",
+      "label": "Any method"
+    },
+    {
+      "key": "any_modern_method_pct",
+      "label": "Any modern method"
+    },
+    {
+      "key": "any_traditional_method_pct",
+      "label": "Any traditional method"
+    },
+    {
+      "key": "not_using_pct",
+      "label": "Not currently using"
+    }
+  ],
+  "definitions": {
+    "any_method_pct": "Any method includes any modern or traditional contraceptive method currently used.",
+    "any_modern_method_pct": "Any modern method includes female sterilization, male sterilization, IUD, injectables, implants, pill, male condom, LAM, and other modern methods.",
+    "any_traditional_method_pct": "Any traditional method includes calendar/rhythm, withdrawal, and other traditional methods.",
+    "not_using_pct": "Not currently using refers to women who are not using any contraceptive method."
+  },
+  "notes": {},
+  "note": "If more than one method is used, only the most effective method is considered in this tabulation. \"0.0\" indicates that an estimate is less than 0.05 percent. Details may not add up to total due to rounding.",
+  "tableData": {
+    "title": "Contraception Among All Women",
+    "subtitle": "Current contraceptive use among all women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
+    "series": [
+      {
+        "key": "any_method_pct",
+        "label": "Any method"
+      },
+      {
+        "key": "any_modern_method_pct",
+        "label": "Any modern method"
+      },
+      {
+        "key": "any_traditional_method_pct",
+        "label": "Any traditional method"
+      },
+      {
+        "key": "not_using_pct",
+        "label": "Not currently using"
+      }
+    ],
+    "blocks": [
+      {
+        "title": "Number of living children",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "0",
+            "any_method_pct": 4.2,
+            "any_modern_method_pct": 2.4,
+            "any_traditional_method_pct": 1.8,
+            "not_using_pct": 95.8
+          },
+          {
+            "label": "1-2",
+            "any_method_pct": 52.6,
+            "any_modern_method_pct": 37.9,
+            "any_traditional_method_pct": 14.7,
+            "not_using_pct": 47.4
+          },
+          {
+            "label": "3-4",
+            "any_method_pct": 66.8,
+            "any_modern_method_pct": 55.8,
+            "any_traditional_method_pct": 11,
+            "any_traditional_method_pct_display": "11.0",
+            "not_using_pct": 33.2
+          },
+          {
+            "label": "5+",
+            "any_method_pct": 57.4,
+            "any_modern_method_pct": 46.5,
+            "any_traditional_method_pct": 10.9,
+            "not_using_pct": 42.6
+          }
+        ]
+      },
+      {
+        "title": "Number of living children",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "0",
+            "any_method_pct": 4,
+            "any_method_pct_display": "4.0",
+            "any_modern_method_pct": 1.8,
+            "any_traditional_method_pct": 2.2,
+            "not_using_pct": 96,
+            "not_using_pct_display": "96.0"
+          },
+          {
+            "label": "1-2",
+            "any_method_pct": 52.5,
+            "any_modern_method_pct": 35.9,
+            "any_traditional_method_pct": 16.7,
+            "not_using_pct": 47.5
+          },
+          {
+            "label": "3-4",
+            "any_method_pct": 65.5,
+            "any_modern_method_pct": 51.1,
+            "any_traditional_method_pct": 14.5,
+            "not_using_pct": 34.5
+          },
+          {
+            "label": "5+",
+            "any_method_pct": 60.3,
+            "any_modern_method_pct": 45,
+            "any_modern_method_pct_display": "45.0",
+            "any_traditional_method_pct": 15.3,
+            "not_using_pct": 39.7
+          }
+        ]
+      },
+      {
+        "title": "Age",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "15-19",
+            "any_method_pct": 3.1,
+            "any_modern_method_pct": 2.5,
+            "any_traditional_method_pct": 0.6,
+            "not_using_pct": 96.9
+          },
+          {
+            "label": "20-24",
+            "any_method_pct": 19.9,
+            "any_modern_method_pct": 15.4,
+            "any_traditional_method_pct": 4.5,
+            "not_using_pct": 80.1
+          },
+          {
+            "label": "25-29",
+            "any_method_pct": 36.3,
+            "any_modern_method_pct": 27.4,
+            "any_traditional_method_pct": 8.9,
+            "not_using_pct": 63.7
+          },
+          {
+            "label": "30-34",
+            "any_method_pct": 49.5,
+            "any_modern_method_pct": 38,
+            "any_modern_method_pct_display": "38.0",
+            "any_traditional_method_pct": 11.5,
+            "not_using_pct": 50.5
+          },
+          {
+            "label": "35-39",
+            "any_method_pct": 53.9,
+            "any_modern_method_pct": 41.1,
+            "any_traditional_method_pct": 12.7,
+            "not_using_pct": 46.1
+          },
+          {
+            "label": "40-44",
+            "any_method_pct": 51.1,
+            "any_modern_method_pct": 38.4,
+            "any_traditional_method_pct": 12.7,
+            "not_using_pct": 48.9
+          },
+          {
+            "label": "45-49",
+            "any_method_pct": 39.3,
+            "any_modern_method_pct": 29.3,
+            "any_traditional_method_pct": 10,
+            "any_traditional_method_pct_display": "10.0",
+            "not_using_pct": 60.7
+          }
+        ]
+      },
+      {
+        "title": "Age",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "15-19",
+            "any_method_pct": 3.4,
+            "any_modern_method_pct": 2.6,
+            "any_traditional_method_pct": 0.8,
+            "not_using_pct": 96.6
+          },
+          {
+            "label": "20-24",
+            "any_method_pct": 19.6,
+            "any_modern_method_pct": 13.7,
+            "any_traditional_method_pct": 5.9,
+            "not_using_pct": 80.4
+          },
+          {
+            "label": "25-29",
+            "any_method_pct": 40.5,
+            "any_modern_method_pct": 29.3,
+            "any_traditional_method_pct": 11.2,
+            "not_using_pct": 59.5
+          },
+          {
+            "label": "30-34",
+            "any_method_pct": 50,
+            "any_method_pct_display": "50.0",
+            "any_modern_method_pct": 35.6,
+            "any_traditional_method_pct": 14.4,
+            "not_using_pct": 50,
+            "not_using_pct_display": "50.0"
+          },
+          {
+            "label": "35-39",
+            "any_method_pct": 54.9,
+            "any_modern_method_pct": 40.5,
+            "any_traditional_method_pct": 14.4,
+            "not_using_pct": 45.1
+          },
+          {
+            "label": "40-44",
+            "any_method_pct": 52.6,
+            "any_modern_method_pct": 37,
+            "any_modern_method_pct_display": "37.0",
+            "any_traditional_method_pct": 15.6,
+            "not_using_pct": 47.4
+          },
+          {
+            "label": "45-49",
+            "any_method_pct": 40,
+            "any_method_pct_display": "40.0",
+            "any_modern_method_pct": 27.1,
+            "any_traditional_method_pct": 12.9,
+            "not_using_pct": 60,
+            "not_using_pct_display": "60.0"
+          }
+        ]
+      },
+      {
+        "title": "Residence",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Urban",
+            "any_method_pct": 31.9,
+            "any_modern_method_pct": 23.3,
+            "any_traditional_method_pct": 8.6,
+            "not_using_pct": 68.1
+          },
+          {
+            "label": "Rural",
+            "any_method_pct": 36.3,
+            "any_modern_method_pct": 28.8,
+            "any_traditional_method_pct": 7.5,
+            "not_using_pct": 63.7
+          }
+        ]
+      },
+      {
+        "title": "Residence",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Urban",
+            "any_method_pct": 32.8,
+            "any_modern_method_pct": 22.6,
+            "any_traditional_method_pct": 10.2,
+            "not_using_pct": 67.2
+          },
+          {
+            "label": "Rural",
+            "any_method_pct": 35.7,
+            "any_modern_method_pct": 26.4,
+            "any_traditional_method_pct": 9.4,
+            "not_using_pct": 64.3
+          }
+        ]
+      },
+      {
+        "title": "Educational attainment",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "No education",
+            "any_method_pct": 24.2,
+            "any_modern_method_pct": 19.9,
+            "any_traditional_method_pct": 4.3,
+            "not_using_pct": 75.8
+          },
+          {
+            "label": "Grades 1-6",
+            "any_method_pct": 47.9,
+            "any_modern_method_pct": 40.1,
+            "any_traditional_method_pct": 7.8,
+            "not_using_pct": 52.1
+          },
+          {
+            "label": "Grades 7-10",
+            "any_method_pct": 40.2,
+            "any_modern_method_pct": 31.6,
+            "any_traditional_method_pct": 8.5,
+            "not_using_pct": 59.8
+          },
+          {
+            "label": "Grades 11-12",
+            "any_method_pct": 15.2,
+            "any_modern_method_pct": 11.8,
+            "any_traditional_method_pct": 3.4,
+            "not_using_pct": 84.8
+          },
+          {
+            "label": "Post-secondary",
+            "any_method_pct": 45.9,
+            "any_modern_method_pct": 32,
+            "any_modern_method_pct_display": "32.0",
+            "any_traditional_method_pct": 13.9,
+            "not_using_pct": 54.1
+          },
+          {
+            "label": "College",
+            "any_method_pct": 30.7,
+            "any_modern_method_pct": 21.7,
+            "any_traditional_method_pct": 9,
+            "any_traditional_method_pct_display": "9.0",
+            "not_using_pct": 69.3
+          }
+        ]
+      },
+      {
+        "title": "Educational attainment",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "No education",
+            "any_method_pct": 23.9,
+            "any_modern_method_pct": 19,
+            "any_modern_method_pct_display": "19.0",
+            "any_traditional_method_pct": 4.9,
+            "not_using_pct": 76.1
+          },
+          {
+            "label": "Grades 1-6",
+            "any_method_pct": 48.8,
+            "any_modern_method_pct": 38.3,
+            "any_traditional_method_pct": 10.5,
+            "not_using_pct": 51.2
+          },
+          {
+            "label": "Grades 7-10",
+            "any_method_pct": 37.3,
+            "any_modern_method_pct": 27.1,
+            "any_traditional_method_pct": 10.1,
+            "not_using_pct": 62.7
+          },
+          {
+            "label": "Grades 11-12",
+            "any_method_pct": 8.8,
+            "any_modern_method_pct": 6.1,
+            "any_traditional_method_pct": 2.7,
+            "not_using_pct": 91.2
+          },
+          {
+            "label": "Post-secondary",
+            "any_method_pct": 39.2,
+            "any_modern_method_pct": 29.8,
+            "any_traditional_method_pct": 9.4,
+            "not_using_pct": 60.8
+          },
+          {
+            "label": "College",
+            "any_method_pct": 33.3,
+            "any_modern_method_pct": 22,
+            "any_modern_method_pct_display": "22.0",
+            "any_traditional_method_pct": 11.4,
+            "not_using_pct": 66.7
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Lowest",
+            "any_method_pct": 39.6,
+            "any_modern_method_pct": 32.5,
+            "any_traditional_method_pct": 7,
+            "any_traditional_method_pct_display": "7.0",
+            "not_using_pct": 60.4
+          },
+          {
+            "label": "Second",
+            "any_method_pct": 37.2,
+            "any_modern_method_pct": 29.2,
+            "any_traditional_method_pct": 8,
+            "any_traditional_method_pct_display": "8.0",
+            "not_using_pct": 62.8
+          },
+          {
+            "label": "Middle",
+            "any_method_pct": 35.2,
+            "any_modern_method_pct": 26,
+            "any_modern_method_pct_display": "26.0",
+            "any_traditional_method_pct": 9.2,
+            "not_using_pct": 64.8
+          },
+          {
+            "label": "Fourth",
+            "any_method_pct": 30.1,
+            "any_modern_method_pct": 22.5,
+            "any_traditional_method_pct": 7.6,
+            "not_using_pct": 69.9
+          },
+          {
+            "label": "Highest",
+            "any_method_pct": 28.4,
+            "any_modern_method_pct": 20,
+            "any_modern_method_pct_display": "20.0",
+            "any_traditional_method_pct": 8.4,
+            "not_using_pct": 71.6
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Lowest",
+            "any_method_pct": 41.1,
+            "any_modern_method_pct": 31,
+            "any_modern_method_pct_display": "31.0",
+            "any_traditional_method_pct": 10.1,
+            "not_using_pct": 58.9
+          },
+          {
+            "label": "Second",
+            "any_method_pct": 38.3,
+            "any_modern_method_pct": 28.8,
+            "any_traditional_method_pct": 9.5,
+            "not_using_pct": 61.7
+          },
+          {
+            "label": "Middle",
+            "any_method_pct": 35.1,
+            "any_modern_method_pct": 25.3,
+            "any_traditional_method_pct": 9.8,
+            "not_using_pct": 64.9
+          },
+          {
+            "label": "Fourth",
+            "any_method_pct": 29.4,
+            "any_modern_method_pct": 18.9,
+            "any_traditional_method_pct": 10.4,
+            "not_using_pct": 70.6
+          },
+          {
+            "label": "Highest",
+            "any_method_pct": 29,
+            "any_method_pct_display": "29.0",
+            "any_modern_method_pct": 19.8,
+            "any_traditional_method_pct": 9.2,
+            "not_using_pct": 71,
+            "not_using_pct_display": "71.0"
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "If more than one method is used, only the most effective method is considered in this tabulation.",
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "Details may not add up to total due to rounding."
+    ]
+  },
+  "detailFields": [
+    {
+      "key": "any_method_pct",
+      "label": "Any method (%, 2025)"
+    },
+    {
+      "key": "any_modern_method_pct",
+      "label": "Any modern method (%, 2025)"
+    },
+    {
+      "key": "any_traditional_method_pct",
+      "label": "Any traditional method (%, 2025)"
+    },
+    {
+      "key": "not_using_pct",
+      "label": "Not currently using (%, 2025)"
+    },
+    {
+      "key": "women_total",
+      "label": "Total number of women aged 15 to 49 years"
+    },
+    {
+      "key": "psa_note",
+      "label": "Note"
+    }
+  ],
+  "data": {
+    "region": [
+      {
+        "psgc": 1300000000,
+        "women_total": null,
+        "any_method_pct": 28.5,
+        "any_modern_method_pct": 21.4,
+        "any_traditional_method_pct": 7.1,
+        "not_using_pct": 71.5
+      },
+      {
+        "psgc": 1400000000,
+        "women_total": 488,
+        "any_method_pct": 34.6,
+        "any_modern_method_pct": 26.8,
+        "any_traditional_method_pct": 7.8,
+        "not_using_pct": 65.4
+      },
+      {
+        "psgc": 100000000,
+        "women_total": null,
+        "any_method_pct": 36.5,
+        "any_modern_method_pct": 24.7,
+        "any_traditional_method_pct": 11.8,
+        "not_using_pct": 63.5
+      },
+      {
+        "psgc": 200000000,
+        "women_total": 805,
+        "any_method_pct": 32.9,
+        "any_modern_method_pct": 28.7,
+        "any_traditional_method_pct": 4.1,
+        "not_using_pct": 67.1
+      },
+      {
+        "psgc": 300000000,
+        "women_total": null,
+        "any_method_pct": 39,
+        "any_method_pct_display": "39.0",
+        "any_modern_method_pct": 28.9,
+        "any_traditional_method_pct": 10.1,
+        "not_using_pct": 61,
+        "not_using_pct_display": "61.0"
+      },
+      {
+        "psgc": 400000000,
+        "women_total": null,
+        "any_method_pct": 33.5,
+        "any_modern_method_pct": 23.8,
+        "any_traditional_method_pct": 9.7,
+        "not_using_pct": 66.5
+      },
+      {
+        "psgc": 1700000000,
+        "women_total": 715,
+        "any_method_pct": 39.4,
+        "any_modern_method_pct": 33.9,
+        "any_traditional_method_pct": 5.5,
+        "not_using_pct": 60.6
+      },
+      {
+        "psgc": 500000000,
+        "women_total": null,
+        "any_method_pct": 31.8,
+        "any_modern_method_pct": 22.1,
+        "any_traditional_method_pct": 9.7,
+        "not_using_pct": 68.2
+      },
+      {
+        "psgc": 600000000,
+        "women_total": null,
+        "any_method_pct": 38,
+        "any_method_pct_display": "38.0",
+        "any_modern_method_pct": 27.2,
+        "any_traditional_method_pct": 10.8,
+        "not_using_pct": 62,
+        "not_using_pct_display": "62.0"
+      },
+      {
+        "psgc": 1800000000,
+        "women_total": null,
+        "any_method_pct": 33.4,
+        "any_modern_method_pct": 28.2,
+        "any_traditional_method_pct": 5.2,
+        "not_using_pct": 66.6
+      },
+      {
+        "psgc": 700000000,
+        "women_total": null,
+        "any_method_pct": 25.7,
+        "any_modern_method_pct": 21,
+        "any_modern_method_pct_display": "21.0",
+        "any_traditional_method_pct": 4.8,
+        "not_using_pct": 74.3
+      },
+      {
+        "psgc": 800000000,
+        "women_total": null,
+        "any_method_pct": 39.7,
+        "any_modern_method_pct": 27.6,
+        "any_traditional_method_pct": 12.1,
+        "not_using_pct": 60.3
+      },
+      {
+        "psgc": 900000000,
+        "women_total": null,
+        "any_method_pct": 30.2,
+        "any_modern_method_pct": 24.7,
+        "any_traditional_method_pct": 5.6,
+        "not_using_pct": 69.8,
+        "psa_note": "Region IX includes the province of Sulu in 2025."
+      },
+      {
+        "psgc": 1000000000,
+        "women_total": null,
+        "any_method_pct": 34.3,
+        "any_modern_method_pct": 28.3,
+        "any_traditional_method_pct": 6,
+        "any_traditional_method_pct_display": "6.0",
+        "not_using_pct": 65.7
+      },
+      {
+        "psgc": 1100000000,
+        "women_total": null,
+        "any_method_pct": 45.1,
+        "any_modern_method_pct": 37.1,
+        "any_traditional_method_pct": 8,
+        "any_traditional_method_pct_display": "8.0",
+        "not_using_pct": 54.9
+      },
+      {
+        "psgc": 1200000000,
+        "women_total": 964,
+        "any_method_pct": 38.9,
+        "any_modern_method_pct": 32.5,
+        "any_traditional_method_pct": 6.4,
+        "not_using_pct": 61.1
+      },
+      {
+        "psgc": 1600000000,
+        "women_total": 600,
+        "any_method_pct": 39.5,
+        "any_modern_method_pct": 32.2,
+        "any_traditional_method_pct": 7.4,
+        "not_using_pct": 60.5
+      },
+      {
+        "psgc": 1900000000,
+        "women_total": 959,
+        "any_method_pct": 16.2,
+        "any_modern_method_pct": 13,
+        "any_modern_method_pct_display": "13.0",
+        "any_traditional_method_pct": 3.2,
+        "not_using_pct": 83.8
+      }
+    ],
+    "province": [],
+    "municity": []
+  }
+}

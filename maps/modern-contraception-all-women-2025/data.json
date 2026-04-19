@@ -1,0 +1,1331 @@
+{
+  "sectionTitle": "CONTRACEPTION",
+  "title": "Modern Contraception Among All Women",
+  "description": "Current use of modern contraceptive methods among all women aged 15 to 49 years, by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "maxDepth": "region",
+  "geoBasePath": "../../_template/philippines-json-maps",
+  "colorField": "any_modern_method_pct",
+  "colorDomain": [
+    0,
+    100
+  ],
+  "colorDomains": {
+    "any_modern_method_pct": [
+      0,
+      100
+    ],
+    "female_sterilization_pct": [
+      0,
+      100
+    ],
+    "male_sterilization_pct": [
+      0,
+      100
+    ],
+    "iud_pct": [
+      0,
+      100
+    ],
+    "injectables_pct": [
+      0,
+      100
+    ],
+    "implants_pct": [
+      0,
+      100
+    ],
+    "pill_pct": [
+      0,
+      100
+    ],
+    "male_condom_pct": [
+      0,
+      100
+    ],
+    "lam_pct": [
+      0,
+      100
+    ],
+    "modern_other_pct": [
+      0,
+      100
+    ]
+  },
+  "colorScheme": "interpolateYlGnBu",
+  "valueSuffix": "%",
+  "metricOptions": [
+    {
+      "key": "any_modern_method_pct",
+      "label": "Any modern method"
+    },
+    {
+      "key": "female_sterilization_pct",
+      "label": "Female sterilization"
+    },
+    {
+      "key": "male_sterilization_pct",
+      "label": "Male sterilization"
+    },
+    {
+      "key": "iud_pct",
+      "label": "IUD"
+    },
+    {
+      "key": "injectables_pct",
+      "label": "Injectables"
+    },
+    {
+      "key": "implants_pct",
+      "label": "Implants"
+    },
+    {
+      "key": "pill_pct",
+      "label": "Pill"
+    },
+    {
+      "key": "male_condom_pct",
+      "label": "Male condom"
+    },
+    {
+      "key": "lam_pct",
+      "label": "LAM"
+    },
+    {
+      "key": "modern_other_pct",
+      "label": "Other"
+    }
+  ],
+  "definitions": {
+    "any_modern_method_pct": "Any modern method includes female sterilization, male sterilization, IUD, injectables, implants, pill, male condom, LAM, and other modern methods.",
+    "lam_pct": "Lactational amenorrhea method."
+  },
+  "notes": {
+    "modern_other_pct": "Other modern methods include other methods mentioned by respondent and also includes patch, emergency contraception, and Standard days method."
+  },
+  "note": "If more than one method is used, only the most effective method is considered in this tabulation. \"0.0\" indicates that an estimate is less than 0.05 percent. Details may not add up to total due to rounding.",
+  "tableData": {
+    "title": "Modern Contraception Among All Women",
+    "subtitle": "Current use of modern contraceptive methods among all women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
+    "series": [
+      {
+        "key": "any_modern_method_pct",
+        "label": "Any modern method"
+      },
+      {
+        "key": "female_sterilization_pct",
+        "label": "Female sterilization"
+      },
+      {
+        "key": "male_sterilization_pct",
+        "label": "Male sterilization"
+      },
+      {
+        "key": "iud_pct",
+        "label": "IUD"
+      },
+      {
+        "key": "injectables_pct",
+        "label": "Injectables"
+      },
+      {
+        "key": "implants_pct",
+        "label": "Implants"
+      },
+      {
+        "key": "pill_pct",
+        "label": "Pill"
+      },
+      {
+        "key": "male_condom_pct",
+        "label": "Male condom"
+      },
+      {
+        "key": "lam_pct",
+        "label": "LAM¹"
+      },
+      {
+        "key": "modern_other_pct",
+        "label": "Other"
+      }
+    ],
+    "blocks": [
+      {
+        "title": "Number of living children",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "0",
+            "any_modern_method_pct": 2.4,
+            "female_sterilization_pct": 0,
+            "female_sterilization_pct_display": "0.0",
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 0,
+            "iud_pct_display": "0.0",
+            "injectables_pct": 0.1,
+            "implants_pct": 0,
+            "implants_pct_display": "0.0",
+            "pill_pct": 0.7,
+            "male_condom_pct": 1.5,
+            "lam_pct": 0,
+            "lam_pct_display": "0.0",
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "1-2",
+            "any_modern_method_pct": 37.9,
+            "female_sterilization_pct": 3.3,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 2.3,
+            "injectables_pct": 5.7,
+            "implants_pct": 3.8,
+            "pill_pct": 19.9,
+            "male_condom_pct": 2.6,
+            "lam_pct": 0.3,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "3-4",
+            "any_modern_method_pct": 55.8,
+            "female_sterilization_pct": 15.9,
+            "male_sterilization_pct": 0.2,
+            "iud_pct": 3.9,
+            "injectables_pct": 6.5,
+            "implants_pct": 5,
+            "implants_pct_display": "5.0",
+            "pill_pct": 22.6,
+            "male_condom_pct": 1.5,
+            "lam_pct": 0.1,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "5+",
+            "any_modern_method_pct": 46.5,
+            "female_sterilization_pct": 14.1,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 3.5,
+            "injectables_pct": 7.2,
+            "implants_pct": 5,
+            "implants_pct_display": "5.0",
+            "pill_pct": 14.9,
+            "male_condom_pct": 1.6,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0.1
+          }
+        ]
+      },
+      {
+        "title": "Number of living children",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "0",
+            "any_modern_method_pct": 1.8,
+            "female_sterilization_pct": 0,
+            "female_sterilization_pct_display": "0.0",
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 0,
+            "iud_pct_display": "0.0",
+            "injectables_pct": 0,
+            "injectables_pct_display": "0.0",
+            "implants_pct": 0,
+            "implants_pct_display": "0.0",
+            "pill_pct": 0.7,
+            "male_condom_pct": 1.1,
+            "lam_pct": 0,
+            "lam_pct_display": "0.0",
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "1-2",
+            "any_modern_method_pct": 35.9,
+            "female_sterilization_pct": 3.4,
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 2.5,
+            "injectables_pct": 4.5,
+            "implants_pct": 2.4,
+            "pill_pct": 20.2,
+            "male_condom_pct": 2.2,
+            "lam_pct": 0.5,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "3-4",
+            "any_modern_method_pct": 51.1,
+            "female_sterilization_pct": 16.5,
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 3.6,
+            "injectables_pct": 5.6,
+            "implants_pct": 3.6,
+            "pill_pct": 19.5,
+            "male_condom_pct": 1.8,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "5+",
+            "any_modern_method_pct": 45,
+            "any_modern_method_pct_display": "45.0",
+            "female_sterilization_pct": 13.7,
+            "male_sterilization_pct": 0.2,
+            "iud_pct": 4,
+            "iud_pct_display": "4.0",
+            "injectables_pct": 5.8,
+            "implants_pct": 4,
+            "implants_pct_display": "4.0",
+            "pill_pct": 15.7,
+            "male_condom_pct": 1,
+            "male_condom_pct_display": "1.0",
+            "lam_pct": 0.6,
+            "modern_other_pct": 0.1
+          }
+        ]
+      },
+      {
+        "title": "Age",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "15-19",
+            "any_modern_method_pct": 2.5,
+            "female_sterilization_pct": 0,
+            "female_sterilization_pct_display": "0.0",
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 0.1,
+            "injectables_pct": 0.6,
+            "implants_pct": 0.6,
+            "pill_pct": 0.8,
+            "male_condom_pct": 0.3,
+            "lam_pct": 0,
+            "lam_pct_display": "0.0",
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "20-24",
+            "any_modern_method_pct": 15.4,
+            "female_sterilization_pct": 0,
+            "female_sterilization_pct_display": "0.0",
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 0.9,
+            "injectables_pct": 3,
+            "injectables_pct_display": "3.0",
+            "implants_pct": 2.3,
+            "pill_pct": 6.3,
+            "male_condom_pct": 2.6,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "25-29",
+            "any_modern_method_pct": 27.4,
+            "female_sterilization_pct": 0.5,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 1.1,
+            "injectables_pct": 4.8,
+            "implants_pct": 4.4,
+            "pill_pct": 13.6,
+            "male_condom_pct": 2.7,
+            "lam_pct": 0.3,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "30-34",
+            "any_modern_method_pct": 38,
+            "any_modern_method_pct_display": "38.0",
+            "female_sterilization_pct": 3.4,
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 2,
+            "iud_pct_display": "2.0",
+            "injectables_pct": 5.8,
+            "implants_pct": 4.1,
+            "pill_pct": 19.9,
+            "male_condom_pct": 2.5,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "35-39",
+            "any_modern_method_pct": 41.1,
+            "female_sterilization_pct": 8.8,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 2.9,
+            "injectables_pct": 4.7,
+            "implants_pct": 2.9,
+            "pill_pct": 19.4,
+            "male_condom_pct": 2.1,
+            "lam_pct": 0.1,
+            "modern_other_pct": 0.3
+          },
+          {
+            "label": "40-44",
+            "any_modern_method_pct": 38.4,
+            "female_sterilization_pct": 11.8,
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 3.2,
+            "injectables_pct": 3.9,
+            "implants_pct": 2,
+            "implants_pct_display": "2.0",
+            "pill_pct": 16.1,
+            "male_condom_pct": 1.3,
+            "lam_pct": 0,
+            "lam_pct_display": "0.0",
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "45-49",
+            "any_modern_method_pct": 29.3,
+            "female_sterilization_pct": 12.4,
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 1.9,
+            "injectables_pct": 2,
+            "injectables_pct_display": "2.0",
+            "implants_pct": 0.8,
+            "pill_pct": 9.9,
+            "male_condom_pct": 2.1,
+            "lam_pct": 0,
+            "lam_pct_display": "0.0",
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
+        "title": "Age",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "15-19",
+            "any_modern_method_pct": 2.6,
+            "female_sterilization_pct": 0,
+            "female_sterilization_pct_display": "0.0",
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 0.1,
+            "injectables_pct": 0.2,
+            "implants_pct": 0.4,
+            "pill_pct": 1.3,
+            "male_condom_pct": 0.4,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "20-24",
+            "any_modern_method_pct": 13.7,
+            "female_sterilization_pct": 0,
+            "female_sterilization_pct_display": "0.0",
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 0.9,
+            "injectables_pct": 2.2,
+            "implants_pct": 1.9,
+            "pill_pct": 6.7,
+            "male_condom_pct": 1.6,
+            "lam_pct": 0.4,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "25-29",
+            "any_modern_method_pct": 29.3,
+            "female_sterilization_pct": 0.9,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 1.5,
+            "injectables_pct": 4.3,
+            "implants_pct": 2.9,
+            "pill_pct": 16.9,
+            "male_condom_pct": 2.4,
+            "lam_pct": 0.4,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "30-34",
+            "any_modern_method_pct": 35.6,
+            "female_sterilization_pct": 4,
+            "female_sterilization_pct_display": "4.0",
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 2.4,
+            "injectables_pct": 4.7,
+            "implants_pct": 2.6,
+            "pill_pct": 19.4,
+            "male_condom_pct": 2.1,
+            "lam_pct": 0.4,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "35-39",
+            "any_modern_method_pct": 40.5,
+            "female_sterilization_pct": 9,
+            "female_sterilization_pct_display": "9.0",
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 3.5,
+            "injectables_pct": 4.6,
+            "implants_pct": 2.3,
+            "pill_pct": 18,
+            "pill_pct_display": "18.0",
+            "male_condom_pct": 2.5,
+            "lam_pct": 0.3,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "40-44",
+            "any_modern_method_pct": 37,
+            "any_modern_method_pct_display": "37.0",
+            "female_sterilization_pct": 13.5,
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 2.6,
+            "injectables_pct": 3.4,
+            "implants_pct": 1.4,
+            "pill_pct": 14.2,
+            "male_condom_pct": 1.5,
+            "lam_pct": 0.1,
+            "modern_other_pct": 0.3
+          },
+          {
+            "label": "45-49",
+            "any_modern_method_pct": 27.1,
+            "female_sterilization_pct": 13.8,
+            "male_sterilization_pct": 0.3,
+            "iud_pct": 2.2,
+            "injectables_pct": 1.6,
+            "implants_pct": 0.5,
+            "pill_pct": 7.7,
+            "male_condom_pct": 0.9,
+            "lam_pct": 0,
+            "lam_pct_display": "0.0",
+            "modern_other_pct": 0.1
+          }
+        ]
+      },
+      {
+        "title": "Residence",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Urban",
+            "any_modern_method_pct": 23.3,
+            "female_sterilization_pct": 4.5,
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 1.4,
+            "injectables_pct": 3.2,
+            "implants_pct": 2,
+            "implants_pct_display": "2.0",
+            "pill_pct": 9.6,
+            "male_condom_pct": 2.3,
+            "lam_pct": 0.1,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "Rural",
+            "any_modern_method_pct": 28.8,
+            "female_sterilization_pct": 4.7,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 1.8,
+            "injectables_pct": 3.8,
+            "implants_pct": 2.9,
+            "pill_pct": 14.2,
+            "male_condom_pct": 1.3,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
+        "title": "Residence",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Urban",
+            "any_modern_method_pct": 22.6,
+            "female_sterilization_pct": 5.1,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 1.5,
+            "injectables_pct": 2.7,
+            "implants_pct": 1.5,
+            "pill_pct": 9.6,
+            "male_condom_pct": 1.9,
+            "lam_pct": 0.1,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "Rural",
+            "any_modern_method_pct": 26.4,
+            "female_sterilization_pct": 4.9,
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 2,
+            "iud_pct_display": "2.0",
+            "injectables_pct": 2.9,
+            "implants_pct": 1.9,
+            "pill_pct": 13.2,
+            "male_condom_pct": 1.1,
+            "lam_pct": 0.4,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
+        "title": "Educational attainment",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "No education",
+            "any_modern_method_pct": 19.9,
+            "female_sterilization_pct": 2.5,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 0.4,
+            "injectables_pct": 7,
+            "injectables_pct_display": "7.0",
+            "implants_pct": 3,
+            "implants_pct_display": "3.0",
+            "pill_pct": 7.1,
+            "male_condom_pct": 0.1,
+            "lam_pct": 0,
+            "lam_pct_display": "0.0",
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "Grades 1-6",
+            "any_modern_method_pct": 40.1,
+            "female_sterilization_pct": 8,
+            "female_sterilization_pct_display": "8.0",
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 3.7,
+            "injectables_pct": 6.1,
+            "implants_pct": 4.3,
+            "pill_pct": 17.2,
+            "male_condom_pct": 0.8,
+            "lam_pct": 0,
+            "lam_pct_display": "0.0",
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "Grades 7-10",
+            "any_modern_method_pct": 31.6,
+            "female_sterilization_pct": 5,
+            "female_sterilization_pct_display": "5.0",
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 2,
+            "iud_pct_display": "2.0",
+            "injectables_pct": 4.6,
+            "implants_pct": 3.2,
+            "pill_pct": 15.4,
+            "male_condom_pct": 1.3,
+            "lam_pct": 0.1,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "Grades 11-12",
+            "any_modern_method_pct": 11.8,
+            "female_sterilization_pct": 0,
+            "female_sterilization_pct_display": "0.0",
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 0.7,
+            "injectables_pct": 2,
+            "injectables_pct_display": "2.0",
+            "implants_pct": 2.2,
+            "pill_pct": 5.7,
+            "male_condom_pct": 1,
+            "male_condom_pct_display": "1.0",
+            "lam_pct": 0,
+            "lam_pct_display": "0.0",
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "Post-secondary",
+            "any_modern_method_pct": 32,
+            "any_modern_method_pct_display": "32.0",
+            "female_sterilization_pct": 8.4,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 1.2,
+            "injectables_pct": 3.5,
+            "implants_pct": 2.7,
+            "pill_pct": 14.2,
+            "male_condom_pct": 1.4,
+            "lam_pct": 0.4,
+            "modern_other_pct": 0.2
+          },
+          {
+            "label": "College",
+            "any_modern_method_pct": 21.7,
+            "female_sterilization_pct": 4.9,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 1.2,
+            "injectables_pct": 2.2,
+            "implants_pct": 1.4,
+            "pill_pct": 8.8,
+            "male_condom_pct": 3,
+            "male_condom_pct_display": "3.0",
+            "lam_pct": 0.2,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
+        "title": "Educational attainment",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "No education",
+            "any_modern_method_pct": 19,
+            "any_modern_method_pct_display": "19.0",
+            "female_sterilization_pct": 2.4,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 1.7,
+            "injectables_pct": 3.6,
+            "implants_pct": 5.3,
+            "pill_pct": 4.8,
+            "male_condom_pct": 0,
+            "male_condom_pct_display": "0.0",
+            "lam_pct": 1.3,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "Grades 1-6",
+            "any_modern_method_pct": 38.3,
+            "female_sterilization_pct": 8.8,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 3.5,
+            "injectables_pct": 3.7,
+            "implants_pct": 3.1,
+            "pill_pct": 18.4,
+            "male_condom_pct": 0.6,
+            "lam_pct": 0.4,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "Grades 7-10",
+            "any_modern_method_pct": 27.1,
+            "female_sterilization_pct": 5.1,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 2,
+            "iud_pct_display": "2.0",
+            "injectables_pct": 3.3,
+            "implants_pct": 1.9,
+            "pill_pct": 13.3,
+            "male_condom_pct": 1.2,
+            "lam_pct": 0.3,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "Grades 11-12",
+            "any_modern_method_pct": 6.1,
+            "female_sterilization_pct": 0,
+            "female_sterilization_pct_display": "0.0",
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 0.5,
+            "injectables_pct": 1.3,
+            "implants_pct": 0.6,
+            "pill_pct": 2.6,
+            "male_condom_pct": 0.8,
+            "lam_pct": 0.1,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "Post-secondary",
+            "any_modern_method_pct": 29.8,
+            "female_sterilization_pct": 7.3,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 1,
+            "iud_pct_display": "1.0",
+            "injectables_pct": 5.2,
+            "implants_pct": 2.7,
+            "pill_pct": 9.8,
+            "male_condom_pct": 3.7,
+            "lam_pct": 0,
+            "lam_pct_display": "0.0",
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "College",
+            "any_modern_method_pct": 22,
+            "any_modern_method_pct_display": "22.0",
+            "female_sterilization_pct": 5.2,
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 1.3,
+            "injectables_pct": 2.3,
+            "implants_pct": 1.1,
+            "pill_pct": 9.3,
+            "male_condom_pct": 2.4,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0.1
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Lowest",
+            "any_modern_method_pct": 32.5,
+            "female_sterilization_pct": 3.4,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 2.8,
+            "injectables_pct": 5.1,
+            "implants_pct": 5.4,
+            "pill_pct": 14.5,
+            "male_condom_pct": 1.1,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "Second",
+            "any_modern_method_pct": 29.2,
+            "female_sterilization_pct": 4.8,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 2.1,
+            "injectables_pct": 4.1,
+            "implants_pct": 3,
+            "implants_pct_display": "3.0",
+            "pill_pct": 14.1,
+            "male_condom_pct": 1,
+            "male_condom_pct_display": "1.0",
+            "lam_pct": 0.1,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "Middle",
+            "any_modern_method_pct": 26,
+            "any_modern_method_pct_display": "26.0",
+            "female_sterilization_pct": 4.2,
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 1.3,
+            "injectables_pct": 4,
+            "injectables_pct_display": "4.0",
+            "implants_pct": 1.9,
+            "pill_pct": 12.3,
+            "male_condom_pct": 1.9,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "Fourth",
+            "any_modern_method_pct": 22.5,
+            "female_sterilization_pct": 4.5,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 1.3,
+            "injectables_pct": 2.5,
+            "implants_pct": 1.5,
+            "pill_pct": 10.5,
+            "male_condom_pct": 2.1,
+            "lam_pct": 0.1,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "Highest",
+            "any_modern_method_pct": 20,
+            "any_modern_method_pct_display": "20.0",
+            "female_sterilization_pct": 5.8,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 0.9,
+            "injectables_pct": 1.9,
+            "implants_pct": 0.8,
+            "pill_pct": 7.3,
+            "male_condom_pct": 3.1,
+            "lam_pct": 0.1,
+            "modern_other_pct": 0.1
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Lowest",
+            "any_modern_method_pct": 31,
+            "any_modern_method_pct_display": "31.0",
+            "female_sterilization_pct": 3.8,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 3.2,
+            "injectables_pct": 4.2,
+            "implants_pct": 3,
+            "implants_pct_display": "3.0",
+            "pill_pct": 15.4,
+            "male_condom_pct": 0.8,
+            "lam_pct": 0.6,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "Second",
+            "any_modern_method_pct": 28.8,
+            "female_sterilization_pct": 5.4,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 2.3,
+            "injectables_pct": 3.3,
+            "implants_pct": 2.7,
+            "pill_pct": 13.4,
+            "male_condom_pct": 1.3,
+            "lam_pct": 0.3,
+            "modern_other_pct": 0,
+            "modern_other_pct_display": "0.0"
+          },
+          {
+            "label": "Middle",
+            "any_modern_method_pct": 25.3,
+            "female_sterilization_pct": 5.1,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 1.6,
+            "injectables_pct": 3.5,
+            "implants_pct": 1.9,
+            "pill_pct": 11.5,
+            "male_condom_pct": 1.6,
+            "lam_pct": 0.1,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "Fourth",
+            "any_modern_method_pct": 18.9,
+            "female_sterilization_pct": 4.6,
+            "male_sterilization_pct": 0.2,
+            "iud_pct": 1,
+            "iud_pct_display": "1.0",
+            "injectables_pct": 1.7,
+            "implants_pct": 0.6,
+            "pill_pct": 8.9,
+            "male_condom_pct": 1.7,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0.1
+          },
+          {
+            "label": "Highest",
+            "any_modern_method_pct": 19.8,
+            "female_sterilization_pct": 5.8,
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 0.9,
+            "injectables_pct": 1.8,
+            "implants_pct": 0.6,
+            "pill_pct": 8.1,
+            "male_condom_pct": 2.2,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0.1
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "¹ Lactational amenorrhea method.",
+      "Other modern methods include other methods mentioned by respondent and also includes patch, emergency contraception, and Standard days method.",
+      "If more than one method is used, only the most effective method is considered in this tabulation.",
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "Details may not add up to total due to rounding."
+    ]
+  },
+  "detailFields": [
+    {
+      "key": "any_modern_method_pct",
+      "label": "Any modern method (%, 2025)"
+    },
+    {
+      "key": "female_sterilization_pct",
+      "label": "Female sterilization (%, 2025)"
+    },
+    {
+      "key": "male_sterilization_pct",
+      "label": "Male sterilization (%, 2025)"
+    },
+    {
+      "key": "iud_pct",
+      "label": "IUD (%, 2025)"
+    },
+    {
+      "key": "injectables_pct",
+      "label": "Injectables (%, 2025)"
+    },
+    {
+      "key": "implants_pct",
+      "label": "Implants (%, 2025)"
+    },
+    {
+      "key": "pill_pct",
+      "label": "Pill (%, 2025)"
+    },
+    {
+      "key": "male_condom_pct",
+      "label": "Male condom (%, 2025)"
+    },
+    {
+      "key": "lam_pct",
+      "label": "LAM (%, 2025)"
+    },
+    {
+      "key": "modern_other_pct",
+      "label": "Other modern methods (%, 2025)"
+    },
+    {
+      "key": "women_total",
+      "label": "Total number of women aged 15 to 49 years"
+    },
+    {
+      "key": "psa_note",
+      "label": "Note"
+    }
+  ],
+  "data": {
+    "region": [
+      {
+        "psgc": 1300000000,
+        "women_total": null,
+        "any_modern_method_pct": 21.4,
+        "female_sterilization_pct": 4.8,
+        "male_sterilization_pct": 0.2,
+        "iud_pct": 1.3,
+        "injectables_pct": 3.7,
+        "implants_pct": 1.9,
+        "pill_pct": 6.6,
+        "male_condom_pct": 2.9,
+        "lam_pct": 0,
+        "lam_pct_display": "0.0",
+        "modern_other_pct": 0.1
+      },
+      {
+        "psgc": 1400000000,
+        "women_total": 488,
+        "any_modern_method_pct": 26.8,
+        "female_sterilization_pct": 10,
+        "female_sterilization_pct_display": "10.0",
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 0.5,
+        "injectables_pct": 2.3,
+        "implants_pct": 2.7,
+        "pill_pct": 8.8,
+        "male_condom_pct": 2.4,
+        "lam_pct": 0.1,
+        "modern_other_pct": 0,
+        "modern_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 100000000,
+        "women_total": null,
+        "any_modern_method_pct": 24.7,
+        "female_sterilization_pct": 5.9,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 0.9,
+        "injectables_pct": 3.4,
+        "implants_pct": 1,
+        "implants_pct_display": "1.0",
+        "pill_pct": 10.9,
+        "male_condom_pct": 2.3,
+        "lam_pct": 0.1,
+        "modern_other_pct": 0.3
+      },
+      {
+        "psgc": 200000000,
+        "women_total": 805,
+        "any_modern_method_pct": 28.7,
+        "female_sterilization_pct": 5.4,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 1.2,
+        "injectables_pct": 3,
+        "injectables_pct_display": "3.0",
+        "implants_pct": 1.1,
+        "pill_pct": 17.3,
+        "male_condom_pct": 0.8,
+        "lam_pct": 0,
+        "lam_pct_display": "0.0",
+        "modern_other_pct": 0,
+        "modern_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 300000000,
+        "women_total": null,
+        "any_modern_method_pct": 28.9,
+        "female_sterilization_pct": 8.6,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 0.6,
+        "injectables_pct": 3.5,
+        "implants_pct": 2,
+        "implants_pct_display": "2.0",
+        "pill_pct": 11.8,
+        "male_condom_pct": 2.2,
+        "lam_pct": 0.2,
+        "modern_other_pct": 0,
+        "modern_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 400000000,
+        "women_total": null,
+        "any_modern_method_pct": 23.8,
+        "female_sterilization_pct": 4.2,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 1,
+        "iud_pct_display": "1.0",
+        "injectables_pct": 2.9,
+        "implants_pct": 1.5,
+        "pill_pct": 11.5,
+        "male_condom_pct": 2.5,
+        "lam_pct": 0.2,
+        "modern_other_pct": 0,
+        "modern_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 1700000000,
+        "women_total": 715,
+        "any_modern_method_pct": 33.9,
+        "female_sterilization_pct": 4,
+        "female_sterilization_pct_display": "4.0",
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 0.8,
+        "injectables_pct": 8,
+        "injectables_pct_display": "8.0",
+        "implants_pct": 5.8,
+        "pill_pct": 14.4,
+        "male_condom_pct": 0.8,
+        "lam_pct": 0.1,
+        "modern_other_pct": 0,
+        "modern_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 500000000,
+        "women_total": null,
+        "any_modern_method_pct": 22.1,
+        "female_sterilization_pct": 3.5,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 0.9,
+        "injectables_pct": 2.7,
+        "implants_pct": 3.2,
+        "pill_pct": 10.6,
+        "male_condom_pct": 1.2,
+        "lam_pct": 0.1,
+        "modern_other_pct": 0.1
+      },
+      {
+        "psgc": 600000000,
+        "women_total": null,
+        "any_modern_method_pct": 27.2,
+        "female_sterilization_pct": 3.3,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 1.4,
+        "injectables_pct": 3.8,
+        "implants_pct": 1.9,
+        "pill_pct": 13.9,
+        "male_condom_pct": 2.4,
+        "lam_pct": 0.5,
+        "modern_other_pct": 0,
+        "modern_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 1800000000,
+        "women_total": null,
+        "any_modern_method_pct": 28.2,
+        "female_sterilization_pct": 2.5,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 2.8,
+        "injectables_pct": 4.9,
+        "implants_pct": 0.8,
+        "pill_pct": 16,
+        "pill_pct_display": "16.0",
+        "male_condom_pct": 1.3,
+        "lam_pct": 0,
+        "lam_pct_display": "0.0",
+        "modern_other_pct": 0,
+        "modern_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 700000000,
+        "women_total": null,
+        "any_modern_method_pct": 21,
+        "any_modern_method_pct_display": "21.0",
+        "female_sterilization_pct": 2.6,
+        "male_sterilization_pct": 0.1,
+        "iud_pct": 2.8,
+        "injectables_pct": 2.4,
+        "implants_pct": 1.6,
+        "pill_pct": 10.2,
+        "male_condom_pct": 1.3,
+        "lam_pct": 0,
+        "lam_pct_display": "0.0",
+        "modern_other_pct": 0,
+        "modern_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 800000000,
+        "women_total": null,
+        "any_modern_method_pct": 27.6,
+        "female_sterilization_pct": 4.8,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 2.4,
+        "injectables_pct": 2.3,
+        "implants_pct": 3.5,
+        "pill_pct": 13,
+        "pill_pct_display": "13.0",
+        "male_condom_pct": 1.1,
+        "lam_pct": 0.2,
+        "modern_other_pct": 0.2
+      },
+      {
+        "psgc": 900000000,
+        "women_total": null,
+        "any_modern_method_pct": 24.7,
+        "female_sterilization_pct": 1.9,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 2.1,
+        "injectables_pct": 3.8,
+        "implants_pct": 4.7,
+        "pill_pct": 11.3,
+        "male_condom_pct": 0.7,
+        "lam_pct": 0.3,
+        "modern_other_pct": 0.1,
+        "psa_note": "Region IX includes the province of Sulu in 2025."
+      },
+      {
+        "psgc": 1000000000,
+        "women_total": null,
+        "any_modern_method_pct": 28.3,
+        "female_sterilization_pct": 3.4,
+        "male_sterilization_pct": 0.1,
+        "iud_pct": 4,
+        "iud_pct_display": "4.0",
+        "injectables_pct": 2.6,
+        "implants_pct": 2.9,
+        "pill_pct": 13.4,
+        "male_condom_pct": 1.6,
+        "lam_pct": 0.3,
+        "modern_other_pct": 0.1
+      },
+      {
+        "psgc": 1100000000,
+        "women_total": null,
+        "any_modern_method_pct": 37.1,
+        "female_sterilization_pct": 4,
+        "female_sterilization_pct_display": "4.0",
+        "male_sterilization_pct": 0.1,
+        "iud_pct": 3.1,
+        "injectables_pct": 5.1,
+        "implants_pct": 5,
+        "implants_pct_display": "5.0",
+        "pill_pct": 18.6,
+        "male_condom_pct": 1,
+        "male_condom_pct_display": "1.0",
+        "lam_pct": 0.1,
+        "modern_other_pct": 0,
+        "modern_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 1200000000,
+        "women_total": 964,
+        "any_modern_method_pct": 32.5,
+        "female_sterilization_pct": 3.3,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 3.3,
+        "injectables_pct": 3.1,
+        "implants_pct": 4.3,
+        "pill_pct": 17.1,
+        "male_condom_pct": 1.4,
+        "lam_pct": 0,
+        "lam_pct_display": "0.0",
+        "modern_other_pct": 0,
+        "modern_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 1600000000,
+        "women_total": 600,
+        "any_modern_method_pct": 32.2,
+        "female_sterilization_pct": 3.6,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 3.4,
+        "injectables_pct": 3,
+        "injectables_pct_display": "3.0",
+        "implants_pct": 5,
+        "implants_pct_display": "5.0",
+        "pill_pct": 15,
+        "pill_pct_display": "15.0",
+        "male_condom_pct": 2,
+        "male_condom_pct_display": "2.0",
+        "lam_pct": 0.1,
+        "modern_other_pct": 0.1
+      },
+      {
+        "psgc": 1900000000,
+        "women_total": 959,
+        "any_modern_method_pct": 13,
+        "any_modern_method_pct_display": "13.0",
+        "female_sterilization_pct": 1.5,
+        "male_sterilization_pct": 0,
+        "male_sterilization_pct_display": "0.0",
+        "iud_pct": 0.7,
+        "injectables_pct": 2.9,
+        "implants_pct": 2.8,
+        "pill_pct": 4.4,
+        "male_condom_pct": 0.6,
+        "lam_pct": 0,
+        "lam_pct_display": "0.0",
+        "modern_other_pct": 0.2
+      }
+    ],
+    "province": [],
+    "municity": []
+  }
+}

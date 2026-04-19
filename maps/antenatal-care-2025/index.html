@@ -141,7 +141,165 @@
     font-size: 11px; color: var(--data-label-color); line-height: 1.7;
     margin-bottom: 4px;
   }
-
+  #tab-tables {
+    overflow-y: auto;
+    padding: 28px 28px 56px;
+  }
+  #tab-tables::-webkit-scrollbar { width: 4px; }
+  #tab-tables::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 2px; }
+  #tables-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .dt-page-title {
+    font-size: 20px; font-weight: 600; color: var(--lgu-name-color);
+    line-height: 1.25; margin-bottom: 4px;
+  }
+  .dt-page-subtitle {
+    font-size: 12px; color: var(--region-color); margin-bottom: 28px; line-height: 1.6;
+  }
+  .dt-section {
+    margin-bottom: 24px;
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-divider);
+    padding: 16px 16px 4px;
+  }
+  .dt-section-label {
+    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--section-color); margin-bottom: 12px;
+  }
+  .dt-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .dt-table {
+    width: 100%;
+    min-width: 1120px;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .dt-table thead th {
+    padding: 10px 10px 9px;
+    border-right: 1px solid var(--panel-divider);
+    border-bottom: 1px solid var(--panel-divider);
+    font: 10px/1.35 monospace;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--data-label-color);
+    text-align: right;
+    vertical-align: bottom;
+    background: rgba(0,0,0,0.02);
+  }
+  .dt-table thead th:last-child { border-right: none; }
+  .dt-table thead th:first-child {
+    text-align: left;
+    min-width: 220px;
+  }
+  .dt-table thead th.col-group {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+  }
+  .dt-table th.year-2022,
+  .dt-table td.year-2022 {
+    background: rgba(0,0,0,0.018);
+  }
+  .dt-table th.year-break,
+  .dt-table td.year-break {
+    border-left: 2px solid rgba(0,0,0,0.09);
+  }
+  .dt-table thead tr.sub-header th {
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 1.45;
+  }
+  .dt-table tbody tr {
+    border-bottom: 1px solid var(--panel-divider);
+  }
+  .dt-table tbody tr:last-child { border-bottom: none; }
+  .dt-table tbody td {
+    padding: 10px;
+    border-right: 1px solid var(--panel-divider);
+    text-align: right;
+    vertical-align: top;
+    color: var(--data-value-color);
+    line-height: 1.45;
+  }
+  .dt-table tbody td:last-child { border-right: none; }
+  .dt-table tbody td:first-child {
+    text-align: left;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  .dt-table td.na { color: var(--no-data-color); font-style: italic; }
+  .dt-table tbody tr.dt-total-row td {
+    font-weight: 600;
+    background: rgba(0,0,0,0.025);
+  }
+  .dt-footnotes {
+    margin-top: 28px;
+  }
+  .dt-note {
+    font-size: 11px; color: var(--data-label-color); line-height: 1.7;
+    margin-bottom: 4px;
+  }
+  .dt-source {
+    margin-top: 10px;
+    font-size: 11px;
+    color: var(--data-label-color);
+    line-height: 1.7;
+  }
+  #tab-insights {
+    overflow-y: auto;
+    padding: 28px 28px 56px;
+  }
+  #tab-insights::-webkit-scrollbar { width: 4px; }
+  #tab-insights::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 2px; }
+  #insights-container {
+    max-width: 920px;
+    margin: 0 auto;
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-divider);
+    padding: 24px 24px 20px;
+  }
+  .insights-page-title {
+    font-size: 20px; font-weight: 600; color: var(--lgu-name-color);
+    line-height: 1.25; margin-bottom: 4px;
+  }
+  .insights-page-subtitle {
+    font-size: 12px; color: var(--region-color); margin-bottom: 24px; line-height: 1.6;
+  }
+  .insight-card {
+    padding: 0;
+    margin-bottom: 22px;
+  }
+  .insight-heading {
+    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--section-color); margin-bottom: 10px;
+  }
+  .insight-text {
+    font-size: 13px; color: var(--text-color); line-height: 1.75;
+  }
+  .insight-takeaways {
+    display: grid;
+    gap: 10px;
+  }
+  .insight-takeaway {
+    font-size: 13px; color: var(--text-color); line-height: 1.7;
+    padding-left: 14px;
+    position: relative;
+  }
+  .insight-takeaway::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.28);
+  }
   .region   { fill: var(--poly-fill); stroke: var(--poly-stroke); stroke-width: 0.8; cursor: pointer; }
   .region:hover   { opacity: 0.8; stroke: var(--hover-stroke); stroke-width: 1.5; }
   .province { fill: var(--poly-fill); stroke: var(--poly-stroke); stroke-width: 0.5; cursor: pointer; }
@@ -372,13 +530,19 @@ const g        = svg.append('g');
 let activeTab = 'map';
 let chartsReady = false;
 let chartsContainer = null;
+let tablesReady = false;
+let tablesContainer = null;
+let insightsReady = false;
+let insightsContainer = null;
 
 (function initTabbedLayout() {
   const tabBar = document.createElement('div');
   tabBar.id = 'tab-bar';
   tabBar.innerHTML = `
     <button class="tab-btn active" data-tab="map">Maps</button>
-    <button class="tab-btn" data-tab="charts">Data</button>
+    <button class="tab-btn" data-tab="charts">Charts</button>
+    <button class="tab-btn" data-tab="tables">Data Tables</button>
+    <button class="tab-btn" data-tab="insights">Insights</button>
   `;
 
   const mapPanel = document.createElement('div');
@@ -389,15 +553,33 @@ let chartsContainer = null;
   chartsPanel.id = 'tab-charts';
   chartsPanel.className = 'tab-panel';
 
+  const insightsPanel = document.createElement('div');
+  insightsPanel.id = 'tab-insights';
+  insightsPanel.className = 'tab-panel';
+
   chartsContainer = document.createElement('div');
   chartsContainer.id = 'charts-container';
   chartsPanel.appendChild(chartsContainer);
+
+  const tablesPanel = document.createElement('div');
+  tablesPanel.id = 'tab-tables';
+  tablesPanel.className = 'tab-panel';
+
+  tablesContainer = document.createElement('div');
+  tablesContainer.id = 'tables-container';
+  tablesPanel.appendChild(tablesContainer);
+
+  insightsContainer = document.createElement('div');
+  insightsContainer.id = 'insights-container';
+  insightsPanel.appendChild(insightsContainer);
 
   [svgEl, backBtn, infoBtn, status, metricToggle, detail].forEach(node => mapPanel.appendChild(node));
 
   document.body.insertBefore(tabBar, document.body.firstChild);
   document.body.insertBefore(mapPanel, tabBar.nextSibling);
   document.body.insertBefore(chartsPanel, mapPanel.nextSibling);
+  document.body.insertBefore(tablesPanel, chartsPanel.nextSibling);
+  document.body.insertBefore(insightsPanel, tablesPanel.nextSibling);
 
   tabBar.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => switchTab(btn.dataset.tab, false, true));
@@ -405,13 +587,23 @@ let chartsContainer = null;
 })();
 
 function switchTab(tab, replace = false, syncHash = true) {
-  activeTab = tab === 'charts' ? 'charts' : 'map';
+  activeTab = tab === 'charts' ? 'charts' : tab === 'tables' ? 'tables' : tab === 'insights' ? 'insights' : 'map';
   document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === activeTab));
   document.getElementById('tab-map').classList.toggle('active', activeTab === 'map');
   document.getElementById('tab-charts').classList.toggle('active', activeTab === 'charts');
+  document.getElementById('tab-tables').classList.toggle('active', activeTab === 'tables');
+  document.getElementById('tab-insights').classList.toggle('active', activeTab === 'insights');
   if (activeTab === 'charts' && config.chartData && !chartsReady) {
     renderCharts(config.chartData);
     chartsReady = true;
+  }
+  if (activeTab === 'tables' && config.tableData && !tablesReady) {
+    renderTables(config.tableData);
+    tablesReady = true;
+  }
+  if (activeTab === 'insights' && config.insights && !insightsReady) {
+    renderInsights(config.insights);
+    insightsReady = true;
   }
   if (syncHash) {
     const current = parseStateHash(parseHash());
@@ -623,6 +815,211 @@ function renderCharts(chartData) {
       foot.appendChild(row);
     });
     chartsContainer.appendChild(foot);
+  }
+}
+
+function renderTables(tableData) {
+  if (!tablesContainer) return;
+  tablesContainer.innerHTML = '';
+
+  function el(tag, cls) {
+    const node = document.createElement(tag);
+    if (cls) node.className = cls;
+    return node;
+  }
+
+  function appendTextWithNote(node, text, noteRef) {
+    node.textContent = text;
+    if (!noteRef) return;
+    const sup = document.createElement('sup');
+    sup.style.cssText = 'font-size:9px;margin-left:1px';
+    sup.textContent = noteRef;
+    node.appendChild(sup);
+  }
+
+  function labelCell(text, noteRef) {
+    const cell = document.createElement('td');
+    appendTextWithNote(cell, text, noteRef);
+    return cell;
+  }
+
+  function applyYearClasses(node, group, groupIndex, colIndex) {
+    if (group && String(group.label || '').trim() === '2022') node.classList.add('year-2022');
+    if (groupIndex > 0 && colIndex === 0) node.classList.add('year-break');
+  }
+
+  function valueCell(value, group, groupIndex, colIndex) {
+    const cell = document.createElement('td');
+    applyYearClasses(cell, group, groupIndex, colIndex);
+    if (value == null || value === 'NA') {
+      cell.textContent = 'N/A';
+      cell.className = 'na';
+      applyYearClasses(cell, group, groupIndex, colIndex);
+      return cell;
+    }
+    cell.textContent = String(value);
+    return cell;
+  }
+
+  function valuesFromRegionRecord(record) {
+    return (tableData.colGroups || []).flatMap(group =>
+      (group.cols || []).map(col => {
+        const displayKey = col.displayKey || `${col.key}_display`;
+        if (record[displayKey] != null) return String(record[displayKey]);
+        if (record[col.key] == null) return 'NA';
+        return String(record[col.key]);
+      })
+    );
+  }
+
+  function buildGroupedTable(rows, totalClass = false) {
+    const wrap = el('div', 'dt-table-wrap');
+    const table = el('table', 'dt-table');
+    const thead = table.createTHead();
+    const columnMeta = (tableData.colGroups || []).flatMap((group, groupIndex) =>
+      (group.cols || []).map((col, colIndex) => ({ group, groupIndex, colIndex }))
+    );
+
+    const groupRow = thead.insertRow();
+    const topLeft = document.createElement('th');
+    topLeft.rowSpan = 2;
+    groupRow.appendChild(topLeft);
+
+    (tableData.colGroups || []).forEach((group, groupIndex) => {
+      const th = document.createElement('th');
+      th.className = 'col-group';
+      applyYearClasses(th, group, groupIndex, 0);
+      th.colSpan = (group.cols || []).length;
+      th.textContent = group.label || '';
+      groupRow.appendChild(th);
+    });
+
+    const subRow = thead.insertRow();
+    subRow.className = 'sub-header';
+    (tableData.colGroups || []).forEach((group, groupIndex) => {
+      (group.cols || []).forEach((col, colIndex) => {
+        const th = document.createElement('th');
+        applyYearClasses(th, group, groupIndex, colIndex);
+        appendTextWithNote(th, col.label || '', col.noteRef);
+        subRow.appendChild(th);
+      });
+    });
+
+    const tbody = table.createTBody();
+    rows.forEach(row => {
+      const tr = tbody.insertRow();
+      if (totalClass || row.isTotal) tr.className = 'dt-total-row';
+      tr.appendChild(labelCell(row.label || '', row.noteRef || null));
+      (row.values || []).forEach((value, valueIndex) => {
+        const meta = columnMeta[valueIndex] || {};
+        tr.appendChild(valueCell(value, meta.group, meta.groupIndex || 0, meta.colIndex || 0));
+      });
+    });
+
+    wrap.appendChild(table);
+    return wrap;
+  }
+
+  const header = document.createElement('div');
+  header.innerHTML = `
+    <div class="dt-page-title">${tableData.title || config.title || ''}</div>
+    <div class="dt-page-subtitle">${tableData.subtitle || ''}</div>
+  `;
+  tablesContainer.appendChild(header);
+
+  (tableData.sections || []).forEach(section => {
+    const card = el('section', 'dt-section');
+    const title = el('div', 'dt-section-label');
+    title.textContent = section.title || '';
+    card.appendChild(title);
+    card.appendChild(buildGroupedTable(section.rows || []));
+    tablesContainer.appendChild(card);
+  });
+
+  if (tableData.total?.values?.length) {
+    const card = el('section', 'dt-section');
+    const title = el('div', 'dt-section-label');
+    title.textContent = tableData.total.label || 'Total';
+    card.appendChild(title);
+    card.appendChild(buildGroupedTable([{
+      label: tableData.total.label || 'Total',
+      values: tableData.total.values,
+      isTotal: true,
+    }], true));
+    tablesContainer.appendChild(card);
+  }
+
+  if (tableData.includeRegionTable && (config.data?.region || []).length) {
+    const card = el('section', 'dt-section');
+    const title = el('div', 'dt-section-label');
+    title.textContent = tableData.regionSectionTitle || 'Region';
+    card.appendChild(title);
+    const rows = (config.data.region || []).map(record => ({
+      label: nameRegistry[String(record.psgc)] || ('PSGC ' + record.psgc),
+      noteRef: record.noteRef || null,
+      values: valuesFromRegionRecord(record),
+    }));
+    card.appendChild(buildGroupedTable(rows));
+    tablesContainer.appendChild(card);
+  }
+
+  if (tableData.footnotes?.length) {
+    const foot = el('div', 'dt-footnotes');
+    tableData.footnotes.forEach(note => {
+      const row = el('div', 'dt-note');
+      row.textContent = note;
+      foot.appendChild(row);
+    });
+    tablesContainer.appendChild(foot);
+  }
+
+  if (tableData.source) {
+    const src = el('div', 'dt-source');
+    src.textContent = 'Source: ' + tableData.source;
+    tablesContainer.appendChild(src);
+  }
+}
+
+function renderInsights(insights) {
+  if (!insightsContainer) return;
+  insightsContainer.innerHTML = '';
+
+  const header = document.createElement('div');
+  header.innerHTML = `
+    <div class="insights-page-title">${insights.title || config.title}</div>
+    <div class="insights-page-subtitle">${insights.subtitle || ''}</div>
+  `;
+  insightsContainer.appendChild(header);
+
+  if (insights.overview) {
+    const card = document.createElement('section');
+    card.className = 'insight-card';
+    card.innerHTML = `
+      <div class="insight-heading">Overview</div>
+      <div class="insight-text">${insights.overview}</div>
+    `;
+    insightsContainer.appendChild(card);
+  }
+
+  (insights.sections || []).forEach(section => {
+    const card = document.createElement('section');
+    card.className = 'insight-card';
+    card.innerHTML = `
+      <div class="insight-heading">${section.heading || ''}</div>
+      <div class="insight-text">${section.body || ''}</div>
+    `;
+    insightsContainer.appendChild(card);
+  });
+
+  if (insights.takeaways?.length) {
+    const card = document.createElement('section');
+    card.className = 'insight-card';
+    const items = insights.takeaways.map(item => `<div class="insight-takeaway">${item}</div>`).join('');
+    card.innerHTML = `
+      <div class="insight-heading">Key Takeaways</div>
+      <div class="insight-takeaways">${items}</div>
+    `;
+    insightsContainer.appendChild(card);
   }
 }
 
@@ -884,7 +1281,13 @@ function slugToMetric(slug) {
 
 function parseStateHash(hash = parseHash()) {
   const parts = String(hash || '').split('--').filter(Boolean);
-  const tab = parts.includes('tdata') ? 'charts' : 'map';
+  const tab = parts.includes('tinsights')
+    ? 'insights'
+    : parts.includes('ttables')
+      ? 'tables'
+      : parts.includes('tcharts') || parts.includes('tdata')
+        ? 'charts'
+        : 'map';
   const metricToken = parts.find(part => part.startsWith('m'));
   const viewToken = parts.find(part => part.startsWith('v'));
   return {
@@ -896,7 +1299,13 @@ function parseStateHash(hash = parseHash()) {
 
 function buildStateHash(viewHash = '/') {
   const metric = config.colorField || Object.keys(config.colorDomains || {})[0] || 'antenatal_care_pct';
-  const tabToken = activeTab === 'charts' ? 'tdata' : 'tmap';
+  const tabToken = activeTab === 'insights'
+    ? 'tinsights'
+    : activeTab === 'tables'
+      ? 'ttables'
+      : activeTab === 'charts'
+        ? 'tcharts'
+        : 'tmap';
   const parts = [tabToken, 'm' + metricToSlug(metric)];
   const cleanView = String(viewHash || '/').replace(/^\/+/, '');
   if (cleanView && cleanView !== '/') parts.push('v' + cleanView.replace(/\//g, '-'));
@@ -1396,7 +1805,6 @@ function rankedListHTML(level, activePsgc, filterParentPsgc) {
     .filter(r => r[config.colorField] != null)
     .sort((a, b) => (b[config.colorField] ?? -Infinity) - (a[config.colorField] ?? -Infinity));
   if (!sorted.length) return '';
-  const suffix = config.valueSuffix || '';
   const levelLabel = LEVEL_LABEL[level] || level;
   const displayField = config.colorField + '_display';
   const superscripts = ['¹','²','³','⁴','⁵','⁶','⁷','⁸','⁹'];
@@ -1410,7 +1818,7 @@ function rankedListHTML(level, activePsgc, filterParentPsgc) {
     const val  = r[config.colorField];
     const fill = colorScale ? colorScale(val) : 'transparent';
     const active = activePsgc != null && String(r.psgc) === String(activePsgc);
-    const display = r[displayField] ?? (val + suffix);
+    const display = r[displayField] ?? (val == null ? '-' : String(val));
     return `<div class="ranked-row${active ? ' is-active' : ''}">` +
       `<span class="ranked-i">${i + 1}</span>` +
       `<span class="ranked-swatch" style="background:${fill}"></span>` +

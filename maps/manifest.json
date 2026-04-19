@@ -1,11 +1,59 @@
 [
   {
+    "slug": "background-characteristics-2025",
+    "title": "Background Characteristics",
+    "description": "Percent distribution of women aged 15-49 by age, education, marital status, religion, residence, and wealth quintile (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-19"
+  },
+  {
     "slug": "antenatal-care-2025",
     "title": "Antenatal Care",
-    "description": "Maternal care indicators by region: antenatal care coverage, ANC visits, iron supplementation, and neonatal tetanus protection (NDHS 2025)",
+    "description": "Maternal care by region: antenatal care coverage, ANC visits, iron supplementation, and neonatal tetanus protection (NDHS 2025)",
     "year": "2025",
     "group": "2025 National Demographic and Health Survey (NDHS)",
     "addedAt": "2026-04-18"
+  },
+  {
+    "slug": "postnatal-check-2025",
+    "title": "Postnatal Check",
+    "description": "Percentage of women with a postnatal check during the first 2 days after birth, by region (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-19"
+  },
+  {
+    "slug": "birth-delivery-2025",
+    "title": "Birth Delivery",
+    "description": "Maternal care by region: skilled attendance at delivery, facility delivery, and caesarean section (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-19"
+  },
+  {
+    "slug": "contraception-all-women-2025",
+    "title": "Contraception Among All Women",
+    "description": "Contraception by region among all women: any method, any modern method, any traditional method, and not currently using (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-19"
+  },
+  {
+    "slug": "modern-contraception-all-women-2025",
+    "title": "Modern Contraception Among All Women",
+    "description": "Modern contraception by region among all women: any modern method and specific modern methods (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-19"
+  },
+  {
+    "slug": "traditional-contraception-all-women-2025",
+    "title": "Traditional Contraception Among All Women",
+    "description": "Traditional contraception by region among all women: any traditional method, calendar/rhythm, withdrawal, and other traditional methods (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-19"
   },
   {
     "slug": "fertility-preferences-2025",

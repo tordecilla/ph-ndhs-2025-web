@@ -1,0 +1,743 @@
+{
+  "sectionTitle": "CONTRACEPTION",
+  "title": "Traditional Contraception Among All Women",
+  "description": "Current use of traditional contraceptive methods among all women aged 15 to 49 years, by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "maxDepth": "region",
+  "geoBasePath": "../../_template/philippines-json-maps",
+  "colorField": "any_traditional_method_pct",
+  "colorDomain": [
+    0,
+    100
+  ],
+  "colorDomains": {
+    "any_traditional_method_pct": [
+      0,
+      100
+    ],
+    "calendar_rhythm_pct": [
+      0,
+      100
+    ],
+    "withdrawal_pct": [
+      0,
+      100
+    ],
+    "traditional_other_pct": [
+      0,
+      100
+    ]
+  },
+  "colorScheme": "interpolateYlGnBu",
+  "valueSuffix": "%",
+  "metricOptions": [
+    {
+      "key": "any_traditional_method_pct",
+      "label": "Any traditional method"
+    },
+    {
+      "key": "calendar_rhythm_pct",
+      "label": "Calendar/ Rhythm"
+    },
+    {
+      "key": "withdrawal_pct",
+      "label": "Withdrawal"
+    },
+    {
+      "key": "traditional_other_pct",
+      "label": "Other"
+    }
+  ],
+  "definitions": {
+    "any_traditional_method_pct": "Any traditional method includes calendar/rhythm, withdrawal, and other traditional methods."
+  },
+  "notes": {},
+  "note": "If more than one method is used, only the most effective method is considered in this tabulation. \"0.0\" indicates that an estimate is less than 0.05 percent. Details may not add up to total due to rounding.",
+  "tableData": {
+    "title": "Traditional Contraception Among All Women",
+    "subtitle": "Current use of traditional contraceptive methods among all women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
+    "series": [
+      {
+        "key": "any_traditional_method_pct",
+        "label": "Any traditional method"
+      },
+      {
+        "key": "calendar_rhythm_pct",
+        "label": "Calendar/ Rhythm"
+      },
+      {
+        "key": "withdrawal_pct",
+        "label": "Withdrawal"
+      },
+      {
+        "key": "traditional_other_pct",
+        "label": "Other"
+      }
+    ],
+    "blocks": [
+      {
+        "title": "Number of living children",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "0",
+            "any_traditional_method_pct": 1.8,
+            "calendar_rhythm_pct": 0.2,
+            "withdrawal_pct": 1.5,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "1-2",
+            "any_traditional_method_pct": 14.7,
+            "calendar_rhythm_pct": 2.3,
+            "withdrawal_pct": 12.3,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "3-4",
+            "any_traditional_method_pct": 11,
+            "any_traditional_method_pct_display": "11.0",
+            "calendar_rhythm_pct": 2.1,
+            "withdrawal_pct": 8.9,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "5+",
+            "any_traditional_method_pct": 10.9,
+            "calendar_rhythm_pct": 1.7,
+            "withdrawal_pct": 9.2,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
+        "title": "Number of living children",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "0",
+            "any_traditional_method_pct": 2.2,
+            "calendar_rhythm_pct": 0.2,
+            "withdrawal_pct": 1.9,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "1-2",
+            "any_traditional_method_pct": 16.7,
+            "calendar_rhythm_pct": 2.6,
+            "withdrawal_pct": 14,
+            "withdrawal_pct_display": "14.0",
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "3-4",
+            "any_traditional_method_pct": 14.5,
+            "calendar_rhythm_pct": 3.2,
+            "withdrawal_pct": 11.2,
+            "traditional_other_pct": 0.1
+          },
+          {
+            "label": "5+",
+            "any_traditional_method_pct": 15.3,
+            "calendar_rhythm_pct": 3.2,
+            "withdrawal_pct": 11.9,
+            "traditional_other_pct": 0.2
+          }
+        ]
+      },
+      {
+        "title": "Age",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "15-19",
+            "any_traditional_method_pct": 0.6,
+            "calendar_rhythm_pct": 0,
+            "calendar_rhythm_pct_display": "0.0",
+            "withdrawal_pct": 0.6,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "20-24",
+            "any_traditional_method_pct": 4.5,
+            "calendar_rhythm_pct": 0.3,
+            "withdrawal_pct": 4.2,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "25-29",
+            "any_traditional_method_pct": 8.9,
+            "calendar_rhythm_pct": 0.9,
+            "withdrawal_pct": 8,
+            "withdrawal_pct_display": "8.0",
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "30-34",
+            "any_traditional_method_pct": 11.5,
+            "calendar_rhythm_pct": 1.3,
+            "withdrawal_pct": 10.2,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "35-39",
+            "any_traditional_method_pct": 12.7,
+            "calendar_rhythm_pct": 2.1,
+            "withdrawal_pct": 10.6,
+            "traditional_other_pct": 0.1
+          },
+          {
+            "label": "40-44",
+            "any_traditional_method_pct": 12.7,
+            "calendar_rhythm_pct": 2.8,
+            "withdrawal_pct": 9.9,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "45-49",
+            "any_traditional_method_pct": 10,
+            "any_traditional_method_pct_display": "10.0",
+            "calendar_rhythm_pct": 3,
+            "calendar_rhythm_pct_display": "3.0",
+            "withdrawal_pct": 7,
+            "withdrawal_pct_display": "7.0",
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
+        "title": "Age",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "15-19",
+            "any_traditional_method_pct": 0.8,
+            "calendar_rhythm_pct": 0,
+            "calendar_rhythm_pct_display": "0.0",
+            "withdrawal_pct": 0.8,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "20-24",
+            "any_traditional_method_pct": 5.9,
+            "calendar_rhythm_pct": 0.6,
+            "withdrawal_pct": 5.3,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "25-29",
+            "any_traditional_method_pct": 11.2,
+            "calendar_rhythm_pct": 0.9,
+            "withdrawal_pct": 10.2,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "30-34",
+            "any_traditional_method_pct": 14.4,
+            "calendar_rhythm_pct": 2.3,
+            "withdrawal_pct": 12.1,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "35-39",
+            "any_traditional_method_pct": 14.4,
+            "calendar_rhythm_pct": 2.8,
+            "withdrawal_pct": 11.6,
+            "traditional_other_pct": 0.1
+          },
+          {
+            "label": "40-44",
+            "any_traditional_method_pct": 15.6,
+            "calendar_rhythm_pct": 3.8,
+            "withdrawal_pct": 11.7,
+            "traditional_other_pct": 0.1
+          },
+          {
+            "label": "45-49",
+            "any_traditional_method_pct": 12.9,
+            "calendar_rhythm_pct": 3.3,
+            "withdrawal_pct": 9.6,
+            "traditional_other_pct": 0.1
+          }
+        ]
+      },
+      {
+        "title": "Residence",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Urban",
+            "any_traditional_method_pct": 8.6,
+            "calendar_rhythm_pct": 1.4,
+            "withdrawal_pct": 7.1,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Rural",
+            "any_traditional_method_pct": 7.5,
+            "calendar_rhythm_pct": 1.2,
+            "withdrawal_pct": 6.3,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
+        "title": "Residence",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Urban",
+            "any_traditional_method_pct": 10.2,
+            "calendar_rhythm_pct": 1.6,
+            "withdrawal_pct": 8.5,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Rural",
+            "any_traditional_method_pct": 9.4,
+            "calendar_rhythm_pct": 1.9,
+            "withdrawal_pct": 7.4,
+            "traditional_other_pct": 0.1
+          }
+        ]
+      },
+      {
+        "title": "Educational attainment",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "No education",
+            "any_traditional_method_pct": 4.3,
+            "calendar_rhythm_pct": 0.4,
+            "withdrawal_pct": 3.9,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Grades 1-6",
+            "any_traditional_method_pct": 7.8,
+            "calendar_rhythm_pct": 0.6,
+            "withdrawal_pct": 7.2,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Grades 7-10",
+            "any_traditional_method_pct": 8.5,
+            "calendar_rhythm_pct": 1,
+            "calendar_rhythm_pct_display": "1.0",
+            "withdrawal_pct": 7.5,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Grades 11-12",
+            "any_traditional_method_pct": 3.4,
+            "calendar_rhythm_pct": 0.1,
+            "withdrawal_pct": 3.3,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Post-secondary",
+            "any_traditional_method_pct": 13.9,
+            "calendar_rhythm_pct": 1.8,
+            "withdrawal_pct": 12.1,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "College",
+            "any_traditional_method_pct": 9,
+            "any_traditional_method_pct_display": "9.0",
+            "calendar_rhythm_pct": 2.1,
+            "withdrawal_pct": 7,
+            "withdrawal_pct_display": "7.0",
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
+        "title": "Educational attainment",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "No education",
+            "any_traditional_method_pct": 4.9,
+            "calendar_rhythm_pct": 0.5,
+            "withdrawal_pct": 4.4,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Grades 1-6",
+            "any_traditional_method_pct": 10.5,
+            "calendar_rhythm_pct": 2.2,
+            "withdrawal_pct": 8.1,
+            "traditional_other_pct": 0.2
+          },
+          {
+            "label": "Grades 7-10",
+            "any_traditional_method_pct": 10.1,
+            "calendar_rhythm_pct": 1.5,
+            "withdrawal_pct": 8.6,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Grades 11-12",
+            "any_traditional_method_pct": 2.7,
+            "calendar_rhythm_pct": 0.1,
+            "withdrawal_pct": 2.6,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Post-secondary",
+            "any_traditional_method_pct": 9.4,
+            "calendar_rhythm_pct": 2.4,
+            "withdrawal_pct": 6.6,
+            "traditional_other_pct": 0.4
+          },
+          {
+            "label": "College",
+            "any_traditional_method_pct": 11.4,
+            "calendar_rhythm_pct": 2.3,
+            "withdrawal_pct": 9,
+            "withdrawal_pct_display": "9.0",
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2025",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Lowest",
+            "any_traditional_method_pct": 7,
+            "any_traditional_method_pct_display": "7.0",
+            "calendar_rhythm_pct": 1.4,
+            "withdrawal_pct": 5.6,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Second",
+            "any_traditional_method_pct": 8,
+            "any_traditional_method_pct_display": "8.0",
+            "calendar_rhythm_pct": 0.7,
+            "withdrawal_pct": 7.3,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Middle",
+            "any_traditional_method_pct": 9.2,
+            "calendar_rhythm_pct": 1,
+            "calendar_rhythm_pct_display": "1.0",
+            "withdrawal_pct": 8.2,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Fourth",
+            "any_traditional_method_pct": 7.6,
+            "calendar_rhythm_pct": 1.2,
+            "withdrawal_pct": 6.3,
+            "traditional_other_pct": 0.1
+          },
+          {
+            "label": "Highest",
+            "any_traditional_method_pct": 8.4,
+            "calendar_rhythm_pct": 2.1,
+            "withdrawal_pct": 6.3,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2022",
+        "subtitle": "All women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Lowest",
+            "any_traditional_method_pct": 10.1,
+            "calendar_rhythm_pct": 2,
+            "calendar_rhythm_pct_display": "2.0",
+            "withdrawal_pct": 8,
+            "withdrawal_pct_display": "8.0",
+            "traditional_other_pct": 0.1
+          },
+          {
+            "label": "Second",
+            "any_traditional_method_pct": 9.5,
+            "calendar_rhythm_pct": 1.5,
+            "withdrawal_pct": 8,
+            "withdrawal_pct_display": "8.0",
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Middle",
+            "any_traditional_method_pct": 9.8,
+            "calendar_rhythm_pct": 1.4,
+            "withdrawal_pct": 8.4,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Fourth",
+            "any_traditional_method_pct": 10.4,
+            "calendar_rhythm_pct": 2,
+            "calendar_rhythm_pct_display": "2.0",
+            "withdrawal_pct": 8.4,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          },
+          {
+            "label": "Highest",
+            "any_traditional_method_pct": 9.2,
+            "calendar_rhythm_pct": 1.7,
+            "withdrawal_pct": 7.5,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "If more than one method is used, only the most effective method is considered in this tabulation.",
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "Details may not add up to total due to rounding."
+    ]
+  },
+  "detailFields": [
+    {
+      "key": "any_traditional_method_pct",
+      "label": "Any traditional method (%, 2025)"
+    },
+    {
+      "key": "calendar_rhythm_pct",
+      "label": "Calendar/rhythm (%, 2025)"
+    },
+    {
+      "key": "withdrawal_pct",
+      "label": "Withdrawal (%, 2025)"
+    },
+    {
+      "key": "traditional_other_pct",
+      "label": "Other traditional methods (%, 2025)"
+    },
+    {
+      "key": "women_total",
+      "label": "Total number of women aged 15 to 49 years"
+    },
+    {
+      "key": "psa_note",
+      "label": "Note"
+    }
+  ],
+  "data": {
+    "region": [
+      {
+        "psgc": 1300000000,
+        "women_total": null,
+        "any_traditional_method_pct": 7.1,
+        "calendar_rhythm_pct": 1.1,
+        "withdrawal_pct": 6,
+        "withdrawal_pct_display": "6.0",
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 1400000000,
+        "women_total": 488,
+        "any_traditional_method_pct": 7.8,
+        "calendar_rhythm_pct": 0.5,
+        "withdrawal_pct": 7.1,
+        "traditional_other_pct": 0.2
+      },
+      {
+        "psgc": 100000000,
+        "women_total": null,
+        "any_traditional_method_pct": 11.8,
+        "calendar_rhythm_pct": 1.1,
+        "withdrawal_pct": 10.8,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 200000000,
+        "women_total": 805,
+        "any_traditional_method_pct": 4.1,
+        "calendar_rhythm_pct": 0.3,
+        "withdrawal_pct": 3.8,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 300000000,
+        "women_total": null,
+        "any_traditional_method_pct": 10.1,
+        "calendar_rhythm_pct": 1.3,
+        "withdrawal_pct": 8.8,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 400000000,
+        "women_total": null,
+        "any_traditional_method_pct": 9.7,
+        "calendar_rhythm_pct": 1.8,
+        "withdrawal_pct": 7.8,
+        "traditional_other_pct": 0.1
+      },
+      {
+        "psgc": 1700000000,
+        "women_total": 715,
+        "any_traditional_method_pct": 5.5,
+        "calendar_rhythm_pct": 0.9,
+        "withdrawal_pct": 4.6,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 500000000,
+        "women_total": null,
+        "any_traditional_method_pct": 9.7,
+        "calendar_rhythm_pct": 1.2,
+        "withdrawal_pct": 8.5,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 600000000,
+        "women_total": null,
+        "any_traditional_method_pct": 10.8,
+        "calendar_rhythm_pct": 3.1,
+        "withdrawal_pct": 7.8,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 1800000000,
+        "women_total": null,
+        "any_traditional_method_pct": 5.2,
+        "calendar_rhythm_pct": 1.5,
+        "withdrawal_pct": 3.7,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 700000000,
+        "women_total": null,
+        "any_traditional_method_pct": 4.8,
+        "calendar_rhythm_pct": 1.4,
+        "withdrawal_pct": 3.3,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 800000000,
+        "women_total": null,
+        "any_traditional_method_pct": 12.1,
+        "calendar_rhythm_pct": 1.3,
+        "withdrawal_pct": 10.9,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 900000000,
+        "women_total": null,
+        "any_traditional_method_pct": 5.6,
+        "calendar_rhythm_pct": 1.2,
+        "withdrawal_pct": 4.4,
+        "traditional_other_pct": 0.1,
+        "psa_note": "Region IX includes the province of Sulu in 2025."
+      },
+      {
+        "psgc": 1000000000,
+        "women_total": null,
+        "any_traditional_method_pct": 6,
+        "any_traditional_method_pct_display": "6.0",
+        "calendar_rhythm_pct": 1,
+        "calendar_rhythm_pct_display": "1.0",
+        "withdrawal_pct": 4.9,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 1100000000,
+        "women_total": null,
+        "any_traditional_method_pct": 8,
+        "any_traditional_method_pct_display": "8.0",
+        "calendar_rhythm_pct": 1.9,
+        "withdrawal_pct": 6.2,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 1200000000,
+        "women_total": 964,
+        "any_traditional_method_pct": 6.4,
+        "calendar_rhythm_pct": 1,
+        "calendar_rhythm_pct_display": "1.0",
+        "withdrawal_pct": 5.4,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 1600000000,
+        "women_total": 600,
+        "any_traditional_method_pct": 7.4,
+        "calendar_rhythm_pct": 1.6,
+        "withdrawal_pct": 5.7,
+        "traditional_other_pct": 0,
+        "traditional_other_pct_display": "0.0"
+      },
+      {
+        "psgc": 1900000000,
+        "women_total": 959,
+        "any_traditional_method_pct": 3.2,
+        "calendar_rhythm_pct": 0,
+        "calendar_rhythm_pct_display": "0.0",
+        "withdrawal_pct": 3.1,
+        "traditional_other_pct": 0.2
+      }
+    ],
+    "province": [],
+    "municity": []
+  }
+}

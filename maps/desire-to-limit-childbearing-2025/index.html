@@ -388,7 +388,7 @@
 <body>
 <svg id="map"></svg>
 <button id="back-btn">Back</button>
-<button id="info-btn">Details</button>
+<button id="info-btn">(i) Details</button>
 <div id="status">Loading...</div>
 <div id="metric-toggle">
   <label><input type="radio" name="metric" value="children_total_pct" checked><span>Total</span></label>
@@ -445,7 +445,7 @@ let insightsContainer = null;
   tabBar.id = 'tab-bar';
   tabBar.innerHTML = `
     <button class="tab-btn active" data-tab="map">Maps</button>
-    <button class="tab-btn" data-tab="charts">Data</button>
+    <button class="tab-btn" data-tab="charts">Charts</button>
     <button class="tab-btn" data-tab="insights">Insights</button>
   `;
 
@@ -607,7 +607,7 @@ function renderCharts(chartData) {
 
     const title = document.createElement('div');
     title.className = 'chart-block-title';
-    title.textContent = block.title ? `${block.title} • ${block.year}` : String(block.year || '');
+    title.textContent = block.title ? `${block.title} - ${block.year}` : String(block.year || '');
     card.appendChild(title);
 
     const subtitle = document.createElement('div');
@@ -672,7 +672,7 @@ function renderCharts(chartData) {
 
     const title = document.createElement('div');
     title.className = 'chart-block-title';
-    title.textContent = block.title ? `${block.title} • ${block.year}` : String(block.year || '');
+    title.textContent = block.title ? `${block.title} - ${block.year}` : String(block.year || '');
     card.appendChild(title);
 
     const subtitle = document.createElement('div');
@@ -775,7 +775,7 @@ function renderCharts(chartData) {
 
     const title = document.createElement('div');
     title.className = 'chart-block-title';
-    title.textContent = block.title ? `${block.title} • ${block.year}` : String(block.year || '');
+    title.textContent = block.title ? `${block.title} - ${block.year}` : String(block.year || '');
     card.appendChild(title);
 
     const subtitle = document.createElement('div');
@@ -1011,7 +1011,7 @@ function shortenName(name, nameKey) {
     return name;          // e.g. "CARAGA", "MIMAROPA"
   }
   // For provinces / cities: truncate only if very long
-  return name.length > 20 ? name.slice(0, 18) + 'Ã¢â‚¬Â¦' : name;
+  return name.length > 20 ? name.slice(0, 18) + '...' : name;
 }
 
 function addLabels(features, pathFn, nameKey, fontSize) {
@@ -1266,7 +1266,7 @@ function drawNational() {
     });
 
   addLabels(nationalFeatures, nationalPath, 'adm1_en', 10);
-  status.textContent = nationalFeatures.length + ' regions Ã¢â‚¬â€ click to drill in';
+  status.textContent = nationalFeatures.length + ' regions - click to drill in';
   pushURL(buildStateHash('/'), true);
 }
 
@@ -1286,8 +1286,8 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
       currentView = 'region';
       currentContext = { name, parentName: 'Philippines', psgc, type: 'region' };
       backBtn.style.display = 'block';
-      backBtn.textContent = 'Ã¢â€ Â Philippines';
-      setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
+      backBtn.textContent = 'Back to Philippines';
+      setPageTitle(name + ' - ' + config.title);
       showInfoBtn();
       if (detail.classList.contains('open')) populateDetail(name, 'Philippines', psgc, 'region');
       resetZoom();
@@ -1363,7 +1363,7 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
       }
 
       const unit = isMunicity ? 'cities/municipalities' : 'provinces';
-      status.textContent = `${name} Ã¢â‚¬â€ ${features.length} ${unit}`;
+      status.textContent = `${name} - ${features.length} ${unit}`;
 
       if (afterRender) afterRender(provPath, features, nameKey);
     };
@@ -1421,8 +1421,8 @@ function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
     currentView = 'municity';
     currentContext = { name, parentName, psgc, type: 'municity' };
     backBtn.style.display = 'block';
-    backBtn.textContent = 'Ã¢â€ Â ' + parentName;
-    setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
+    backBtn.textContent = 'Back to ' + parentName;
+    setPageTitle(name + ' - ' + config.title);
     showInfoBtn();
     resetZoom();
     g.selectAll('*').remove();
@@ -1480,8 +1480,8 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
         const regionName = currentContext ? currentContext.name : '';
         currentContext = { name, parentName: regionName, psgc, type: 'province' };
         backBtn.style.display = 'block';
-        backBtn.textContent = 'Ã¢â€ Â ' + regionName;
-        setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
+        backBtn.textContent = 'Back to ' + regionName;
+        setPageTitle(name + ' - ' + config.title);
         showInfoBtn();
         if (detail.classList.contains('open')) populateDetail(name, regionName, psgc, 'province');
         resetZoom();
@@ -1537,7 +1537,7 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
             .transition().delay(350).duration(300).attr('opacity', 1);
         }
 
-        status.textContent = `${name} Ã¢â‚¬â€ ${munFeatures.length} municipalities/cities (${data.features.length} total)${hucFeatures.length ? ' + ' + hucFeatures.length + ' HUC' + (hucFeatures.length > 1 ? 's' : '') : ''}`;
+        status.textContent = `${name} - ${munFeatures.length} municipalities/cities (${data.features.length} total)${hucFeatures.length ? ' + ' + hucFeatures.length + ' HUC' + (hucFeatures.length > 1 ? 's' : '') : ''}`;
         if (afterRender) afterRender(munPath, munFeatures);
       };
 

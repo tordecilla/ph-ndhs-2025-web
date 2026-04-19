@@ -1,0 +1,865 @@
+{
+  "sectionTitle": "MATERNAL CARE",
+  "title": "Birth Delivery",
+  "description": "Birth delivery indicators among live births and stillbirths in the 2 years preceding the survey, by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "maxDepth": "region",
+  "geoBasePath": "../../_template/philippines-json-maps",
+  "colorField": "delivered_skilled_provider_pct",
+  "colorDomain": [
+    60,
+    100
+  ],
+  "colorDomains": {
+    "delivered_skilled_provider_pct": [
+      60,
+      100
+    ],
+    "delivered_health_facility_pct": [
+      60,
+      100
+    ],
+    "caesarean_section_pct": [
+      0,
+      100
+    ]
+  },
+  "colorScheme": "interpolateYlGnBu",
+  "valueSuffix": "%",
+  "metricOptions": [
+    {
+      "key": "delivered_skilled_provider_pct",
+      "label": "Delivered by a skilled provider"
+    },
+    {
+      "key": "delivered_health_facility_pct",
+      "label": "Delivered in a health facility"
+    },
+    {
+      "key": "caesarean_section_pct",
+      "label": "Delivered by caesarean section"
+    }
+  ],
+  "definitions": {
+    "delivered_skilled_provider_pct": "Skilled provider includes doctor, nurse, and midwife."
+  },
+  "notes": {},
+  "note": "Details may not add up to total due to rounding.",
+  "chartData": {
+    "title": "Birth Delivery",
+    "subtitle": "Birth delivery indicators by background characteristic, Philippines, 2022 and 2025 NDHS.",
+    "xLabel": "Category",
+    "yLabel": "Percentage",
+    "xMax": 100,
+    "series": [
+      {
+        "key": "delivered_skilled_provider_pct",
+        "label": "Delivered by a skilled provider¹",
+        "color": "#215f86"
+      },
+      {
+        "key": "delivered_health_facility_pct",
+        "label": "Delivered in a health facility",
+        "color": "#3f85ad"
+      },
+      {
+        "key": "caesarean_section_pct",
+        "label": "Delivered by caesarean section",
+        "color": "#78a9c8"
+      }
+    ],
+    "blocks": [
+      {
+        "title": "Mother's age at birth (in years)",
+        "year": "2025",
+        "subtitle": "Live births and stillbirths in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "<20",
+            "delivered_skilled_provider_pct": 90.3,
+            "delivered_health_facility_pct": 90.7,
+            "caesarean_section_pct": 11.6
+          },
+          {
+            "label": "20-34",
+            "delivered_skilled_provider_pct": 94.8,
+            "delivered_health_facility_pct": 94.8,
+            "caesarean_section_pct": 21,
+            "caesarean_section_pct_display": "21.0"
+          },
+          {
+            "label": "35-49",
+            "delivered_skilled_provider_pct": 91.1,
+            "delivered_health_facility_pct": 91.4,
+            "caesarean_section_pct": 29.5
+          }
+        ]
+      },
+      {
+        "title": "Mother's age at birth (in years)",
+        "year": "2022",
+        "subtitle": "Live births and stillbirths in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "<20",
+            "delivered_skilled_provider_pct": 88.9,
+            "delivered_health_facility_pct": 87,
+            "delivered_health_facility_pct_display": "87.0",
+            "caesarean_section_pct": 14.6
+          },
+          {
+            "label": "20-34",
+            "delivered_skilled_provider_pct": 90.5,
+            "delivered_health_facility_pct": 89.4,
+            "caesarean_section_pct": 18.3
+          },
+          {
+            "label": "35-49",
+            "delivered_skilled_provider_pct": 85.8,
+            "delivered_health_facility_pct": 85,
+            "delivered_health_facility_pct_display": "85.0",
+            "caesarean_section_pct": 26.9
+          }
+        ]
+      },
+      {
+        "title": "Mother's educational attainment",
+        "year": "2025",
+        "subtitle": "Live births and stillbirths in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "No education",
+            "delivered_skilled_provider_pct": 59.2,
+            "delivered_skilled_provider_pct_display": "(59.2)",
+            "delivered_health_facility_pct": 54.2,
+            "delivered_health_facility_pct_display": "(54.2)",
+            "caesarean_section_pct": 3.5,
+            "caesarean_section_pct_display": "(3.5)"
+          },
+          {
+            "label": "Grades 1-6",
+            "delivered_skilled_provider_pct": 80.9,
+            "delivered_health_facility_pct": 80,
+            "delivered_health_facility_pct_display": "80.0",
+            "caesarean_section_pct": 13.4
+          },
+          {
+            "label": "Grades 7-10",
+            "delivered_skilled_provider_pct": 91.9,
+            "delivered_health_facility_pct": 92.5,
+            "caesarean_section_pct": 14.7
+          },
+          {
+            "label": "Grades 11-12",
+            "delivered_skilled_provider_pct": 97.1,
+            "delivered_health_facility_pct": 97.3,
+            "caesarean_section_pct": 12,
+            "caesarean_section_pct_display": "12.0"
+          },
+          {
+            "label": "Post-secondary",
+            "delivered_skilled_provider_pct": 97.9,
+            "delivered_health_facility_pct": 96,
+            "delivered_health_facility_pct_display": "96.0",
+            "caesarean_section_pct": 23,
+            "caesarean_section_pct_display": "23.0"
+          },
+          {
+            "label": "College",
+            "delivered_skilled_provider_pct": 98.5,
+            "delivered_health_facility_pct": 98.4,
+            "caesarean_section_pct": 35.9
+          }
+        ]
+      },
+      {
+        "title": "Mother's educational attainment",
+        "year": "2022",
+        "subtitle": "Live births and stillbirths in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "No education",
+            "delivered_skilled_provider_pct": 52.4,
+            "delivered_skilled_provider_pct_display": "(52.4)",
+            "delivered_health_facility_pct": 51.6,
+            "delivered_health_facility_pct_display": "(51.6)",
+            "caesarean_section_pct": 4.8,
+            "caesarean_section_pct_display": "(4.8)"
+          },
+          {
+            "label": "Grades 1-6",
+            "delivered_skilled_provider_pct": 67,
+            "delivered_skilled_provider_pct_display": "67.0",
+            "delivered_health_facility_pct": 66.7,
+            "caesarean_section_pct": 7.3
+          },
+          {
+            "label": "Grades 7-10",
+            "delivered_skilled_provider_pct": 89.3,
+            "delivered_health_facility_pct": 87.5,
+            "caesarean_section_pct": 14.7
+          },
+          {
+            "label": "Grades 11-12",
+            "delivered_skilled_provider_pct": 93.7,
+            "delivered_health_facility_pct": 93.1,
+            "caesarean_section_pct": 12.4
+          },
+          {
+            "label": "Post-secondary",
+            "delivered_skilled_provider_pct": 97.9,
+            "delivered_health_facility_pct": 97.9,
+            "caesarean_section_pct": 51.5
+          },
+          {
+            "label": "College",
+            "delivered_skilled_provider_pct": 97.2,
+            "delivered_health_facility_pct": 96.6,
+            "caesarean_section_pct": 29.9
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2025",
+        "subtitle": "Live births and stillbirths in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "Lowest",
+            "delivered_skilled_provider_pct": 82.9,
+            "delivered_health_facility_pct": 81.6,
+            "caesarean_section_pct": 9.3
+          },
+          {
+            "label": "Second",
+            "delivered_skilled_provider_pct": 94,
+            "delivered_skilled_provider_pct_display": "94.0",
+            "delivered_health_facility_pct": 95.5,
+            "caesarean_section_pct": 13.9
+          },
+          {
+            "label": "Middle",
+            "delivered_skilled_provider_pct": 97.9,
+            "delivered_health_facility_pct": 97.8,
+            "caesarean_section_pct": 23.6
+          },
+          {
+            "label": "Fourth",
+            "delivered_skilled_provider_pct": 99.3,
+            "delivered_health_facility_pct": 99.3,
+            "caesarean_section_pct": 26.8
+          },
+          {
+            "label": "Highest",
+            "delivered_skilled_provider_pct": 99.2,
+            "delivered_health_facility_pct": 99.7,
+            "caesarean_section_pct": 50.8
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2022",
+        "subtitle": "Live births and stillbirths in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "Lowest",
+            "delivered_skilled_provider_pct": 72.7,
+            "delivered_health_facility_pct": 71.2,
+            "caesarean_section_pct": 5.5
+          },
+          {
+            "label": "Second",
+            "delivered_skilled_provider_pct": 91,
+            "delivered_skilled_provider_pct_display": "91.0",
+            "delivered_health_facility_pct": 89.9,
+            "caesarean_section_pct": 14.3
+          },
+          {
+            "label": "Middle",
+            "delivered_skilled_provider_pct": 96.1,
+            "delivered_health_facility_pct": 94.8,
+            "caesarean_section_pct": 19.2
+          },
+          {
+            "label": "Fourth",
+            "delivered_skilled_provider_pct": 99,
+            "delivered_skilled_provider_pct_display": "99.0",
+            "delivered_health_facility_pct": 97.7,
+            "caesarean_section_pct": 26.9
+          },
+          {
+            "label": "Highest",
+            "delivered_skilled_provider_pct": 99.1,
+            "delivered_health_facility_pct": 98.9,
+            "caesarean_section_pct": 43.4
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "¹ Skilled provider includes doctor, nurse, and midwife.",
+      "Details may not add up to total due to rounding."
+    ]
+  },
+  "tableData": {
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+    "title": "Birth Delivery",
+    "subtitle": "Selected birth delivery indicators by background characteristic and region, Philippines, 2022 and 2025.",
+    "includeRegionTable": true,
+    "regionSectionTitle": "Region",
+    "colGroups": [
+      {
+        "label": "2025",
+        "cols": [
+          {
+            "key": "delivered_skilled_provider_pct",
+            "label": "Delivered by a skilled provider",
+            "noteRef": "¹"
+          },
+          {
+            "key": "delivered_health_facility_pct",
+            "label": "Delivered in a health facility"
+          },
+          {
+            "key": "caesarean_section_pct",
+            "label": "Delivered by caesarean section"
+          },
+          {
+            "key": "births_total",
+            "label": "Total number of births",
+            "isCount": true,
+            "displayKey": "births_total_display"
+          }
+        ]
+      },
+      {
+        "label": "2022",
+        "cols": [
+          {
+            "key": "delivered_skilled_provider_pct_2022",
+            "label": "Delivered by a skilled provider",
+            "noteRef": "¹",
+            "displayKey": "delivered_skilled_provider_pct_2022_display"
+          },
+          {
+            "key": "delivered_health_facility_pct_2022",
+            "label": "Delivered in a health facility",
+            "displayKey": "delivered_health_facility_pct_2022_display"
+          },
+          {
+            "key": "caesarean_section_pct_2022",
+            "label": "Delivered by caesarean section",
+            "displayKey": "caesarean_section_pct_2022_display"
+          },
+          {
+            "key": "births_total_2022",
+            "label": "Total number of births",
+            "isCount": true,
+            "displayKey": "births_total_2022_display"
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "title": "Mother's age at birth (in years)",
+        "rows": [
+          {
+            "label": "<20",
+            "values": [
+              "90.3",
+              "90.7",
+              "11.6",
+              "258",
+              "88.9",
+              "87.0",
+              "14.6",
+              "266"
+            ]
+          },
+          {
+            "label": "20-34",
+            "values": [
+              "94.8",
+              "94.8",
+              "21.0",
+              "1,892",
+              "90.5",
+              "89.4",
+              "18.3",
+              "2,158"
+            ]
+          },
+          {
+            "label": "35-49",
+            "values": [
+              "91.1",
+              "91.4",
+              "29.5",
+              "580",
+              "85.8",
+              "85.0",
+              "26.9",
+              "518"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Mother's educational attainment",
+        "rows": [
+          {
+            "label": "No education",
+            "values": [
+              "(59.2)",
+              "(54.2)",
+              "(3.5)",
+              "19",
+              "(52.4)",
+              "(51.6)",
+              "(4.8)",
+              "30"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "values": [
+              "80.9",
+              "80.0",
+              "13.4",
+              "278",
+              "67.0",
+              "66.7",
+              "7.3",
+              "334"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "values": [
+              "91.9",
+              "92.5",
+              "14.7",
+              "1,090",
+              "89.3",
+              "87.5",
+              "14.7",
+              "1,330"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "values": [
+              "97.1",
+              "97.3",
+              "12.0",
+              "315",
+              "93.7",
+              "93.1",
+              "12.4",
+              "196"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "values": [
+              "97.9",
+              "96.0",
+              "23.0",
+              "60",
+              "97.9",
+              "97.9",
+              "51.5",
+              "58"
+            ]
+          },
+          {
+            "label": "College",
+            "values": [
+              "98.5",
+              "98.4",
+              "35.9",
+              "968",
+              "97.2",
+              "96.6",
+              "29.9",
+              "995"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "rows": [
+          {
+            "label": "Lowest",
+            "values": [
+              "82.9",
+              "81.6",
+              "9.3",
+              "701",
+              "72.7",
+              "71.2",
+              "5.5",
+              "817"
+            ]
+          },
+          {
+            "label": "Second",
+            "values": [
+              "94.0",
+              "95.5",
+              "13.9",
+              "611",
+              "91.0",
+              "89.9",
+              "14.3",
+              "558"
+            ]
+          },
+          {
+            "label": "Middle",
+            "values": [
+              "97.9",
+              "97.8",
+              "23.6",
+              "587",
+              "96.1",
+              "94.8",
+              "19.2",
+              "640"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "values": [
+              "99.3",
+              "99.3",
+              "26.8",
+              "468",
+              "99.0",
+              "97.7",
+              "26.9",
+              "463"
+            ]
+          },
+          {
+            "label": "Highest",
+            "values": [
+              "99.2",
+              "99.7",
+              "50.8",
+              "363",
+              "99.1",
+              "98.9",
+              "43.4",
+              "464"
+            ]
+          }
+        ]
+      }
+    ],
+    "total": {
+      "label": "Total",
+      "values": [
+        "93.6",
+        "93.7",
+        "21.9",
+        "2,730",
+        "89.6",
+        "88.4",
+        "19.5",
+        "2,942"
+      ]
+    },
+    "footnotes": [
+      "¹ Skilled provider includes doctor, nurse, and midwife.",
+      "⁶ Region IX includes the province of Sulu in 2025.",
+      "Figures in parentheses are based on 25-49 unweighted cases.",
+      "\"NA\" denotes that an estimate is not reported or not applicable.",
+      "Details may not add up to total due to rounding."
+    ]
+  },
+  "insights": {
+    "title": "Insights on Birth Delivery",
+    "subtitle": "AI-generated insights based on National Demographic and Health Survey data on birth delivery",
+    "overview": "In most regions, births in 2025 were overwhelmingly delivered with skilled assistance and in health facilities, but that broad national picture still leaves some families much less protected than others. CALABARZON, CAR, and Central Visayas were near universal on both measures, while BARMM was at 69.3 percent delivered by a skilled provider and 68.6 percent delivered in a health facility, and Zamboanga Peninsula was at 76.1 percent and 75.5 percent.",
+    "sections": [
+      {
+        "heading": "A few regions remain well behind an otherwise high-coverage picture",
+        "body": "Many regions are already in the mid-90s or higher for both skilled attendance and facility delivery. CALABARZON reached 99.5 percent on both measures, CAR was at 99.3 percent delivered by a skilled provider and 98.7 percent delivered in a health facility, and Central Visayas reached 99.0 percent and 99.1 percent. But the lower end of the map is still far from that standard. BARMM was at 69.3 percent delivered by a skilled provider and 68.6 percent delivered in a health facility, Zamboanga Peninsula was at 76.1 percent and 75.5 percent, and MIMAROPA was at 85.3 percent and 84.3 percent. For families in those regions, the gap is not marginal. It points to a much less secure delivery environment than the national picture might suggest at first glance."
+      },
+      {
+        "heading": "Skilled attendance and facility delivery usually travel together, but not perfectly",
+        "body": "For most regions, the two main delivery measures move closely together, which suggests that where births happen and who attends them often rise or fall in tandem. Still, a few places stand out. Ilocos Region recorded 95.0 percent delivered by a skilled provider but 99.7 percent delivered in a health facility. Davao Region was at 93.6 percent for skilled attendance and 96.9 percent for facility delivery. In the other direction, Cagayan Valley reached 98.9 percent delivered by a skilled provider but 94.7 percent delivered in a health facility, while SOCCSKSARGEN was at 87.9 percent and 83.6 percent. These are not huge separations, but they show that the place of delivery and the attendant at delivery are not interchangeable measures."
+      },
+      {
+        "heading": "Caesarean section draws a different map from the other delivery measures",
+        "body": "The caesarean-section figures do not simply mirror the regions with the strongest skilled or facility delivery. Central Luzon had the highest caesarean-section rate at 38.2 percent, followed by NCR at 32.7 percent and CAR at 29.1 percent. At the other end, Negros Island Region was at 7.5 percent, BARMM at 7.6 percent, and Central Visayas at 10.8 percent. Central Visayas is a useful reminder that this measure should be read differently: it was near universal on skilled attendance and facility delivery, yet its caesarean-section rate was among the lowest. The delivery story is therefore not a single ladder where every measure rises together."
+      },
+      {
+        "heading": "Schooling and household resources still shape where and how births happen",
+        "body": "The education and wealth gradients are wide even before the smallest subgroups are considered. Among women with Grades 1-6 education in 2025, 80.9 percent delivered by a skilled provider, 80.0 percent delivered in a health facility, and 13.4 percent delivered by caesarean section. Among women with college education, those figures were 98.5 percent, 98.4 percent, and 35.9 percent. The wealth pattern is similarly steep. In the lowest quintile, 82.9 percent delivered by a skilled provider and 81.6 percent in a health facility, compared with 99.2 percent and 99.7 percent in the highest quintile. Caesarean section ranged from 9.3 percent in the lowest quintile to 50.8 percent in the highest, showing that the birth experience remains sharply stratified even when the basic delivery measures are already high in many groups."
+      },
+      {
+        "heading": "Age changes the picture more in delivery mode than in basic access",
+        "body": "Differences by mother's age are present, but they are narrower for skilled attendance and facility delivery than for caesarean section. In 2025, mothers younger than 20 were at 90.3 percent delivered by a skilled provider and 90.7 percent delivered in a health facility. Mothers aged 20-34 were at 94.8 percent on both measures, while mothers aged 35-49 were at 91.1 percent and 91.4 percent. Caesarean section shows a clearer age gradient: 11.6 percent among mothers younger than 20, 21.0 percent among those aged 20-34, and 29.5 percent among those aged 35-49. The main divide by age is therefore less about whether women are connected to formal delivery care at all, and more about how births are ultimately managed."
+      },
+      {
+        "heading": "Recent gains are clearest among groups that started lower",
+        "body": "From 2022 to 2025, the strongest gains in skilled attendance and facility delivery came from groups that were further behind. Among women with Grades 1-6 education, delivery by a skilled provider rose from 67.0 percent to 80.9 percent, while facility delivery rose from 66.7 percent to 80.0 percent. In the lowest wealth quintile, the same measures rose from 72.7 percent to 82.9 percent and from 71.2 percent to 81.6 percent. Mothers aged 35-49 also improved, from 85.8 percent to 91.1 percent delivered by a skilled provider and from 85.0 percent to 91.4 percent delivered in a health facility. But the recent picture is not simply one of convergence. Caesarean section continued to rise in the highest wealth quintile, from 43.4 percent to 50.8 percent, and among women with college education, from 29.9 percent to 35.9 percent."
+      }
+    ],
+    "takeaways": [
+      "Most regions now report very high skilled and facility delivery, but BARMM and Zamboanga Peninsula still sit well below that level.",
+      "Education and wealth remain strong dividing lines in the birth experience, especially when caesarean section is brought into the picture.",
+      "From 2022 to 2025, the clearest gains came from groups that started lower, but birth delivery conditions are still uneven across regions and families."
+    ]
+  },
+  "detailFields": [
+    {
+      "key": "delivered_skilled_provider_pct",
+      "label": "Delivered by a skilled provider (2025)"
+    },
+    {
+      "key": "delivered_health_facility_pct",
+      "label": "Delivered in a health facility (2025)"
+    },
+    {
+      "key": "caesarean_section_pct",
+      "label": "Delivered by caesarean section (2025)"
+    },
+    {
+      "key": "births_total",
+      "label": "Total number of births"
+    },
+    {
+      "key": "psa_note",
+      "label": "Note"
+    }
+  ],
+  "data": {
+    "region": [
+      {
+        "psgc": 1300000000,
+        "births_total": 326,
+        "births_total_2022": 291,
+        "delivered_skilled_provider_pct": 98.4,
+        "delivered_skilled_provider_pct_2022": 95.9,
+        "delivered_health_facility_pct": 98.1,
+        "delivered_health_facility_pct_2022": 93.4,
+        "caesarean_section_pct": 32.7,
+        "caesarean_section_pct_2022": 22.3
+      },
+      {
+        "psgc": 1400000000,
+        "births_total": 47,
+        "births_total_2022": 52,
+        "delivered_skilled_provider_pct": 99.3,
+        "delivered_skilled_provider_pct_2022": 98.5,
+        "delivered_health_facility_pct": 98.7,
+        "delivered_health_facility_pct_2022": 92.9,
+        "caesarean_section_pct": 29.1,
+        "caesarean_section_pct_2022": 30.6
+      },
+      {
+        "psgc": 100000000,
+        "births_total": 246,
+        "births_total_2022": 149,
+        "delivered_skilled_provider_pct": 95,
+        "delivered_skilled_provider_pct_display": "95.0",
+        "delivered_skilled_provider_pct_2022": 97.9,
+        "delivered_health_facility_pct": 99.7,
+        "delivered_health_facility_pct_2022": 97.9,
+        "caesarean_section_pct": 17,
+        "caesarean_section_pct_display": "17.0",
+        "caesarean_section_pct_2022": 22.7
+      },
+      {
+        "psgc": 200000000,
+        "births_total": 68,
+        "births_total_2022": 103,
+        "delivered_skilled_provider_pct": 98.9,
+        "delivered_skilled_provider_pct_2022": 95.7,
+        "delivered_health_facility_pct": 94.7,
+        "delivered_health_facility_pct_2022": 94.3,
+        "caesarean_section_pct": 25.7,
+        "caesarean_section_pct_2022": 25.1
+      },
+      {
+        "psgc": 300000000,
+        "births_total": 364,
+        "births_total_2022": 311,
+        "delivered_skilled_provider_pct": 97.2,
+        "delivered_skilled_provider_pct_2022": 97.8,
+        "delivered_health_facility_pct": 96.6,
+        "delivered_health_facility_pct_2022": 97,
+        "delivered_health_facility_pct_2022_display": "97.0",
+        "caesarean_section_pct": 38.2,
+        "caesarean_section_pct_2022": 35.7
+      },
+      {
+        "psgc": 400000000,
+        "births_total": 272,
+        "births_total_2022": 424,
+        "delivered_skilled_provider_pct": 99.5,
+        "delivered_skilled_provider_pct_2022": 95.8,
+        "delivered_health_facility_pct": 99.5,
+        "delivered_health_facility_pct_2022": 93.8,
+        "caesarean_section_pct": 24.2,
+        "caesarean_section_pct_2022": 29.4
+      },
+      {
+        "psgc": 1700000000,
+        "births_total": 82,
+        "births_total_2022": 91,
+        "delivered_skilled_provider_pct": 85.3,
+        "delivered_skilled_provider_pct_2022": 79.7,
+        "delivered_health_facility_pct": 84.3,
+        "delivered_health_facility_pct_2022": 77,
+        "delivered_health_facility_pct_2022_display": "77.0",
+        "caesarean_section_pct": 20.7,
+        "caesarean_section_pct_2022": 12.8
+      },
+      {
+        "psgc": 500000000,
+        "births_total": 122,
+        "births_total_2022": 139,
+        "delivered_skilled_provider_pct": 91.7,
+        "delivered_skilled_provider_pct_2022": 92.9,
+        "delivered_health_facility_pct": 91.7,
+        "delivered_health_facility_pct_2022": 92,
+        "delivered_health_facility_pct_2022_display": "92.0",
+        "caesarean_section_pct": 15.1,
+        "caesarean_section_pct_2022": 18.4
+      },
+      {
+        "psgc": 600000000,
+        "births_total": 112,
+        "births_total_2022": 233,
+        "delivered_skilled_provider_pct": 96.7,
+        "delivered_skilled_provider_pct_2022": 93.6,
+        "delivered_health_facility_pct": 96.7,
+        "delivered_health_facility_pct_2022": 93.3,
+        "caesarean_section_pct": 18.6,
+        "caesarean_section_pct_2022": 9.3
+      },
+      {
+        "psgc": 1800000000,
+        "births_total": 110,
+        "births_total_2022": null,
+        "births_total_2022_display": "NA",
+        "delivered_skilled_provider_pct": 97.8,
+        "delivered_skilled_provider_pct_2022": null,
+        "delivered_skilled_provider_pct_2022_display": "NA",
+        "delivered_health_facility_pct": 97.5,
+        "delivered_health_facility_pct_2022": null,
+        "delivered_health_facility_pct_2022_display": "NA",
+        "caesarean_section_pct": 7.5,
+        "caesarean_section_pct_2022": null,
+        "caesarean_section_pct_2022_display": "NA"
+      },
+      {
+        "psgc": 700000000,
+        "births_total": 169,
+        "births_total_2022": 216,
+        "delivered_skilled_provider_pct": 99,
+        "delivered_skilled_provider_pct_display": "99.0",
+        "delivered_skilled_provider_pct_2022": 93,
+        "delivered_skilled_provider_pct_2022_display": "93.0",
+        "delivered_health_facility_pct": 99.1,
+        "delivered_health_facility_pct_2022": 95.4,
+        "caesarean_section_pct": 10.8,
+        "caesarean_section_pct_2022": 16,
+        "caesarean_section_pct_2022_display": "16.0"
+      },
+      {
+        "psgc": 800000000,
+        "births_total": 118,
+        "births_total_2022": 98,
+        "delivered_skilled_provider_pct": 95.5,
+        "delivered_skilled_provider_pct_2022": 92,
+        "delivered_skilled_provider_pct_2022_display": "92.0",
+        "delivered_health_facility_pct": 95.1,
+        "delivered_health_facility_pct_2022": 89.9,
+        "caesarean_section_pct": 27.4,
+        "caesarean_section_pct_2022": 14.2
+      },
+      {
+        "psgc": 900000000,
+        "births_total": 146,
+        "births_total_2022": 138,
+        "delivered_skilled_provider_pct": 76.1,
+        "delivered_skilled_provider_pct_2022": 75.6,
+        "delivered_health_facility_pct": 75.5,
+        "delivered_health_facility_pct_2022": 76,
+        "delivered_health_facility_pct_2022_display": "76.0",
+        "caesarean_section_pct": 11.5,
+        "caesarean_section_pct_2022": 9.5,
+        "noteRef": "⁶",
+        "psa_note": "Region IX includes the province of Sulu in 2025."
+      },
+      {
+        "psgc": 1000000000,
+        "births_total": 123,
+        "births_total_2022": 127,
+        "delivered_skilled_provider_pct": 89.5,
+        "delivered_skilled_provider_pct_2022": 93.9,
+        "delivered_health_facility_pct": 89.5,
+        "delivered_health_facility_pct_2022": 93.3,
+        "caesarean_section_pct": 18,
+        "caesarean_section_pct_display": "18.0",
+        "caesarean_section_pct_2022": 13.3
+      },
+      {
+        "psgc": 1100000000,
+        "births_total": 121,
+        "births_total_2022": 150,
+        "delivered_skilled_provider_pct": 93.6,
+        "delivered_skilled_provider_pct_2022": 90.6,
+        "delivered_health_facility_pct": 96.9,
+        "delivered_health_facility_pct_2022": 90.6,
+        "caesarean_section_pct": 20.7,
+        "caesarean_section_pct_2022": 15.5
+      },
+      {
+        "psgc": 1200000000,
+        "births_total": 97,
+        "births_total_2022": 155,
+        "delivered_skilled_provider_pct": 87.9,
+        "delivered_skilled_provider_pct_2022": 83.2,
+        "delivered_health_facility_pct": 83.6,
+        "delivered_health_facility_pct_2022": 81.7,
+        "caesarean_section_pct": 16,
+        "caesarean_section_pct_display": "16.0",
+        "caesarean_section_pct_2022": 11.6
+      },
+      {
+        "psgc": 1600000000,
+        "births_total": 75,
+        "births_total_2022": 77,
+        "delivered_skilled_provider_pct": 97.9,
+        "delivered_skilled_provider_pct_2022": 92,
+        "delivered_skilled_provider_pct_2022_display": "92.0",
+        "delivered_health_facility_pct": 97.1,
+        "delivered_health_facility_pct_2022": 90.6,
+        "caesarean_section_pct": 12,
+        "caesarean_section_pct_display": "12.0",
+        "caesarean_section_pct_2022": 11.7
+      },
+      {
+        "psgc": 1900000000,
+        "births_total": 131,
+        "births_total_2022": 188,
+        "delivered_skilled_provider_pct": 69.3,
+        "delivered_skilled_provider_pct_2022": 42.4,
+        "delivered_health_facility_pct": 68.6,
+        "delivered_health_facility_pct_2022": 39.1,
+        "caesarean_section_pct": 7.6,
+        "caesarean_section_pct_2022": 4.9
+      }
+    ],
+    "province": [],
+    "municity": []
+  }
+}
