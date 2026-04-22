@@ -613,6 +613,8 @@ let chartsReady = false;
 let chartsContainer = null;
 let tablesReady = false;
 let tablesContainer = null;
+let insightsReady = false;
+let insightsContainer = null;
 
 (function initTabbedLayout() {
   const tabBar = document.createElement('div');
@@ -621,6 +623,7 @@ let tablesContainer = null;
     <button class="tab-btn active" data-tab="map">Maps</button>
     <button class="tab-btn" data-tab="charts">Charts</button>
     <button class="tab-btn" data-tab="tables">Data Tables</button>
+    <button class="tab-btn" data-tab="insights">Insights</button>
   `;
 
   const mapPanel = document.createElement('div');
@@ -635,6 +638,10 @@ let tablesContainer = null;
   tablesPanel.id = 'tab-tables';
   tablesPanel.className = 'tab-panel';
 
+  const insightsPanel = document.createElement('div');
+  insightsPanel.id = 'tab-insights';
+  insightsPanel.className = 'tab-panel';
+
   chartsContainer = document.createElement('div');
   chartsContainer.id = 'charts-container';
   chartsPanel.appendChild(chartsContainer);
@@ -643,12 +650,17 @@ let tablesContainer = null;
   tablesContainer.id = 'tables-container';
   tablesPanel.appendChild(tablesContainer);
 
+  insightsContainer = document.createElement('div');
+  insightsContainer.id = 'insights-container';
+  insightsPanel.appendChild(insightsContainer);
+
   [svgEl, backBtn, infoBtn, status, metricToggle, detail].forEach(node => mapPanel.appendChild(node));
 
   document.body.insertBefore(tabBar, document.body.firstChild);
   document.body.insertBefore(mapPanel, tabBar.nextSibling);
   document.body.insertBefore(chartsPanel, mapPanel.nextSibling);
   document.body.insertBefore(tablesPanel, chartsPanel.nextSibling);
+  document.body.insertBefore(insightsPanel, tablesPanel.nextSibling);
 
   tabBar.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => switchTab(btn.dataset.tab, false, true));
@@ -656,11 +668,12 @@ let tablesContainer = null;
 })();
 
 function switchTab(tab, replace = false, syncHash = true) {
-  activeTab = tab === 'charts' ? 'charts' : tab === 'tables' ? 'tables' : 'map';
+  activeTab = tab === 'charts' ? 'charts' : tab === 'tables' ? 'tables' : tab === 'insights' ? 'insights' : 'map';
   document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === activeTab));
   document.getElementById('tab-map').classList.toggle('active', activeTab === 'map');
   document.getElementById('tab-charts').classList.toggle('active', activeTab === 'charts');
   document.getElementById('tab-tables').classList.toggle('active', activeTab === 'tables');
+  document.getElementById('tab-insights').classList.toggle('active', activeTab === 'insights');
   if (activeTab === 'charts' && config.tableData && !chartsReady) {
     renderCharts(config.tableData);
     chartsReady = true;
@@ -668,6 +681,10 @@ function switchTab(tab, replace = false, syncHash = true) {
   if (activeTab === 'tables' && config.tableData && !tablesReady) {
     renderTables(config.tableData);
     tablesReady = true;
+  }
+  if (activeTab === 'insights' && config.insights && !insightsReady) {
+    renderInsights(config.insights);
+    insightsReady = true;
   }
   if (syncHash) {
     const current = parseStateHash(parseHash());
@@ -1414,7 +1431,9 @@ function slugToMetric(slug) {
 
 function parseStateHash(hash = parseHash()) {
   const parts = String(hash || '').split('--').filter(Boolean);
-  const tab = parts.includes('ttables')
+  const tab = parts.includes('tinsights')
+    ? 'insights'
+    : parts.includes('ttables')
     ? 'tables'
     : (parts.includes('tcharts') || parts.includes('tdata'))
       ? 'charts'
@@ -1430,7 +1449,9 @@ function parseStateHash(hash = parseHash()) {
 
 function buildStateHash(viewHash = '/') {
   const metric = config.colorField || Object.keys(config.colorDomains || {})[0] || 'any_method_pct';
-  const tabToken = activeTab === 'tables'
+  const tabToken = activeTab === 'insights'
+    ? 'tinsights'
+    : activeTab === 'tables'
     ? 'ttables'
     : activeTab === 'charts'
       ? 'tcharts'

@@ -281,7 +281,7 @@
 
 <!-- Content iframe -->
 <div id="main">
-  <iframe id="content-frame" src="./maps/fertility-rate-2025/" title="NDHS Map View"></iframe>
+  <iframe id="content-frame" src="./maps/fertility-rate-2025/?v=20260423-1" title="NDHS Map View"></iframe>
 </div>
 
 <script>
@@ -292,6 +292,12 @@ const topbarTitle = document.getElementById('topbar-title');
 let currentRoute = null;
 let frameHashSyncWindow = null;
 const DEFAULT_TITLE = '2025 NDHS Key Indicators — Philippines';
+const CACHE_BUST_VERSION = '20260423-1';
+
+function withCacheBust(url) {
+  const sep = url.includes('?') ? '&' : '?';
+  return `${url}${sep}v=${encodeURIComponent(CACHE_BUST_VERSION)}`;
+}
 
 function getRouteTitle(route) {
   const item = findNavItem(route);
@@ -376,7 +382,7 @@ function navigateTo(route, childHash = '', historyMode = 'push') {
   currentRoute = route;
   setActiveNav(route);
 
-  const src = item.dataset.src + (childHash ? '#' + childHash : '');
+  const src = withCacheBust(item.dataset.src) + (childHash ? '#' + childHash : '');
   frame.src = src;
 
   if (historyMode === 'replace') {

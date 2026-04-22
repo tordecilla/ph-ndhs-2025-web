@@ -99,6 +99,38 @@
     ],
     "blocks": [
       {
+        "title": "Total",
+        "year": "2025",
+        "subtitle": "Women aged 15 to 49 years with a live birth in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "Total",
+            "antenatal_care_pct": 87.3,
+            "anc_4plus_visits_pct": 84.9,
+            "anc_8plus_visits_pct": 40.0,
+            "anc_8plus_visits_pct_display": "40.0",
+            "iron_supplements_pct": 87.7,
+            "neonatal_tetanus_pct": 75.9
+          }
+        ]
+      },
+      {
+        "title": "Total",
+        "year": "2022",
+        "subtitle": "Women aged 15 to 49 years with a live birth in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "Total",
+            "antenatal_care_pct": 85.9,
+            "anc_4plus_visits_pct": 83.0,
+            "anc_4plus_visits_pct_display": "83.0",
+            "anc_8plus_visits_pct": 29.2,
+            "iron_supplements_pct": 86.2,
+            "neonatal_tetanus_pct": 78.4
+          }
+        ]
+      },
+      {
         "title": "Mother's age at birth (in years)",
         "year": "2025",
         "subtitle": "Women aged 15 to 49 years with a live birth in the 2 years preceding the survey.",

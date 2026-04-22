@@ -110,6 +110,9 @@
     grid-template-columns: 1fr;
     gap: 24px;
   }
+  @media (min-width: 1080px) {
+    .chart-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
   .chart-block {
     background: var(--panel-bg);
     border: 1px solid var(--panel-divider);
@@ -932,15 +935,6 @@ function renderTables(tableData) {
   `;
   tablesContainer.appendChild(header);
 
-  (tableData.sections || []).forEach(section => {
-    const card = el('section', 'dt-section');
-    const title = el('div', 'dt-section-label');
-    title.textContent = section.title || '';
-    card.appendChild(title);
-    card.appendChild(buildGroupedTable(section.rows || []));
-    tablesContainer.appendChild(card);
-  });
-
   if (tableData.total?.values?.length) {
     const card = el('section', 'dt-section');
     const title = el('div', 'dt-section-label');
@@ -953,6 +947,15 @@ function renderTables(tableData) {
     }], true));
     tablesContainer.appendChild(card);
   }
+
+  (tableData.sections || []).forEach(section => {
+    const card = el('section', 'dt-section');
+    const title = el('div', 'dt-section-label');
+    title.textContent = section.title || '';
+    card.appendChild(title);
+    card.appendChild(buildGroupedTable(section.rows || []));
+    tablesContainer.appendChild(card);
+  });
 
   if (tableData.includeRegionTable && (config.data?.region || []).length) {
     const card = el('section', 'dt-section');
@@ -1046,15 +1049,22 @@ function formatChartValue(row, key) {
 
 function drawGroupedBars(container, chartData, block, series) {
   const rows = block.rows || [];
-  const VW = 920;
-  const VH = 440;
-  const ML = 64;
-  const MR = 24;
-  const MT = 18;
-  const MB = 96;
+  const maxLabelLen = d3.max(rows, r => String(r.label || '').length) || 0;
+  const VW = 620;
+  const ML = Math.max(82, Math.min(116, 32 + maxLabelLen * 5));
+  const MR = 16;
+  const MT = 10;
+  const MB = 36;
   const INNER_W = VW - ML - MR;
-  const INNER_H = VH - MT - MB;
   const yMax = chartData.xMax || 100;
+  const tickStep = yMax > 20 ? 10 : 5;
+  const laneGap = 10;
+  const groupGap = 24;
+  const groupH = Math.max(series.length - 1, 0) * laneGap + 1;
+  const INNER_H = rows.length
+    ? rows.length * groupH + Math.max(rows.length - 1, 0) * groupGap
+    : 40;
+  const VH = MT + INNER_H + MB;
 
   const wrap = document.createElement('div');
   wrap.className = 'chart-svg-wrap';
@@ -1067,85 +1077,68 @@ function drawGroupedBars(container, chartData, block, series) {
 
   const chartSvg = d3.select(svgNode);
   const chart = chartSvg.append('g').attr('transform', `translate(${ML},${MT})`);
-  const x = d3.scaleBand().domain(rows.map(r => r.label)).range([0, INNER_W]).padding(0.22);
-  const xInner = d3.scaleBand().domain(series.map(s => s.key)).range([0, x.bandwidth()]).padding(0.12);
-  const y = d3.scaleLinear().domain([0, yMax]).range([INNER_H, 0]);
+  const x = d3.scaleLinear().domain([0, yMax]).range([0, INNER_W - 8]);
 
-  d3.range(0, yMax + 0.01, 10).forEach(tick => {
-    const yy = y(tick);
+  d3.range(0, yMax + 0.01, tickStep).forEach(tick => {
+    const xx = x(tick);
     chart.append('line')
-      .attr('x1', 0).attr('y1', yy)
-      .attr('x2', INNER_W).attr('y2', yy)
+      .attr('x1', xx).attr('y1', 0)
+      .attr('x2', xx).attr('y2', INNER_H)
       .attr('stroke', 'var(--panel-divider)')
       .attr('stroke-dasharray', tick === 0 ? null : '2,3');
     chart.append('text')
-      .attr('x', -10).attr('y', yy)
-      .attr('text-anchor', 'end')
-      .attr('dominant-baseline', 'middle')
-      .attr('font-size', 10)
+      .attr('x', xx).attr('y', INNER_H + 15)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', 11)
       .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', 'var(--data-label-color)')
       .text(tick);
   });
 
-  const groups = chart.selectAll('g.row-group')
-    .data(rows)
-    .join('g')
-    .attr('class', 'row-group')
-    .attr('transform', d => `translate(${x(d.label)},0)`);
+  rows.forEach((row, rowIndex) => {
+    const top = rowIndex * (groupH + groupGap);
+    const midY = top + groupH / 2;
+    chartSvg.append('text')
+      .attr('x', ML - 10)
+      .attr('y', MT + midY)
+      .attr('text-anchor', 'end')
+      .attr('dominant-baseline', 'middle')
+      .attr('font-size', 12)
+      .attr('font-family', 'Inter, sans-serif')
+      .attr('fill', 'var(--text-color)')
+      .text(row.label);
 
-  groups.each(function(row) {
-    const group = d3.select(this);
-
-    series.forEach(s => {
+    series.forEach((s, si) => {
+      const laneY = top + si * laneGap;
       const value = row[s.key];
       if (value == null) return;
+      const endX = x(value);
 
-      const barHeight = INNER_H - y(value);
-      const barX = xInner(s.key);
-      const labelY = Math.max(y(value) - 4, 10);
-
-      group.append('rect')
-        .attr('x', barX)
-        .attr('y', y(value))
-        .attr('width', xInner.bandwidth())
-        .attr('height', barHeight)
+      chart.append('line')
+        .attr('x1', 0).attr('y1', laneY)
+        .attr('x2', endX).attr('y2', laneY)
+        .attr('stroke', s.displayColor)
+        .attr('stroke-width', 2.4);
+      chart.append('circle')
+        .attr('cx', endX).attr('cy', laneY)
+        .attr('r', 3.8)
         .attr('fill', s.displayColor);
-
-      group.append('text')
-        .attr('x', barX + xInner.bandwidth() / 2)
-        .attr('y', labelY)
-        .attr('text-anchor', 'middle')
-        .attr('font-size', 7.5)
+      chart.append('text')
+        .attr('x', endX + 4).attr('y', laneY)
+        .attr('text-anchor', 'start')
+        .attr('dominant-baseline', 'middle')
+        .attr('font-size', 9.5)
         .attr('font-family', 'IBM Plex Mono, monospace')
         .attr('fill', 'var(--data-label-color)')
         .text(formatChartValue(row, s.key));
     });
-
-    group.append('text')
-      .attr('x', x.bandwidth() / 2)
-      .attr('y', INNER_H + 16)
-      .attr('text-anchor', 'end')
-      .attr('transform', `rotate(-24, ${x.bandwidth() / 2}, ${INNER_H + 16})`)
-      .attr('font-size', 10.5)
-      .attr('font-family', 'Inter, sans-serif')
-      .attr('fill', 'var(--text-color)')
-      .text(row.label);
   });
 
   chartSvg.append('text')
     .attr('x', ML + INNER_W / 2)
-    .attr('y', VH - 18)
+    .attr('y', VH - 10)
     .attr('text-anchor', 'middle')
-    .attr('font-size', 11)
-    .attr('font-family', 'Inter, sans-serif')
-    .attr('fill', 'var(--data-label-color)')
-    .text(block.title || chartData.xLabel || 'Category');
-
-  chartSvg.append('text')
-    .attr('transform', `translate(20 ${MT + INNER_H / 2}) rotate(-90)`)
-    .attr('text-anchor', 'middle')
-    .attr('font-size', 11)
+    .attr('font-size', 12)
     .attr('font-family', 'Inter, sans-serif')
     .attr('fill', 'var(--data-label-color)')
     .text(chartData.yLabel || 'Percentage');

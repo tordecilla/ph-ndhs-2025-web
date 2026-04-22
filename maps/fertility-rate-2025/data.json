@@ -4,6 +4,22 @@
   "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
   "chartBlocks": [
     {
+      "id": "total_tfr",
+      "section": "Total fertility rate according to background characteristics",
+      "type": "vertical-comparison",
+      "layout": "half",
+      "label": "Total Fertility Rate",
+      "rows": [
+        {
+          "label": "Philippines",
+          "y2025": 1.7,
+          "y2025Display": "1.7",
+          "y2022": 1.9,
+          "y2022Display": "1.9"
+        }
+      ]
+    },
+    {
       "id": "asfr",
       "section": "Age-Specific Fertility Rates",
       "sectionDescription": "Age-specific and total fertility rates, general fertility rate, and the crude birth rate for the 3 years preceding the survey, according to residence: Philippines, 2022 and 2025",

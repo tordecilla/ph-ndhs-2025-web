@@ -1066,6 +1066,38 @@
       "Details may not add up to total due to rounding."
     ]
   },
+  "insights": {
+    "title": "Insights on Modern Contraception Among All Women",
+    "subtitle": "AI-generated insights based on National Demographic and Health Survey data on modern contraceptive use",
+    "overview": "Modern contraceptive use among all women aged 15 to 49 rose from 24.3 percent in 2022 to 25.7 percent in 2025, but the national average hides wide differences by region and life stage. Use is concentrated among women with children and in mid-adult ages, while it remains low among women with no children and among teenagers.",
+    "sections": [
+      {
+        "heading": "Regional differences remain wide",
+        "body": "In 2025, modern-method use ranged from 13.0 percent in BARMM to 37.1 percent in Davao Region. Other high-use regions included MIMAROPA (33.9 percent), SOCCSKSARGEN (32.5 percent), and Caraga (32.2 percent). At the lower end were Central Visayas (21.0 percent), NCR (21.4 percent), and Bicol Region (22.1 percent). This spread is too large to treat as a minor variation around one national pattern."
+      },
+      {
+        "heading": "Use is strongest in the middle of reproductive life, not at the beginning",
+        "body": "By age, modern-method use is very low at 15-19 (2.5 percent), rises through the 20s, and peaks at 35-39 (41.1 percent) before easing at older ages. The number-of-living-children pattern is similarly strong: 2.4 percent among women with no children, 37.9 percent among those with 1-2 children, and 55.8 percent among those with 3-4 children. The concentration among women with children is one of the clearest structural patterns in this dataset."
+      },
+      {
+        "heading": "Pills remained the largest method, while injectables and implants grew",
+        "body": "At the national level, pills stayed the largest component (11.2 percent to 11.6 percent). Injectables (2.8 to 3.4) and implants (1.7 to 2.4) also rose, while female sterilization declined slightly from 5.0 to 4.6 and IUD was nearly flat (1.7 to 1.6). In other words, the increase in overall modern-method use came mostly from growth in injectables and implants, not from a major change in pill use."
+      },
+      {
+        "heading": "Rural, lower-wealth, and some lower-schooling groups show higher overall modern use",
+        "body": "Modern-method use was higher in rural than urban areas in both years (28.8 vs 23.3 in 2025). The wealth pattern also declines from lowest to highest quintile in 2025 (32.5 to 20.0). Educational results are not monotonic: Grades 1-6 (40.1) and Post-secondary (32.0) are above College (21.7). Because this section is among all women, not only currently married women, part of this pattern likely reflects different age and parity composition across subgroups rather than one simple education effect."
+      },
+      {
+        "heading": "Change from 2022 to 2025 is real but uneven",
+        "body": "Nationally, use rose by 1.4 percentage points, with stronger gains in several groups: women aged 20-24 (13.7 to 15.4), women aged 30-34 (35.6 to 38.0), women with 3-4 children (51.1 to 55.8), and women with Grades 11-12 education (6.1 to 11.8). Some groups were nearly flat or slightly down, including ages 15-19 (2.6 to 2.5), ages 25-29 (29.3 to 27.4), and college-educated women (22.0 to 21.7). The picture is gradual progress, but not a uniform increase across all groups."
+      }
+    ],
+    "takeaways": [
+      "Modern contraceptive use among all women increased, but the national gain is modest and uneven across groups.",
+      "The strongest concentration remains among women with children and women in their 30s, while use is very low among teens and women with no children.",
+      "Regional variation is wide, and recent growth appears to come more from injectables and implants than from a major shift in pill use."
+    ]
+  },
   "detailFields": [
     {
       "key": "any_modern_method_pct",

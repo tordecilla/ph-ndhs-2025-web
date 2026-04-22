@@ -572,7 +572,13 @@ function renderCharts(data) {
     return String(text).replace(/[0-9]/g, d => ({ '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹' }[d]));
   }
 
-  (data.chartBlocks || []).forEach(block => {
+  const chartBlocks = [...(data.chartBlocks || [])].sort((a, b) => {
+    if (a.id === 'asfr' && b.id !== 'asfr') return 1;
+    if (a.id !== 'asfr' && b.id === 'asfr') return -1;
+    return 0;
+  });
+
+  chartBlocks.forEach(block => {
     const blockEl = el('section', `chart-block${block.layout === 'wide' ? ' wide' : ''}`);
 
     const titleEl = el('div', 'chart-block-title');
@@ -695,7 +701,10 @@ function withNoteRef(label, row) {
 function drawHorizontalComparison(container, block) {
   const rows = block.rows || [];
   const VW = block.layout === 'wide' ? 860 : 640;
-  const ML = block.layout === 'wide' ? 230 : 170;
+  const maxLabelLen = d3.max(rows, r => String(withNoteRef(r.label, r) || '').length) || 0;
+  const ML = block.layout === 'wide'
+    ? Math.max(106, Math.min(176, 42 + maxLabelLen * 5))
+    : Math.max(96, Math.min(148, 36 + maxLabelLen * 5));
   const MR = 76;
   const MT = 2;
   const MB = 28;

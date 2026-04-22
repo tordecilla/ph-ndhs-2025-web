@@ -824,6 +824,34 @@
       "Details may not add up to total due to rounding."
     ]
   },
+  "insights": {
+    "title": "Insights on Contraception Among Married and Sexually Active Women",
+    "subtitle": "AI-generated insights based on National Demographic and Health Survey data on modern contraceptive use",
+    "overview": "Contraceptive use among currently married women stayed broadly stable, with use of any method at 58.3 percent from 2022 to 58.6 percent in 2025. Within that stable headline, the methods used shifted: modern-method use rose from 41.8 to 44.5 percent while traditional-method use declined from 16.5 to 14.1 percent. This indicates gradual substitution across methods rather than a broad expansion in overall uptake.",
+    "sections": [
+      {
+        "heading": "Use remains concentrated in mid-reproductive ages and among women with children",
+        "body": "By age among currently married women, use peaks at 35-39 years (64.1 in 2025) and is lower at both ends, including 42.6 at ages 15-19 and 46.0 at ages 45-49. By number of living children, use is lowest among women with no children (16.5) and highest among women with 3-4 children (70.9), with moderate decline at 5+ children (61.3)."
+      },
+      {
+        "heading": "Regional differences are wide and include clear outliers",
+        "body": "In 2025, contraceptive use among currently married women ranges from 25.3 in BARMM to 70.4 in Davao Region. Other high-use regions include Ilocos Region (67.5), Central Luzon (65.0), Eastern Visayas (64.4), and Caraga (64.4). Central Visayas (47.8) and Zamboanga Peninsula (49.8) are also below most regions, showing that regional spread remains substantial rather than tightly clustered around one national level."
+      },
+      {
+        "heading": "Social gradients are present but not purely linear",
+        "body": "Rural currently married women report slightly higher contraceptive use than urban women (59.4 vs 57.9 in 2025), with a larger rural lead in modern-method use (47.2 vs 42.1). By wealth, use is highest in the second and middle quintiles (61.8 and 60.8) and lower in the highest quintile (53.6). By education, contraceptive use is highest in Grades 7-10 (61.6) and remains lower among women with no education (42.4)."
+      },
+      {
+        "heading": "Sexually Active Unmarried Women",
+        "body": "Among sexually active unmarried women, contraceptive use declined from 41.4 in 2022 to 37.9 in 2025. At the same time, modern-method use rose from 23.8 to 26.2 and traditional-method use fell from 17.6 to 11.7. Compared with currently married women in 2025, this group has lower contraceptive use (37.9 vs 58.6)."
+      }
+    ],
+    "takeaways": [
+      "Among currently married women, overall contraceptive use changed little from 2022 to 2025, but modern-method use increased while traditional-method use decreased.",
+      "Regional gaps remain large, with BARMM markedly lower than the highest-use regions such as Davao Region, Ilocos Region, and Central Luzon.",
+      "Sexually active unmarried women show lower overall use, while also showing a shift from traditional toward modern methods."
+    ]
+  },
   "detailFields": [
     {
       "key": "any_method_pct",

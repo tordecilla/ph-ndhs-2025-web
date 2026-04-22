@@ -600,7 +600,7 @@ function drawGroupChart(container, group) {
   if (!n) return;
 
   const maxLabelLen = d3.max(cats, d => String(d.label || '').length) || 0;
-  const ML = Math.max(160, Math.min(250, 68 + maxLabelLen * 6));
+  const ML = Math.max(108, Math.min(176, 42 + maxLabelLen * 5));
   const MR = 92;
   const MT = 14;
   const MB = 16;

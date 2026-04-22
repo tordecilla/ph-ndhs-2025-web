@@ -69,6 +69,32 @@
     ],
     "blocks": [
       {
+        "title": "Total",
+        "year": "2025",
+        "subtitle": "Live births and stillbirths in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "Total",
+            "delivered_skilled_provider_pct": 93.6,
+            "delivered_health_facility_pct": 93.7,
+            "caesarean_section_pct": 21.9
+          }
+        ]
+      },
+      {
+        "title": "Total",
+        "year": "2022",
+        "subtitle": "Live births and stillbirths in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "Total",
+            "delivered_skilled_provider_pct": 89.6,
+            "delivered_health_facility_pct": 88.4,
+            "caesarean_section_pct": 19.5
+          }
+        ]
+      },
+      {
         "title": "Mother's age at birth (in years)",
         "year": "2025",
         "subtitle": "Live births and stillbirths in the 2 years preceding the survey.",

@@ -30,6 +30,28 @@
     ],
     "blocks": [
       {
+        "title": "Total",
+        "year": "2025",
+        "subtitle": "Women aged 15 to 49 years with a live birth in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "Total",
+            "postnatal_check_pct": 76.6
+          }
+        ]
+      },
+      {
+        "title": "Total",
+        "year": "2022",
+        "subtitle": "Women aged 15 to 49 years with a live birth in the 2 years preceding the survey.",
+        "rows": [
+          {
+            "label": "Total",
+            "postnatal_check_pct": 75.4
+          }
+        ]
+      },
+      {
         "title": "Mother's age at birth (in years)",
         "year": "2025",
         "subtitle": "Women aged 15 to 49 years with a live birth in the 2 years preceding the survey.",
