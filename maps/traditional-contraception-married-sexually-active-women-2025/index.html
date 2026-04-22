@@ -98,6 +98,16 @@
     max-width: 1220px;
     margin: 0 auto;
   }
+  #tab-tables {
+    overflow-y: auto;
+    padding: 28px 28px 56px;
+  }
+  #tab-tables::-webkit-scrollbar { width: 4px; }
+  #tab-tables::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 2px; }
+  #tables-container {
+    max-width: 1480px;
+    margin: 0 auto;
+  }
   .chart-page-title {
     font-size: 20px; font-weight: 600; color: var(--lgu-name-color);
     line-height: 1.25; margin-bottom: 4px;
@@ -105,10 +115,25 @@
   .chart-page-subtitle {
     font-size: 12px; color: var(--region-color); margin-bottom: 24px; line-height: 1.6;
   }
+  .chart-group-header {
+    font-size: 15px; font-weight: 600; color: var(--lgu-name-color);
+    margin: 36px 0 2px;
+  }
+  .chart-group-header:first-of-type { margin-top: 0; }
+  .chart-group-subtitle {
+    font-size: 12px; color: var(--region-color); line-height: 1.6;
+    margin-bottom: 16px;
+  }
   .chart-grid {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 24px;
+  }
+  @media (max-width: 900px) {
+    .chart-grid {
+      grid-template-columns: 1fr !important;
+      grid-template-rows: unset !important;
+      grid-auto-flow: row !important;
+    }
   }
   .chart-block {
     background: var(--panel-bg);
@@ -123,21 +148,37 @@
     font-size: 12px; color: var(--region-color); line-height: 1.55;
     margin-bottom: 14px;
   }
-  .chart-svg-wrap { width: 100%; }
-  .chart-svg-wrap svg {
-    display: block;
-    width: 100%;
-    height: auto;
-    overflow: visible;
+  /* Waffle chart layout */
+  .waffle-stack { display: flex; flex-direction: column; }
+  .waffle-inner-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 16px;
+    align-items: start;
+    padding: 8px 0;
+    border-top: 1px solid var(--panel-divider);
   }
-  .chart-legend {
-    display: flex; flex-wrap: wrap; gap: 10px 14px; margin-top: 12px;
-    font: 11px 'IBM Plex Mono', monospace; color: var(--data-label-color); align-items: center;
+  .waffle-inner-row:first-child { border-top: none; }
+  .waffle-cat-label {
+    font-size: 13px; font-weight: 600; color: var(--lgu-name-color);
+    line-height: 1.3; padding-top: 4px;
   }
-  .legend-swatch {
-    display: inline-block; width: 12px; height: 12px;
-    border-radius: 2px; margin-right: 4px; vertical-align: middle;
+  .waffle-pct-text {
+    font: 10px/1.2 'IBM Plex Mono', monospace; color: var(--data-label-color); margin-top: 5px;
   }
+  .waffle-hbar { display: flex; flex-wrap: wrap; gap: 1px; padding: 0; }
+  .waffle-cell { width: 7px; height: 7px; flex: none; }
+  .waffle-legend {
+    border-top: 1px solid var(--panel-divider);
+    padding-top: 14px; margin-top: 14px;
+  }
+  .waffle-legend-title {
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--section-color); margin-bottom: 10px;
+  }
+  .waffle-legend-items-row { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+  .waffle-legend-item { display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--lgu-name-color); }
+  .waffle-legend-swatch { width: 10px; height: 10px; border-radius: 2px; flex: none; }
   .chart-footnotes {
     margin-top: 28px; padding-top: 16px;
     border-top: 1px solid var(--panel-divider);
@@ -145,16 +186,6 @@
   .chart-note {
     font-size: 11px; color: var(--data-label-color); line-height: 1.7;
     margin-bottom: 4px;
-  }
-  #tab-tables {
-    overflow-y: auto;
-    padding: 28px 28px 56px;
-  }
-  #tab-tables::-webkit-scrollbar { width: 4px; }
-  #tab-tables::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 2px; }
-  #tables-container {
-    max-width: 1440px;
-    margin: 0 auto;
   }
   .dt-page-title {
     font-size: 20px; font-weight: 600; color: var(--lgu-name-color);
@@ -167,95 +198,157 @@
     margin-bottom: 24px;
     background: var(--panel-bg);
     border: 1px solid var(--panel-divider);
-    padding: 16px 16px 4px;
+    padding: 16px;
   }
   .dt-section-label {
     font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--section-color); margin-bottom: 12px;
+    color: var(--section-color); margin-bottom: 8px;
+  }
+  .dt-section-subtitle {
+    font-size: 12px; color: var(--region-color); line-height: 1.6;
+    margin-bottom: 14px;
   }
   .dt-table-wrap {
-    width: 100%;
     overflow-x: auto;
-    padding-bottom: 4px;
   }
+  .dt-table-wrap::-webkit-scrollbar { height: 6px; }
+  .dt-table-wrap::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 3px; }
   .dt-table {
     width: 100%;
-    min-width: 780px;
+    min-width: 1120px;
     border-collapse: collapse;
     font-size: 12px;
   }
   .dt-table thead th {
-    padding: 10px 10px 9px;
-    border-right: 1px solid var(--panel-divider);
-    border-bottom: 1px solid var(--panel-divider);
-    font: 10px/1.3 'IBM Plex Mono', monospace;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
+    font: 10px/1.3 'IBM Plex Mono', monospace; letter-spacing: 0.8px; text-transform: uppercase;
     color: var(--data-label-color);
-    text-align: right;
-    vertical-align: bottom;
-    background: rgba(0,0,0,0.02);
+    padding: 6px 10px 8px; text-align: right; vertical-align: bottom;
+    border-bottom: 2px solid var(--panel-border);
+    white-space: nowrap;
   }
-  .dt-table thead th:last-child { border-right: none; }
   .dt-table thead th:first-child {
     text-align: left;
     min-width: 220px;
+    white-space: normal;
   }
   .dt-table thead th.col-group {
     text-align: center;
-    font-size: 11px;
-    letter-spacing: 0.8px;
+    border-bottom: 1px solid var(--panel-border);
+    border-right: 1px solid var(--panel-divider);
+    padding-bottom: 4px;
+    letter-spacing: 1px;
   }
+  .dt-table thead th.col-group:last-child { border-right: none; }
   .dt-table th.year-2022,
   .dt-table td.year-2022 {
-    background: rgba(0,0,0,0.018);
+    background: rgba(26,40,64,0.035);
   }
   .dt-table th.year-break,
   .dt-table td.year-break {
-    border-left: 2px solid rgba(0,0,0,0.09);
+    border-left: 2px solid rgba(26,40,64,0.12);
   }
   .dt-table thead tr.sub-header th {
+    border-bottom: 2px solid var(--panel-border);
+    border-right: 1px solid var(--panel-divider);
     text-transform: none;
-    letter-spacing: 0;
-    line-height: 1.45;
+    line-height: 1.4;
     white-space: normal;
+    min-width: 92px;
   }
-  .dt-table thead tr.sub-header th:not(:first-child) { min-width: 140px; }
-  .dt-table tbody tr {
-    border-bottom: 1px solid var(--panel-divider);
-  }
+  .dt-table thead tr.sub-header th:last-child { border-right: none; }
+  .dt-table tbody tr { border-bottom: 1px solid var(--panel-divider); }
   .dt-table tbody tr:last-child { border-bottom: none; }
   .dt-table tbody td {
-    padding: 10px;
+    padding: 7px 10px; color: var(--text-color); text-align: right;
     border-right: 1px solid var(--panel-divider);
-    text-align: right;
-    vertical-align: top;
-    color: var(--data-value-color);
-    line-height: 1.45;
+    white-space: nowrap;
   }
   .dt-table tbody td:last-child { border-right: none; }
   .dt-table tbody td:first-child {
     text-align: left;
-    font-weight: 500;
-    color: var(--text-color);
+    color: var(--lgu-name-color);
+    white-space: normal;
   }
   .dt-table td.na { color: var(--no-data-color); font-style: italic; }
-  .dt-table tbody tr.dt-total-row td {
-    font-weight: 600;
-    background: rgba(0,0,0,0.025);
-  }
   .dt-footnotes {
-    margin-top: 28px;
+    margin-top: 16px; padding-top: 16px;
+    border-top: 1px solid var(--panel-divider);
   }
   .dt-note {
     font-size: 11px; color: var(--data-label-color); line-height: 1.7;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
   }
   .dt-source {
-    margin-top: 10px;
-    font-size: 11px;
+    font-size: 11px; color: var(--data-label-color); margin-top: 10px; font-style: italic;
+  }
+  .dt-inline-sup {
+    font-size: 9px;
+    margin-left: 1px;
+  }
+  .dt-group-header {
+    font-size: 15px; font-weight: 600; color: var(--lgu-name-color);
+    margin: 36px 0 2px;
+    padding: 0;
+  }
+  .dt-group-header:first-of-type { margin-top: 0; }
+  .dt-group-subtitle {
+    font-size: 12px; color: var(--region-color); line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .data-table-wrap {
+    margin-top: 4px;
+    overflow-x: auto;
+    border: 1px solid var(--panel-divider);
+  }
+  .data-table-wrap::-webkit-scrollbar { height: 6px; }
+  .data-table-wrap::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 999px; }
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .data-table th,
+  .data-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--panel-divider);
+    white-space: nowrap;
+  }
+  .data-table th {
+    font: 10px 'IBM Plex Mono', monospace;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
     color: var(--data-label-color);
-    line-height: 1.7;
+    text-align: right;
+    background: rgba(0,0,0,0.03);
+    vertical-align: bottom;
+  }
+  .data-table td {
+    font-size: 12px;
+    color: var(--data-value-color);
+    text-align: right;
+  }
+  .data-table th:first-child,
+  .data-table td:first-child {
+    position: sticky;
+    left: 0;
+    text-align: left;
+  }
+  .data-table th:first-child {
+    z-index: 2;
+    background: #f4f7fb;
+  }
+  .data-table td:first-child {
+    z-index: 1;
+    color: var(--text-color);
+    background: #fbfcfe;
+  }
+  .data-table tbody tr:nth-child(even) td {
+    background: rgba(0,0,0,0.015);
+  }
+  .data-table tbody tr:nth-child(even) td:first-child {
+    background: #f6f9fd;
+  }
+  .data-table tbody tr:last-child td {
+    border-bottom: none;
   }
   #tab-insights {
     overflow-y: auto;
@@ -507,18 +600,18 @@
 </head>
 <body>
 <svg id="map"></svg>
-<button id="back-btn">← Back</button>
+<button id="back-btn">Back</button>
 <button id="info-btn">ℹ Details</button>
-<div id="status">Loading…</div>
+<div id="status">Loading...</div>
 <div id="metric-toggle"></div>
 <div id="detail">
   <div id="detail-header">
     <div id="detail-header-row">
-      <div class="detail-eyebrow" id="detail-eyebrow">—</div>
-      <button id="detail-close">✕</button>
+      <div class="detail-eyebrow" id="detail-eyebrow">-</div>
+      <button id="detail-close">X</button>
     </div>
-    <div class="detail-lgu-name" id="detail-lgu-name">—</div>
-    <div class="detail-region"   id="detail-region">—</div>
+    <div class="detail-lgu-name" id="detail-lgu-name">-</div>
+    <div class="detail-region"   id="detail-region">-</div>
   </div>
   <div id="detail-body"></div>
 </div>
@@ -539,8 +632,6 @@ let chartsReady = false;
 let chartsContainer = null;
 let tablesReady = false;
 let tablesContainer = null;
-let insightsReady = false;
-let insightsContainer = null;
 
 (function initTabbedLayout() {
   const tabBar = document.createElement('div');
@@ -549,7 +640,6 @@ let insightsContainer = null;
     <button class="tab-btn active" data-tab="map">Maps</button>
     <button class="tab-btn" data-tab="charts">Charts</button>
     <button class="tab-btn" data-tab="tables">Data Tables</button>
-    <button class="tab-btn" data-tab="insights">Insights</button>
   `;
 
   const mapPanel = document.createElement('div');
@@ -560,25 +650,17 @@ let insightsContainer = null;
   chartsPanel.id = 'tab-charts';
   chartsPanel.className = 'tab-panel';
 
-  const insightsPanel = document.createElement('div');
-  insightsPanel.id = 'tab-insights';
-  insightsPanel.className = 'tab-panel';
+  const tablesPanel = document.createElement('div');
+  tablesPanel.id = 'tab-tables';
+  tablesPanel.className = 'tab-panel';
 
   chartsContainer = document.createElement('div');
   chartsContainer.id = 'charts-container';
   chartsPanel.appendChild(chartsContainer);
 
-  const tablesPanel = document.createElement('div');
-  tablesPanel.id = 'tab-tables';
-  tablesPanel.className = 'tab-panel';
-
   tablesContainer = document.createElement('div');
   tablesContainer.id = 'tables-container';
   tablesPanel.appendChild(tablesContainer);
-
-  insightsContainer = document.createElement('div');
-  insightsContainer.id = 'insights-container';
-  insightsPanel.appendChild(insightsContainer);
 
   [svgEl, backBtn, infoBtn, status, metricToggle, detail].forEach(node => mapPanel.appendChild(node));
 
@@ -586,7 +668,6 @@ let insightsContainer = null;
   document.body.insertBefore(mapPanel, tabBar.nextSibling);
   document.body.insertBefore(chartsPanel, mapPanel.nextSibling);
   document.body.insertBefore(tablesPanel, chartsPanel.nextSibling);
-  document.body.insertBefore(insightsPanel, tablesPanel.nextSibling);
 
   tabBar.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => switchTab(btn.dataset.tab, false, true));
@@ -594,23 +675,18 @@ let insightsContainer = null;
 })();
 
 function switchTab(tab, replace = false, syncHash = true) {
-  activeTab = tab === 'charts' ? 'charts' : tab === 'tables' ? 'tables' : tab === 'insights' ? 'insights' : 'map';
+  activeTab = tab === 'charts' ? 'charts' : tab === 'tables' ? 'tables' : 'map';
   document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.tab === activeTab));
   document.getElementById('tab-map').classList.toggle('active', activeTab === 'map');
   document.getElementById('tab-charts').classList.toggle('active', activeTab === 'charts');
   document.getElementById('tab-tables').classList.toggle('active', activeTab === 'tables');
-  document.getElementById('tab-insights').classList.toggle('active', activeTab === 'insights');
-  if (activeTab === 'charts' && config.chartData && !chartsReady) {
-    renderCharts(config.chartData);
+  if (activeTab === 'charts' && (config.chartData || config.tableData) && !chartsReady) {
+    renderCharts(config.chartData || config.tableData);
     chartsReady = true;
   }
   if (activeTab === 'tables' && config.tableData && !tablesReady) {
     renderTables(config.tableData);
     tablesReady = true;
-  }
-  if (activeTab === 'insights' && config.insights && !insightsReady) {
-    renderInsights(config.insights);
-    insightsReady = true;
   }
   if (syncHash) {
     const current = parseStateHash(parseHash());
@@ -770,55 +846,135 @@ function getFill(level, psgc) {
   return null;
 }
 
-function renderCharts(chartData) {
+const CHART_PALETTE = [
+  '#4e79a7','#f28e2b','#e15759','#76b7b2','#59a14f',
+  '#edc948','#b07aa1','#ff9da7','#9c755f','#bab0ac'
+];
+
+function renderCharts(tableData) {
   if (!chartsContainer) return;
   chartsContainer.innerHTML = '';
 
+  function normalizeText(value) {
+    return String(value || '').replace(/Â([¹²³⁴⁵⁶⁷⁸⁹⁰])/g, '$1').trim();
+  }
+
   const header = document.createElement('div');
   header.innerHTML = `
-    <div class="chart-page-title">${chartData.title || config.title}</div>
-    <div class="chart-page-subtitle">${chartData.subtitle || ''}</div>
+    <div class="chart-page-title">${normalizeText(tableData.title || config.title)}</div>
+    <div class="chart-page-subtitle">${normalizeText(tableData.subtitle || '')}</div>
   `;
   chartsContainer.appendChild(header);
 
-  const grid = document.createElement('div');
-  grid.className = 'chart-grid';
-  chartsContainer.appendChild(grid);
+  const totalKey = 'any_traditional_method_pct';
+  const totalMethodLabel = 'traditional contraceptive methods';
+  const allSeries = (tableData.series || []).map((s, i) => ({
+    ...s,
+    label: normalizeText(s.label || ''),
+    color: s.color || CHART_PALETTE[i % CHART_PALETTE.length]
+  }));
+  const indivSeries = allSeries.filter(s => s.key !== totalKey);
 
-  (chartData.blocks || []).forEach(block => {
-    const palette = getChartSeriesPalette(chartData.series || [], block.year);
+  const groupTotalsByYear = {};
+  const groupMetricTotalsByYear = {};
+  const combinedMetricTotalsByYear = {};
+  if (config.tableData?.groups?.length) {
+    config.tableData.groups.forEach(group => {
+      const groupKey = normalizeText(group.groupTitle || '');
+      if (!groupTotalsByYear[groupKey]) groupTotalsByYear[groupKey] = {};
+      if (!groupMetricTotalsByYear[groupKey]) groupMetricTotalsByYear[groupKey] = {};
+      (group.blocks || []).forEach(block => {
+        if (!/total/i.test(String(block.title || ''))) return;
+        const yr = String(block.year || '');
+        const row = block.rows?.[0] || {};
+        const women = Number(String(row.women_total || '0').replace(/,/g, '')) || 0;
+        if (women <= 0) return;
+        groupTotalsByYear[groupKey][yr] = women;
+
+        const metricPct = Number(row[totalKey] || 0);
+        const metricWomen = women * metricPct / 100;
+        groupMetricTotalsByYear[groupKey][yr] = metricWomen;
+        combinedMetricTotalsByYear[yr] = (combinedMetricTotalsByYear[yr] || 0) + metricWomen;
+      });
+    });
+  }
+
+  function appendChartCard(block, targetGrid, groupKey = '') {
     const card = document.createElement('section');
     card.className = 'chart-block';
+    const isTotalBlock = /total/i.test(String(block.title || ''));
 
     const title = document.createElement('div');
     title.className = 'chart-block-title';
-    title.textContent = block.title ? `${block.title} - ${block.year}` : String(block.year || '');
+    const displayTitle = normalizeText(block.title || '').replace(/\s*-\s*Total$/i, '');
+    title.textContent = displayTitle ? `${displayTitle} - ${block.year}` : String(block.year || '');
     card.appendChild(title);
 
     const subtitle = document.createElement('div');
     subtitle.className = 'chart-block-subtitle';
-    subtitle.textContent = block.subtitle || chartData.blockSubtitle || '';
+    const subtitleText = isTotalBlock && groupKey === 'Currently Married Women'
+      ? `Share of all women currently using ${totalMethodLabel} who are currently married women aged 15 to 49 years.`
+      : isTotalBlock && groupKey === 'Sexually Active Unmarried Women'
+        ? `Share of all women currently using ${totalMethodLabel} who are sexually active unmarried women aged 15 to 49 years.`
+        : normalizeText(block.subtitle || tableData.blockSubtitle || '');
+    subtitle.textContent = subtitleText;
     card.appendChild(subtitle);
 
-    drawGroupedBars(card, chartData, block, palette);
+    const blockPalette = block.year === '2022'
+      ? indivSeries.map(s => ({ ...s, color: d3.color(s.color)?.brighter(0.85).formatHex() || s.color }))
+      : indivSeries;
+    const yr = String(block.year || '');
+    const groupYearTotal = groupTotalsByYear[groupKey]?.[yr] || 0;
+    const overallWomen = isTotalBlock
+      ? (combinedMetricTotalsByYear[yr] || 0)
+      : groupYearTotal;
+    const blockForChart = isTotalBlock
+      ? {
+        ...block,
+        rows: (block.rows || []).map(row => {
+          const women = Number(String(row.women_total || '0').replace(/,/g, '')) || 0;
+          const metricPct = Number(row[totalKey] || 0);
+          return { ...row, _chartWeight: women * metricPct / 100 };
+        }),
+      }
+      : block;
+    card.appendChild(buildWaffleStack(blockForChart, blockPalette, totalKey, overallWomen));
+    card.appendChild(buildWaffleLegend(blockPalette));
+    targetGrid.appendChild(card);
+  }
 
-    const legend = document.createElement('div');
-    legend.className = 'chart-legend';
-    legend.innerHTML = palette.map(series =>
-      `<span><span class="legend-swatch" style="background:${series.displayColor}"></span>${series.label}</span>`
-    ).join('');
-    card.appendChild(legend);
+  if (config.tableData?.groups?.length) {
+    config.tableData.groups.forEach(group => {
+      const groupTitle = normalizeText(group.groupTitle || '');
 
-    grid.appendChild(card);
-  });
+      if (groupTitle) {
+        const h = document.createElement('div');
+        h.className = 'chart-group-header';
+        h.textContent = groupTitle;
+        chartsContainer.appendChild(h);
+      }
 
-  if (chartData.notes?.length) {
+      const grid = document.createElement('div');
+      grid.className = 'chart-grid';
+      grid.style.gridTemplateColumns = 'repeat(2, 1fr)';
+      chartsContainer.appendChild(grid);
+      (group.blocks || []).forEach(block => appendChartCard(block, grid, groupTitle));
+    });
+  } else {
+    const grid = document.createElement('div');
+    grid.className = 'chart-grid';
+    grid.style.gridTemplateColumns = 'repeat(2, 1fr)';
+    chartsContainer.appendChild(grid);
+    (tableData.blocks || []).forEach(block => appendChartCard(block, grid));
+  }
+
+  if (tableData.notes?.length) {
     const foot = document.createElement('div');
     foot.className = 'chart-footnotes';
-    chartData.notes.forEach(note => {
+    tableData.notes.forEach(note => {
       const row = document.createElement('div');
       row.className = 'chart-note';
-      row.textContent = note;
+      row.textContent = normalizeText(note);
       foot.appendChild(row);
     });
     chartsContainer.appendChild(foot);
@@ -826,27 +982,37 @@ function renderCharts(chartData) {
 }
 
 function renderTables(tableData) {
-  if (!tablesContainer) return;
+  if (!tablesContainer || !tableData) return;
   tablesContainer.innerHTML = '';
 
-  function el(tag, cls) {
-    const node = document.createElement(tag);
-    if (cls) node.className = cls;
-    return node;
+  function normalizeText(value) {
+    return String(value || '').replace(/Â([¹²³⁴⁵⁶⁷⁸⁹⁰])/g, '$1').trim();
   }
 
-  function appendTextWithNote(node, text, noteRef) {
-    node.textContent = text;
-    if (!noteRef) return;
-    const sup = document.createElement('sup');
-    sup.style.cssText = 'font-size:9px;margin-left:1px';
-    sup.textContent = noteRef;
-    node.appendChild(sup);
+  function splitNoteRef(label) {
+    const normalized = normalizeText(label);
+    const match = normalized.match(/^(.*?)([¹²³⁴⁵⁶⁷⁸⁹⁰]+)$/);
+    return match
+      ? { text: match[1].trim(), noteRef: match[2] }
+      : { text: normalized, noteRef: '' };
   }
 
-  function labelCell(text, noteRef) {
+  function appendTextWithNote(container, label, noteRef) {
+    const parsed = splitNoteRef(label);
+    container.appendChild(document.createTextNode(parsed.text || ''));
+    if (parsed.noteRef || noteRef) {
+      const sup = document.createElement('sup');
+      sup.className = 'dt-inline-sup';
+      sup.textContent = normalizeText(parsed.noteRef || noteRef);
+      container.appendChild(sup);
+    }
+  }
+
+  function buildValueCell(value) {
     const cell = document.createElement('td');
-    appendTextWithNote(cell, text, noteRef);
+    const display = value == null ? 'NA' : String(value);
+    cell.textContent = display;
+    if (display === 'NA' || display === '*') cell.className = 'na';
     return cell;
   }
 
@@ -855,55 +1021,60 @@ function renderTables(tableData) {
     if (groupIndex > 0 && colIndex === 0) node.classList.add('year-break');
   }
 
-  function valueCell(value, group, groupIndex, colIndex) {
-    const cell = document.createElement('td');
-    applyYearClasses(cell, group, groupIndex, colIndex);
-    if (value == null || value === 'NA') {
-      cell.textContent = 'N/A';
-      cell.className = 'na';
-      applyYearClasses(cell, group, groupIndex, colIndex);
-      return cell;
+  function recordValue(record, field) {
+    const displayKey = `${field}_display`;
+    if (record?.[displayKey] != null) return String(record[displayKey]);
+    if (record?.[field] == null) return 'NA';
+    return String(record[field]);
+  }
+
+  function createTableSection(sectionConfig) {
+    const section = document.createElement('section');
+    section.className = 'dt-section';
+    if (sectionConfig.id) section.dataset.tableId = sectionConfig.id;
+
+    const label = document.createElement('div');
+    label.className = 'dt-section-label';
+    appendTextWithNote(label, sectionConfig.title || '', sectionConfig.titleNoteRef);
+    section.appendChild(label);
+
+    if (sectionConfig.subtitle) {
+      const subtitle = document.createElement('div');
+      subtitle.className = 'dt-section-subtitle';
+      subtitle.textContent = normalizeText(sectionConfig.subtitle);
+      section.appendChild(subtitle);
     }
-    cell.textContent = String(value);
-    return cell;
-  }
 
-  function valuesFromRegionRecord(record) {
-    return (tableData.colGroups || []).flatMap(group =>
-      (group.cols || []).map(col => {
-        const displayKey = col.displayKey || `${col.key}_display`;
-        if (record[displayKey] != null) return String(record[displayKey]);
-        if (record[col.key] == null) return 'NA';
-        return String(record[col.key]);
-      })
-    );
-  }
+    const wrap = document.createElement('div');
+    wrap.className = 'dt-table-wrap';
+    section.appendChild(wrap);
 
-  function buildGroupedTable(rows, totalClass = false) {
-    const wrap = el('div', 'dt-table-wrap');
-    const table = el('table', 'dt-table');
-    const thead = table.createTHead();
-    const columnMeta = (tableData.colGroups || []).flatMap((group, groupIndex) =>
+    const table = document.createElement('table');
+    table.className = 'dt-table';
+    wrap.appendChild(table);
+
+    const columnMeta = (sectionConfig.colGroups || []).flatMap((group, groupIndex) =>
       (group.cols || []).map((col, colIndex) => ({ group, groupIndex, colIndex }))
     );
 
+    const thead = table.createTHead();
     const groupRow = thead.insertRow();
-    const topLeft = document.createElement('th');
-    topLeft.rowSpan = 2;
-    groupRow.appendChild(topLeft);
+    groupRow.appendChild(document.createElement('th'));
 
-    (tableData.colGroups || []).forEach((group, groupIndex) => {
+    (sectionConfig.colGroups || []).forEach((group, groupIndex) => {
       const th = document.createElement('th');
       th.className = 'col-group';
-      applyYearClasses(th, group, groupIndex, 0);
       th.colSpan = (group.cols || []).length;
-      th.textContent = group.label || '';
+      applyYearClasses(th, group, groupIndex, 0);
+      th.textContent = normalizeText(group.label || '');
       groupRow.appendChild(th);
     });
 
     const subRow = thead.insertRow();
     subRow.className = 'sub-header';
-    (tableData.colGroups || []).forEach((group, groupIndex) => {
+    subRow.appendChild(document.createElement('th'));
+
+    (sectionConfig.colGroups || []).forEach((group, groupIndex) => {
       (group.cols || []).forEach((col, colIndex) => {
         const th = document.createElement('th');
         applyYearClasses(th, group, groupIndex, colIndex);
@@ -913,77 +1084,173 @@ function renderTables(tableData) {
     });
 
     const tbody = table.createTBody();
-    rows.forEach(row => {
+    (sectionConfig.rows || []).forEach(row => {
       const tr = tbody.insertRow();
-      if (totalClass || row.isTotal) tr.className = 'dt-total-row';
-      tr.appendChild(labelCell(row.label || '', row.noteRef || null));
+      const labelCell = document.createElement('td');
+      appendTextWithNote(labelCell, row.label || '', row.noteRef);
+      tr.appendChild(labelCell);
+
       (row.values || []).forEach((value, valueIndex) => {
         const meta = columnMeta[valueIndex] || {};
-        tr.appendChild(valueCell(value, meta.group, meta.groupIndex || 0, meta.colIndex || 0));
+        const cell = buildValueCell(value);
+        applyYearClasses(cell, meta.group, meta.groupIndex || 0, meta.colIndex || 0);
+        tr.appendChild(cell);
       });
     });
 
-    wrap.appendChild(table);
-    return wrap;
+    tablesContainer.appendChild(section);
+  }
+
+  function buildGroupedSections(blocks) {
+    const sections = [];
+    const grouped = new Map();
+
+    (blocks || tableData.blocks || []).forEach(block => {
+      const key = String(block.title || '');
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push(block);
+    });
+
+    grouped.forEach((blocks, title) => {
+      const blockOrder = ['2025', '2022']
+        .map(year => blocks.find(block => String(block.year) === year))
+        .filter(Boolean);
+      const rowOrder = [];
+      const rowKeys = new Set();
+      const rowsByYear = Object.fromEntries(blockOrder.map(block => [String(block.year), new Map()]));
+
+      blockOrder.forEach(block => {
+        (block.rows || []).forEach(row => {
+          const key = String(row.label || '');
+          if (!rowKeys.has(key)) {
+            rowKeys.add(key);
+            rowOrder.push(key);
+          }
+          rowsByYear[String(block.year)].set(key, row);
+        });
+      });
+
+      sections.push({
+        title,
+        subtitle: blockOrder[0]?.subtitle || tableData.blockSubtitle || '',
+        colGroups: blockOrder.map(block => ({
+          label: String(block.year || ''),
+          cols: (tableData.series || []).map(series => ({ label: series.label, field: series.key })),
+        })),
+        rows: rowOrder.map(label => ({
+          label,
+          values: blockOrder.flatMap(block => {
+            const row = rowsByYear[String(block.year)].get(label);
+            return (tableData.series || []).map(series => recordValue(row, series.key));
+          }),
+        })),
+      });
+    });
+
+    return sections;
+  }
+
+  function buildRegionSection() {
+    const regionRecords = config.data?.region || [];
+    if (!regionRecords.length) return null;
+
+    return {
+      id: 'region',
+      title: 'Region',
+      subtitle: tableData.regionSubtitle || 'Currently married women aged 15 to 49 years.',
+      colGroups: [
+        {
+          label: '2025',
+          cols: [
+            ...(tableData.series || []).map(series => ({ label: series.label, field: series.key })),
+            { label: 'Total women', field: 'women_total' },
+          ],
+        },
+        {
+          label: '2022',
+          cols: [
+            ...(tableData.series || []).map(series => ({ label: series.label, field: `${series.key}_2022` })),
+            { label: 'Total women', field: 'women_total_2022' },
+          ],
+        },
+      ],
+      rows: regionRecords.map(record => ({
+        label: nameRegistry[String(record.psgc)] || ('PSGC ' + record.psgc),
+        noteRef: record.noteRef || '',
+        values: [
+          ...(tableData.series || []).map(series => recordValue(record, series.key)),
+          recordValue(record, 'women_total'),
+          ...(tableData.series || []).map(series => recordValue(record, `${series.key}_2022`)),
+          recordValue(record, 'women_total_2022'),
+        ],
+      })),
+    };
+  }
+
+  function extractSourceText() {
+    const match = String(config.description || '').match(/\bSource:\s*(.+)$/i);
+    return normalizeText(match ? match[1] : '');
   }
 
   const header = document.createElement('div');
   header.innerHTML = `
-    <div class="dt-page-title">${tableData.title || config.title || ''}</div>
-    <div class="dt-page-subtitle">${tableData.subtitle || ''}</div>
+    <div class="dt-page-title">${normalizeText(tableData.title || config.title)}</div>
+    <div class="dt-page-subtitle">${normalizeText(tableData.subtitle || '')}</div>
   `;
   tablesContainer.appendChild(header);
 
-  (tableData.sections || []).forEach(section => {
-    const card = el('section', 'dt-section');
-    const title = el('div', 'dt-section-label');
-    title.textContent = section.title || '';
-    card.appendChild(title);
-    card.appendChild(buildGroupedTable(section.rows || []));
-    tablesContainer.appendChild(card);
+  if (tableData.groups && tableData.groups.length) {
+    tableData.groups.forEach((group, groupIdx) => {
+      const h = document.createElement('div');
+      h.className = 'dt-group-header';
+      h.textContent = normalizeText(group.groupTitle || '');
+      tablesContainer.appendChild(h);
+      buildGroupedSections(group.blocks).forEach(createTableSection);
+      if (groupIdx === 0) {
+        const regionSection = buildRegionSection();
+        if (regionSection) createTableSection(regionSection);
+      }
+    });
+  } else {
+    const sections = buildGroupedSections(tableData.blocks);
+    const regionSection = buildRegionSection();
+    if (regionSection) sections.push(regionSection);
+    sections.forEach(createTableSection);
+  }
+
+  const notes = [];
+  const seen = new Set();
+  const pushNote = (note) => {
+    const text = normalizeText(note);
+    if (!text || seen.has(text)) return;
+    seen.add(text);
+    notes.push(text);
+  };
+
+  (tableData.notes || []).forEach(pushNote);
+  (config.data?.region || []).forEach(record => {
+    if (record.psa_note) {
+      pushNote(record.noteRef ? `${record.noteRef} ${record.psa_note}` : record.psa_note);
+    }
   });
 
-  if (tableData.total?.values?.length) {
-    const card = el('section', 'dt-section');
-    const title = el('div', 'dt-section-label');
-    title.textContent = tableData.total.label || 'Total';
-    card.appendChild(title);
-    card.appendChild(buildGroupedTable([{
-      label: tableData.total.label || 'Total',
-      values: tableData.total.values,
-      isTotal: true,
-    }], true));
-    tablesContainer.appendChild(card);
-  }
-
-  if (tableData.includeRegionTable && (config.data?.region || []).length) {
-    const card = el('section', 'dt-section');
-    const title = el('div', 'dt-section-label');
-    title.textContent = tableData.regionSectionTitle || 'Region';
-    card.appendChild(title);
-    const rows = (config.data.region || []).map(record => ({
-      label: nameRegistry[String(record.psgc)] || ('PSGC ' + record.psgc),
-      noteRef: record.noteRef || null,
-      values: valuesFromRegionRecord(record),
-    }));
-    card.appendChild(buildGroupedTable(rows));
-    tablesContainer.appendChild(card);
-  }
-
-  if (tableData.footnotes?.length) {
-    const foot = el('div', 'dt-footnotes');
-    tableData.footnotes.forEach(note => {
-      const row = el('div', 'dt-note');
+  const sourceText = extractSourceText();
+  if (notes.length || sourceText) {
+    const foot = document.createElement('div');
+    foot.className = 'dt-footnotes';
+    notes.forEach(note => {
+      const row = document.createElement('div');
+      row.className = 'dt-note';
       row.textContent = note;
       foot.appendChild(row);
     });
+    if (sourceText) {
+      const source = document.createElement('div');
+      source.className = 'dt-source';
+      source.textContent = `Source: ${sourceText}`;
+      foot.appendChild(source);
+    }
     tablesContainer.appendChild(foot);
-  }
-
-  if (tableData.source) {
-    const src = el('div', 'dt-source');
-    src.textContent = 'Source: ' + tableData.source;
-    tablesContainer.appendChild(src);
   }
 }
 
@@ -1030,15 +1297,6 @@ function renderInsights(insights) {
   }
 }
 
-function getChartSeriesPalette(series, year) {
-  const useLighter = String(year) === '2022';
-  return series.map(item => {
-    const base = d3.color(item.color);
-    const displayColor = useLighter && base ? base.brighter(0.85).formatHex() : item.color;
-    return { ...item, displayColor };
-  });
-}
-
 function formatChartValue(row, key) {
   const displayKey = `${key}_display`;
   if (row[displayKey] != null) return String(row[displayKey]);
@@ -1046,112 +1304,108 @@ function formatChartValue(row, key) {
   return String(row[key]);
 }
 
-function drawGroupedBars(container, chartData, block, series) {
-  const rows = block.rows || [];
-  const VW = 920;
-  const VH = 440;
-  const ML = 64;
-  const MR = 24;
-  const MT = 18;
-  const MB = 96;
-  const INNER_W = VW - ML - MR;
-  const INNER_H = VH - MT - MB;
-  const yMax = chartData.xMax || 100;
-
-  const wrap = document.createElement('div');
-  wrap.className = 'chart-svg-wrap';
-  container.appendChild(wrap);
-
-  const svgNode = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  svgNode.setAttribute('viewBox', `0 0 ${VW} ${VH}`);
-  svgNode.setAttribute('preserveAspectRatio', 'xMinYMid meet');
-  wrap.appendChild(svgNode);
-
-  const chartSvg = d3.select(svgNode);
-  const chart = chartSvg.append('g').attr('transform', `translate(${ML},${MT})`);
-  const x = d3.scaleBand().domain(rows.map(r => r.label)).range([0, INNER_W]).padding(0.22);
-  const xInner = d3.scaleBand().domain(series.map(s => s.key)).range([0, x.bandwidth()]).padding(0.12);
-  const y = d3.scaleLinear().domain([0, yMax]).range([INNER_H, 0]);
-
-  d3.range(0, yMax + 0.01, 10).forEach(tick => {
-    const yy = y(tick);
-    chart.append('line')
-      .attr('x1', 0).attr('y1', yy)
-      .attr('x2', INNER_W).attr('y2', yy)
-      .attr('stroke', 'var(--panel-divider)')
-      .attr('stroke-dasharray', tick === 0 ? null : '2,3');
-    chart.append('text')
-      .attr('x', -10).attr('y', yy)
-      .attr('text-anchor', 'end')
-      .attr('dominant-baseline', 'middle')
-      .attr('font-size', 10)
-      .attr('font-family', 'IBM Plex Mono, monospace')
-      .attr('fill', 'var(--data-label-color)')
-      .text(tick);
+function buildWaffleCells(row, indivSeries, totalCells, totalPct) {
+  const cells = [];
+  let cumulative = 0;
+  indivSeries.forEach(s => {
+    const pct = row[s.key] || 0;
+    if (!pct) return;
+    cumulative += pct;
+    const target = totalPct > 0 ? Math.round(cumulative / totalPct * totalCells) : 0;
+    while (cells.length < target) cells.push({ color: s.color, label: s.label, pct });
   });
-
-  const groups = chart.selectAll('g.row-group')
-    .data(rows)
-    .join('g')
-    .attr('class', 'row-group')
-    .attr('transform', d => `translate(${x(d.label)},0)`);
-
-  groups.each(function(row) {
-    const group = d3.select(this);
-
-    series.forEach(s => {
-      const value = row[s.key];
-      if (value == null) return;
-
-      const barHeight = INNER_H - y(value);
-      const barX = xInner(s.key);
-      const labelY = Math.max(y(value) - 4, 10);
-
-      group.append('rect')
-        .attr('x', barX)
-        .attr('y', y(value))
-        .attr('width', xInner.bandwidth())
-        .attr('height', barHeight)
-        .attr('fill', s.displayColor);
-
-      group.append('text')
-        .attr('x', barX + xInner.bandwidth() / 2)
-        .attr('y', labelY)
-        .attr('text-anchor', 'middle')
-        .attr('font-size', 7.5)
-        .attr('font-family', 'IBM Plex Mono, monospace')
-        .attr('fill', 'var(--data-label-color)')
-        .text(formatChartValue(row, s.key));
-    });
-
-    group.append('text')
-      .attr('x', x.bandwidth() / 2)
-      .attr('y', INNER_H + 16)
-      .attr('text-anchor', 'end')
-      .attr('transform', `rotate(-24, ${x.bandwidth() / 2}, ${INNER_H + 16})`)
-      .attr('font-size', 10.5)
-      .attr('font-family', 'Inter, sans-serif')
-      .attr('fill', 'var(--text-color)')
-      .text(row.label);
-  });
-
-  chartSvg.append('text')
-    .attr('x', ML + INNER_W / 2)
-    .attr('y', VH - 18)
-    .attr('text-anchor', 'middle')
-    .attr('font-size', 11)
-    .attr('font-family', 'Inter, sans-serif')
-    .attr('fill', 'var(--data-label-color)')
-    .text(block.title || chartData.xLabel || 'Category');
-
-  chartSvg.append('text')
-    .attr('transform', `translate(20 ${MT + INNER_H / 2}) rotate(-90)`)
-    .attr('text-anchor', 'middle')
-    .attr('font-size', 11)
-    .attr('font-family', 'Inter, sans-serif')
-    .attr('fill', 'var(--data-label-color)')
-    .text(chartData.yLabel || 'Percentage');
+  while (cells.length < totalCells) cells.push({ color: 'rgba(0,0,0,0.06)', label: '', pct: 0 });
+  return cells.slice(0, totalCells);
 }
+
+function buildWaffleStack(block, indivSeries, totalKey, overallWomen) {
+  const stack = document.createElement('div');
+  stack.className = 'waffle-stack';
+
+  (block.rows || []).forEach(row => {
+    const totalPct = row[totalKey] || 0;
+    let N, pctLabel;
+    if (overallWomen > 0) {
+      const weight = (row._chartWeight != null)
+        ? Number(row._chartWeight || 0)
+        : (Number(String(row.women_total || '0').replace(/,/g, '')) || 0);
+      const share = weight / overallWomen * 100;
+      N = Math.round(share * 10);
+      pctLabel = `${share.toFixed(1)}%`;
+    } else if (totalKey) {
+      N = Math.round(totalPct * 10);
+      pctLabel = `${formatChartValue(row, totalKey)}%`;
+    } else {
+      N = 1000;
+      pctLabel = '';
+    }
+
+    const wRow = document.createElement('div');
+    wRow.className = 'waffle-inner-row';
+
+    const labelCol = document.createElement('div');
+
+    const catLabel = document.createElement('div');
+    catLabel.className = 'waffle-cat-label';
+    catLabel.textContent = row.label;
+    labelCol.appendChild(catLabel);
+
+    const pctText = document.createElement('div');
+    pctText.className = 'waffle-pct-text';
+    pctText.textContent = pctLabel;
+    labelCol.appendChild(pctText);
+
+    wRow.appendChild(labelCol);
+
+    const hbar = document.createElement('div');
+    hbar.className = 'waffle-hbar';
+
+    if (N > 0) {
+      buildWaffleCells(row, indivSeries, N, totalPct).forEach(cell => {
+        const node = document.createElement('div');
+        node.className = 'waffle-cell';
+        node.style.background = cell.color;
+        if (cell.label && cell.pct) node.title = `${cell.label}: ${Number(cell.pct).toFixed(1)}%`;
+        hbar.appendChild(node);
+      });
+    }
+
+    wRow.appendChild(hbar);
+    stack.appendChild(wRow);
+  });
+
+  return stack;
+}
+
+function buildWaffleLegend(indivSeries) {
+  const legend = document.createElement('div');
+  legend.className = 'waffle-legend';
+
+  const title = document.createElement('div');
+  title.className = 'waffle-legend-title';
+  title.textContent = 'Method';
+  legend.appendChild(title);
+
+  const itemsRow = document.createElement('div');
+  itemsRow.className = 'waffle-legend-items-row';
+
+  indivSeries.forEach(s => {
+    const item = document.createElement('div');
+    item.className = 'waffle-legend-item';
+
+    const swatch = document.createElement('span');
+    swatch.className = 'waffle-legend-swatch';
+    swatch.style.background = s.color;
+    item.appendChild(swatch);
+
+    item.appendChild(document.createTextNode(s.label));
+    itemsRow.appendChild(item);
+  });
+
+  legend.appendChild(itemsRow);
+  return legend;
+}
+
 
 let currentContext = null; // { name, parentName, psgc, type }
 const isMobile = window.matchMedia('(pointer: coarse)').matches;
@@ -1225,7 +1479,7 @@ function shortenName(name, nameKey) {
     return name;          // e.g. "CARAGA", "MIMAROPA"
   }
   // For provinces / cities: truncate only if very long
-  return name.length > 20 ? name.slice(0, 18) + '…' : name;
+  return name.length > 20 ? name.slice(0, 18) + '...' : name;
 }
 
 function addLabels(features, pathFn, nameKey, fontSize) {
@@ -1288,13 +1542,11 @@ function slugToMetric(slug) {
 
 function parseStateHash(hash = parseHash()) {
   const parts = String(hash || '').split('--').filter(Boolean);
-  const tab = parts.includes('tinsights')
-    ? 'insights'
-    : parts.includes('ttables')
-      ? 'tables'
-      : parts.includes('tcharts') || parts.includes('tdata')
-        ? 'charts'
-        : 'map';
+  const tab = parts.includes('ttables')
+    ? 'tables'
+    : (parts.includes('tcharts') || parts.includes('tdata'))
+      ? 'charts'
+      : 'map';
   const metricToken = parts.find(part => part.startsWith('m'));
   const viewToken = parts.find(part => part.startsWith('v'));
   return {
@@ -1305,14 +1557,12 @@ function parseStateHash(hash = parseHash()) {
 }
 
 function buildStateHash(viewHash = '/') {
-  const metric = config.colorField || Object.keys(config.colorDomains || {})[0] || 'postnatal_check_pct';
-  const tabToken = activeTab === 'insights'
-    ? 'tinsights'
-    : activeTab === 'tables'
-      ? 'ttables'
-      : activeTab === 'charts'
-        ? 'tcharts'
-        : 'tmap';
+  const metric = config.colorField || Object.keys(config.colorDomains || {})[0] || 'any_method_pct';
+  const tabToken = activeTab === 'tables'
+    ? 'ttables'
+    : activeTab === 'charts'
+      ? 'tcharts'
+      : 'tmap';
   const parts = [tabToken, 'm' + metricToSlug(metric)];
   const cleanView = String(viewHash || '/').replace(/^\/+/, '');
   if (cleanView && cleanView !== '/') parts.push('v' + cleanView.replace(/\//g, '-'));
@@ -1752,7 +2002,7 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
             .transition().delay(350).duration(300).attr('opacity', 1);
         }
 
-        status.textContent = `${name} — ${munFeatures.length} municipalities/cities (${data.features.length} total)${hucFeatures.length ? ' + ' + hucFeatures.length + ' HUC' + (hucFeatures.length > 1 ? 's' : '') : ''}`;
+        status.textContent = `${name} - ${munFeatures.length} municipalities/cities (${data.features.length} total)${hucFeatures.length ? ' + ' + hucFeatures.length + ' HUC' + (hucFeatures.length > 1 ? 's' : '') : ''}`;
         if (afterRender) afterRender(munPath, munFeatures);
       };
 

@@ -71,16 +71,53 @@
       {
         "key": "traditional_other_pct",
         "label": "Other"
+      },
+      {
+        "key": "women_total",
+        "label": "Total number of women aged 15 to 49 years"
       }
     ],
     "blocks": [
       {
+        "title": "Total",
+        "year": "2025",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Total",
+            "women_total": "29,694",
+            "any_traditional_method_pct": 8.1,
+            "calendar_rhythm_pct": 1.3,
+            "withdrawal_pct": 6.8,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
+        "title": "Total",
+        "year": "2022",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Total",
+            "women_total": "27,821",
+            "any_traditional_method_pct": 9.8,
+            "calendar_rhythm_pct": 1.7,
+            "withdrawal_pct": 8.1,
+            "traditional_other_pct": 0,
+            "traditional_other_pct_display": "0.0"
+          }
+        ]
+      },
+      {
         "title": "Number of living children",
         "year": "2025",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "0",
+            "women_total": "13,208",
             "any_traditional_method_pct": 1.8,
             "calendar_rhythm_pct": 0.2,
             "withdrawal_pct": 1.5,
@@ -89,6 +126,7 @@
           },
           {
             "label": "1-2",
+            "women_total": "9,768",
             "any_traditional_method_pct": 14.7,
             "calendar_rhythm_pct": 2.3,
             "withdrawal_pct": 12.3,
@@ -97,6 +135,7 @@
           },
           {
             "label": "3-4",
+            "women_total": "5,150",
             "any_traditional_method_pct": 11,
             "any_traditional_method_pct_display": "11.0",
             "calendar_rhythm_pct": 2.1,
@@ -106,6 +145,7 @@
           },
           {
             "label": "5+",
+            "women_total": "1,568",
             "any_traditional_method_pct": 10.9,
             "calendar_rhythm_pct": 1.7,
             "withdrawal_pct": 9.2,
@@ -117,10 +157,11 @@
       {
         "title": "Number of living children",
         "year": "2022",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "0",
+            "women_total": "12,244",
             "any_traditional_method_pct": 2.2,
             "calendar_rhythm_pct": 0.2,
             "withdrawal_pct": 1.9,
@@ -129,6 +170,7 @@
           },
           {
             "label": "1-2",
+            "women_total": "8,634",
             "any_traditional_method_pct": 16.7,
             "calendar_rhythm_pct": 2.6,
             "withdrawal_pct": 14,
@@ -138,6 +180,7 @@
           },
           {
             "label": "3-4",
+            "women_total": "5,031",
             "any_traditional_method_pct": 14.5,
             "calendar_rhythm_pct": 3.2,
             "withdrawal_pct": 11.2,
@@ -145,6 +188,7 @@
           },
           {
             "label": "5+",
+            "women_total": "1,912",
             "any_traditional_method_pct": 15.3,
             "calendar_rhythm_pct": 3.2,
             "withdrawal_pct": 11.9,
@@ -155,10 +199,11 @@
       {
         "title": "Age",
         "year": "2025",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "15-19",
+            "women_total": "5,691",
             "any_traditional_method_pct": 0.6,
             "calendar_rhythm_pct": 0,
             "calendar_rhythm_pct_display": "0.0",
@@ -168,6 +213,7 @@
           },
           {
             "label": "20-24",
+            "women_total": "4,637",
             "any_traditional_method_pct": 4.5,
             "calendar_rhythm_pct": 0.3,
             "withdrawal_pct": 4.2,
@@ -176,6 +222,7 @@
           },
           {
             "label": "25-29",
+            "women_total": "4,172",
             "any_traditional_method_pct": 8.9,
             "calendar_rhythm_pct": 0.9,
             "withdrawal_pct": 8,
@@ -185,6 +232,7 @@
           },
           {
             "label": "30-34",
+            "women_total": "4,152",
             "any_traditional_method_pct": 11.5,
             "calendar_rhythm_pct": 1.3,
             "withdrawal_pct": 10.2,
@@ -193,6 +241,7 @@
           },
           {
             "label": "35-39",
+            "women_total": "4,048",
             "any_traditional_method_pct": 12.7,
             "calendar_rhythm_pct": 2.1,
             "withdrawal_pct": 10.6,
@@ -200,6 +249,7 @@
           },
           {
             "label": "40-44",
+            "women_total": "3,649",
             "any_traditional_method_pct": 12.7,
             "calendar_rhythm_pct": 2.8,
             "withdrawal_pct": 9.9,
@@ -208,6 +258,7 @@
           },
           {
             "label": "45-49",
+            "women_total": "3,345",
             "any_traditional_method_pct": 10,
             "any_traditional_method_pct_display": "10.0",
             "calendar_rhythm_pct": 3,
@@ -222,10 +273,11 @@
       {
         "title": "Age",
         "year": "2022",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "15-19",
+            "women_total": "5,531",
             "any_traditional_method_pct": 0.8,
             "calendar_rhythm_pct": 0,
             "calendar_rhythm_pct_display": "0.0",
@@ -235,6 +287,7 @@
           },
           {
             "label": "20-24",
+            "women_total": "4,677",
             "any_traditional_method_pct": 5.9,
             "calendar_rhythm_pct": 0.6,
             "withdrawal_pct": 5.3,
@@ -243,6 +296,7 @@
           },
           {
             "label": "25-29",
+            "women_total": "3,904",
             "any_traditional_method_pct": 11.2,
             "calendar_rhythm_pct": 0.9,
             "withdrawal_pct": 10.2,
@@ -251,6 +305,7 @@
           },
           {
             "label": "30-34",
+            "women_total": "3,729",
             "any_traditional_method_pct": 14.4,
             "calendar_rhythm_pct": 2.3,
             "withdrawal_pct": 12.1,
@@ -259,6 +314,7 @@
           },
           {
             "label": "35-39",
+            "women_total": "3,418",
             "any_traditional_method_pct": 14.4,
             "calendar_rhythm_pct": 2.8,
             "withdrawal_pct": 11.6,
@@ -266,6 +322,7 @@
           },
           {
             "label": "40-44",
+            "women_total": "3,389",
             "any_traditional_method_pct": 15.6,
             "calendar_rhythm_pct": 3.8,
             "withdrawal_pct": 11.7,
@@ -273,6 +330,7 @@
           },
           {
             "label": "45-49",
+            "women_total": "3,173",
             "any_traditional_method_pct": 12.9,
             "calendar_rhythm_pct": 3.3,
             "withdrawal_pct": 9.6,
@@ -283,10 +341,11 @@
       {
         "title": "Residence",
         "year": "2025",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "Urban",
+            "women_total": "17,071",
             "any_traditional_method_pct": 8.6,
             "calendar_rhythm_pct": 1.4,
             "withdrawal_pct": 7.1,
@@ -295,6 +354,7 @@
           },
           {
             "label": "Rural",
+            "women_total": "12,623",
             "any_traditional_method_pct": 7.5,
             "calendar_rhythm_pct": 1.2,
             "withdrawal_pct": 6.3,
@@ -306,10 +366,11 @@
       {
         "title": "Residence",
         "year": "2022",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "Urban",
+            "women_total": "15,579",
             "any_traditional_method_pct": 10.2,
             "calendar_rhythm_pct": 1.6,
             "withdrawal_pct": 8.5,
@@ -318,6 +379,7 @@
           },
           {
             "label": "Rural",
+            "women_total": "12,242",
             "any_traditional_method_pct": 9.4,
             "calendar_rhythm_pct": 1.9,
             "withdrawal_pct": 7.4,
@@ -328,10 +390,11 @@
       {
         "title": "Educational attainment",
         "year": "2025",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "No education",
+            "women_total": "232",
             "any_traditional_method_pct": 4.3,
             "calendar_rhythm_pct": 0.4,
             "withdrawal_pct": 3.9,
@@ -340,6 +403,7 @@
           },
           {
             "label": "Grades 1-6",
+            "women_total": "2,214",
             "any_traditional_method_pct": 7.8,
             "calendar_rhythm_pct": 0.6,
             "withdrawal_pct": 7.2,
@@ -348,6 +412,7 @@
           },
           {
             "label": "Grades 7-10",
+            "women_total": "11,055",
             "any_traditional_method_pct": 8.5,
             "calendar_rhythm_pct": 1,
             "calendar_rhythm_pct_display": "1.0",
@@ -357,6 +422,7 @@
           },
           {
             "label": "Grades 11-12",
+            "women_total": "3,644",
             "any_traditional_method_pct": 3.4,
             "calendar_rhythm_pct": 0.1,
             "withdrawal_pct": 3.3,
@@ -365,6 +431,7 @@
           },
           {
             "label": "Post-secondary",
+            "women_total": "435",
             "any_traditional_method_pct": 13.9,
             "calendar_rhythm_pct": 1.8,
             "withdrawal_pct": 12.1,
@@ -373,6 +440,7 @@
           },
           {
             "label": "College",
+            "women_total": "12,114",
             "any_traditional_method_pct": 9,
             "any_traditional_method_pct_display": "9.0",
             "calendar_rhythm_pct": 2.1,
@@ -386,10 +454,11 @@
       {
         "title": "Educational attainment",
         "year": "2022",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "No education",
+            "women_total": "197",
             "any_traditional_method_pct": 4.9,
             "calendar_rhythm_pct": 0.5,
             "withdrawal_pct": 4.4,
@@ -398,6 +467,7 @@
           },
           {
             "label": "Grades 1-6",
+            "women_total": "2,538",
             "any_traditional_method_pct": 10.5,
             "calendar_rhythm_pct": 2.2,
             "withdrawal_pct": 8.1,
@@ -405,6 +475,7 @@
           },
           {
             "label": "Grades 7-10",
+            "women_total": "11,954",
             "any_traditional_method_pct": 10.1,
             "calendar_rhythm_pct": 1.5,
             "withdrawal_pct": 8.6,
@@ -413,6 +484,7 @@
           },
           {
             "label": "Grades 11-12",
+            "women_total": "2,751",
             "any_traditional_method_pct": 2.7,
             "calendar_rhythm_pct": 0.1,
             "withdrawal_pct": 2.6,
@@ -421,6 +493,7 @@
           },
           {
             "label": "Post-secondary",
+            "women_total": "625",
             "any_traditional_method_pct": 9.4,
             "calendar_rhythm_pct": 2.4,
             "withdrawal_pct": 6.6,
@@ -428,6 +501,7 @@
           },
           {
             "label": "College",
+            "women_total": "9,755",
             "any_traditional_method_pct": 11.4,
             "calendar_rhythm_pct": 2.3,
             "withdrawal_pct": 9,
@@ -440,10 +514,11 @@
       {
         "title": "Wealth quintile",
         "year": "2025",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "Lowest",
+            "women_total": "5,130",
             "any_traditional_method_pct": 7,
             "any_traditional_method_pct_display": "7.0",
             "calendar_rhythm_pct": 1.4,
@@ -453,6 +528,7 @@
           },
           {
             "label": "Second",
+            "women_total": "5,605",
             "any_traditional_method_pct": 8,
             "any_traditional_method_pct_display": "8.0",
             "calendar_rhythm_pct": 0.7,
@@ -462,6 +538,7 @@
           },
           {
             "label": "Middle",
+            "women_total": "6,149",
             "any_traditional_method_pct": 9.2,
             "calendar_rhythm_pct": 1,
             "calendar_rhythm_pct_display": "1.0",
@@ -471,6 +548,7 @@
           },
           {
             "label": "Fourth",
+            "women_total": "6,497",
             "any_traditional_method_pct": 7.6,
             "calendar_rhythm_pct": 1.2,
             "withdrawal_pct": 6.3,
@@ -478,6 +556,7 @@
           },
           {
             "label": "Highest",
+            "women_total": "6,313",
             "any_traditional_method_pct": 8.4,
             "calendar_rhythm_pct": 2.1,
             "withdrawal_pct": 6.3,
@@ -489,10 +568,11 @@
       {
         "title": "Wealth quintile",
         "year": "2022",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "Lowest",
+            "women_total": "4,595",
             "any_traditional_method_pct": 10.1,
             "calendar_rhythm_pct": 2,
             "calendar_rhythm_pct_display": "2.0",
@@ -502,6 +582,7 @@
           },
           {
             "label": "Second",
+            "women_total": "5,219",
             "any_traditional_method_pct": 9.5,
             "calendar_rhythm_pct": 1.5,
             "withdrawal_pct": 8,
@@ -511,6 +592,7 @@
           },
           {
             "label": "Middle",
+            "women_total": "5,666",
             "any_traditional_method_pct": 9.8,
             "calendar_rhythm_pct": 1.4,
             "withdrawal_pct": 8.4,
@@ -519,6 +601,7 @@
           },
           {
             "label": "Fourth",
+            "women_total": "6,048",
             "any_traditional_method_pct": 10.4,
             "calendar_rhythm_pct": 2,
             "calendar_rhythm_pct_display": "2.0",
@@ -528,6 +611,7 @@
           },
           {
             "label": "Highest",
+            "women_total": "6,292",
             "any_traditional_method_pct": 9.2,
             "calendar_rhythm_pct": 1.7,
             "withdrawal_pct": 7.5,
@@ -546,19 +630,19 @@
   "detailFields": [
     {
       "key": "any_traditional_method_pct",
-      "label": "Any traditional method (2025)"
+      "label": "Any traditional method (%, 2025)"
     },
     {
       "key": "calendar_rhythm_pct",
-      "label": "Calendar/rhythm (2025)"
+      "label": "Calendar/rhythm (%, 2025)"
     },
     {
       "key": "withdrawal_pct",
-      "label": "Withdrawal (2025)"
+      "label": "Withdrawal (%, 2025)"
     },
     {
       "key": "traditional_other_pct",
-      "label": "Other traditional methods (2025)"
+      "label": "Other traditional methods (%, 2025)"
     },
     {
       "key": "women_total",
@@ -685,6 +769,7 @@
         "calendar_rhythm_pct": 1.2,
         "withdrawal_pct": 4.4,
         "traditional_other_pct": 0.1,
+        "noteRef": "²",
         "psa_note": "Region IX includes the province of Sulu in 2025."
       },
       {

@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Fertility Rate</title>
 <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
@@ -44,7 +47,9 @@
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { width: 100%; height: 100%; background: var(--bg); overflow: hidden; }
+  html, body { width: 100%; height: 100%; background: var(--bg); overflow: hidden;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
 
   /* ── Tab bar ── */
   #tab-bar {
@@ -60,7 +65,7 @@
     flex-shrink: 0;
     background: var(--btn-bg);
     border: 1px solid var(--btn-border);
-    color: var(--btn-color); font: 12px monospace;
+    color: var(--btn-color); font: 12px 'IBM Plex Mono', monospace;
     padding: 5px 13px; cursor: pointer;
     letter-spacing: 0.4px;
     transition: background 0.15s, border-color 0.15s;
@@ -115,7 +120,7 @@
     margin-bottom: 22px;
   }
   .insight-heading {
-    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase;
     color: var(--section-color); margin-bottom: 10px;
   }
   .insight-text {
@@ -152,7 +157,7 @@
   }
   .chart-section-title {
     grid-column: 1 / -1;
-    font: 11px/1 monospace;
+    font: 11px/1 'IBM Plex Mono', monospace;
     letter-spacing: 1.6px;
     text-transform: uppercase;
     color: var(--section-color);
@@ -169,7 +174,7 @@
   }
   .chart-legend {
     display: flex; gap: 14px; margin-top: 8px;
-    font: 11px monospace; color: var(--data-label-color); align-items: center;
+    font: 11px 'IBM Plex Mono', monospace; color: var(--data-label-color); align-items: center;
   }
   .legend-swatch {
     display: inline-block; width: 12px; height: 12px;
@@ -198,7 +203,7 @@
   }
   .chart-block.wide { grid-column: 1 / -1; }
   .chart-block-title {
-    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase;
     color: var(--section-color); margin-bottom: 8px;
   }
   .chart-block-subtitle {
@@ -207,7 +212,7 @@
   }
   .mirror-side-labels {
     display: flex; justify-content: space-between; gap: 12px;
-    font: 13px monospace; letter-spacing: 1px; text-transform: uppercase;
+    font: 13px 'IBM Plex Mono', monospace; letter-spacing: 1px; text-transform: uppercase;
     color: var(--data-label-color); margin-bottom: 10px;
   }
   @media (min-width: 980px) {
@@ -233,7 +238,7 @@
     border-top: 1px solid var(--panel-divider);
   }
   .chart-notes-head {
-    font: 10px/1 monospace;
+    font: 10px/1 'IBM Plex Mono', monospace;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: var(--section-color);
@@ -266,21 +271,21 @@
   .region:hover { opacity: 0.82; stroke: var(--hover-stroke); stroke-width: 1.5; }
 
   .map-label {
-    fill: var(--label-fill); font-family: monospace; font-weight: 700;
+    fill: var(--label-fill); font-family: 'IBM Plex Mono', monospace; font-weight: 700;
     text-anchor: middle; dominant-baseline: middle;
     pointer-events: none; letter-spacing: 0.3px;
   }
 
   #map-status {
     position: absolute; bottom: 8px; left: 12px;
-    color: var(--status-color); font: 11px monospace;
+    color: var(--status-color); font: 11px 'IBM Plex Mono', monospace;
     background: var(--status-bg); padding: 3px 8px;
     pointer-events: none; z-index: 10;
   }
   #map-info-btn {
     position: absolute; bottom: 16px; right: 16px; font-size: 15px; padding: 6px 12px;
     background: var(--btn-bg); border: 1px solid var(--btn-border);
-    color: var(--btn-color); font-family: monospace; cursor: pointer;
+    color: var(--btn-color); font-family: 'IBM Plex Mono', monospace; cursor: pointer;
     transition: background 0.15s; z-index: 10; display: none;
   }
   #map-info-btn:hover { background: var(--btn-hover-bg); }
@@ -321,7 +326,7 @@
     display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;
   }
   .detail-eyebrow {
-    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase;
     color: var(--eyebrow-color); margin-bottom: 6px;
   }
   .detail-lgu-name {
@@ -343,22 +348,22 @@
     padding: 8px 0; border-bottom: 1px solid var(--panel-divider); gap: 12px;
   }
   .data-row:last-child { border-bottom: none; }
-  .data-label { font: 10px monospace; letter-spacing: 0.8px; text-transform: uppercase; color: var(--data-label-color); flex-shrink: 0; }
+  .data-label { font: 10px 'IBM Plex Mono', monospace; letter-spacing: 0.8px; text-transform: uppercase; color: var(--data-label-color); flex-shrink: 0; }
   .data-value { font-size: 13px; color: var(--data-value-color); text-align: right; }
   .no-findings { text-align: center; padding: 40px 0; color: var(--no-data-color); font-size: 13px; line-height: 1.8; }
-  .section-head { font: 10px monospace; letter-spacing: 1.5px; text-transform: uppercase; color: var(--section-color); margin: 16px 0 8px; }
+  .section-head { font: 10px 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase; color: var(--section-color); margin: 16px 0 8px; }
   .legend-bar { height: 10px; border-radius: 2px; margin: 6px 0 4px; }
-  .legend-ends { display: flex; justify-content: space-between; font: 10px monospace; color: var(--data-label-color); }
+  .legend-ends { display: flex; justify-content: space-between; font: 10px 'IBM Plex Mono', monospace; color: var(--data-label-color); }
   .ranked-row {
     display: flex; align-items: center; gap: 7px;
     padding: 5px 0; border-bottom: 1px solid var(--panel-divider);
   }
   .ranked-row:last-child { border-bottom: none; }
-  .ranked-i   { font: 10px monospace; color: var(--data-label-color); min-width: 20px; text-align: right; flex-shrink: 0; }
+  .ranked-i   { font: 10px 'IBM Plex Mono', monospace; color: var(--data-label-color); min-width: 20px; text-align: right; flex-shrink: 0; }
   .ranked-swatch { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .ranked-name { flex: 1; font-size: 12px; color: var(--text-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
   .ranked-row.is-active .ranked-name { color: var(--lgu-name-color); font-weight: 600; }
-  .ranked-val { font: 12px monospace; color: var(--data-value-color); flex-shrink: 0; }
+  .ranked-val { font: 12px 'IBM Plex Mono', monospace; color: var(--data-value-color); flex-shrink: 0; }
   .ranked-row.is-active .ranked-val { color: var(--lgu-name-color); }
 </style>
 </head>
@@ -668,7 +673,7 @@ function drawHorizontalComparison(container, block) {
       .attr('text-anchor', 'end')
       .attr('dominant-baseline', 'middle')
       .attr('font-size', 12)
-      .attr('font-family', 'sans-serif')
+      .attr('font-family', 'Inter, sans-serif')
       .attr('fill', 'var(--text-color)')
       .text(withNoteRef(row.label, row));
 
@@ -689,14 +694,14 @@ function drawHorizontalLane(group, y, value, display, scale, fill, textFill, str
     group.append('text')
       .attr('x', width + 5).attr('y', y + 7)
       .attr('dominant-baseline', 'middle')
-      .attr('font-size', 11).attr('font-family', 'monospace')
+      .attr('font-size', 11).attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', textFill)
       .text(display);
   } else {
     group.append('text')
       .attr('x', 5).attr('y', y + 7)
       .attr('dominant-baseline', 'middle')
-      .attr('font-size', 11).attr('font-family', 'monospace')
+      .attr('font-size', 11).attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', 'var(--no-data-color)')
       .text(display || 'NA');
   }
@@ -765,7 +770,7 @@ function drawMirroredComparison(container, block) {
       .attr('text-anchor', 'middle')
       .attr('dominant-baseline', 'middle')
       .attr('font-size', labelFontSize)
-      .attr('font-family', 'sans-serif')
+      .attr('font-family', 'Inter, sans-serif')
       .attr('fill', 'var(--text-color)')
       .text(label);
 
@@ -792,7 +797,7 @@ function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, 
       .attr('text-anchor', invert ? 'end' : 'start')
       .attr('dominant-baseline', 'middle')
       .attr('font-size', 13)
-      .attr('font-family', 'monospace')
+      .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', textFill)
       .text(display);
   } else {
@@ -802,7 +807,7 @@ function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, 
       .attr('text-anchor', invert ? 'end' : 'start')
       .attr('dominant-baseline', 'middle')
       .attr('font-size', 13)
-      .attr('font-family', 'monospace')
+      .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', 'var(--no-data-color)')
       .text(display || 'NA');
   }
@@ -856,7 +861,7 @@ function drawVerticalComparison(container, block) {
       .attr('text-anchor', 'end')
       .attr('dominant-baseline', 'middle')
       .attr('font-size', 10)
-      .attr('font-family', 'monospace')
+      .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', 'var(--data-label-color)')
       .text(tick.toFixed(maxValue > 10 ? 0 : 1).replace(/\.0$/, ''));
   });
@@ -881,7 +886,7 @@ function drawVerticalComparison(container, block) {
         .attr('y', y(row.y2022) - 6)
         .attr('text-anchor', 'middle')
         .attr('font-size', 10)
-        .attr('font-family', 'monospace')
+        .attr('font-family', 'IBM Plex Mono, monospace')
         .attr('fill', 'var(--data-label-color)')
         .text(formatDisplay(row.y2022Display, row.y2022));
     }
@@ -899,7 +904,7 @@ function drawVerticalComparison(container, block) {
         .attr('y', y(row.y2025) - 6)
         .attr('text-anchor', 'middle')
         .attr('font-size', 10)
-        .attr('font-family', 'monospace')
+        .attr('font-family', 'IBM Plex Mono, monospace')
         .attr('fill', 'var(--data-value-color)')
         .text(formatDisplay(row.y2025Display, row.y2025));
     }
@@ -910,7 +915,7 @@ function drawVerticalComparison(container, block) {
       .attr('text-anchor', 'end')
       .attr('transform', `rotate(-35 ${groupX + groupWidth / 2} ${CH + 18})`)
       .attr('font-size', 11)
-      .attr('font-family', 'sans-serif')
+      .attr('font-family', 'Inter, sans-serif')
       .attr('fill', 'var(--text-color)')
       .text(withNoteRef(row.label, row));
   });

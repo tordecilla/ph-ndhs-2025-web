@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Table 2 — Background Characteristics</title>
 <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
@@ -44,7 +47,9 @@
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { width: 100%; height: 100%; background: var(--bg); overflow: hidden; }
+  html, body { width: 100%; height: 100%; background: var(--bg); overflow: hidden;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
 
   /* ── Tab bar ── */
   #tab-bar {
@@ -60,7 +65,7 @@
     flex-shrink: 0;
     background: var(--btn-bg);
     border: 1px solid var(--btn-border);
-    color: var(--btn-color); font: 12px monospace;
+    color: var(--btn-color); font: 11px 'IBM Plex Mono', monospace;
     padding: 5px 13px; cursor: pointer;
     letter-spacing: 0.4px;
     transition: background 0.15s, border-color 0.15s;
@@ -98,11 +103,11 @@
     line-height: 1.25; margin-bottom: 4px;
   }
   .chart-page-subtitle {
-    font-size: 12px; color: var(--region-color); margin-bottom: 24px; line-height: 1.5;
+    font-size: 12px; color: var(--region-color); margin-bottom: 24px; line-height: 1.6;
   }
   .chart-legend {
     display: flex; gap: 14px; margin-top: 8px;
-    font: 11px monospace; color: var(--data-label-color); align-items: center;
+    font: 11px 'IBM Plex Mono', monospace; color: var(--data-label-color); align-items: center;
   }
   .legend-swatch {
     display: inline-block; width: 12px; height: 12px;
@@ -128,7 +133,7 @@
     padding: 16px 16px 14px;
   }
   .chart-group-label {
-    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase;
     color: var(--section-color); margin-bottom: 14px;
   }
   .chart-svg-wrap { width: 100%; }
@@ -167,7 +172,7 @@
     line-height: 1.25; margin-bottom: 4px;
   }
   .dt-page-subtitle {
-    font-size: 12px; color: var(--region-color); margin-bottom: 28px; line-height: 1.5;
+    font-size: 12px; color: var(--region-color); margin-bottom: 28px; line-height: 1.6;
   }
 
   .dt-section {
@@ -177,7 +182,7 @@
     padding: 16px 16px 4px;
   }
   .dt-section-label {
-    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase;
     color: var(--section-color); margin-bottom: 12px;
   }
   .dt-table {
@@ -186,7 +191,7 @@
     font-size: 12px;
   }
   .dt-table thead th {
-    font: 10px/1 monospace; letter-spacing: 0.8px; text-transform: uppercase;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 0.8px; text-transform: uppercase;
     color: var(--data-label-color);
     padding: 6px 10px 8px;
     text-align: right;
@@ -232,21 +237,21 @@
   .region:hover { opacity: 0.82; stroke: var(--hover-stroke); stroke-width: 1.5; }
 
   .map-label {
-    fill: var(--label-fill); font-family: monospace; font-weight: 700;
+    fill: var(--label-fill); font-family: 'IBM Plex Mono', monospace; font-weight: 700;
     text-anchor: middle; dominant-baseline: middle;
     pointer-events: none; letter-spacing: 0.3px;
   }
 
   #map-status {
     position: absolute; bottom: 8px; left: 12px;
-    color: var(--status-color); font: 11px monospace;
+    color: var(--status-color); font: 11px 'IBM Plex Mono', monospace;
     background: var(--status-bg); padding: 3px 8px;
     pointer-events: none; z-index: 10;
   }
   #map-info-btn {
     position: absolute; bottom: 16px; right: 16px; font-size: 15px; padding: 6px 12px;
     background: var(--btn-bg); border: 1px solid var(--btn-border);
-    color: var(--btn-color); font-family: monospace; cursor: pointer;
+    color: var(--btn-color); font-family: 'IBM Plex Mono', monospace; cursor: pointer;
     transition: background 0.15s; z-index: 10; display: none;
   }
   #map-info-btn:hover { background: var(--btn-hover-bg); }
@@ -287,7 +292,7 @@
     display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;
   }
   .detail-eyebrow {
-    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase;
     color: var(--eyebrow-color); margin-bottom: 6px;
   }
   .detail-lgu-name {
@@ -309,22 +314,22 @@
     padding: 8px 0; border-bottom: 1px solid var(--panel-divider); gap: 12px;
   }
   .data-row:last-child { border-bottom: none; }
-  .data-label { font: 10px monospace; letter-spacing: 0.8px; text-transform: uppercase; color: var(--data-label-color); flex-shrink: 0; }
+  .data-label { font: 10px 'IBM Plex Mono', monospace; letter-spacing: 0.8px; text-transform: uppercase; color: var(--data-label-color); flex-shrink: 0; }
   .data-value { font-size: 13px; color: var(--data-value-color); text-align: right; }
   .no-findings { text-align: center; padding: 40px 0; color: var(--no-data-color); font-size: 13px; line-height: 1.8; }
-  .section-head { font: 10px monospace; letter-spacing: 1.5px; text-transform: uppercase; color: var(--section-color); margin: 16px 0 8px; }
+  .section-head { font: 10px 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase; color: var(--section-color); margin: 16px 0 8px; }
   .legend-bar { height: 10px; border-radius: 2px; margin: 6px 0 4px; }
-  .legend-ends { display: flex; justify-content: space-between; font: 10px monospace; color: var(--data-label-color); }
+  .legend-ends { display: flex; justify-content: space-between; font: 10px 'IBM Plex Mono', monospace; color: var(--data-label-color); }
   .ranked-row {
     display: flex; align-items: center; gap: 7px;
     padding: 5px 0; border-bottom: 1px solid var(--panel-divider);
   }
   .ranked-row:last-child { border-bottom: none; }
-  .ranked-i   { font: 10px monospace; color: var(--data-label-color); min-width: 20px; text-align: right; flex-shrink: 0; }
+  .ranked-i   { font: 10px 'IBM Plex Mono', monospace; color: var(--data-label-color); min-width: 20px; text-align: right; flex-shrink: 0; }
   .ranked-swatch { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .ranked-name { flex: 1; font-size: 12px; color: var(--text-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
   .ranked-row.is-active .ranked-name { color: var(--lgu-name-color); font-weight: 600; }
-  .ranked-val { font: 12px monospace; color: var(--data-value-color); flex-shrink: 0; }
+  .ranked-val { font: 11px 'IBM Plex Mono', monospace; color: var(--data-value-color); flex-shrink: 0; }
   .ranked-row.is-active .ranked-val { color: var(--lgu-name-color); }
 </style>
 </head>
@@ -590,149 +595,30 @@ function renderTables(data) {
 }
 
 function drawGroupChart(container, group) {
-  if (group.layout === 'vertical-comparison') {
-    drawVerticalGroupChart(container, group);
-    return;
-  }
-  // Layout constants (in SVG user units, viewBox width = 640)
-  const VW      = 640;
-  const ML      = 172;   // left margin — room for longest category labels
-  const MR      = 62;    // right margin — room for value labels
-  const MT      = 2;
-  const MB      = 4;
-  const INNER_W = VW - ML - MR;
-  const BAR_H   = 14;
-  const PAIR_GAP = 3;    // px between 2022 bar and 2025 bar
-  const CAT_GAP  = 16;   // px between category pairs
-  const PAIR_H   = BAR_H * 2 + PAIR_GAP;
-
-  const cats = group.categories;
-  const n    = cats.length;
-  const svgH = MT + n * PAIR_H + (n - 1) * CAT_GAP + MB;
-
-  // X scale: 0 → max value (rounded to nearest 5 above)
-  const allVals = cats.flatMap(c => [c.y2025, c.y2022].filter(v => v != null));
-  const rawMax  = allVals.length ? d3.max(allVals) : 100;
-  const xMax    = Math.ceil(rawMax * 1.12 / 5) * 5 || 5;
-  const x       = d3.scaleLinear().domain([0, xMax]).range([0, INNER_W]);
-
-  // Build SVG
-  const wrap = el('div', 'chart-svg-wrap');
-  container.appendChild(wrap);
-  // Legend appended after SVG (set up container now, fill after SVG is built)
-  const legendDiv = el('div', 'chart-legend');
-  legendDiv.innerHTML =
-    `<span><span class="legend-swatch s2022" style="background:var(--bar-2022)"></span>2022</span>` +
-    `<span><span class="legend-swatch" style="background:var(--bar-2025)"></span>2025</span>`;
-
-  const svgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  svgEl.setAttribute('viewBox', `0 0 ${VW} ${svgH}`);
-  svgEl.setAttribute('preserveAspectRatio', 'xMinYMid meet');
-  wrap.appendChild(svgEl);
-
-  const svg = d3.select(svgEl);
-  const g   = svg.append('g').attr('transform', `translate(${ML},${MT})`);
-
-  // Baseline
-  g.append('line')
-    .attr('x1', 0).attr('y1', 0)
-    .attr('x2', 0).attr('y2', svgH - MT - MB)
-    .attr('stroke', 'var(--chart-axis)').attr('stroke-width', 1);
-
-  container.appendChild(legendDiv);
-
-  // Draw each category
-  cats.forEach((cat, i) => {
-    const yBase = i * (PAIR_H + CAT_GAP);
-    const cg    = g.append('g').attr('transform', `translate(0,${yBase})`);
-
-    // Label
-    const label = d3.select(svgEl).append('text')
-      .attr('x', ML - 10)
-      .attr('y', MT + yBase + PAIR_H / 2)
-      .attr('text-anchor', 'end')
-      .attr('dominant-baseline', 'middle')
-      .attr('font-size', 12)
-      .attr('font-family', 'sans-serif')
-      .attr('fill', 'var(--text-color)')
-      .text(cat.label);
-
-    // 2022 bar
-    if (cat.y2022 != null) {
-      const w = x(cat.y2022);
-      cg.append('rect')
-        .attr('x', 0).attr('y', 0)
-        .attr('width', w).attr('height', BAR_H)
-        .attr('fill', 'var(--bar-2022)')
-        .attr('stroke', 'rgba(0,0,0,0.12)').attr('stroke-width', 0.5);
-      cg.append('text')
-        .attr('x', w + 5).attr('y', BAR_H / 2)
-        .attr('dominant-baseline', 'middle')
-        .attr('font-size', 11).attr('font-family', 'monospace')
-        .attr('fill', 'var(--data-label-color)')
-        .text(cat.y2022 + '%');
-    } else {
-      cg.append('text')
-        .attr('x', 5).attr('y', BAR_H / 2)
-        .attr('dominant-baseline', 'middle')
-        .attr('font-size', 11).attr('font-family', 'monospace')
-        .attr('fill', 'var(--no-data-color)')
-        .text('N/A');
-    }
-
-    // 2025 bar
-    const y2 = BAR_H + PAIR_GAP;
-    if (cat.y2025 != null) {
-      const w = x(cat.y2025);
-      cg.append('rect')
-        .attr('x', 0).attr('y', y2)
-        .attr('width', w).attr('height', BAR_H)
-        .attr('fill', 'var(--bar-2025)');
-      cg.append('text')
-        .attr('x', w + 5).attr('y', y2 + BAR_H / 2)
-        .attr('dominant-baseline', 'middle')
-        .attr('font-size', 11).attr('font-family', 'monospace')
-        .attr('fill', 'var(--data-value-color)')
-        .text(cat.y2025 + '%');
-    } else {
-      cg.append('text')
-        .attr('x', 5).attr('y', y2 + BAR_H / 2)
-        .attr('dominant-baseline', 'middle')
-        .attr('font-size', 11).attr('font-family', 'monospace')
-        .attr('fill', 'var(--no-data-color)')
-        .text('N/A');
-    }
-  });
-}
-
-function drawVerticalGroupChart(container, group) {
-  const cats = group.categories;
+  const cats = group.categories || [];
   const n = cats.length;
-  const VW = 640;
-  const VH = 360;
-  const ML = 42;
-  const MR = 16;
-  const MT = 10;
-  const MB = 82;
-  const INNER_W = VW - ML - MR;
-  const INNER_H = VH - MT - MB;
+  if (!n) return;
+
   const maxLabelLen = d3.max(cats, d => String(d.label || '').length) || 0;
-  const tickEvery = group.showAllLabels ? 1 : ((n > 6 || maxLabelLen > 14) ? 2 : 1);
+  const ML = Math.max(160, Math.min(250, 68 + maxLabelLen * 6));
+  const MR = 92;
+  const MT = 14;
+  const MB = 16;
+  const ROW_H = 34;
+  const ROW_GAP = 16;
+  const INNER_H = n * ROW_H + (n - 1) * ROW_GAP;
+  const VW = Math.max(700, ML + MR + 420);
+  const VH = MT + INNER_H + MB;
+  const INNER_W = VW - ML - MR;
 
   const allVals = cats.flatMap(c => [c.y2025, c.y2022].filter(v => v != null));
   const rawMax = allVals.length ? d3.max(allVals) : 100;
-  const yMax = Math.ceil(rawMax * 1.15 / 5) * 5 || 5;
-  const x = d3.scaleBand()
+  const xMax = Math.ceil(rawMax * 1.1 / 5) * 5 || 5;
+  const x = d3.scaleLinear().domain([0, xMax]).range([0, INNER_W]);
+  const y = d3.scaleBand()
     .domain(cats.map(c => c.label))
-    .range([0, INNER_W])
-    .padding(0.18);
-  const xInner = d3.scaleBand()
-    .domain(['2022', '2025'])
-    .range([0, x.bandwidth()])
-    .padding(0.12);
-  const y = d3.scaleLinear()
-    .domain([0, yMax])
-    .range([INNER_H, 0]);
+    .range([0, INNER_H])
+    .paddingInner(0.35);
 
   const wrap = el('div', 'chart-svg-wrap');
   container.appendChild(wrap);
@@ -750,85 +636,114 @@ function drawVerticalGroupChart(container, group) {
   const svg = d3.select(svgEl);
   const g = svg.append('g').attr('transform', `translate(${ML},${MT})`);
 
-  g.append('line')
-    .attr('x1', 0).attr('y1', INNER_H)
-    .attr('x2', INNER_W).attr('y2', INNER_H)
-    .attr('stroke', 'var(--chart-axis)').attr('stroke-width', 1);
-
-  const ticks = d3.range(0, yMax + 0.1, 5);
-  ticks.forEach(tick => {
-    const yy = y(tick);
+  const tickStep = xMax <= 20 ? 2 : (xMax <= 50 ? 5 : 10);
+  const ticks = d3.range(0, xMax + 0.001, tickStep);
+  ticks.forEach(t => {
+    const xx = x(t);
     g.append('line')
-      .attr('x1', 0).attr('y1', yy)
-      .attr('x2', INNER_W).attr('y2', yy)
+      .attr('x1', xx).attr('y1', 0)
+      .attr('x2', xx).attr('y2', INNER_H)
       .attr('stroke', 'var(--chart-axis)')
-      .attr('stroke-width', tick === 0 ? 0 : 1)
-      .attr('opacity', tick === 0 ? 0 : 0.55);
+      .attr('stroke-width', 1)
+      .attr('opacity', t === 0 ? 0.9 : 0.55);
     g.append('text')
-      .attr('x', -8).attr('y', yy)
-      .attr('text-anchor', 'end')
-      .attr('dominant-baseline', 'middle')
+      .attr('x', xx).attr('y', INNER_H + 16)
+      .attr('text-anchor', 'middle')
       .attr('font-size', 10)
-      .attr('font-family', 'monospace')
+      .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', 'var(--data-label-color)')
-      .text(tick);
+      .text(t);
   });
 
-  const groups = g.selectAll('g.cat')
-    .data(cats)
-    .join('g')
-    .attr('class', 'cat')
-    .attr('transform', d => `translate(${x(d.label)},0)`);
+  cats.forEach(cat => {
+    const y0 = y(cat.label);
+    if (y0 == null) return;
+    const cy = y0 + y.bandwidth() / 2;
+    const y22 = cy - 6;
+    const y25 = cy + 6;
+    const v2022 = cat.y2022;
+    const v2025 = cat.y2025;
+    const labelOffset = 8;
 
-  groups.each(function(cat, i) {
-    const cg = d3.select(this);
-    [
-      { key: 'y2022', label: '2022', fill: 'var(--bar-2022)', stroke: 'rgba(0,0,0,0.12)', textFill: 'var(--data-label-color)' },
-      { key: 'y2025', label: '2025', fill: 'var(--bar-2025)', stroke: null, textFill: 'var(--data-value-color)' },
-    ].forEach(series => {
-      const value = cat[series.key];
-      const barX = xInner(series.label);
-      if (value != null) {
-        const barY = y(value);
-        const barH = INNER_H - barY;
-        cg.append('rect')
-          .attr('x', barX)
-          .attr('y', barY)
-          .attr('width', xInner.bandwidth())
-          .attr('height', barH)
-          .attr('fill', series.fill)
-          .attr('stroke', series.stroke)
-          .attr('stroke-width', series.stroke ? 0.5 : 0);
-        cg.append('text')
-          .attr('x', barX + xInner.bandwidth() / 2)
-          .attr('y', Math.max(barY - 6, 10))
-          .attr('text-anchor', 'middle')
-          .attr('font-size', 10)
-          .attr('font-family', 'monospace')
-          .attr('fill', series.textFill)
-          .text(value + '%');
-      } else {
-        cg.append('text')
-          .attr('x', barX + xInner.bandwidth() / 2)
-          .attr('y', INNER_H - 6)
-          .attr('text-anchor', 'middle')
-          .attr('font-size', 9)
-          .attr('font-family', 'monospace')
-          .attr('fill', 'var(--no-data-color)')
-          .text('N/A');
-      }
-    });
+    d3.select(svgEl).append('text')
+      .attr('x', ML - 10)
+      .attr('y', MT + cy)
+      .attr('text-anchor', 'end')
+      .attr('dominant-baseline', 'middle')
+      .attr('font-size', 12)
+      .attr('font-family', 'Inter, sans-serif')
+      .attr('fill', 'var(--text-color)')
+      .text(cat.label);
 
-    if (i % tickEvery === 0) {
-      cg.append('text')
-        .attr('x', x.bandwidth() / 2)
-        .attr('y', INNER_H + 14)
-        .attr('text-anchor', 'end')
-        .attr('transform', `rotate(-36, ${x.bandwidth() / 2}, ${INNER_H + 14})`)
-        .attr('font-size', 11)
-        .attr('font-family', 'sans-serif')
-        .attr('fill', 'var(--text-color)')
-        .text(cat.label);
+    // subtle row guide
+    g.append('line')
+      .attr('x1', 0).attr('y1', cy + 0.5)
+      .attr('x2', INNER_W).attr('y2', cy + 0.5)
+      .attr('stroke', 'var(--chart-axis)')
+      .attr('stroke-width', 1)
+      .attr('opacity', 0.2);
+
+    if (v2022 != null) {
+      const x22 = x(v2022);
+      g.append('line')
+        .attr('x1', 0).attr('y1', y22)
+        .attr('x2', x22).attr('y2', y22)
+        .attr('stroke', 'var(--bar-2022)')
+        .attr('stroke-width', 2)
+        .attr('opacity', 0.85);
+      g.append('circle')
+        .attr('cx', x22).attr('cy', y22)
+        .attr('r', 4.2)
+        .attr('fill', 'var(--bar-2022)')
+        .attr('stroke', 'rgba(0,0,0,0.18)')
+        .attr('stroke-width', 0.8);
+      g.append('text')
+        .attr('x', x22 + labelOffset)
+        .attr('y', y22)
+        .attr('text-anchor', 'start')
+        .attr('dominant-baseline', 'middle')
+        .attr('font-size', 10)
+        .attr('font-family', 'IBM Plex Mono, monospace')
+        .attr('fill', 'var(--data-label-color)')
+        .text(v2022);
+    } else {
+      g.append('text')
+        .attr('x', 4).attr('y', y22)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-size', 10)
+        .attr('font-family', 'IBM Plex Mono, monospace')
+        .attr('fill', 'var(--no-data-color)')
+        .text('2022 N/A');
+    }
+
+    if (v2025 != null) {
+      const x25 = x(v2025);
+      g.append('line')
+        .attr('x1', 0).attr('y1', y25)
+        .attr('x2', x25).attr('y2', y25)
+        .attr('stroke', 'var(--bar-2025)')
+        .attr('stroke-width', 2);
+      g.append('circle')
+        .attr('cx', x25).attr('cy', y25)
+        .attr('r', 4.2)
+        .attr('fill', 'var(--bar-2025)');
+      g.append('text')
+        .attr('x', x25 + labelOffset)
+        .attr('y', y25)
+        .attr('text-anchor', 'start')
+        .attr('dominant-baseline', 'middle')
+        .attr('font-size', 10)
+        .attr('font-family', 'IBM Plex Mono, monospace')
+        .attr('fill', 'var(--data-value-color)')
+        .text(v2025);
+    } else {
+      g.append('text')
+        .attr('x', 4).attr('y', y25)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-size', 10)
+        .attr('font-family', 'IBM Plex Mono, monospace')
+        .attr('fill', 'var(--no-data-color)')
+        .text('2025 N/A');
     }
   });
 

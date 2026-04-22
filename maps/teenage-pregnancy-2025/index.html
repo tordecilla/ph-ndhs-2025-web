@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Philippines Map</title>
 <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
@@ -48,7 +51,9 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { width: 100%; height: 100%; background: var(--bg); overflow: hidden;
-    transition: background 0.25s; }
+    transition: background 0.25s;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
   svg { display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; }
   svg:active { cursor: grabbing; }
 
@@ -65,7 +70,7 @@
     flex-shrink: 0;
     background: var(--btn-bg);
     border: 1px solid var(--btn-border);
-    color: var(--btn-color); font: 12px monospace;
+    color: var(--btn-color); font: 11px 'IBM Plex Mono', monospace;
     padding: 5px 13px; cursor: pointer;
     letter-spacing: 0.4px;
     transition: background 0.15s, border-color 0.15s;
@@ -104,7 +109,7 @@
 
   .map-label {
     fill: var(--label-fill);
-    font-family: monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
     text-anchor: middle;
     dominant-baseline: middle;
@@ -117,7 +122,7 @@
     position: fixed;
     background: var(--btn-bg);
     border: 1px solid var(--btn-border);
-    color: var(--btn-color); font: 13px monospace;
+    color: var(--btn-color); font: 13px 'IBM Plex Mono', monospace;
     padding: 6px 14px; cursor: pointer;
     letter-spacing: 0.5px;
     transition: background 0.15s, color 0.15s, border-color 0.15s;
@@ -130,7 +135,7 @@
 
   #status {
     position: fixed; bottom: 8px; left: 12px;
-    color: var(--status-color); font: 11px monospace;
+    color: var(--status-color); font: 11px 'IBM Plex Mono', monospace;
     background: var(--status-bg); padding: 3px 8px;
     pointer-events: none; z-index: 10;
     transition: color 0.25s, background 0.25s;
@@ -193,7 +198,7 @@
     margin-bottom: 10px;
   }
   .detail-eyebrow {
-    font: 10px/1 monospace; letter-spacing: 1.5px;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px;
     text-transform: uppercase; color: var(--eyebrow-color); margin-bottom: 6px;
   }
   .detail-lgu-name { font-size: 22px; font-weight: 600; color: var(--lgu-name-color); line-height: 1.2; margin-bottom: 4px; }
@@ -209,15 +214,15 @@
     gap: 12px;
   }
   .data-row:last-child { border-bottom: none; }
-  .data-label { font: 10px monospace; letter-spacing: 0.8px; text-transform: uppercase; color: var(--data-label-color); flex-shrink: 0; }
+  .data-label { font: 10px 'IBM Plex Mono', monospace; letter-spacing: 0.8px; text-transform: uppercase; color: var(--data-label-color); flex-shrink: 0; }
   .data-value { font-size: 13px; color: var(--data-value-color); text-align: right; }
 
   .no-findings { text-align: center; padding: 40px 0; color: var(--no-data-color); font-size: 13px; line-height: 1.8; }
-  .section-head { font: 10px monospace; letter-spacing: 1.5px; text-transform: uppercase; color: var(--section-color); margin: 16px 0 8px; }
+  .section-head { font: 10px 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase; color: var(--section-color); margin: 16px 0 8px; }
 
   /* ── Legend ── */
   .legend-bar { height: 10px; border-radius: 2px; margin: 6px 0 4px; }
-  .legend-ends { display: flex; justify-content: space-between; font: 10px monospace; color: var(--data-label-color); }
+  .legend-ends { display: flex; justify-content: space-between; font: 10px 'IBM Plex Mono', monospace; color: var(--data-label-color); }
 
   #metric-toggle {
     position: fixed; top: 58px; left: 50%; transform: translateX(-50%);
@@ -253,7 +258,7 @@
     border: 1px solid var(--btn-border);
     border-radius: 12px;
     color: var(--btn-color);
-    font: 12px monospace;
+    font: 11px 'IBM Plex Mono', monospace;
     padding: 9px 12px;
     outline: none;
   }
@@ -277,11 +282,11 @@
     padding: 5px 0; border-bottom: 1px solid var(--panel-divider);
   }
   .ranked-row:last-child { border-bottom: none; }
-  .ranked-i { font: 10px monospace; color: var(--data-label-color); min-width: 20px; text-align: right; flex-shrink: 0; }
+  .ranked-i { font: 10px 'IBM Plex Mono', monospace; color: var(--data-label-color); min-width: 20px; text-align: right; flex-shrink: 0; }
   .ranked-swatch { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .ranked-name { flex: 1; font-size: 12px; color: var(--text-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
   .ranked-row.is-active .ranked-name { color: var(--lgu-name-color); font-weight: 600; }
-  .ranked-val { font: 12px monospace; color: var(--data-value-color); flex-shrink: 0; }
+  .ranked-val { font: 11px 'IBM Plex Mono', monospace; color: var(--data-value-color); flex-shrink: 0; }
   .ranked-row.is-active .ranked-val { color: var(--lgu-name-color); }
 
   #tab-charts {
@@ -315,7 +320,7 @@
     padding: 16px 16px 14px;
   }
   .chart-block-title {
-    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase;
     color: var(--section-color); margin-bottom: 8px;
   }
   .chart-block-subtitle {
@@ -326,7 +331,7 @@
   .chart-svg-wrap svg { display: block; width: 100%; overflow: visible; }
   .chart-legend {
     display: flex; flex-wrap: wrap; gap: 10px 14px; margin-top: 12px;
-    font: 11px monospace; color: var(--data-label-color); align-items: center;
+    font: 11px 'IBM Plex Mono', monospace; color: var(--data-label-color); align-items: center;
   }
   .legend-swatch {
     display: inline-block; width: 12px; height: 12px;
@@ -364,7 +369,7 @@
     padding: 16px 16px 4px;
   }
   .dt-section-label {
-    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase;
     color: var(--section-color); margin-bottom: 12px;
   }
   .dt-table-wrap {
@@ -379,7 +384,7 @@
     font-size: 12px;
   }
   .dt-table thead th {
-    font: 10px/1 monospace; letter-spacing: 0.8px; text-transform: uppercase;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 0.8px; text-transform: uppercase;
     color: var(--data-label-color);
     padding: 6px 10px 8px;
     text-align: right;
@@ -472,7 +477,7 @@
     margin-bottom: 22px;
   }
   .insight-heading {
-    font: 10px/1 monospace; letter-spacing: 1.5px; text-transform: uppercase;
+    font: 10px/1 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase;
     color: var(--section-color); margin-bottom: 10px;
   }
   .insight-text {
@@ -996,15 +1001,21 @@ function isSuppressedValue(row, key) {
 
 function drawGroupedBars(container, chartData, block, series) {
   const rows = block.rows || [];
-  const VW = 560;
-  const VH = 360;
-  const ML = 48;
-  const MR = 14;
+  const VW = 700;
+  const ML = 156;
+  const MR = 18;
   const MT = 10;
-  const MB = 74;
+  const MB = 34;
   const INNER_W = VW - ML - MR;
-  const INNER_H = VH - MT - MB;
   const yMax = chartData.yMax || 15;
+  const tickStep = yMax > 10 ? 3 : 1;
+  const laneGap = 13;
+  const groupGap = 14;
+  const groupH = Math.max(series.length - 1, 0) * laneGap + 1;
+  const INNER_H = rows.length
+    ? rows.length * groupH + Math.max(rows.length - 1, 0) * groupGap
+    : 40;
+  const VH = MT + INNER_H + MB;
 
   const wrap = document.createElement('div');
   wrap.className = 'chart-svg-wrap';
@@ -1017,104 +1028,89 @@ function drawGroupedBars(container, chartData, block, series) {
 
   const chartSvg = d3.select(svgEl);
   const chart = chartSvg.append('g').attr('transform', `translate(${ML},${MT})`);
-  const x = d3.scaleBand().domain(rows.map(r => r.age)).range([0, INNER_W]).padding(0.22);
-  const xInner = d3.scaleBand().domain(series.map(s => s.key)).range([0, x.bandwidth()]).padding(0.1);
-  const y = d3.scaleLinear().domain([0, yMax]).range([INNER_H, 0]);
+  const x = d3.scaleLinear().domain([0, yMax]).range([0, INNER_W - 8]);
 
   chart.append('line')
     .attr('x1', 0).attr('y1', INNER_H)
     .attr('x2', INNER_W).attr('y2', INNER_H)
     .attr('stroke', 'var(--panel-divider)');
 
-  d3.range(0, yMax + 0.01, 3).forEach(tick => {
-    const yy = y(tick);
+  d3.range(0, yMax + 0.01, tickStep).forEach(tick => {
+    const xx = x(tick);
     chart.append('line')
-      .attr('x1', 0).attr('y1', yy)
-      .attr('x2', INNER_W).attr('y2', yy)
+      .attr('x1', xx).attr('y1', 0)
+      .attr('x2', xx).attr('y2', INNER_H)
       .attr('stroke', 'var(--panel-divider)')
       .attr('stroke-dasharray', tick === 0 ? null : '2,3');
     chart.append('text')
-      .attr('x', -8).attr('y', yy)
-      .attr('text-anchor', 'end')
-      .attr('dominant-baseline', 'middle')
+      .attr('x', xx).attr('y', INNER_H + 15)
+      .attr('text-anchor', 'middle')
       .attr('font-size', 10)
-      .attr('font-family', 'monospace')
+      .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', 'var(--data-label-color)')
       .text(tick);
   });
 
-  const groups = chart.selectAll('g.age-group')
-    .data(rows)
-    .join('g')
-    .attr('class', 'age-group')
-    .attr('transform', d => `translate(${x(d.age)},0)`);
+  rows.forEach((row, rowIndex) => {
+    const top = rowIndex * (groupH + groupGap);
+    const midY = top + groupH / 2;
 
-  groups.each(function(row) {
-    const cg = d3.select(this);
+    chartSvg.append('text')
+      .attr('x', ML - 10)
+      .attr('y', MT + midY)
+      .attr('text-anchor', 'end')
+      .attr('dominant-baseline', 'middle')
+      .attr('font-size', 11)
+      .attr('font-family', 'Inter, sans-serif')
+      .attr('fill', 'var(--text-color)')
+      .text(row.age);
+
     const suppressedSeries = series.filter(s => isSuppressedValue(row, s.key));
     const hasOnlySuppressed = suppressedSeries.length > 0 && suppressedSeries.length === series.length;
-
     if (hasOnlySuppressed) {
-      const label = cg.append('text')
-        .attr('x', x.bandwidth() / 2)
-        .attr('y', INNER_H - 28)
-        .attr('text-anchor', 'middle')
+      chart.append('text')
+        .attr('x', 6)
+        .attr('y', midY)
+        .attr('text-anchor', 'start')
         .attr('dominant-baseline', 'middle')
-        .attr('font-size', 8)
-        .attr('font-family', 'monospace')
-        .attr('fill', 'var(--data-label-color)');
-      ['Fewer than', '25 cases', '(*)'].forEach((line, index) => {
-        label.append('tspan')
-          .attr('x', x.bandwidth() / 2)
-          .attr('dy', index === 0 ? 0 : 10)
-          .text(line);
-      });
+        .attr('font-size', 9)
+        .attr('font-family', 'IBM Plex Mono, monospace')
+        .attr('fill', 'var(--data-label-color)')
+        .text('Fewer than 25 cases (*)');
     }
 
-    series.forEach(s => {
+    series.forEach((s, si) => {
+      const laneY = top + si * laneGap;
       const value = row[s.key];
-      if (isSuppressedValue(row, s.key)) return;
-      if (value == null) return;
-      cg.append('rect')
-        .attr('x', xInner(s.key))
-        .attr('y', y(value))
-        .attr('width', xInner.bandwidth())
-        .attr('height', INNER_H - y(value))
+      if (isSuppressedValue(row, s.key) || value == null) return;
+      const endX = x(value);
+
+      chart.append('line')
+        .attr('x1', 0).attr('y1', laneY)
+        .attr('x2', endX).attr('y2', laneY)
+        .attr('stroke', s.displayColor)
+        .attr('stroke-width', 1.8);
+      chart.append('circle')
+        .attr('cx', endX).attr('cy', laneY)
+        .attr('r', 3)
         .attr('fill', s.displayColor);
-      cg.append('text')
-        .attr('x', xInner(s.key) + xInner.bandwidth() / 2)
-        .attr('y', Math.max(y(value) - 6, 10))
-        .attr('text-anchor', 'middle')
-        .attr('font-size', 9)
-        .attr('font-family', 'monospace')
+      chart.append('text')
+        .attr('x', endX + 4).attr('y', laneY)
+        .attr('text-anchor', 'start')
+        .attr('dominant-baseline', 'middle')
+        .attr('font-size', 8.5)
+        .attr('font-family', 'IBM Plex Mono, monospace')
         .attr('fill', 'var(--data-label-color)')
         .text(formatChartValue(row, s.key));
     });
-
-    cg.append('text')
-      .attr('x', x.bandwidth() / 2)
-      .attr('y', INNER_H + 16)
-      .attr('text-anchor', 'middle')
-      .attr('font-size', 11)
-      .attr('font-family', 'sans-serif')
-      .attr('fill', 'var(--text-color)')
-      .text(row.age);
   });
 
   chartSvg.append('text')
     .attr('x', ML + INNER_W / 2)
-    .attr('y', VH - 18)
+    .attr('y', VH - 8)
     .attr('text-anchor', 'middle')
     .attr('font-size', 11)
-    .attr('font-family', 'sans-serif')
-    .attr('fill', 'var(--data-label-color)')
-    .text(block.title || 'Category');
-
-  chartSvg.append('text')
-    .attr('transform', `translate(16 ${MT + INNER_H / 2}) rotate(-90)`)
-    .attr('text-anchor', 'middle')
-    .attr('font-size', 11)
-    .attr('font-family', 'sans-serif')
+    .attr('font-family', 'Inter, sans-serif')
     .attr('fill', 'var(--data-label-color)')
     .text('Percentage of women');
 }

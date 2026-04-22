@@ -146,16 +146,65 @@
       {
         "key": "modern_other_pct",
         "label": "Other"
+      },
+      {
+        "key": "women_total",
+        "label": "Total number of women aged 15 to 49 years"
       }
     ],
     "blocks": [
       {
+        "title": "Total",
+        "year": "2025",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Total",
+            "women_total": "29,694",
+            "any_modern_method_pct": 25.7,
+            "female_sterilization_pct": 4.6,
+            "male_sterilization_pct": 0,
+            "male_sterilization_pct_display": "0.0",
+            "iud_pct": 1.6,
+            "injectables_pct": 3.4,
+            "implants_pct": 2.4,
+            "pill_pct": 11.6,
+            "male_condom_pct": 1.9,
+            "lam_pct": 0.1,
+            "modern_other_pct": 0.1
+          }
+        ]
+      },
+      {
+        "title": "Total",
+        "year": "2022",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
+        "rows": [
+          {
+            "label": "Total",
+            "women_total": "27,821",
+            "any_modern_method_pct": 24.3,
+            "female_sterilization_pct": 5,
+            "female_sterilization_pct_display": "5.0",
+            "male_sterilization_pct": 0.1,
+            "iud_pct": 1.7,
+            "injectables_pct": 2.8,
+            "implants_pct": 1.7,
+            "pill_pct": 11.2,
+            "male_condom_pct": 1.6,
+            "lam_pct": 0.2,
+            "modern_other_pct": 0.1
+          }
+        ]
+      },
+      {
         "title": "Number of living children",
         "year": "2025",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "0",
+            "women_total": "13,208",
             "any_modern_method_pct": 2.4,
             "female_sterilization_pct": 0,
             "female_sterilization_pct_display": "0.0",
@@ -175,6 +224,7 @@
           },
           {
             "label": "1-2",
+            "women_total": "9,768",
             "any_modern_method_pct": 37.9,
             "female_sterilization_pct": 3.3,
             "male_sterilization_pct": 0,
@@ -189,6 +239,7 @@
           },
           {
             "label": "3-4",
+            "women_total": "5,150",
             "any_modern_method_pct": 55.8,
             "female_sterilization_pct": 15.9,
             "male_sterilization_pct": 0.2,
@@ -203,6 +254,7 @@
           },
           {
             "label": "5+",
+            "women_total": "1,568",
             "any_modern_method_pct": 46.5,
             "female_sterilization_pct": 14.1,
             "male_sterilization_pct": 0,
@@ -221,10 +273,11 @@
       {
         "title": "Number of living children",
         "year": "2022",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "0",
+            "women_total": "12,244",
             "any_modern_method_pct": 1.8,
             "female_sterilization_pct": 0,
             "female_sterilization_pct_display": "0.0",
@@ -245,6 +298,7 @@
           },
           {
             "label": "1-2",
+            "women_total": "8,634",
             "any_modern_method_pct": 35.9,
             "female_sterilization_pct": 3.4,
             "male_sterilization_pct": 0.1,
@@ -258,6 +312,7 @@
           },
           {
             "label": "3-4",
+            "women_total": "5,031",
             "any_modern_method_pct": 51.1,
             "female_sterilization_pct": 16.5,
             "male_sterilization_pct": 0.1,
@@ -271,6 +326,7 @@
           },
           {
             "label": "5+",
+            "women_total": "1,912",
             "any_modern_method_pct": 45,
             "any_modern_method_pct_display": "45.0",
             "female_sterilization_pct": 13.7,
@@ -291,10 +347,11 @@
       {
         "title": "Age",
         "year": "2025",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "15-19",
+            "women_total": "5,691",
             "any_modern_method_pct": 2.5,
             "female_sterilization_pct": 0,
             "female_sterilization_pct_display": "0.0",
@@ -312,6 +369,7 @@
           },
           {
             "label": "20-24",
+            "women_total": "4,637",
             "any_modern_method_pct": 15.4,
             "female_sterilization_pct": 0,
             "female_sterilization_pct_display": "0.0",
@@ -329,6 +387,7 @@
           },
           {
             "label": "25-29",
+            "women_total": "4,172",
             "any_modern_method_pct": 27.4,
             "female_sterilization_pct": 0.5,
             "male_sterilization_pct": 0,
@@ -344,6 +403,7 @@
           },
           {
             "label": "30-34",
+            "women_total": "4,152",
             "any_modern_method_pct": 38,
             "any_modern_method_pct_display": "38.0",
             "female_sterilization_pct": 3.4,
@@ -359,6 +419,7 @@
           },
           {
             "label": "35-39",
+            "women_total": "4,048",
             "any_modern_method_pct": 41.1,
             "female_sterilization_pct": 8.8,
             "male_sterilization_pct": 0,
@@ -373,6 +434,7 @@
           },
           {
             "label": "40-44",
+            "women_total": "3,649",
             "any_modern_method_pct": 38.4,
             "female_sterilization_pct": 11.8,
             "male_sterilization_pct": 0.1,
@@ -389,6 +451,7 @@
           },
           {
             "label": "45-49",
+            "women_total": "3,345",
             "any_modern_method_pct": 29.3,
             "female_sterilization_pct": 12.4,
             "male_sterilization_pct": 0.1,
@@ -408,10 +471,11 @@
       {
         "title": "Age",
         "year": "2022",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "15-19",
+            "women_total": "5,531",
             "any_modern_method_pct": 2.6,
             "female_sterilization_pct": 0,
             "female_sterilization_pct_display": "0.0",
@@ -428,6 +492,7 @@
           },
           {
             "label": "20-24",
+            "women_total": "4,677",
             "any_modern_method_pct": 13.7,
             "female_sterilization_pct": 0,
             "female_sterilization_pct_display": "0.0",
@@ -444,6 +509,7 @@
           },
           {
             "label": "25-29",
+            "women_total": "3,904",
             "any_modern_method_pct": 29.3,
             "female_sterilization_pct": 0.9,
             "male_sterilization_pct": 0,
@@ -459,6 +525,7 @@
           },
           {
             "label": "30-34",
+            "women_total": "3,729",
             "any_modern_method_pct": 35.6,
             "female_sterilization_pct": 4,
             "female_sterilization_pct_display": "4.0",
@@ -474,6 +541,7 @@
           },
           {
             "label": "35-39",
+            "women_total": "3,418",
             "any_modern_method_pct": 40.5,
             "female_sterilization_pct": 9,
             "female_sterilization_pct_display": "9.0",
@@ -490,6 +558,7 @@
           },
           {
             "label": "40-44",
+            "women_total": "3,389",
             "any_modern_method_pct": 37,
             "any_modern_method_pct_display": "37.0",
             "female_sterilization_pct": 13.5,
@@ -504,6 +573,7 @@
           },
           {
             "label": "45-49",
+            "women_total": "3,173",
             "any_modern_method_pct": 27.1,
             "female_sterilization_pct": 13.8,
             "male_sterilization_pct": 0.3,
@@ -521,10 +591,11 @@
       {
         "title": "Residence",
         "year": "2025",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "Urban",
+            "women_total": "17,071",
             "any_modern_method_pct": 23.3,
             "female_sterilization_pct": 4.5,
             "male_sterilization_pct": 0.1,
@@ -539,6 +610,7 @@
           },
           {
             "label": "Rural",
+            "women_total": "12,623",
             "any_modern_method_pct": 28.8,
             "female_sterilization_pct": 4.7,
             "male_sterilization_pct": 0,
@@ -557,10 +629,11 @@
       {
         "title": "Residence",
         "year": "2022",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "Urban",
+            "women_total": "15,579",
             "any_modern_method_pct": 22.6,
             "female_sterilization_pct": 5.1,
             "male_sterilization_pct": 0,
@@ -575,6 +648,7 @@
           },
           {
             "label": "Rural",
+            "women_total": "12,242",
             "any_modern_method_pct": 26.4,
             "female_sterilization_pct": 4.9,
             "male_sterilization_pct": 0.1,
@@ -593,10 +667,11 @@
       {
         "title": "Educational attainment",
         "year": "2025",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "No education",
+            "women_total": "232",
             "any_modern_method_pct": 19.9,
             "female_sterilization_pct": 2.5,
             "male_sterilization_pct": 0,
@@ -615,6 +690,7 @@
           },
           {
             "label": "Grades 1-6",
+            "women_total": "2,214",
             "any_modern_method_pct": 40.1,
             "female_sterilization_pct": 8,
             "female_sterilization_pct_display": "8.0",
@@ -631,6 +707,7 @@
           },
           {
             "label": "Grades 7-10",
+            "women_total": "11,055",
             "any_modern_method_pct": 31.6,
             "female_sterilization_pct": 5,
             "female_sterilization_pct_display": "5.0",
@@ -647,6 +724,7 @@
           },
           {
             "label": "Grades 11-12",
+            "women_total": "3,644",
             "any_modern_method_pct": 11.8,
             "female_sterilization_pct": 0,
             "female_sterilization_pct_display": "0.0",
@@ -666,6 +744,7 @@
           },
           {
             "label": "Post-secondary",
+            "women_total": "435",
             "any_modern_method_pct": 32,
             "any_modern_method_pct_display": "32.0",
             "female_sterilization_pct": 8.4,
@@ -681,6 +760,7 @@
           },
           {
             "label": "College",
+            "women_total": "12,114",
             "any_modern_method_pct": 21.7,
             "female_sterilization_pct": 4.9,
             "male_sterilization_pct": 0,
@@ -700,10 +780,11 @@
       {
         "title": "Educational attainment",
         "year": "2022",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "No education",
+            "women_total": "197",
             "any_modern_method_pct": 19,
             "any_modern_method_pct_display": "19.0",
             "female_sterilization_pct": 2.4,
@@ -721,6 +802,7 @@
           },
           {
             "label": "Grades 1-6",
+            "women_total": "2,538",
             "any_modern_method_pct": 38.3,
             "female_sterilization_pct": 8.8,
             "male_sterilization_pct": 0,
@@ -736,6 +818,7 @@
           },
           {
             "label": "Grades 7-10",
+            "women_total": "11,954",
             "any_modern_method_pct": 27.1,
             "female_sterilization_pct": 5.1,
             "male_sterilization_pct": 0,
@@ -751,6 +834,7 @@
           },
           {
             "label": "Grades 11-12",
+            "women_total": "2,751",
             "any_modern_method_pct": 6.1,
             "female_sterilization_pct": 0,
             "female_sterilization_pct_display": "0.0",
@@ -767,6 +851,7 @@
           },
           {
             "label": "Post-secondary",
+            "women_total": "625",
             "any_modern_method_pct": 29.8,
             "female_sterilization_pct": 7.3,
             "male_sterilization_pct": 0,
@@ -783,6 +868,7 @@
           },
           {
             "label": "College",
+            "women_total": "9,755",
             "any_modern_method_pct": 22,
             "any_modern_method_pct_display": "22.0",
             "female_sterilization_pct": 5.2,
@@ -800,10 +886,11 @@
       {
         "title": "Wealth quintile",
         "year": "2025",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "Lowest",
+            "women_total": "5,130",
             "any_modern_method_pct": 32.5,
             "female_sterilization_pct": 3.4,
             "male_sterilization_pct": 0,
@@ -819,6 +906,7 @@
           },
           {
             "label": "Second",
+            "women_total": "5,605",
             "any_modern_method_pct": 29.2,
             "female_sterilization_pct": 4.8,
             "male_sterilization_pct": 0,
@@ -836,6 +924,7 @@
           },
           {
             "label": "Middle",
+            "women_total": "6,149",
             "any_modern_method_pct": 26,
             "any_modern_method_pct_display": "26.0",
             "female_sterilization_pct": 4.2,
@@ -851,6 +940,7 @@
           },
           {
             "label": "Fourth",
+            "women_total": "6,497",
             "any_modern_method_pct": 22.5,
             "female_sterilization_pct": 4.5,
             "male_sterilization_pct": 0,
@@ -866,6 +956,7 @@
           },
           {
             "label": "Highest",
+            "women_total": "6,313",
             "any_modern_method_pct": 20,
             "any_modern_method_pct_display": "20.0",
             "female_sterilization_pct": 5.8,
@@ -884,10 +975,11 @@
       {
         "title": "Wealth quintile",
         "year": "2022",
-        "subtitle": "All women aged 15 to 49 years.",
+        "subtitle": "Percent distribution of all women aged 15 to 49 years.",
         "rows": [
           {
             "label": "Lowest",
+            "women_total": "4,595",
             "any_modern_method_pct": 31,
             "any_modern_method_pct_display": "31.0",
             "female_sterilization_pct": 3.8,
@@ -905,6 +997,7 @@
           },
           {
             "label": "Second",
+            "women_total": "5,219",
             "any_modern_method_pct": 28.8,
             "female_sterilization_pct": 5.4,
             "male_sterilization_pct": 0,
@@ -920,6 +1013,7 @@
           },
           {
             "label": "Middle",
+            "women_total": "5,666",
             "any_modern_method_pct": 25.3,
             "female_sterilization_pct": 5.1,
             "male_sterilization_pct": 0,
@@ -934,6 +1028,7 @@
           },
           {
             "label": "Fourth",
+            "women_total": "6,048",
             "any_modern_method_pct": 18.9,
             "female_sterilization_pct": 4.6,
             "male_sterilization_pct": 0.2,
@@ -948,6 +1043,7 @@
           },
           {
             "label": "Highest",
+            "women_total": "6,292",
             "any_modern_method_pct": 19.8,
             "female_sterilization_pct": 5.8,
             "male_sterilization_pct": 0.1,
@@ -973,43 +1069,43 @@
   "detailFields": [
     {
       "key": "any_modern_method_pct",
-      "label": "Any modern method (2025)"
+      "label": "Any modern method (%, 2025)"
     },
     {
       "key": "female_sterilization_pct",
-      "label": "Female sterilization (2025)"
+      "label": "Female sterilization (%, 2025)"
     },
     {
       "key": "male_sterilization_pct",
-      "label": "Male sterilization (2025)"
+      "label": "Male sterilization (%, 2025)"
     },
     {
       "key": "iud_pct",
-      "label": "IUD (2025)"
+      "label": "IUD (%, 2025)"
     },
     {
       "key": "injectables_pct",
-      "label": "Injectables (2025)"
+      "label": "Injectables (%, 2025)"
     },
     {
       "key": "implants_pct",
-      "label": "Implants (2025)"
+      "label": "Implants (%, 2025)"
     },
     {
       "key": "pill_pct",
-      "label": "Pill (2025)"
+      "label": "Pill (%, 2025)"
     },
     {
       "key": "male_condom_pct",
-      "label": "Male condom (2025)"
+      "label": "Male condom (%, 2025)"
     },
     {
       "key": "lam_pct",
-      "label": "LAM (2025)"
+      "label": "LAM (%, 2025)"
     },
     {
       "key": "modern_other_pct",
-      "label": "Other modern methods (2025)"
+      "label": "Other modern methods (%, 2025)"
     },
     {
       "key": "women_total",
@@ -1236,6 +1332,7 @@
         "male_condom_pct": 0.7,
         "lam_pct": 0.3,
         "modern_other_pct": 0.1,
+        "noteRef": "²",
         "psa_note": "Region IX includes the province of Sulu in 2025."
       },
       {

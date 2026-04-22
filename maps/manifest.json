@@ -56,6 +56,38 @@
     "addedAt": "2026-04-19"
   },
   {
+    "slug": "contraception-married-sexually-active-women-2025",
+    "title": "Contraception Among Married and Sexually Active Women",
+    "description": "Contraception among currently married women by region, with data tables for currently married and sexually active unmarried women (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-20"
+  },
+  {
+    "slug": "modern-contraception-married-sexually-active-women-2025",
+    "title": "Modern Contraception Among Married and Sexually Active Women",
+    "description": "Modern contraception among currently married women by region, with data tables for currently married and sexually active unmarried women (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-20"
+  },
+  {
+    "slug": "traditional-contraception-married-sexually-active-women-2025",
+    "title": "Traditional Contraception Among Married and Sexually Active Women",
+    "description": "Traditional contraception among currently married women by region, with data tables for currently married and sexually active unmarried women (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-20"
+  },
+  {
+    "slug": "source-of-modern-contraception-methods-2025",
+    "title": "Source of Modern Contraception Methods",
+    "description": "Most recent source of modern contraceptive methods among users aged 15 to 49 years, by method (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-20"
+  },
+  {
     "slug": "fertility-preferences-2025",
     "title": "Fertility Preferences",
     "description": "Desire for children by region: want no more, timing preferences, sterilization, and declared infecundity (NDHS 2025)",

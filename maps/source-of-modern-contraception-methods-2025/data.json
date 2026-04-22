@@ -1,0 +1,2317 @@
+{
+  "sectionTitle": "CONTRACEPTION",
+  "title": "Source of Modern Contraception Methods",
+  "description": "Percent distribution of users of modern contraceptive methods aged 15 to 49 years by most recent source of method, according to method. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
+  "chartData": {
+    "title": "Source of Modern Contraception Methods",
+    "subtitle": "",
+    "notes": [
+      "Each cell represents one percentage point of modern-method users for that year.",
+      "Some methods are excluded because sample sizes were too small to produce reliable estimates.",
+      "¹ Barangay health worker",
+      "\"0.0\" indicates that an estimate is less than 0.05 percent."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+    "blocks": [
+      {
+        "year": "2025",
+        "methods": [
+          {
+            "key": "total",
+            "label": "All methods",
+            "totalUsers": 7585,
+            "totalUsersLabel": "7,585",
+            "totalShare": 100,
+            "totalShareLabel": "100",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#2f67be",
+                "pct": 51,
+                "pctLabel": "51.0"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 41.8,
+                "pctLabel": "41.8"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#3d8d63",
+                "pct": 7.2,
+                "pctLabel": "7.2"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#2f67be",
+                "pct": 18.2,
+                "pctLabel": "18.2"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#5684d2",
+                "pct": 11.5,
+                "pctLabel": "11.5"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#79a5e6",
+                "pct": 19.5,
+                "pctLabel": "19.5"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9dc2f3",
+                "pct": 1.7,
+                "pctLabel": "1.7"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 6.8,
+                "pctLabel": "6.8"
+              },
+              {
+                "key": "pharmacy",
+                "label": "Pharmacy",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#dc8f3f",
+                "pct": 34.2,
+                "pctLabel": "34.2"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ebb46f",
+                "pct": 0.6,
+                "pctLabel": "0.6"
+              },
+              {
+                "key": "private_nurse_midwife",
+                "label": "Private nurse/midwife",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#f2cea0",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "industry_based_clinic",
+                "label": "Industry based clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#f8e5cb",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "shop_store",
+                "label": "Shop/store",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#3d8d63",
+                "pct": 6.8,
+                "pctLabel": "6.8"
+              },
+              {
+                "key": "friend_relative",
+                "label": "Friend/relative",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#87c39f",
+                "pct": 0.4,
+                "pctLabel": "0.4"
+              }
+            ]
+          },
+          {
+            "key": "female_sterilization",
+            "label": "Female sterilization",
+            "totalUsers": 1363,
+            "totalUsersLabel": "1,363",
+            "totalShare": 17.96967699406724,
+            "totalShareLabel": "18.0",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#2f67be",
+                "pct": 73.5,
+                "pctLabel": "73.5"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 26.5,
+                "pctLabel": "26.5"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#3d8d63",
+                "pct": 0,
+                "pctLabel": "0.0"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#2f67be",
+                "pct": 67.9,
+                "pctLabel": "67.9"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#5684d2",
+                "pct": 4.3,
+                "pctLabel": "4.3"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#79a5e6",
+                "pct": 1,
+                "pctLabel": "1.0"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9dc2f3",
+                "pct": 0.2,
+                "pctLabel": "0.2"
+              },
+              {
+                "key": "other_public_sector",
+                "label": "Other public sector",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#c2dbfb",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 25.4,
+                "pctLabel": "25.4"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ebb46f",
+                "pct": 1,
+                "pctLabel": "1.0"
+              }
+            ]
+          },
+          {
+            "key": "iud",
+            "label": "IUD",
+            "totalUsers": 476,
+            "totalUsersLabel": "476",
+            "totalShare": 6.2755438365194465,
+            "totalShareLabel": "6.3",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#2f67be",
+                "pct": 90.4,
+                "pctLabel": "90.4"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 9.6,
+                "pctLabel": "9.6"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#3d8d63",
+                "pct": 0,
+                "pctLabel": "0.0"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#2f67be",
+                "pct": 47.3,
+                "pctLabel": "47.3"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#5684d2",
+                "pct": 23.8,
+                "pctLabel": "23.8"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#79a5e6",
+                "pct": 18.6,
+                "pctLabel": "18.6"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9dc2f3",
+                "pct": 0.6,
+                "pctLabel": "0.6"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 9.2,
+                "pctLabel": "9.2"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ebb46f",
+                "pct": 0.4,
+                "pctLabel": "0.4"
+              }
+            ]
+          },
+          {
+            "key": "injectables",
+            "label": "Injectables",
+            "totalUsers": 1018,
+            "totalUsersLabel": "1,018",
+            "totalShare": 13.421226104152934,
+            "totalShareLabel": "13.4",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#2f67be",
+                "pct": 89,
+                "pctLabel": "89.0"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 11,
+                "pctLabel": "11.0"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#3d8d63",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#2f67be",
+                "pct": 2.6,
+                "pctLabel": "2.6"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#5684d2",
+                "pct": 27.2,
+                "pctLabel": "27.2"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#79a5e6",
+                "pct": 57,
+                "pctLabel": "57.0"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9dc2f3",
+                "pct": 2.1,
+                "pctLabel": "2.1"
+              },
+              {
+                "key": "other_public_sector",
+                "label": "Other public sector",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#c2dbfb",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 7,
+                "pctLabel": "7.0"
+              },
+              {
+                "key": "pharmacy",
+                "label": "Pharmacy",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#dc8f3f",
+                "pct": 2.9,
+                "pctLabel": "2.9"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ebb46f",
+                "pct": 0.7,
+                "pctLabel": "0.7"
+              },
+              {
+                "key": "private_nurse_midwife",
+                "label": "Private nurse/midwife",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#f2cea0",
+                "pct": 0.3,
+                "pctLabel": "0.3"
+              },
+              {
+                "key": "industry_based_clinic",
+                "label": "Industry based clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#f8e5cb",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "shop_store",
+                "label": "Shop/store",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#3d8d63",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              }
+            ]
+          },
+          {
+            "key": "implants",
+            "label": "Implants",
+            "totalUsers": 709,
+            "totalUsersLabel": "709",
+            "totalShare": 9.34739617666447,
+            "totalShareLabel": "9.3",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#2f67be",
+                "pct": 93.9,
+                "pctLabel": "93.9"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 6,
+                "pctLabel": "6.0"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#3d8d63",
+                "pct": 0,
+                "pctLabel": "0.0"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#2f67be",
+                "pct": 21.9,
+                "pctLabel": "21.9"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#5684d2",
+                "pct": 35.6,
+                "pctLabel": "35.6"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#79a5e6",
+                "pct": 34.7,
+                "pctLabel": "34.7"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9dc2f3",
+                "pct": 1.7,
+                "pctLabel": "1.7"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 4.4,
+                "pctLabel": "4.4"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ebb46f",
+                "pct": 0.8,
+                "pctLabel": "0.8"
+              },
+              {
+                "key": "private_nurse_midwife",
+                "label": "Private nurse/midwife",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#f2cea0",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "industry_based_clinic",
+                "label": "Industry based clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#f8e5cb",
+                "pct": 0.8,
+                "pctLabel": "0.8"
+              },
+              {
+                "key": "other_source_detail",
+                "label": "Other",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#add8bc",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              }
+            ]
+          },
+          {
+            "key": "pill",
+            "label": "Pill",
+            "totalUsers": 3432,
+            "totalUsersLabel": "3,432",
+            "totalShare": 45.24719841793012,
+            "totalShareLabel": "45.2",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#2f67be",
+                "pct": 22.8,
+                "pctLabel": "22.8"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 67,
+                "pctLabel": "67.0"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#3d8d63",
+                "pct": 10.2,
+                "pctLabel": "10.2"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#2f67be",
+                "pct": 0.4,
+                "pctLabel": "0.4"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#5684d2",
+                "pct": 4.6,
+                "pctLabel": "4.6"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#79a5e6",
+                "pct": 15.1,
+                "pctLabel": "15.1"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9dc2f3",
+                "pct": 2.7,
+                "pctLabel": "2.7"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 0.5,
+                "pctLabel": "0.5"
+              },
+              {
+                "key": "pharmacy",
+                "label": "Pharmacy",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#dc8f3f",
+                "pct": 66,
+                "pctLabel": "66.0"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ebb46f",
+                "pct": 0.6,
+                "pctLabel": "0.6"
+              },
+              {
+                "key": "shop_store",
+                "label": "Shop/store",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#3d8d63",
+                "pct": 10.1,
+                "pctLabel": "10.1"
+              },
+              {
+                "key": "friend_relative",
+                "label": "Friend/relative",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#87c39f",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              }
+            ]
+          },
+          {
+            "key": "male_condom",
+            "label": "Male condom",
+            "totalUsers": 558,
+            "totalUsersLabel": "558",
+            "totalShare": 7.356624917600528,
+            "totalShareLabel": "7.4",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#2f67be",
+                "pct": 12.2,
+                "pctLabel": "12.2"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 54.7,
+                "pctLabel": "54.7"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#3d8d63",
+                "pct": 33.1,
+                "pctLabel": "33.1"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#2f67be",
+                "pct": 4.7,
+                "pctLabel": "4.7"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#5684d2",
+                "pct": 1.8,
+                "pctLabel": "1.8"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#79a5e6",
+                "pct": 5.4,
+                "pctLabel": "5.4"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9dc2f3",
+                "pct": 0.2,
+                "pctLabel": "0.2"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#c96f2d",
+                "pct": 0.5,
+                "pctLabel": "0.5"
+              },
+              {
+                "key": "pharmacy",
+                "label": "Pharmacy",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#dc8f3f",
+                "pct": 54.2,
+                "pctLabel": "54.2"
+              },
+              {
+                "key": "shop_store",
+                "label": "Shop/store",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#3d8d63",
+                "pct": 29.2,
+                "pctLabel": "29.2"
+              },
+              {
+                "key": "friend_relative",
+                "label": "Friend/relative",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#87c39f",
+                "pct": 3.9,
+                "pctLabel": "3.9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "methods": [
+          {
+            "key": "total",
+            "label": "All methods",
+            "totalUsers": 6676,
+            "totalUsersLabel": "6,676",
+            "totalShare": 100,
+            "totalShareLabel": "100",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#55baff",
+                "pct": 50.1,
+                "pctLabel": "50.1"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 46.3,
+                "pctLabel": "46.3"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#6efeb2",
+                "pct": 3.6,
+                "pctLabel": "3.6"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#55baff",
+                "pct": 18.9,
+                "pctLabel": "18.9"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9beeff",
+                "pct": 9.8,
+                "pctLabel": "9.8"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#daffff",
+                "pct": 19.9,
+                "pctLabel": "19.9"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#ffffff",
+                "pct": 1.3,
+                "pctLabel": "1.3"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 8.3,
+                "pctLabel": "8.3"
+              },
+              {
+                "key": "pharmacy",
+                "label": "Pharmacy",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffff72",
+                "pct": 37.6,
+                "pctLabel": "37.6"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffffc8",
+                "pct": 0.3,
+                "pctLabel": "0.3"
+              },
+              {
+                "key": "private_nurse_midwife",
+                "label": "Private nurse/midwife",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffffff",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "shop_store",
+                "label": "Shop/store",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#6efeb2",
+                "pct": 3.3,
+                "pctLabel": "3.3"
+              },
+              {
+                "key": "church",
+                "label": "Church",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#b2ffec",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "friend_relative",
+                "label": "Friend/relative",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#f3ffff",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "other_source_detail",
+                "label": "Other",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#ffffff",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              }
+            ]
+          },
+          {
+            "key": "female_sterilization",
+            "label": "Female sterilization",
+            "totalUsers": 1389,
+            "totalUsersLabel": "1,389",
+            "totalShare": 20.80587177950869,
+            "totalShareLabel": "20.8",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#55baff",
+                "pct": 73,
+                "pctLabel": "73.0"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 26.9,
+                "pctLabel": "26.9"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#6efeb2",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#55baff",
+                "pct": 67.7,
+                "pctLabel": "67.7"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9beeff",
+                "pct": 3.6,
+                "pctLabel": "3.6"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#daffff",
+                "pct": 1.6,
+                "pctLabel": "1.6"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 26.6,
+                "pctLabel": "26.6"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffffc8",
+                "pct": 0.3,
+                "pctLabel": "0.3"
+              },
+              {
+                "key": "other_source_detail",
+                "label": "Other",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#ffffff",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              }
+            ]
+          },
+          {
+            "key": "iud",
+            "label": "IUD",
+            "totalUsers": 475,
+            "totalUsersLabel": "475",
+            "totalShare": 7.115038945476333,
+            "totalShareLabel": "7.1",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#55baff",
+                "pct": 88.3,
+                "pctLabel": "88.3"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 11.3,
+                "pctLabel": "11.3"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#6efeb2",
+                "pct": 0,
+                "pctLabel": "0.0"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#55baff",
+                "pct": 36.6,
+                "pctLabel": "36.6"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9beeff",
+                "pct": 23.2,
+                "pctLabel": "23.2"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#daffff",
+                "pct": 27.5,
+                "pctLabel": "27.5"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#ffffff",
+                "pct": 0.9,
+                "pctLabel": "0.9"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 10.5,
+                "pctLabel": "10.5"
+              },
+              {
+                "key": "pharmacy",
+                "label": "Pharmacy",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffff72",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffffc8",
+                "pct": 0.6,
+                "pctLabel": "0.6"
+              },
+              {
+                "key": "private_nurse_midwife",
+                "label": "Private nurse/midwife",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffffff",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "dont_know",
+                "label": "Don't know",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#ffffff",
+                "pct": 0.4,
+                "pctLabel": "0.4"
+              }
+            ]
+          },
+          {
+            "key": "injectables",
+            "label": "Injectables",
+            "totalUsers": 779,
+            "totalUsersLabel": "779",
+            "totalShare": 11.668663870581186,
+            "totalShareLabel": "11.7",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#55baff",
+                "pct": 85.3,
+                "pctLabel": "85.3"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 14.6,
+                "pctLabel": "14.6"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#6efeb2",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#55baff",
+                "pct": 2.6,
+                "pctLabel": "2.6"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9beeff",
+                "pct": 26.8,
+                "pctLabel": "26.8"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#daffff",
+                "pct": 52.4,
+                "pctLabel": "52.4"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#ffffff",
+                "pct": 3.5,
+                "pctLabel": "3.5"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 8.7,
+                "pctLabel": "8.7"
+              },
+              {
+                "key": "pharmacy",
+                "label": "Pharmacy",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffff72",
+                "pct": 4.3,
+                "pctLabel": "4.3"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffffc8",
+                "pct": 1.1,
+                "pctLabel": "1.1"
+              },
+              {
+                "key": "private_nurse_midwife",
+                "label": "Private nurse/midwife",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffffff",
+                "pct": 0.5,
+                "pctLabel": "0.5"
+              },
+              {
+                "key": "friend_relative",
+                "label": "Friend/relative",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#f3ffff",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              }
+            ]
+          },
+          {
+            "key": "implants",
+            "label": "Implants",
+            "totalUsers": 464,
+            "totalUsersLabel": "464",
+            "totalShare": 6.9502696225284595,
+            "totalShareLabel": "7.0",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#55baff",
+                "pct": 90,
+                "pctLabel": "90.0"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 10,
+                "pctLabel": "10.0"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#6efeb2",
+                "pct": 0,
+                "pctLabel": "0.0"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#55baff",
+                "pct": 21.7,
+                "pctLabel": "21.7"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9beeff",
+                "pct": 30.3,
+                "pctLabel": "30.3"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#daffff",
+                "pct": 37,
+                "pctLabel": "37.0"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#ffffff",
+                "pct": 0.9,
+                "pctLabel": "0.9"
+              },
+              {
+                "key": "other_public_sector",
+                "label": "Other public sector",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#ffffff",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 9.3,
+                "pctLabel": "9.3"
+              },
+              {
+                "key": "pharmacy",
+                "label": "Pharmacy",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffff72",
+                "pct": 0.2,
+                "pctLabel": "0.2"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffffc8",
+                "pct": 0.5,
+                "pctLabel": "0.5"
+              }
+            ]
+          },
+          {
+            "key": "pill",
+            "label": "Pill",
+            "totalUsers": 3107,
+            "totalUsersLabel": "3,107",
+            "totalShare": 46.539844218094665,
+            "totalShareLabel": "46.5",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#55baff",
+                "pct": 24.1,
+                "pctLabel": "24.1"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 70.3,
+                "pctLabel": "70.3"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#6efeb2",
+                "pct": 5.6,
+                "pctLabel": "5.6"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#55baff",
+                "pct": 0.5,
+                "pctLabel": "0.5"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9beeff",
+                "pct": 4.4,
+                "pctLabel": "4.4"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#daffff",
+                "pct": 17.8,
+                "pctLabel": "17.8"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#ffffff",
+                "pct": 1.5,
+                "pctLabel": "1.5"
+              },
+              {
+                "key": "private_hospital",
+                "label": "Private hospital/clinic/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 0.5,
+                "pctLabel": "0.5"
+              },
+              {
+                "key": "pharmacy",
+                "label": "Pharmacy",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffff72",
+                "pct": 69.6,
+                "pctLabel": "69.6"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffffc8",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "shop_store",
+                "label": "Shop/store",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#6efeb2",
+                "pct": 5.2,
+                "pctLabel": "5.2"
+              },
+              {
+                "key": "church",
+                "label": "Church",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#b2ffec",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "friend_relative",
+                "label": "Friend/relative",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#f3ffff",
+                "pct": 0.2,
+                "pctLabel": "0.2"
+              }
+            ]
+          },
+          {
+            "key": "male_condom",
+            "label": "Male condom",
+            "totalUsers": 435,
+            "totalUsersLabel": "435",
+            "totalShare": 6.515877771120432,
+            "totalShareLabel": "6.5",
+            "sectors": [
+              {
+                "key": "public_sector",
+                "label": "Public sector",
+                "color": "#55baff",
+                "pct": 14.2,
+                "pctLabel": "14.2"
+              },
+              {
+                "key": "private_medical_sector",
+                "label": "Private medical sector",
+                "color": "#ffc851",
+                "pct": 72,
+                "pctLabel": "72.0"
+              },
+              {
+                "key": "other_source",
+                "label": "Other source",
+                "color": "#6efeb2",
+                "pct": 13.8,
+                "pctLabel": "13.8"
+              }
+            ],
+            "sources": [
+              {
+                "key": "government_hospital",
+                "label": "Government hospital",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#55baff",
+                "pct": 1,
+                "pctLabel": "1.0"
+              },
+              {
+                "key": "rural_health_center",
+                "label": "Rural health center/urban health center/lying-in clinic",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#9beeff",
+                "pct": 2.3,
+                "pctLabel": "2.3"
+              },
+              {
+                "key": "barangay_health_station",
+                "label": "Barangay health station",
+                "noteRef": "",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#daffff",
+                "pct": 10.1,
+                "pctLabel": "10.1"
+              },
+              {
+                "key": "bhw",
+                "label": "Barangay supply/service point officer/BHW",
+                "noteRef": "¹",
+                "sectorKey": "public_sector",
+                "sectorLabel": "Public sector",
+                "color": "#ffffff",
+                "pct": 0.8,
+                "pctLabel": "0.8"
+              },
+              {
+                "key": "pharmacy",
+                "label": "Pharmacy",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffff72",
+                "pct": 71.9,
+                "pctLabel": "71.9"
+              },
+              {
+                "key": "private_doctor",
+                "label": "Private doctor",
+                "noteRef": "",
+                "sectorKey": "private_medical_sector",
+                "sectorLabel": "Private medical sector",
+                "color": "#ffffc8",
+                "pct": 0.1,
+                "pctLabel": "0.1"
+              },
+              {
+                "key": "shop_store",
+                "label": "Shop/store",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#6efeb2",
+                "pct": 12.6,
+                "pctLabel": "12.6"
+              },
+              {
+                "key": "friend_relative",
+                "label": "Friend/relative",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#f3ffff",
+                "pct": 0.4,
+                "pctLabel": "0.4"
+              },
+              {
+                "key": "other_source_detail",
+                "label": "Other",
+                "noteRef": "",
+                "sectorKey": "other_source",
+                "sectorLabel": "Other source",
+                "color": "#ffffff",
+                "pct": 0.9,
+                "pctLabel": "0.9"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "tableData": {
+    "title": "Source of Modern Contraception Methods",
+    "subtitle": "Percent distribution of users of modern contraceptive methods aged 15 to 49 years by most recent source of method, according to method: Philippines, 2022 and 2025 NDHS.",
+    "tables": [
+      {
+        "title": "Source",
+        "subtitle": "Users of modern contraceptive methods aged 15 to 49 years.",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Female sterilization"
+              },
+              {
+                "label": "Male sterilization"
+              },
+              {
+                "label": "IUD"
+              },
+              {
+                "label": "Injectables"
+              },
+              {
+                "label": "Implants"
+              },
+              {
+                "label": "Pill"
+              },
+              {
+                "label": "Male condom"
+              },
+              {
+                "label": "Other"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Female sterilization"
+              },
+              {
+                "label": "Male sterilization"
+              },
+              {
+                "label": "IUD"
+              },
+              {
+                "label": "Injectables"
+              },
+              {
+                "label": "Implants"
+              },
+              {
+                "label": "Pill"
+              },
+              {
+                "label": "Male condom"
+              },
+              {
+                "label": "Other"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Public sector",
+            "noteRef": "",
+            "rowClass": "dt-summary-row",
+            "values": [
+              "73.5",
+              "*",
+              "90.4",
+              "89.0",
+              "93.9",
+              "22.8",
+              "12.2",
+              "*",
+              "51.0",
+              "73.0",
+              "*",
+              "88.3",
+              "85.3",
+              "90.0",
+              "24.1",
+              "14.2",
+              "*",
+              "50.1"
+            ]
+          },
+          {
+            "label": "Government hospital",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "67.9",
+              "*",
+              "47.3",
+              "2.6",
+              "21.9",
+              "0.4",
+              "4.7",
+              "*",
+              "18.2",
+              "67.7",
+              "*",
+              "36.6",
+              "2.6",
+              "21.7",
+              "0.5",
+              "1.0",
+              "*",
+              "18.9"
+            ]
+          },
+          {
+            "label": "Rural health center/ urban health center/ lying-in clinic",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "4.3",
+              "*",
+              "23.8",
+              "27.2",
+              "35.6",
+              "4.6",
+              "1.8",
+              "*",
+              "11.5",
+              "3.6",
+              "*",
+              "23.2",
+              "26.8",
+              "30.3",
+              "4.4",
+              "2.3",
+              "*",
+              "9.8"
+            ]
+          },
+          {
+            "label": "Barangay health station",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "1.0",
+              "*",
+              "18.6",
+              "57.0",
+              "34.7",
+              "15.1",
+              "5.4",
+              "*",
+              "19.5",
+              "1.6",
+              "*",
+              "27.5",
+              "52.4",
+              "37.0",
+              "17.8",
+              "10.1",
+              "*",
+              "19.9"
+            ]
+          },
+          {
+            "label": "Barangay supply/service point officer/BHW",
+            "noteRef": "¹",
+            "rowClass": "",
+            "values": [
+              "0.2",
+              "*",
+              "0.6",
+              "2.1",
+              "1.7",
+              "2.7",
+              "0.2",
+              "*",
+              "1.7",
+              "0.0",
+              "*",
+              "0.9",
+              "3.5",
+              "0.9",
+              "1.5",
+              "0.8",
+              "*",
+              "1.3"
+            ]
+          },
+          {
+            "label": "Other public sector",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "0.1",
+              "*",
+              "0.0",
+              "0.1",
+              "0.0",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.1",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0"
+            ]
+          },
+          {
+            "label": "Private medical sector",
+            "noteRef": "",
+            "rowClass": "dt-summary-row",
+            "values": [
+              "26.5",
+              "*",
+              "9.6",
+              "11.0",
+              "6.0",
+              "67.0",
+              "54.7",
+              "*",
+              "41.8",
+              "26.9",
+              "*",
+              "11.3",
+              "14.6",
+              "10.0",
+              "70.3",
+              "72.0",
+              "*",
+              "46.3"
+            ]
+          },
+          {
+            "label": "Private hospital/ clinic/ lying-in clinic",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "25.4",
+              "*",
+              "9.2",
+              "7.0",
+              "4.4",
+              "0.5",
+              "0.5",
+              "*",
+              "6.8",
+              "26.6",
+              "*",
+              "10.5",
+              "8.7",
+              "9.3",
+              "0.5",
+              "0.0",
+              "*",
+              "8.3"
+            ]
+          },
+          {
+            "label": "Pharmacy",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "2.9",
+              "0.0",
+              "66.0",
+              "54.2",
+              "*",
+              "34.2",
+              "0.0",
+              "*",
+              "0.1",
+              "4.3",
+              "0.2",
+              "69.6",
+              "71.9",
+              "*",
+              "37.6"
+            ]
+          },
+          {
+            "label": "Private doctor",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "1.0",
+              "*",
+              "0.4",
+              "0.7",
+              "0.8",
+              "0.6",
+              "0.0",
+              "*",
+              "0.6",
+              "0.3",
+              "*",
+              "0.6",
+              "1.1",
+              "0.5",
+              "0.1",
+              "0.1",
+              "*",
+              "0.3"
+            ]
+          },
+          {
+            "label": "Private nurse/ midwife",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.3",
+              "0.1",
+              "0.0",
+              "0.0",
+              "*",
+              "0.1",
+              "0.0",
+              "*",
+              "0.1",
+              "0.5",
+              "0.0",
+              "0.0",
+              "0.0",
+              "*",
+              "0.1"
+            ]
+          },
+          {
+            "label": "Industry based clinic",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.1",
+              "0.8",
+              "0.0",
+              "0.0",
+              "*",
+              "0.1",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "Other source",
+            "noteRef": "",
+            "rowClass": "dt-summary-row",
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.1",
+              "0.0",
+              "10.2",
+              "33.1",
+              "*",
+              "7.2",
+              "0.1",
+              "*",
+              "0.0",
+              "0.1",
+              "0.0",
+              "5.6",
+              "13.8",
+              "*",
+              "3.6"
+            ]
+          },
+          {
+            "label": "Shop/store",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.1",
+              "0.0",
+              "10.1",
+              "29.2",
+              "*",
+              "6.8",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "5.2",
+              "12.6",
+              "*",
+              "3.3"
+            ]
+          },
+          {
+            "label": "Church",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.1",
+              "0.0",
+              "*",
+              "0.1"
+            ]
+          },
+          {
+            "label": "Friend/relative",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.1",
+              "3.9",
+              "*",
+              "0.4",
+              "0.0",
+              "*",
+              "0.0",
+              "0.1",
+              "0.0",
+              "0.2",
+              "0.4",
+              "*",
+              "0.1"
+            ]
+          },
+          {
+            "label": "Other",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.1",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.1",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.9",
+              "*",
+              "0.1"
+            ]
+          },
+          {
+            "label": "Don't know",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "*",
+              "0.4",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0"
+            ]
+          },
+          {
+            "label": "Total",
+            "noteRef": "",
+            "rowClass": "dt-total-row",
+            "values": [
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "99.6",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0"
+            ]
+          },
+          {
+            "label": "Total number of women aged 15 to 49 years",
+            "noteRef": "",
+            "rowClass": "dt-total-row",
+            "values": [
+              "1,363",
+              "11",
+              "476",
+              "1,018",
+              "709",
+              "3,432",
+              "558",
+              "18",
+              "7,585",
+              "1,389",
+              "15",
+              "475",
+              "779",
+              "464",
+              "3,107",
+              "435",
+              "12",
+              "6,676"
+            ]
+          }
+        ],
+        "footnotes": [
+          "¹ Barangay health worker",
+          "“NA” denotes that an estimate is not reported.",
+          "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+          "1. Total includes other modern methods, including other modern methods mentioned by respondent and male sterilization, patch, emergency contraception, and standard days method. but excludes lactational amenorrhea method (LAM), mucus/Billings/ovulation, basal body temperature, and symptothermal methods",
+          "2. An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.",
+          "3. Details may not add up to total due to rounding."
+        ],
+        "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+      }
+    ]
+  }
+}
