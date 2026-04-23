@@ -730,7 +730,7 @@ function drawHorizontalComparison(container, block) {
 
   const allVals = rows.flatMap(r => [r.y2025, r.y2022].filter(v => v != null));
   const rawMax = allVals.length ? d3.max(allVals) : 5;
-  const step = rawMax > 10 ? 5 : 0.5;
+  const step = rawMax > 100 ? 20 : rawMax > 40 ? 10 : rawMax > 10 ? 5 : 0.5;
   const xMax = Math.max(step, Math.ceil((rawMax * 1.12) / step) * step);
   const x = d3.scaleLinear().domain([0, xMax]).range([0, INNER_W]);
 
@@ -744,11 +744,6 @@ function drawHorizontalComparison(container, block) {
 
   const svg = d3.select(svgEl);
   const g = svg.append('g').attr('transform', `translate(${ML},${MT})`);
-
-  g.append('line')
-    .attr('x1', 0).attr('y1', 0)
-    .attr('x2', 0).attr('y2', chartH)
-    .attr('stroke', 'var(--chart-axis)').attr('stroke-width', 1);
 
   rows.forEach((row, i) => {
     const yBase = i * (PAIR_H + CAT_GAP);
@@ -771,6 +766,12 @@ function drawHorizontalComparison(container, block) {
   const ticks = d3.range(0, xMax + step / 2, step);
   ticks.forEach(tick => {
     const xx = x(tick);
+    g.append('line')
+      .attr('x1', xx).attr('y1', 0)
+      .attr('x2', xx).attr('y2', chartH)
+      .attr('stroke', 'var(--chart-axis)')
+      .attr('stroke-dasharray', tick === 0 ? null : '2,3')
+      .attr('opacity', tick === 0 ? 0.75 : 0.45);
     g.append('line')
       .attr('x1', xx).attr('y1', axisY)
       .attr('x2', xx).attr('y2', axisY + 5)
@@ -854,7 +855,7 @@ function drawMirroredComparison(container, block) {
 
   const allVals = rows.flatMap(r => [r.left2025, r.right2025, r.left2022, r.right2022].filter(v => v != null));
   const rawMax = allVals.length ? d3.max(allVals) : 5;
-  const step = rawMax > 10 ? 5 : 0.5;
+  const step = rawMax > 100 ? 20 : rawMax > 40 ? 10 : rawMax > 10 ? 5 : 0.5;
   const xMax = Math.max(step, Math.ceil((rawMax * 1.15) / step) * step);
   const x = d3.scaleLinear()
     .domain([0, xMax])
@@ -914,9 +915,25 @@ function drawMirroredComparison(container, block) {
     .attr('x2', rightStart + x(xMax)).attr('y2', axisY)
     .attr('stroke', 'var(--chart-axis)');
 
-  const ticks = d3.range(0, xMax + step / 2, step);
+  const rawTicks = d3.range(0, xMax + step / 2, step);
+  const ticks = isSmallScreen && rawTicks.length > 7
+    ? rawTicks.filter((_, i) => i % 2 === 0 || i === rawTicks.length - 1)
+    : rawTicks;
   ticks.forEach(tick => {
     const offset = x(tick);
+
+    svg.append('line')
+      .attr('x1', leftEdge - offset).attr('y1', MT)
+      .attr('x2', leftEdge - offset).attr('y2', MT + plotH)
+      .attr('stroke', 'var(--chart-axis)')
+      .attr('stroke-dasharray', tick === 0 ? null : '2,3')
+      .attr('opacity', tick === 0 ? 0.75 : 0.4);
+    svg.append('line')
+      .attr('x1', rightStart + offset).attr('y1', MT)
+      .attr('x2', rightStart + offset).attr('y2', MT + plotH)
+      .attr('stroke', 'var(--chart-axis)')
+      .attr('stroke-dasharray', tick === 0 ? null : '2,3')
+      .attr('opacity', tick === 0 ? 0.75 : 0.4);
 
     svg.append('line')
       .attr('x1', leftEdge - offset).attr('y1', axisY)

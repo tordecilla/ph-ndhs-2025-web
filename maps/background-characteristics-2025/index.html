@@ -640,12 +640,14 @@ function drawGroupChart(container, group) {
   const ticks = d3.range(0, xMax + 0.001, tickStep);
   ticks.forEach(t => {
     const xx = x(t);
-    g.append('line')
-      .attr('x1', xx).attr('y1', 0)
-      .attr('x2', xx).attr('y2', INNER_H)
-      .attr('stroke', 'var(--chart-axis)')
-      .attr('stroke-width', 1)
-      .attr('opacity', t === 0 ? 0.9 : 0.55);
+    if (t !== 0) {
+      g.append('line')
+        .attr('x1', xx).attr('y1', 0)
+        .attr('x2', xx).attr('y2', INNER_H)
+        .attr('stroke', 'var(--chart-axis)')
+        .attr('stroke-width', 1)
+        .attr('opacity', 0.55);
+    }
     g.append('text')
       .attr('x', xx).attr('y', INNER_H + 16)
       .attr('text-anchor', 'middle')
