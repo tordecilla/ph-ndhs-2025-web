@@ -2313,5 +2313,37 @@
         "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
       }
     ]
+  },
+  "insights": {
+    "title": "Insights on Source of Modern Contraception Methods",
+    "subtitle": "AI-generated insights based on National Demographic and Health Survey data on where users got their methods",
+    "overview": "In 2025, most modern-method users got their method from either the public sector (51.0 percent) or private medical sector (41.8 percent), with a smaller share from other sources (7.2 percent). Compared with 2022, the private share went down while other sources went up.",
+    "sections": [
+      {
+        "heading": "Where people got methods changed between 2022 and 2025",
+        "body": "At the total level, public sector use changed only slightly (50.1 to 51.0). Private medical sector use fell (46.3 to 41.8), while other sources increased (3.6 to 7.2)."
+      },
+      {
+        "heading": "The method mix also changed",
+        "body": "Pill remains the largest method share in both years (46.5 percent in 2022 and 45.2 in 2025), but growth came from injectables (11.7 to 13.4), implants (7.0 to 9.3), and male condom (6.5 to 7.4). Female sterilization (20.8 to 18.0) and IUD (7.1 to 6.3) both declined as shares of all modern-method users."
+      },
+      {
+        "heading": "Some methods mostly come from public facilities",
+        "body": "In 2025, implants (93.9), IUD (90.4), and injectables (89.0) were mostly obtained from the public sector, and female sterilization was also largely public (73.5). Pill (22.8 public) and male condom (12.2 public) were much less public-sourced."
+      },
+      {
+        "heading": "Pharmacies remain a main source for pill and condom users",
+        "body": "In 2025, pharmacies supplied 66.0 percent of pill users and 71.9 percent of male-condom users. Even with a decline from 37.6 to 34.2, pharmacy was still the largest single detailed source overall."
+      },
+      {
+        "heading": "Changes differed by source",
+        "body": "From 2022 to 2025, rural health centers increased (9.8 to 11.5), government hospitals decreased slightly (18.9 to 18.2), and barangay health stations were nearly unchanged (19.9 to 19.5). Shop/store increased from 3.3 to 6.8."
+      }
+    ],
+    "takeaways": [
+      "Most users still got methods from either public or private medical sources in 2025, but private share was lower than in 2022.",
+      "Long-acting and procedure-based methods were mostly public-sourced, while pill and male condom were largely pharmacy-sourced.",
+      "To understand change from 2022 to 2025, method mix and source mix need to be read together."
+    ]
   }
 }

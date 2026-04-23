@@ -1070,12 +1070,13 @@ function drawGroupedBars(container, chartData, block, series) {
   const valueFontSize = mobileChartScale > 1 ? 13 : 9.5;
   const axisLabelFontSize = mobileChartScale > 1 ? 13 : 12;
   const valuePad = mobileChartScale > 1 ? 10 : 4;
-  const axisGap = mobileChartScale > 1 ? 14 : 8;
+  const axisGap = mobileChartScale > 1 ? 22 : 12;
   const groupH = Math.max(series.length - 1, 0) * laneGap + 1;
   const INNER_H = rows.length
     ? rows.length * groupH + Math.max(rows.length - 1, 0) * groupGap
     : 40;
   const axisY = INNER_H + axisGap;
+  const axisLabelOffset = mobileChartScale > 1 ? 34 : 28;
   const VH = MT + INNER_H + MB;
 
   const wrap = document.createElement('div');
@@ -1148,12 +1149,12 @@ function drawGroupedBars(container, chartData, block, series) {
 
   chartSvg.append('text')
     .attr('x', ML + INNER_W / 2)
-    .attr('y', VH - 10)
+    .attr('y', MT + axisY + axisLabelOffset)
     .attr('text-anchor', 'middle')
     .attr('font-size', axisLabelFontSize)
     .attr('font-family', 'Inter, sans-serif')
     .attr('fill', 'var(--data-label-color)')
-    .text(chartData.yLabel || 'Percentage');
+    .text('Percentage');
 }
 
 let currentContext = null; // { name, parentName, psgc, type }

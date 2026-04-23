@@ -77,6 +77,14 @@
     margin: 0 auto;
   }
 
+  #insights-container {
+    max-width: 920px;
+    margin: 0 auto;
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-divider);
+    padding: 24px 24px 20px;
+  }
+
   .page-title {
     font-size: 20px;
     font-weight: 600;
@@ -395,6 +403,64 @@
     margin-left: 1px;
   }
 
+  .insights-page-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--title-color);
+    line-height: 1.25;
+    margin-bottom: 4px;
+  }
+
+  .insights-page-subtitle {
+    font-size: 12px;
+    color: var(--region-color);
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+
+  .insight-card {
+    padding: 0;
+    margin-bottom: 22px;
+  }
+
+  .insight-heading {
+    font: 10px/1 'IBM Plex Mono', monospace;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--section-color);
+    margin-bottom: 10px;
+  }
+
+  .insight-text {
+    font-size: 13px;
+    color: var(--text-color);
+    line-height: 1.75;
+  }
+
+  .insight-takeaways {
+    display: grid;
+    gap: 10px;
+  }
+
+  .insight-takeaway {
+    font-size: 13px;
+    color: var(--text-color);
+    line-height: 1.7;
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .insight-takeaway::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.28);
+  }
+
   @media (max-width: 720px) {
     .tab-panel {
       padding: 20px 16px 40px;
@@ -410,6 +476,7 @@
 <div id="tab-bar">
   <button class="tab-btn active" type="button" data-tab="charts">Charts</button>
   <button class="tab-btn" type="button" data-tab="tables">Data Tables</button>
+  <button class="tab-btn" type="button" data-tab="insights">Insights</button>
 </div>
 <main id="tab-charts" class="tab-panel">
   <div id="charts-container"></div>
@@ -417,18 +484,24 @@
 <main id="tab-tables" class="tab-panel" hidden>
   <div id="tables-container"></div>
 </main>
+<main id="tab-insights" class="tab-panel" hidden>
+  <div id="insights-container"></div>
+</main>
 <script>
 let config = {};
 
 const CHART_HASH = 'tcharts';
 const TABLE_HASH = 'ttables';
+const INSIGHTS_HASH = 'tinsights';
 const LEGACY_TABLE_HASH = 'tdata';
 
 const chartsContainer = document.getElementById('charts-container');
 const tablesContainer = document.getElementById('tables-container');
+const insightsContainer = document.getElementById('insights-container');
 const panels = {
   charts: document.getElementById('tab-charts'),
   tables: document.getElementById('tab-tables'),
+  insights: document.getElementById('tab-insights'),
 };
 const tabButtons = Array.from(document.querySelectorAll('.tab-btn'));
 
@@ -782,18 +855,63 @@ function renderTables() {
   (tableData.tables || []).forEach(createTableSection);
 }
 
+function renderInsights(insights) {
+  if (!insightsContainer || !insights) return;
+  insightsContainer.innerHTML = '';
+
+  const header = document.createElement('div');
+  header.innerHTML = `
+    <div class="insights-page-title">${normalizeText(insights.title || config.title || '')}</div>
+    <div class="insights-page-subtitle">${normalizeText(insights.subtitle || '')}</div>
+  `;
+  insightsContainer.appendChild(header);
+
+  if (insights.overview) {
+    const card = document.createElement('section');
+    card.className = 'insight-card';
+    card.innerHTML = `
+      <div class="insight-heading">Overview</div>
+      <div class="insight-text">${normalizeText(insights.overview)}</div>
+    `;
+    insightsContainer.appendChild(card);
+  }
+
+  (insights.sections || []).forEach(section => {
+    const card = document.createElement('section');
+    card.className = 'insight-card';
+    card.innerHTML = `
+      <div class="insight-heading">${normalizeText(section.heading || '')}</div>
+      <div class="insight-text">${normalizeText(section.body || '')}</div>
+    `;
+    insightsContainer.appendChild(card);
+  });
+
+  if (insights.takeaways?.length) {
+    const card = document.createElement('section');
+    card.className = 'insight-card';
+    const items = insights.takeaways.map(item => `<div class="insight-takeaway">${normalizeText(item)}</div>`).join('');
+    card.innerHTML = `
+      <div class="insight-heading">Key Takeaways</div>
+      <div class="insight-takeaways">${items}</div>
+    `;
+    insightsContainer.appendChild(card);
+  }
+}
+
 function parseTabHash() {
   const hash = String(window.location.hash || '').replace(/^#/, '').trim();
+  if (hash === INSIGHTS_HASH) return 'insights';
   if (hash === TABLE_HASH || hash === LEGACY_TABLE_HASH) return 'tables';
   return 'charts';
 }
 
 function buildTabHash(tab) {
+  if (tab === 'insights') return `#${INSIGHTS_HASH}`;
   return tab === 'tables' ? `#${TABLE_HASH}` : `#${CHART_HASH}`;
 }
 
 function showTab(tab, push) {
-  const activeTab = tab === 'tables' ? 'tables' : 'charts';
+  const activeTab = tab === 'tables' ? 'tables' : tab === 'insights' ? 'insights' : 'charts';
 
   Object.entries(panels).forEach(([key, panel]) => {
     panel.hidden = key !== activeTab;
@@ -825,10 +943,12 @@ async function loadPage() {
     if (config.title) document.title = config.title;
     renderCharts();
     renderTables();
+    renderInsights(config.insights);
     showTab(parseTabHash(), !window.location.hash);
   } catch (error) {
     chartsContainer.innerHTML = '<div class="page-subtitle">Unable to load chart data.</div>';
     tablesContainer.innerHTML = '<div class="page-subtitle">Unable to load data tables.</div>';
+    insightsContainer.innerHTML = '<div class="page-subtitle">Unable to load insights.</div>';
     console.error(error);
   }
 }

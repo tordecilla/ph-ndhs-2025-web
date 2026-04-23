@@ -592,9 +592,6 @@ function renderCharts(data) {
     }
 
     if (block.type === 'mirrored-comparison') {
-      const sides = el('div', 'mirror-side-labels');
-      sides.innerHTML = `<span>${block.leftLabel}</span><span>${block.rightLabel}</span>`;
-      blockEl.appendChild(sides);
       drawMirroredComparison(blockEl, block);
     } else if (block.type === 'vertical-comparison') {
       drawVerticalComparison(blockEl, block);
@@ -960,22 +957,6 @@ function drawMirroredComparison(container, block) {
       .text(tick.toFixed(step >= 1 ? 0 : 1).replace(/\.0$/, ''));
   });
 
-  svg.append('text')
-    .attr('x', leftEdge - x(xMax) / 2)
-    .attr('y', axisY + 26)
-    .attr('text-anchor', 'middle')
-    .attr('font-size', axisFontSize)
-    .attr('font-family', 'Inter, sans-serif')
-    .attr('fill', 'var(--data-label-color)')
-    .text(block.leftLabel || 'Left');
-  svg.append('text')
-    .attr('x', rightStart + x(xMax) / 2)
-    .attr('y', axisY + 26)
-    .attr('text-anchor', 'middle')
-    .attr('font-size', axisFontSize)
-    .attr('font-family', 'Inter, sans-serif')
-    .attr('fill', 'var(--data-label-color)')
-    .text(block.rightLabel || 'Right');
 }
 
 function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, textFill, stroked = false, markerScale = 1, valueFontSize = 13, valuePad = 5) {

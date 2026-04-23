@@ -603,7 +603,7 @@ function drawGroupChart(container, group) {
   const ML = Math.max(108, Math.min(176, 42 + maxLabelLen * 5));
   const MR = 92;
   const MT = 14;
-  const MB = 16;
+  const MB = 34;
   const ROW_H = 34;
   const ROW_GAP = 16;
   const INNER_H = n * ROW_H + (n - 1) * ROW_GAP;
@@ -645,9 +645,13 @@ function drawGroupChart(container, group) {
         .attr('x1', xx).attr('y1', 0)
         .attr('x2', xx).attr('y2', INNER_H)
         .attr('stroke', 'var(--chart-axis)')
-        .attr('stroke-width', 1)
-        .attr('opacity', 0.55);
+        .attr('stroke-dasharray', '2,3')
+        .attr('opacity', 0.45);
     }
+    g.append('line')
+      .attr('x1', xx).attr('y1', INNER_H)
+      .attr('x2', xx).attr('y2', INNER_H + 5)
+      .attr('stroke', 'var(--chart-axis)');
     g.append('text')
       .attr('x', xx).attr('y', INNER_H + 16)
       .attr('text-anchor', 'middle')
@@ -656,6 +660,20 @@ function drawGroupChart(container, group) {
       .attr('fill', 'var(--data-label-color)')
       .text(t);
   });
+
+  g.append('line')
+    .attr('x1', 0).attr('y1', INNER_H)
+    .attr('x2', INNER_W).attr('y2', INNER_H)
+    .attr('stroke', 'var(--chart-axis)');
+
+  g.append('text')
+    .attr('x', INNER_W / 2)
+    .attr('y', INNER_H + 32)
+    .attr('text-anchor', 'middle')
+    .attr('font-size', 12)
+    .attr('font-family', 'Inter, sans-serif')
+    .attr('fill', 'var(--data-label-color)')
+    .text(group.xLabel || 'Percent');
 
   cats.forEach(cat => {
     const y0 = y(cat.label);
@@ -676,14 +694,6 @@ function drawGroupChart(container, group) {
       .attr('font-family', 'Inter, sans-serif')
       .attr('fill', 'var(--text-color)')
       .text(cat.label);
-
-    // subtle row guide
-    g.append('line')
-      .attr('x1', 0).attr('y1', cy + 0.5)
-      .attr('x2', INNER_W).attr('y2', cy + 0.5)
-      .attr('stroke', 'var(--chart-axis)')
-      .attr('stroke-width', 1)
-      .attr('opacity', 0.2);
 
     if (v2022 != null) {
       const x22 = x(v2022);

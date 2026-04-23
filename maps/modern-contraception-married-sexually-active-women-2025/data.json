@@ -2180,6 +2180,38 @@
       "Details may not add up to total due to rounding."
     ]
   },
+  "insights": {
+    "title": "Insights on Modern Contraception Among Married and Sexually Active Women",
+    "subtitle": "AI-generated insights based on National Demographic and Health Survey data on modern contraceptive use",
+    "overview": "Modern contraceptive use among currently married women aged 15 to 49 increased from 41.8 percent in 2022 to 44.5 percent in 2025, with clear concentration among women in mid-reproductive ages and those with children. Regional variation remains wide, and the change from 2022 to 2025 is uneven across regions and social groups.",
+    "sections": [
+      {
+        "heading": "National pattern among currently married women",
+        "body": "The national increase was 2.7 percentage points, but method composition shifted rather than moving in one direction across all methods. Pills remained the largest component (19.8 to 20.5), while injectables (5.0 to 6.1) and implants (2.8 to 4.2) rose. Female sterilization declined (8.7 to 7.8), suggesting growth came more from short- and medium-term methods than from permanent methods."
+      },
+      {
+        "heading": "Regional variation is large and change is uneven",
+        "body": "In 2025, currently married women using any modern method ranged from 20.2 percent in BARMM to 58.2 percent in Davao Region, a spread of 38.0 points. High-use regions included MIMAROPA (53.9), Caraga (52.9), and SOCCSKSARGEN (50.8). Between 2022 and 2025, some regions rose sharply, such as MIMAROPA (+8.8) and Davao Region (+8.4), while others declined, including Cagayan Valley (-9.9) and Zamboanga Peninsula (-7.5)."
+      },
+      {
+        "heading": "Use is concentrated by life stage and parity",
+        "body": "Modern-method use among currently married women was lowest among those with no children (7.6) and highest among those with 3 to 4 children (59.1). By age, it was lower at the youngest and oldest ends (15-19 at 34.0 and 45-49 at 33.9) and highest in the 30-39 range (48.3 to 48.7). The 2022 to 2025 increase was stronger in ages 20-24 (+5.4) and 30-34 (+4.5) than in ages 15-19 (-0.5)."
+      },
+      {
+        "heading": "Differences from All Women",
+        "body": "The key difference from All Women is the pattern shape, not only the level. In All Women, modern-method use climbs steeply with age (for example, 15.4 at ages 20-24 to 41.1 at ages 35-39), while among currently married women it is already high by ages 20-24 (47.0) and stays in a relatively flat high band through ages 20-44 (44.7 to 48.7). Regional structure is also more polarized here: the 2025 spread is 38.0 points (58.2 in Davao Region versus 20.2 in BARMM), wider than the All Women spread of 24.1 points (37.1 versus 13.0). By contrast, method hierarchy is broadly similar across pages, with pills still the largest component, so the stronger difference is where use is concentrated across life stage and geography."
+      },
+      {
+        "heading": "Sexually Active Unmarried Women",
+        "body": "Among sexually active unmarried women, modern-method use rose from 23.8 to 26.2 between 2022 and 2025, still below currently married women by 18.3 points in 2025. Method mix changed visibly: pill use increased (7.1 to 15.3) while male condom use declined (11.9 to 6.6). Given the smaller sample size in this group, these shifts are best read as directional signals rather than broad generalizations beyond the measured population."
+      }
+    ],
+    "takeaways": [
+      "Modern-method use increased among currently married women, but growth was driven more by injectables and implants than by permanent methods.",
+      "Regional differences remain substantial, with both strong gains and notable declines across regions from 2022 to 2025.",
+      "Sexually active unmarried women show a modest increase in overall modern-method use, with a shift from condom-dominant to more pill-heavy method composition."
+    ]
+  },
   "detailFields": [
     {
       "key": "any_modern_method_pct",
