@@ -706,12 +706,17 @@ function drawHorizontalComparison(container, block) {
     ? Math.max(106, Math.min(176, 42 + maxLabelLen * 5))
     : Math.max(96, Math.min(148, 36 + maxLabelLen * 5));
   const MR = 76;
-  const MT = 2;
-  const MB = 28;
+  const mobileChartScale = window.matchMedia('(max-width: 760px)').matches ? 2.4 : 1;
+  const markerScale = mobileChartScale > 1 ? 1.7 : 1;
+  const axisFontSize = mobileChartScale > 1 ? 13 : 10;
+  const laneValueFontSize = mobileChartScale > 1 ? 13 : 11;
+  const rowLabelFontSize = mobileChartScale > 1 ? 13 : 12;
+  const MT = 2 * mobileChartScale;
+  const MB = 28 * mobileChartScale;
   const INNER_W = VW - ML - MR;
-  const BAR_H = 14;
-  const PAIR_GAP = 3;
-  const CAT_GAP = 16;
+  const BAR_H = 14 * mobileChartScale;
+  const PAIR_GAP = 3 * mobileChartScale;
+  const CAT_GAP = 16 * mobileChartScale;
   const PAIR_H = BAR_H * 2 + PAIR_GAP;
   const chartH = rows.length * PAIR_H + Math.max(0, rows.length - 1) * CAT_GAP;
   const svgH = MT + chartH + MB;
@@ -747,13 +752,13 @@ function drawHorizontalComparison(container, block) {
       .attr('y', MT + yBase + PAIR_H / 2)
       .attr('text-anchor', 'end')
       .attr('dominant-baseline', 'middle')
-      .attr('font-size', 12)
+      .attr('font-size', rowLabelFontSize)
       .attr('font-family', 'Inter, sans-serif')
       .attr('fill', 'var(--text-color)')
       .text(withNoteRef(row.label, row));
 
-    drawHorizontalLane(rg, 0, row.y2022, formatDisplay(row.y2022Display, row.y2022), x, 'var(--bar-2022)', 'var(--data-label-color)', true);
-    drawHorizontalLane(rg, BAR_H + PAIR_GAP, row.y2025, formatDisplay(row.y2025Display, row.y2025), x, 'var(--bar-2025)', 'var(--data-value-color)');
+    drawHorizontalLane(rg, 0, row.y2022, formatDisplay(row.y2022Display, row.y2022), x, 'var(--bar-2022)', 'var(--data-label-color)', true, laneValueFontSize, markerScale);
+    drawHorizontalLane(rg, BAR_H + PAIR_GAP, row.y2025, formatDisplay(row.y2025Display, row.y2025), x, 'var(--bar-2025)', 'var(--data-value-color)', false, laneValueFontSize, markerScale);
   });
 
   const ticks = d3.range(0, xMax + step / 2, step);
@@ -766,7 +771,7 @@ function drawHorizontalComparison(container, block) {
     g.append('text')
       .attr('x', xx).attr('y', chartH + 16)
       .attr('text-anchor', 'middle')
-      .attr('font-size', 10)
+      .attr('font-size', axisFontSize)
       .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', 'var(--data-label-color)')
       .text(tick.toFixed(step >= 1 ? 0 : 1).replace(/\.0$/, ''));
@@ -778,7 +783,7 @@ function drawHorizontalComparison(container, block) {
     .attr('stroke', 'var(--chart-axis)');
 }
 
-function drawHorizontalLane(group, y, value, display, scale, fill, textFill, stroked = false) {
+function drawHorizontalLane(group, y, value, display, scale, fill, textFill, stroked = false, laneValueFontSize = 11, markerScale = 1) {
   const laneY = y + 7;
   if (value != null) {
     const endX = scale(value);
@@ -786,24 +791,24 @@ function drawHorizontalLane(group, y, value, display, scale, fill, textFill, str
       .attr('x1', 0).attr('y1', laneY)
       .attr('x2', endX).attr('y2', laneY)
       .attr('stroke', fill)
-      .attr('stroke-width', 2);
+      .attr('stroke-width', 2 * markerScale);
     group.append('circle')
       .attr('cx', endX).attr('cy', laneY)
-      .attr('r', 4)
+      .attr('r', 4 * markerScale)
       .attr('fill', fill)
       .attr('stroke', stroked ? 'rgba(0,0,0,0.22)' : 'none')
       .attr('stroke-width', stroked ? 0.8 : 0);
     group.append('text')
       .attr('x', endX + 6).attr('y', laneY)
       .attr('dominant-baseline', 'middle')
-      .attr('font-size', 11).attr('font-family', 'IBM Plex Mono, monospace')
+      .attr('font-size', laneValueFontSize).attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', textFill)
       .text(display);
   } else {
     group.append('text')
       .attr('x', 5).attr('y', laneY)
       .attr('dominant-baseline', 'middle')
-      .attr('font-size', 11).attr('font-family', 'IBM Plex Mono, monospace')
+      .attr('font-size', laneValueFontSize).attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', 'var(--no-data-color)')
       .text(display || 'NA');
   }
@@ -817,17 +822,20 @@ function drawMirroredComparison(container, block) {
   const MR = isWide ? 10 : 8;
   const MID_W = isWide ? 56 : 68;
   const SIDE_GAP = 3;
-  const BAR_H = isWide ? 13 : 15;
-  const PAIR_GAP = 4;
-  const ROW_GAP = isWide ? 12 : 14;
+  const mobileChartScale = window.matchMedia('(max-width: 760px)').matches ? 2.4 : 1;
+  const markerScale = mobileChartScale > 1 ? 1.7 : 1;
+  const valueFontSize = mobileChartScale > 1 ? 13 : 13;
+  const BAR_H = (isWide ? 13 : 15) * mobileChartScale;
+  const PAIR_GAP = 4 * mobileChartScale;
+  const ROW_GAP = (isWide ? 12 : 14) * mobileChartScale;
   const leftWidth = (VW - ML - MR - MID_W - SIDE_GAP * 2) / 2;
   const rightWidth = leftWidth;
   const leftEdge = ML + leftWidth;
   const rightStart = leftEdge + MID_W;
   const leftInner = leftWidth - 4;
   const rightInner = rightWidth - 4;
-  const MT = 2;
-  const MB = 4;
+  const MT = 2 * mobileChartScale;
+  const MB = 4 * mobileChartScale;
   const PAIR_H = BAR_H * 2 + PAIR_GAP;
   const svgH = MT + rows.length * PAIR_H + Math.max(0, rows.length - 1) * ROW_GAP + MB;
 
@@ -865,6 +873,7 @@ function drawMirroredComparison(container, block) {
     if (label.length > 10) labelFontSize = isWide ? 9.5 : 10.5;
     if (label.length > 12) labelFontSize = isWide ? 8 : 9;
     if (label.length > 14) labelFontSize = isWide ? 7 : 8;
+    if (mobileChartScale > 1) labelFontSize = Math.max(labelFontSize, 12);
 
     svg.append('text')
       .attr('x', leftEdge + MID_W / 2)
@@ -876,14 +885,14 @@ function drawMirroredComparison(container, block) {
       .attr('fill', 'var(--text-color)')
       .text(label);
 
-    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase, row.left2022, formatDisplay(row.left2022Display, row.left2022), x, true, 'var(--bar-2022)', 'var(--data-label-color)', true);
-    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase, row.right2022, formatDisplay(row.right2022Display, row.right2022), x, false, 'var(--bar-2022)', 'var(--data-label-color)', true);
-    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.left2025, formatDisplay(row.left2025Display, row.left2025), x, true, 'var(--bar-2025)', 'var(--data-value-color)');
-    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.right2025, formatDisplay(row.right2025Display, row.right2025), x, false, 'var(--bar-2025)', 'var(--data-value-color)');
+    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase, row.left2022, formatDisplay(row.left2022Display, row.left2022), x, true, 'var(--bar-2022)', 'var(--data-label-color)', true, markerScale, valueFontSize);
+    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase, row.right2022, formatDisplay(row.right2022Display, row.right2022), x, false, 'var(--bar-2022)', 'var(--data-label-color)', true, markerScale, valueFontSize);
+    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.left2025, formatDisplay(row.left2025Display, row.left2025), x, true, 'var(--bar-2025)', 'var(--data-value-color)', false, markerScale, valueFontSize);
+    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.right2025, formatDisplay(row.right2025Display, row.right2025), x, false, 'var(--bar-2025)', 'var(--data-value-color)', false, markerScale, valueFontSize);
   });
 }
 
-function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, textFill, stroked = false) {
+function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, textFill, stroked = false, markerScale = 1, valueFontSize = 13) {
   const laneY = y + 6;
   if (value != null) {
     const width = scale(value);
@@ -892,10 +901,10 @@ function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, 
       .attr('x1', anchorX).attr('y1', laneY)
       .attr('x2', endX).attr('y2', laneY)
       .attr('stroke', fill)
-      .attr('stroke-width', 2);
+      .attr('stroke-width', 2 * markerScale);
     svg.append('circle')
       .attr('cx', endX).attr('cy', laneY)
-      .attr('r', 3.6)
+      .attr('r', 3.6 * markerScale)
       .attr('fill', fill)
       .attr('stroke', stroked ? 'rgba(0,0,0,0.22)' : 'none')
       .attr('stroke-width', stroked ? 0.8 : 0);
@@ -904,7 +913,7 @@ function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, 
       .attr('y', laneY)
       .attr('text-anchor', invert ? 'end' : 'start')
       .attr('dominant-baseline', 'middle')
-      .attr('font-size', 13)
+      .attr('font-size', valueFontSize)
       .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', textFill)
       .text(display);
@@ -914,7 +923,7 @@ function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, 
       .attr('y', laneY)
       .attr('text-anchor', invert ? 'end' : 'start')
       .attr('dominant-baseline', 'middle')
-      .attr('font-size', 13)
+      .attr('font-size', valueFontSize)
       .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', 'var(--no-data-color)')
       .text(display || 'NA');

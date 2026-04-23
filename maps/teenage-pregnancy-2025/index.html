@@ -1005,7 +1005,7 @@ function drawGroupedBars(container, chartData, block, series) {
   const VW = 620;
   const ML = Math.max(86, Math.min(124, 34 + maxLabelLen * 5));
   const MR = 14;
-  const mobileChartScale = window.matchMedia('(max-width: 760px)').matches ? 2 : 1;
+  const mobileChartScale = window.matchMedia('(max-width: 760px)').matches ? 2.4 : 1;
   const MT = 10 * mobileChartScale;
   const MB = 40 * mobileChartScale;
   const INNER_W = VW - ML - MR;
@@ -1013,6 +1013,12 @@ function drawGroupedBars(container, chartData, block, series) {
   const tickStep = yMax > 10 ? 3 : 1;
   const laneGap = 10 * mobileChartScale;
   const groupGap = 24 * mobileChartScale;
+  const markerScale = mobileChartScale > 1 ? 1.7 : 1;
+  const axisFontSize = mobileChartScale > 1 ? 13 : 11;
+  const rowLabelFontSize = mobileChartScale > 1 ? 13 : 12;
+  const valueFontSize = mobileChartScale > 1 ? 13 : 9.5;
+  const axisLabelFontSize = mobileChartScale > 1 ? 13 : 12;
+  const suppressedFontSize = mobileChartScale > 1 ? 12 : 9;
   const groupH = Math.max(series.length - 1, 0) * laneGap + 1;
   const INNER_H = rows.length
     ? rows.length * groupH + Math.max(rows.length - 1, 0) * groupGap
@@ -1047,7 +1053,7 @@ function drawGroupedBars(container, chartData, block, series) {
     chart.append('text')
       .attr('x', xx).attr('y', INNER_H + 15)
       .attr('text-anchor', 'middle')
-      .attr('font-size', 11)
+      .attr('font-size', axisFontSize)
       .attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', 'var(--data-label-color)')
       .text(tick);
@@ -1062,7 +1068,7 @@ function drawGroupedBars(container, chartData, block, series) {
       .attr('y', MT + midY)
       .attr('text-anchor', 'end')
       .attr('dominant-baseline', 'middle')
-      .attr('font-size', 12)
+      .attr('font-size', rowLabelFontSize)
       .attr('font-family', 'Inter, sans-serif')
       .attr('fill', 'var(--text-color)')
       .text(row.age);
@@ -1075,7 +1081,7 @@ function drawGroupedBars(container, chartData, block, series) {
         .attr('y', midY)
         .attr('text-anchor', 'start')
         .attr('dominant-baseline', 'middle')
-        .attr('font-size', 9)
+        .attr('font-size', suppressedFontSize)
         .attr('font-family', 'IBM Plex Mono, monospace')
         .attr('fill', 'var(--data-label-color)')
         .text('Fewer than 25 cases (*)');
@@ -1094,13 +1100,13 @@ function drawGroupedBars(container, chartData, block, series) {
         .attr('stroke-width', 2.2);
       chart.append('circle')
         .attr('cx', endX).attr('cy', laneY)
-        .attr('r', 3.6)
+        .attr('r', 3.6 * markerScale)
         .attr('fill', s.displayColor);
       chart.append('text')
         .attr('x', endX + 5).attr('y', laneY)
         .attr('text-anchor', 'start')
         .attr('dominant-baseline', 'middle')
-        .attr('font-size', 9.5)
+        .attr('font-size', valueFontSize)
         .attr('font-family', 'IBM Plex Mono, monospace')
         .attr('fill', 'var(--data-label-color)')
         .text(formatChartValue(row, s.key));
@@ -1111,7 +1117,7 @@ function drawGroupedBars(container, chartData, block, series) {
     .attr('x', ML + INNER_W / 2)
     .attr('y', VH - 10)
     .attr('text-anchor', 'middle')
-    .attr('font-size', 12)
+    .attr('font-size', axisLabelFontSize)
     .attr('font-family', 'Inter, sans-serif')
     .attr('fill', 'var(--data-label-color)')
     .text('Percentage of women');
