@@ -715,14 +715,17 @@ function drawHorizontalComparison(container, block) {
   const axisFontSize = mobileChartScale > 1 ? 13 : 10;
   const laneValueFontSize = mobileChartScale > 1 ? 13 : 11;
   const rowLabelFontSize = mobileChartScale > 1 ? 13 : 12;
+  const valuePad = mobileChartScale > 1 ? 10 : 6;
+  const axisGap = mobileChartScale > 1 ? 14 : 8;
   const MT = 2 * mobileChartScale;
   const MB = 28 * mobileChartScale;
   const INNER_W = VW - ML - MR;
   const BAR_H = 14 * mobileChartScale;
-  const PAIR_GAP = 3 * mobileChartScale;
-  const CAT_GAP = 16 * mobileChartScale;
+  const PAIR_GAP = 3;
+  const CAT_GAP = 16;
   const PAIR_H = BAR_H * 2 + PAIR_GAP;
   const chartH = rows.length * PAIR_H + Math.max(0, rows.length - 1) * CAT_GAP;
+  const axisY = chartH + axisGap;
   const svgH = MT + chartH + MB;
 
   const allVals = rows.flatMap(r => [r.y2025, r.y2022].filter(v => v != null));
@@ -761,19 +764,19 @@ function drawHorizontalComparison(container, block) {
       .attr('fill', 'var(--text-color)')
       .text(withNoteRef(row.label, row));
 
-    drawHorizontalLane(rg, 0, row.y2022, formatDisplay(row.y2022Display, row.y2022), x, 'var(--bar-2022)', 'var(--data-label-color)', true, laneValueFontSize, markerScale);
-    drawHorizontalLane(rg, BAR_H + PAIR_GAP, row.y2025, formatDisplay(row.y2025Display, row.y2025), x, 'var(--bar-2025)', 'var(--data-value-color)', false, laneValueFontSize, markerScale);
+    drawHorizontalLane(rg, 0, row.y2022, formatDisplay(row.y2022Display, row.y2022), x, 'var(--bar-2022)', 'var(--data-label-color)', true, laneValueFontSize, markerScale, valuePad);
+    drawHorizontalLane(rg, BAR_H + PAIR_GAP, row.y2025, formatDisplay(row.y2025Display, row.y2025), x, 'var(--bar-2025)', 'var(--data-value-color)', false, laneValueFontSize, markerScale, valuePad);
   });
 
   const ticks = d3.range(0, xMax + step / 2, step);
   ticks.forEach(tick => {
     const xx = x(tick);
     g.append('line')
-      .attr('x1', xx).attr('y1', chartH)
-      .attr('x2', xx).attr('y2', chartH + 5)
+      .attr('x1', xx).attr('y1', axisY)
+      .attr('x2', xx).attr('y2', axisY + 5)
       .attr('stroke', 'var(--chart-axis)');
     g.append('text')
-      .attr('x', xx).attr('y', chartH + 16)
+      .attr('x', xx).attr('y', axisY + 16)
       .attr('text-anchor', 'middle')
       .attr('font-size', axisFontSize)
       .attr('font-family', 'IBM Plex Mono, monospace')
@@ -782,12 +785,12 @@ function drawHorizontalComparison(container, block) {
   });
 
   g.append('line')
-    .attr('x1', 0).attr('y1', chartH)
-    .attr('x2', INNER_W).attr('y2', chartH)
+    .attr('x1', 0).attr('y1', axisY)
+    .attr('x2', INNER_W).attr('y2', axisY)
     .attr('stroke', 'var(--chart-axis)');
 }
 
-function drawHorizontalLane(group, y, value, display, scale, fill, textFill, stroked = false, laneValueFontSize = 11, markerScale = 1) {
+function drawHorizontalLane(group, y, value, display, scale, fill, textFill, stroked = false, laneValueFontSize = 11, markerScale = 1, valuePad = 6) {
   const laneY = y + 7;
   if (value != null) {
     const endX = scale(value);
@@ -803,7 +806,7 @@ function drawHorizontalLane(group, y, value, display, scale, fill, textFill, str
       .attr('stroke', stroked ? 'rgba(0,0,0,0.22)' : 'none')
       .attr('stroke-width', stroked ? 0.8 : 0);
     group.append('text')
-      .attr('x', endX + 6).attr('y', laneY)
+      .attr('x', endX + valuePad).attr('y', laneY)
       .attr('dominant-baseline', 'middle')
       .attr('font-size', laneValueFontSize).attr('font-family', 'IBM Plex Mono, monospace')
       .attr('fill', textFill)
@@ -829,10 +832,13 @@ function drawMirroredComparison(container, block) {
   const SIDE_GAP = isSmallScreen ? 2 : 3;
   const mobileChartScale = isSmallScreen ? 2.4 : 1;
   const markerScale = mobileChartScale > 1 ? 1.7 : 1;
+  const axisFontSize = mobileChartScale > 1 ? 13 : 10;
   const valueFontSize = mobileChartScale > 1 ? 13 : 13;
+  const valuePad = mobileChartScale > 1 ? 10 : 5;
+  const axisGap = mobileChartScale > 1 ? 14 : 8;
   const BAR_H = (isWide ? 13 : 15) * mobileChartScale;
-  const PAIR_GAP = 4 * mobileChartScale;
-  const ROW_GAP = (isWide ? 12 : 14) * mobileChartScale;
+  const PAIR_GAP = 4;
+  const ROW_GAP = isWide ? 12 : 14;
   const leftWidth = (VW - ML - MR - MID_W - SIDE_GAP * 2) / 2;
   const rightWidth = leftWidth;
   const leftEdge = ML + leftWidth;
@@ -840,15 +846,18 @@ function drawMirroredComparison(container, block) {
   const leftInner = leftWidth - 4;
   const rightInner = rightWidth - 4;
   const MT = 2 * mobileChartScale;
-  const MB = 4 * mobileChartScale;
+  const MB = 8 * mobileChartScale;
   const PAIR_H = BAR_H * 2 + PAIR_GAP;
-  const svgH = MT + rows.length * PAIR_H + Math.max(0, rows.length - 1) * ROW_GAP + MB;
+  const plotH = rows.length * PAIR_H + Math.max(0, rows.length - 1) * ROW_GAP;
+  const axisY = MT + plotH + axisGap;
+  const svgH = axisY + 26 + MB;
 
   const allVals = rows.flatMap(r => [r.left2025, r.right2025, r.left2022, r.right2022].filter(v => v != null));
   const rawMax = allVals.length ? d3.max(allVals) : 5;
   const step = rawMax > 10 ? 5 : 0.5;
+  const xMax = Math.max(step, Math.ceil((rawMax * 1.15) / step) * step);
   const x = d3.scaleLinear()
-    .domain([0, Math.max(step, Math.ceil((rawMax * 1.15) / step) * step)])
+    .domain([0, xMax])
     .range([0, Math.min(leftInner, rightInner)]);
 
   const wrap = el('div', 'chart-svg-wrap');
@@ -862,11 +871,11 @@ function drawMirroredComparison(container, block) {
   const svg = d3.select(svgEl);
   svg.append('line')
     .attr('x1', leftEdge).attr('x2', leftEdge)
-    .attr('y1', 0).attr('y2', svgH)
+    .attr('y1', 0).attr('y2', axisY)
     .attr('stroke', 'var(--chart-axis)');
   svg.append('line')
     .attr('x1', rightStart).attr('x2', rightStart)
-    .attr('y1', 0).attr('y2', svgH)
+    .attr('y1', 0).attr('y2', axisY)
     .attr('stroke', 'var(--chart-axis)');
 
   rows.forEach((row, i) => {
@@ -890,14 +899,69 @@ function drawMirroredComparison(container, block) {
       .attr('fill', 'var(--text-color)')
       .text(label);
 
-    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase, row.left2022, formatDisplay(row.left2022Display, row.left2022), x, true, 'var(--bar-2022)', 'var(--data-label-color)', true, markerScale, valueFontSize);
-    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase, row.right2022, formatDisplay(row.right2022Display, row.right2022), x, false, 'var(--bar-2022)', 'var(--data-label-color)', true, markerScale, valueFontSize);
-    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.left2025, formatDisplay(row.left2025Display, row.left2025), x, true, 'var(--bar-2025)', 'var(--data-value-color)', false, markerScale, valueFontSize);
-    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.right2025, formatDisplay(row.right2025Display, row.right2025), x, false, 'var(--bar-2025)', 'var(--data-value-color)', false, markerScale, valueFontSize);
+    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase, row.left2022, formatDisplay(row.left2022Display, row.left2022), x, true, 'var(--bar-2022)', 'var(--data-label-color)', true, markerScale, valueFontSize, valuePad);
+    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase, row.right2022, formatDisplay(row.right2022Display, row.right2022), x, false, 'var(--bar-2022)', 'var(--data-label-color)', true, markerScale, valueFontSize, valuePad);
+    drawMirroredLane(svg, leftEdge - SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.left2025, formatDisplay(row.left2025Display, row.left2025), x, true, 'var(--bar-2025)', 'var(--data-value-color)', false, markerScale, valueFontSize, valuePad);
+    drawMirroredLane(svg, rightStart + SIDE_GAP, yBase + BAR_H + PAIR_GAP, row.right2025, formatDisplay(row.right2025Display, row.right2025), x, false, 'var(--bar-2025)', 'var(--data-value-color)', false, markerScale, valueFontSize, valuePad);
   });
+
+  svg.append('line')
+    .attr('x1', leftEdge).attr('y1', axisY)
+    .attr('x2', leftEdge - x(xMax)).attr('y2', axisY)
+    .attr('stroke', 'var(--chart-axis)');
+  svg.append('line')
+    .attr('x1', rightStart).attr('y1', axisY)
+    .attr('x2', rightStart + x(xMax)).attr('y2', axisY)
+    .attr('stroke', 'var(--chart-axis)');
+
+  const ticks = d3.range(0, xMax + step / 2, step);
+  ticks.forEach(tick => {
+    const offset = x(tick);
+
+    svg.append('line')
+      .attr('x1', leftEdge - offset).attr('y1', axisY)
+      .attr('x2', leftEdge - offset).attr('y2', axisY + 5)
+      .attr('stroke', 'var(--chart-axis)');
+    svg.append('text')
+      .attr('x', leftEdge - offset).attr('y', axisY + 16)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', axisFontSize)
+      .attr('font-family', 'IBM Plex Mono, monospace')
+      .attr('fill', 'var(--data-label-color)')
+      .text(tick.toFixed(step >= 1 ? 0 : 1).replace(/\.0$/, ''));
+
+    svg.append('line')
+      .attr('x1', rightStart + offset).attr('y1', axisY)
+      .attr('x2', rightStart + offset).attr('y2', axisY + 5)
+      .attr('stroke', 'var(--chart-axis)');
+    svg.append('text')
+      .attr('x', rightStart + offset).attr('y', axisY + 16)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', axisFontSize)
+      .attr('font-family', 'IBM Plex Mono, monospace')
+      .attr('fill', 'var(--data-label-color)')
+      .text(tick.toFixed(step >= 1 ? 0 : 1).replace(/\.0$/, ''));
+  });
+
+  svg.append('text')
+    .attr('x', leftEdge - x(xMax) / 2)
+    .attr('y', axisY + 26)
+    .attr('text-anchor', 'middle')
+    .attr('font-size', axisFontSize)
+    .attr('font-family', 'Inter, sans-serif')
+    .attr('fill', 'var(--data-label-color)')
+    .text(block.leftLabel || 'Left');
+  svg.append('text')
+    .attr('x', rightStart + x(xMax) / 2)
+    .attr('y', axisY + 26)
+    .attr('text-anchor', 'middle')
+    .attr('font-size', axisFontSize)
+    .attr('font-family', 'Inter, sans-serif')
+    .attr('fill', 'var(--data-label-color)')
+    .text(block.rightLabel || 'Right');
 }
 
-function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, textFill, stroked = false, markerScale = 1, valueFontSize = 13) {
+function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, textFill, stroked = false, markerScale = 1, valueFontSize = 13, valuePad = 5) {
   const laneY = y + 6;
   if (value != null) {
     const width = scale(value);
@@ -914,7 +978,7 @@ function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, 
       .attr('stroke', stroked ? 'rgba(0,0,0,0.22)' : 'none')
       .attr('stroke-width', stroked ? 0.8 : 0);
     svg.append('text')
-      .attr('x', invert ? endX - 5 : endX + 5)
+      .attr('x', invert ? endX - valuePad : endX + valuePad)
       .attr('y', laneY)
       .attr('text-anchor', invert ? 'end' : 'start')
       .attr('dominant-baseline', 'middle')
@@ -924,7 +988,7 @@ function drawMirroredLane(svg, anchorX, y, value, display, scale, invert, fill, 
       .text(display);
   } else {
     svg.append('text')
-      .attr('x', invert ? anchorX - 5 : anchorX + 5)
+      .attr('x', invert ? anchorX - valuePad : anchorX + valuePad)
       .attr('y', laneY)
       .attr('text-anchor', invert ? 'end' : 'start')
       .attr('dominant-baseline', 'middle')

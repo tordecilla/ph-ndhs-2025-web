@@ -1019,11 +1019,14 @@ function drawGroupedBars(container, chartData, block, series) {
   const rowLabelFontSize = mobileChartScale > 1 ? 13 : 12;
   const valueFontSize = mobileChartScale > 1 ? 13 : 9.5;
   const axisLabelFontSize = mobileChartScale > 1 ? 13 : 12;
+  const valuePad = mobileChartScale > 1 ? 10 : 4;
+  const axisGap = mobileChartScale > 1 ? 14 : 8;
   const suppressedFontSize = mobileChartScale > 1 ? 12 : 9;
   const groupH = Math.max(series.length - 1, 0) * laneGap + 1;
   const INNER_H = rows.length
     ? rows.length * groupH + Math.max(rows.length - 1, 0) * groupGap
     : 40;
+  const axisY = INNER_H + axisGap;
   const VH = MT + INNER_H + MB;
 
   const wrap = document.createElement('div');
@@ -1040,8 +1043,8 @@ function drawGroupedBars(container, chartData, block, series) {
   const x = d3.scaleLinear().domain([0, yMax]).range([0, INNER_W - 8]);
 
   chart.append('line')
-    .attr('x1', 0).attr('y1', INNER_H)
-    .attr('x2', INNER_W).attr('y2', INNER_H)
+    .attr('x1', 0).attr('y1', axisY)
+    .attr('x2', INNER_W).attr('y2', axisY)
     .attr('stroke', 'var(--panel-divider)');
 
   d3.range(0, yMax + 0.01, tickStep).forEach(tick => {
@@ -1052,7 +1055,7 @@ function drawGroupedBars(container, chartData, block, series) {
       .attr('stroke', 'var(--panel-divider)')
       .attr('stroke-dasharray', tick === 0 ? null : '2,3');
     chart.append('text')
-      .attr('x', xx).attr('y', INNER_H + 15)
+      .attr('x', xx).attr('y', axisY + 15)
       .attr('text-anchor', 'middle')
       .attr('font-size', axisFontSize)
       .attr('font-family', 'IBM Plex Mono, monospace')
@@ -1104,7 +1107,7 @@ function drawGroupedBars(container, chartData, block, series) {
         .attr('r', 3.6 * markerScale)
         .attr('fill', s.displayColor);
       chart.append('text')
-        .attr('x', endX + 5).attr('y', laneY)
+        .attr('x', endX + valuePad).attr('y', laneY)
         .attr('text-anchor', 'start')
         .attr('dominant-baseline', 'middle')
         .attr('font-size', valueFontSize)
