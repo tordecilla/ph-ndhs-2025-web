@@ -1,6 +1,6 @@
-{
+﻿{
   "sectionTitle": "CONTRACEPTION",
-  "title": "Modern Contraception Among Married and Sexually Active Women",
+  "title": "Current Use of Modern Contraception Methods Among Married and Sexually Active Women",
   "description": "Current use of modern contraceptive methods among currently married women by region, with data tables for currently married and sexually active unmarried women. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
@@ -104,7 +104,7 @@
   },
   "note": "If more than one method is used, only the most effective method is considered in this tabulation. \"0.0\" indicates that an estimate is less than 0.05 percent. Details may not add up to total due to rounding.",
   "chartData": {
-    "title": "Modern Contraception Among Married and Sexually Active Women",
+    "title": "Current Use of Modern Contraception Methods Among Married and Sexually Active Women",
     "subtitle": "Current use of modern contraceptive methods among currently married and sexually active unmarried women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
     "series": [
       {
@@ -1091,7 +1091,7 @@
     ]
   },
   "tableData": {
-    "title": "Modern Contraception Among Married and Sexually Active Women",
+    "title": "Current Use of Modern Contraception Methods Among Married and Sexually Active Women",
     "subtitle": "Current use of modern contraceptive methods among currently married and sexually active unmarried women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
     "series": [
       {
@@ -2181,7 +2181,7 @@
     ]
   },
   "insights": {
-    "title": "Insights on Modern Contraception Among Married and Sexually Active Women",
+    "title": "Insights on Current Use of Modern Contraception Methods Among Married and Sexually Active Women",
     "subtitle": "AI-generated insights based on National Demographic and Health Survey data on modern contraceptive use",
     "overview": "Modern contraceptive use among currently married women aged 15 to 49 increased from 41.8 percent in 2022 to 44.5 percent in 2025, with clear concentration among women in mid-reproductive ages and those with children. Regional variation remains wide, and the change from 2022 to 2025 is uneven across regions and social groups.",
     "sections": [
@@ -2817,3 +2817,6 @@
     "municity": []
   }
 }
+
+
+

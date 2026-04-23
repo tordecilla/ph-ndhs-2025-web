@@ -1,6 +1,6 @@
-{
+﻿{
   "sectionTitle": "CONTRACEPTION",
-  "title": "Traditional Contraception Among All Women",
+  "title": "Current Use of Traditional Contraception Methods Among All Women",
   "description": "Current use of traditional contraceptive methods among all women aged 15 to 49 years, by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
@@ -53,7 +53,7 @@
   "notes": {},
   "note": "If more than one method is used, only the most effective method is considered in this tabulation. \"0.0\" indicates that an estimate is less than 0.05 percent. Details may not add up to total due to rounding.",
   "tableData": {
-    "title": "Traditional Contraception Among All Women",
+    "title": "Current Use of Traditional Contraception Methods Among All Women",
     "subtitle": "Current use of traditional contraceptive methods among all women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
     "series": [
       {
@@ -628,7 +628,7 @@
     ]
   },
   "insights": {
-    "title": "Insights on Traditional Contraception Among All Women",
+    "title": "Insights on Current Use of Traditional Contraception Methods Among All Women",
     "subtitle": "AI-generated insights based on National Demographic and Health Survey data on modern contraceptive use",
     "overview": "Traditional contraceptive use among all women aged 15 to 49 declined nationally from 9.8 percent in 2022 to 8.1 percent in 2025. The decline appears in most background groups, but levels still vary widely by age, parity, and region.",
     "sections": [
@@ -858,3 +858,6 @@
     "municity": []
   }
 }
+
+
+

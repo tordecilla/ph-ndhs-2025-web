@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Desire to Limit Childbearing",
   "description": "Percentage of currently married women aged 15-49 years who want no more children or are sterilized, by region and number of living children. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
   "maxDepth": "region",
@@ -1120,7 +1120,7 @@
     "footnotes": [
       "¹ The number of living children includes a woman's current pregnancy.",
       "² Region IX includes the province of Sulu in 2025.",
-      "“NA” denotes that an estimate is not reported.",
+      "â€œNAâ€ denotes that an estimate is not reported.",
       "\"0.0\" indicates that an estimate is less than 0.05 percent.",
       "1. An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.",
       "2. A dash indicates zero or no cases.",
@@ -1828,3 +1828,4 @@
     ]
   }
 }
+

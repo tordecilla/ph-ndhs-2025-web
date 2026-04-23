@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Fertility Rate",
   "subtitle": "",
   "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
@@ -533,7 +533,7 @@
         { "label": "2022", "cols": ["Urban", "Rural", "Total"] }
       ],
       "rows": [
-        { "label": "10-14", "noteRef": "⁴", "values": ["[0]", "[1]", "[1]", "[0]", "[0]", "[0]"] },
+        { "label": "10-14", "noteRef": "â´", "values": ["[0]", "[1]", "[1]", "[0]", "[0]", "[0]"] },
         { "label": "15-19", "values": ["20", "26", "22", "22", "28", "25"] },
         { "label": "20-24", "values": ["56", "84", "67", "71", "102", "84"] },
         { "label": "25-29", "values": ["85", "108", "94", "95", "120", "105"] },
@@ -546,10 +546,10 @@
         { "label": "CBR", "noteRef": "³", "values": ["11.0", "12.4", "11.6", "12.7", "14.0", "13.3"] }
       ],
       "footnotes": [
-        "¹ Total fertility rate expressed per woman aged 15–49 years.",
-        "² General fertility rate expressed per 1,000 women aged 15–44 years.",
+        "¹ Total fertility rate expressed per woman aged 15â€“49 years.",
+        "² General fertility rate expressed per 1,000 women aged 15â€“44 years.",
         "³ Crude birth rate, expressed per 1,000 population.",
-        "⁴ Rates for the 10-14 age group are based on retrospective data from women aged 15-17 years.",
+        "â´ Rates for the 10-14 age group are based on retrospective data from women aged 15-17 years.",
         "Age-specific fertility rates are per 1,000 women.",
         "Estimates in brackets are truncated.",
         "Rates are for the period 1-36 months preceding the interview."
@@ -561,9 +561,10 @@
       "total": { "v2025": "1.7", "v2022": "1.9" },
       "footnotes": [
         "¹ Region IX includes the province of Sulu in 2025.",
-        "Total fertility rate is expressed per woman aged 15–49 years.",
+        "Total fertility rate is expressed per woman aged 15â€“49 years.",
         "Rates are for the period 1-36 months preceding the interview."
       ]
     }
   }
 }
+

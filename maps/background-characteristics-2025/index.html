@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,10 +6,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Table 2 — Background Characteristics</title>
+<title>Table 2 â€” Background Characteristics</title>
 <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
 <style>
-  /* ── Theme variables (matches map engine) ── */
+  /* â”€â”€ Theme variables (matches map engine) â”€â”€ */
   :root {
     --bg:               #edf1f7;
     --panel-bg:         #ffffff;
@@ -51,7 +51,7 @@
     font-family: 'Inter', system-ui, sans-serif;
   }
 
-  /* ── Tab bar ── */
+  /* â”€â”€ Tab bar â”€â”€ */
   #tab-bar {
     position: fixed; top: 0; left: 0; right: 0; z-index: 30;
     display: flex; align-items: center; gap: 6px;
@@ -77,16 +77,16 @@
   }
   .tab-btn:hover { background: var(--btn-hover-bg); }
 
-  /* ── Tab panels ── */
+  /* â”€â”€ Tab panels â”€â”€ */
   .tab-panel {
     display: none;
     position: fixed; top: 46px; left: 0; right: 0; bottom: 0;
   }
   .tab-panel.active { display: block; }
 
-  /* ══════════════════════════════════════════════
+  /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      Charts tab
-  ══════════════════════════════════════════════ */
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
   #tab-charts {
     overflow-y: auto;
     padding: 28px 28px 56px;
@@ -115,7 +115,7 @@
   }
   .legend-swatch.s2022 { border: 1px solid rgba(0,0,0,0.15); }
 
-  /* ── Chart grid ── */
+  /* â”€â”€ Chart grid â”€â”€ */
   .chart-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -152,9 +152,9 @@
     font-style: italic;
   }
 
-  /* ══════════════════════════════════════════════
+  /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      Data Tables tab
-  ══════════════════════════════════════════════ */
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
   #tab-tables {
     overflow-y: auto;
     padding: 28px 28px 56px;
@@ -224,9 +224,9 @@
     font-size: 11px; color: var(--data-label-color); margin-top: 10px; font-style: italic;
   }
 
-  /* ══════════════════════════════════════════════
+  /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      Map tab
-  ══════════════════════════════════════════════ */
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
   #tab-map { overflow: hidden; }
 
   #map-svg { display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; }
@@ -335,46 +335,46 @@
 </head>
 <body>
 
-<!-- ── Tab bar ── -->
+<!-- â”€â”€ Tab bar â”€â”€ -->
 <div id="tab-bar">
   <button class="tab-btn active" data-tab="map">Maps</button>
   <button class="tab-btn"        data-tab="charts">Charts</button>
   <button class="tab-btn"        data-tab="tables">Data Tables</button>
 </div>
 
-<!-- ══ Map panel ══ -->
+<!-- â•â• Map panel â•â• -->
 <div id="tab-map" class="tab-panel active">
 
   <svg id="map-svg"><rect class="svg-bg" width="100%" height="100%"/></svg>
-  <div id="map-status">Loading…</div>
-  <button id="map-info-btn">ℹ Details</button>
+  <div id="map-status">Loadingâ€¦</div>
+  <button id="map-info-btn">â„¹ Details</button>
   <div id="map-detail">
     <div id="map-detail-header">
       <div id="map-detail-header-row">
-        <div class="detail-eyebrow" id="map-eyebrow">—</div>
+        <div class="detail-eyebrow" id="map-eyebrow">â€”</div>
         <button id="map-detail-close">✕</button>
       </div>
-      <div class="detail-lgu-name" id="map-lgu-name">—</div>
-      <div class="detail-region"   id="map-region-label">—</div>
+      <div class="detail-lgu-name" id="map-lgu-name">â€”</div>
+      <div class="detail-region"   id="map-region-label">â€”</div>
     </div>
     <div id="map-detail-body"></div>
   </div>
 </div>
 
-<!-- ══ Charts panel ══ -->
+<!-- â•â• Charts panel â•â• -->
 <div id="tab-charts" class="tab-panel">
   <div id="charts-container"></div>
 </div>
 
-<!-- ══ Data Tables panel ══ -->
+<!-- â•â• Data Tables panel â•â• -->
 <div id="tab-tables" class="tab-panel">
   <div id="tables-container"></div>
 </div>
 
 <script>
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Shared state
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 let appData       = null;
 let mapReady      = false;
 let chartsReady   = false;
@@ -406,9 +406,9 @@ function switchTab(tab, replace = false) {
   notifyParentHash(activeTab);
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Tab switching
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     switchTab(btn.dataset.tab, false);
@@ -419,9 +419,9 @@ window.addEventListener('hashchange', () => {
   switchTab(location.hash.replace(/^#/, '') || 'map', true);
 });
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Boot — map is the landing tab, so init it first
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Boot â€” map is the landing tab, so init it first
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Promise.all([
   d3.json('./data.json'),
   d3.json('./psgc-index.json').catch(() => null)
@@ -438,9 +438,9 @@ Promise.all([
   switchTab(location.hash.replace(/^#/, '') || 'map', true);
 });
 
-// ═════════════════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // CHARTS
-// ═════════════════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 function renderCharts(data) {
   const container = document.getElementById('charts-container');
@@ -496,7 +496,7 @@ function renderTables(data) {
   `;
   container.appendChild(hdr);
 
-  // Helper: value cell (no superscript — footnote refs go on the label)
+  // Helper: value cell (no superscript â€” footnote refs go on the label)
   function valCell(value, suffix) {
     const cell = document.createElement('td');
     if (value != null) {
@@ -762,9 +762,9 @@ function drawGroupChart(container, group) {
   container.appendChild(legendDiv);
 }
 
-// ═════════════════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // MAP
-// ═════════════════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 const nameRegistry = {};
 let   mapColorScale = null;
@@ -821,7 +821,7 @@ function mapRankedListHTML(activePsgc) {
   const sorted  = [...records].sort((a, b) => (b[cfg.colorField] ?? -Infinity) - (a[cfg.colorField] ?? -Infinity));
   if (!sorted.length) return '';
   const suf  = cfg.valueSuffix || '';
-  const sups = ['¹','²','³','⁴','⁵','⁶','⁷','⁸','⁹'];
+  const sups = ['&#185;','&#178;','&#179;','&#8308;','&#8309;','&#8310;','&#8311;','&#8312;','&#8313;'];
   const noted = new Map();
   let nc = 0;
   sorted.forEach(r => { if (r.psa_note) noted.set(String(r.psgc), sups[nc++] || String(nc)); });
@@ -851,7 +851,7 @@ function openMapWelcome() {
   document.getElementById('map-lgu-name').textContent   = 'Background Characteristics';
   document.getElementById('map-region-label').textContent = '';
   const desc = `<p style="font-size:12px;color:var(--text-color);line-height:1.8;margin-bottom:12px">` +
-    `Distribution of survey respondents (women aged 15–49) by region. ` +
+    `Distribution of survey respondents (women aged 15â€“49) by region. ` +
     `Darker shade = larger share of respondents. Select a region for details.</p>`;
   document.getElementById('map-detail-body').innerHTML =
     desc + mapLegendHTML() + mapRankedListHTML(null);
@@ -873,14 +873,19 @@ function openMapDetail(name, psgc, rec) {
         return val ? `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:8px 0 0">${val}</p>` : '';
       }
       return `<div class="data-row"><span class="data-label">${f.label}</span>` +
-        `<span class="data-value">${val != null ? val : '—'}</span></div>`;
+        `<span class="data-value">${val != null ? val : 'â€”'}</span></div>`;
     }).join('');
   } else {
     dataHTML = `<div class="no-findings">No data for this region.</div>`;
   }
 
   document.getElementById('map-detail-body').innerHTML =
-    dataHTML + mapLegendHTML() + mapRankedListHTML(psgc);
+    dataHTML +
+    mapLegendHTML() +
+    `<button id="detail-back-national" style="margin:10px 0 8px;padding:5px 10px;border:1px solid var(--btn-border);background:var(--btn-bg);color:var(--btn-color);font:10px 'IBM Plex Mono', monospace;letter-spacing:0.4px;cursor:pointer">Back to national ranking</button>` +
+    mapRankedListHTML(psgc);
+  const detailBackBtn = document.getElementById('detail-back-national');
+  if (detailBackBtn) detailBackBtn.addEventListener('click', () => openMapWelcome());
   document.getElementById('map-detail').classList.add('open');
 }
 
@@ -954,9 +959,9 @@ async function initMap(cfg) {
     })
     .transition().delay(350).duration(300).attr('opacity', 1);
 
-  document.getElementById('map-status').textContent = '18 regions — click to view details';
+  document.getElementById('map-status').textContent = '18 regions â€” click to view details';
 
-  // Info button — always visible; reopens the welcome/overview panel
+  // Info button â€” always visible; reopens the welcome/overview panel
   const infoBtnEl = document.getElementById('map-info-btn');
   const isMobile = window.matchMedia('(pointer: coarse)').matches;
   infoBtnEl.style.display = 'block';
@@ -977,9 +982,9 @@ async function initMap(cfg) {
   }
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Utility
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function el(tag, cls) {
   const e = document.createElement(tag);
   if (cls) e.className = cls;
@@ -988,3 +993,4 @@ function el(tag, cls) {
 </script>
 </body>
 </html>
+

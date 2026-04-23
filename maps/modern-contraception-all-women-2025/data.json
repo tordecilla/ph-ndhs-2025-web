@@ -1,6 +1,6 @@
-{
+﻿{
   "sectionTitle": "CONTRACEPTION",
-  "title": "Modern Contraception Among All Women",
+  "title": "Current Use of Modern Contraception Methods Among All Women",
   "description": "Current use of modern contraceptive methods among all women aged 15 to 49 years, by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
@@ -104,7 +104,7 @@
   },
   "note": "If more than one method is used, only the most effective method is considered in this tabulation. \"0.0\" indicates that an estimate is less than 0.05 percent. Details may not add up to total due to rounding.",
   "tableData": {
-    "title": "Modern Contraception Among All Women",
+    "title": "Current Use of Modern Contraception Methods Among All Women",
     "subtitle": "Current use of modern contraceptive methods among all women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
     "series": [
       {
@@ -1067,7 +1067,7 @@
     ]
   },
   "insights": {
-    "title": "Insights on Modern Contraception Among All Women",
+    "title": "Insights on Current Use of Modern Contraception Methods Among All Women",
     "subtitle": "AI-generated insights based on National Demographic and Health Survey data on modern contraceptive use",
     "overview": "Modern contraceptive use among all women aged 15 to 49 rose from 24.3 percent in 2022 to 25.7 percent in 2025, but the national average hides wide differences by region and life stage. Use is concentrated among women with children and in mid-adult ages, while it remains low among women with no children and among teenagers.",
     "sections": [
@@ -1458,3 +1458,6 @@
     "municity": []
   }
 }
+
+
+

@@ -1,4 +1,4 @@
-{
+﻿{
   "sectionTitle": "CONTRACEPTION",
   "title": "Source of Modern Contraception Methods",
   "description": "Percent distribution of users of modern contraceptive methods aged 15 to 49 years by most recent source of method, according to method. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
@@ -2304,7 +2304,7 @@
         ],
         "footnotes": [
           "¹ Barangay health worker",
-          "“NA” denotes that an estimate is not reported.",
+          "â€œNAâ€ denotes that an estimate is not reported.",
           "\"0.0\" indicates that an estimate is less than 0.05 percent.",
           "1. Total includes other modern methods, including other modern methods mentioned by respondent and male sterilization, patch, emergency contraception, and standard days method. but excludes lactational amenorrhea method (LAM), mucus/Billings/ovulation, basal body temperature, and symptothermal methods",
           "2. An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.",
@@ -2347,3 +2347,4 @@
     ]
   }
 }
+

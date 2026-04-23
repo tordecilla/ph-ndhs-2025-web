@@ -1,6 +1,6 @@
-{
+﻿{
   "sectionTitle": "CONTRACEPTION",
-  "title": "Traditional Contraception Among Married and Sexually Active Women",
+  "title": "Current Use of Traditional Contraception Methods Among Married and Sexually Active Women",
   "description": "Current use of traditional contraceptive methods among currently married women by region, with data tables for currently married and sexually active unmarried women. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
@@ -53,7 +53,7 @@
   "notes": {},
   "note": "If more than one method is used, only the most effective method is considered in this tabulation. \"0.0\" indicates that an estimate is less than 0.05 percent. Details may not add up to total due to rounding.",
   "chartData": {
-    "title": "Traditional Contraception Among Married and Sexually Active Women",
+    "title": "Current Use of Traditional Contraception Methods Among Married and Sexually Active Women",
     "subtitle": "Current use of traditional contraceptive methods among currently married and sexually active unmarried women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
     "series": [
       {
@@ -652,7 +652,7 @@
     ]
   },
   "tableData": {
-    "title": "Traditional Contraception Among Married and Sexually Active Women",
+    "title": "Current Use of Traditional Contraception Methods Among Married and Sexually Active Women",
     "subtitle": "Current use of traditional contraceptive methods among currently married and sexually active unmarried women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
     "series": [
       {
@@ -1320,7 +1320,7 @@
     ]
   },
   "insights": {
-    "title": "Insights on Traditional Contraception Among Married and Sexually Active Women",
+    "title": "Insights on Current Use of Traditional Contraception Methods Among Married and Sexually Active Women",
     "subtitle": "AI-generated insights based on National Demographic and Health Survey data on traditional contraceptive use",
     "overview": "Traditional-method use among currently married women fell from 16.5 percent in 2022 to 14.1 percent in 2025, and withdrawal remained the dominant component. The decline is broad but uneven across regions and social groups, with a few places showing increases.",
     "sections": [
@@ -1673,3 +1673,6 @@
     "municity": []
   }
 }
+
+
+

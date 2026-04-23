@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 <title>Philippines Map</title>
 <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
 <style>
-  /* ── Theme variables ── */
+  /* â”€â”€ Theme variables â”€â”€ */
   :root {
     --bg:               #edf1f7;
     --panel-bg:         #ffffff;
@@ -405,7 +405,7 @@
     letter-spacing: 0.3px;
   }
 
-  /* ── Overlay buttons ── */
+  /* â”€â”€ Overlay buttons â”€â”€ */
   #back-btn, #info-btn {
     position: fixed;
     background: var(--btn-bg);
@@ -429,7 +429,7 @@
     transition: color 0.25s, background 0.25s;
   }
 
-  /* ── Detail panel — desktop ── */
+  /* â”€â”€ Detail panel â€” desktop â”€â”€ */
   #detail {
     position: fixed; top: 46px; right: -380px; bottom: 0; width: 360px;
     background: var(--panel-bg); border-left: 1px solid var(--panel-border);
@@ -441,7 +441,7 @@
   #detail.open { right: 0; }
   #detail.peek { right: -285px; }
 
-  /* ── Detail panel — mobile ── */
+  /* â”€â”€ Detail panel â€” mobile â”€â”€ */
   @media (pointer: coarse) {
     #detail {
       width: 100%; right: 0; top: auto; bottom: 0; height: 55vh;
@@ -495,7 +495,7 @@
   #detail-body::-webkit-scrollbar { width: 3px; }
   #detail-body::-webkit-scrollbar-thumb { background: var(--scroll-thumb); }
 
-  /* ── Data field rows ── */
+  /* â”€â”€ Data field rows â”€â”€ */
   .data-row {
     display: flex; justify-content: space-between; align-items: baseline;
     padding: 8px 0; border-bottom: 1px solid var(--panel-divider);
@@ -508,7 +508,7 @@
   .no-findings { text-align: center; padding: 40px 0; color: var(--no-data-color); font-size: 13px; line-height: 1.8; }
   .section-head { font: 10px 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase; color: var(--section-color); margin: 16px 0 8px; }
 
-  /* ── Legend ── */
+  /* â”€â”€ Legend â”€â”€ */
   .legend-bar { height: 10px; border-radius: 2px; margin: 6px 0 4px; }
   .legend-ends { display: flex; justify-content: space-between; font: 10px 'IBM Plex Mono', monospace; color: var(--data-label-color); }
 
@@ -565,7 +565,7 @@
     }
   }
 
-  /* ── Ranked list ── */
+  /* â”€â”€ Ranked list â”€â”€ */
   .ranked-row {
     display: flex; align-items: center; gap: 7px;
     padding: 5px 0; border-bottom: 1px solid var(--panel-divider);
@@ -589,7 +589,7 @@
   <div id="detail-header">
     <div id="detail-header-row">
       <div class="detail-eyebrow" id="detail-eyebrow">-</div>
-      <button id="detail-close">X</button>
+      <button id="detail-close">✕</button>
     </div>
     <div class="detail-lgu-name" id="detail-lgu-name">-</div>
     <div class="detail-region"   id="detail-region">-</div>
@@ -690,17 +690,17 @@ function switchTab(tab, replace = false, syncHash = true) {
   }
 }
 
-// ── Config & data ─────────────────────────────────────────────────────────────
+// â”€â”€ Config & data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 let config = {};
 let dataByLevel = { region: {}, province: {}, municity: {} };
 let colorScale  = null;
 let GEO_BASE    = './philippines-json-maps';
 
-// PSGC → display name, populated from psgc-index.json at boot + GeoJSON lazily
+// PSGC â†’ display name, populated from psgc-index.json at boot + GeoJSON lazily
 const nameRegistry = {};
-// child PSGC (string) → parent PSGC (string): province→region, municity→province
+// child PSGC (string) â†’ parent PSGC (string): provinceâ†’region, municityâ†’province
 const parentMap = {};
-// province PSGCs (strings) that have at least one municity data record — gates drill-down
+// province PSGCs (strings) that have at least one municity data record â€” gates drill-down
 let provincesWithMunicity = new Set();
 
 function registerNames(features, psgcKey, nameKey) {
@@ -764,7 +764,7 @@ async function loadConfig() {
         .map(r => parentMap[String(r.psgc)])
         .filter(Boolean)
     );
-  } catch(e) { /* psgc-index.json absent — names populated lazily from GeoJSON */ }
+  } catch(e) { /* psgc-index.json absent â€” names populated lazily from GeoJSON */ }
 }
 
 function renderMetricControls() {
@@ -917,12 +917,12 @@ function renderTables(tableData) {
   tablesContainer.innerHTML = '';
 
   function normalizeText(value) {
-    return String(value || '').replace(/Â([¹²³⁴⁵⁶⁷⁸⁹⁰])/g, '$1').trim();
+    return String(value || '').replace(/Ã‚([Â¹Â²Â³â´âµâ¶â·â¸â¹â°])/g, '$1').trim();
   }
 
   function splitNoteRef(label) {
     const normalized = normalizeText(label);
-    const match = normalized.match(/^(.*?)([¹²³⁴⁵⁶⁷⁸⁹⁰]+)$/);
+    const match = normalized.match(/^(.*?)([Â¹Â²Â³â´âµâ¶â·â¸â¹â°]+)$/);
     return match
       ? { text: match[1].trim(), noteRef: match[2] }
       : { text: normalized, noteRef: '' };
@@ -1323,13 +1323,13 @@ const hucFeaturesByRegion   = {};
 const W = window.innerWidth, H = window.innerHeight;
 svgEl.setAttribute('viewBox', `0 0 ${W} ${H}`);
 
-// ── Zoom & pan ────────────────────────────────────────────────────────────────
+// â”€â”€ Zoom & pan â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const zoom = d3.zoom()
   .scaleExtent([0.5, 20])
   .on('zoom', event => { g.attr('transform', event.transform); });
 
 svg.call(zoom);
-svg.on('dblclick.zoom', null); // disable dblclick zoom — we use click for drill-down
+svg.on('dblclick.zoom', null); // disable dblclick zoom â€” we use click for drill-down
 
 function resetZoom(duration) {
   (duration ? svg.transition().duration(duration) : svg)
@@ -1348,7 +1348,7 @@ let viewStack   = [];
 let currentView = 'idle';
 let nationalFeatures = [], nationalPath;
 
-// ── Projection ────────────────────────────────────────────────────────────────
+// â”€â”€ Projection â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function makePathFn(lonMin, lonMax, latMin, latMax) {
   const lonSpan = lonMax - lonMin, latSpan = latMax - latMin;
   const scale   = Math.min((W - 2*PAD) / lonSpan, (H - 2*PAD) / latSpan);
@@ -1375,7 +1375,7 @@ function boundsFromFeatures(features) {
   };
 }
 
-// ── Labels ────────────────────────────────────────────────────────────────────
+// â”€â”€ Labels â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function shortenName(name, nameKey) {
   if (!name) return '';
   // For region names like "Region I (Ilocos Region)" extract the parenthetical
@@ -1406,7 +1406,7 @@ function addLabels(features, pathFn, nameKey, fontSize) {
     .attr('opacity', 1);
 }
 
-// ── Fade helpers ──────────────────────────────────────────────────────────────
+// â”€â”€ Fade helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function fadeIn(sel) {
   sel.attr('opacity', 0).transition().duration(400).ease(d3.easeCubicOut).attr('opacity', 1);
 }
@@ -1423,7 +1423,7 @@ function zoomThenRender(pathFn, feature, callback) {
     });
 }
 
-// ── URL routing ───────────────────────────────────────────────────────────────
+// â”€â”€ URL routing â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function pushURL(hash, replace = false) {
   try { window.parent.postMessage({ type: 'child-hash', hash }, '*'); } catch (e) {}
   if (replace) {
@@ -1539,7 +1539,7 @@ function getHUCsForProvince(provPsgc) {
   return hucFeaturesByProvince[provPsgc] || [];
 }
 
-// ── Back ──────────────────────────────────────────────────────────────────────
+// â”€â”€ Back â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function goBack() {
   if (viewStack.length < 2) return;
   currentView = 'idle';
@@ -1560,7 +1560,7 @@ backBtn.addEventListener('click', () => {
   goBack();
 });
 
-// ── National ──────────────────────────────────────────────────────────────────
+// â”€â”€ National â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 async function loadNational() {
   await ensureNational();
   viewStack = [{ render: drawNational }];
@@ -1642,10 +1642,10 @@ function drawNational(updateURL = true) {
       status.textContent = nationalFeatures.length + ' regions - click a region for details';
     });
   }
-  status.textContent = nationalFeatures.length + ' regions — click to drill in';
+  status.textContent = nationalFeatures.length + ' regions â€” click to drill in';
 }
 
-// ── Region → provinces ────────────────────────────────────────────────────────
+// â”€â”€ Region â†’ provinces â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function drillRegion(regionFeature, skipAnimation, afterRender) {
   if (currentView === 'idle') return;
   currentView = 'idle';
@@ -1661,8 +1661,8 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
       currentView = 'region';
       currentContext = { name, parentName: 'Philippines', psgc, type: 'region' };
       backBtn.style.display = 'block';
-      backBtn.textContent = '← Philippines';
-      setPageTitle(name + ' — ' + config.title);
+      backBtn.textContent = 'â† Philippines';
+      setPageTitle(name + ' â€” ' + config.title);
       showInfoBtn();
       if (detail.classList.contains('open')) populateDetail(name, 'Philippines', psgc, 'region');
       resetZoom();
@@ -1738,7 +1738,7 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
       }
 
       const unit = isMunicity ? 'cities/municipalities' : 'provinces';
-      status.textContent = `${name} — ${features.length} ${unit}`;
+      status.textContent = `${name} â€” ${features.length} ${unit}`;
 
       if (afterRender) afterRender(provPath, features, nameKey);
     };
@@ -1777,7 +1777,7 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
   }
 }
 
-// ── Municipality → isolated city view ────────────────────────────────────────
+// â”€â”€ Municipality â†’ isolated city view â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
   if (currentView === 'idle') return;
   currentView = 'idle';
@@ -1796,8 +1796,8 @@ function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
     currentView = 'municity';
     currentContext = { name, parentName, psgc, type: 'municity' };
     backBtn.style.display = 'block';
-    backBtn.textContent = '← ' + parentName;
-    setPageTitle(name + ' — ' + config.title);
+    backBtn.textContent = 'â† ' + parentName;
+    setPageTitle(name + ' â€” ' + config.title);
     showInfoBtn();
     resetZoom();
     g.selectAll('*').remove();
@@ -1831,7 +1831,7 @@ function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
   }
 }
 
-// ── Province → municipalities ─────────────────────────────────────────────────
+// â”€â”€ Province â†’ municipalities â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afterRender) {
   if (currentView === 'idle') return;
   currentView = 'idle';
@@ -1855,8 +1855,8 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
         const regionName = currentContext ? currentContext.name : '';
         currentContext = { name, parentName: regionName, psgc, type: 'province' };
         backBtn.style.display = 'block';
-        backBtn.textContent = '← ' + regionName;
-        setPageTitle(name + ' — ' + config.title);
+        backBtn.textContent = 'â† ' + regionName;
+        setPageTitle(name + ' â€” ' + config.title);
         showInfoBtn();
         if (detail.classList.contains('open')) populateDetail(name, regionName, psgc, 'province');
         resetZoom();
@@ -1872,7 +1872,7 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
           .call(fadeIn)
           .on('click', (e, d) => drillMunicity(d, munPath, name));
 
-        // Municipality labels — pointer-events enabled so tiny polygons (e.g. islands)
+        // Municipality labels â€” pointer-events enabled so tiny polygons (e.g. islands)
         // are still clickable via their label even when the polygon itself is too small to hit
         g.selectAll('text.mun-label')
           .data(munFeatures)
@@ -1932,7 +1932,7 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
     });
 }
 
-// ── Detail panel ──────────────────────────────────────────────────────────────
+// â”€â”€ Detail panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const detailClose = document.getElementById('detail-close');
 const detailBody  = document.getElementById('detail-body');
 detailClose.addEventListener('click', closeDetail);
@@ -1974,7 +1974,7 @@ function rankedListHTML(level, activePsgc, filterParentPsgc) {
   if (!sorted.length) return '';
   const levelLabel = LEVEL_LABEL[level] || level;
   const displayField = config.colorField + '_display';
-  const superscripts = ['¹','²','³','⁴','⁵','⁶','⁷','⁸','⁹'];
+  const superscripts = ['&#185;','&#178;','&#179;','&#8308;','&#8309;','&#8310;','&#8311;','&#8312;','&#8313;'];
   const notedPsgcs = new Map();
   let noteCounter = 0;
   sorted.forEach(r => { if (r.psa_note) notedPsgcs.set(String(r.psgc), superscripts[noteCounter++] || String(noteCounter)); });
@@ -2032,13 +2032,23 @@ function populateDetail(lguName, parentName, psgc, type = 'municity') {
   }
   let listHTML = '';
   if (type === 'region') {
-    listHTML = rankedListHTML('province', null, psgc) || rankedListHTML('municity', null, psgc);
+    listHTML = rankedListHTML('region', psgc);
   } else if (type === 'province') {
     listHTML = rankedListHTML('municity', null, psgc);
   } else {
     listHTML = rankedListHTML('municity', psgc, parentMap[String(psgc)]);
   }
-  detailBody.innerHTML = dataHTML + legendHTML() + listHTML + noteHTML();
+  detailBody.innerHTML = dataHTML + legendHTML() + (type === 'region'
+    ? `<button id="detail-back-national" style="margin:10px 0 8px;padding:5px 10px;border:1px solid var(--btn-border);background:var(--btn-bg);color:var(--btn-color);font:10px 'IBM Plex Mono', monospace;letter-spacing:0.4px;cursor:pointer">Back to national ranking</button>`
+    : '') + listHTML + noteHTML();
+  const detailBackBtn = document.getElementById('detail-back-national');
+  if (detailBackBtn) {
+    detailBackBtn.addEventListener('click', () => {
+      currentContext = null;
+      openWelcome();
+      pushURL(buildStateHash('/'), true);
+    });
+  }
 }
 
 function openDetail(lguName, parentName, psgc, type = 'municity') {
@@ -2068,7 +2078,7 @@ infoBtn.addEventListener('click', () => {
   }
 });
 
-// ── Page title ────────────────────────────────────────────────────────────────
+// â”€â”€ Page title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const TITLE_SUFFIX = ' | 2025 NDHS Key Indicators';
 function setPageTitle(title) {
   const fullTitle = title + TITLE_SUFFIX;
@@ -2076,7 +2086,7 @@ function setPageTitle(title) {
   try { window.parent.document.title = fullTitle; } catch(e) {}
 }
 
-// ── Boot ──────────────────────────────────────────────────────────────────────
+// â”€â”€ Boot â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 async function boot() {
   await loadConfig();
   renderMetricControls();
@@ -2087,3 +2097,6 @@ boot();
 </script>
 </body>
 </html>
+
+
+

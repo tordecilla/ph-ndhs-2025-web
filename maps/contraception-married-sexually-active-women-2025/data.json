@@ -1,6 +1,6 @@
-{
+﻿{
   "sectionTitle": "CONTRACEPTION",
-  "title": "Contraception Among Married and Sexually Active Women",
+  "title": "Current Use of Contraception Among Married and Sexually Active Women",
   "description": "Current contraceptive use among currently married women by region, with data tables for currently married and sexually active unmarried women. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
@@ -56,7 +56,7 @@
   "notes": {},
   "note": "If more than one method is used, only the most effective method is considered in this tabulation. \"0.0\" indicates that an estimate is less than 0.05 percent. Details may not add up to total due to rounding.",
   "chartData": {
-    "title": "Contraception Among Married and Sexually Active Women",
+    "title": "Current Use of Contraception Among Married and Sexually Active Women",
     "subtitle": "Current contraceptive use among currently married and sexually active unmarried women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
     "series": [
       {
@@ -626,7 +626,7 @@
     ]
   },
   "tableData": {
-    "title": "Contraception Among Married and Sexually Active Women",
+    "title": "Current Use of Contraception Among Married and Sexually Active Women",
     "subtitle": "Current contraceptive use among currently married and sexually active unmarried women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
     "series": [
       { "key": "any_method_pct", "label": "Any method" },
@@ -825,7 +825,7 @@
     ]
   },
   "insights": {
-    "title": "Insights on Contraception Among Married and Sexually Active Women",
+    "title": "Insights on Current Use of Contraception Among Married and Sexually Active Women",
     "subtitle": "AI-generated insights based on National Demographic and Health Survey data on modern contraceptive use",
     "overview": "Contraceptive use among currently married women stayed broadly stable, with use of any method at 58.3 percent from 2022 to 58.6 percent in 2025. Within that stable headline, the methods used shifted: modern-method use rose from 41.8 to 44.5 percent while traditional-method use declined from 16.5 to 14.1 percent. This indicates gradual substitution across methods rather than a broad expansion in overall uptake.",
     "sections": [
@@ -1147,3 +1147,5 @@
     "municity": []
   }
 }
+
+

@@ -1,6 +1,6 @@
-{
+﻿{
   "sectionTitle": "CONTRACEPTION",
-  "title": "Contraception Among All Women",
+  "title": "Current Use of Contraception Among All Women",
   "description": "Current contraceptive use among all women aged 15 to 49 years, by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
@@ -56,7 +56,7 @@
   "notes": {},
   "note": "If more than one method is used, only the most effective method is considered in this tabulation. \"0.0\" indicates that an estimate is less than 0.05 percent. Details may not add up to total due to rounding.",
   "tableData": {
-    "title": "Contraception Among All Women",
+    "title": "Current Use of Contraception Among All Women",
     "subtitle": "Current contraceptive use among all women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
     "series": [
       {
@@ -781,25 +781,25 @@
     "municity": []
   },
   "insights": {
-    "title": "Insights on Contraception Among All Women",
+    "title": "Insights on Current Use of Contraception Among All Women",
     "subtitle": "AI-generated insights based on National Demographic and Health Survey data on contraceptive use among all women aged 15 to 49 years",
-    "overview": "Two out of three women aged 15 to 49 in the Philippines are not using any contraceptive method. The overall rate has barely moved between 2022 and 2025, edging down from 34.1 to 33.8 percent. But that near-stasis in the total obscures a meaningful shift in how women who do use contraception are using it: modern method use rose from 24.3 to 25.7 percent while traditional method use fell from 9.8 to 8.1 percent. The regional picture makes the aggregate look more stable than it is — use ranges from 16.2 percent in BARMM to 45.1 percent in Davao Region, a gap of nearly 29 percentage points.",
+    "overview": "Two out of three women aged 15 to 49 in the Philippines are not using any contraceptive method. The overall rate has barely moved between 2022 and 2025, edging down from 34.1 to 33.8 percent. But that near-stasis in the total obscures a meaningful shift in how women who do use contraception are using it: modern method use rose from 24.3 to 25.7 percent while traditional method use fell from 9.8 to 8.1 percent. The regional picture makes the aggregate look more stable than it is â€” use ranges from 16.2 percent in BARMM to 45.1 percent in Davao Region, a gap of nearly 29 percentage points.",
     "sections": [
       {
         "heading": "A quiet shift from traditional to modern methods",
-        "body": "The headline rate has stalled, but the method mix has moved. Between 2022 and 2025, the share of women using a modern method rose by 1.4 percentage points while traditional method use dropped by 1.7 points. This pattern appears across residence groups, wealth quintiles, and most age groups — women are not simply stopping contraception, but switching methods. The shift is modest in scale, but it is consistent enough to suggest a directional change rather than noise."
+        "body": "The headline rate has stalled, but the method mix has moved. Between 2022 and 2025, the share of women using a modern method rose by 1.4 percentage points while traditional method use dropped by 1.7 points. This pattern appears across residence groups, wealth quintiles, and most age groups â€” women are not simply stopping contraception, but switching methods. The shift is modest in scale, but it is consistent enough to suggest a directional change rather than noise."
       },
       {
         "heading": "Use concentrates sharply in the middle of the reproductive life course",
-        "body": "Among teenagers aged 15 to 19, only 3.1 percent report using any method — a figure that reflects the large proportion who are not yet partnered or sexually active. Use climbs steeply through the twenties and peaks at 53.9 percent among women aged 35 to 39. After that it eases back, reaching 39.3 percent among women aged 45 to 49. The picture by number of living children tells a similar story: women with no children are almost entirely non-users at 4.2 percent, while use peaks at 66.8 percent among women with three or four children and then falls to 57.4 percent among those with five or more. The decline at highest parity may reflect a mix of sterilization being already counted under modern methods, reduced fecundity at older ages, and smaller numbers in that group."
+        "body": "Among teenagers aged 15 to 19, only 3.1 percent report using any method â€” a figure that reflects the large proportion who are not yet partnered or sexually active. Use climbs steeply through the twenties and peaks at 53.9 percent among women aged 35 to 39. After that it eases back, reaching 39.3 percent among women aged 45 to 49. The picture by number of living children tells a similar story: women with no children are almost entirely non-users at 4.2 percent, while use peaks at 66.8 percent among women with three or four children and then falls to 57.4 percent among those with five or more. The decline at highest parity may reflect a mix of sterilization being already counted under modern methods, reduced fecundity at older ages, and smaller numbers in that group."
       },
       {
         "heading": "BARMM stands apart from every other region",
-        "body": "The regional range is wide, but it is not evenly spread. At 16.2 percent, BARMM is not just the lowest region — it sits nearly 14 points below the second-lowest, Central Visayas at 25.7 percent, and nearly 18 points below the national average. Davao Region leads at 45.1 percent, followed by Eastern Visayas at 39.7 percent and Negros Island Region at 39.5 percent. Most of Mindanao and the Visayas clusters between 30 and 40 percent, while most of Luzon runs between 28 and 36 percent. NCR, at 28.5 percent, is one of the lower-use regions despite its urban concentration — a pattern shaped partly by the all-women denominator and the large share of younger, unmarried women in the capital."
+        "body": "The regional range is wide, but it is not evenly spread. At 16.2 percent, BARMM is not just the lowest region â€” it sits nearly 14 points below the second-lowest, Central Visayas at 25.7 percent, and nearly 18 points below the national average. Davao Region leads at 45.1 percent, followed by Eastern Visayas at 39.7 percent and Negros Island Region at 39.5 percent. Most of Mindanao and the Visayas clusters between 30 and 40 percent, while most of Luzon runs between 28 and 36 percent. NCR, at 28.5 percent, is one of the lower-use regions despite its urban concentration â€” a pattern shaped partly by the all-women denominator and the large share of younger, unmarried women in the capital."
       },
       {
-        "heading": "Rural women use contraception more than urban women — and lean more modern",
-        "body": "Rural women report higher any-method use than urban women: 36.3 versus 31.9 percent in 2025. The gap in modern methods is wider still — 28.8 percent rural versus 23.3 percent urban. This likely reflects the younger and more highly educated urban population, which includes a higher share of women not yet in stable partnerships. The pattern was the same in 2022, and the gap has not narrowed."
+        "heading": "Rural women use contraception more than urban women â€” and lean more modern",
+        "body": "Rural women report higher any-method use than urban women: 36.3 versus 31.9 percent in 2025. The gap in modern methods is wider still â€” 28.8 percent rural versus 23.3 percent urban. This likely reflects the younger and more highly educated urban population, which includes a higher share of women not yet in stable partnerships. The pattern was the same in 2022, and the gap has not narrowed."
       },
       {
         "heading": "The wealth gradient runs in the opposite direction from what is typically expected",
@@ -807,13 +807,14 @@
       },
       {
         "heading": "Education shows a non-linear pattern driven by age composition",
-        "body": "Women with Grades 1 to 6 report the highest use at 47.9 percent, while college-educated women are at 30.7 percent and women with Grades 11 to 12 are at just 15.2 percent. Reading this as an education gradient would be misleading. Women with Grades 11 to 12 are disproportionately teenagers — still in school and not yet at reproductive risk. College-educated women skew younger than women who left school at primary level and are more likely to be unmarried. When these age and partnership effects are set aside as an inference, the patterns become more consistent with what is seen in the number-of-living-children and age breakdowns."
+        "body": "Women with Grades 1 to 6 report the highest use at 47.9 percent, while college-educated women are at 30.7 percent and women with Grades 11 to 12 are at just 15.2 percent. Reading this as an education gradient would be misleading. Women with Grades 11 to 12 are disproportionately teenagers â€” still in school and not yet at reproductive risk. College-educated women skew younger than women who left school at primary level and are more likely to be unmarried. When these age and partnership effects are set aside as an inference, the patterns become more consistent with what is seen in the number-of-living-children and age breakdowns."
       }
     ],
     "takeaways": [
       "Overall contraceptive use among all women has barely changed since 2022, but the method mix has shifted: more women are using modern methods, fewer are relying on traditional ones.",
-      "BARMM's use rate of 16.2 percent sits nearly 18 points below the national average and far below every other region — a gap that stands out even in a country with wide regional variation.",
+      "BARMM's use rate of 16.2 percent sits nearly 18 points below the national average and far below every other region â€” a gap that stands out even in a country with wide regional variation.",
       "Patterns by wealth and education run counter to intuition because the denominator includes all women regardless of partnership status; the sharpest social differences appear in which methods women use, not simply whether they use any."
     ]
   }
 }
+
