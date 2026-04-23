@@ -1005,13 +1005,14 @@ function drawGroupedBars(container, chartData, block, series) {
   const VW = 620;
   const ML = Math.max(86, Math.min(124, 34 + maxLabelLen * 5));
   const MR = 14;
-  const MT = 10;
-  const MB = 40;
+  const mobileChartScale = window.matchMedia('(max-width: 760px)').matches ? 2 : 1;
+  const MT = 10 * mobileChartScale;
+  const MB = 40 * mobileChartScale;
   const INNER_W = VW - ML - MR;
   const yMax = chartData.yMax || 15;
   const tickStep = yMax > 10 ? 3 : 1;
-  const laneGap = 10;
-  const groupGap = 24;
+  const laneGap = 10 * mobileChartScale;
+  const groupGap = 24 * mobileChartScale;
   const groupH = Math.max(series.length - 1, 0) * laneGap + 1;
   const INNER_H = rows.length
     ? rows.length * groupH + Math.max(rows.length - 1, 0) * groupGap
