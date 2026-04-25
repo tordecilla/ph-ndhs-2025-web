@@ -549,7 +549,7 @@
       "rows": [
         {
           "label": "10-14",
-          "noteRef": "â´",
+          "noteRef": "⁴",
           "values": [
             "[0]",
             "[1]",
@@ -674,10 +674,10 @@
         }
       ],
       "footnotes": [
-        "¹ Total fertility rate expressed per woman aged 15â€“49 years.",
-        "² General fertility rate expressed per 1,000 women aged 15â€“44 years.",
+        "¹ Total fertility rate expressed per woman aged 15-49 years.",
+        "² General fertility rate expressed per 1,000 women aged 15-44 years.",
         "³ Crude birth rate, expressed per 1,000 population.",
-        "â´ Rates for the 10-14 age group are based on retrospective data from women aged 15-17 years.",
+        "⁴ Rates for the 10-14 age group are based on retrospective data from women aged 15-17 years.",
         "Age-specific fertility rates are per 1,000 women.",
         "Estimates in brackets are truncated.",
         "Rates are for the period 1-36 months preceding the interview."
@@ -692,7 +692,7 @@
       },
       "footnotes": [
         "¹ Region IX includes the province of Sulu in 2025.",
-        "Total fertility rate is expressed per woman aged 15â€“49 years.",
+        "Total fertility rate is expressed per woman aged 15-49 years.",
         "Rates are for the period 1-36 months preceding the interview."
       ]
     }

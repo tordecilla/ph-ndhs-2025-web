@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Table 2 Ã¢â‚¬â€ Background Characteristics</title>
+<title>Table 2 - Background Characteristics</title>
 <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
 <style>
   /* Ã¢â€â‚¬Ã¢â€â‚¬ Theme variables (matches map engine) Ã¢â€â‚¬Ã¢â€â‚¬ */
@@ -872,7 +872,7 @@ function openMapDetail(name, psgc, rec) {
         return val ? `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:8px 0 0">${val}</p>` : '';
       }
       return `<div class="data-row"><span class="data-label">${f.label}</span>` +
-        `<span class="data-value">${val != null ? val : 'Ã¢â‚¬â€'}</span></div>`;
+        `<span class="data-value">${val != null ? val : '-'}</span></div>`;
     }).join('');
   } else {
     dataHTML = `<div class="no-findings">No data for this region.</div>`;
@@ -958,9 +958,9 @@ async function initMap(cfg) {
     })
     .transition().delay(350).duration(300).attr('opacity', 1);
 
-  document.getElementById('map-status').textContent = '18 regions Ã¢â‚¬â€ click to view details';
+  document.getElementById('map-status').textContent = '18 regions - click to view details';
 
-  // Info button Ã¢â‚¬â€ always visible; reopens the welcome/overview panel
+  // Info button - always visible; reopens the welcome/overview panel
   const infoBtnEl = document.getElementById('map-info-btn');
   const isMobile = window.matchMedia('(pointer: coarse)').matches;
   infoBtnEl.style.display = 'block';
@@ -992,6 +992,7 @@ function el(tag, cls) {
 </script>
 </body>
 </html>
+
 
 
 

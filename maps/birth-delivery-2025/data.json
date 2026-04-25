@@ -600,7 +600,7 @@
     },
     "footnotes": [
       "¹ Skilled provider includes doctor, nurse, and midwife.",
-      "â¶ Region IX includes the province of Sulu in 2025.",
+      "⁶ Region IX includes the province of Sulu in 2025.",
       "Figures in parentheses are based on 25-49 unweighted cases.",
       "\"NA\" denotes that an estimate is not reported or not applicable.",
       "Details may not add up to total due to rounding."
@@ -822,7 +822,7 @@
         "delivered_health_facility_pct_2022_display": "76.0",
         "caesarean_section_pct": 11.5,
         "caesarean_section_pct_2022": 9.5,
-        "noteRef": "â¶",
+        "noteRef": "⁶",
         "psa_note": "Region IX includes the province of Sulu in 2025."
       },
       {

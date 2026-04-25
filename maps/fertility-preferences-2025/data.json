@@ -584,7 +584,7 @@
         "total_pct_2022_display": "100.0",
         "women_total_2022": 566,
         "women_total_2022_display": "566",
-        "noteRef": "â´"
+        "noteRef": "⁴"
       },
       {
         "psgc": 1000000000,
@@ -819,7 +819,7 @@
       },
       {
         "key": "sterilized",
-        "label": "Sterilizedâ´",
+        "label": "Sterilized⁴",
         "color": "#c46a47"
       },
       {
@@ -986,7 +986,7 @@
       "¹ The number of living children includes a woman's current pregnancy.",
       "² Wants next birth within 2 years.",
       "³ Wants to delay next birth for 2 or more years.",
-      "â´ Includes both female and male sterilization.",
+      "⁴ Includes both female and male sterilization.",
       "Details may not add up to total due to rounding."
     ]
   },
@@ -1187,7 +1187,7 @@
               "12.0",
               "8.7"
             ],
-            "noteRef": "â´"
+            "noteRef": "⁴"
           },
           {
             "label": "Declared infecund",
@@ -1259,7 +1259,7 @@
           "¹ The number of living children includes a woman's current pregnancy",
           "² Wants next birth within 2 years",
           "³ Wants to delay next birth for 2 or more years",
-          "â´ Includes both female and male sterilization",
+          "⁴ Includes both female and male sterilization",
           "\"0.0\" indicates that an estimate is less than 0.05 percent.",
           "1. Details may not add up to total due to rounding."
         ],
@@ -1387,8 +1387,8 @@
           "¹ Wants next birth within 2 years",
           "² Wants to delay next birth for 2 or more years",
           "³ Includes both female and male sterilization",
-          "â´ Region IX includes the province of Sulu in 2025.",
-          "â€œNAâ€ denotes that an estimate is not reported.",
+          "⁴ Region IX includes the province of Sulu in 2025.",
+          "�SNA⬝ denotes that an estimate is not reported.",
           "\"0.0\" indicates that an estimate is less than 0.05 percent.",
           "1. Details may not add up to total due to rounding."
         ],
