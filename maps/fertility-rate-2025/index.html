@@ -1374,9 +1374,9 @@ function openMapWelcome() {
   document.getElementById('map-eyebrow').textContent = 'Fertility';
   document.getElementById('map-lgu-name').textContent = 'Fertility Rate';
   document.getElementById('map-region-label').textContent = '';
-  const desc = `<p style="font-size:12px;color:var(--text-color);line-height:1.8;margin-bottom:12px">` +
-    `Regional total fertility rate for the 3 years preceding the survey. ` +
-    `Darker shade = higher fertility rate. Select a region for 2025 and 2022 values.</p>`;
+  const desc = mapCfg?.description
+    ? `<p style="font-size:12px;color:var(--text-color);line-height:1.8;margin-bottom:12px">${mapCfg.description}</p>`
+    : '';
   document.getElementById('map-detail-body').innerHTML = desc + mapLegendHTML() + mapRankedListHTML(null);
   document.getElementById('map-detail').classList.add('open');
 }
@@ -1424,7 +1424,6 @@ function el(tag, cls) {
 </script>
 </body>
 </html>
-
 
 
 

@@ -1,7 +1,7 @@
 {
   "sectionTitle": "CONTRACEPTION",
-  "title": "Current Use of Contraception Among Married and Sexually Active Women",
-  "description": "Current contraceptive use among currently married women by region, with data tables for currently married and sexually active unmarried women. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
+  "title": "Current Use of Contraception Among Married Women",
+  "description": "Percent distribution of currently married women aged 15 to 49 years by contraceptive method currently used. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
   "colorField": "any_method_pct",
@@ -57,7 +57,7 @@
   "note": "If more than one method is used, only the most effective method is considered in this tabulation. \"0.0\" indicates that an estimate is less than 0.05 percent. Details may not add up to total due to rounding.",
   "chartData": {
     "title": "Current Use of Contraception Among Married and Sexually Active Women",
-    "subtitle": "Current contraceptive use among currently married and sexually active unmarried women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
+    "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years  by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
     "series": [
       {
         "key": "any_method_pct",
@@ -627,7 +627,7 @@
   },
   "tableData": {
     "title": "Current Use of Contraception Among Married and Sexually Active Women",
-    "subtitle": "Current contraceptive use among currently married and sexually active unmarried women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
+    "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years  by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
     "series": [
       {
         "key": "any_method_pct",
@@ -1583,5 +1583,6 @@
     ],
     "province": [],
     "municity": []
-  }
+  },
+  "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years  by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025"
 }

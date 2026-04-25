@@ -1,7 +1,7 @@
 {
   "sectionTitle": "DISCIPLINE AND PUNISHMENT",
   "title": "Attitudes Toward Physical Punishment",
-  "description": "Among households with a child aged 1 to 14 years, percentage of household respondents who believe that physical punishment is needed to bring up, raise, or educate a child properly, according to background characteristics: Philippines, 2022 and 2025",
+  "description": "Among households with a child aged 1 to 14 years, percentage of household respondents who believe that physical punishment is needed to bring up, raise, or educate a child properly. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "colorField": "attitudes_toward_physical_punishment",
   "colorDomain": [
@@ -736,5 +736,6 @@
       "Notes: Details may not add up to total due to rounding."
     ],
     "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
-  }
+  },
+  "subtitle": "Among households with a child aged 1 to 14 years, percentage of household respondents who believe that physical punishment is needed to bring up, raise, or educate a child properly, according to background characteristics: Philippines, 2022 and 2025"
 }

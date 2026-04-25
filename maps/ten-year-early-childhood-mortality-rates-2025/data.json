@@ -1,7 +1,7 @@
 {
   "sectionTitle": "CHILDHOOD MORTALITY",
   "title": "Ten-Year Early Childhood Mortality Rates",
-  "description": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the ten-year period preceding the survey, according to additional characteristics: Philippines, 2022 and 2025.",
+  "description": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the ten-year period preceding the survey. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "colorField": "neonatal_2025",
   "colorDomain": [
@@ -359,7 +359,7 @@
   },
   "chartData": {
     "title": "Ten-Year Early Childhood Mortality Rates",
-    "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates by additional characteristics, Philippines, 2022 and 2025.",
+    "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the ten-year period preceding the survey, according to additional characteristics: Philippines, 2022 and 2025",
     "xLabel": "Mortality rate (per 1,000 live births)",
     "xMax": 60,
     "series": [
@@ -831,7 +831,7 @@
   },
   "tableData": {
     "title": "Ten-Year Early Childhood Mortality Rates",
-    "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the ten-year period preceding the survey, according to additional characteristics: Philippines, 2022 and 2025.",
+    "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the ten-year period preceding the survey, according to additional characteristics: Philippines, 2022 and 2025",
     "tables": [
       {
         "title": "Mother's age at birth (in years)",
@@ -1876,5 +1876,6 @@
     "infant_2025": "Infant mortality: Deaths before the first birthday",
     "child_2025": "Child mortality: Deaths between the first and fifth birthday",
     "under5_2025": "Under-five mortality: Deaths before the fifth birthday"
-  }
+  },
+  "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the ten-year period preceding the survey, according to additional characteristics: Philippines, 2022 and 2025"
 }

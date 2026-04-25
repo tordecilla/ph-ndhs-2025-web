@@ -1,7 +1,7 @@
 {
   "sectionTitle": "CONTRACEPTION",
-  "title": "Need and Demand for Family Planning Among Currently Married and Sexually Active Unmarried Women",
-  "description": "Percentage of currently married and sexually active unmarried women aged 15 to 49 years with unmet need and met need for family planning, and percentage of demand satisfied, according to background characteristics. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
+  "title": "Need and Demand for Family Planning Among Currently Married Women",
+  "description": "Percentage of currently married women aged 15 to 49 years with unmet need and met need for family planning, and percentage of demand satisfied. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "colorField": "total_demand",
   "colorDomain": [
@@ -294,7 +294,7 @@
   },
   "chartData": {
     "title": "Need and Demand for Family Planning Among Currently Married and Sexually Active Unmarried Women",
-    "subtitle": "Percent distribution by family planning demand composition.",
+    "subtitle": "Percentage of currently married and sexually active unmarried women aged 15 to 49 years with unmet need and met need for family planning, and percentage of demand satisfied, according to background characteristics: Philippines, 2022 and 2025",
     "blockSubtitle": "Total demand for family planning represented as unmet need, modern methods, and other methods.",
     "totalKey": "total_demand_pct",
     "series": [
@@ -965,7 +965,7 @@
   },
   "tableData": {
     "title": "Need and Demand for Family Planning Among Currently Married and Sexually Active Unmarried Women",
-    "subtitle": "Percentage of currently married and sexually active unmarried women aged 15 to 49 years with unmet need and met need for family planning, and percentage of demand satisfied, according to background characteristics: Philippines, 2022 and 2025 NDHS.",
+    "subtitle": "Percentage of currently married and sexually active unmarried women aged 15 to 49 years with unmet need and met need for family planning, and percentage of demand satisfied, according to background characteristics: Philippines, 2022 and 2025",
     "groups": [
       {
         "groupTitle": "Currently Married Women",
@@ -2664,5 +2664,38 @@
       "2. Details may not add up to total due to rounding."
     ],
     "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "subtitle": "Percentage of currently married and sexually active unmarried women aged 15 to 49 years with unmet need and met need for family planning, and percentage of demand satisfied, according to background characteristics: Philippines, 2022 and 2025",
+  "insights": {
+    "title": "Insights on Need and Demand for Family Planning Among Currently Married and Sexually Active Unmarried Women",
+    "subtitle": "AI-generated insights based on National Demographic and Health Survey data",
+    "overview": "Among currently married women, the headline changed very little from 2022 to 2025: total demand was 70.7 to 71.1 and all-method demand satisfied was 82.5 to 82.4. The substantive change is in composition inside that stable headline. Modern-method met need rose from 41.8 to 44.5 while traditional-method met need fell, indicating a method shift toward modern use rather than a broad expansion in total demand.",
+    "sections": [
+      {
+        "heading": "Regional gaps are still the strongest dividing line",
+        "body": "The range across regions remains wide for currently married women. BARMM combines low total demand (54.5), very high unmet need (29.2), and the lowest modern demand satisfied (37.2). At the other end, Davao Region has high total demand (79.6), high met need (70.4), and much higher modern demand satisfied (73.2), with similarly strong modern satisfaction in NIR (68.6), SOCCSKSARGEN (71.9), and CAR (68.0). The main pattern is not a small ranking difference but structurally different demand-and-coverage profiles."
+      },
+      {
+        "heading": "The national headline is stable, but method composition changed",
+        "body": "For currently married women, total demand (70.7 to 71.1) and all-method demand satisfied (82.5 to 82.4) stayed essentially flat between 2022 and 2025. Inside that stability, modern met need rose (41.8 to 44.5) and modern demand satisfied improved (59.1 to 62.5), while traditional-method use within met need declined. The shift is therefore about what methods are used, not a large change in how many women are in demand overall."
+      },
+      {
+        "heading": "Age pattern: demand stays high through the 20s and 30s, unmet need falls with age",
+        "body": "Among currently married women, total demand is high from ages 20-44 (about 69.7 to 80.6), while unmet need declines from 20.7 at ages 20-24 to 8.2 at ages 45-49. Modern demand satisfied is lowest at 15-19 (41.9), rises through peak reproductive ages (around 58 to 65 from ages 20-44), and stays high at 45-49 (62.5). This reads as a lifecycle pattern where demand is broad, but fulfillment is weakest at the youngest ages."
+      },
+      {
+        "heading": "Socioeconomic pattern is not strictly linear",
+        "body": "The wealth and education splits do not form a simple straight gradient. By wealth, modern demand satisfied is highest in the second quintile (64.9) and lowest in the highest quintile (58.7). By education, no-education women show the highest unmet need (24.4), but the highest total demand appears in grades 11-12 (79.3). The consistent pattern is not monotonic increase or decrease by status; it is different demand composition across groups."
+      },
+      {
+        "heading": "Sexually active unmarried women: very high demand with high unmet need",
+        "body": "This subgroup shows very high total demand in both years (83.5 in 2022; 85.9 in 2025) and very high unmet need (42.1 to 48.0). Overall demand satisfied fell (49.6 to 44.1), while modern demand satisfied rose slightly (28.6 to 30.5). That combination means modern-method coverage improved modestly, but unmet need still increased and remains much higher than among currently married women."
+      }
+    ],
+    "takeaways": [
+      "For currently married women, overall demand changed little, but the method mix shifted toward modern methods from 2022 to 2025.",
+      "Regional divides remain large, with BARMM standing out for high unmet need and low modern demand satisfaction.",
+      "Sexually active unmarried women remain a distinct high-need group with very high total demand and high unmet need despite a small gain in modern demand satisfied."
+    ]
   }
 }

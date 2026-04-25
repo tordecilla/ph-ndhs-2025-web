@@ -1,7 +1,7 @@
 {
   "sectionTitle": "DISCIPLINE AND PUNISHMENT",
   "title": "Child Discipline",
-  "description": "Percentage of children aged 1 to 14 years by child disciplining methods experienced during the last one month, according to background characteristics: Philippines, 2022 and 2025",
+  "description": "Percentage of children aged 1 to 14 years by child disciplining methods experienced during the last one month. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "colorField": "non_violent_discipline",
   "colorDomain": [
@@ -1362,5 +1362,6 @@
       "Note: Details may not add up to total due to rounding."
     ],
     "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
-  }
+  },
+  "subtitle": "Percentage of children aged 1 to 14 years by child disciplining methods experienced during the last one month, according to background characteristics: Philippines, 2022 and 2025"
 }

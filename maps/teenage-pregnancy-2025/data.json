@@ -1,6 +1,6 @@
 {
   "title": "Teenage Pregnancy",
-  "description": "Teenage pregnancy indicators among women aged 15-19 years, by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "description": "Teenage pregnancy indicators among women aged 15-19 years. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
   "colorField": "ever_pregnant_pct",
@@ -70,7 +70,7 @@
   ],
   "chartData": {
     "title": "Teenage Pregnancy",
-    "subtitle": "Percentage of women aged 15-19 years by childbearing indicator",
+    "subtitle": "Percentage of women aged 15 to 19 years who have ever had a live birth, percentage who have ever had a pregnancy loss, percentage who are currently pregnant, and percentage who have ever been pregnant, according to background characteristics: Philippines, 2022 and 2025",
     "yMax": 21,
     "series": [
       {
@@ -809,7 +809,7 @@
   "tableData": {
     "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
     "title": "Teenage Pregnancy",
-    "subtitle": "Percentage of women aged 15 to 19 years by childbearing indicator, Philippines, 2022 and 2025",
+    "subtitle": "Percentage of women aged 15 to 19 years who have ever had a live birth, percentage who have ever had a pregnancy loss, percentage who are currently pregnant, and percentage who have ever been pregnant, according to background characteristics: Philippines, 2022 and 2025",
     "includeRegionTable": true,
     "regionSectionTitle": "Region",
     "colGroups": [
@@ -1239,5 +1239,6 @@
       "Figures in parentheses are based on 25-49 unweighted cases.",
       "Details may not add up to total due to rounding."
     ]
-  }
+  },
+  "subtitle": "Percentage of women aged 15 to 19 years who have ever had a live birth, percentage who have ever had a pregnancy loss, percentage who are currently pregnant, and percentage who have ever been pregnant, according to background characteristics: Philippines, 2022 and 2025"
 }

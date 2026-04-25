@@ -1,7 +1,7 @@
 {
   "sectionTitle": "CONTRACEPTION",
   "title": "Need and Demand for Family Planning Among All Women",
-  "description": "Percentage of all women aged 15 to 49 years with unmet need for family planning, met need for family planning, and percentage of demand satisfied, according to background characteristics. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
+  "description": "Percentage of all women aged 15 to 49 years with unmet need for family planning, met need for family planning, and percentage of demand satisfied. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "colorField": "total_demand",
   "colorDomain": [
@@ -294,7 +294,7 @@
   },
   "chartData": {
     "title": "Need and Demand for Family Planning Among All Women",
-    "subtitle": "Percent distribution of all women aged 15 to 49 years by family planning demand composition.",
+    "subtitle": "Percentage of all women aged 15 to 49 years with unmet need and met need for family planning, and percentage of demand satisfied, according to background characteristics: Philippines, 2022 and 2025",
     "blockSubtitle": "Total demand for family planning represented as unmet need, modern methods, and other methods.",
     "totalKey": "total_demand_pct",
     "series": [
@@ -859,7 +859,7 @@
   },
   "tableData": {
     "title": "Need and Demand for Family Planning Among All Women",
-    "subtitle": "Percentage of all women aged 15 to 49 years with unmet need and met need for family planning, and percentage of demand satisfied, according to background characteristics: Philippines, 2022 and 2025 NDHS.",
+    "subtitle": "Percentage of all women aged 15 to 49 years with unmet need and met need for family planning, and percentage of demand satisfied, according to background characteristics: Philippines, 2022 and 2025",
     "tables": [
       {
         "title": "Total",
@@ -2321,5 +2321,6 @@
       "High-demand age groups in the late 20s to early 40s carry most of the unmet need in absolute terms.",
       "Regional differences are large, and BARMM remains the clearest area where unmet need and low modern fulfillment overlap."
     ]
-  }
+  },
+  "subtitle": "Percentage of all women aged 15 to 49 years with unmet need and met need for family planning, and percentage of demand satisfied, according to background characteristics: Philippines, 2022 and 2025"
 }

@@ -1,7 +1,7 @@
 {
   "sectionTitle": "CONTRACEPTION",
   "title": "Current Use of Contraception Among All Women",
-  "description": "Current contraceptive use among all women aged 15 to 49 years, by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "description": "Percent distribution of all women aged 15 to 49 years, by contraceptive method currently used, according to background characteristics. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
   "colorField": "any_method_pct",
@@ -57,7 +57,7 @@
   "note": "If more than one method is used, only the most effective method is considered in this tabulation. \"0.0\" indicates that an estimate is less than 0.05 percent. Details may not add up to total due to rounding.",
   "tableData": {
     "title": "Current Use of Contraception Among All Women",
-    "subtitle": "Current contraceptive use among all women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
+    "subtitle": "Percent distribution of all women aged 15 to 49 years, by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
     "series": [
       {
         "key": "any_method_pct",
@@ -815,5 +815,6 @@
       "BARMM's use rate of 16.2 percent sits nearly 18 points below the national average and far below every other region â€” a gap that stands out even in a country with wide regional variation.",
       "Patterns by wealth and education run counter to intuition because the denominator includes all women regardless of partnership status; the sharpest social differences appear in which methods women use, not simply whether they use any."
     ]
-  }
+  },
+  "subtitle": "Percent distribution of all women aged 15 to 49 years, by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025"
 }

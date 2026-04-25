@@ -4,7 +4,7 @@
   "description": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the 5-year period preceding the survey, according to background characteristics: Philippines, 2022 and 2025.",
   "chartData": {
     "title": "Five-Year Early Childhood Mortality Rates",
-    "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates by background characteristic, Philippines, 2022 and 2025.",
+    "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the 5-year period preceding the survey, according to background characteristics: Philippines, 2022 and 2025",
     "xLabel": "Mortality rate (per 1,000 live births)",
     "xMax": 60,
     "series": [
@@ -164,7 +164,7 @@
   },
   "tableData": {
     "title": "Five-Year Early Childhood Mortality Rates",
-    "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the 5-year period preceding the survey, according to background characteristics: Philippines, 2022 and 2025.",
+    "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the 5-year period preceding the survey, according to background characteristics: Philippines, 2022 and 2025",
     "tables": [
       {
         "title": "Total",
@@ -433,5 +433,6 @@
       "Male mortality remains higher than female mortality on most indicators, but both groups improved by 2025.",
       "Urban-rural differences are not uniform; they vary by mortality component, with the overall under-5 gap now small."
     ]
-  }
+  },
+  "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the 5-year period preceding the survey, according to background characteristics: Philippines, 2022 and 2025"
 }

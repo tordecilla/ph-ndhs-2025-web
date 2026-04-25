@@ -1,7 +1,7 @@
 {
   "sectionTitle": "MATERNAL CARE",
   "title": "Birth Delivery",
-  "description": "Birth delivery indicators among live births and stillbirths in the 2 years preceding the survey, by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "description": "Among all live births and stillbirths in the 2 years before the survey, percentage delivered by a skilled provider and percentage delivered in a health facility, and percentage delivered by a cesarean section. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
   "colorField": "delivered_skilled_provider_pct",
@@ -46,7 +46,7 @@
   "note": "Details may not add up to total due to rounding.",
   "chartData": {
     "title": "Birth Delivery",
-    "subtitle": "Birth delivery indicators by background characteristic, Philippines, 2022 and 2025 NDHS.",
+    "subtitle": "Among all live births and stillbirths in the 2 years before the survey, percentage delivered by a skilled provider and percentage delivered in a health facility, and percentage delivered by a cesarean section, according to background characteristics: Philippines, 2022 and 2025",
     "xLabel": "Category",
     "yLabel": "Percentage",
     "xMax": 100,
@@ -330,7 +330,7 @@
   "tableData": {
     "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
     "title": "Birth Delivery",
-    "subtitle": "Selected birth delivery indicators by background characteristic and region, Philippines, 2022 and 2025.",
+    "subtitle": "Among all live births and stillbirths in the 2 years before the survey, percentage delivered by a skilled provider and percentage delivered in a health facility, and percentage delivered by a cesarean section, according to background characteristics: Philippines, 2022 and 2025",
     "includeRegionTable": true,
     "regionSectionTitle": "Region",
     "colGroups": [
@@ -887,5 +887,6 @@
     ],
     "province": [],
     "municity": []
-  }
+  },
+  "subtitle": "Among all live births and stillbirths in the 2 years before the survey, percentage delivered by a skilled provider and percentage delivered in a health facility, and percentage delivered by a cesarean section, according to background characteristics: Philippines, 2022 and 2025"
 }

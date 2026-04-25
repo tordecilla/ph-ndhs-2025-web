@@ -1,7 +1,7 @@
 {
   "sectionTitle": "VACCINATIONS",
   "title": "Children Aged 12 to 23 Months - Polio Vaccinations",
-  "description": "OPV, IPV, and Polio 3 coverage among children aged 12 to 23 months by background characteristics: Philippines, 2022 and 2025.",
+  "description": "Percentage of children aged 12 to 23 months who received scheduled polio vaccines at any time before the survey (according to a vaccination card or the mother's report). Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "notes": {
     "opv_1": "OPV = Oral polio vaccine.",
     "opv_2": "OPV = Oral polio vaccine.",
@@ -13,14 +13,14 @@
   "note": "Children are considered to have received the vaccine if it was either written on the child's vaccination card or reported by the mother. Figures in parentheses are based on 25-49 unweighted cases.",
   "chartData": {
     "title": "Children Aged 12 to 23 Months - Polio Vaccinations",
-    "subtitle": "Charts for this page are not yet available.",
+    "subtitle": "Percentage of children aged 12 to 23 months who received scheduled polio vaccines at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
     "notes": [],
     "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
     "blocks": []
   },
   "tableData": {
     "title": "Children Aged 12 to 23 Months - Polio Vaccinations",
-    "subtitle": "Percentage of children aged 12 to 23 months who received polio vaccines according to background characteristics: Philippines, 2022 and 2025.",
+    "subtitle": "Percentage of children aged 12 to 23 months who received scheduled polio vaccines at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
     "tables": [
       {
         "title": "Total",
@@ -1277,5 +1277,6 @@
       "Regional inequality in OPV 3, IPV 2, and Polio 3 remains very large, with BARMM and some Mindanao regions far below top-performing regions.",
       "Children without visible vaccination cards, higher birth-order children, and poorer households are much more likely to miss later-dose completion."
     ]
-  }
+  },
+  "subtitle": "Percentage of children aged 12 to 23 months who received polio vaccines according to background characteristics: Philippines, 2022 and 2025"
 }

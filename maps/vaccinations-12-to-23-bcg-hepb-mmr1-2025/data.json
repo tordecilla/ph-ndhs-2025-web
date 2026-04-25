@@ -1,7 +1,7 @@
 {
   "sectionTitle": "VACCINATIONS",
   "title": "Children Aged 12 to 23 Months - BCG, HepB (birth dose), MMR 1",
-  "description": "BCG, HepB birth dose, and MMR 1 coverage among children aged 12 to 23 months by background characteristics: Philippines, 2022 and 2025.",
+  "description": "Percentage of children aged 12 to 23 months who received BCG, HepB birth dose, and MMR 1 at any time before the survey (according to a vaccination card or the mother's report). Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "definitions": {
     "hepb_birth_dose": "Children are considered to have received HepB (birth dose) if it was recorded on their card or reported by their mother, regardless of timing."
   },
@@ -13,14 +13,14 @@
   "note": "Children are considered to have received the vaccine if it was either written on the child's vaccination card or reported by the mother. Figures in parentheses are based on 25-49 unweighted cases.",
   "chartData": {
     "title": "Children Aged 12 to 23 Months - BCG, HepB (birth dose), MMR 1",
-    "subtitle": "Charts for this page are not yet available.",
+    "subtitle": "Percentage of children aged 12 to 23 months who received BCG, HepB birth dose, and MMR 1 at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics",
     "notes": [],
     "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
     "blocks": []
   },
   "tableData": {
     "title": "Children Aged 12 to 23 Months - BCG, HepB (birth dose), MMR 1",
-    "subtitle": "Percentage of children aged 12 to 23 months who received selected vaccines according to background characteristics: Philippines, 2022 and 2025.",
+    "subtitle": "Percentage of children aged 12 to 23 months who received BCG, HepB birth dose, and MMR 1 at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics",
     "tables": [
       {
         "title": "Total",
@@ -889,5 +889,6 @@
       "Regional inequality remains substantial, with very high coverage in some regions and much lower levels in BARMM, Zamboanga Peninsula, and Northern Mindanao.",
       "Vaccination-card status strongly separates outcomes: children with cards seen are near universal, while children who never had cards remain far behind."
     ]
-  }
+  },
+  "subtitle": "Percentage of children aged 12 to 23 months who received selected vaccines according to background characteristics: Philippines, 2022 and 2025"
 }

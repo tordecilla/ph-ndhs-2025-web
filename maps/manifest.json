@@ -160,6 +160,14 @@
     "addedAt": "2026-04-15"
   },
   {
+    "slug": "early-childhood-development-index-2030-2025",
+    "title": "Early Childhood Development Index 2030",
+    "description": "Percentage of children aged 24 to 59 months who are developmentally on-track in health, learning and psychosocial well-being by background characteristics: Philippines, 2022 and 2025 (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-25"
+  },
+  {
     "slug": "vaccinations-12-to-23-vaccination-status-2025",
     "title": "Children Aged 12 to 23 Months - Vaccination Status",
     "description": "Vaccination status among children aged 12 to 23 months by background characteristics: Philippines, 2022 and 2025.",
@@ -219,6 +227,14 @@
     "slug": "attitudes-toward-physical-punishment-2025",
     "title": "Attitudes Toward Physical Punishment",
     "description": "Among households with a child aged 1 to 14 years, percentage of household respondents who believe that physical punishment is needed to bring up, raise, or educate a child properly, according to background characteristics: Philippines, 2022 and 2025",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-25"
+  },
+  {
+    "slug": "intimate-partner-violence-2025",
+    "title": "Intimate Partner Violence",
+    "description": "Percentage of women aged 15 to 49 years who ever experienced emotional, physical, or sexual violence by current or most recent husband/intimate partner, by background characteristics: Philippines, 2022 and 2025 (NDHS 2025)",
     "year": "2025",
     "group": "2025 National Demographic and Health Survey (NDHS)",
     "addedAt": "2026-04-25"

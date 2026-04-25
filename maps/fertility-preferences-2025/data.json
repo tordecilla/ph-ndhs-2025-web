@@ -1,6 +1,6 @@
 {
   "title": "Fertility Preferences",
-  "description": "Desire for children among currently married women aged 15-49 years by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "description": "Desire for children among currently married women aged 15-49 years. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
   "colorField": "want_no_more_pct",
@@ -787,7 +787,7 @@
   },
   "chartData": {
     "title": "Fertility preferences by number of living children",
-    "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, according to number of living children: Philippines",
+    "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, shown by number of living children and by region: Philippines, 2022 and 2025",
     "yMax": 80,
     "xLabel": "Number of living children¹",
     "yLabel": "Percent",
@@ -992,13 +992,13 @@
   },
   "tableData": {
     "title": "Fertility Preferences",
-    "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, shown by number of living children and by region in the Philippines.",
+    "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, shown by number of living children and by region: Philippines, 2022 and 2025",
     "tables": [
       {
         "id": "living-children",
         "title": "By Number of Living Children",
         "titleNoteRef": "¹",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, according to number of living children: Philippines",
+        "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, according to number of living children: Philippines, 2022 and 2025",
         "colGroups": [
           {
             "label": "2025",
@@ -1268,7 +1268,7 @@
       {
         "id": "region",
         "title": "By Region",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, by region: Philippines",
+        "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, by region: Philippines, 2022 and 2025",
         "colGroups": [
           {
             "label": "2025",
@@ -1431,5 +1431,6 @@
       "BARMM and Zamboanga Peninsula stand apart because many more women there still want another child, especially later rather than immediately stopping.",
       "By number of living children, the biggest shift happens between one and two children, where wanting no more becomes the majority position."
     ]
-  }
+  },
+  "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, shown by number of living children and by region: Philippines, 2022 and 2025"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Fertility Rate",
-  "subtitle": "",
+  "subtitle": "Age-specific and total fertility rates, general fertility rate, and the crude birth rate for the 3 years preceding the survey, according to residence: Philippines, 2022 and 2025",
   "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
   "chartBlocks": [
     {
@@ -521,7 +521,8 @@
       ],
       "province": [],
       "municity": []
-    }
+    },
+    "description": "Total fertility rate for the 3 years preceding the survey. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey."
   },
   "tableData": {
     "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",

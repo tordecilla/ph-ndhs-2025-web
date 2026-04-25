@@ -849,9 +849,9 @@ function openMapWelcome() {
   document.getElementById('map-eyebrow').textContent    = 'Survey Profile';
   document.getElementById('map-lgu-name').textContent   = 'Background Characteristics';
   document.getElementById('map-region-label').textContent = '';
-  const desc = `<p style="font-size:12px;color:var(--text-color);line-height:1.8;margin-bottom:12px">` +
-    `Distribution of survey respondents (women aged 15-49) by region. ` +
-    `Darker shade = larger share of respondents. Select a region for details.</p>`;
+  const desc = mapCfg?.description
+    ? `<p style="font-size:12px;color:var(--text-color);line-height:1.8;margin-bottom:12px">${mapCfg.description}</p>`
+    : '';
   document.getElementById('map-detail-body').innerHTML =
     desc + mapLegendHTML() + mapRankedListHTML(null);
   document.getElementById('map-detail').classList.add('open');
@@ -992,7 +992,6 @@ function el(tag, cls) {
 </script>
 </body>
 </html>
-
 
 
 

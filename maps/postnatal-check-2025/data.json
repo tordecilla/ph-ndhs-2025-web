@@ -1,7 +1,7 @@
 {
   "sectionTitle": "MATERNAL CARE",
   "title": "Postnatal Check",
-  "description": "Percentage of women aged 15 to 49 years who had a live birth in the 2 years preceding the survey who received a postnatal check during the first 2 days after birth, by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "description": "Among women aged 15 to 49 years with a live birth or stillbirth in the 2 years preceding the survey, percentage who received a postnatal check during the first 2 days after giving birth. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
   "colorField": "postnatal_check_pct",
@@ -17,7 +17,7 @@
   "note": "Details may not add up to total due to rounding.",
   "chartData": {
     "title": "Postnatal Check",
-    "subtitle": "Postnatal check coverage by background characteristic, Philippines, 2022 and 2025 NDHS.",
+    "subtitle": "Selected postnatal check indicators by background characteristic and region: Philippines, 2022 and 2025",
     "xLabel": "Category",
     "yLabel": "Percentage",
     "xMax": 100,
@@ -254,7 +254,7 @@
   "tableData": {
     "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
     "title": "Postnatal Check",
-    "subtitle": "Selected postnatal check indicators by background characteristic and region, Philippines, 2022 and 2025.",
+    "subtitle": "Selected postnatal check indicators by background characteristic and region: Philippines, 2022 and 2025",
     "includeRegionTable": true,
     "regionSectionTitle": "Region",
     "colGroups": [
@@ -608,5 +608,6 @@
     ],
     "province": [],
     "municity": []
-  }
+  },
+  "subtitle": "Selected postnatal check indicators by background characteristic and region: Philippines, 2022 and 2025"
 }

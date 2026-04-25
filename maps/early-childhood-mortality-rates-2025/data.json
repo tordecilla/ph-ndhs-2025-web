@@ -4,7 +4,7 @@
   "description": "Neonatal, post-neonatal, infant, child and under-5 mortality rates for 5 year periods preceding the survey: Philippines, 2022 and 2025.",
   "chartData": {
     "title": "Early Childhood Mortality Rates",
-    "subtitle": "Childhood mortality rates by years preceding the survey, Philippines, 2022 and 2025 NDHS.",
+    "subtitle": "Neonatal, post-neonatal, infant, child and under-5 mortality rates for 5-year periods preceding the survey: Philippines, 2022 and 2025",
     "xLabel": "Mortality rate (per 1,000 live births)",
     "xMax": 30,
     "series": [
@@ -110,7 +110,7 @@
   },
   "tableData": {
     "title": "Early Childhood Mortality Rates",
-    "subtitle": "Neonatal, post-neonatal, infant, child and under-5 mortality rates for 5-year periods preceding the survey: Philippines, 2022 and 2025.",
+    "subtitle": "Neonatal, post-neonatal, infant, child and under-5 mortality rates for 5-year periods preceding the survey: Philippines, 2022 and 2025",
     "tables": [
       {
         "title": "Years preceding the survey",
@@ -249,5 +249,6 @@
       "Post-neonatal mortality is the most stable measure in this page, staying at 6 across all three periods in 2025.",
       "Indicator trends are not uniform across periods, so reading neonatal, infant, child, and under-5 mortality together gives a clearer picture than any single rate."
     ]
-  }
+  },
+  "subtitle": "Neonatal, post-neonatal, infant, child and under-5 mortality rates for 5-year periods preceding the survey: Philippines, 2022 and 2025"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Desire to Limit Childbearing",
-  "description": "Percentage of currently married women aged 15-49 years who want no more children or are sterilized, by region and number of living children. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey (NDHS).",
+  "description": "Percentage of currently married women aged 15-49 years who want no more children or are sterilized, by number of living children. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "geoBasePath": "../../_template/philippines-json-maps",
   "colorField": "children_total_pct",
@@ -736,7 +736,7 @@
   },
   "chartData": {
     "title": "Desire to Limit Childbearing",
-    "subtitle": "Percentage of currently married women aged 15 to 49 years who want no more children or are sterilized",
+    "subtitle": "Percentage of currently married women aged 15 to 49 years who want no more children or are sterilized, by number of living children and background characteristics: Philippines, 2022 and 2025",
     "yMax": 100,
     "yLabel": "Percent",
     "series": [
@@ -1116,7 +1116,7 @@
   },
   "tableData": {
     "title": "Desire to Limit Childbearing",
-    "subtitle": "Percentage of currently married women aged 15 to 49 years who want no more children or are sterilized, by number of living children and background characteristics: Philippines.",
+    "subtitle": "Percentage of currently married women aged 15 to 49 years who want no more children or are sterilized, by number of living children and background characteristics: Philippines, 2022 and 2025",
     "footnotes": [
       "¹ The number of living children includes a woman's current pregnancy.",
       "² Region IX includes the province of Sulu in 2025.",
@@ -1826,5 +1826,6 @@
       "Some regions are already relatively high among women with no children or one child, while BARMM and Zamboanga Peninsula stay low even after women have had several children.",
       "Residence differences are modest compared with the wider gaps by region, wealth, and education in the earlier stages of family building."
     ]
-  }
+  },
+  "subtitle": "Percentage of currently married women aged 15 to 49 years who want no more children or are sterilized, by number of living children and background characteristics: Philippines, 2022 and 2025"
 }
