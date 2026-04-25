@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2025 NDHS Key Indicators — Philippines</title>
+<title>2025 National Demographic and Health Survey - Philippines</title>
 <style>
   :root {
     --bg:            #edf1f7;
@@ -37,7 +37,7 @@
     font-family: 'Inter', system-ui, sans-serif;
   }
 
-  /* ══ Desktop layout ══ */
+  /* Desktop layout */
   #nav {
     position: fixed; top: 0; left: 0; bottom: 0; width: var(--nav-w);
     background: var(--nav-bg); border-right: 1px solid var(--nav-border);
@@ -47,9 +47,97 @@
   #main {
     position: fixed; top: 0; left: var(--nav-w); right: 0; bottom: 0;
     transition: left 0.3s cubic-bezier(0.4,0,0.2,1);
+    overflow: hidden;
   }
   #main iframe {
     width: 100%; height: 100%; border: none; display: block;
+  }
+  body.home-active #nav {
+    transform: translateX(calc(-1 * var(--nav-w)));
+  }
+  body.home-active #main {
+    left: 0;
+  }
+  body.home-active #nav-pin {
+    display: none;
+  }
+  #home-view {
+    position: absolute;
+    inset: 0;
+    overflow-y: auto;
+    padding: 34px 30px 60px;
+    display: none;
+    background:
+      radial-gradient(1200px 700px at 100% -10%, rgba(23, 103, 138, 0.10), transparent 55%),
+      radial-gradient(900px 500px at -10% 100%, rgba(17, 80, 143, 0.08), transparent 55%),
+      var(--bg);
+  }
+  #home-view.active { display: block; }
+  #home-view::-webkit-scrollbar { width: 4px; }
+  #home-view::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 2px; }
+  .home-wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .home-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--title-color);
+    letter-spacing: 0.1px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+  }
+  .home-rows {
+    display: grid;
+    gap: 10px;
+  }
+  .home-row {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 12px;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.75);
+    border: 1px solid var(--nav-border);
+    border-radius: 10px;
+    align-items: start;
+  }
+  .home-row-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+  }
+  .home-icon {
+    width: 18px;
+    height: 18px;
+    color: #1e5174;
+    opacity: 0.9;
+    flex: none;
+  }
+  .home-section-title {
+    font: 9px/1 'IBM Plex Mono', monospace;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.52);
+    white-space: nowrap;
+  }
+  .home-links-line {
+    font-size: 11px;
+    line-height: 1.65;
+    color: var(--text);
+  }
+  .home-sep {
+    color: rgba(0,0,0,0.32);
+  }
+  .home-link {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .home-link:hover {
+    color: var(--title-color);
+    border-bottom-color: var(--title-color);
   }
   body.nav-collapsed #nav {
     transform: translateX(calc(-1 * var(--nav-w)));
@@ -58,7 +146,7 @@
     left: 0;
   }
 
-  /* ══ Nav header ══ */
+  /* Nav header */
   #nav-header {
     padding: 20px 18px 16px;
     border-bottom: 1px solid var(--nav-divider);
@@ -67,6 +155,7 @@
   #nav-title {
     font-size: 14px; font-weight: 700; color: var(--title-color);
     line-height: 1.35; margin-bottom: 5px;
+    cursor: pointer;
   }
   #nav-subtitle {
     font: 9px/1 'IBM Plex Mono', monospace; letter-spacing: 1.8px; text-transform: uppercase;
@@ -107,7 +196,7 @@
     content: '\203A';
   }
 
-  /* ══ Nav list ══ */
+  /* Nav list */
   #nav-list {
     flex: 1; overflow-y: auto; padding: 8px 0 16px;
   }
@@ -141,7 +230,7 @@
     color: var(--muted); padding: 14px 18px 6px; flex-shrink: 0;
   }
 
-  /* ══ Mobile topbar ══ */
+  /* Mobile topbar */
   @media (max-width: 680px) {
     :root { --topbar-h: 46px; }
 
@@ -178,6 +267,24 @@
       background: rgba(0,0,0,0.3); z-index: 19;
     }
     #nav-overlay.visible { display: block; }
+    body.home-active #hamburger {
+      display: none;
+    }
+    body.home-active #topbar {
+      display: none;
+    }
+    body.home-active #main {
+      top: 0;
+    }
+    .home-row {
+      grid-template-columns: 1fr;
+      gap: 6px;
+      padding: 10px 12px;
+    }
+    .home-links-line {
+      font-size: 10px;
+      line-height: 1.7;
+    }
   }
   @media (min-width: 681px) {
     #topbar { display: none; }
@@ -206,6 +313,11 @@
   <div id="nav-list">
 
     <div class="nav-section-head">Survey Profile</div>
+
+    <a class="nav-item" data-route="results-of-household-and-individual-interviews-2025" data-src="./maps/results-of-household-and-individual-interviews-2025/" href="#results-of-household-and-individual-interviews-2025">
+      <span class="nav-num">Table 1</span>
+      <span class="nav-title-text">Results of the Household and Individual Interviews</span>
+    </a>
 
     <a class="nav-item" data-route="backgroundcharacteristics" data-src="./maps/background-characteristics-2025/" href="#backgroundcharacteristics">
       <span class="nav-num">Table 2</span>
@@ -284,11 +396,61 @@
       <span class="nav-num">Table 9b</span>
       <span class="nav-title-text">Family Planning Among Married and Sexually Active Women</span>
     </a>
+
+    <div class="nav-section-head">Childhood Mortality</div>
+
+    <a class="nav-item" data-route="early-childhood-mortality-rates-2025" data-src="./maps/early-childhood-mortality-rates-2025/" href="#early-childhood-mortality-rates-2025">
+      <span class="nav-num">Table 10a</span>
+      <span class="nav-title-text">Early Childhood Mortality Rates</span>
+    </a>
+    <a class="nav-item" data-route="five-year-early-childhood-mortality-rates-2025" data-src="./maps/five-year-early-childhood-mortality-rates-2025/" href="#five-year-early-childhood-mortality-rates-2025">
+      <span class="nav-num">Table 10b</span>
+      <span class="nav-title-text">Five-Year Early Childhood Mortality Rates</span>
+    </a>
+    <a class="nav-item" data-route="ten-year-early-childhood-mortality-rates-2025" data-src="./maps/ten-year-early-childhood-mortality-rates-2025/" href="#ten-year-early-childhood-mortality-rates-2025">
+      <span class="nav-num">Table 10c</span>
+      <span class="nav-title-text">Ten-Year Early Childhood Mortality Rates</span>
+    </a>
+
+    <div class="nav-section-head">Vaccinations</div>
+
+    <a class="nav-item" data-route="vaccinations-12-to-23-vaccination-status-2025" data-src="./maps/vaccinations-12-to-23-vaccination-status-2025/" href="#vaccinations-12-to-23-vaccination-status-2025">
+      <span class="nav-num">Table 11</span>
+      <span class="nav-title-text">Children 12-23 Months: Vaccination Status</span>
+    </a>
+    <a class="nav-item" data-route="vaccinations-12-to-23-bcg-hepb-mmr1-2025" data-src="./maps/vaccinations-12-to-23-bcg-hepb-mmr1-2025/" href="#vaccinations-12-to-23-bcg-hepb-mmr1-2025">
+      <span class="nav-num">Table 11</span>
+      <span class="nav-title-text">Children 12-23 Months: BCG, HepB, MMR1</span>
+    </a>
+    <a class="nav-item" data-route="vaccinations-12-to-23-polio-vaccinations-2025" data-src="./maps/vaccinations-12-to-23-polio-vaccinations-2025/" href="#vaccinations-12-to-23-polio-vaccinations-2025">
+      <span class="nav-num">Table 11</span>
+      <span class="nav-title-text">Children 12-23 Months: Polio Vaccinations</span>
+    </a>
+    <a class="nav-item" data-route="vaccinations-12-to-23-pcv-vaccinations-2025" data-src="./maps/vaccinations-12-to-23-pcv-vaccinations-2025/" href="#vaccinations-12-to-23-pcv-vaccinations-2025">
+      <span class="nav-num">Table 11</span>
+      <span class="nav-title-text">Children 12-23 Months: PCV Vaccinations</span>
+    </a>
+    <a class="nav-item" data-route="vaccinations-24-to-35-mmr2-full-schedule-2025" data-src="./maps/vaccinations-24-to-35-mmr2-full-schedule-2025/" href="#vaccinations-24-to-35-mmr2-full-schedule-2025">
+      <span class="nav-num">Table 11</span>
+      <span class="nav-title-text">Children 24-35 Months: MMR2 and Full Schedule</span>
+    </a>
+
+    <div class="nav-section-head">Discipline and Punishment</div>
+
+    <a class="nav-item" data-route="child-discipline-2025" data-src="./maps/child-discipline-2025/" href="#child-discipline-2025">
+      <span class="nav-num">Table 12</span>
+      <span class="nav-title-text">Child Discipline</span>
+    </a>
+    <a class="nav-item" data-route="attitudes-toward-physical-punishment-2025" data-src="./maps/attitudes-toward-physical-punishment-2025/" href="#attitudes-toward-physical-punishment-2025">
+      <span class="nav-num">Table 13</span>
+      <span class="nav-title-text">Attitudes Toward Physical Punishment</span>
+    </a>
   </div><!-- /nav-list -->
 </nav>
 
 <!-- Content iframe -->
 <div id="main">
+  <div id="home-view"></div>
   <iframe id="content-frame" src="./maps/fertility-rate-2025/?v=20260423-1" title="NDHS Map View"></iframe>
 </div>
 
@@ -296,11 +458,15 @@
 const frame   = document.getElementById('content-frame');
 const navList = document.getElementById('nav-list');
 const navItems = Array.from(navList.querySelectorAll('.nav-item'));
+const homeView = document.getElementById('home-view');
+const navTitle = document.getElementById('nav-title');
 const topbarTitle = document.getElementById('topbar-title');
 let currentRoute = null;
 let frameHashSyncWindow = null;
-const DEFAULT_TITLE = '2025 NDHS Key Indicators — Philippines';
-const CACHE_BUST_VERSION = '20260424-7';
+const DEFAULT_TITLE = '2025 National Demographic and Health Survey - Philippines';
+const HOME_TITLE = 'Home | 2025 National Demographic and Health Survey';
+const HOME_ROUTE = 'home';
+const CACHE_BUST_VERSION = '20260425-10';
 
 function withCacheBust(url) {
   const sep = url.includes('?') ? '&' : '?';
@@ -308,10 +474,11 @@ function withCacheBust(url) {
 }
 
 function getRouteTitle(route) {
+  if (route === HOME_ROUTE) return HOME_TITLE;
   const item = findNavItem(route);
   if (!item) return DEFAULT_TITLE;
   const label = item.querySelector('.nav-title-text')?.textContent?.trim() || route;
-  return `${label} | 2025 NDHS Key Indicators`;
+  return `${label} | 2025 National Demographic and Health Survey`;
 }
 
 function findNavItem(route) {
@@ -334,6 +501,11 @@ function buildRouteHash(route, childHash = '') {
 
 function setActiveNav(route) {
   navItems.forEach(item => item.classList.toggle('active', item.dataset.route === route));
+  if (route === HOME_ROUTE) {
+    topbarTitle.textContent = '2025 NDHS';
+    document.title = HOME_TITLE;
+    return;
+  }
   const item = findNavItem(route);
   const label = item?.querySelector('.nav-title-text')?.textContent?.trim() || '2025 NDHS';
   topbarTitle.textContent = label;
@@ -341,7 +513,7 @@ function setActiveNav(route) {
 }
 
 function syncParentUrlFromValue(childHash, replace = false) {
-  if (!currentRoute) return;
+  if (!currentRoute || currentRoute === HOME_ROUTE) return;
   const nextHash = buildRouteHash(currentRoute, childHash);
   if (location.hash === nextHash) return;
   if (replace) {
@@ -352,7 +524,7 @@ function syncParentUrlFromValue(childHash, replace = false) {
 }
 
 function syncParentUrl(replace = false) {
-  if (!currentRoute) return;
+  if (!currentRoute || currentRoute === HOME_ROUTE) return;
   let childHash = '';
   try {
     childHash = frame.contentWindow?.location?.hash?.replace(/^#/, '') || '';
@@ -383,12 +555,106 @@ function bindFrameHashSync() {
   } catch (e) {}
 }
 
+function showHomeView() {
+  document.body.classList.add('home-active');
+  homeView.classList.add('active');
+  frame.style.display = 'none';
+}
+
+function hideHomeView() {
+  document.body.classList.remove('home-active');
+  homeView.classList.remove('active');
+  frame.style.display = 'block';
+}
+
+function sectionIcon(title) {
+  const key = String(title || '').toLowerCase();
+  const svg = (paths) => `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="24" height="24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${paths}</svg>`;
+
+  if (key.includes('survey profile')) {
+    return svg('<circle cx="12" cy="8" r="3"></circle><path d="M5 19c1.6-3 4-4.5 7-4.5s5.4 1.5 7 4.5"></path>');
+  }
+  if (key.includes('fertility')) {
+    return svg('<path d="M4 14c3.5 0 6.5-2.2 8-6 1.5 3.8 4.5 6 8 6"></path><path d="M12 8v12"></path><path d="M7 17h10"></path>');
+  }
+  if (key.includes('maternal care')) {
+    return svg('<rect x="4.5" y="5" width="15" height="14" rx="2.5"></rect><path d="M12 8v8"></path><path d="M8 12h8"></path>');
+  }
+  if (key.includes('contraception')) {
+    return svg('<path d="M12 3.8l7 2.8v5.2c0 4.1-2.7 7.8-7 8.9-4.3-1.1-7-4.8-7-8.9V6.6l7-2.8z"></path><path d="M9.3 12.2l1.9 1.9 3.6-3.6"></path>');
+  }
+  if (key.includes('mortality')) {
+    return svg('<path d="M4 17h16"></path><path d="M6 15l3-3 2 2 4-4 3 2"></path>');
+  }
+  if (key.includes('vaccinations')) {
+    return svg('<path d="M6 18l9-9"></path><path d="M13.8 5.2l5 5"></path><path d="M5 19l2.8-.7L18 8.1l-2.4-2.4L5.7 15.6z"></path>');
+  }
+  if (key.includes('discipline') || key.includes('punishment')) {
+    return svg('<rect x="4.5" y="4.5" width="15" height="15" rx="2.5"></rect><path d="M8 9.2h8"></path><path d="M8 12h8"></path><path d="M8 14.8h5.2"></path>');
+  }
+  return svg('<circle cx="12" cy="12" r="7"></circle><path d="M12 9v6"></path><path d="M9 12h6"></path>');
+}
+
+function buildHomeView() {
+  const sections = [];
+  let current = null;
+  Array.from(navList.children).forEach(node => {
+    if (node.classList.contains('nav-section-head')) {
+      if (current && current.items.length) sections.push(current);
+      current = { title: node.textContent.trim(), items: [] };
+      return;
+    }
+    if (node.classList.contains('nav-item') && current && !node.classList.contains('disabled')) {
+      const route = node.dataset.route;
+      const label = node.querySelector('.nav-title-text')?.textContent?.trim() || route;
+      current.items.push({ route, label });
+    }
+  });
+  if (current && current.items.length) sections.push(current);
+
+  const rows = sections.map(section => {
+    const links = section.items.map(item =>
+      `<a class="home-link" data-home-route="${item.route}" href="#${item.route}">${item.label}</a>`
+    ).join('<span class="home-sep"> &bull; </span>');
+    return `
+      <section class="home-row">
+        <div class="home-row-left">
+          <div class="home-icon">${sectionIcon(section.title)}</div>
+          <div class="home-section-title">${section.title}</div>
+        </div>
+        <div class="home-links-line">${links}</div>
+      </section>
+    `;
+  }).join('');
+
+  homeView.innerHTML = `
+    <div class="home-wrap">
+      <div class="home-title">2025 National Demographic and Health Survey</div>
+      <div class="home-rows">${rows}</div>
+    </div>
+  `;
+}
+
 function navigateTo(route, childHash = '', historyMode = 'push') {
+  if (route === HOME_ROUTE) {
+    currentRoute = HOME_ROUTE;
+    setActiveNav(HOME_ROUTE);
+    showHomeView();
+    if (historyMode === 'replace') {
+      history.replaceState({ route: HOME_ROUTE, childHash: '' }, '', buildRouteHash(HOME_ROUTE, ''));
+    } else if (historyMode === 'push') {
+      history.pushState({ route: HOME_ROUTE, childHash: '' }, '', buildRouteHash(HOME_ROUTE, ''));
+    }
+    closeNav();
+    return;
+  }
+
   const item = findNavItem(route);
   if (!item || item.classList.contains('disabled')) return;
 
   currentRoute = route;
   setActiveNav(route);
+  hideHomeView();
 
   const src = withCacheBust(item.dataset.src) + (childHash ? '#' + childHash : '');
   frame.src = src;
@@ -408,10 +674,14 @@ function applyRouteFromUrl(replace = false) {
     navigateTo('fertilityrate', '', replace ? 'replace' : 'push');
     return;
   }
+  if (route === HOME_ROUTE) {
+    navigateTo(HOME_ROUTE, '', replace ? 'replace' : 'none');
+    return;
+  }
   navigateTo(route, childHash, replace ? 'replace' : 'none');
 }
 
-// ── Nav item clicks ────────────────────────────────────────────────────────
+// Nav item clicks
 navList.addEventListener('click', e => {
   const item = e.target.closest('.nav-item');
   if (!item || item.classList.contains('disabled')) return;
@@ -419,7 +689,14 @@ navList.addEventListener('click', e => {
   navigateTo(item.dataset.route, '', 'push');
 });
 
-// ── Mobile nav toggle ──────────────────────────────────────────────────────
+homeView.addEventListener('click', e => {
+  const link = e.target.closest('[data-home-route]');
+  if (!link) return;
+  e.preventDefault();
+  navigateTo(link.dataset.homeRoute, '', 'push');
+});
+
+// Mobile nav toggle
 const nav      = document.getElementById('nav');
 const overlay  = document.getElementById('nav-overlay');
 const hamburger = document.getElementById('hamburger');
@@ -435,6 +712,8 @@ function toggleDesktopNav() {
 hamburger.addEventListener('click', () => nav.classList.contains('open') ? closeNav() : openNav());
 overlay.addEventListener('click', closeNav);
 navPin.addEventListener('click', toggleDesktopNav);
+navTitle.addEventListener('click', () => navigateTo(HOME_ROUTE, '', 'push'));
+topbarTitle.addEventListener('click', () => navigateTo(HOME_ROUTE, '', 'push'));
 
 frame.addEventListener('load', () => {
   bindFrameHashSync();
@@ -446,7 +725,9 @@ window.addEventListener('popstate', () => {
 });
 window.addEventListener('message', onChildStateMessage);
 
+buildHomeView();
 applyRouteFromUrl(true);
 </script>
 </body>
 </html>
+

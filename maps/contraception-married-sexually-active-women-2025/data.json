@@ -1,4 +1,4 @@
-﻿{
+{
   "sectionTitle": "CONTRACEPTION",
   "title": "Current Use of Contraception Among Married and Sexually Active Women",
   "description": "Current contraceptive use among currently married women by region, with data tables for currently married and sexually active unmarried women. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
@@ -629,11 +629,26 @@
     "title": "Current Use of Contraception Among Married and Sexually Active Women",
     "subtitle": "Current contraceptive use among currently married and sexually active unmarried women, by background characteristic, Philippines, 2022 and 2025 NDHS.",
     "series": [
-      { "key": "any_method_pct", "label": "Any method" },
-      { "key": "any_modern_method_pct", "label": "Any modern method" },
-      { "key": "any_traditional_method_pct", "label": "Any traditional method" },
-      { "key": "not_using_pct", "label": "Not currently using" },
-      { "key": "women_total", "label": "Total number of women aged 15 to 49 years" }
+      {
+        "key": "any_method_pct",
+        "label": "Any method"
+      },
+      {
+        "key": "any_modern_method_pct",
+        "label": "Any modern method"
+      },
+      {
+        "key": "any_traditional_method_pct",
+        "label": "Any traditional method"
+      },
+      {
+        "key": "not_using_pct",
+        "label": "Not currently using"
+      },
+      {
+        "key": "women_total",
+        "label": "Total number of women aged 15 to 49 years"
+      }
     ],
     "groups": [
       {
@@ -645,7 +660,14 @@
             "year": "2025",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "Total", "women_total": "16,092", "any_method_pct": 58.6, "any_modern_method_pct": 44.5, "any_traditional_method_pct": 14.1, "not_using_pct": 41.4 }
+              {
+                "label": "Total",
+                "women_total": "16,092",
+                "any_method_pct": 58.6,
+                "any_modern_method_pct": 44.5,
+                "any_traditional_method_pct": 14.1,
+                "not_using_pct": 41.4
+              }
             ]
           },
           {
@@ -653,7 +675,14 @@
             "year": "2022",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "Total", "women_total": "15,306", "any_method_pct": 58.3, "any_modern_method_pct": 41.8, "any_traditional_method_pct": 16.5, "not_using_pct": 41.7 }
+              {
+                "label": "Total",
+                "women_total": "15,306",
+                "any_method_pct": 58.3,
+                "any_modern_method_pct": 41.8,
+                "any_traditional_method_pct": 16.5,
+                "not_using_pct": 41.7
+              }
             ]
           },
           {
@@ -661,10 +690,40 @@
             "year": "2025",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "0", "women_total": "1,516", "any_method_pct": 16.5, "any_modern_method_pct": 7.6, "any_traditional_method_pct": 9, "any_traditional_method_pct_display": "9.0", "not_using_pct": 83.5 },
-              { "label": "1-2", "women_total": "8,423", "any_method_pct": 58.8, "any_modern_method_pct": 42.1, "any_traditional_method_pct": 16.7, "not_using_pct": 41.2 },
-              { "label": "3-4", "women_total": "4,723", "any_method_pct": 70.9, "any_modern_method_pct": 59.1, "any_traditional_method_pct": 11.9, "not_using_pct": 29.1 },
-              { "label": "5+", "women_total": "1,430", "any_method_pct": 61.3, "any_modern_method_pct": 49.3, "any_traditional_method_pct": 12, "any_traditional_method_pct_display": "12.0", "not_using_pct": 38.7 }
+              {
+                "label": "0",
+                "women_total": "1,516",
+                "any_method_pct": 16.5,
+                "any_modern_method_pct": 7.6,
+                "any_traditional_method_pct": 9,
+                "any_traditional_method_pct_display": "9.0",
+                "not_using_pct": 83.5
+              },
+              {
+                "label": "1-2",
+                "women_total": "8,423",
+                "any_method_pct": 58.8,
+                "any_modern_method_pct": 42.1,
+                "any_traditional_method_pct": 16.7,
+                "not_using_pct": 41.2
+              },
+              {
+                "label": "3-4",
+                "women_total": "4,723",
+                "any_method_pct": 70.9,
+                "any_modern_method_pct": 59.1,
+                "any_traditional_method_pct": 11.9,
+                "not_using_pct": 29.1
+              },
+              {
+                "label": "5+",
+                "women_total": "1,430",
+                "any_method_pct": 61.3,
+                "any_modern_method_pct": 49.3,
+                "any_traditional_method_pct": 12,
+                "any_traditional_method_pct_display": "12.0",
+                "not_using_pct": 38.7
+              }
             ]
           },
           {
@@ -672,10 +731,41 @@
             "year": "2022",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "0", "women_total": "1,423", "any_method_pct": 13.1, "any_modern_method_pct": 5.2, "any_traditional_method_pct": 7.9, "not_using_pct": 86.9 },
-              { "label": "1-2", "women_total": "7,478", "any_method_pct": 58.5, "any_modern_method_pct": 39.8, "any_traditional_method_pct": 18.7, "not_using_pct": 41.5 },
-              { "label": "3-4", "women_total": "4,612", "any_method_pct": 70, "any_method_pct_display": "70.0", "any_modern_method_pct": 54.4, "any_traditional_method_pct": 15.6, "not_using_pct": 30, "not_using_pct_display": "30.0" },
-              { "label": "5+", "women_total": "1,793", "any_method_pct": 63.4, "any_modern_method_pct": 47, "any_modern_method_pct_display": "47.0", "any_traditional_method_pct": 16.3, "not_using_pct": 36.6 }
+              {
+                "label": "0",
+                "women_total": "1,423",
+                "any_method_pct": 13.1,
+                "any_modern_method_pct": 5.2,
+                "any_traditional_method_pct": 7.9,
+                "not_using_pct": 86.9
+              },
+              {
+                "label": "1-2",
+                "women_total": "7,478",
+                "any_method_pct": 58.5,
+                "any_modern_method_pct": 39.8,
+                "any_traditional_method_pct": 18.7,
+                "not_using_pct": 41.5
+              },
+              {
+                "label": "3-4",
+                "women_total": "4,612",
+                "any_method_pct": 70,
+                "any_method_pct_display": "70.0",
+                "any_modern_method_pct": 54.4,
+                "any_traditional_method_pct": 15.6,
+                "not_using_pct": 30,
+                "not_using_pct_display": "30.0"
+              },
+              {
+                "label": "5+",
+                "women_total": "1,793",
+                "any_method_pct": 63.4,
+                "any_modern_method_pct": 47,
+                "any_modern_method_pct_display": "47.0",
+                "any_traditional_method_pct": 16.3,
+                "not_using_pct": 36.6
+              }
             ]
           },
           {
@@ -683,13 +773,70 @@
             "year": "2025",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "15-19", "women_total": "307", "any_method_pct": 42.6, "any_modern_method_pct": 34, "any_modern_method_pct_display": "34.0", "any_traditional_method_pct": 8.7, "not_using_pct": 57.4 },
-              { "label": "20-24", "women_total": "1,212", "any_method_pct": 60, "any_method_pct_display": "60.0", "any_modern_method_pct": 47, "any_modern_method_pct_display": "47.0", "any_traditional_method_pct": 13, "any_traditional_method_pct_display": "13.0", "not_using_pct": 40, "not_using_pct_display": "40.0" },
-              { "label": "25-29", "women_total": "2,369", "any_method_pct": 59.9, "any_modern_method_pct": 45.4, "any_traditional_method_pct": 14.5, "not_using_pct": 40.1 },
-              { "label": "30-34", "women_total": "3,159", "any_method_pct": 62.9, "any_modern_method_pct": 48.3, "any_traditional_method_pct": 14.5, "not_using_pct": 37.1 },
-              { "label": "35-39", "women_total": "3,307", "any_method_pct": 64.1, "any_modern_method_pct": 48.7, "any_traditional_method_pct": 15.4, "not_using_pct": 35.9 },
-              { "label": "40-44", "women_total": "3,021", "any_method_pct": 59.6, "any_modern_method_pct": 44.7, "any_traditional_method_pct": 15, "any_traditional_method_pct_display": "15.0", "not_using_pct": 40.4 },
-              { "label": "45-49", "women_total": "2,717", "any_method_pct": 46, "any_method_pct_display": "46.0", "any_modern_method_pct": 33.9, "any_traditional_method_pct": 12.1, "not_using_pct": 54, "not_using_pct_display": "54.0" }
+              {
+                "label": "15-19",
+                "women_total": "307",
+                "any_method_pct": 42.6,
+                "any_modern_method_pct": 34,
+                "any_modern_method_pct_display": "34.0",
+                "any_traditional_method_pct": 8.7,
+                "not_using_pct": 57.4
+              },
+              {
+                "label": "20-24",
+                "women_total": "1,212",
+                "any_method_pct": 60,
+                "any_method_pct_display": "60.0",
+                "any_modern_method_pct": 47,
+                "any_modern_method_pct_display": "47.0",
+                "any_traditional_method_pct": 13,
+                "any_traditional_method_pct_display": "13.0",
+                "not_using_pct": 40,
+                "not_using_pct_display": "40.0"
+              },
+              {
+                "label": "25-29",
+                "women_total": "2,369",
+                "any_method_pct": 59.9,
+                "any_modern_method_pct": 45.4,
+                "any_traditional_method_pct": 14.5,
+                "not_using_pct": 40.1
+              },
+              {
+                "label": "30-34",
+                "women_total": "3,159",
+                "any_method_pct": 62.9,
+                "any_modern_method_pct": 48.3,
+                "any_traditional_method_pct": 14.5,
+                "not_using_pct": 37.1
+              },
+              {
+                "label": "35-39",
+                "women_total": "3,307",
+                "any_method_pct": 64.1,
+                "any_modern_method_pct": 48.7,
+                "any_traditional_method_pct": 15.4,
+                "not_using_pct": 35.9
+              },
+              {
+                "label": "40-44",
+                "women_total": "3,021",
+                "any_method_pct": 59.6,
+                "any_modern_method_pct": 44.7,
+                "any_traditional_method_pct": 15,
+                "any_traditional_method_pct_display": "15.0",
+                "not_using_pct": 40.4
+              },
+              {
+                "label": "45-49",
+                "women_total": "2,717",
+                "any_method_pct": 46,
+                "any_method_pct_display": "46.0",
+                "any_modern_method_pct": 33.9,
+                "any_traditional_method_pct": 12.1,
+                "not_using_pct": 54,
+                "not_using_pct_display": "54.0"
+              }
             ]
           },
           {
@@ -697,13 +844,64 @@
             "year": "2022",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "15-19", "women_total": "307", "any_method_pct": 46.1, "any_modern_method_pct": 34.5, "any_traditional_method_pct": 11.7, "not_using_pct": 53.9 },
-              { "label": "20-24", "women_total": "1,303", "any_method_pct": 56.5, "any_modern_method_pct": 41.6, "any_traditional_method_pct": 14.9, "not_using_pct": 43.5 },
-              { "label": "25-29", "women_total": "2,384", "any_method_pct": 60.3, "any_modern_method_pct": 44.6, "any_traditional_method_pct": 15.7, "not_using_pct": 39.7 },
-              { "label": "30-34", "women_total": "2,935", "any_method_pct": 61.3, "any_modern_method_pct": 43.8, "any_traditional_method_pct": 17.4, "not_using_pct": 38.7 },
-              { "label": "35-39", "women_total": "2,808", "any_method_pct": 65, "any_method_pct_display": "65.0", "any_modern_method_pct": 47.6, "any_traditional_method_pct": 17.5, "not_using_pct": 35, "not_using_pct_display": "35.0" },
-              { "label": "40-44", "women_total": "2,915", "any_method_pct": 59.8, "any_modern_method_pct": 42.1, "any_traditional_method_pct": 17.7, "not_using_pct": 40.2 },
-              { "label": "45-49", "women_total": "2,654", "any_method_pct": 46.9, "any_modern_method_pct": 31.7, "any_traditional_method_pct": 15.2, "not_using_pct": 53.1 }
+              {
+                "label": "15-19",
+                "women_total": "307",
+                "any_method_pct": 46.1,
+                "any_modern_method_pct": 34.5,
+                "any_traditional_method_pct": 11.7,
+                "not_using_pct": 53.9
+              },
+              {
+                "label": "20-24",
+                "women_total": "1,303",
+                "any_method_pct": 56.5,
+                "any_modern_method_pct": 41.6,
+                "any_traditional_method_pct": 14.9,
+                "not_using_pct": 43.5
+              },
+              {
+                "label": "25-29",
+                "women_total": "2,384",
+                "any_method_pct": 60.3,
+                "any_modern_method_pct": 44.6,
+                "any_traditional_method_pct": 15.7,
+                "not_using_pct": 39.7
+              },
+              {
+                "label": "30-34",
+                "women_total": "2,935",
+                "any_method_pct": 61.3,
+                "any_modern_method_pct": 43.8,
+                "any_traditional_method_pct": 17.4,
+                "not_using_pct": 38.7
+              },
+              {
+                "label": "35-39",
+                "women_total": "2,808",
+                "any_method_pct": 65,
+                "any_method_pct_display": "65.0",
+                "any_modern_method_pct": 47.6,
+                "any_traditional_method_pct": 17.5,
+                "not_using_pct": 35,
+                "not_using_pct_display": "35.0"
+              },
+              {
+                "label": "40-44",
+                "women_total": "2,915",
+                "any_method_pct": 59.8,
+                "any_modern_method_pct": 42.1,
+                "any_traditional_method_pct": 17.7,
+                "not_using_pct": 40.2
+              },
+              {
+                "label": "45-49",
+                "women_total": "2,654",
+                "any_method_pct": 46.9,
+                "any_modern_method_pct": 31.7,
+                "any_traditional_method_pct": 15.2,
+                "not_using_pct": 53.1
+              }
             ]
           },
           {
@@ -711,8 +909,22 @@
             "year": "2025",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "Urban", "women_total": "8,698", "any_method_pct": 57.9, "any_modern_method_pct": 42.1, "any_traditional_method_pct": 15.8, "not_using_pct": 42.1 },
-              { "label": "Rural", "women_total": "7,394", "any_method_pct": 59.4, "any_modern_method_pct": 47.2, "any_traditional_method_pct": 12.2, "not_using_pct": 40.6 }
+              {
+                "label": "Urban",
+                "women_total": "8,698",
+                "any_method_pct": 57.9,
+                "any_modern_method_pct": 42.1,
+                "any_traditional_method_pct": 15.8,
+                "not_using_pct": 42.1
+              },
+              {
+                "label": "Rural",
+                "women_total": "7,394",
+                "any_method_pct": 59.4,
+                "any_modern_method_pct": 47.2,
+                "any_traditional_method_pct": 12.2,
+                "not_using_pct": 40.6
+              }
             ]
           },
           {
@@ -720,8 +932,22 @@
             "year": "2022",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "Urban", "women_total": "8,263", "any_method_pct": 57.3, "any_modern_method_pct": 39.7, "any_traditional_method_pct": 17.6, "not_using_pct": 42.7 },
-              { "label": "Rural", "women_total": "7,043", "any_method_pct": 59.5, "any_modern_method_pct": 44.3, "any_traditional_method_pct": 15.2, "not_using_pct": 40.5 }
+              {
+                "label": "Urban",
+                "women_total": "8,263",
+                "any_method_pct": 57.3,
+                "any_modern_method_pct": 39.7,
+                "any_traditional_method_pct": 17.6,
+                "not_using_pct": 42.7
+              },
+              {
+                "label": "Rural",
+                "women_total": "7,043",
+                "any_method_pct": 59.5,
+                "any_modern_method_pct": 44.3,
+                "any_traditional_method_pct": 15.2,
+                "not_using_pct": 40.5
+              }
             ]
           },
           {
@@ -729,12 +955,58 @@
             "year": "2025",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "No education", "women_total": "132", "any_method_pct": 42.4, "any_modern_method_pct": 34.8, "any_traditional_method_pct": 7.6, "not_using_pct": 57.6 },
-              { "label": "Grades 1-6", "women_total": "1,842", "any_method_pct": 56.1, "any_modern_method_pct": 46.7, "any_traditional_method_pct": 9.3, "not_using_pct": 43.9 },
-              { "label": "Grades 7-10", "women_total": "6,988", "any_method_pct": 61.6, "any_modern_method_pct": 48.3, "any_traditional_method_pct": 13.3, "not_using_pct": 38.4 },
-              { "label": "Grades 11-12", "women_total": "814", "any_method_pct": 60.2, "any_modern_method_pct": 46.6, "any_traditional_method_pct": 13.7, "not_using_pct": 39.8 },
-              { "label": "Post-secondary", "women_total": "321", "any_method_pct": 60, "any_method_pct_display": "60.0", "any_modern_method_pct": 41.6, "any_traditional_method_pct": 18.4, "not_using_pct": 40, "not_using_pct_display": "40.0" },
-              { "label": "College", "women_total": "5,994", "any_method_pct": 56, "any_method_pct_display": "56.0", "any_modern_method_pct": 39.3, "any_traditional_method_pct": 16.6, "not_using_pct": 44, "not_using_pct_display": "44.0" }
+              {
+                "label": "No education",
+                "women_total": "132",
+                "any_method_pct": 42.4,
+                "any_modern_method_pct": 34.8,
+                "any_traditional_method_pct": 7.6,
+                "not_using_pct": 57.6
+              },
+              {
+                "label": "Grades 1-6",
+                "women_total": "1,842",
+                "any_method_pct": 56.1,
+                "any_modern_method_pct": 46.7,
+                "any_traditional_method_pct": 9.3,
+                "not_using_pct": 43.9
+              },
+              {
+                "label": "Grades 7-10",
+                "women_total": "6,988",
+                "any_method_pct": 61.6,
+                "any_modern_method_pct": 48.3,
+                "any_traditional_method_pct": 13.3,
+                "not_using_pct": 38.4
+              },
+              {
+                "label": "Grades 11-12",
+                "women_total": "814",
+                "any_method_pct": 60.2,
+                "any_modern_method_pct": 46.6,
+                "any_traditional_method_pct": 13.7,
+                "not_using_pct": 39.8
+              },
+              {
+                "label": "Post-secondary",
+                "women_total": "321",
+                "any_method_pct": 60,
+                "any_method_pct_display": "60.0",
+                "any_modern_method_pct": 41.6,
+                "any_traditional_method_pct": 18.4,
+                "not_using_pct": 40,
+                "not_using_pct_display": "40.0"
+              },
+              {
+                "label": "College",
+                "women_total": "5,994",
+                "any_method_pct": 56,
+                "any_method_pct_display": "56.0",
+                "any_modern_method_pct": 39.3,
+                "any_traditional_method_pct": 16.6,
+                "not_using_pct": 44,
+                "not_using_pct_display": "44.0"
+              }
             ]
           },
           {
@@ -742,12 +1014,56 @@
             "year": "2022",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "No education", "women_total": "135", "any_method_pct": 31.5, "any_modern_method_pct": 27.2, "any_traditional_method_pct": 4.3, "not_using_pct": 68.5 },
-              { "label": "Grades 1-6", "women_total": "2,144", "any_method_pct": 56.9, "any_modern_method_pct": 44.5, "any_traditional_method_pct": 12.4, "not_using_pct": 43.1 },
-              { "label": "Grades 7-10", "women_total": "7,102", "any_method_pct": 60.5, "any_modern_method_pct": 43.9, "any_traditional_method_pct": 16.6, "not_using_pct": 39.5 },
-              { "label": "Grades 11-12", "women_total": "371", "any_method_pct": 51.5, "any_modern_method_pct": 37.5, "any_traditional_method_pct": 14, "any_traditional_method_pct_display": "14.0", "not_using_pct": 48.5 },
-              { "label": "Post-secondary", "women_total": "439", "any_method_pct": 53.7, "any_modern_method_pct": 41.6, "any_traditional_method_pct": 12.1, "not_using_pct": 46.3 },
-              { "label": "College", "women_total": "5,114", "any_method_pct": 57.5, "any_modern_method_pct": 38.5, "any_traditional_method_pct": 19, "any_traditional_method_pct_display": "19.0", "not_using_pct": 42.5 }
+              {
+                "label": "No education",
+                "women_total": "135",
+                "any_method_pct": 31.5,
+                "any_modern_method_pct": 27.2,
+                "any_traditional_method_pct": 4.3,
+                "not_using_pct": 68.5
+              },
+              {
+                "label": "Grades 1-6",
+                "women_total": "2,144",
+                "any_method_pct": 56.9,
+                "any_modern_method_pct": 44.5,
+                "any_traditional_method_pct": 12.4,
+                "not_using_pct": 43.1
+              },
+              {
+                "label": "Grades 7-10",
+                "women_total": "7,102",
+                "any_method_pct": 60.5,
+                "any_modern_method_pct": 43.9,
+                "any_traditional_method_pct": 16.6,
+                "not_using_pct": 39.5
+              },
+              {
+                "label": "Grades 11-12",
+                "women_total": "371",
+                "any_method_pct": 51.5,
+                "any_modern_method_pct": 37.5,
+                "any_traditional_method_pct": 14,
+                "any_traditional_method_pct_display": "14.0",
+                "not_using_pct": 48.5
+              },
+              {
+                "label": "Post-secondary",
+                "women_total": "439",
+                "any_method_pct": 53.7,
+                "any_modern_method_pct": 41.6,
+                "any_traditional_method_pct": 12.1,
+                "not_using_pct": 46.3
+              },
+              {
+                "label": "College",
+                "women_total": "5,114",
+                "any_method_pct": 57.5,
+                "any_modern_method_pct": 38.5,
+                "any_traditional_method_pct": 19,
+                "any_traditional_method_pct_display": "19.0",
+                "not_using_pct": 42.5
+              }
             ]
           },
           {
@@ -755,11 +1071,50 @@
             "year": "2025",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "Lowest", "women_total": "3,343", "any_method_pct": 59, "any_method_pct_display": "59.0", "any_modern_method_pct": 48.6, "any_traditional_method_pct": 10.4, "not_using_pct": 41, "not_using_pct_display": "41.0" },
-              { "label": "Second", "women_total": "3,192", "any_method_pct": 61.8, "any_modern_method_pct": 48.2, "any_traditional_method_pct": 13.6, "not_using_pct": 38.2 },
-              { "label": "Middle", "women_total": "3,344", "any_method_pct": 60.8, "any_modern_method_pct": 44.7, "any_traditional_method_pct": 16, "any_traditional_method_pct_display": "16.0", "not_using_pct": 39.2 },
-              { "label": "Fourth", "women_total": "3,137", "any_method_pct": 57.6, "any_modern_method_pct": 42.6, "any_traditional_method_pct": 15, "any_traditional_method_pct_display": "15.0", "not_using_pct": 42.4 },
-              { "label": "Highest", "women_total": "3,076", "any_method_pct": 53.6, "any_modern_method_pct": 37.7, "any_traditional_method_pct": 15.9, "not_using_pct": 46.4 }
+              {
+                "label": "Lowest",
+                "women_total": "3,343",
+                "any_method_pct": 59,
+                "any_method_pct_display": "59.0",
+                "any_modern_method_pct": 48.6,
+                "any_traditional_method_pct": 10.4,
+                "not_using_pct": 41,
+                "not_using_pct_display": "41.0"
+              },
+              {
+                "label": "Second",
+                "women_total": "3,192",
+                "any_method_pct": 61.8,
+                "any_modern_method_pct": 48.2,
+                "any_traditional_method_pct": 13.6,
+                "not_using_pct": 38.2
+              },
+              {
+                "label": "Middle",
+                "women_total": "3,344",
+                "any_method_pct": 60.8,
+                "any_modern_method_pct": 44.7,
+                "any_traditional_method_pct": 16,
+                "any_traditional_method_pct_display": "16.0",
+                "not_using_pct": 39.2
+              },
+              {
+                "label": "Fourth",
+                "women_total": "3,137",
+                "any_method_pct": 57.6,
+                "any_modern_method_pct": 42.6,
+                "any_traditional_method_pct": 15,
+                "any_traditional_method_pct_display": "15.0",
+                "not_using_pct": 42.4
+              },
+              {
+                "label": "Highest",
+                "women_total": "3,076",
+                "any_method_pct": 53.6,
+                "any_modern_method_pct": 37.7,
+                "any_traditional_method_pct": 15.9,
+                "not_using_pct": 46.4
+              }
             ]
           },
           {
@@ -767,11 +1122,48 @@
             "year": "2022",
             "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
             "rows": [
-              { "label": "Lowest", "women_total": "3,071", "any_method_pct": 59.8, "any_modern_method_pct": 45.4, "any_traditional_method_pct": 14.5, "not_using_pct": 40.2 },
-              { "label": "Second", "women_total": "3,111", "any_method_pct": 61.7, "any_modern_method_pct": 46.4, "any_traditional_method_pct": 15.2, "not_using_pct": 38.3 },
-              { "label": "Middle", "women_total": "3,139", "any_method_pct": 59.4, "any_modern_method_pct": 43.3, "any_traditional_method_pct": 16.1, "not_using_pct": 40.6 },
-              { "label": "Fourth", "women_total": "3,016", "any_method_pct": 54.3, "any_modern_method_pct": 34.8, "any_traditional_method_pct": 19.5, "not_using_pct": 45.7 },
-              { "label": "Highest", "women_total": "2,970", "any_method_pct": 56, "any_method_pct_display": "56.0", "any_modern_method_pct": 38.8, "any_traditional_method_pct": 17.2, "not_using_pct": 44, "not_using_pct_display": "44.0" }
+              {
+                "label": "Lowest",
+                "women_total": "3,071",
+                "any_method_pct": 59.8,
+                "any_modern_method_pct": 45.4,
+                "any_traditional_method_pct": 14.5,
+                "not_using_pct": 40.2
+              },
+              {
+                "label": "Second",
+                "women_total": "3,111",
+                "any_method_pct": 61.7,
+                "any_modern_method_pct": 46.4,
+                "any_traditional_method_pct": 15.2,
+                "not_using_pct": 38.3
+              },
+              {
+                "label": "Middle",
+                "women_total": "3,139",
+                "any_method_pct": 59.4,
+                "any_modern_method_pct": 43.3,
+                "any_traditional_method_pct": 16.1,
+                "not_using_pct": 40.6
+              },
+              {
+                "label": "Fourth",
+                "women_total": "3,016",
+                "any_method_pct": 54.3,
+                "any_modern_method_pct": 34.8,
+                "any_traditional_method_pct": 19.5,
+                "not_using_pct": 45.7
+              },
+              {
+                "label": "Highest",
+                "women_total": "2,970",
+                "any_method_pct": 56,
+                "any_method_pct_display": "56.0",
+                "any_modern_method_pct": 38.8,
+                "any_traditional_method_pct": 17.2,
+                "not_using_pct": 44,
+                "not_using_pct_display": "44.0"
+              }
             ]
           }
         ]
@@ -785,7 +1177,14 @@
             "year": "2025",
             "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
             "rows": [
-              { "label": "Total", "women_total": "463", "any_method_pct": 37.9, "any_modern_method_pct": 26.2, "any_traditional_method_pct": 11.7, "not_using_pct": 62.1 }
+              {
+                "label": "Total",
+                "women_total": "463",
+                "any_method_pct": 37.9,
+                "any_modern_method_pct": 26.2,
+                "any_traditional_method_pct": 11.7,
+                "not_using_pct": 62.1
+              }
             ]
           },
           {
@@ -793,7 +1192,14 @@
             "year": "2022",
             "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
             "rows": [
-              { "label": "Total", "women_total": "506", "any_method_pct": 41.4, "any_modern_method_pct": 23.8, "any_traditional_method_pct": 17.6, "not_using_pct": 58.6 }
+              {
+                "label": "Total",
+                "women_total": "506",
+                "any_method_pct": 41.4,
+                "any_modern_method_pct": 23.8,
+                "any_traditional_method_pct": 17.6,
+                "not_using_pct": 58.6
+              }
             ]
           },
           {
@@ -801,8 +1207,25 @@
             "year": "2025",
             "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
             "rows": [
-              { "label": "Urban", "women_total": "310", "any_method_pct": 36.4, "any_modern_method_pct": 26, "any_modern_method_pct_display": "26.0", "any_traditional_method_pct": 10.3, "not_using_pct": 63.6 },
-              { "label": "Rural", "women_total": "153", "any_method_pct": 41, "any_method_pct_display": "41.0", "any_modern_method_pct": 26.7, "any_traditional_method_pct": 14.4, "not_using_pct": 59, "not_using_pct_display": "59.0" }
+              {
+                "label": "Urban",
+                "women_total": "310",
+                "any_method_pct": 36.4,
+                "any_modern_method_pct": 26,
+                "any_modern_method_pct_display": "26.0",
+                "any_traditional_method_pct": 10.3,
+                "not_using_pct": 63.6
+              },
+              {
+                "label": "Rural",
+                "women_total": "153",
+                "any_method_pct": 41,
+                "any_method_pct_display": "41.0",
+                "any_modern_method_pct": 26.7,
+                "any_traditional_method_pct": 14.4,
+                "not_using_pct": 59,
+                "not_using_pct_display": "59.0"
+              }
             ]
           },
           {
@@ -810,8 +1233,23 @@
             "year": "2022",
             "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
             "rows": [
-              { "label": "Urban", "women_total": "339", "any_method_pct": 39.4, "any_modern_method_pct": 23.4, "any_traditional_method_pct": 16, "any_traditional_method_pct_display": "16.0", "not_using_pct": 60.6 },
-              { "label": "Rural", "women_total": "167", "any_method_pct": 45.6, "any_modern_method_pct": 24.8, "any_traditional_method_pct": 20.8, "not_using_pct": 54.4 }
+              {
+                "label": "Urban",
+                "women_total": "339",
+                "any_method_pct": 39.4,
+                "any_modern_method_pct": 23.4,
+                "any_traditional_method_pct": 16,
+                "any_traditional_method_pct_display": "16.0",
+                "not_using_pct": 60.6
+              },
+              {
+                "label": "Rural",
+                "women_total": "167",
+                "any_method_pct": 45.6,
+                "any_modern_method_pct": 24.8,
+                "any_traditional_method_pct": 20.8,
+                "not_using_pct": 54.4
+              }
             ]
           }
         ]
@@ -1147,5 +1585,3 @@
     "municity": []
   }
 }
-
-

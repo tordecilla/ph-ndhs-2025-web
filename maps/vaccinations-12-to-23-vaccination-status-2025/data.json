@@ -1,0 +1,1038 @@
+{
+  "sectionTitle": "VACCINATIONS",
+  "title": "Children Aged 12 to 23 Months - Vaccination Status",
+  "description": "Vaccination status among children aged 12 to 23 months by background characteristics: Philippines, 2022 and 2025.",
+  "definitions": {
+    "fully_vaccinated_basic_antigens": "BCG, three doses of DPT-containing vaccine, three doses of polio vaccine given as OPV or IPV, and one dose of measles or MMR.",
+    "fully_vaccinated_according_to_national_schedule": "BCG, HepB (birth dose), three doses of DPT-containing vaccine, three doses of OPV, two doses of IPV, three doses of PCV, and one dose of MMR."
+  },
+  "notes": {
+    "fully_vaccinated_basic_antigens": "BCG = Bacille Calmette-Guerin; DPT = Diphtheria-pertussis-tetanus; OPV = Oral polio vaccine; IPV = Inactivated polio vaccine; MMR = Measles, mumps, rubella.",
+    "fully_vaccinated_according_to_national_schedule": "BCG = Bacille Calmette-Guerin; HepB = Hepatitis B; DPT = Diphtheria-pertussis-tetanus; OPV = Oral polio vaccine; IPV = Inactivated polio vaccine; PCV = Pneumococcal conjugate vaccine; MMR = Measles, mumps, rubella."
+  },
+  "note": "Children are considered to have received the vaccine if it was either written on the child's vaccination card or reported by the mother. Figures in parentheses are based on 25-49 unweighted cases.",
+  "chartData": {
+    "title": "Children Aged 12 to 23 Months - Vaccination Status",
+    "subtitle": "Charts for this page are not yet available.",
+    "notes": [],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+    "blocks": []
+  },
+  "tableData": {
+    "title": "Children Aged 12 to 23 Months - Vaccination Status",
+    "subtitle": "Percentage of children aged 12 to 23 months by vaccination status according to background characteristics: Philippines, 2022 and 2025.",
+    "tables": [
+      {
+        "title": "Total",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": "",
+            "rowClass": "dt-total-row",
+            "values": [
+              "77.1",
+              "62.4",
+              "5.7",
+              "1355",
+              "71.8",
+              "59.4",
+              "11.2",
+              "1442"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Sex",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Male",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "76.2",
+              "60.7",
+              "5.9",
+              "748",
+              "73.8",
+              "60.0",
+              "11.1",
+              "718"
+            ]
+          },
+          {
+            "label": "Female",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "78.1",
+              "64.5",
+              "5.3",
+              "607",
+              "69.7",
+              "58.8",
+              "11.3",
+              "724"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Birth order",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "1",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "81.3",
+              "67.1",
+              "4.3",
+              "470",
+              "79.2",
+              "68.1",
+              "7.5",
+              "441"
+            ]
+          },
+          {
+            "label": "2-3",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "78.5",
+              "62.6",
+              "5.2",
+              "618",
+              "72.5",
+              "59.9",
+              "9.6",
+              "667"
+            ]
+          },
+          {
+            "label": "4-5",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "66.3",
+              "52.7",
+              "9.1",
+              "192",
+              "65.3",
+              "51.3",
+              "13.6",
+              "238"
+            ]
+          },
+          {
+            "label": "6+",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "66.2",
+              "56.6",
+              "9.5",
+              "75",
+              "49.0",
+              "36.1",
+              "33.7",
+              "96"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Vaccination card⁵",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Seen",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "92.6",
+              "77.4",
+              "0.0",
+              "941",
+              "89.8",
+              "75.6",
+              "0.1",
+              "959"
+            ]
+          },
+          {
+            "label": "Not seen or no longer has",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "47.7",
+              "32.3",
+              "11.1",
+              "340",
+              "45.5",
+              "34.3",
+              "19.1",
+              "362"
+            ]
+          },
+          {
+            "label": "Never had",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "14.5",
+              "11.3",
+              "51.7",
+              "74",
+              "7.8",
+              "5.8",
+              "76.1",
+              "121"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Residence",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "78.7",
+              "64.6",
+              "4.3",
+              "678",
+              "71.5",
+              "61.7",
+              "11.0",
+              "712"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "75.4",
+              "60.2",
+              "7.0",
+              "677",
+              "72.0",
+              "57.2",
+              "11.4",
+              "730"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Region",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "74.3",
+              "64.7",
+              "2.8",
+              "163",
+              "65.7",
+              "57.0",
+              "7.3",
+              "153"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "71.0",
+              "54.4",
+              "20.0",
+              "23",
+              "83.9",
+              "65.7",
+              "1.0",
+              "24"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "95.6",
+              "94.3",
+              "0.0",
+              "110",
+              "75.5",
+              "69.7",
+              "8.5",
+              "65"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "83.7",
+              "80.8",
+              "0.8",
+              "35",
+              "90.2",
+              "77.7",
+              "1.3",
+              "54"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "83.8",
+              "67.1",
+              "3.3",
+              "194",
+              "78.4",
+              "66.4",
+              "2.9",
+              "160"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "81.6",
+              "69.7",
+              "2.2",
+              "143",
+              "87.4",
+              "82.3",
+              "5.9",
+              "173"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "84.5",
+              "68.7",
+              "3.7",
+              "44",
+              "74.3",
+              "43.2",
+              "8.3",
+              "41"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "84.0",
+              "66.0",
+              "0.9",
+              "48",
+              "80.6",
+              "71.7",
+              "5.1",
+              "71"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "86.9",
+              "60.2",
+              "1.4",
+              "54",
+              "77.7",
+              "62.8",
+              "10.5",
+              "118"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "(81.3)",
+              "(59.8)",
+              "0.0",
+              "55",
+              "NA",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "(79.3)",
+              "(49.3)",
+              "(3.8)",
+              "69",
+              "77.6",
+              "53.2",
+              "8.0",
+              "111"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "73.9",
+              "62.1",
+              "3.0",
+              "60",
+              "89.8",
+              "54.7",
+              "1.2",
+              "50"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula⁵",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "61.7",
+              "42.1",
+              "20.3",
+              "79",
+              "65.8",
+              "60.1",
+              "11.8",
+              "69"
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "67.6",
+              "42.8",
+              "13.9",
+              "68",
+              "76.8",
+              "56.7",
+              "9.8",
+              "67"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "88.4",
+              "86.3",
+              "4.5",
+              "58",
+              "59.6",
+              "54.1",
+              "11.0",
+              "77"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "80.0",
+              "52.2",
+              "2.8",
+              "50",
+              "60.8",
+              "46.8",
+              "18.6",
+              "73"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "71.5",
+              "61.6",
+              "4.6",
+              "33",
+              "64.4",
+              "49.6",
+              "13.0",
+              "39"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "22.1",
+              "13.0",
+              "28.1",
+              "69",
+              "18.1",
+              "14.9",
+              "59.9",
+              "98"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Mother's educational attainment",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "*",
+              "*",
+              "*",
+              "10",
+              "(51.7)",
+              "(27.5)",
+              "(32.0)",
+              "16"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "59.4",
+              "45.6",
+              "10.4",
+              "132",
+              "48.0",
+              "33.6",
+              "20.3",
+              "176"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "76.0",
+              "60.9",
+              "4.9",
+              "515",
+              "73.7",
+              "60.3",
+              "10.4",
+              "630"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "78.2",
+              "59.6",
+              "6.7",
+              "149",
+              "61.8",
+              "51.2",
+              "10.4",
+              "73"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "(90.3)",
+              "(74.8)",
+              "(0.4)",
+              "36",
+              "(81.3)",
+              "(78.5)",
+              "(11.7)",
+              "26"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "82.5",
+              "69.1",
+              "5.0",
+              "512",
+              "79.0",
+              "68.2",
+              "8.5",
+              "520"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Fully vaccinated (basic antigens)²"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)³"
+              },
+              {
+                "label": "No vaccinations"
+              },
+              {
+                "label": "Total number of children aged 12 to 23 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "66.1",
+              "52.4",
+              "10.1",
+              "352",
+              "58.8",
+              "45.0",
+              "20.3",
+              "432"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "77.5",
+              "60.0",
+              "6.1",
+              "307",
+              "75.7",
+              "62.8",
+              "7.7",
+              "263"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "82.3",
+              "69.1",
+              "4.8",
+              "273",
+              "74.1",
+              "62.8",
+              "8.5",
+              "298"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "77.4",
+              "61.7",
+              "2.4",
+              "227",
+              "75.3",
+              "63.7",
+              "8.3",
+              "202"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "88.3",
+              "75.8",
+              "1.9",
+              "196",
+              "84.6",
+              "73.4",
+              "4.6",
+              "246"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "² BCG, three doses of DPT-containing vaccine, three doses of polio vaccine given as OPV or IPV, and one dose of measles or MMR.",
+      "³ BCG, HepB (birth dose), three doses of DPT-containing vaccine, three doses of OPV, two doses of IPV, three doses of PCV, and one dose of MMR.",
+      "Region IX includes the province of Sulu in 2025.",
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "Children are considered to have received the vaccine if it was either written on the child's vaccination card or reported by the mother.",
+      "For children whose vaccination information is based on the mother's report, date of vaccination is not collected.",
+      "The proportions of vaccinations given during the first and second years of life are assumed to be the same as for children with a written record of vaccination.",
+      "Figures in parentheses are based on 25-49 unweighted cases.",
+      "An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.",
+      "BCG = Bacille Calmette-Guerin.",
+      "DPT = Diphtheria-pertussis-tetanus.",
+      "HepB = Hepatitis B.",
+      "OPV = Oral polio vaccine.",
+      "IPV = Inactivated polio vaccine.",
+      "PCV = Pneumococcal conjugate vaccine.",
+      "MMR = Measles, mumps, rubella."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "title": "Insights on Children Aged 12 to 23 Months - Vaccination Status",
+    "subtitle": "Long-form analysis of completion and no-vaccination patterns across regions and background characteristics.",
+    "overview": "The national profile improved between 2022 and 2025, but the most important story is how uneven that progress is across places and groups. Basic-antigen coverage rose from 71.8 to 77.1, full national-schedule coverage rose from 59.4 to 62.4, and the share with no vaccinations fell from 11.2 to 5.7. At the same time, regional differences remain wide: in 2025, full-schedule coverage ranges from 13.0 in BARMM to 94.3 in Ilocos Region, and no-vaccination ranges from 0.0 in Ilocos and NIR to 28.1 in BARMM.",
+    "sections": [
+      {
+        "heading": "National gains are real, but not evenly distributed",
+        "body": "At the country level, all three status measures moved in the right direction from 2022 to 2025. Basic-antigen completion increased by 5.3 points, full-schedule completion increased by 3.0 points, and no-vaccination fell by 5.5 points. This is a meaningful shift, but subgroup and regional patterns show that progress did not come at the same pace everywhere."
+      },
+      {
+        "heading": "Regional spread is still the strongest divide",
+        "body": "Regional gaps are large for both completion and zero-dose status. In 2025, full-schedule completion is very high in Ilocos Region (94.3) and Davao Region (86.3), but much lower in BARMM (13.0), Zamboanga Peninsula (42.1), and Northern Mindanao (42.8). No-vaccination is near zero in some regions but remains high in others: 28.1 in BARMM, 20.3 in Zamboanga Peninsula, and 20.0 in CAR. National averages hide these very different local conditions."
+      },
+      {
+        "heading": "Regional change is mixed, not one-directional",
+        "body": "Several regions posted large gains between 2022 and 2025, including Davao Region (full schedule from 54.1 to 86.3) and Ilocos Region (69.7 to 94.3). But there are also regions with declines in full-schedule coverage, including Zamboanga Peninsula (60.1 to 42.1), Northern Mindanao (56.7 to 42.8), and CAR (65.7 to 54.4). This means the 2025 improvement is a combination of strong advances and clear setbacks across regions."
+      },
+      {
+        "heading": "Vaccination-card status is a major separator",
+        "body": "Children with cards seen have much better outcomes than those without visible records. In 2025, children with cards seen are 92.6 for basic-antigen coverage and 77.4 for full schedule, with virtually no no-vaccination (0.0). Among children whose cards were never had, full-schedule coverage is 11.3 and no-vaccination is 51.7. Compared with 2022, no-vaccination among children who never had a card fell sharply (76.1 to 51.7), but the level is still very high."
+      },
+      {
+        "heading": "Birth order still concentrates disadvantage",
+        "body": "Coverage is highest at lower birth orders and weaker at higher birth orders. In 2025, first births have full-schedule coverage of 67.1 and no-vaccination of 4.3, while births of order 6+ have full-schedule coverage of 56.6 and no-vaccination of 9.5. The 6+ group improved strongly versus 2022, but it still trails lower-order births on both completion measures."
+      },
+      {
+        "heading": "Wealth and education show clear but non-uniform gradients",
+        "body": "The wealth divide remains substantial in 2025: full-schedule coverage is 52.4 in the lowest quintile versus 75.8 in the highest, while no-vaccination is 10.1 versus 1.9. Education patterns point in the same direction overall, with lower completion among children of mothers with less schooling, though the path is not perfectly linear across every category. Some rows are based on small samples, so direction is clearer than precise rank order."
+      },
+      {
+        "heading": "Sex and residence differences are smaller than structural divides",
+        "body": "Differences by sex are modest in 2025, with female children slightly higher than male children on both basic-antigen (78.1 vs 76.2) and full-schedule coverage (64.5 vs 60.7). Urban-rural differences are also present but smaller than regional and card-status gaps: full-schedule coverage is 64.6 in urban areas and 60.2 in rural areas, while no-vaccination is 4.3 and 7.0, respectively."
+      }
+    ],
+    "takeaways": [
+      "National vaccination status improved from 2022 to 2025, including a sharp drop in no-vaccination.",
+      "Regional divides remain very wide, especially for full-schedule coverage and no-vaccination.",
+      "Vaccination-card status strongly separates outcomes, with much lower completion and much higher no-vaccination when cards are absent.",
+      "Birth order, wealth, and maternal education still shape who is most likely to be left behind."
+    ]
+  }
+}

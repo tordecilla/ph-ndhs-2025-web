@@ -1,0 +1,1880 @@
+{
+  "sectionTitle": "CHILDHOOD MORTALITY",
+  "title": "Ten-Year Early Childhood Mortality Rates",
+  "description": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the ten-year period preceding the survey, according to additional characteristics: Philippines, 2022 and 2025.",
+  "maxDepth": "region",
+  "colorField": "neonatal_2025",
+  "colorDomain": [
+    0,
+    30
+  ],
+  "colorDomains": {
+    "neonatal_2025": [
+      0,
+      30
+    ],
+    "post_neonatal_2025": [
+      0,
+      25
+    ],
+    "infant_2025": [
+      0,
+      50
+    ],
+    "child_2025": [
+      0,
+      15
+    ],
+    "under5_2025": [
+      0,
+      60
+    ]
+  },
+  "colorScheme": "interpolateYlGnBu",
+  "valueSuffix": "",
+  "metricOptions": [
+    {
+      "key": "neonatal_2025",
+      "label": "Neonatal mortality",
+      "noteRefs": []
+    },
+    {
+      "key": "post_neonatal_2025",
+      "label": "Post-neonatal mortality",
+      "noteRefs": []
+    },
+    {
+      "key": "infant_2025",
+      "label": "Infant mortality",
+      "noteRefs": []
+    },
+    {
+      "key": "child_2025",
+      "label": "Child mortality",
+      "noteRefs": []
+    },
+    {
+      "key": "under5_2025",
+      "label": "Under-5 mortality",
+      "noteRefs": []
+    }
+  ],
+  "note": "\"NA\" denotes that an estimate is not reported. An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed. Figures in parentheses are based on 25-49 unweighted cases. Childhood mortality rates are expressed as the number of deaths per 1,000 live births.",
+  "detailFields": [
+    {
+      "key": "neonatal_2025",
+      "label": "Neonatal mortality (2025)"
+    },
+    {
+      "key": "post_neonatal_2025",
+      "label": "Post-neonatal mortality (2025)"
+    },
+    {
+      "key": "infant_2025",
+      "label": "Infant mortality (2025)"
+    },
+    {
+      "key": "child_2025",
+      "label": "Child mortality (2025)"
+    },
+    {
+      "key": "under5_2025",
+      "label": "Under-5 mortality (2025)"
+    },
+    {
+      "key": "neonatal_2022",
+      "label": "Neonatal mortality (2022)",
+      "displayKey": "neonatal_2022_display"
+    },
+    {
+      "key": "post_neonatal_2022",
+      "label": "Post-neonatal mortality (2022)",
+      "displayKey": "post_neonatal_2022_display"
+    },
+    {
+      "key": "infant_2022",
+      "label": "Infant mortality (2022)",
+      "displayKey": "infant_2022_display"
+    },
+    {
+      "key": "child_2022",
+      "label": "Child mortality (2022)",
+      "displayKey": "child_2022_display"
+    },
+    {
+      "key": "under5_2022",
+      "label": "Under-5 mortality (2022)",
+      "displayKey": "under5_2022_display"
+    },
+    {
+      "key": "psa_note",
+      "label": "Note"
+    }
+  ],
+  "data": {
+    "region": [
+      {
+        "psgc": 1300000000,
+        "neonatal_2025": 12,
+        "post_neonatal_2025": 4,
+        "infant_2025": 16,
+        "child_2025": 3,
+        "under5_2025": 19,
+        "neonatal_2022": 6,
+        "post_neonatal_2022": 2,
+        "infant_2022": 8,
+        "child_2022": 2,
+        "under5_2022": 10
+      },
+      {
+        "psgc": 1400000000,
+        "neonatal_2025": 7,
+        "post_neonatal_2025": 4,
+        "infant_2025": 10,
+        "child_2025": 1,
+        "under5_2025": 12,
+        "neonatal_2022": 10,
+        "post_neonatal_2022": 1,
+        "infant_2022": 10,
+        "child_2022": 3,
+        "under5_2022": 13
+      },
+      {
+        "psgc": 100000000,
+        "neonatal_2025": 7,
+        "post_neonatal_2025": 2,
+        "infant_2025": 9,
+        "child_2025": 6,
+        "under5_2025": 15,
+        "neonatal_2022": 19,
+        "post_neonatal_2022": 10,
+        "infant_2022": 29,
+        "child_2022": 10,
+        "under5_2022": 39
+      },
+      {
+        "psgc": 200000000,
+        "neonatal_2025": 2,
+        "post_neonatal_2025": 5,
+        "infant_2025": 6,
+        "child_2025": 0,
+        "under5_2025": 7,
+        "neonatal_2022": 8,
+        "post_neonatal_2022": 0,
+        "infant_2022": 8,
+        "child_2022": 3,
+        "under5_2022": 11
+      },
+      {
+        "psgc": 300000000,
+        "neonatal_2025": 13,
+        "post_neonatal_2025": 9,
+        "infant_2025": 22,
+        "child_2025": 4,
+        "under5_2025": 26,
+        "neonatal_2022": 11,
+        "post_neonatal_2022": 10,
+        "infant_2022": 21,
+        "child_2022": 2,
+        "under5_2022": 23
+      },
+      {
+        "psgc": 400000000,
+        "neonatal_2025": 15,
+        "post_neonatal_2025": 4,
+        "infant_2025": 18,
+        "child_2025": 2,
+        "under5_2025": 20,
+        "neonatal_2022": 14,
+        "post_neonatal_2022": 5,
+        "infant_2022": 19,
+        "child_2022": 7,
+        "under5_2022": 26
+      },
+      {
+        "psgc": 1700000000,
+        "neonatal_2025": 24,
+        "post_neonatal_2025": 10,
+        "infant_2025": 33,
+        "child_2025": 8,
+        "under5_2025": 41,
+        "neonatal_2022": 15,
+        "post_neonatal_2022": 4,
+        "infant_2022": 19,
+        "child_2022": 8,
+        "under5_2022": 27
+      },
+      {
+        "psgc": 500000000,
+        "neonatal_2025": 10,
+        "post_neonatal_2025": 13,
+        "infant_2025": 23,
+        "child_2025": 7,
+        "under5_2025": 30,
+        "neonatal_2022": 13,
+        "post_neonatal_2022": 2,
+        "infant_2022": 14,
+        "child_2022": 11,
+        "under5_2022": 25
+      },
+      {
+        "psgc": 600000000,
+        "neonatal_2025": 11,
+        "post_neonatal_2025": 8,
+        "infant_2025": 18,
+        "child_2025": 0,
+        "under5_2025": 19,
+        "neonatal_2022": 13,
+        "post_neonatal_2022": 5,
+        "infant_2022": 18,
+        "child_2022": 3,
+        "under5_2022": 21
+      },
+      {
+        "psgc": 1800000000,
+        "neonatal_2025": 3,
+        "post_neonatal_2025": 4,
+        "infant_2025": 7,
+        "child_2025": 7,
+        "under5_2025": 14,
+        "neonatal_2022": null,
+        "post_neonatal_2022": null,
+        "infant_2022": null,
+        "child_2022": null,
+        "under5_2022": null,
+        "neonatal_2022_display": "NA",
+        "post_neonatal_2022_display": "NA",
+        "infant_2022_display": "NA",
+        "child_2022_display": "NA",
+        "under5_2022_display": "NA"
+      },
+      {
+        "psgc": 700000000,
+        "neonatal_2025": 10,
+        "post_neonatal_2025": 0,
+        "infant_2025": 10,
+        "child_2025": 2,
+        "under5_2025": 12,
+        "neonatal_2022": 12,
+        "post_neonatal_2022": 9,
+        "infant_2022": 21,
+        "child_2022": 5,
+        "under5_2022": 26
+      },
+      {
+        "psgc": 800000000,
+        "neonatal_2025": 16,
+        "post_neonatal_2025": 4,
+        "infant_2025": 20,
+        "child_2025": 5,
+        "under5_2025": 25,
+        "neonatal_2022": 14,
+        "post_neonatal_2022": 5,
+        "infant_2022": 18,
+        "child_2022": 9,
+        "under5_2022": 27
+      },
+      {
+        "psgc": 900000000,
+        "neonatal_2025": 14,
+        "post_neonatal_2025": 11,
+        "infant_2025": 25,
+        "child_2025": 5,
+        "under5_2025": 30,
+        "neonatal_2022": 13,
+        "post_neonatal_2022": 14,
+        "infant_2022": 27,
+        "child_2022": 7,
+        "under5_2022": 34,
+        "psa_note": "Region IX includes the province of Sulu in 2025."
+      },
+      {
+        "psgc": 1000000000,
+        "neonatal_2025": 7,
+        "post_neonatal_2025": 5,
+        "infant_2025": 12,
+        "child_2025": 0,
+        "under5_2025": 12,
+        "neonatal_2022": 8,
+        "post_neonatal_2022": 4,
+        "infant_2022": 12,
+        "child_2022": 6,
+        "under5_2022": 19
+      },
+      {
+        "psgc": 1100000000,
+        "neonatal_2025": 7,
+        "post_neonatal_2025": 16,
+        "infant_2025": 23,
+        "child_2025": 8,
+        "under5_2025": 30,
+        "neonatal_2022": 7,
+        "post_neonatal_2022": 6,
+        "infant_2022": 12,
+        "child_2022": 1,
+        "under5_2022": 13
+      },
+      {
+        "psgc": 1200000000,
+        "neonatal_2025": 10,
+        "post_neonatal_2025": 4,
+        "infant_2025": 14,
+        "child_2025": 8,
+        "under5_2025": 22,
+        "neonatal_2022": 17,
+        "post_neonatal_2022": 7,
+        "infant_2022": 24,
+        "child_2022": 5,
+        "under5_2022": 29
+      },
+      {
+        "psgc": 1600000000,
+        "neonatal_2025": 10,
+        "post_neonatal_2025": 9,
+        "infant_2025": 19,
+        "child_2025": 3,
+        "under5_2025": 22,
+        "neonatal_2022": 7,
+        "post_neonatal_2022": 1,
+        "infant_2022": 8,
+        "child_2022": 6,
+        "under5_2022": 14
+      },
+      {
+        "psgc": 1900000000,
+        "neonatal_2025": 4,
+        "post_neonatal_2025": 2,
+        "infant_2025": 5,
+        "child_2025": 3,
+        "under5_2025": 8,
+        "neonatal_2022": 8,
+        "post_neonatal_2022": 12,
+        "infant_2022": 20,
+        "child_2022": 8,
+        "under5_2022": 28
+      }
+    ],
+    "province": [],
+    "municity": []
+  },
+  "chartData": {
+    "title": "Ten-Year Early Childhood Mortality Rates",
+    "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates by additional characteristics, Philippines, 2022 and 2025.",
+    "xLabel": "Mortality rate (per 1,000 live births)",
+    "xMax": 60,
+    "series": [
+      {
+        "key": "neonatal_rate",
+        "label": "Neonatal mortality (NN)",
+        "color": "#1f4f8c"
+      },
+      {
+        "key": "post_neonatal_rate",
+        "label": "Post-neonatal mortality (PNN)",
+        "color": "#3d6faa"
+      },
+      {
+        "key": "infant_rate",
+        "label": "Infant mortality (1q0)",
+        "color": "#5f8fbd"
+      },
+      {
+        "key": "child_rate",
+        "label": "Child mortality (4q1)",
+        "color": "#7cb0cc"
+      },
+      {
+        "key": "under5_rate",
+        "label": "Under-5 mortality (5q0)",
+        "color": "#9cc7d8"
+      }
+    ],
+    "notes": [
+      "Childhood mortality rates are expressed as the number of deaths per 1,000 live births.",
+      "Neonatal mortality: Deaths within the first 28 days of life",
+      "Postneonatal mortality: The difference between infant and neonatal mortality",
+      "Infant mortality: Deaths before the first birthday",
+      "Child mortality: Deaths between the first and fifth birthday",
+      "Under-five mortality: Deaths before the fifth birthday"
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+    "blocks": [
+      {
+        "title": "Mother's age at birth (in years)",
+        "year": "2025",
+        "rows": [
+          {
+            "label": "<20",
+            "neonatal_rate": 11,
+            "post_neonatal_rate": 9,
+            "infant_rate": 20,
+            "child_rate": 7,
+            "under5_rate": 26
+          },
+          {
+            "label": "20-29",
+            "neonatal_rate": 11,
+            "post_neonatal_rate": 6,
+            "infant_rate": 17,
+            "child_rate": 3,
+            "under5_rate": 20
+          },
+          {
+            "label": "30-39",
+            "neonatal_rate": 9,
+            "post_neonatal_rate": 5,
+            "infant_rate": 13,
+            "child_rate": 4,
+            "under5_rate": 18
+          },
+          {
+            "label": "40-49",
+            "neonatal_rate": 17,
+            "post_neonatal_rate": 15,
+            "infant_rate": 32,
+            "child_rate": 6,
+            "under5_rate": 37
+          }
+        ]
+      },
+      {
+        "title": "Mother's age at birth (in years)",
+        "year": "2022",
+        "rows": [
+          {
+            "label": "<20",
+            "neonatal_rate": 12,
+            "post_neonatal_rate": 12,
+            "infant_rate": 24,
+            "child_rate": 7,
+            "under5_rate": 30
+          },
+          {
+            "label": "20-29",
+            "neonatal_rate": 10,
+            "post_neonatal_rate": 4,
+            "infant_rate": 14,
+            "child_rate": 4,
+            "under5_rate": 18
+          },
+          {
+            "label": "30-39",
+            "neonatal_rate": 11,
+            "post_neonatal_rate": 8,
+            "infant_rate": 19,
+            "child_rate": 7,
+            "under5_rate": 25
+          },
+          {
+            "label": "40-49",
+            "neonatal_rate": 25,
+            "post_neonatal_rate": 8,
+            "infant_rate": 33,
+            "child_rate": 8,
+            "under5_rate": 41
+          }
+        ]
+      },
+      {
+        "title": "Birth order",
+        "year": "2025",
+        "rows": [
+          {
+            "label": "1",
+            "neonatal_rate": 14,
+            "post_neonatal_rate": 6,
+            "infant_rate": 20,
+            "child_rate": 5,
+            "under5_rate": 25
+          },
+          {
+            "label": "2-3",
+            "neonatal_rate": 7,
+            "post_neonatal_rate": 5,
+            "infant_rate": 12,
+            "child_rate": 3,
+            "under5_rate": 15
+          },
+          {
+            "label": "4-6",
+            "neonatal_rate": 11,
+            "post_neonatal_rate": 6,
+            "infant_rate": 17,
+            "child_rate": 5,
+            "under5_rate": 22
+          },
+          {
+            "label": "7+",
+            "neonatal_rate": 23,
+            "post_neonatal_rate": 23,
+            "infant_rate": 46,
+            "child_rate": 12,
+            "under5_rate": 57
+          }
+        ]
+      },
+      {
+        "title": "Birth order",
+        "year": "2022",
+        "rows": [
+          {
+            "label": "1",
+            "neonatal_rate": 12,
+            "post_neonatal_rate": 7,
+            "infant_rate": 18,
+            "child_rate": 4,
+            "under5_rate": 22
+          },
+          {
+            "label": "2-3",
+            "neonatal_rate": 10,
+            "post_neonatal_rate": 5,
+            "infant_rate": 15,
+            "child_rate": 4,
+            "under5_rate": 19
+          },
+          {
+            "label": "4-6",
+            "neonatal_rate": 12,
+            "post_neonatal_rate": 8,
+            "infant_rate": 20,
+            "child_rate": 6,
+            "under5_rate": 26
+          },
+          {
+            "label": "7+",
+            "neonatal_rate": 18,
+            "post_neonatal_rate": 13,
+            "infant_rate": 32,
+            "child_rate": 23,
+            "under5_rate": 54
+          }
+        ]
+      },
+      {
+        "title": "Previous birth interval²",
+        "year": "2025",
+        "rows": [
+          {
+            "label": "<2 years",
+            "neonatal_rate": 7,
+            "post_neonatal_rate": 10,
+            "infant_rate": 17,
+            "child_rate": 4,
+            "under5_rate": 21
+          },
+          {
+            "label": "2 years",
+            "neonatal_rate": 10,
+            "post_neonatal_rate": 4,
+            "infant_rate": 15,
+            "child_rate": 5,
+            "under5_rate": 20
+          },
+          {
+            "label": "3 years",
+            "neonatal_rate": 9,
+            "post_neonatal_rate": 9,
+            "infant_rate": 18,
+            "child_rate": 4,
+            "under5_rate": 22
+          },
+          {
+            "label": "4+ years",
+            "neonatal_rate": 9,
+            "post_neonatal_rate": 4,
+            "infant_rate": 13,
+            "child_rate": 2,
+            "under5_rate": 16
+          }
+        ]
+      },
+      {
+        "title": "Previous birth interval²",
+        "year": "2022",
+        "rows": [
+          {
+            "label": "<2 years",
+            "neonatal_rate": 14,
+            "post_neonatal_rate": 6,
+            "infant_rate": 20,
+            "child_rate": 9,
+            "under5_rate": 30
+          },
+          {
+            "label": "2 years",
+            "neonatal_rate": 8,
+            "post_neonatal_rate": 5,
+            "infant_rate": 14,
+            "child_rate": 4,
+            "under5_rate": 18
+          },
+          {
+            "label": "3 years",
+            "neonatal_rate": 16,
+            "post_neonatal_rate": 8,
+            "infant_rate": 24,
+            "child_rate": 5,
+            "under5_rate": 28
+          },
+          {
+            "label": "4+ years",
+            "neonatal_rate": 9,
+            "post_neonatal_rate": 6,
+            "infant_rate": 15,
+            "child_rate": 6,
+            "under5_rate": 21
+          }
+        ]
+      },
+      {
+        "title": "Mother's educational attainment",
+        "year": "2025",
+        "rows": [
+          {
+            "label": "No education",
+            "neonatal_rate": 11,
+            "post_neonatal_rate": 19,
+            "infant_rate": 30,
+            "child_rate": 0,
+            "under5_rate": 30
+          },
+          {
+            "label": "Grades 1-6",
+            "neonatal_rate": 11,
+            "post_neonatal_rate": 7,
+            "infant_rate": 18,
+            "child_rate": 6,
+            "under5_rate": 24
+          },
+          {
+            "label": "Grades 7-10",
+            "neonatal_rate": 13,
+            "post_neonatal_rate": 7,
+            "infant_rate": 19,
+            "child_rate": 4,
+            "under5_rate": 23
+          },
+          {
+            "label": "Grades 11-12",
+            "neonatal_rate": 10,
+            "post_neonatal_rate": 8,
+            "infant_rate": 18,
+            "child_rate": 1,
+            "under5_rate": 19
+          },
+          {
+            "label": "Postsecondary",
+            "neonatal_rate": 9,
+            "post_neonatal_rate": 0,
+            "infant_rate": 9,
+            "child_rate": 0,
+            "under5_rate": 9
+          },
+          {
+            "label": "College",
+            "neonatal_rate": 8,
+            "post_neonatal_rate": 4,
+            "infant_rate": 12,
+            "child_rate": 3,
+            "under5_rate": 16
+          }
+        ]
+      },
+      {
+        "title": "Mother's educational attainment",
+        "year": "2022",
+        "rows": [
+          {
+            "label": "No education",
+            "neonatal_rate": 14,
+            "post_neonatal_rate": 12,
+            "infant_rate": 26,
+            "child_rate": 20,
+            "under5_rate": 46
+          },
+          {
+            "label": "Grades 1-6",
+            "neonatal_rate": 13,
+            "post_neonatal_rate": 9,
+            "infant_rate": 22,
+            "child_rate": 11,
+            "under5_rate": 33
+          },
+          {
+            "label": "Grades 7-10",
+            "neonatal_rate": 13,
+            "post_neonatal_rate": 7,
+            "infant_rate": 19,
+            "child_rate": 5,
+            "under5_rate": 25
+          },
+          {
+            "label": "Grades 11-12",
+            "neonatal_rate": 10,
+            "post_neonatal_rate": 21,
+            "infant_rate": 31,
+            "child_rate": null,
+            "under5_rate": null
+          },
+          {
+            "label": "Postsecondary",
+            "neonatal_rate": 22,
+            "post_neonatal_rate": 6,
+            "infant_rate": 29,
+            "child_rate": 0,
+            "under5_rate": 29
+          },
+          {
+            "label": "College",
+            "neonatal_rate": 7,
+            "post_neonatal_rate": 3,
+            "infant_rate": 10,
+            "child_rate": 2,
+            "under5_rate": 12
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2025",
+        "rows": [
+          {
+            "label": "Lowest",
+            "neonatal_rate": 11,
+            "post_neonatal_rate": 8,
+            "infant_rate": 19,
+            "child_rate": 6,
+            "under5_rate": 25
+          },
+          {
+            "label": "Second",
+            "neonatal_rate": 17,
+            "post_neonatal_rate": 4,
+            "infant_rate": 21,
+            "child_rate": 4,
+            "under5_rate": 24
+          },
+          {
+            "label": "Middle",
+            "neonatal_rate": 6,
+            "post_neonatal_rate": 5,
+            "infant_rate": 11,
+            "child_rate": 3,
+            "under5_rate": 14
+          },
+          {
+            "label": "Fourth",
+            "neonatal_rate": 10,
+            "post_neonatal_rate": 8,
+            "infant_rate": 18,
+            "child_rate": 5,
+            "under5_rate": 22
+          },
+          {
+            "label": "Highest",
+            "neonatal_rate": 9,
+            "post_neonatal_rate": 3,
+            "infant_rate": 12,
+            "child_rate": 1,
+            "under5_rate": 13
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "year": "2022",
+        "rows": [
+          {
+            "label": "Lowest",
+            "neonatal_rate": 14,
+            "post_neonatal_rate": 10,
+            "infant_rate": 24,
+            "child_rate": 11,
+            "under5_rate": 35
+          },
+          {
+            "label": "Second",
+            "neonatal_rate": 13,
+            "post_neonatal_rate": 4,
+            "infant_rate": 17,
+            "child_rate": 6,
+            "under5_rate": 23
+          },
+          {
+            "label": "Middle",
+            "neonatal_rate": 15,
+            "post_neonatal_rate": 7,
+            "infant_rate": 23,
+            "child_rate": 2,
+            "under5_rate": 25
+          },
+          {
+            "label": "Fourth",
+            "neonatal_rate": 5,
+            "post_neonatal_rate": 6,
+            "infant_rate": 11,
+            "child_rate": 2,
+            "under5_rate": 13
+          },
+          {
+            "label": "Highest",
+            "neonatal_rate": 4,
+            "post_neonatal_rate": 2,
+            "infant_rate": 6,
+            "child_rate": 1,
+            "under5_rate": 8
+          }
+        ]
+      }
+    ]
+  },
+  "tableData": {
+    "title": "Ten-Year Early Childhood Mortality Rates",
+    "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the ten-year period preceding the survey, according to additional characteristics: Philippines, 2022 and 2025.",
+    "tables": [
+      {
+        "title": "Mother's age at birth (in years)",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "<20",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "11",
+              "9",
+              "20",
+              "7",
+              "26",
+              "12",
+              "12",
+              "24",
+              "7",
+              "30"
+            ]
+          },
+          {
+            "label": "20-29",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "11",
+              "6",
+              "17",
+              "3",
+              "20",
+              "10",
+              "4",
+              "14",
+              "4",
+              "18"
+            ]
+          },
+          {
+            "label": "30-39",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "9",
+              "5",
+              "13",
+              "4",
+              "18",
+              "11",
+              "8",
+              "19",
+              "7",
+              "25"
+            ]
+          },
+          {
+            "label": "40-49",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "17",
+              "15",
+              "32",
+              "(6)",
+              "(37)",
+              "25",
+              "8",
+              "33",
+              "(8)",
+              "(41)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Birth order",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "1",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "14",
+              "6",
+              "20",
+              "5",
+              "25",
+              "12",
+              "7",
+              "18",
+              "4",
+              "22"
+            ]
+          },
+          {
+            "label": "2-3",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "7",
+              "5",
+              "12",
+              "3",
+              "15",
+              "10",
+              "5",
+              "15",
+              "4",
+              "19"
+            ]
+          },
+          {
+            "label": "4-6",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "11",
+              "6",
+              "17",
+              "5",
+              "22",
+              "12",
+              "8",
+              "20",
+              "6",
+              "26"
+            ]
+          },
+          {
+            "label": "7+",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "23",
+              "23",
+              "46",
+              "12",
+              "57",
+              "18",
+              "13",
+              "32",
+              "23",
+              "54"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Previous birth interval²",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "<2 years",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "7",
+              "10",
+              "17",
+              "4",
+              "21",
+              "14",
+              "6",
+              "20",
+              "9",
+              "30"
+            ]
+          },
+          {
+            "label": "2 years",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "10",
+              "4",
+              "15",
+              "5",
+              "20",
+              "8",
+              "5",
+              "14",
+              "4",
+              "18"
+            ]
+          },
+          {
+            "label": "3 years",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "9",
+              "9",
+              "18",
+              "4",
+              "22",
+              "16",
+              "8",
+              "24",
+              "5",
+              "28"
+            ]
+          },
+          {
+            "label": "4+ years",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "9",
+              "4",
+              "13",
+              "2",
+              "16",
+              "9",
+              "6",
+              "15",
+              "6",
+              "21"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Region",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "12",
+              "4",
+              "16",
+              "3",
+              "19",
+              "6",
+              "2",
+              "8",
+              "2",
+              "10"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "7",
+              "4",
+              "10",
+              "1",
+              "12",
+              "10",
+              "1",
+              "10",
+              "3",
+              "13"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "7",
+              "2",
+              "9",
+              "6",
+              "15",
+              "19",
+              "10",
+              "29",
+              "10",
+              "39"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "2",
+              "5",
+              "6",
+              "0",
+              "7",
+              "8",
+              "0",
+              "8",
+              "3",
+              "11"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "13",
+              "9",
+              "22",
+              "4",
+              "26",
+              "11",
+              "10",
+              "21",
+              "2",
+              "23"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "15",
+              "4",
+              "18",
+              "2",
+              "20",
+              "14",
+              "5",
+              "19",
+              "7",
+              "26"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "24",
+              "10",
+              "33",
+              "8",
+              "41",
+              "15",
+              "4",
+              "19",
+              "8",
+              "27"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "10",
+              "13",
+              "23",
+              "7",
+              "30",
+              "13",
+              "2",
+              "14",
+              "11",
+              "25"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "11",
+              "8",
+              "18",
+              "0",
+              "19",
+              "13",
+              "5",
+              "18",
+              "3",
+              "21"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "3",
+              "4",
+              "7",
+              "7",
+              "14",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "10",
+              "0",
+              "10",
+              "2",
+              "12",
+              "12",
+              "9",
+              "21",
+              "5",
+              "26"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "16",
+              "4",
+              "20",
+              "5",
+              "25",
+              "14",
+              "5",
+              "18",
+              "9",
+              "27"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "³",
+            "rowClass": "",
+            "values": [
+              "14",
+              "11",
+              "25",
+              "5",
+              "30",
+              "13",
+              "14",
+              "27",
+              "7",
+              "34"
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "7",
+              "5",
+              "12",
+              "0",
+              "12",
+              "8",
+              "4",
+              "12",
+              "6",
+              "19"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "7",
+              "16",
+              "23",
+              "8",
+              "30",
+              "7",
+              "6",
+              "12",
+              "1",
+              "13"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "10",
+              "4",
+              "14",
+              "8",
+              "22",
+              "17",
+              "7",
+              "24",
+              "5",
+              "29"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "10",
+              "9",
+              "19",
+              "3",
+              "22",
+              "7",
+              "1",
+              "8",
+              "6",
+              "14"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "4",
+              "2",
+              "5",
+              "3",
+              "8",
+              "8",
+              "12",
+              "20",
+              "8",
+              "28"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Mother's educational attainment",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "(11)",
+              "(19)",
+              "(30)",
+              "0",
+              "(30)",
+              "(14)",
+              "(12)",
+              "(26)",
+              "(20)",
+              "(46)"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "11",
+              "7",
+              "18",
+              "6",
+              "24",
+              "13",
+              "9",
+              "22",
+              "11",
+              "33"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "13",
+              "7",
+              "19",
+              "4",
+              "23",
+              "13",
+              "7",
+              "19",
+              "5",
+              "25"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "10",
+              "8",
+              "18",
+              "(1)",
+              "(19)",
+              "(10)",
+              "(21)",
+              "(31)",
+              "*",
+              "*"
+            ]
+          },
+          {
+            "label": "Postsecondary",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "(9)",
+              "0",
+              "(9)",
+              "0",
+              "(9)",
+              "(22)",
+              "(6)",
+              "(29)",
+              "0",
+              "(29)"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "8",
+              "4",
+              "12",
+              "3",
+              "16",
+              "7",
+              "3",
+              "10",
+              "2",
+              "12"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Neonatal mortality (NN)"
+              },
+              {
+                "label": "Post-neonatal mortality (PNN)"
+              },
+              {
+                "label": "Infant mortality (1q0)"
+              },
+              {
+                "label": "Child mortality (4q1)"
+              },
+              {
+                "label": "Under-5 mortality (5q0)"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "11",
+              "8",
+              "19",
+              "6",
+              "25",
+              "14",
+              "10",
+              "24",
+              "11",
+              "35"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "17",
+              "4",
+              "21",
+              "4",
+              "24",
+              "13",
+              "4",
+              "17",
+              "6",
+              "23"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "6",
+              "5",
+              "11",
+              "3",
+              "14",
+              "15",
+              "7",
+              "23",
+              "2",
+              "25"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "10",
+              "8",
+              "18",
+              "5",
+              "22",
+              "5",
+              "6",
+              "11",
+              "2",
+              "13"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "9",
+              "3",
+              "12",
+              "1",
+              "13",
+              "4",
+              "2",
+              "6",
+              "1",
+              "8"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "Childhood mortality rates are expressed as the number of deaths per 1,000 live births.",
+      "Neonatal mortality: Deaths within the first 28 days of life",
+      "Postneonatal mortality: The difference between infant and neonatal mortality",
+      "Infant mortality: Deaths before the first birthday",
+      "Child mortality: Deaths between the first and fifth birthday",
+      "Under-five mortality: Deaths before the fifth birthday"
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "title": "Insights on Ten-Year Early Childhood Mortality Rates",
+    "subtitle": "Long-form analysis of regional divides and subgroup patterns in neonatal, infant, child, and under-5 mortality.",
+    "overview": "The clearest story in the ten-year mortality data is the depth of regional inequality rather than a single national pattern. In 2025, under-5 mortality ranges from 7 in Cagayan Valley and 8 in BARMM to 41 in MIMAROPA, with Bicol, Zamboanga Peninsula, and Davao Region also at 30. That spread means families face very different early-childhood survival conditions depending on where they live, and the component rates show these are not all the same type of mortality burden.",
+    "sections": [
+      {
+        "heading": "Regional divide is wide enough to change the national reading",
+        "body": "The 2025 regional spread is broad across all five indicators, but most visibly in under-5 mortality. Under-5 ranges from 7 (Cagayan Valley) to 41 (MIMAROPA), while infant mortality ranges from 5 to 33 and neonatal mortality from 2 to 24. A national average would sit between very different regional realities, so interpretation needs to keep geography at the center rather than as a side table."
+      },
+      {
+        "heading": "High under-5 regions do not share the same component profile",
+        "body": "Regions with similarly high under-5 levels are not high for the same reasons. MIMAROPA is high in both neonatal (24) and infant mortality (33), while Davao Region reaches under-5 of 30 with much heavier post-neonatal load (16) than neonatal (7). Zamboanga Peninsula also combines elevated post-neonatal (11) with high infant mortality (25). This matters because a single under-5 figure can hide different age-of-death concentration patterns."
+      },
+      {
+        "heading": "Regional change from 2022 to 2025 is uneven, not one-directional",
+        "body": "Some regions post large declines in under-5 mortality, including Ilocos (-24), BARMM (-20), and Central Visayas (-14). At the same time, several regions move in the opposite direction, led by Davao Region (+17), MIMAROPA (+14), and NCR (+9). The regional map is therefore not just 'improving everywhere'; it shows simultaneous improvement and deterioration across different places."
+      },
+      {
+        "heading": "Birth order remains a strong risk separator, especially at very high parity",
+        "body": "By birth order, the 2025 profile is steep at the top end. Under-5 mortality is 15 for births of order 2-3, rises to 22 for 4-6, and reaches 57 at 7+, with infant mortality at 46 and post-neonatal at 23 for 7+. This pattern signals that very high-parity births still carry concentrated risk in the ten-year window."
+      },
+      {
+        "heading": "Maternal age shows higher mortality at both young and older extremes",
+        "body": "Children born to mothers under age 20 and ages 40-49 have higher under-5 mortality than those in ages 20-39. In 2025, under-5 is 26 for mothers under 20, 20 for ages 20-29, 18 for ages 30-39, and 37 for ages 40-49. Older maternal ages also show especially high infant (32) and post-neonatal (15) mortality in 2025."
+      },
+      {
+        "heading": "Shorter birth intervals are linked to less favorable outcomes",
+        "body": "The previous birth interval breakdown shows better outcomes for longer spacing. In 2025, under-5 mortality is 21 for intervals under 2 years, 20 for 2 years, 22 for 3 years, and 16 for 4+ years. Neonatal mortality is also lower at longer spacing (9 at 4+ years versus 14 in 2022 and 7 in 2025 for under 2 years), while child mortality is lowest in the longest interval group."
+      },
+      {
+        "heading": "Education and wealth gradients exist, but are not perfectly linear",
+        "body": "The 2025 socioeconomic profile still shows disadvantage at the lower end, but not as a smooth step-by-step ladder. Under-5 mortality is 25 in the lowest wealth quintile versus 13 in the highest, yet the middle and fourth quintiles do not line up monotonically (14 and 22). Education shows a similar pattern: no education is highest at 30, college is lower at 16, and postsecondary is lowest at 9. The direction is clear overall, but subgroup composition and sample constraints likely shape irregular steps between categories."
+      }
+    ],
+    "takeaways": [
+      "Regional divides are the dominant feature of the ten-year mortality data, with under-5 mortality ranging from 7 to 41 across regions in 2025.",
+      "High-mortality regions do not have identical profiles: some are driven more by neonatal mortality, while others are driven more by post-neonatal and infant mortality.",
+      "Birth order, maternal age, and birth spacing still separate risk sharply, especially at very high birth order and older maternal ages.",
+      "Socioeconomic disadvantage remains visible in mortality outcomes, even though education and wealth patterns are not perfectly linear across every subgroup."
+    ]
+  },
+  "notes": {
+    "neonatal_2025": "Neonatal mortality: Deaths within the first 28 days of life",
+    "post_neonatal_2025": "Postneonatal mortality: The difference between infant and neonatal mortality",
+    "infant_2025": "Infant mortality: Deaths before the first birthday",
+    "child_2025": "Child mortality: Deaths between the first and fifth birthday",
+    "under5_2025": "Under-five mortality: Deaths before the fifth birthday"
+  }
+}

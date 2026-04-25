@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -507,7 +507,7 @@ const tabButtons = Array.from(document.querySelectorAll('.tab-btn'));
 
 function normalizeText(value) {
   return String(value ?? '')
-    .replace(/Â(?=[¹²³⁴⁵⁶⁷⁸⁹⁰])/g, '')
+    .replace(/Ã‚(?=[Â¹Â²Â³â´âµâ¶â·â¸â¹â°])/g, '')
     .trim();
 }
 
@@ -862,7 +862,7 @@ function renderInsights(insights) {
   const header = document.createElement('div');
   header.innerHTML = `
     <div class="insights-page-title">${normalizeText(insights.title || config.title || '')}</div>
-    <div class="insights-page-subtitle">${normalizeText(insights.subtitle || '')}</div>
+    <div class="insights-page-subtitle">AI-generated insights based on National Demographic and Health Survey data</div>
   `;
   insightsContainer.appendChild(header);
 
@@ -957,3 +957,4 @@ loadPage();
 </script>
 </body>
 </html>
+

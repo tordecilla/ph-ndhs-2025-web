@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "Fertility Rate",
   "subtitle": "",
   "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
@@ -529,21 +529,149 @@
       "title": "Age-Specific and Total Fertility Rates",
       "subtitle": "Age-specific and total fertility rates, general fertility rate, and the crude birth rate for the 3 years preceding the survey, according to residence: Philippines, 2022 and 2025",
       "colGroups": [
-        { "label": "2025", "cols": ["Urban", "Rural", "Total"] },
-        { "label": "2022", "cols": ["Urban", "Rural", "Total"] }
+        {
+          "label": "2025",
+          "cols": [
+            "Urban",
+            "Rural",
+            "Total"
+          ]
+        },
+        {
+          "label": "2022",
+          "cols": [
+            "Urban",
+            "Rural",
+            "Total"
+          ]
+        }
       ],
       "rows": [
-        { "label": "10-14", "noteRef": "â´", "values": ["[0]", "[1]", "[1]", "[0]", "[0]", "[0]"] },
-        { "label": "15-19", "values": ["20", "26", "22", "22", "28", "25"] },
-        { "label": "20-24", "values": ["56", "84", "67", "71", "102", "84"] },
-        { "label": "25-29", "values": ["85", "108", "94", "95", "120", "105"] },
-        { "label": "30-34", "values": ["79", "91", "84", "84", "108", "95"] },
-        { "label": "35-39", "values": ["50", "68", "58", "55", "63", "58"] },
-        { "label": "40-44", "values": ["13", "22", "17", "16", "27", "21"] },
-        { "label": "45-49", "values": ["[2]", "[3]", "[3]", "[1]", "[2]", "[2]"] },
-        { "label": "TFR (15-49)", "noteRef": "¹", "values": ["1.5", "2.0", "1.7", "1.7", "2.2", "1.9"] },
-        { "label": "GFR", "noteRef": "²", "values": ["50", "65", "57", "57", "72", "63"] },
-        { "label": "CBR", "noteRef": "³", "values": ["11.0", "12.4", "11.6", "12.7", "14.0", "13.3"] }
+        {
+          "label": "10-14",
+          "noteRef": "â´",
+          "values": [
+            "[0]",
+            "[1]",
+            "[1]",
+            "[0]",
+            "[0]",
+            "[0]"
+          ]
+        },
+        {
+          "label": "15-19",
+          "values": [
+            "20",
+            "26",
+            "22",
+            "22",
+            "28",
+            "25"
+          ]
+        },
+        {
+          "label": "20-24",
+          "values": [
+            "56",
+            "84",
+            "67",
+            "71",
+            "102",
+            "84"
+          ]
+        },
+        {
+          "label": "25-29",
+          "values": [
+            "85",
+            "108",
+            "94",
+            "95",
+            "120",
+            "105"
+          ]
+        },
+        {
+          "label": "30-34",
+          "values": [
+            "79",
+            "91",
+            "84",
+            "84",
+            "108",
+            "95"
+          ]
+        },
+        {
+          "label": "35-39",
+          "values": [
+            "50",
+            "68",
+            "58",
+            "55",
+            "63",
+            "58"
+          ]
+        },
+        {
+          "label": "40-44",
+          "values": [
+            "13",
+            "22",
+            "17",
+            "16",
+            "27",
+            "21"
+          ]
+        },
+        {
+          "label": "45-49",
+          "values": [
+            "[2]",
+            "[3]",
+            "[3]",
+            "[1]",
+            "[2]",
+            "[2]"
+          ]
+        },
+        {
+          "label": "TFR (15-49)",
+          "noteRef": "¹",
+          "values": [
+            "1.5",
+            "2.0",
+            "1.7",
+            "1.7",
+            "2.2",
+            "1.9"
+          ]
+        },
+        {
+          "label": "GFR",
+          "noteRef": "²",
+          "values": [
+            "50",
+            "65",
+            "57",
+            "57",
+            "72",
+            "63"
+          ]
+        },
+        {
+          "label": "CBR",
+          "noteRef": "³",
+          "values": [
+            "11.0",
+            "12.4",
+            "11.6",
+            "12.7",
+            "14.0",
+            "13.3"
+          ]
+        }
       ],
       "footnotes": [
         "¹ Total fertility rate expressed per woman aged 15â€“49 years.",
@@ -558,7 +686,10 @@
     "tfr": {
       "title": "Total Fertility Rate",
       "subtitle": "Total fertility rate for the 3 years preceding the survey, according to background characteristics: Philippines, 2022 and 2025",
-      "total": { "v2025": "1.7", "v2022": "1.9" },
+      "total": {
+        "v2025": "1.7",
+        "v2022": "1.9"
+      },
       "footnotes": [
         "¹ Region IX includes the province of Sulu in 2025.",
         "Total fertility rate is expressed per woman aged 15â€“49 years.",
@@ -567,4 +698,3 @@
     }
   }
 }
-

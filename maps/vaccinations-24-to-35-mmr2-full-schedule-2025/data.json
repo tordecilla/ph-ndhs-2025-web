@@ -1,0 +1,905 @@
+{
+  "sectionTitle": "VACCINATIONS",
+  "title": "Children Aged 24 to 35 Months - MMR 2 and Full Vaccination Schedule",
+  "description": "MMR 2 and full schedule vaccination among children aged 24 to 35 months by background characteristics: Philippines, 2022 and 2025.",
+  "definitions": {
+    "fully_vaccinated_according_to_national_schedule": "BCG, HepB (birth dose), three doses of DPT-containing vaccine, three doses of OPV, two doses of IPV, three doses of PCV, and two doses of MMR."
+  },
+  "notes": {
+    "mmr_2": "MMR = Measles, mumps, rubella.",
+    "fully_vaccinated_according_to_national_schedule": "BCG = Bacille Calmette-Guerin; DPT = Diphtheria-pertussis-tetanus; HepB = Hepatitis B; OPV = Oral polio vaccine; IPV = Inactivated polio vaccine; PCV = Pneumococcal conjugate vaccine; MMR = Measles, mumps, rubella."
+  },
+  "note": "Children are considered to have received the vaccine if it was either written on the child's vaccination card or reported by the mother. Figures in parentheses are based on 25-49 unweighted cases.",
+  "chartData": {
+    "title": "Children Aged 24 to 35 Months - MMR 2 and Full Vaccination Schedule",
+    "subtitle": "Charts for this page are not yet available.",
+    "notes": [],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+    "blocks": []
+  },
+  "tableData": {
+    "title": "Children Aged 24 to 35 Months - MMR 2 and Full Vaccination Schedule",
+    "subtitle": "Percentage of children aged 24 to 35 months who received MMR 2 and were fully vaccinated according to national schedule: Philippines, 2022 and 2025.",
+    "tables": [
+      {
+        "title": "Total",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": "",
+            "rowClass": "dt-total-row",
+            "values": [
+              "74.2",
+              "55.0",
+              "1527",
+              "66.4",
+              "49.9",
+              "1548"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Sex",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Male",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "73.5",
+              "55.7",
+              "804",
+              "67.4",
+              "50.6",
+              "812"
+            ]
+          },
+          {
+            "label": "Female",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "74.9",
+              "54.2",
+              "722",
+              "65.3",
+              "49.2",
+              "736"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Birth order",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "1",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "77.2",
+              "63.4",
+              "437",
+              "72.6",
+              "54.1",
+              "496"
+            ]
+          },
+          {
+            "label": "2-3",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "71.9",
+              "49.9",
+              "743",
+              "67.9",
+              "52.4",
+              "683"
+            ]
+          },
+          {
+            "label": "4-5",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "76.9",
+              "59.6",
+              "264",
+              "60.8",
+              "44.9",
+              "245"
+            ]
+          },
+          {
+            "label": "6+",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "70.0",
+              "41.8",
+              "83",
+              "44.9",
+              "30.0",
+              "124"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Vaccination card⁵",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Seen",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "88.5",
+              "74.0",
+              "842",
+              "79.3",
+              "65.0",
+              "893"
+            ]
+          },
+          {
+            "label": "Not seen or no longer has",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "61.0",
+              "34.7",
+              "583",
+              "52.9",
+              "32.7",
+              "519"
+            ]
+          },
+          {
+            "label": "Never had",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "31.0",
+              "14.4",
+              "102",
+              "33.3",
+              "16.9",
+              "135"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Residence",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "76.6",
+              "55.8",
+              "818",
+              "65.0",
+              "49.3",
+              "815"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "71.4",
+              "54.2",
+              "709",
+              "68.1",
+              "50.6",
+              "733"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Region",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "77.1",
+              "68.2",
+              "216",
+              "64.2",
+              "48.2",
+              "147"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "59.1",
+              "40.3",
+              "19",
+              "76.7",
+              "59.3",
+              "23"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "95.6",
+              "64.4",
+              "127",
+              "53.8",
+              "43.6",
+              "78"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "64.6",
+              "44.4",
+              "38",
+              "96.3",
+              "83.5",
+              "46"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "79.8",
+              "64.5",
+              "189",
+              "66.7",
+              "54.0",
+              "159"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "78.2",
+              "60.3",
+              "175",
+              "79.4",
+              "59.1",
+              "233"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "69.5",
+              "46.3",
+              "41",
+              "75.1",
+              "42.5",
+              "46"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "78.0",
+              "60.1",
+              "78",
+              "62.1",
+              "46.8",
+              "84"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "84.7",
+              "58.0",
+              "55",
+              "86.1",
+              "64.5",
+              "85"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "(86.3)",
+              "(60.3)",
+              "46",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "71.4",
+              "49.0",
+              "97",
+              "57.6",
+              "44.8",
+              "114"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "80.2",
+              "58.7",
+              "68",
+              "84.8",
+              "65.1",
+              "77"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula⁵",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "50.3",
+              "35.9",
+              "81",
+              "56.3",
+              "47.7",
+              "70"
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "64.8",
+              "40.1",
+              "70",
+              "72.2",
+              "57.8",
+              "58"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "76.2",
+              "66.7",
+              "62",
+              "66.9",
+              "41.5",
+              "85"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "69.0",
+              "37.3",
+              "55",
+              "58.0",
+              "42.5",
+              "93"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "66.9",
+              "45.7",
+              "37",
+              "62.5",
+              "46.0",
+              "43"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "34.8",
+              "14.3",
+              "72",
+              "26.0",
+              "14.3",
+              "104"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Mother's educational attainment",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "(49.8)",
+              "(33.5)",
+              "20",
+              "*",
+              "*",
+              "10"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "65.0",
+              "46.7",
+              "171",
+              "47.5",
+              "35.0",
+              "195"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "76.2",
+              "59.9",
+              "646",
+              "68.0",
+              "52.1",
+              "746"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "68.5",
+              "53.7",
+              "139",
+              "58.4",
+              "35.1",
+              "77"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "*",
+              "*",
+              "20",
+              "(69.0)",
+              "(59.5)",
+              "52"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "77.6",
+              "53.9",
+              "531",
+              "74.0",
+              "55.0",
+              "469"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Wealth quintile",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "MMR 2"
+              },
+              {
+                "label": "Fully vaccinated (according to national schedule)⁴"
+              },
+              {
+                "label": "Total number of children aged 24 to 35 months"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "66.6",
+              "49.3",
+              "461",
+              "51.0",
+              "37.8",
+              "365"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "74.9",
+              "56.7",
+              "317",
+              "69.5",
+              "49.5",
+              "370"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "75.9",
+              "61.0",
+              "271",
+              "72.4",
+              "57.9",
+              "313"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "77.8",
+              "57.3",
+              "228",
+              "70.8",
+              "55.3",
+              "271"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": "",
+            "rowClass": "",
+            "values": [
+              "81.9",
+              "54.8",
+              "249",
+              "72.7",
+              "52.7",
+              "228"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "⁴ BCG, HepB (birth dose), three doses of DPT-containing vaccine, three doses of OPV, two doses of IPV, three doses of PCV, and two doses of MMR.",
+      "Region IX includes the province of Sulu in 2025.",
+      "Children are considered to have received the vaccine if it was either written on the child's vaccination card or reported by the mother.",
+      "For children whose vaccination information is based on the mother's report, date of vaccination is not collected.",
+      "The proportions of vaccinations given during the first and second years of life are assumed to be the same as for children with a written record of vaccination.",
+      "Figures in parentheses are based on 25-49 unweighted cases.",
+      "An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.",
+      "BCG = Bacille Calmette-Guerin.",
+      "DPT = Diphtheria-pertussis-tetanus.",
+      "HepB = Hepatitis B.",
+      "OPV = Oral polio vaccine.",
+      "IPV = Inactivated polio vaccine.",
+      "PCV = Pneumococcal conjugate vaccine.",
+      "MMR = Measles, mumps, rubella."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "title": "Insights on Children Aged 24 to 35 Months - MMR 2 and Full Vaccination Schedule",
+    "subtitle": "Long-form analysis of MMR 2 and full-schedule completion patterns across regions and background characteristics.",
+    "overview": "The national picture improved from 2022 to 2025 for both outcomes, but the bigger story is the widening gap between reaching MMR 2 and completing the full vaccination schedule. Nationally, MMR 2 rose from 66.4 to 74.2 while full-schedule coverage rose from 49.9 to 55.0. That leaves a large 2025 completion gap of 19.2 points, which is wider than in 2022, and it varies sharply across regions and population groups.",
+    "sections": [
+      {
+        "heading": "National progress is real, but the completion gap widened",
+        "body": "Both indicators moved up between 2022 and 2025, but they did not move in parallel. MMR 2 gained about 7.8 points, while full-schedule coverage gained about 5.1 points. As a result, the national MMR 2-to-full-schedule gap increased from 16.5 points in 2022 to 19.2 points in 2025. This means that more children are reaching MMR 2, but conversion to full-schedule completion is not keeping pace."
+      },
+      {
+        "heading": "Regional structure is uneven and not a simple high-low ranking",
+        "body": "Regional ranking changes depending on which indicator is used. Ilocos Region has the highest MMR 2 level (95.6), but NCR leads full-schedule coverage (68.2), with Davao Region close behind (66.7). At the lower end, BARMM is lowest on both outcomes (34.8 MMR 2; 14.3 full schedule), while Zamboanga Peninsula, SOCCSKSARGEN, and Northern Mindanao also sit in the lower full-schedule range. This shows that strong MMR 2 performance does not automatically imply equally strong full-schedule completion."
+      },
+      {
+        "heading": "Some regions improved, while others fell sharply in full-schedule coverage",
+        "body": "Regional change from 2022 to 2025 is mixed. Davao Region, NCR, and Ilocos Region posted large full-schedule gains, but Cagayan Valley and CAR show steep declines, with notable declines also in Northern Mindanao and Zamboanga Peninsula. The national increase therefore reflects strong gains in some regions offsetting significant losses in others."
+      },
+      {
+        "heading": "The MMR 2-to-full-schedule gap is especially wide in several regions",
+        "body": "Large internal gaps indicate where completion falls off after MMR 2 is reached. In 2025, SOCCSKSARGEN, Ilocos Region, Western Visayas, Northern Mindanao, and MIMAROPA show some of the widest gaps between MMR 2 and full-schedule coverage. These gaps suggest that regional systems differ not only in access, but also in how well they sustain children through the full sequence."
+      },
+      {
+        "heading": "Vaccination-card status strongly separates completion outcomes",
+        "body": "Children with cards seen have much higher completion in both years. In 2025, MMR 2 is 88.5 and full schedule is 74.0 among children with cards seen, compared with 61.0 and 34.7 when cards are not seen, and 31.0 and 14.4 among children who never had a card. Card-status differences are among the largest structural divides in the page."
+      },
+      {
+        "heading": "Birth order and socioeconomic position remain powerful stratifiers",
+        "body": "Higher birth order is associated with lower full-schedule completion and wider completion gaps. In 2025, children of birth order 6+ have full-schedule coverage of 41.8 versus 63.4 among first births, and the MMR 2-to-full gap is about twice as large. Wealth and education show similar gradients: lower-wealth and lower-education groups have weaker full-schedule completion, while several higher-wealth groups show relatively high MMR 2 but still substantial completion gaps."
+      },
+      {
+        "heading": "Sex and residence differences are smaller than structural divides",
+        "body": "Differences by sex and residence exist, but they are modest compared with region, card status, and birth-order divides. Urban areas have slightly higher MMR 2 than rural areas, while full-schedule levels are close. Male-female differences are also small in level, suggesting that the larger inequities are tied to geography, documentation, and socioeconomic context rather than sex alone."
+      }
+    ],
+    "takeaways": [
+      "MMR 2 and full-schedule coverage both improved nationally, but the gap between them widened, signaling weaker end-to-end completion.",
+      "Regional divides remain deep: some regions pair high MMR 2 with strong full-schedule coverage, while others show large drop-offs after MMR 2.",
+      "Vaccination-card status is one of the strongest separators of completion, with much lower full-schedule coverage when cards are not seen or never had.",
+      "Higher birth order, lower wealth, and lower maternal education continue to mark groups with weaker full-schedule completion."
+    ]
+  }
+}

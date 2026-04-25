@@ -9,7 +9,7 @@
 <title>Philippines Map</title>
 <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
 <style>
-  /* â”€â”€ Theme variables â”€â”€ */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Theme variables Ã¢â€â‚¬Ã¢â€â‚¬ */
   :root {
     --bg:               #edf1f7;
     --panel-bg:         #ffffff;
@@ -93,12 +93,12 @@
     padding: 28px 28px 56px;
   }
   #tab-charts::-webkit-scrollbar { width: 4px; }
-  #tab-charts::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 2px; }
+  
   #charts-container {
-    max-width: 1220px;
+    max-width: 1480px;
     margin: 0 auto;
   }
-  .chart-page-title {
+.chart-page-title {
     font-size: 20px; font-weight: 600; color: var(--lgu-name-color);
     line-height: 1.25; margin-bottom: 4px;
   }
@@ -334,7 +334,7 @@
     letter-spacing: 0.3px;
   }
 
-  /* â”€â”€ Overlay buttons â”€â”€ */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Overlay buttons Ã¢â€â‚¬Ã¢â€â‚¬ */
   #back-btn, #info-btn {
     position: fixed;
     background: var(--btn-bg);
@@ -358,7 +358,7 @@
     transition: color 0.25s, background 0.25s;
   }
 
-  /* â”€â”€ Detail panel â€” desktop â”€â”€ */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Detail panel Ã¢â‚¬â€ desktop Ã¢â€â‚¬Ã¢â€â‚¬ */
   #detail {
     position: fixed; top: 46px; right: -380px; bottom: 0; width: 360px;
     background: var(--panel-bg); border-left: 1px solid var(--panel-border);
@@ -370,7 +370,7 @@
   #detail.open { right: 0; }
   #detail.peek { right: -285px; }
 
-  /* â”€â”€ Detail panel â€” mobile â”€â”€ */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Detail panel Ã¢â‚¬â€ mobile Ã¢â€â‚¬Ã¢â€â‚¬ */
   @media (pointer: coarse) {
     #detail {
       width: 100%; right: 0; top: auto; bottom: 0; height: 55vh;
@@ -424,7 +424,7 @@
   #detail-body::-webkit-scrollbar { width: 3px; }
   #detail-body::-webkit-scrollbar-thumb { background: var(--scroll-thumb); }
 
-  /* â”€â”€ Data field rows â”€â”€ */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Data field rows Ã¢â€â‚¬Ã¢â€â‚¬ */
   .data-row {
     display: flex; justify-content: space-between; align-items: baseline;
     padding: 8px 0; border-bottom: 1px solid var(--panel-divider);
@@ -437,7 +437,7 @@
   .no-findings { text-align: center; padding: 40px 0; color: var(--no-data-color); font-size: 13px; line-height: 1.8; }
   .section-head { font: 10px 'IBM Plex Mono', monospace; letter-spacing: 1.5px; text-transform: uppercase; color: var(--section-color); margin: 16px 0 8px; }
 
-  /* â”€â”€ Legend â”€â”€ */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Legend Ã¢â€â‚¬Ã¢â€â‚¬ */
   .legend-bar { height: 10px; border-radius: 2px; margin: 6px 0 4px; }
   .legend-ends { display: flex; justify-content: space-between; font: 10px 'IBM Plex Mono', monospace; color: var(--data-label-color); }
 
@@ -494,7 +494,7 @@
     }
   }
 
-  /* â”€â”€ Ranked list â”€â”€ */
+  /* Ã¢â€â‚¬Ã¢â€â‚¬ Ranked list Ã¢â€â‚¬Ã¢â€â‚¬ */
   .ranked-row {
     display: flex; align-items: center; gap: 7px;
     padding: 5px 0; border-bottom: 1px solid var(--panel-divider);
@@ -510,18 +510,18 @@
 </head>
 <body>
 <svg id="map"></svg>
-<button id="back-btn">â† Back</button>
-<button id="info-btn">ℹ Details</button>
-<div id="status">Loadingâ€¦</div>
+<button id="back-btn">Ã¢â€ Â Back</button>
+<button id="info-btn">â„¹ Details</button>
+<div id="status">LoadingÃ¢â‚¬Â¦</div>
 <div id="metric-toggle"></div>
 <div id="detail">
   <div id="detail-header">
     <div id="detail-header-row">
-      <div class="detail-eyebrow" id="detail-eyebrow">â€”</div>
-      <button id="detail-close">✕</button>
+      <div class="detail-eyebrow" id="detail-eyebrow">Ã¢â‚¬â€</div>
+      <button id="detail-close">âœ•</button>
     </div>
-    <div class="detail-lgu-name" id="detail-lgu-name">â€”</div>
-    <div class="detail-region"   id="detail-region">â€”</div>
+    <div class="detail-lgu-name" id="detail-lgu-name">Ã¢â‚¬â€</div>
+    <div class="detail-region"   id="detail-region">Ã¢â‚¬â€</div>
   </div>
   <div id="detail-body"></div>
 </div>
@@ -621,17 +621,17 @@ function switchTab(tab, replace = false, syncHash = true) {
   }
 }
 
-// â”€â”€ Config & data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Config & data Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 let config = {};
 let dataByLevel = { region: {}, province: {}, municity: {} };
 let colorScale  = null;
 let GEO_BASE    = './philippines-json-maps';
 
-// PSGC â†’ display name, populated from psgc-index.json at boot + GeoJSON lazily
+// PSGC Ã¢â€ â€™ display name, populated from psgc-index.json at boot + GeoJSON lazily
 const nameRegistry = {};
-// child PSGC (string) â†’ parent PSGC (string): provinceâ†’region, municityâ†’province
+// child PSGC (string) Ã¢â€ â€™ parent PSGC (string): provinceÃ¢â€ â€™region, municityÃ¢â€ â€™province
 const parentMap = {};
-// province PSGCs (strings) that have at least one municity data record â€” gates drill-down
+// province PSGCs (strings) that have at least one municity data record Ã¢â‚¬â€ gates drill-down
 let provincesWithMunicity = new Set();
 
 function registerNames(features, psgcKey, nameKey) {
@@ -695,7 +695,7 @@ async function loadConfig() {
         .map(r => parentMap[String(r.psgc)])
         .filter(Boolean)
     );
-  } catch(e) { /* psgc-index.json absent â€” names populated lazily from GeoJSON */ }
+  } catch(e) { /* psgc-index.json absent Ã¢â‚¬â€ names populated lazily from GeoJSON */ }
 }
 
 function renderMetricControls() {
@@ -997,7 +997,7 @@ function renderInsights(insights) {
   const header = document.createElement('div');
   header.innerHTML = `
     <div class="insights-page-title">${insights.title || config.title}</div>
-    <div class="insights-page-subtitle">${insights.subtitle || ''}</div>
+    <div class="insights-page-subtitle">AI-generated insights based on National Demographic and Health Survey data</div>
   `;
   insightsContainer.appendChild(header);
 
@@ -1169,13 +1169,13 @@ const hucFeaturesByRegion   = {};
 const W = window.innerWidth, H = window.innerHeight;
 svgEl.setAttribute('viewBox', `0 0 ${W} ${H}`);
 
-// â”€â”€ Zoom & pan â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Zoom & pan Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 const zoom = d3.zoom()
   .scaleExtent([0.5, 20])
   .on('zoom', event => { g.attr('transform', event.transform); });
 
 svg.call(zoom);
-svg.on('dblclick.zoom', null); // disable dblclick zoom â€” we use click for drill-down
+svg.on('dblclick.zoom', null); // disable dblclick zoom Ã¢â‚¬â€ we use click for drill-down
 
 function resetZoom(duration) {
   (duration ? svg.transition().duration(duration) : svg)
@@ -1194,7 +1194,7 @@ let viewStack   = [];
 let currentView = 'idle';
 let nationalFeatures = [], nationalPath;
 
-// â”€â”€ Projection â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Projection Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function makePathFn(lonMin, lonMax, latMin, latMax) {
   const lonSpan = lonMax - lonMin, latSpan = latMax - latMin;
   const scale   = Math.min((W - 2*PAD) / lonSpan, (H - 2*PAD) / latSpan);
@@ -1221,7 +1221,7 @@ function boundsFromFeatures(features) {
   };
 }
 
-// â”€â”€ Labels â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Labels Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function shortenName(name, nameKey) {
   if (!name) return '';
   // For region names like "Region I (Ilocos Region)" extract the parenthetical
@@ -1231,7 +1231,7 @@ function shortenName(name, nameKey) {
     return name;          // e.g. "CARAGA", "MIMAROPA"
   }
   // For provinces / cities: truncate only if very long
-  return name.length > 20 ? name.slice(0, 18) + 'â€¦' : name;
+  return name.length > 20 ? name.slice(0, 18) + 'Ã¢â‚¬Â¦' : name;
 }
 
 function addLabels(features, pathFn, nameKey, fontSize) {
@@ -1252,7 +1252,7 @@ function addLabels(features, pathFn, nameKey, fontSize) {
     .attr('opacity', 1);
 }
 
-// â”€â”€ Fade helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Fade helpers Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function fadeIn(sel) {
   sel.attr('opacity', 0).transition().duration(400).ease(d3.easeCubicOut).attr('opacity', 1);
 }
@@ -1269,7 +1269,7 @@ function zoomThenRender(pathFn, feature, callback) {
     });
 }
 
-// â”€â”€ URL routing â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ URL routing Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function pushURL(hash, replace = false) {
   try { window.parent.postMessage({ type: 'child-hash', hash }, '*'); } catch (e) {}
   if (replace) {
@@ -1385,7 +1385,7 @@ function getHUCsForProvince(provPsgc) {
   return hucFeaturesByProvince[provPsgc] || [];
 }
 
-// â”€â”€ Back â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Back Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function goBack() {
   if (viewStack.length < 2) return;
   currentView = 'idle';
@@ -1406,7 +1406,7 @@ backBtn.addEventListener('click', () => {
   goBack();
 });
 
-// â”€â”€ National â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ National Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 async function loadNational() {
   await ensureNational();
   viewStack = [{ render: drawNational }];
@@ -1488,10 +1488,10 @@ function drawNational(updateURL = true) {
       status.textContent = nationalFeatures.length + ' regions - click a region for details';
     });
   }
-  status.textContent = nationalFeatures.length + ' regions â€” click to drill in';
+  status.textContent = nationalFeatures.length + ' regions Ã¢â‚¬â€ click to drill in';
 }
 
-// â”€â”€ Region â†’ provinces â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Region Ã¢â€ â€™ provinces Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function drillRegion(regionFeature, skipAnimation, afterRender) {
   if (currentView === 'idle') return;
   currentView = 'idle';
@@ -1507,8 +1507,8 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
       currentView = 'region';
       currentContext = { name, parentName: 'Philippines', psgc, type: 'region' };
       backBtn.style.display = 'block';
-      backBtn.textContent = 'â† Philippines';
-      setPageTitle(name + ' â€” ' + config.title);
+      backBtn.textContent = 'Ã¢â€ Â Philippines';
+      setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
       showInfoBtn();
       if (detail.classList.contains('open')) populateDetail(name, 'Philippines', psgc, 'region');
       resetZoom();
@@ -1584,7 +1584,7 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
       }
 
       const unit = isMunicity ? 'cities/municipalities' : 'provinces';
-      status.textContent = `${name} â€” ${features.length} ${unit}`;
+      status.textContent = `${name} Ã¢â‚¬â€ ${features.length} ${unit}`;
 
       if (afterRender) afterRender(provPath, features, nameKey);
     };
@@ -1623,7 +1623,7 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
   }
 }
 
-// â”€â”€ Municipality â†’ isolated city view â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Municipality Ã¢â€ â€™ isolated city view Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
   if (currentView === 'idle') return;
   currentView = 'idle';
@@ -1642,8 +1642,8 @@ function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
     currentView = 'municity';
     currentContext = { name, parentName, psgc, type: 'municity' };
     backBtn.style.display = 'block';
-    backBtn.textContent = 'â† ' + parentName;
-    setPageTitle(name + ' â€” ' + config.title);
+    backBtn.textContent = 'Ã¢â€ Â ' + parentName;
+    setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
     showInfoBtn();
     resetZoom();
     g.selectAll('*').remove();
@@ -1677,7 +1677,7 @@ function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
   }
 }
 
-// â”€â”€ Province â†’ municipalities â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Province Ã¢â€ â€™ municipalities Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afterRender) {
   if (currentView === 'idle') return;
   currentView = 'idle';
@@ -1701,8 +1701,8 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
         const regionName = currentContext ? currentContext.name : '';
         currentContext = { name, parentName: regionName, psgc, type: 'province' };
         backBtn.style.display = 'block';
-        backBtn.textContent = 'â† ' + regionName;
-        setPageTitle(name + ' â€” ' + config.title);
+        backBtn.textContent = 'Ã¢â€ Â ' + regionName;
+        setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
         showInfoBtn();
         if (detail.classList.contains('open')) populateDetail(name, regionName, psgc, 'province');
         resetZoom();
@@ -1718,7 +1718,7 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
           .call(fadeIn)
           .on('click', (e, d) => drillMunicity(d, munPath, name));
 
-        // Municipality labels â€” pointer-events enabled so tiny polygons (e.g. islands)
+        // Municipality labels Ã¢â‚¬â€ pointer-events enabled so tiny polygons (e.g. islands)
         // are still clickable via their label even when the polygon itself is too small to hit
         g.selectAll('text.mun-label')
           .data(munFeatures)
@@ -1758,7 +1758,7 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
             .transition().delay(350).duration(300).attr('opacity', 1);
         }
 
-        status.textContent = `${name} â€” ${munFeatures.length} municipalities/cities (${data.features.length} total)${hucFeatures.length ? ' + ' + hucFeatures.length + ' HUC' + (hucFeatures.length > 1 ? 's' : '') : ''}`;
+        status.textContent = `${name} Ã¢â‚¬â€ ${munFeatures.length} municipalities/cities (${data.features.length} total)${hucFeatures.length ? ' + ' + hucFeatures.length + ' HUC' + (hucFeatures.length > 1 ? 's' : '') : ''}`;
         if (afterRender) afterRender(munPath, munFeatures);
       };
 
@@ -1778,7 +1778,7 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
     });
 }
 
-// â”€â”€ Detail panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Detail panel Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 const detailClose = document.getElementById('detail-close');
 const detailBody  = document.getElementById('detail-body');
 detailClose.addEventListener('click', closeDetail);
@@ -1924,15 +1924,15 @@ infoBtn.addEventListener('click', () => {
   }
 });
 
-// â”€â”€ Page title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-const TITLE_SUFFIX = ' | 2025 NDHS Key Indicators';
+// Ã¢â€â‚¬Ã¢â€â‚¬ Page title Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+const TITLE_SUFFIX = ' | 2025 National Demographic and Health Survey';
 function setPageTitle(title) {
   const fullTitle = title + TITLE_SUFFIX;
   document.title = fullTitle;
   try { window.parent.document.title = fullTitle; } catch(e) {}
 }
 
-// â”€â”€ Boot â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Boot Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 async function boot() {
   await loadConfig();
   renderMetricControls();
@@ -1943,6 +1943,7 @@ boot();
 </script>
 </body>
 </html>
+
 
 
 

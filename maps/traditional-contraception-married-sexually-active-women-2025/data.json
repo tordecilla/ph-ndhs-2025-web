@@ -1,4 +1,4 @@
-﻿{
+{
   "sectionTitle": "CONTRACEPTION",
   "title": "Current Use of Traditional Contraception Methods Among Married and Sexually Active Women",
   "description": "Current use of traditional contraceptive methods among currently married women by region, with data tables for currently married and sexually active unmarried women. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
@@ -715,600 +715,600 @@
           },
           {
             "title": "Number of living children",
-        "year": "2025",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "0",
-            "women_total": "1,516",
-            "any_traditional_method_pct": 9,
-            "any_traditional_method_pct_display": "9.0",
-            "calendar_rhythm_pct": 1.8,
-            "withdrawal_pct": 7,
-            "withdrawal_pct_display": "7.0",
-            "traditional_other_pct": 0.2
+            "year": "2025",
+            "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "0",
+                "women_total": "1,516",
+                "any_traditional_method_pct": 9,
+                "any_traditional_method_pct_display": "9.0",
+                "calendar_rhythm_pct": 1.8,
+                "withdrawal_pct": 7,
+                "withdrawal_pct_display": "7.0",
+                "traditional_other_pct": 0.2
+              },
+              {
+                "label": "1-2",
+                "women_total": "8,423",
+                "any_traditional_method_pct": 16.7,
+                "calendar_rhythm_pct": 2.6,
+                "withdrawal_pct": 14.1,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "3-4",
+                "women_total": "4,723",
+                "any_traditional_method_pct": 11.9,
+                "calendar_rhythm_pct": 2.3,
+                "withdrawal_pct": 9.6,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "5+",
+                "women_total": "1,430",
+                "any_traditional_method_pct": 12,
+                "any_traditional_method_pct_display": "12.0",
+                "calendar_rhythm_pct": 1.8,
+                "withdrawal_pct": 10.1,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              }
+            ]
           },
           {
-            "label": "1-2",
-            "women_total": "8,423",
-            "any_traditional_method_pct": 16.7,
-            "calendar_rhythm_pct": 2.6,
-            "withdrawal_pct": 14.1,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
+            "title": "Number of living children",
+            "year": "2022",
+            "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "0",
+                "women_total": "1,423",
+                "any_traditional_method_pct": 7.9,
+                "calendar_rhythm_pct": 1.1,
+                "withdrawal_pct": 6.9,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "1-2",
+                "women_total": "7,478",
+                "any_traditional_method_pct": 18.7,
+                "calendar_rhythm_pct": 3,
+                "calendar_rhythm_pct_display": "3.0",
+                "withdrawal_pct": 15.7,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "3-4",
+                "women_total": "4,612",
+                "any_traditional_method_pct": 15.6,
+                "calendar_rhythm_pct": 3.5,
+                "withdrawal_pct": 12,
+                "withdrawal_pct_display": "12.0",
+                "traditional_other_pct": 0.1
+              },
+              {
+                "label": "5+",
+                "women_total": "1,793",
+                "any_traditional_method_pct": 16.3,
+                "calendar_rhythm_pct": 3.5,
+                "withdrawal_pct": 12.7,
+                "traditional_other_pct": 0.2
+              }
+            ]
           },
           {
-            "label": "3-4",
-            "women_total": "4,723",
-            "any_traditional_method_pct": 11.9,
-            "calendar_rhythm_pct": 2.3,
-            "withdrawal_pct": 9.6,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
+            "title": "Age in years",
+            "year": "2025",
+            "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "15-19",
+                "women_total": "307",
+                "any_traditional_method_pct": 8.7,
+                "calendar_rhythm_pct": 0,
+                "calendar_rhythm_pct_display": "0.0",
+                "withdrawal_pct": 8.7,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "20-24",
+                "women_total": "1,212",
+                "any_traditional_method_pct": 13,
+                "any_traditional_method_pct_display": "13.0",
+                "calendar_rhythm_pct": 0.8,
+                "withdrawal_pct": 12.1,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "25-29",
+                "women_total": "2,369",
+                "any_traditional_method_pct": 14.5,
+                "calendar_rhythm_pct": 1.6,
+                "withdrawal_pct": 12.9,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "30-34",
+                "women_total": "3,159",
+                "any_traditional_method_pct": 14.5,
+                "calendar_rhythm_pct": 1.7,
+                "withdrawal_pct": 12.8,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "35-39",
+                "women_total": "3,307",
+                "any_traditional_method_pct": 15.4,
+                "calendar_rhythm_pct": 2.5,
+                "withdrawal_pct": 12.8,
+                "traditional_other_pct": 0.1
+              },
+              {
+                "label": "40-44",
+                "women_total": "3,021",
+                "any_traditional_method_pct": 15,
+                "any_traditional_method_pct_display": "15.0",
+                "calendar_rhythm_pct": 3.2,
+                "withdrawal_pct": 11.8,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "45-49",
+                "women_total": "2,717",
+                "any_traditional_method_pct": 12.1,
+                "calendar_rhythm_pct": 3.6,
+                "withdrawal_pct": 8.5,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              }
+            ]
           },
           {
-            "label": "5+",
-            "women_total": "1,430",
-            "any_traditional_method_pct": 12,
-            "any_traditional_method_pct_display": "12.0",
-            "calendar_rhythm_pct": 1.8,
-            "withdrawal_pct": 10.1,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
+            "title": "Age in years",
+            "year": "2022",
+            "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "15-19",
+                "women_total": "307",
+                "any_traditional_method_pct": 11.7,
+                "calendar_rhythm_pct": 0.7,
+                "withdrawal_pct": 10.9,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "20-24",
+                "women_total": "1,303",
+                "any_traditional_method_pct": 14.9,
+                "calendar_rhythm_pct": 1.4,
+                "withdrawal_pct": 13.5,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "25-29",
+                "women_total": "2,384",
+                "any_traditional_method_pct": 15.7,
+                "calendar_rhythm_pct": 1.5,
+                "withdrawal_pct": 14.2,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "30-34",
+                "women_total": "2,935",
+                "any_traditional_method_pct": 17.4,
+                "calendar_rhythm_pct": 2.8,
+                "withdrawal_pct": 14.6,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "35-39",
+                "women_total": "2,808",
+                "any_traditional_method_pct": 17.5,
+                "calendar_rhythm_pct": 3.3,
+                "withdrawal_pct": 14,
+                "withdrawal_pct_display": "14.0",
+                "traditional_other_pct": 0.1
+              },
+              {
+                "label": "40-44",
+                "women_total": "2,915",
+                "any_traditional_method_pct": 17.7,
+                "calendar_rhythm_pct": 4.4,
+                "withdrawal_pct": 13.2,
+                "traditional_other_pct": 0.1
+              },
+              {
+                "label": "45-49",
+                "women_total": "2,654",
+                "any_traditional_method_pct": 15.2,
+                "calendar_rhythm_pct": 3.8,
+                "withdrawal_pct": 11.3,
+                "traditional_other_pct": 0.1
+              }
+            ]
+          },
+          {
+            "title": "Residence",
+            "year": "2025",
+            "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "Urban",
+                "women_total": "8,698",
+                "any_traditional_method_pct": 15.8,
+                "calendar_rhythm_pct": 2.7,
+                "withdrawal_pct": 13.1,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Rural",
+                "women_total": "7,394",
+                "any_traditional_method_pct": 12.2,
+                "calendar_rhythm_pct": 2,
+                "calendar_rhythm_pct_display": "2.0",
+                "withdrawal_pct": 10.2,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              }
+            ]
+          },
+          {
+            "title": "Residence",
+            "year": "2022",
+            "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "Urban",
+                "women_total": "8,263",
+                "any_traditional_method_pct": 17.6,
+                "calendar_rhythm_pct": 2.9,
+                "withdrawal_pct": 14.7,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Rural",
+                "women_total": "7,043",
+                "any_traditional_method_pct": 15.2,
+                "calendar_rhythm_pct": 3.2,
+                "withdrawal_pct": 11.9,
+                "traditional_other_pct": 0.1
+              }
+            ]
+          },
+          {
+            "title": "Educational attainment",
+            "year": "2025",
+            "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "No education",
+                "women_total": "132",
+                "any_traditional_method_pct": 7.6,
+                "calendar_rhythm_pct": 0.7,
+                "withdrawal_pct": 6.9,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Grades 1-6",
+                "women_total": "1,842",
+                "any_traditional_method_pct": 9.3,
+                "calendar_rhythm_pct": 0.7,
+                "withdrawal_pct": 8.6,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Grades 7-10",
+                "women_total": "6,988",
+                "any_traditional_method_pct": 13.3,
+                "calendar_rhythm_pct": 1.6,
+                "withdrawal_pct": 11.6,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Grades 11-12",
+                "women_total": "814",
+                "any_traditional_method_pct": 13.7,
+                "calendar_rhythm_pct": 0.7,
+                "withdrawal_pct": 13,
+                "withdrawal_pct_display": "13.0",
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Post-secondary",
+                "women_total": "321",
+                "any_traditional_method_pct": 18.4,
+                "calendar_rhythm_pct": 2.4,
+                "withdrawal_pct": 15.9,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "College",
+                "women_total": "5,994",
+                "any_traditional_method_pct": 16.6,
+                "calendar_rhythm_pct": 4,
+                "calendar_rhythm_pct_display": "4.0",
+                "withdrawal_pct": 12.6,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              }
+            ]
+          },
+          {
+            "title": "Educational attainment",
+            "year": "2022",
+            "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "No education",
+                "women_total": "135",
+                "any_traditional_method_pct": 4.3,
+                "calendar_rhythm_pct": 0.7,
+                "withdrawal_pct": 3.6,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Grades 1-6",
+                "women_total": "2,144",
+                "any_traditional_method_pct": 12.4,
+                "calendar_rhythm_pct": 2.6,
+                "withdrawal_pct": 9.6,
+                "traditional_other_pct": 0.2
+              },
+              {
+                "label": "Grades 7-10",
+                "women_total": "7,102",
+                "any_traditional_method_pct": 16.6,
+                "calendar_rhythm_pct": 2.5,
+                "withdrawal_pct": 14.1,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Grades 11-12",
+                "women_total": "371",
+                "any_traditional_method_pct": 14,
+                "any_traditional_method_pct_display": "14.0",
+                "calendar_rhythm_pct": 0.5,
+                "withdrawal_pct": 13.5,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Post-secondary",
+                "women_total": "439",
+                "any_traditional_method_pct": 12.1,
+                "calendar_rhythm_pct": 3.4,
+                "withdrawal_pct": 8.5,
+                "traditional_other_pct": 0.2
+              },
+              {
+                "label": "College",
+                "women_total": "5,114",
+                "any_traditional_method_pct": 19,
+                "any_traditional_method_pct_display": "19.0",
+                "calendar_rhythm_pct": 4.1,
+                "withdrawal_pct": 14.9,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              }
+            ]
+          },
+          {
+            "title": "Wealth quintile",
+            "year": "2025",
+            "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "Lowest",
+                "women_total": "3,343",
+                "any_traditional_method_pct": 10.4,
+                "calendar_rhythm_pct": 2.2,
+                "withdrawal_pct": 8.2,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Second",
+                "women_total": "3,192",
+                "any_traditional_method_pct": 13.6,
+                "calendar_rhythm_pct": 1.2,
+                "withdrawal_pct": 12.3,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Middle",
+                "women_total": "3,344",
+                "any_traditional_method_pct": 16,
+                "any_traditional_method_pct_display": "16.0",
+                "calendar_rhythm_pct": 1.8,
+                "withdrawal_pct": 14.2,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Fourth",
+                "women_total": "3,137",
+                "any_traditional_method_pct": 15,
+                "any_traditional_method_pct_display": "15.0",
+                "calendar_rhythm_pct": 2.4,
+                "withdrawal_pct": 12.5,
+                "traditional_other_pct": 0.1
+              },
+              {
+                "label": "Highest",
+                "women_total": "3,076",
+                "any_traditional_method_pct": 15.9,
+                "calendar_rhythm_pct": 4.3,
+                "withdrawal_pct": 11.7,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              }
+            ]
+          },
+          {
+            "title": "Wealth quintile",
+            "year": "2022",
+            "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "Lowest",
+                "women_total": "3,071",
+                "any_traditional_method_pct": 14.5,
+                "calendar_rhythm_pct": 3,
+                "calendar_rhythm_pct_display": "3.0",
+                "withdrawal_pct": 11.3,
+                "traditional_other_pct": 0.2
+              },
+              {
+                "label": "Second",
+                "women_total": "3,111",
+                "any_traditional_method_pct": 15.2,
+                "calendar_rhythm_pct": 2.5,
+                "withdrawal_pct": 12.7,
+                "traditional_other_pct": 0.1
+              },
+              {
+                "label": "Middle",
+                "women_total": "3,139",
+                "any_traditional_method_pct": 16.1,
+                "calendar_rhythm_pct": 2.4,
+                "withdrawal_pct": 13.7,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Fourth",
+                "women_total": "3,016",
+                "any_traditional_method_pct": 19.5,
+                "calendar_rhythm_pct": 3.9,
+                "withdrawal_pct": 15.6,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Highest",
+                "women_total": "2,970",
+                "any_traditional_method_pct": 17.2,
+                "calendar_rhythm_pct": 3.3,
+                "withdrawal_pct": 13.9,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              }
+            ]
           }
-        ]
-      },
-      {
-        "title": "Number of living children",
-        "year": "2022",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "0",
-            "women_total": "1,423",
-            "any_traditional_method_pct": 7.9,
-            "calendar_rhythm_pct": 1.1,
-            "withdrawal_pct": 6.9,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "1-2",
-            "women_total": "7,478",
-            "any_traditional_method_pct": 18.7,
-            "calendar_rhythm_pct": 3,
-            "calendar_rhythm_pct_display": "3.0",
-            "withdrawal_pct": 15.7,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "3-4",
-            "women_total": "4,612",
-            "any_traditional_method_pct": 15.6,
-            "calendar_rhythm_pct": 3.5,
-            "withdrawal_pct": 12,
-            "withdrawal_pct_display": "12.0",
-            "traditional_other_pct": 0.1
-          },
-          {
-            "label": "5+",
-            "women_total": "1,793",
-            "any_traditional_method_pct": 16.3,
-            "calendar_rhythm_pct": 3.5,
-            "withdrawal_pct": 12.7,
-            "traditional_other_pct": 0.2
-          }
-        ]
-      },
-      {
-        "title": "Age in years",
-        "year": "2025",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "15-19",
-            "women_total": "307",
-            "any_traditional_method_pct": 8.7,
-            "calendar_rhythm_pct": 0,
-            "calendar_rhythm_pct_display": "0.0",
-            "withdrawal_pct": 8.7,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "20-24",
-            "women_total": "1,212",
-            "any_traditional_method_pct": 13,
-            "any_traditional_method_pct_display": "13.0",
-            "calendar_rhythm_pct": 0.8,
-            "withdrawal_pct": 12.1,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "25-29",
-            "women_total": "2,369",
-            "any_traditional_method_pct": 14.5,
-            "calendar_rhythm_pct": 1.6,
-            "withdrawal_pct": 12.9,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "30-34",
-            "women_total": "3,159",
-            "any_traditional_method_pct": 14.5,
-            "calendar_rhythm_pct": 1.7,
-            "withdrawal_pct": 12.8,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "35-39",
-            "women_total": "3,307",
-            "any_traditional_method_pct": 15.4,
-            "calendar_rhythm_pct": 2.5,
-            "withdrawal_pct": 12.8,
-            "traditional_other_pct": 0.1
-          },
-          {
-            "label": "40-44",
-            "women_total": "3,021",
-            "any_traditional_method_pct": 15,
-            "any_traditional_method_pct_display": "15.0",
-            "calendar_rhythm_pct": 3.2,
-            "withdrawal_pct": 11.8,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "45-49",
-            "women_total": "2,717",
-            "any_traditional_method_pct": 12.1,
-            "calendar_rhythm_pct": 3.6,
-            "withdrawal_pct": 8.5,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          }
-        ]
-      },
-      {
-        "title": "Age in years",
-        "year": "2022",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "15-19",
-            "women_total": "307",
-            "any_traditional_method_pct": 11.7,
-            "calendar_rhythm_pct": 0.7,
-            "withdrawal_pct": 10.9,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "20-24",
-            "women_total": "1,303",
-            "any_traditional_method_pct": 14.9,
-            "calendar_rhythm_pct": 1.4,
-            "withdrawal_pct": 13.5,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "25-29",
-            "women_total": "2,384",
-            "any_traditional_method_pct": 15.7,
-            "calendar_rhythm_pct": 1.5,
-            "withdrawal_pct": 14.2,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "30-34",
-            "women_total": "2,935",
-            "any_traditional_method_pct": 17.4,
-            "calendar_rhythm_pct": 2.8,
-            "withdrawal_pct": 14.6,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "35-39",
-            "women_total": "2,808",
-            "any_traditional_method_pct": 17.5,
-            "calendar_rhythm_pct": 3.3,
-            "withdrawal_pct": 14,
-            "withdrawal_pct_display": "14.0",
-            "traditional_other_pct": 0.1
-          },
-          {
-            "label": "40-44",
-            "women_total": "2,915",
-            "any_traditional_method_pct": 17.7,
-            "calendar_rhythm_pct": 4.4,
-            "withdrawal_pct": 13.2,
-            "traditional_other_pct": 0.1
-          },
-          {
-            "label": "45-49",
-            "women_total": "2,654",
-            "any_traditional_method_pct": 15.2,
-            "calendar_rhythm_pct": 3.8,
-            "withdrawal_pct": 11.3,
-            "traditional_other_pct": 0.1
-          }
-        ]
-      },
-      {
-        "title": "Residence",
-        "year": "2025",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "Urban",
-            "women_total": "8,698",
-            "any_traditional_method_pct": 15.8,
-            "calendar_rhythm_pct": 2.7,
-            "withdrawal_pct": 13.1,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Rural",
-            "women_total": "7,394",
-            "any_traditional_method_pct": 12.2,
-            "calendar_rhythm_pct": 2,
-            "calendar_rhythm_pct_display": "2.0",
-            "withdrawal_pct": 10.2,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          }
-        ]
-      },
-      {
-        "title": "Residence",
-        "year": "2022",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "Urban",
-            "women_total": "8,263",
-            "any_traditional_method_pct": 17.6,
-            "calendar_rhythm_pct": 2.9,
-            "withdrawal_pct": 14.7,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Rural",
-            "women_total": "7,043",
-            "any_traditional_method_pct": 15.2,
-            "calendar_rhythm_pct": 3.2,
-            "withdrawal_pct": 11.9,
-            "traditional_other_pct": 0.1
-          }
-        ]
-      },
-      {
-        "title": "Educational attainment",
-        "year": "2025",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "No education",
-            "women_total": "132",
-            "any_traditional_method_pct": 7.6,
-            "calendar_rhythm_pct": 0.7,
-            "withdrawal_pct": 6.9,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Grades 1-6",
-            "women_total": "1,842",
-            "any_traditional_method_pct": 9.3,
-            "calendar_rhythm_pct": 0.7,
-            "withdrawal_pct": 8.6,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Grades 7-10",
-            "women_total": "6,988",
-            "any_traditional_method_pct": 13.3,
-            "calendar_rhythm_pct": 1.6,
-            "withdrawal_pct": 11.6,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Grades 11-12",
-            "women_total": "814",
-            "any_traditional_method_pct": 13.7,
-            "calendar_rhythm_pct": 0.7,
-            "withdrawal_pct": 13,
-            "withdrawal_pct_display": "13.0",
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Post-secondary",
-            "women_total": "321",
-            "any_traditional_method_pct": 18.4,
-            "calendar_rhythm_pct": 2.4,
-            "withdrawal_pct": 15.9,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "College",
-            "women_total": "5,994",
-            "any_traditional_method_pct": 16.6,
-            "calendar_rhythm_pct": 4,
-            "calendar_rhythm_pct_display": "4.0",
-            "withdrawal_pct": 12.6,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          }
-        ]
-      },
-      {
-        "title": "Educational attainment",
-        "year": "2022",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "No education",
-            "women_total": "135",
-            "any_traditional_method_pct": 4.3,
-            "calendar_rhythm_pct": 0.7,
-            "withdrawal_pct": 3.6,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Grades 1-6",
-            "women_total": "2,144",
-            "any_traditional_method_pct": 12.4,
-            "calendar_rhythm_pct": 2.6,
-            "withdrawal_pct": 9.6,
-            "traditional_other_pct": 0.2
-          },
-          {
-            "label": "Grades 7-10",
-            "women_total": "7,102",
-            "any_traditional_method_pct": 16.6,
-            "calendar_rhythm_pct": 2.5,
-            "withdrawal_pct": 14.1,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Grades 11-12",
-            "women_total": "371",
-            "any_traditional_method_pct": 14,
-            "any_traditional_method_pct_display": "14.0",
-            "calendar_rhythm_pct": 0.5,
-            "withdrawal_pct": 13.5,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Post-secondary",
-            "women_total": "439",
-            "any_traditional_method_pct": 12.1,
-            "calendar_rhythm_pct": 3.4,
-            "withdrawal_pct": 8.5,
-            "traditional_other_pct": 0.2
-          },
-          {
-            "label": "College",
-            "women_total": "5,114",
-            "any_traditional_method_pct": 19,
-            "any_traditional_method_pct_display": "19.0",
-            "calendar_rhythm_pct": 4.1,
-            "withdrawal_pct": 14.9,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          }
-        ]
-      },
-      {
-        "title": "Wealth quintile",
-        "year": "2025",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "Lowest",
-            "women_total": "3,343",
-            "any_traditional_method_pct": 10.4,
-            "calendar_rhythm_pct": 2.2,
-            "withdrawal_pct": 8.2,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Second",
-            "women_total": "3,192",
-            "any_traditional_method_pct": 13.6,
-            "calendar_rhythm_pct": 1.2,
-            "withdrawal_pct": 12.3,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Middle",
-            "women_total": "3,344",
-            "any_traditional_method_pct": 16,
-            "any_traditional_method_pct_display": "16.0",
-            "calendar_rhythm_pct": 1.8,
-            "withdrawal_pct": 14.2,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Fourth",
-            "women_total": "3,137",
-            "any_traditional_method_pct": 15,
-            "any_traditional_method_pct_display": "15.0",
-            "calendar_rhythm_pct": 2.4,
-            "withdrawal_pct": 12.5,
-            "traditional_other_pct": 0.1
-          },
-          {
-            "label": "Highest",
-            "women_total": "3,076",
-            "any_traditional_method_pct": 15.9,
-            "calendar_rhythm_pct": 4.3,
-            "withdrawal_pct": 11.7,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          }
-        ]
-      },
-      {
-        "title": "Wealth quintile",
-        "year": "2022",
-        "subtitle": "Percent distribution of currently married women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "Lowest",
-            "women_total": "3,071",
-            "any_traditional_method_pct": 14.5,
-            "calendar_rhythm_pct": 3,
-            "calendar_rhythm_pct_display": "3.0",
-            "withdrawal_pct": 11.3,
-            "traditional_other_pct": 0.2
-          },
-          {
-            "label": "Second",
-            "women_total": "3,111",
-            "any_traditional_method_pct": 15.2,
-            "calendar_rhythm_pct": 2.5,
-            "withdrawal_pct": 12.7,
-            "traditional_other_pct": 0.1
-          },
-          {
-            "label": "Middle",
-            "women_total": "3,139",
-            "any_traditional_method_pct": 16.1,
-            "calendar_rhythm_pct": 2.4,
-            "withdrawal_pct": 13.7,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Fourth",
-            "women_total": "3,016",
-            "any_traditional_method_pct": 19.5,
-            "calendar_rhythm_pct": 3.9,
-            "withdrawal_pct": 15.6,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          },
-          {
-            "label": "Highest",
-            "women_total": "2,970",
-            "any_traditional_method_pct": 17.2,
-            "calendar_rhythm_pct": 3.3,
-            "withdrawal_pct": 13.9,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          }
-        ]
-      }
         ]
       },
       {
         "groupTitle": "Sexually Active Unmarried Women",
         "groupSubtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
         "blocks": [
-      {
-        "title": "Total",
-        "year": "2025",
-        "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
-        "rows": [
           {
-            "label": "Total",
-            "women_total": "463",
-            "any_traditional_method_pct": 11.7,
-            "calendar_rhythm_pct": 1.2,
-            "withdrawal_pct": 10.4,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          }
-        ]
-      },
-      {
-        "title": "Total",
-        "year": "2022",
-        "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "Total",
-            "women_total": "506",
-            "any_traditional_method_pct": 17.6,
-            "calendar_rhythm_pct": 2.3,
-            "withdrawal_pct": 15,
-            "withdrawal_pct_display": "15.0",
-            "traditional_other_pct": 0.3
-          }
-        ]
-      },
-      {
-        "title": "Residence",
-        "year": "2025",
-        "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "Urban",
-            "women_total": "310",
-            "any_traditional_method_pct": 10.3,
-            "calendar_rhythm_pct": 1.8,
-            "withdrawal_pct": 8.6,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
+            "title": "Total",
+            "year": "2025",
+            "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "Total",
+                "women_total": "463",
+                "any_traditional_method_pct": 11.7,
+                "calendar_rhythm_pct": 1.2,
+                "withdrawal_pct": 10.4,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              }
+            ]
           },
           {
-            "label": "Rural",
-            "women_total": "153",
-            "any_traditional_method_pct": 14.4,
-            "calendar_rhythm_pct": 0.2,
-            "withdrawal_pct": 14.2,
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
-          }
-        ]
-      },
-      {
-        "title": "Residence",
-        "year": "2022",
-        "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
-        "rows": [
-          {
-            "label": "Urban",
-            "women_total": "339",
-            "any_traditional_method_pct": 16,
-            "any_traditional_method_pct_display": "16.0",
-            "calendar_rhythm_pct": 3,
-            "calendar_rhythm_pct_display": "3.0",
-            "withdrawal_pct": 12.5,
-            "traditional_other_pct": 0.5
+            "title": "Total",
+            "year": "2022",
+            "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "Total",
+                "women_total": "506",
+                "any_traditional_method_pct": 17.6,
+                "calendar_rhythm_pct": 2.3,
+                "withdrawal_pct": 15,
+                "withdrawal_pct_display": "15.0",
+                "traditional_other_pct": 0.3
+              }
+            ]
           },
           {
-            "label": "Rural",
-            "women_total": "167",
-            "any_traditional_method_pct": 20.8,
-            "calendar_rhythm_pct": 0.8,
-            "withdrawal_pct": 20,
-            "withdrawal_pct_display": "20.0",
-            "traditional_other_pct": 0,
-            "traditional_other_pct_display": "0.0"
+            "title": "Residence",
+            "year": "2025",
+            "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "Urban",
+                "women_total": "310",
+                "any_traditional_method_pct": 10.3,
+                "calendar_rhythm_pct": 1.8,
+                "withdrawal_pct": 8.6,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              },
+              {
+                "label": "Rural",
+                "women_total": "153",
+                "any_traditional_method_pct": 14.4,
+                "calendar_rhythm_pct": 0.2,
+                "withdrawal_pct": 14.2,
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              }
+            ]
+          },
+          {
+            "title": "Residence",
+            "year": "2022",
+            "subtitle": "Percent distribution of sexually active unmarried women aged 15 to 49 years.",
+            "rows": [
+              {
+                "label": "Urban",
+                "women_total": "339",
+                "any_traditional_method_pct": 16,
+                "any_traditional_method_pct_display": "16.0",
+                "calendar_rhythm_pct": 3,
+                "calendar_rhythm_pct_display": "3.0",
+                "withdrawal_pct": 12.5,
+                "traditional_other_pct": 0.5
+              },
+              {
+                "label": "Rural",
+                "women_total": "167",
+                "any_traditional_method_pct": 20.8,
+                "calendar_rhythm_pct": 0.8,
+                "withdrawal_pct": 20,
+                "withdrawal_pct_display": "20.0",
+                "traditional_other_pct": 0,
+                "traditional_other_pct_display": "0.0"
+              }
+            ]
           }
-        ]
-      }
         ]
       }
     ],
@@ -1673,6 +1673,3 @@
     "municity": []
   }
 }
-
-
-

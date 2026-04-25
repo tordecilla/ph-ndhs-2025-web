@@ -1,0 +1,94 @@
+{
+  "sectionTitle": "SURVEY PROFILE",
+  "title": "Results of the Household and Individual Interviews",
+  "description": "Number of households, number of interviews, and response rates, according to residence (unweighted): Philippines, 2025.",
+  "tableData": {
+    "title": "Results of the Household and Individual Interviews",
+    "subtitle": "Number of households, number of interviews, and response rates, according to residence (unweighted): Philippines, 2025.",
+    "tables": [
+      {
+        "title": "Household Interviews",
+        "columns": [
+          "Result",
+          "Urban",
+          "Rural",
+          "Total"
+        ],
+        "rows": [
+          {
+            "label": "Housing units/households selected",
+            "values": [
+              "16,625",
+              "24,977",
+              "41,602"
+            ]
+          },
+          {
+            "label": "Housing units/households occupied",
+            "values": [
+              "14,482",
+              "21,827",
+              "36,309"
+            ]
+          },
+          {
+            "label": "Households interviewed",
+            "values": [
+              "14,356",
+              "21,772",
+              "36,128"
+            ]
+          },
+          {
+            "label": "Household response rate¹",
+            "values": [
+              "99.1",
+              "99.7",
+              "99.5"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Interviews with Women Aged 15 to 49 Years",
+        "columns": [
+          "Result",
+          "Urban",
+          "Rural",
+          "Total"
+        ],
+        "rows": [
+          {
+            "label": "Number of eligible women",
+            "values": [
+              "13,093",
+              "17,130",
+              "30,223"
+            ]
+          },
+          {
+            "label": "Number of eligible women interviewed",
+            "values": [
+              "12,839",
+              "16,855",
+              "29,694"
+            ]
+          },
+          {
+            "label": "Eligible women response rate²",
+            "values": [
+              "98.1",
+              "98.4",
+              "98.2"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ Households interviewed/households occupied.",
+      "² Respondents interviewed/eligible respondents."
+    ],
+    "source": "Philippine Statistics Authority, 2025 National Demographic and Health Survey"
+  }
+}

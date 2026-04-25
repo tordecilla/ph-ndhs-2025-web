@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "slug": "background-characteristics-2025",
     "title": "Background Characteristics",
@@ -104,6 +104,30 @@
     "addedAt": "2026-04-23"
   },
   {
+    "slug": "early-childhood-mortality-rates-2025",
+    "title": "Early Childhood Mortality Rates",
+    "description": "Neonatal, post-neonatal, infant, child and under-5 mortality rates for 5-year periods preceding the survey: Philippines, 2022 and 2025 (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-24"
+  },
+  {
+    "slug": "five-year-early-childhood-mortality-rates-2025",
+    "title": "Five-Year Early Childhood Mortality Rates",
+    "description": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the 5-year period preceding the survey by background characteristics: Philippines, 2022 and 2025 (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-24"
+  },
+  {
+    "slug": "ten-year-early-childhood-mortality-rates-2025",
+    "title": "Ten-Year Early Childhood Mortality Rates",
+    "description": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the ten-year period preceding the survey by additional characteristics: Philippines, 2022 and 2025 (NDHS 2025)",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-24"
+  },
+  {
     "slug": "fertility-preferences-2025",
     "title": "Fertility Preferences",
     "description": "Desire for children by region: want no more, timing preferences, sterilization, and declared infecundity (NDHS 2025)",
@@ -134,6 +158,69 @@
     "year": "2025",
     "group": "2025 National Demographic and Health Survey (NDHS)",
     "addedAt": "2026-04-15"
+  },
+  {
+    "slug": "vaccinations-12-to-23-vaccination-status-2025",
+    "title": "Children Aged 12 to 23 Months - Vaccination Status",
+    "description": "Vaccination status among children aged 12 to 23 months by background characteristics: Philippines, 2022 and 2025.",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-24"
+  },
+  {
+    "slug": "vaccinations-12-to-23-bcg-hepb-mmr1-2025",
+    "title": "Children Aged 12 to 23 Months - BCG, HepB (birth dose), MMR 1",
+    "description": "BCG, HepB birth dose, and MMR 1 coverage among children aged 12 to 23 months by background characteristics: Philippines, 2022 and 2025.",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-24"
+  },
+  {
+    "slug": "vaccinations-12-to-23-polio-vaccinations-2025",
+    "title": "Children Aged 12 to 23 Months - Polio Vaccinations",
+    "description": "OPV, IPV, and Polio 3 coverage among children aged 12 to 23 months by background characteristics: Philippines, 2022 and 2025.",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-24"
+  },
+  {
+    "slug": "vaccinations-12-to-23-pcv-vaccinations-2025",
+    "title": "Children Aged 12 to 23 Months - PCV Vaccinations",
+    "description": "PCV dose coverage among children aged 12 to 23 months by background characteristics: Philippines, 2022 and 2025.",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-24"
+  },
+  {
+    "slug": "vaccinations-24-to-35-mmr2-full-schedule-2025",
+    "title": "Children Aged 24 to 35 Months - MMR 2 and Full Vaccination Schedule",
+    "description": "MMR 2 and full schedule vaccination among children aged 24 to 35 months by background characteristics: Philippines, 2022 and 2025.",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-24"
+  },
+  {
+    "slug": "results-of-household-and-individual-interviews-2025",
+    "title": "Results of the Household and Individual Interviews",
+    "description": "Number of households, number of interviews, and response rates, according to residence (unweighted): Philippines, 2025.",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-25"
+  },
+  {
+    "slug": "child-discipline-2025",
+    "title": "Child Discipline",
+    "description": "Percentage of children aged 1 to 14 years by child disciplining methods experienced during the last one month, according to background characteristics: Philippines, 2022 and 2025",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-25"
+  },
+  {
+    "slug": "attitudes-toward-physical-punishment-2025",
+    "title": "Attitudes Toward Physical Punishment",
+    "description": "Among households with a child aged 1 to 14 years, percentage of household respondents who believe that physical punishment is needed to bring up, raise, or educate a child properly, according to background characteristics: Philippines, 2022 and 2025",
+    "year": "2025",
+    "group": "2025 National Demographic and Health Survey (NDHS)",
+    "addedAt": "2026-04-25"
   }
 ]
-

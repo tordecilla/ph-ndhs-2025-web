@@ -1,4 +1,4 @@
-﻿{
+{
   "sectionTitle": "CONTRACEPTION",
   "title": "Need and Demand for Family Planning Among All Women",
   "description": "Percentage of all women aged 15 to 49 years with unmet need for family planning, met need for family planning, and percentage of demand satisfied, according to background characteristics. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
@@ -850,8 +850,8 @@
     ],
     "notes": [
       "² Modern methods include female sterilization, male sterilization, IUD, injectables, implants, patch, pill, male condom, female condom, emergency contraception, standard days method (SDM), mucus/Billings/ovulation, basal body temperature, symptothermal, lactational amenorrhea method (LAM), and other modern methods.",
-      "³ Other methods = total demand for family planning âˆ’ (unmet need for family planning + modern methods).",
-      "â€œNAâ€ denotes that an estimate is not reported.",
+      "³ Other methods = total demand for family planning - (unmet need for family planning + modern methods).",
+      "“NA” denotes that an estimate is not reported.",
       "1. Numbers in this table correspond to the revised definition of unmet need described in Bradley et al., 2012.",
       "2. Details may not add up to total due to rounding.",
       "Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
@@ -885,11 +885,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -898,14 +898,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -930,11 +930,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -943,14 +943,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -1005,11 +1005,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -1018,14 +1018,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -1050,11 +1050,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -1063,14 +1063,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -1251,11 +1251,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -1264,14 +1264,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -1296,11 +1296,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -1309,14 +1309,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -1392,11 +1392,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -1405,14 +1405,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -1437,11 +1437,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -1450,14 +1450,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -1718,8 +1718,8 @@
             ]
           },
           {
-            "label": "IX - Zamboanga Peninsulaâ´",
-            "noteRef": "",
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "⁴",
             "rowClass": "",
             "values": [
               "11.0",
@@ -1869,11 +1869,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -1882,14 +1882,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -1914,11 +1914,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -1927,14 +1927,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -2094,11 +2094,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -2107,14 +2107,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -2139,11 +2139,11 @@
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   },
                   {
                     "label": "Total demand for family planning",
-                    "noteRef": "Ã‚³"
+                    "noteRef": "³"
                   },
                   {
                     "label": "Total number of women aged 15 to 49 years"
@@ -2152,14 +2152,14 @@
               },
               {
                 "label": "Percentage of demand satisfied",
-                "noteRef": "Ã‚¹",
+                "noteRef": "¹",
                 "cols": [
                   {
                     "label": "All methods"
                   },
                   {
                     "label": "Modern methods",
-                    "noteRef": "Ã‚²"
+                    "noteRef": "²"
                   }
                 ]
               }
@@ -2279,8 +2279,8 @@
       "¹ Percentage of demand satisfied is met need divided by total demand.",
       "² Modern methods include female sterilization, male sterilization, IUD, injectables, implants, patch, pill, male condom, female condom, emergency contraception, standard days method (SDM), mucus/Billings/ovulation, basal body temperature, symptothermal, lactational amenorrhea method (LAM), and other modern methods.",
       "³ Total demand is the sum of unmet need and met need.",
-      "â´ Region IX includes the province of Sulu in 2025.",
-      "â€œNAâ€ denotes that an estimate is not reported.",
+      "⁴ Region IX includes the province of Sulu in 2025.",
+      "“NA” denotes that an estimate is not reported.",
       "1. Numbers in this table correspond to the revised definition of unmet need described in Bradley et al., 2012.",
       "2. Details may not add up to total due to rounding."
     ],
@@ -2323,4 +2323,3 @@
     ]
   }
 }
-

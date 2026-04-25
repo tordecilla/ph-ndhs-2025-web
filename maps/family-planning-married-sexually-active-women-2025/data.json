@@ -1,4 +1,4 @@
-﻿{
+{
   "sectionTitle": "CONTRACEPTION",
   "title": "Need and Demand for Family Planning Among Currently Married and Sexually Active Unmarried Women",
   "description": "Percentage of currently married and sexually active unmarried women aged 15 to 49 years with unmet need and met need for family planning, and percentage of demand satisfied, according to background characteristics. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
@@ -956,8 +956,8 @@
     ],
     "notes": [
       "² Modern methods include female sterilization, male sterilization, IUD, injectables, implants, patch, pill, male condom, female condom, emergency contraception, standard days method (SDM), mucus/Billings/ovulation, basal body temperature, symptothermal, lactational amenorrhea method (LAM), and other modern methods.",
-      "³ Other methods = total demand for family planning âˆ’ (unmet need for family planning + modern methods).",
-      "â€œNAâ€ denotes that an estimate is not reported.",
+      "³ Other methods = total demand for family planning − (unmet need for family planning + modern methods).",
+      "“NA” denotes that an estimate is not reported.",
       "1. Numbers in this table correspond to the revised definition of unmet need described in Bradley et al., 2012.",
       "2. Details may not add up to total due to rounding.",
       "Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
@@ -1829,7 +1829,7 @@
               },
               {
                 "label": "IX - Zamboanga Peninsula",
-                "noteRef": "â´",
+                "noteRef": "⁴",
                 "rowClass": "",
                 "values": [
                   "18.4",
@@ -2658,44 +2658,11 @@
       "¹ Percentage of demand satisfied is met need divided by total demand.",
       "² Modern methods include female sterilization, male sterilization, IUD, injectables, implants, patch, pill, male condom, female condom, emergency contraception, standard days method (SDM), mucus/Billings/ovulation, basal body temperature, symptothermal, lactational amenorrhea method (LAM), and other modern methods.",
       "³ Total demand is the sum of unmet need and met need.",
-      "â´ Region IX includes the province of Sulu in 2025.",
-      "â€œNAâ€ denotes that an estimate is not reported.",
+      "⁴ Region IX includes the province of Sulu in 2025.",
+      "“NA” denotes that an estimate is not reported.",
       "1. Numbers in this table correspond to the revised definition of unmet need described in Bradley et al., 2012.",
       "2. Details may not add up to total due to rounding."
     ],
     "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
-  },
-  "insights": {
-    "title": "Insights on Need and Demand for Family Planning Among Currently Married and Sexually Active Unmarried Women",
-    "subtitle": "AI-generated insights based on National Demographic and Health Survey data on family planning need and demand",
-    "overview": "For currently married women, demand stayed high and almost unchanged between 2022 and 2025 (70.7 to 71.1). What changed was where that demand was met: modern-method use within demand increased, while unmet need did not move much. For sexually active unmarried women, demand is higher (85.9) but modern fulfillment is far lower, with modern demand satisfied at only 30.5 in 2025.",
-    "sections": [
-      {
-        "heading": "Demand stayed stable, but the method mix shifted",
-        "body": "Among currently married women, total demand barely changed (70.7 in 2022 to 71.1 in 2025). The main shift is inside that same demand level: modern-method met need rose from 41.8 to 44.5, while unmet need stayed almost the same (12.4 to 12.5). In simple terms, overall demand did not rise, but a bigger share of that demand was being met through modern methods."
-      },
-      {
-        "heading": "Regional differences are large, with one clear high-unmet-need outlier",
-        "body": "Among currently married women, total demand ranges from 54.5 in BARMM to 79.6 in Davao Region. BARMM combines low demand with very high unmet need (29.2) and the lowest modern demand satisfied (37.2), making it a distinct outlier. At the higher-coverage end, MIMAROPA has the highest modern demand satisfied (75.0), while Davao Region (73.2) and SOCCSKSARGEN (71.9) are also strong. Regions like Bicol (55.6), Eastern Visayas (57.9), and CALABARZON (58.9) sit noticeably lower on modern fulfillment."
-      },
-      {
-        "heading": "Life-stage profile among currently married women is uneven",
-        "body": "Demand is highest at younger married ages (81.1 at 15-19), but this group also has the highest unmet need (38.5) and weakest modern demand satisfied (41.9). From ages 30 to 44, unmet need is much lower (around 10 to 12) and modern demand satisfied is consistently higher (around 64 to 65). This pattern suggests access and sustained use improve after early married ages."
-      },
-      {
-        "heading": "Socioeconomic gradients are present but not perfectly linear",
-        "body": "For currently married women, total demand and unmet need are both higher in lower-wealth groups (for example, lowest quintile demand 75.3 and unmet need 16.3) than in the highest quintile (64.2 and 10.6). Modern demand satisfied is strongest in lower and lower-middle quintiles (64.5 to 64.9) and lower in the highest quintile (58.7). Education shows mixed patterns: no-education women have high unmet need (24.4), while women with Grades 7-10 show both high demand (73.7) and stronger modern fulfillment (65.6)."
-      },
-      {
-        "heading": "Sexually active unmarried women show very high demand but low fulfillment",
-        "body": "In 2025, sexually active unmarried women show very high total demand (85.9), but modern-method met need is only 26.2 and unmet need is 48.0. Modern demand satisfied is just 30.5, far below currently married women (62.5). Urban-rural differences are small in this group: unmet need is 48.3 in urban and 47.2 in rural areas, with modern demand satisfied at 30.7 and 30.2. Compared with 2022, there is only slight movement, so this remains a persistent gap rather than a short-term fluctuation."
-      }
-    ],
-    "takeaways": [
-      "Among currently married women, total demand stayed stable, but modern-method fulfillment improved modestly.",
-      "Regional differences remain wide, with BARMM standing out for high unmet need and low modern fulfillment.",
-      "Sexually active unmarried women have very high demand but much lower modern fulfillment, indicating a separate access and service challenge."
-    ]
   }
 }
-
