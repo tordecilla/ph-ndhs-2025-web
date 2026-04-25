@@ -1,7 +1,7 @@
 {
   "sectionTitle": "EARLY CHILDHOOD DEVELOPMENT",
   "title": "Early Childhood Development Index 2030",
-  "description": "Percentage of children aged 24 to 59 months who are developmentally on-track in health, learning and psychosocial well-being: Philippines, 2022 and 2025",
+  "description": "Percentage of children aged 24 to 59 months who are developmentally on-track in health, learning and psychosocial well-being. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "colorField": "ecdi2030",
   "colorDomain": [

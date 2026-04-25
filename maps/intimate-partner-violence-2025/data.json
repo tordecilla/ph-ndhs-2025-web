@@ -1,7 +1,7 @@
 {
   "sectionTitle": "VIOLENCE",
   "title": "Intimate Partner Violence",
-  "description": "Percentage of women aged 15 to 49 years who have ever had a husband or intimate partner who have ever experienced emotional, physical, or sexual violence committed by their current or most recent husband/intimate partner, according to background characteristics: Philippines, 2022 and 2025",
+  "description": "Percentage of women aged 15 to 49 years who have ever had a husband or intimate partner who have ever experienced emotional, physical, or sexual violence committed by their current or most recent husband/intimate partner. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
   "colorField": "physical_or_sexual_or_emotional",
   "colorDomain": [
