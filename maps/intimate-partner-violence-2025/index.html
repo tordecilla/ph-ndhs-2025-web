@@ -1563,9 +1563,19 @@ function renderTables(tableData) {
   if (Array.isArray(tableData.tables) && tableData.tables.length) {
     tableData.tables.forEach(createTableSection);
 
-    if ((tableData.footnotes && tableData.footnotes.length) || tableData.source) {
+    const footerNotes = uniqueNotes([
+      ...(tableData.notes || []),
+      ...(config.chartData?.notes || []),
+    ]);
+    if ((footerNotes && footerNotes.length) || (tableData.footnotes && tableData.footnotes.length) || tableData.source) {
       const foot = document.createElement('div');
       foot.className = 'dt-footnotes';
+      footerNotes.forEach(note => {
+        const row = document.createElement('div');
+        row.className = 'dt-note';
+        row.textContent = normalizeText(note);
+        foot.appendChild(row);
+      });
       (tableData.footnotes || []).forEach(note => {
         const row = document.createElement('div');
         row.className = 'dt-note';
@@ -2413,14 +2423,25 @@ detailClose.addEventListener('click', closeDetail);
 
 const LEVEL_LABEL = { region: 'Region', province: 'Province / District', municity: 'City / Municipality' };
 
+function uniqueNotes(list) {
+  return [...new Set((list || []).map(v => normalizeText(v)).filter(Boolean))];
+}
+
 function noteHTML() {
   const def = config.definitions?.[config.colorField];
   const metricNote = config.notes?.[config.colorField];
   const sharedNote = config.note;
+  const panelNotes = Array.isArray(config.mapPanelNotes) ? config.mapPanelNotes : [];
+  const tableNotes = uniqueNotes([
+    ...panelNotes,
+    ...(Array.isArray(config.tableData?.notes) ? config.tableData.notes : []),
+    ...(Array.isArray(config.chartData?.notes) ? config.chartData.notes : []),
+  ]);
   const style = 'font-size:11px;color:var(--data-label-color);line-height:1.6;margin:10px 0 4px';
   return (def ? `<p style="${style}">${def}</p>` : '')
        + (metricNote ? `<p style="${style}">${metricNote}</p>` : '')
-       + (sharedNote ? `<p style="${style}">${sharedNote}</p>` : '');
+       + (sharedNote ? `<p style="${style}">${sharedNote}</p>` : '')
+       + tableNotes.map(note => `<p style="${style}">${note}</p>`).join('');
 }
 
 function legendHTML() {

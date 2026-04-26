@@ -591,6 +591,9 @@ function renderCharts(data) {
     }
 
     if (block.type === 'mirrored-comparison') {
+      const sides = el('div', 'mirror-side-labels');
+      sides.innerHTML = `<span>${block.leftLabel}</span><span>${block.rightLabel}</span>`;
+      blockEl.appendChild(sides);    
       drawMirroredComparison(blockEl, block);
     } else if (block.type === 'vertical-comparison') {
       drawVerticalComparison(blockEl, block);
