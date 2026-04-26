@@ -2423,6 +2423,10 @@ detailClose.addEventListener('click', closeDetail);
 
 const LEVEL_LABEL = { region: 'Region', province: 'Province / District', municity: 'City / Municipality' };
 
+function normalizeText(value) {
+  return String(value || '').trim();
+}
+
 function uniqueNotes(list) {
   return [...new Set((list || []).map(v => normalizeText(v)).filter(Boolean))];
 }
