@@ -1103,6 +1103,24 @@ function renderTables(data) {
   `;
   container.appendChild(s3b);
 
+  // Total row first
+  if (tfr.total) {
+    const section = el('div', 'dt-section');
+    const table = document.createElement('table');
+    table.className = 'dt-table';
+    const th = table.createTHead();
+    const hr = th.insertRow();
+    ['', '2025', '2022'].forEach(t => { const c = document.createElement('th'); c.textContent = t; hr.appendChild(c); });
+    const tb = table.createTBody();
+    const tr = tb.insertRow();
+    tr.className = 'dt-total-row';
+    tr.appendChild(labelCell('Total'));
+    tr.appendChild(valCell(tfr.total.v2025));
+    tr.appendChild(valCell(tfr.total.v2022));
+    section.appendChild(table);
+    container.appendChild(section);
+  }
+
   function simpleTfrTable(sectionLabel, rows) {
     const section = el('div', 'dt-section');
     const lbl = el('div', 'dt-section-label');
@@ -1171,24 +1189,6 @@ function renderTables(data) {
       label: r.label, v2025: r.y2025Display ?? String(r.y2025), v2022: r.y2022Display ?? String(r.y2022)
     }));
     container.appendChild(simpleTfrTable('Wealth Quintile', rows));
-  }
-
-  // Total row
-  if (tfr.total) {
-    const section = el('div', 'dt-section');
-    const table = document.createElement('table');
-    table.className = 'dt-table';
-    const th = table.createTHead();
-    const hr = th.insertRow();
-    ['', '2025', '2022'].forEach(t => { const c = document.createElement('th'); c.textContent = t; hr.appendChild(c); });
-    const tb = table.createTBody();
-    const tr = tb.insertRow();
-    tr.className = 'dt-total-row';
-    tr.appendChild(labelCell('Total'));
-    tr.appendChild(valCell(tfr.total.v2025));
-    tr.appendChild(valCell(tfr.total.v2022));
-    section.appendChild(table);
-    container.appendChild(section);
   }
 
   const tfrFoot = footnoteBlock(tfr.footnotes, td.source);
@@ -1349,6 +1349,26 @@ function mapRankedListHTML(activePsgc) {
   const records = Object.values(mapDataByRegion).filter(r => r[cfg.colorField] != null);
   const sorted = [...records].sort((a, b) => (b[cfg.colorField] ?? -Infinity) - (a[cfg.colorField] ?? -Infinity));
   if (!sorted.length) return '';
+  const toNumber = (v) => {
+    if (v == null) return null;
+    const n = Number(String(v).replace(/,/g, ''));
+    return Number.isFinite(n) ? n : null;
+  };
+  const getNationalAverageEntry = () => {
+    const total = appData?.tableData?.tfr?.total;
+    if (!total) return null;
+    const key = String(cfg.colorField || '').toLowerCase();
+    if (key.includes('2025')) {
+      const val = toNumber(total.v2025);
+      return val == null ? null : { value: val, display: String(total.v2025) };
+    }
+    if (key.includes('2022')) {
+      const val = toNumber(total.v2022);
+      return val == null ? null : { value: val, display: String(total.v2022) };
+    }
+    const val = toNumber(total.v2025);
+    return val == null ? null : { value: val, display: String(total.v2025) };
+  };
   const superscripts = ['&#185;','&#178;','&#179;','&#8308;','&#8309;','&#8310;','&#8311;','&#8312;','&#8313;'];
   const notedPsgcs = new Map();
   let noteCounter = 0;
@@ -1366,11 +1386,20 @@ function mapRankedListHTML(activePsgc) {
       `<span class="ranked-val">${r[cfg.colorField]}</span>` +
       `</div>`;
   }).join('');
+  const national = getNationalAverageEntry();
+  const nationalRow = national
+    ? `<div class="ranked-row ranked-row-national">` +
+      `<span class="ranked-i">AVG</span>` +
+      `<span class="ranked-swatch" style="background:${(mapColorScale && national.value != null) ? mapColorScale(national.value) : 'var(--data-label-color)'}"></span>` +
+      `<span class="ranked-name"><strong>National Average</strong></span>` +
+      `<span class="ranked-val"><strong>${national.display}</strong></span>` +
+      `</div>`
+    : '';
   const notes = [...notedPsgcs.entries()].map(([psgc, sup]) => {
     const rec = sorted.find(r => String(r.psgc) === psgc);
-    return `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:10px 0 0">${sup} ${rec.psa_note}</p>`;
+    return `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:10px 0 0"><sup style="font-size:9px">${sup}</sup> ${rec.psa_note}</p>`;
   }).join('');
-  return `<div class="section-head">All Regions</div><div>${rows}</div>${notes}`;
+  return `<div class="section-head">All Regions</div><div>${nationalRow}${rows}</div>${notes}`;
 }
 
 function openMapWelcome() {
@@ -1427,6 +1456,9 @@ function el(tag, cls) {
 </script>
 </body>
 </html>
+
+
+
 
 
 

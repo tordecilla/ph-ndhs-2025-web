@@ -2022,8 +2022,8 @@ function drillRegion(regionFeature, skipAnimation, afterRender) {
       currentView = 'region';
       currentContext = { name, parentName: 'Philippines', psgc, type: 'region' };
       backBtn.style.display = 'block';
-      backBtn.textContent = 'Ã¢â€ Â Philippines';
-      setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
+      backBtn.textContent = 'Back to Philippines';
+      setPageTitle(name + ' - ' + config.title);
       showInfoBtn();
       if (detail.classList.contains('open')) populateDetail(name, 'Philippines', psgc, 'region');
       resetZoom();
@@ -2157,8 +2157,8 @@ function drillMunicity(munFeature, parentPathFn, parentName, skipAnimation) {
     currentView = 'municity';
     currentContext = { name, parentName, psgc, type: 'municity' };
     backBtn.style.display = 'block';
-    backBtn.textContent = 'Ã¢â€ Â ' + parentName;
-    setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
+    backBtn.textContent = 'Back to ' + parentName;
+    setPageTitle(name + ' - ' + config.title);
     showInfoBtn();
     resetZoom();
     g.selectAll('*').remove();
@@ -2216,8 +2216,8 @@ function drillProvince(provFeature, provPath, parentNameKey, skipAnimation, afte
         const regionName = currentContext ? currentContext.name : '';
         currentContext = { name, parentName: regionName, psgc, type: 'province' };
         backBtn.style.display = 'block';
-        backBtn.textContent = 'Ã¢â€ Â ' + regionName;
-        setPageTitle(name + ' Ã¢â‚¬â€ ' + config.title);
+        backBtn.textContent = 'Back to ' + regionName;
+        setPageTitle(name + ' - ' + config.title);
         showInfoBtn();
         if (detail.classList.contains('open')) populateDetail(name, regionName, psgc, 'province');
         resetZoom();
@@ -2331,6 +2331,132 @@ function legendHTML() {
     `<div class="legend-ends"><span>${lo}${suffix}</span><span>${hi}${suffix}</span></div>`;
 }
 
+function getNationalAverageEntry(fieldKey) {
+  if (!fieldKey) return null;
+  const candidates = [];
+
+  function toNumber(v) {
+    if (v == null) return null;
+    const n = Number(String(v).replace(/,/g, ''));
+    return Number.isFinite(n) ? n : null;
+  }
+
+  function cleanLabel(s) {
+    return String(s || '')
+      .replace(/<[^>]+>/g, '')
+      .replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰]+/g, '').replace(/Â/g, '')
+      .replace(/\s*\(\s*2025\s*\)/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .toLowerCase();
+  }
+
+  // 1) Direct keyed totals anywhere in table/chart trees
+  function visit(node, ctxYear = null) {
+    if (Array.isArray(node)) {
+      node.forEach(item => visit(item, ctxYear));
+      return;
+    }
+    if (!node || typeof node !== 'object') return;
+
+    const nodeYear = node.year != null ? Number(node.year) : ctxYear;
+    const label = typeof node.label === 'string' ? node.label.trim().toLowerCase() : '';
+    const raw = node[fieldKey];
+    const numeric = toNumber(raw);
+    if (label === 'total' && numeric != null) {
+      const disp = node[fieldKey + '_display'];
+      candidates.push({ year: Number.isFinite(nodeYear) ? nodeYear : null, value: numeric, display: disp != null ? String(disp) : String(raw) });
+    }
+
+    for (const val of Object.values(node)) visit(val, nodeYear);
+  }
+  visit(config.tableData, null);
+  visit(config.chartData, null);
+
+  // 2) tableData.total.values + tableData.colGroups with keyed columns (e.g., teenage pregnancy)
+  if (!candidates.length && config.tableData?.total?.values && Array.isArray(config.tableData?.colGroups)) {
+    const vals = config.tableData.total.values;
+    const cols = [];
+    for (const g of (config.tableData.colGroups || [])) {
+      const y = Number(g.label);
+      for (const c of (g.cols || [])) cols.push({ year: Number.isFinite(y) ? y : null, key: c.key, label: c.label });
+    }
+    vals.forEach((raw, i) => {
+      const meta = cols[i];
+      if (!meta) return;
+      if (meta.key !== fieldKey) return;
+      const num = toNumber(raw);
+      if (num == null) return;
+      candidates.push({ year: meta.year, value: num, display: String(raw) });
+    });
+  }
+
+  // 3) tableData.tables row totals by metric label + 2025 Total column (e.g., fertility preferences)
+  if (!candidates.length && Array.isArray(config.tableData?.tables)) {
+    const activeLabel = cleanLabel((config.detailFields || []).find(f => f.key === fieldKey)?.label || fieldKey);
+
+    for (const table of config.tableData.tables) {
+      const colMeta = [];
+      for (const g of (table.colGroups || [])) {
+        const y = Number(g.label);
+        for (const c of (g.cols || [])) colMeta.push({ year: Number.isFinite(y) ? y : null, label: String(c.label || '').trim().toLowerCase() });
+      }
+      if (!colMeta.length || !Array.isArray(table.rows)) continue;
+
+      const row = table.rows.find(r => cleanLabel(r.label) === activeLabel);
+      if (!row || !Array.isArray(row.values)) continue;
+
+      const idx2025Total = colMeta.findIndex(c => c.year === 2025 && c.label === 'total');
+      const idxAnyTotal = colMeta.findIndex(c => c.label === 'total');
+      const idx = idx2025Total >= 0 ? idx2025Total : idxAnyTotal;
+      if (idx < 0 || idx >= row.values.length) continue;
+
+      const raw = row.values[idx];
+      const num = toNumber(raw);
+      if (num == null) continue;
+      candidates.push({ year: 2025, value: num, display: String(raw) });
+      break;
+    }
+  }
+  // 4) tableData.tables Total row with metric columns by year
+  if (!candidates.length && Array.isArray(config.tableData?.tables)) {
+    const activeLabel = cleanLabel((config.detailFields || []).find(f => f.key === fieldKey)?.label || fieldKey);
+
+    for (const table of config.tableData.tables) {
+      if (!Array.isArray(table.rows) || !Array.isArray(table.colGroups)) continue;
+      const totalRow = table.rows.find(r => cleanLabel(r.label) === 'total');
+      if (!totalRow || !Array.isArray(totalRow.values)) continue;
+
+      const colMeta = [];
+      for (const g of table.colGroups) {
+        const y = Number(g.label);
+        for (const c of (g.cols || [])) {
+          colMeta.push({ year: Number.isFinite(y) ? y : null, label: cleanLabel(c.label || '') });
+        }
+      }
+      if (!colMeta.length) continue;
+
+      const idx2025 = colMeta.findIndex(c => c.year === 2025 && c.label === activeLabel);
+      const idxAny = colMeta.findIndex(c => c.label === activeLabel);
+      const idx = idx2025 >= 0 ? idx2025 : idxAny;
+      if (idx < 0 || idx >= totalRow.values.length) continue;
+
+      const raw = totalRow.values[idx];
+      const num = toNumber(raw);
+      if (num == null) continue;
+      candidates.push({ year: idx2025 >= 0 ? 2025 : null, value: num, display: String(raw) });
+      break;
+    }
+  }
+
+  if (!candidates.length) return null;
+  return candidates.find(c => c.year === 2025) || candidates.find(c => c.year == null) || candidates[0];
+}
+
+function stripPercent(value) {
+  return String(value == null ? '-' : value).replace(/%/g, '').trim();
+}
+
 function rankedListHTML(level, activePsgc, filterParentPsgc) {
   let records = Object.values(dataByLevel[level] || {});
   if (!records.length || !config.colorField) return '';
@@ -2342,9 +2468,10 @@ function rankedListHTML(level, activePsgc, filterParentPsgc) {
     .filter(r => r[config.colorField] != null)
     .sort((a, b) => (b[config.colorField] ?? -Infinity) - (a[config.colorField] ?? -Infinity));
   if (!sorted.length) return '';
+  const suffix = config.valueSuffix || '';
   const levelLabel = LEVEL_LABEL[level] || level;
   const displayField = config.colorField + '_display';
-  const superscripts = ['&#185;','&#178;','&#179;','&#8308;','&#8309;','&#8310;','&#8311;','&#8312;','&#8313;'];
+  const superscripts = ['1','2','3','4','5','6','7','8','9'];
   const notedPsgcs = new Map();
   let noteCounter = 0;
   sorted.forEach(r => { if (r.psa_note) notedPsgcs.set(String(r.psgc), superscripts[noteCounter++] || String(noteCounter)); });
@@ -2355,7 +2482,7 @@ function rankedListHTML(level, activePsgc, filterParentPsgc) {
     const val  = r[config.colorField];
     const fill = colorScale ? colorScale(val) : 'transparent';
     const active = activePsgc != null && String(r.psgc) === String(activePsgc);
-    const display = r[displayField] ?? (val == null ? '-' : String(val));
+    const display = stripPercent(r[displayField] ?? (val + suffix));
     return `<div class="ranked-row${active ? ' is-active' : ''}">` +
       `<span class="ranked-i">${i + 1}</span>` +
       `<span class="ranked-swatch" style="background:${fill}"></span>` +
@@ -2363,14 +2490,28 @@ function rankedListHTML(level, activePsgc, filterParentPsgc) {
       `<span class="ranked-val">${display}</span>` +
       `</div>`;
   }).join('');
+
+  const national = (level === 'region' && filterParentPsgc == null)
+    ? getNationalAverageEntry(config.colorField)
+    : null;
+
+  const nationalRow = national
+    ? `<div class="ranked-row ranked-row-national">` +
+      `<span class="ranked-i">AVG</span>` +
+      `<span class="ranked-swatch" style="background:${(colorScale && national.value != null) ? colorScale(national.value) : 'var(--data-label-color)'}"></span>` +
+      `<span class="ranked-name"><strong>National Average</strong></span>` +
+      `<span class="ranked-val"><strong>${stripPercent(national.display ?? (national.value + suffix))}</strong></span>` +
+      `</div>`
+    : '';
+
   const notes = [...notedPsgcs.entries()].map(([psgc, sup]) => {
     const rec = sorted.find(r => String(r.psgc) === psgc);
-    return `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:10px 0 0">${sup} ${rec.psa_note}</p>`;
+    return `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:10px 0 0"><sup style="font-size:9px">${sup}</sup> ${rec.psa_note}</p>`;
   }).join('');
   const heading = filterParentPsgc != null
     ? `${levelLabel}s in ${nameRegistry[String(filterParentPsgc)] || ''}`
     : `All ${levelLabel}s`;
-  return `<div class="section-head">${heading}</div><div>${rows}</div>${notes}`;
+  return `<div class="section-head">${heading}</div><div>${nationalRow}${rows}</div>${notes}`;
 }
 
 function populateDetail(lguName, parentName, psgc, type = 'municity') {
@@ -2392,7 +2533,7 @@ function populateDetail(lguName, parentName, psgc, type = 'municity') {
             ? `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:8px 0 0">${val}</p>`
             : '';
         }
-        const display = record[f.key + '_display'] ?? (val == null ? '-' : val);
+        const display = stripPercent(record[f.key + '_display'] ?? (val == null ? '-' : val));
         return `<div class="data-row"><span class="data-label">${f.label}</span><span class="data-value">${display}</span></div>`;
       })
       .join('');
@@ -2467,6 +2608,17 @@ boot();
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

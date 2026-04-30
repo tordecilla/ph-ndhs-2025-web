@@ -840,7 +840,7 @@ function mapRankedListHTML(activePsgc) {
   }).join('');
   const notes = [...noted.entries()].map(([psgc, sup]) => {
     const rec = sorted.find(r => String(r.psgc) === psgc);
-    return `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:10px 0 0">${sup} ${rec.psa_note}</p>`;
+    return `<p style="font-size:11px;line-height:1.6;color:var(--data-label-color);margin:10px 0 0"><sup style="font-size:9px">${sup}</sup> ${rec.psa_note}</p>`;
   }).join('');
   return `<div class="section-head">All Regions</div><div>${rows}</div>${notes}`;
 }
@@ -992,6 +992,9 @@ function el(tag, cls) {
 </script>
 </body>
 </html>
+
+
+
 
 
 
