@@ -1559,11 +1559,13 @@ function slugToMetric(slug) {
 
 function parseStateHash(hash = parseHash()) {
   const parts = String(hash || '').split('--').filter(Boolean);
-  const tab = parts.includes('ttables')
-    ? 'tables'
-    : (parts.includes('tcharts') || parts.includes('tdata'))
-      ? 'charts'
-      : 'map';
+  const tab = parts.includes('tinsights')
+    ? 'insights'
+    : parts.includes('ttables')
+      ? 'tables'
+      : (parts.includes('tcharts') || parts.includes('tdata'))
+        ? 'charts'
+        : 'map';
   const metricToken = parts.find(part => part.startsWith('m'));
   const viewToken = parts.find(part => part.startsWith('v'));
   return {
@@ -1579,7 +1581,9 @@ function buildStateHash(viewHash = '/') {
     ? 'ttables'
     : activeTab === 'charts'
       ? 'tcharts'
-      : 'tmap';
+      : activeTab === 'insights'
+        ? 'tinsights'
+        : 'tmap';
   const parts = [tabToken, 'm' + metricToSlug(metric)];
   const cleanView = String(viewHash || '/').replace(/^\/+/, '');
   if (cleanView && cleanView !== '/') parts.push('v' + cleanView.replace(/\//g, '-'));
@@ -2345,6 +2349,7 @@ boot();
 </script>
 </body>
 </html>
+
 
 
 
