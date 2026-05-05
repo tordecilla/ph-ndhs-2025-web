@@ -3,7 +3,7 @@
   "title": "Current Use of Traditional Contraception Methods Among Married Women",
   "description": "Percent distribution of currently married women aged 15 to 49 years by traditional contraceptive method currently used. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
-  "geoBasePath": "../../_template/philippines-json-maps",
+  "geoBasePath": "../../templates/map-engine/philippines-json-maps",
   "colorField": "any_traditional_method_pct",
   "colorDomain": [
     0,

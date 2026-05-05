@@ -2,7 +2,7 @@
   "title": "Teenage Pregnancy",
   "description": "Teenage pregnancy indicators among women aged 15-19 years. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
-  "geoBasePath": "../../_template/philippines-json-maps",
+  "geoBasePath": "../../templates/map-engine/philippines-json-maps",
   "colorField": "ever_pregnant_pct",
   "colorDomain": [
     0,

@@ -3,7 +3,7 @@
   "title": "Antenatal Care",
   "description": "Among women aged 15 to 49 years who had a live birth and/or a stillbirth in the 2 years preceding the survey, percentage who received antenatal care (ANC) from a skilled provider for the most recent live birth or stillbirth, percentage with four or more ANC visits for the most recent live birth or stillbirth, percentage who took any iron-containing supplements during pregnancy, and percentage whose most recent live birth was protected against neonatal tetanus. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
-  "geoBasePath": "../../_template/philippines-json-maps",
+  "geoBasePath": "../../templates/map-engine/philippines-json-maps",
   "colorField": "antenatal_care_pct",
   "colorDomain": [
     50,

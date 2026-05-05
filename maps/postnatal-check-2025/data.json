@@ -3,7 +3,7 @@
   "title": "Postnatal Check",
   "description": "Among women aged 15 to 49 years with a live birth or stillbirth in the 2 years preceding the survey, percentage who received a postnatal check during the first 2 days after giving birth. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
-  "geoBasePath": "../../_template/philippines-json-maps",
+  "geoBasePath": "../../templates/map-engine/philippines-json-maps",
   "colorField": "postnatal_check_pct",
   "colorDomain": [
     40,

@@ -2,7 +2,7 @@
   "title": "Fertility Preferences",
   "description": "Desire for children among currently married women aged 15-49 years. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
-  "geoBasePath": "../../_template/philippines-json-maps",
+  "geoBasePath": "../../templates/map-engine/philippines-json-maps",
   "colorField": "want_no_more_pct",
   "colorDomain": [
     0,

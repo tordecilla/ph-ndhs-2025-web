@@ -3,7 +3,7 @@
   "title": "Current Use of Contraception Among All Women",
   "description": "Percent distribution of all women aged 15 to 49 years, by contraceptive method currently used, according to background characteristics. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
-  "geoBasePath": "../../_template/philippines-json-maps",
+  "geoBasePath": "../../templates/map-engine/philippines-json-maps",
   "colorField": "any_method_pct",
   "colorDomain": [
     0,

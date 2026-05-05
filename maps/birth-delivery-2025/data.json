@@ -3,7 +3,7 @@
   "title": "Birth Delivery",
   "description": "Among all live births and stillbirths in the 2 years before the survey, percentage delivered by a skilled provider and percentage delivered in a health facility, and percentage delivered by a cesarean section. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
   "maxDepth": "region",
-  "geoBasePath": "../../_template/philippines-json-maps",
+  "geoBasePath": "../../templates/map-engine/philippines-json-maps",
   "colorField": "delivered_skilled_provider_pct",
   "colorDomain": [
     60,
