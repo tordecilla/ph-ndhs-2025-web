@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>2025 National Demographic and Health Survey</title>
+  <link rel="stylesheet" href="../../modules/theme.css">
+  <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: #eef5ef;
+      font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="tab-bar"></div>
+  <div id="tab-map" class="tab-panel"></div>
+  <div id="tab-charts" class="tab-panel"></div>
+  <div id="tab-tables" class="tab-panel"></div>
+  <div id="tab-insights" class="tab-panel"></div>
+
+  <script type="module">
+    const moduleBase = window.NDHS_WEB_MODULE_BASE || '../../modules';
+    window.NDHS_WEB_MODULE_BASE = moduleBase;
+    const { initPage } = await import(moduleBase + '/app.js');
+    initPage();
+  </script>
+</body>
+</html>
+

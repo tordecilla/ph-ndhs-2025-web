@@ -1,0 +1,830 @@
+{
+  "sectionTitle": "Early Childhood Development",
+  "title": "Early Childhood Development Index 2030",
+  "description": "Percentage of children aged 24 to 59 months who are developmentally on-track in health, learning and psychosocial well-being. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Percentage of children aged 24 to 59 months who are developmentally on-track in health, learning and psychosocial well-being: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Early Childhood Development Index 2030",
+    "subtitle": "Percentage of children aged 24 to 59 months who are developmentally on-track in health, learning and psychosocial well-being: Philippines, 2022 and 2025",
+    "tables": [
+      {
+        "id": "total",
+        "title": "Total",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "ecdi2030",
+                "field": "ecdi2030",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children",
+                "field": "total_children",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "ecdi2030_2022",
+                "field": "ecdi2030_2022",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children_2022",
+                "field": "total_children_2022",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": "",
+            "values": [
+              "78.3",
+              "4,500",
+              "76.8",
+              "4,617"
+            ],
+            "rowClass": "dt-total-row"
+          }
+        ]
+      },
+      {
+        "id": "age_in_months",
+        "title": "Age in months",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "ecdi2030",
+                "field": "ecdi2030",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children",
+                "field": "total_children",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "ecdi2030_2022",
+                "field": "ecdi2030_2022",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children_2022",
+                "field": "total_children_2022",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "24-35",
+            "noteRef": "",
+            "values": [
+              "81.9",
+              "1,523",
+              "81.6",
+              "1,496"
+            ]
+          },
+          {
+            "label": "36-47",
+            "noteRef": "",
+            "values": [
+              "77.8",
+              "1,505",
+              "79.8",
+              "1,545"
+            ]
+          },
+          {
+            "label": "48-59",
+            "noteRef": "",
+            "values": [
+              "75.1",
+              "1,472",
+              "69.4",
+              "1,577"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sex",
+        "title": "Sex",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "ecdi2030",
+                "field": "ecdi2030",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children",
+                "field": "total_children",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "ecdi2030_2022",
+                "field": "ecdi2030_2022",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children_2022",
+                "field": "total_children_2022",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Male",
+            "noteRef": "",
+            "values": [
+              "73.9",
+              "2,383",
+              "74.3",
+              "2,436"
+            ]
+          },
+          {
+            "label": "Female",
+            "noteRef": "",
+            "values": [
+              "83.3",
+              "2,117",
+              "79.6",
+              "2,181"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "residence",
+        "title": "Residence",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "ecdi2030",
+                "field": "ecdi2030",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children",
+                "field": "total_children",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "ecdi2030_2022",
+                "field": "ecdi2030_2022",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children_2022",
+                "field": "total_children_2022",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": "",
+            "values": [
+              "80.4",
+              "2,398",
+              "78.1",
+              "2,454"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": "",
+            "values": [
+              "76.0",
+              "2,102",
+              "75.4",
+              "2,163"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "ecdi2030",
+                "field": "ecdi2030",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children",
+                "field": "total_children",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "ecdi2030_2022",
+                "field": "ecdi2030_2022",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children_2022",
+                "field": "total_children_2022",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": "",
+            "values": [
+              "81.0",
+              "571",
+              "73.9",
+              "533"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": "",
+            "values": [
+              "80.6",
+              "65",
+              "77.1",
+              "64"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": "",
+            "values": [
+              "79.8",
+              "344",
+              "85.2",
+              "238"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": "",
+            "values": [
+              "92.2",
+              "112",
+              "83.2",
+              "117"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": "",
+            "values": [
+              "78.9",
+              "541",
+              "84.8",
+              "494"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": "",
+            "values": [
+              "78.4",
+              "540",
+              "78.2",
+              "691"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": "",
+            "values": [
+              "75.3",
+              "131",
+              "77.1",
+              "130"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": "",
+            "values": [
+              "84.4",
+              "225",
+              "73.2",
+              "242"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": "",
+            "values": [
+              "81.4",
+              "161",
+              "81.3",
+              "275"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": "",
+            "values": [
+              "93.0",
+              "186",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": "",
+            "values": [
+              "79.5",
+              "271",
+              "78.5",
+              "342"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": "",
+            "values": [
+              "77.2",
+              "179",
+              "85.0",
+              "179"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "¹",
+            "values": [
+              "67.3",
+              "234",
+              "81.1",
+              "195"
+            ],
+            "note": "Region IX includes the province of Sulu in 2025."
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": "",
+            "values": [
+              "82.9",
+              "197",
+              "76.2",
+              "183"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": "",
+            "values": [
+              "79.6",
+              "209",
+              "78.5",
+              "265"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": "",
+            "values": [
+              "81.7",
+              "174",
+              "71.9",
+              "227"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": "",
+            "values": [
+              "81.5",
+              "107",
+              "83.2",
+              "127"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": "",
+            "values": [
+              "47.2",
+              "252",
+              "46.9",
+              "315"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "attendance_early_childhood_education",
+        "title": "Attendance to early childhood education",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "ecdi2030",
+                "field": "ecdi2030",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children",
+                "field": "total_children",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "ecdi2030_2022",
+                "field": "ecdi2030_2022",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children_2022",
+                "field": "total_children_2022",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Attended",
+            "noteRef": "",
+            "values": [
+              "83.4",
+              "1,109",
+              "80.1",
+              "609"
+            ]
+          },
+          {
+            "label": "Never attended",
+            "noteRef": "",
+            "values": [
+              "73.3",
+              "1,879",
+              "73.3",
+              "2,513"
+            ]
+          },
+          {
+            "label": "Information not available",
+            "noteRef": "",
+            "values": [
+              "80.9",
+              "1,512",
+              "81.4",
+              "1,495"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mother_education",
+        "title": "Mother's educational attainment",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "ecdi2030",
+                "field": "ecdi2030",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children",
+                "field": "total_children",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "ecdi2030_2022",
+                "field": "ecdi2030_2022",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children_2022",
+                "field": "total_children_2022",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": "",
+            "values": [
+              "59.1",
+              "60",
+              "47.4",
+              "41"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": "",
+            "values": [
+              "61.4",
+              "546",
+              "63.6",
+              "655"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": "",
+            "values": [
+              "77.0",
+              "1,935",
+              "77.0",
+              "2,177"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": "",
+            "values": [
+              "88.2",
+              "362",
+              "89.3",
+              "131"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": "",
+            "values": [
+              "76.7",
+              "84",
+              "77.5",
+              "146"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": "",
+            "values": [
+              "84.6",
+              "1,513",
+              "82.0",
+              "1,469"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth_quintile",
+        "title": "Wealth quintile",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "ecdi2030",
+                "field": "ecdi2030",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children",
+                "field": "total_children",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "ecdi2030_2022",
+                "field": "ecdi2030_2022",
+                "label": "Early childhood development index 2030",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_children_2022",
+                "field": "total_children_2022",
+                "label": "Total number of children aged 24 to 59 months",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": "",
+            "values": [
+              "70.9",
+              "1,243",
+              "66.2",
+              "1,174"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": "",
+            "values": [
+              "81.2",
+              "895",
+              "77.3",
+              "1,031"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": "",
+            "values": [
+              "75.4",
+              "908",
+              "80.3",
+              "909"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": "",
+            "values": [
+              "84.5",
+              "763",
+              "82.0",
+              "802"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": "",
+            "values": [
+              "85.0",
+              "690",
+              "83.5",
+              "701"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ Region IX includes the province of Sulu in 2025.",
+      "“NA” denotes that an estimate is not reported.",
+      "Note: Details may not add up to total due to rounding."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "sections": [
+      {
+        "heading": "ECDI 2030 improved slightly at the national level",
+        "body": "The share of children aged 24 to 59 months who were developmentally on track was 78.3 percent in 2025, compared with 76.8 percent in 2022. The national change is modest, so the more revealing patterns are in regional, education, wealth, and early education differences."
+      },
+      {
+        "heading": "Regional variation is wide",
+        "body": "Negros Island Region had the highest ECDI 2030 value at 93.0 percent, followed by Cagayan Valley at 92.2 percent. BARMM was lowest at 47.2 percent, followed by Zamboanga Peninsula at 67.3 percent and MIMAROPA at 75.3 percent. The gap between the highest and lowest regions is 45.8 points."
+      },
+      {
+        "heading": "BARMM is far below every other region",
+        "body": "BARMM is not just the lowest region; it is separated from the rest of the distribution. Its ECDI 2030 value of 47.2 percent is 20.1 points below Zamboanga Peninsula, the next lowest region. That makes BARMM the central regional outlier in this page."
+      },
+      {
+        "heading": "Girls are more likely to be on track than boys",
+        "body": "ECDI 2030 was 83.3 percent for girls and 73.9 percent for boys. The 9.4-point difference is larger than the urban-rural gap, which was 80.4 percent in urban areas and 76.0 percent in rural areas. Sex is therefore one of the clearer non-regional differences in this table."
+      },
+      {
+        "heading": "Early childhood education is linked with higher on-track status",
+        "body": "Children who attended early childhood education had an ECDI 2030 value of 83.4 percent, compared with 73.3 percent among those who never attended. This is an observed association, not proof of causation, but it is one of the strongest non-regional contrasts in the page."
+      },
+      {
+        "heading": "Education and wealth show clear gradients",
+        "body": "ECDI 2030 was 59.1 percent among children whose mothers had no education and 61.4 percent among those whose mothers had Grades 1-6 education, compared with 84.6 percent for college and 88.2 percent for Grades 11-12. By wealth, the lowest quintile was 70.9 percent and the highest was 85.0 percent. These gradients are substantial, even though the education pattern is not perfectly ordered at every level."
+      }
+    ],
+    "takeaways": [
+      "ECDI 2030 rose modestly from 76.8 percent in 2022 to 78.3 percent in 2025.",
+      "Regional variation is large, with Negros Island Region and Cagayan Valley above 90 percent and BARMM below 50 percent.",
+      "Girls have a higher on-track rate than boys, and children who attended early childhood education have higher ECDI 2030 values than those who never attended.",
+      "Mother's education and household wealth are strongly associated with ECDI 2030 differences."
+    ]
+  }
+}

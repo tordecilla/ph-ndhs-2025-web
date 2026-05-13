@@ -1,0 +1,48 @@
+{
+  "sections": [
+    {
+      "heading": "The national picture changed more in modern satisfaction than in total demand",
+      "body": "Total demand for family planning was almost unchanged among currently married and sexually active women, at 71.1 percent in 2025 and 70.7 percent in 2022. Unmet need was also nearly flat, at 12.5 percent in 2025 compared with 12.4 percent in 2022. The clearer movement was in modern-method satisfaction: the percentage of demand satisfied by modern methods rose from 59.1 percent to 62.5 percent as met need for modern methods increased from 41.8 percent to 44.5 percent."
+    },
+    {
+      "heading": "Regional gaps are much wider for satisfaction than for demand itself",
+      "body": "Total demand ranged from 79.6 percent in Davao Region to 54.5 percent in BARMM, a spread of 25.1 percentage points. The percentage of demand satisfied by all methods had a much wider separation, from 91.1 percent in Ilocos Region and 89.1 percent in Central Luzon to 46.4 percent in BARMM. This means the strongest regional contrast is not only whether demand exists, but whether that demand is being met."
+    },
+    {
+      "heading": "BARMM is an outlier because unmet need is larger than met need",
+      "body": "BARMM had unmet need of 29.2 percent in 2025, the highest regional value. Its met need by all methods was 25.3 percent, so unmet need was larger than met need in the region. No other region had that same shape; even Central Visayas, the next-lowest region for met need by all methods at 47.8 percent, still had unmet need of 16.4 percent."
+    },
+    {
+      "heading": "Modern-method satisfaction separates regions with otherwise similar demand",
+      "body": "MIMAROPA, Davao Region, and SOCCSKSARGEN all had high percentages of demand satisfied by modern methods, at 75.0 percent, 73.2 percent, and 71.9 percent. Zamboanga Peninsula¹ had total demand of 68.2 percent, close to NCR at 69.2 percent and Bicol Region at 69.1 percent, but its modern-method satisfaction was 59.2 percent. That is below NCR at 60.1 percent and above Bicol Region at 55.6 percent, showing that similar demand levels can sit on different modern-method satisfaction profiles."
+    },
+    {
+      "heading": "Some regional changes from 2022 to 2025 were sharper than the national change",
+      "body": "Cagayan Valley had one of the clearest declines, with demand satisfied by all methods falling from 90.3 percent in 2022 to 78.7 percent in 2025. Zamboanga Peninsula¹ also moved downward, from 79.8 percent to 73.0 percent for demand satisfied by all methods and from 68.2 percent to 59.2 percent for demand satisfied by modern methods. Davao Region moved in the other direction on total demand, rising from 72.3 percent to 79.6 percent while demand satisfied by all methods stayed high at 88.5 percent in 2025."
+    },
+    {
+      "heading": "The youngest women have high demand but much less of it is met",
+      "body": "Women aged 15 to 19 had total demand of 81.1 percent in 2025, the highest age-group value. They also had the highest unmet need at 38.5 percent and the lowest percentage of demand satisfied by all methods at 52.5 percent. By contrast, women aged 35 to 39 had lower total demand at 74.8 percent but much higher satisfaction, with 85.6 percent of demand satisfied by all methods and 65.0 percent satisfied by modern methods."
+    },
+    {
+      "heading": "Residence differences are mainly about modern-method satisfaction",
+      "body": "Urban and rural levels were close on total demand and unmet need in 2025. Total demand was 70.2 percent in urban areas and 72.2 percent in rural areas, while unmet need was 12.3 percent and 12.8 percent. The larger residence difference was in demand satisfied by modern methods, which was 65.4 percent in rural areas compared with 60.0 percent in urban areas."
+    },
+    {
+      "heading": "Education does not form a simple ladder",
+      "body": "Women with Grades 11-12 education had the highest total demand at 79.3 percent and a relatively high unmet need of 19.1 percent. Women with Grades 7-10 education had lower total demand at 73.7 percent but higher demand satisfied by all methods at 83.6 percent. College-educated women had lower total demand at 67.4 percent, while demand satisfied by all methods was 83.0 percent, close to the national level."
+    },
+    {
+      "heading": "The wealth pattern is strongest at the bottom and top of the distribution",
+      "body": "The lowest wealth quintile had total demand of 75.3 percent and unmet need of 16.3 percent, both above the national values. The highest wealth quintile had lower total demand at 64.2 percent and lower unmet need at 10.6 percent. Modern-method satisfaction was still higher in the lower quintiles, at 64.5 percent in the lowest and 64.9 percent in the second quintile, compared with 58.7 percent in the highest quintile."
+    }
+  ],
+  "takeaways": [
+    "National total demand and unmet need were nearly stable from 2022 to 2025, but modern-method satisfaction improved.",
+    "Regional variation is the strongest part of the story, especially the gap between BARMM and the regions where demand is mostly satisfied.",
+    "Age, education, and wealth patterns show that high demand does not always mean high satisfaction of demand."
+  ],
+  "footnotes": [
+    "¹ Includes the province of Sulu in 2025."
+  ]
+}

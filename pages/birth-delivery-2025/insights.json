@@ -1,0 +1,49 @@
+{
+  "sections": [
+    {
+      "heading": "Birth delivery improved nationally, but the remaining gap is concentrated in place",
+      "body": "For live births and stillbirths combined, 93.5 percent were delivered by a skilled provider in 2025 and 93.5 percent were delivered in a health facility. Both measures improved from 2022, when skilled attendance was 89.6 percent and facility delivery was 88.5 percent. Caesarean delivery also rose, from 19.5 percent to 21.9 percent, but it should be read as a delivery pattern rather than as a simple indicator of better access. The national picture is therefore one of broad improvement, with the more important question now being where delivery care remains much less complete."
+    },
+    {
+      "heading": "BARMM remains the clearest regional outlier despite large gains",
+      "body": "BARMM had the lowest 2025 levels for both skilled attendance and facility delivery, at 69.3 percent and 68.6 percent. Those levels were still far above its 2022 values of 42.4 percent for skilled attendance and 39.1 percent for facility delivery. The improvement is large, but the region still sits more than 24 points below the national level on each measure. This makes BARMM both the strongest progress story and the clearest remaining access gap in the regional table."
+    },
+    {
+      "heading": "Some regions are near universal on core delivery care",
+      "body": "Several regions had skilled attendance and facility delivery at or near universal levels in 2025. CALABARZON reported 99.5 percent for both measures, Central Visayas had 99.0 percent skilled attendance and 99.1 percent facility delivery, and CAR had 99.3 percent skilled attendance with 98.7 percent facility delivery. These regions are not just above the national average; they leave very little remaining space for further gains on the core delivery-care indicators. The contrast with BARMM and Zamboanga Peninsula¹ shows that the national average hides a wide regional spread."
+    },
+    {
+      "heading": "Zamboanga Peninsula remains low and changed little from 2022",
+      "body": "Zamboanga Peninsula¹ recorded 76.1 percent skilled attendance and 75.5 percent facility delivery in 2025. Both were almost unchanged from 2022, when the region reported 75.6 percent skilled attendance and 76.0 percent facility delivery. That pattern differs from BARMM, where the level remained low but the increase was substantial. Zamboanga Peninsula therefore stands out less as a rapid-improvement case and more as a region where delivery-care coverage stayed persistently low."
+    },
+    {
+      "heading": "Caesarean delivery is highly uneven across regions",
+      "body": "The 2025 caesarean section share ranged from 7.5 percent in NIR and 7.6 percent in BARMM to 38.2 percent in Central Luzon and 32.7 percent in NCR. Some regions with very high skilled attendance and facility delivery had much lower caesarean shares, including Central Visayas at 10.8 percent and Caraga at 12.0 percent. This means caesarean section does not simply move with the two access indicators. It points to differences in delivery practice, case mix, referral patterns, or service availability that the table can flag but not explain on its own."
+    },
+    {
+      "heading": "Younger mothers have lower caesarean delivery, not a large access gap",
+      "body": "Mothers under age 20 had 90.3 percent skilled attendance and 90.7 percent facility delivery in 2025, both below the national level but still relatively high. The sharper age difference is in caesarean delivery: 11.6 percent among mothers under 20, compared with 21.0 percent among mothers aged 20 to 34 and 29.5 percent among mothers aged 35 to 49. Skilled attendance and facility delivery improved across age groups from 2022 to 2025, while caesarean delivery fell among mothers under 20 from 14.6 percent. Age therefore matters more for the delivery mode pattern than for whether births occur with skilled or facility-based care."
+    },
+    {
+      "heading": "The urban-rural gap narrowed mainly because rural facility delivery rose",
+      "body": "Urban births still had higher 2025 coverage than rural births, with 95.9 percent versus 91.3 percent delivered by a skilled provider and 95.5 percent versus 91.9 percent delivered in a health facility. The rural gains since 2022 were larger, especially for facility delivery, which increased from 85.0 percent to 91.9 percent. Urban facility delivery also rose, but by a smaller margin, from 91.8 percent to 95.5 percent. The remaining residence gap is real, but the recent movement is more favorable in rural areas."
+    },
+    {
+      "heading": "Education divides delivery care most sharply at the lowest end",
+      "body": "Mothers with no education had 59.2 percent skilled attendance and 54.2 percent facility delivery in 2025, far below every other education group. Mothers with Grades 1 to 6 were also lower than the national level, at 80.9 percent skilled attendance and 80.0 percent facility delivery, but they were much higher than mothers with no education. At the other end, college-educated mothers had 98.5 percent skilled attendance and 98.4 percent facility delivery. The education gradient is therefore not just a smooth ladder; the lowest education category is separated by a much larger gap."
+    },
+    {
+      "heading": "Wealth gaps remain large even as the lowest quintile improved",
+      "body": "In the lowest wealth quintile, 82.9 percent of births were delivered by a skilled provider and 81.6 percent were delivered in a health facility in 2025. These were substantial gains from 2022, when the corresponding figures were 72.7 percent and 71.2 percent. However, the highest wealth quintile was still near universal, at 99.2 percent skilled attendance and 99.7 percent facility delivery. Caesarean delivery shows an even wider wealth divide, from 9.3 percent in the lowest quintile to 50.8 percent in the highest."
+    }
+  ],
+  "takeaways": [
+    "Birth delivery care improved nationally from 2022 to 2025, with skilled attendance and facility delivery both reaching 93.5 percent.",
+    "BARMM made large gains but remained the lowest region for both skilled attendance and facility delivery in 2025.",
+    "Zamboanga Peninsula¹ changed little from 2022 and remained well below the national level on the two core delivery-care measures.",
+    "Caesarean delivery varies much more sharply by wealth and region than skilled attendance or facility delivery, so it should be interpreted as a delivery-pattern indicator rather than a simple access score."
+  ],
+  "footnotes": [
+    "¹ Includes the province of Sulu in 2025."
+  ]
+}

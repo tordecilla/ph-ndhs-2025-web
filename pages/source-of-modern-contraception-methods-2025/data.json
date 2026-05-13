@@ -1,0 +1,604 @@
+{
+  "sectionTitle": "Contraception",
+  "title": "Source of Modern Contraception Methods",
+  "description": "Percent distribution of users of modern contraceptive methods aged 15 to 49 years by most recent source of method, according to method. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
+  "subtitle": "Percent distribution of users of modern contraceptive methods aged 15 to 49 years by most recent source of method, according to method: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Source of Modern Contraception Methods",
+    "subtitle": "Percent distribution of users of modern contraceptive methods aged 15 to 49 years by most recent source of method, according to method: Philippines, 2022 and 2025",
+    "tables": [
+      {
+        "id": "source",
+        "title": "Source",
+        "subtitle": "Percent distribution of users of modern contraceptive methods aged 15 to 49 years by most recent source of method, according to method: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Female sterilization"
+              },
+              {
+                "label": "Male sterilization"
+              },
+              {
+                "label": "IUD"
+              },
+              {
+                "label": "Injectables"
+              },
+              {
+                "label": "Implants"
+              },
+              {
+                "label": "Pill"
+              },
+              {
+                "label": "Male condom"
+              },
+              {
+                "label": "Other"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Female sterilization"
+              },
+              {
+                "label": "Male sterilization"
+              },
+              {
+                "label": "IUD"
+              },
+              {
+                "label": "Injectables"
+              },
+              {
+                "label": "Implants"
+              },
+              {
+                "label": "Pill"
+              },
+              {
+                "label": "Male condom"
+              },
+              {
+                "label": "Other"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Public sector",
+            "noteRef": null,
+            "values": [
+              "73.5",
+              "*",
+              "90.4",
+              "89.0",
+              "93.9",
+              "22.8",
+              "12.2",
+              "*",
+              "51.0",
+              "73.0",
+              "*",
+              "88.3",
+              "85.3",
+              "90.0",
+              "24.1",
+              "14.2",
+              "*",
+              "50.1"
+            ]
+          },
+          {
+            "label": "Government hospital",
+            "noteRef": null,
+            "values": [
+              "67.9",
+              "*",
+              "47.3",
+              "2.6",
+              "21.9",
+              "0.4",
+              "4.7",
+              "*",
+              "18.2",
+              "67.7",
+              "*",
+              "36.6",
+              "2.6",
+              "21.7",
+              "0.5",
+              "1.0",
+              "*",
+              "18.9"
+            ]
+          },
+          {
+            "label": "Rural health center/ urban health center/ lying-in clinic",
+            "noteRef": null,
+            "values": [
+              "4.3",
+              "*",
+              "23.8",
+              "27.2",
+              "35.6",
+              "4.6",
+              "1.8",
+              "*",
+              "11.5",
+              "3.6",
+              "*",
+              "23.2",
+              "26.8",
+              "30.3",
+              "4.4",
+              "2.3",
+              "*",
+              "9.8"
+            ]
+          },
+          {
+            "label": "Barangay health station",
+            "noteRef": null,
+            "values": [
+              "1.0",
+              "*",
+              "18.6",
+              "57.0",
+              "34.7",
+              "15.1",
+              "5.4",
+              "*",
+              "19.5",
+              "1.6",
+              "*",
+              "27.5",
+              "52.4",
+              "37.0",
+              "17.8",
+              "10.1",
+              "*",
+              "19.9"
+            ]
+          },
+          {
+            "label": "Barangay supply/ service point officer/ BHW",
+            "noteRef": "¹",
+            "values": [
+              "0.2",
+              "*",
+              "0.6",
+              "2.1",
+              "1.7",
+              "2.7",
+              "0.2",
+              "*",
+              "1.7",
+              "0.0",
+              "*",
+              "0.9",
+              "3.5",
+              "0.9",
+              "1.5",
+              "0.8",
+              "*",
+              "1.3"
+            ]
+          },
+          {
+            "label": "Other public sector",
+            "noteRef": null,
+            "values": [
+              "0.1",
+              "*",
+              "0.0",
+              "0.1",
+              "0.0",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.1",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0"
+            ]
+          },
+          {
+            "label": "Private medical sector",
+            "noteRef": null,
+            "values": [
+              "26.5",
+              "*",
+              "9.6",
+              "11.0",
+              "6.0",
+              "67.0",
+              "54.7",
+              "*",
+              "41.8",
+              "26.9",
+              "*",
+              "11.3",
+              "14.6",
+              "10.0",
+              "70.3",
+              "72.0",
+              "*",
+              "46.3"
+            ]
+          },
+          {
+            "label": "Private hospital/ clinic/ lying-in clinic",
+            "noteRef": null,
+            "values": [
+              "25.4",
+              "*",
+              "9.2",
+              "7.0",
+              "4.4",
+              "0.5",
+              "0.5",
+              "*",
+              "6.8",
+              "26.6",
+              "*",
+              "10.5",
+              "8.7",
+              "9.3",
+              "0.5",
+              "0.0",
+              "*",
+              "8.3"
+            ]
+          },
+          {
+            "label": "Pharmacy",
+            "noteRef": null,
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "2.9",
+              "0.0",
+              "66.0",
+              "54.2",
+              "*",
+              "34.2",
+              "0.0",
+              "*",
+              "0.1",
+              "4.3",
+              "0.2",
+              "69.6",
+              "71.9",
+              "*",
+              "37.6"
+            ]
+          },
+          {
+            "label": "Private doctor",
+            "noteRef": null,
+            "values": [
+              "1.0",
+              "*",
+              "0.4",
+              "0.7",
+              "0.8",
+              "0.6",
+              "0.0",
+              "*",
+              "0.6",
+              "0.3",
+              "*",
+              "0.6",
+              "1.1",
+              "0.5",
+              "0.1",
+              "0.1",
+              "*",
+              "0.3"
+            ]
+          },
+          {
+            "label": "Private nurse/ midwife",
+            "noteRef": null,
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.3",
+              "0.1",
+              "0.0",
+              "0.0",
+              "*",
+              "0.1",
+              "0.0",
+              "*",
+              "0.1",
+              "0.5",
+              "0.0",
+              "0.0",
+              "0.0",
+              "*",
+              "0.1"
+            ]
+          },
+          {
+            "label": "Industry based clinic",
+            "noteRef": null,
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.1",
+              "0.8",
+              "0.0",
+              "0.0",
+              "*",
+              "0.1",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "Other source",
+            "noteRef": null,
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.1",
+              "0.0",
+              "10.2",
+              "33.1",
+              "*",
+              "7.2",
+              "0.1",
+              "*",
+              "0.0",
+              "0.1",
+              "0.0",
+              "5.6",
+              "13.8",
+              "*",
+              "3.6"
+            ]
+          },
+          {
+            "label": "Shop/store",
+            "noteRef": null,
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.1",
+              "0.0",
+              "10.1",
+              "29.2",
+              "*",
+              "6.8",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "5.2",
+              "12.6",
+              "*",
+              "3.3"
+            ]
+          },
+          {
+            "label": "Church",
+            "noteRef": null,
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.1",
+              "0.0",
+              "*",
+              "0.1"
+            ]
+          },
+          {
+            "label": "Friend/relative",
+            "noteRef": null,
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.1",
+              "3.9",
+              "*",
+              "0.4",
+              "0.0",
+              "*",
+              "0.0",
+              "0.1",
+              "0.0",
+              "0.2",
+              "0.4",
+              "*",
+              "0.1"
+            ]
+          },
+          {
+            "label": "Other",
+            "noteRef": null,
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.1",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.1",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.9",
+              "*",
+              "0.1"
+            ]
+          },
+          {
+            "label": "Don't know",
+            "noteRef": null,
+            "values": [
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0",
+              "0.0",
+              "*",
+              "0.4",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "*",
+              "0.0"
+            ]
+          },
+          {
+            "label": "Total",
+            "noteRef": null,
+            "rowClass": "dt-total-row",
+            "values": [
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "99.6",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0"
+            ]
+          },
+          {
+            "label": "Total number of women aged 15 to 49 years",
+            "noteRef": null,
+            "values": [
+              "1,363",
+              "11",
+              "476",
+              "1,018",
+              "709",
+              "3,432",
+              "558",
+              "18",
+              "7,585",
+              "1,389",
+              "15",
+              "475",
+              "779",
+              "464",
+              "3,107",
+              "435",
+              "12",
+              "6,676"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ Barangay health worker",
+      "“NA” denotes that an estimate is not reported.",
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "1. Total includes other modern methods, including other modern methods mentioned by respondent and male sterilization, patch, emergency contraception, and standard days method. but excludes lactational amenorrhea method (LAM), mucus/Billings/ovulation, basal body temperature, and symptothermal methods",
+      "2. An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.",
+      "3. Details may not add up to total due to rounding."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "sections": [
+      {
+        "heading": "The public sector is now the largest source overall",
+        "body": "In 2025, 51.0 percent of modern method users obtained their method from the public sector, compared with 41.8 percent from the private medical sector and 7.2 percent from other sources. The public share was only slightly higher than in 2022, when it was 50.1 percent, but the private medical sector fell from 46.3 percent. The shift is modest overall, but it changes the balance of the source profile."
+      },
+      {
+        "heading": "Pharmacies remain central, but less dominant than in 2022",
+        "body": "Pharmacies accounted for 34.2 percent of modern method sourcing in 2025, down from 37.6 percent in 2022. They remain the single largest detailed private source overall, but the decline matters because pharmacy sourcing is heavily tied to short-acting, retail-access methods. For pills, 66.0 percent came from pharmacies in 2025; for male condoms, the pharmacy share was 54.2 percent."
+      },
+      {
+        "heading": "Long-acting methods are overwhelmingly public-sector methods",
+        "body": "Implants, IUDs, and injectables are all anchored in public channels. In 2025, 93.9 percent of implant users, 90.4 percent of IUD users, and 89.0 percent of injectable users obtained the method from the public sector. The detailed pattern differs by method: implants were split mainly between rural or urban health centers at 35.6 percent and barangay health stations at 34.7 percent, while injectables were concentrated in barangay health stations at 57.0 percent."
+      },
+      {
+        "heading": "Sterilization is hospital-based in a way other methods are not",
+        "body": "Female sterilization has a distinct source profile. Nearly three-fourths of users obtained it from the public sector, at 73.5 percent, and government hospitals alone accounted for 67.9 percent. Private hospitals and clinics accounted for another 25.4 percent. That makes sterilization much more hospital-centered than pills, condoms, injectables, or implants."
+      },
+      {
+        "heading": "Condom sourcing shifted away from pharmacies toward other sources",
+        "body": "Male condom sourcing changed more than any other method-source combination. The pharmacy share fell from 71.9 percent in 2022 to 54.2 percent in 2025, and the broader private medical sector fell from 72.0 to 54.7 percent. At the same time, other sources rose from 13.8 to 33.1 percent. This is the largest observed source shift in the table and is specific to condoms rather than the overall modern-method profile."
+      }
+    ],
+    "takeaways": [
+      "The public sector was the largest source of modern contraceptive methods in 2025, while the private medical sector declined from 2022.",
+      "Long-acting and provider-dependent methods are mostly sourced through public channels, while pills and condoms remain much more tied to pharmacies and other nonpublic sources.",
+      "Male condom sourcing changed sharply, with pharmacies losing share and other sources gaining between 2022 and 2025."
+    ]
+  }
+}

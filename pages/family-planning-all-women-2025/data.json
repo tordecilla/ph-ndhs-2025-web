@@ -1,0 +1,1626 @@
+{
+  "sectionTitle": "Contraception",
+  "title": "Need and Demand for Family Planning Among All Women",
+  "description": "Percentage of all women aged 15-49 with unmet need for family planning, percentage with met need for family planning, percentage with met need for family planning who are using modern methods, percentage with demand for family planning, percentage of the demand for family planning that is satisfied, and percentage of the demand for family planning that is satisfied with modern methods. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Percentage of all women aged 15-49 with unmet need for family planning, percentage with met need for family planning, percentage with met need for family planning who are using modern methods, percentage with demand for family planning, percentage of the demand for family planning that is satisfied, and percentage of the demand for family planning that is satisfied with modern methods, according to background characteristics: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Need and Demand for Family Planning Among All Women",
+    "subtitle": "Percentage of all women aged 15-49 with unmet need for family planning, percentage with met need for family planning, percentage with met need for family planning who are using modern methods, percentage with demand for family planning, percentage of the demand for family planning that is satisfied, and percentage of the demand for family planning that is satisfied with modern methods, according to background characteristics: Philippines, 2022 and 2025",
+    "tables": [
+      {
+        "id": "total",
+        "title": "Total",
+        "subtitle": "All women aged 15 to 49 years.",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "unmet_need",
+                "field": "unmet_need",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all",
+                "field": "met_need_all",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern",
+                "field": "met_need_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand",
+                "field": "total_demand",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all",
+                "field": "satisfied_all",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern",
+                "field": "satisfied_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "unmet_need_2022",
+                "field": "unmet_need_2022",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all_2022",
+                "field": "met_need_all_2022",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern_2022",
+                "field": "met_need_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand_2022",
+                "field": "total_demand_2022",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all_2022",
+                "field": "satisfied_all_2022",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern_2022",
+                "field": "satisfied_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": null,
+            "rowClass": "dt-total-row",
+            "values": [
+              "7.6",
+              "33.8",
+              "25.7",
+              "41.4",
+              "81.6",
+              "62.0",
+              "41.4",
+              "29,694",
+              "7.7",
+              "34.1",
+              "24.3",
+              "41.8",
+              "81.6",
+              "58.1",
+              "41.8",
+              "27,821"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "age",
+        "title": "Age in years",
+        "subtitle": "All women aged 15 to 49 years.",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "unmet_need",
+                "field": "unmet_need",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all",
+                "field": "met_need_all",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern",
+                "field": "met_need_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand",
+                "field": "total_demand",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all",
+                "field": "satisfied_all",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern",
+                "field": "satisfied_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "unmet_need_2022",
+                "field": "unmet_need_2022",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all_2022",
+                "field": "met_need_all_2022",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern_2022",
+                "field": "met_need_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand_2022",
+                "field": "total_demand_2022",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all_2022",
+                "field": "satisfied_all_2022",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern_2022",
+                "field": "satisfied_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "15-19",
+            "noteRef": null,
+            "values": [
+              "2.9",
+              "3.1",
+              "2.5",
+              "6.0",
+              "52.0",
+              "42.0",
+              "6.0",
+              "5,691",
+              "2.2",
+              "3.4",
+              "2.6",
+              "5.6",
+              "60.9",
+              "46.3",
+              "5.6",
+              "5,531"
+            ]
+          },
+          {
+            "label": "20-24",
+            "noteRef": null,
+            "values": [
+              "7.2",
+              "19.9",
+              "15.4",
+              "27.1",
+              "73.6",
+              "56.8",
+              "27.1",
+              "4,637",
+              "7.0",
+              "19.6",
+              "13.7",
+              "26.6",
+              "73.6",
+              "51.4",
+              "26.6",
+              "4,677"
+            ]
+          },
+          {
+            "label": "25-29",
+            "noteRef": null,
+            "values": [
+              "10.3",
+              "36.3",
+              "27.4",
+              "46.6",
+              "77.9",
+              "58.7",
+              "46.6",
+              "4,172",
+              "10.4",
+              "40.5",
+              "29.3",
+              "50.9",
+              "79.5",
+              "57.5",
+              "50.9",
+              "3,904"
+            ]
+          },
+          {
+            "label": "30-34",
+            "noteRef": null,
+            "values": [
+              "9.7",
+              "49.5",
+              "38.0",
+              "59.2",
+              "83.7",
+              "64.3",
+              "59.2",
+              "4,152",
+              "10.6",
+              "50.0",
+              "35.6",
+              "60.6",
+              "82.5",
+              "58.7",
+              "60.6",
+              "3,729"
+            ]
+          },
+          {
+            "label": "35-39",
+            "noteRef": null,
+            "values": [
+              "9.1",
+              "53.9",
+              "41.1",
+              "63.0",
+              "85.5",
+              "65.3",
+              "63.0",
+              "4,048",
+              "9.4",
+              "54.9",
+              "40.4",
+              "64.3",
+              "85.4",
+              "62.9",
+              "64.3",
+              "3,418"
+            ]
+          },
+          {
+            "label": "40-44",
+            "noteRef": null,
+            "values": [
+              "9.0",
+              "51.1",
+              "38.4",
+              "60.0",
+              "85.1",
+              "64.0",
+              "60.0",
+              "3,649",
+              "9.6",
+              "52.6",
+              "37.0",
+              "62.2",
+              "84.5",
+              "59.5",
+              "62.2",
+              "3,389"
+            ]
+          },
+          {
+            "label": "45-49",
+            "noteRef": null,
+            "values": [
+              "7.1",
+              "39.3",
+              "29.3",
+              "46.4",
+              "84.6",
+              "63.0",
+              "46.4",
+              "3,345",
+              "7.5",
+              "40.0",
+              "27.1",
+              "47.5",
+              "84.2",
+              "57.0",
+              "47.5",
+              "3,173"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "residence",
+        "title": "Residence",
+        "subtitle": "All women aged 15 to 49 years.",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "unmet_need",
+                "field": "unmet_need",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all",
+                "field": "met_need_all",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern",
+                "field": "met_need_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand",
+                "field": "total_demand",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all",
+                "field": "satisfied_all",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern",
+                "field": "satisfied_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "unmet_need_2022",
+                "field": "unmet_need_2022",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all_2022",
+                "field": "met_need_all_2022",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern_2022",
+                "field": "met_need_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand_2022",
+                "field": "total_demand_2022",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all_2022",
+                "field": "satisfied_all_2022",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern_2022",
+                "field": "satisfied_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": null,
+            "values": [
+              "7.2",
+              "31.9",
+              "23.3",
+              "39.1",
+              "81.5",
+              "59.6",
+              "39.1",
+              "17,071",
+              "7.6",
+              "32.8",
+              "22.6",
+              "40.4",
+              "81.1",
+              "55.9",
+              "40.4",
+              "15,579"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": null,
+            "values": [
+              "8.1",
+              "36.3",
+              "28.8",
+              "44.4",
+              "81.7",
+              "64.9",
+              "44.4",
+              "12,623",
+              "7.7",
+              "35.8",
+              "26.4",
+              "43.5",
+              "82.2",
+              "60.7",
+              "43.5",
+              "12,242"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "subtitle": "All women aged 15 to 49 years.",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "unmet_need",
+                "field": "unmet_need",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all",
+                "field": "met_need_all",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern",
+                "field": "met_need_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand",
+                "field": "total_demand",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all",
+                "field": "satisfied_all",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern",
+                "field": "satisfied_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "unmet_need_2022",
+                "field": "unmet_need_2022",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all_2022",
+                "field": "met_need_all_2022",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern_2022",
+                "field": "met_need_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand_2022",
+                "field": "total_demand_2022",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all_2022",
+                "field": "satisfied_all_2022",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern_2022",
+                "field": "satisfied_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": null,
+            "values": [
+              "7.5",
+              "28.5",
+              "21.4",
+              "36.0",
+              "79.1",
+              "59.3",
+              "36.0",
+              "4,454",
+              "6.4",
+              "28.9",
+              "20.2",
+              "35.3",
+              "81.9",
+              "57.2",
+              "35.3",
+              "4,280"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": null,
+            "values": [
+              "7.9",
+              "34.6",
+              "26.8",
+              "42.5",
+              "81.5",
+              "63.1",
+              "42.5",
+              "488",
+              "8.6",
+              "32.2",
+              "24.2",
+              "40.8",
+              "78.8",
+              "59.2",
+              "40.8",
+              "438"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": null,
+            "values": [
+              "3.9",
+              "36.5",
+              "24.7",
+              "40.4",
+              "90.4",
+              "61.1",
+              "40.4",
+              "2,543",
+              "7.7",
+              "37.7",
+              "25.4",
+              "45.4",
+              "83.0",
+              "56.0",
+              "45.4",
+              "1,473"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": null,
+            "values": [
+              "9.1",
+              "32.9",
+              "28.7",
+              "42.0",
+              "78.3",
+              "68.5",
+              "42.0",
+              "805",
+              "4.7",
+              "40.2",
+              "34.3",
+              "44.9",
+              "89.6",
+              "76.4",
+              "44.9",
+              "833"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": null,
+            "values": [
+              "5.4",
+              "39.0",
+              "28.9",
+              "44.4",
+              "87.8",
+              "65.0",
+              "44.4",
+              "3,590",
+              "6.4",
+              "36.4",
+              "24.6",
+              "42.8",
+              "85.1",
+              "57.5",
+              "42.8",
+              "3,100"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": null,
+            "values": [
+              "6.7",
+              "33.5",
+              "23.8",
+              "40.1",
+              "83.4",
+              "59.3",
+              "40.1",
+              "3,995",
+              "8.3",
+              "32.5",
+              "21.3",
+              "40.8",
+              "79.6",
+              "52.2",
+              "40.8",
+              "4,215"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": null,
+            "values": [
+              "6.1",
+              "39.4",
+              "33.9",
+              "45.5",
+              "86.6",
+              "74.5",
+              "45.5",
+              "715",
+              "8.3",
+              "35.6",
+              "26.8",
+              "43.9",
+              "81.0",
+              "61.0",
+              "43.9",
+              "715"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": null,
+            "values": [
+              "8.0",
+              "31.8",
+              "22.1",
+              "39.8",
+              "79.9",
+              "55.4",
+              "39.8",
+              "1,363",
+              "6.6",
+              "35.9",
+              "21.6",
+              "42.5",
+              "84.5",
+              "50.9",
+              "42.5",
+              "1,405"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": null,
+            "values": [
+              "8.8",
+              "38.0",
+              "27.2",
+              "46.8",
+              "81.3",
+              "58.1",
+              "46.8",
+              "1,082",
+              "9.5",
+              "34.7",
+              "24.0",
+              "44.2",
+              "78.5",
+              "54.4",
+              "44.2",
+              "1,831"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": null,
+            "values": [
+              "8.6",
+              "33.4",
+              "28.2",
+              "42.1",
+              "79.5",
+              "67.1",
+              "42.1",
+              "1,261",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": null,
+            "values": [
+              "9.8",
+              "25.7",
+              "21.0",
+              "35.5",
+              "72.5",
+              "59.0",
+              "35.5",
+              "2,006",
+              "8.9",
+              "37.0",
+              "26.9",
+              "45.9",
+              "80.7",
+              "58.5",
+              "45.9",
+              "2,023"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": null,
+            "values": [
+              "7.1",
+              "39.7",
+              "27.6",
+              "46.8",
+              "84.8",
+              "58.9",
+              "46.8",
+              "1,061",
+              "5.6",
+              "35.6",
+              "23.1",
+              "41.3",
+              "86.3",
+              "56.0",
+              "41.3",
+              "1,062"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "⁴",
+            "values": [
+              "11.0",
+              "30.2",
+              "24.7",
+              "41.2",
+              "73.3",
+              "59.8",
+              "41.2",
+              "1,216",
+              "8.7",
+              "34.2",
+              "28.5",
+              "42.9",
+              "79.7",
+              "66.4",
+              "42.9",
+              "970"
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": null,
+            "values": [
+              "9.7",
+              "34.3",
+              "28.3",
+              "44.0",
+              "77.9",
+              "64.3",
+              "44.0",
+              "1,195",
+              "8.7",
+              "35.7",
+              "30.4",
+              "44.4",
+              "80.5",
+              "68.4",
+              "44.4",
+              "1,035"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": null,
+            "values": [
+              "6.2",
+              "45.1",
+              "37.1",
+              "51.3",
+              "87.9",
+              "72.2",
+              "51.3",
+              "1,396",
+              "6.1",
+              "41.2",
+              "32.3",
+              "47.4",
+              "87.0",
+              "68.1",
+              "47.4",
+              "1,474"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": null,
+            "values": [
+              "6.7",
+              "38.9",
+              "32.5",
+              "45.6",
+              "85.2",
+              "71.2",
+              "45.6",
+              "964",
+              "8.1",
+              "35.0",
+              "29.0",
+              "43.0",
+              "81.3",
+              "67.4",
+              "43.0",
+              "1,175"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": null,
+            "values": [
+              "8.2",
+              "39.5",
+              "32.2",
+              "47.7",
+              "82.9",
+              "67.4",
+              "47.7",
+              "600",
+              "9.2",
+              "35.5",
+              "29.0",
+              "44.7",
+              "79.4",
+              "64.9",
+              "44.7",
+              "636"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": null,
+            "values": [
+              "18.5",
+              "16.2",
+              "13.0",
+              "34.8",
+              "46.7",
+              "37.4",
+              "34.8",
+              "959",
+              "12.1",
+              "21.5",
+              "12.5",
+              "33.6",
+              "63.9",
+              "37.3",
+              "33.6",
+              "1,156"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "education",
+        "title": "Educational attainment",
+        "subtitle": "All women aged 15 to 49 years.",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "unmet_need",
+                "field": "unmet_need",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all",
+                "field": "met_need_all",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern",
+                "field": "met_need_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand",
+                "field": "total_demand",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all",
+                "field": "satisfied_all",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern",
+                "field": "satisfied_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "unmet_need_2022",
+                "field": "unmet_need_2022",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all_2022",
+                "field": "met_need_all_2022",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern_2022",
+                "field": "met_need_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand_2022",
+                "field": "total_demand_2022",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all_2022",
+                "field": "satisfied_all_2022",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern_2022",
+                "field": "satisfied_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": null,
+            "values": [
+              "13.9",
+              "24.2",
+              "19.9",
+              "38.1",
+              "63.6",
+              "52.3",
+              "38.1",
+              "232",
+              "13.5",
+              "23.9",
+              "19.0",
+              "37.4",
+              "63.9",
+              "50.9",
+              "37.4",
+              "197"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": null,
+            "values": [
+              "11.7",
+              "47.9",
+              "40.1",
+              "59.6",
+              "80.4",
+              "67.3",
+              "59.6",
+              "2,214",
+              "11.5",
+              "48.9",
+              "38.4",
+              "60.4",
+              "80.9",
+              "63.5",
+              "60.4",
+              "2,538"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": null,
+            "values": [
+              "8.3",
+              "40.2",
+              "31.6",
+              "48.5",
+              "82.9",
+              "65.3",
+              "48.5",
+              "11,055",
+              "7.5",
+              "37.3",
+              "27.1",
+              "44.8",
+              "83.2",
+              "60.6",
+              "44.8",
+              "11,954"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": null,
+            "values": [
+              "5.2",
+              "15.2",
+              "11.8",
+              "20.4",
+              "74.4",
+              "57.6",
+              "20.4",
+              "3,644",
+              "4.3",
+              "8.7",
+              "6.1",
+              "13.0",
+              "67.3",
+              "46.7",
+              "13.0",
+              "2,751"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": null,
+            "values": [
+              "10.2",
+              "45.9",
+              "32.0",
+              "56.1",
+              "81.8",
+              "57.0",
+              "56.1",
+              "435",
+              "12.0",
+              "39.1",
+              "29.8",
+              "51.1",
+              "76.6",
+              "58.3",
+              "51.1",
+              "625"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": null,
+            "values": [
+              "6.7",
+              "30.7",
+              "21.7",
+              "37.5",
+              "82.0",
+              "57.8",
+              "37.5",
+              "12,114",
+              "7.5",
+              "33.3",
+              "22.0",
+              "40.8",
+              "81.7",
+              "53.8",
+              "40.8",
+              "9,755"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth",
+        "title": "Wealth quintile",
+        "subtitle": "All women aged 15 to 49 years.",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "unmet_need",
+                "field": "unmet_need",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all",
+                "field": "met_need_all",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern",
+                "field": "met_need_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand",
+                "field": "total_demand",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all",
+                "field": "satisfied_all",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern",
+                "field": "satisfied_modern",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "unmet_need_2022",
+                "field": "unmet_need_2022",
+                "label": "Unmet need for family planning"
+              },
+              {
+                "key": "met_need_all_2022",
+                "field": "met_need_all_2022",
+                "label": "All methods",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "met_need_modern_2022",
+                "field": "met_need_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Met need for family planning (currently using)"
+              },
+              {
+                "key": "total_demand_2022",
+                "field": "total_demand_2022",
+                "label": "Total demand for family planning",
+                "noteRef": "³"
+              },
+              {
+                "key": "satisfied_all_2022",
+                "field": "satisfied_all_2022",
+                "label": "All methods",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "satisfied_modern_2022",
+                "field": "satisfied_modern_2022",
+                "label": "Modern methods",
+                "noteRef": "²",
+                "groupLabel": "Percentage of demand satisfied",
+                "groupNoteRef": "¹"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": null,
+            "values": [
+              "11.2",
+              "39.6",
+              "32.5",
+              "50.7",
+              "78.0",
+              "64.1",
+              "50.7",
+              "5,130",
+              "9.6",
+              "41.1",
+              "31.0",
+              "50.7",
+              "81.0",
+              "61.1",
+              "50.7",
+              "4,595"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": null,
+            "values": [
+              "8.0",
+              "37.2",
+              "29.2",
+              "45.1",
+              "82.4",
+              "64.6",
+              "45.1",
+              "5,605",
+              "8.4",
+              "38.3",
+              "28.8",
+              "46.7",
+              "82.0",
+              "61.6",
+              "46.7",
+              "5,219"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": null,
+            "values": [
+              "6.7",
+              "35.2",
+              "26.0",
+              "41.9",
+              "84.0",
+              "61.9",
+              "41.9",
+              "6,149",
+              "7.7",
+              "35.1",
+              "25.3",
+              "42.8",
+              "82.0",
+              "59.1",
+              "42.8",
+              "5,666"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": null,
+            "values": [
+              "6.9",
+              "30.1",
+              "22.5",
+              "37.0",
+              "81.5",
+              "60.8",
+              "37.0",
+              "6,497",
+              "7.3",
+              "29.4",
+              "18.9",
+              "36.7",
+              "80.0",
+              "51.6",
+              "36.7",
+              "6,048"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": null,
+            "values": [
+              "6.1",
+              "28.4",
+              "20.0",
+              "34.5",
+              "82.3",
+              "57.9",
+              "34.5",
+              "6,313",
+              "6.0",
+              "29.1",
+              "19.8",
+              "35.0",
+              "83.0",
+              "56.6",
+              "35.0",
+              "6,292"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ Percentage of demand satisfied is met need divided by total demand.",
+      "² Modern methods include female sterilization, male sterilization, IUD, injectables, implants, patch, pill, male condom, female condom, emergency contraception, standard days method (SDM), mucus/Billings/ovulation, basal body temperature, symptothermal, lactational amenorrhea method (LAM), and other modern methods.",
+      "³ Total demand is the sum of unmet need and met need.",
+      "⁴ Region IX includes the province of Sulu in 2025.",
+      "“NA” denotes that an estimate is not reported."
+    ],
+    "notes": [
+      "Numbers in this table correspond to the revised definition of unmet need described in Bradley et al., 2012.",
+      "Details may not add up to total due to rounding."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "sections": [
+      {
+        "heading": "Demand barely moved, but modern satisfaction improved",
+        "body": "Among all women aged 15 to 49, total demand for family planning was almost unchanged, at 41.4 percent in 2025 compared with 41.8 percent in 2022. Unmet need also stayed nearly flat, at 7.6 percent. The more meaningful change is within met need: modern methods accounted for 25.7 percent of all women in 2025, up from 24.3 percent in 2022, and the share of demand satisfied by modern methods rose from 58.1 to 62.0 percent."
+      },
+      {
+        "heading": "BARMM stands apart on both unmet need and modern satisfaction",
+        "body": "Regional differences are much sharper than the national average suggests. BARMM had the highest unmet need at 18.5 percent, more than twice the national level of 7.6 percent, and the lowest share of demand satisfied by modern methods at 37.4 percent. At the other end, MIMAROPA reached 74.5 percent modern satisfaction and Davao Region reached 72.2 percent, while Ilocos Region had the lowest unmet need at 3.9 percent."
+      },
+      {
+        "heading": "The regional pattern is not a simple high-demand story",
+        "body": "Some regions combine high demand with relatively strong modern satisfaction, while others show a more strained pattern. MIMAROPA and Davao Region both have high modern satisfaction and comparatively low unmet need, at 6.1 and 6.2 percent. BARMM is different: unmet need is high and modern satisfaction is low. Zamboanga Peninsula also has above-national unmet need at 11.0 percent and below-national modern satisfaction at 59.8 percent, making the regional picture more than a rank order of demand."
+      },
+      {
+        "heading": "Demand rises through the main family-building years, then eases",
+        "body": "The age pattern is steep. Total demand was only 6.0 percent among women aged 15-19, then rose to 46.6 percent at ages 25-29 and peaked at 63.0 percent at ages 35-39. Modern satisfaction also strengthened with age, from 42.0 percent among women aged 15-19 to 65.3 percent at ages 35-39, before remaining close to that level at older ages."
+      },
+      {
+        "heading": "Socioeconomic patterns are shaped by who is in the all-women denominator",
+        "body": "Demand and modern use are higher in poorer and less-educated groups, but this should not be read as a simple access advantage. The lowest wealth quintile had total demand of 50.7 percent and modern satisfaction of 64.1 percent, compared with 34.5 percent and 57.9 percent in the highest quintile. Women with Grades 1-6 education had the highest total demand, at 59.6 percent, while women with Grades 11-12 had much lower demand at 20.4 percent. These differences likely reflect age, union status, and family-building stage mixed into the all-women denominator."
+      }
+    ],
+    "takeaways": [
+      "Total demand for family planning among all women was nearly unchanged from 2022 to 2025, but modern methods satisfied a larger share of that demand.",
+      "BARMM is the clearest regional outlier, with the highest unmet need and the lowest modern-method demand satisfaction.",
+      "The strongest social differences in the all-women data need careful reading because age, union status, and family-building stage are mixed together."
+    ]
+  }
+}

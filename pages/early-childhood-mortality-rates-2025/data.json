@@ -1,0 +1,169 @@
+{
+  "sectionTitle": "Childhood Mortality",
+  "title": "Early Childhood Mortality Rates",
+  "description": "Neonatal, post-neonatal, infant, child and under-5 mortality rates for 5 year periods preceding the survey: Philippines, 2022 and 2025.",
+  "subtitle": "Neonatal, post-neonatal, infant, child and under-5 mortality rates for 5-year periods preceding the survey: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Early Childhood Mortality Rates",
+    "subtitle": "Neonatal, post-neonatal, infant, child and under-5 mortality rates for 5-year periods preceding the survey: Philippines, 2022 and 2025",
+    "tables": [
+      {
+        "id": "years_preceding_the_survey",
+        "title": "Years preceding the survey",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "neonatal_mortality",
+                "field": "neonatal_mortality",
+                "label": "Neonatal mortality (NN)",
+                "noteRef": ""
+              },
+              {
+                "key": "post_neonatal_mortality",
+                "field": "post_neonatal_mortality",
+                "label": "Post-neonatal mortality (PNN)",
+                "noteRef": "¹"
+              },
+              {
+                "key": "infant_mortality",
+                "field": "infant_mortality",
+                "label": "Infant mortality (1q0)",
+                "noteRef": ""
+              },
+              {
+                "key": "child_mortality",
+                "field": "child_mortality",
+                "label": "Child mortality (4q1)",
+                "noteRef": ""
+              },
+              {
+                "key": "under_5_mortality",
+                "field": "under_5_mortality",
+                "label": "Under-5 mortality (5q0)",
+                "noteRef": ""
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "neonatal_mortality_2022",
+                "field": "neonatal_mortality_2022",
+                "label": "Neonatal mortality (NN)",
+                "noteRef": ""
+              },
+              {
+                "key": "post_neonatal_mortality_2022",
+                "field": "post_neonatal_mortality_2022",
+                "label": "Post-neonatal mortality (PNN)",
+                "noteRef": "¹"
+              },
+              {
+                "key": "infant_mortality_2022",
+                "field": "infant_mortality_2022",
+                "label": "Infant mortality (1q0)",
+                "noteRef": ""
+              },
+              {
+                "key": "child_mortality_2022",
+                "field": "child_mortality_2022",
+                "label": "Child mortality (4q1)",
+                "noteRef": ""
+              },
+              {
+                "key": "under_5_mortality_2022",
+                "field": "under_5_mortality_2022",
+                "label": "Under-5 mortality (5q0)",
+                "noteRef": ""
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "0-4",
+            "noteRef": "",
+            "values": [
+              "12",
+              "6",
+              "18",
+              "3",
+              "22",
+              "15",
+              "7",
+              "22",
+              "5",
+              "26"
+            ]
+          },
+          {
+            "label": "5-9",
+            "noteRef": "",
+            "values": [
+              "10",
+              "6",
+              "15",
+              "5",
+              "20",
+              "8",
+              "6",
+              "14",
+              "6",
+              "20"
+            ]
+          },
+          {
+            "label": "10-14",
+            "noteRef": "",
+            "values": [
+              "9",
+              "6",
+              "15",
+              "7",
+              "22",
+              "10",
+              "7",
+              "17",
+              "6",
+              "24"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ Computed as the difference between the infant and neonatal mortality rates",
+      "Childhood mortality rates are expressed as the number of deaths per 1,000 live births."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "sections": [
+      {
+        "heading": "Recent under-5 mortality is lower than in 2022",
+        "body": "For the 0-4 years before the survey, under-5 mortality was 22 deaths per 1,000 live births in 2025, down from 26 in 2022. Infant mortality also declined from 22 to 18, while neonatal mortality fell from 15 to 12. The decline is broad across the main early-life indicators, but the levels remain concentrated in infancy rather than in ages 1 to 4."
+      },
+      {
+        "heading": "Infant deaths make up most of the under-5 total",
+        "body": "In the most recent period, infant mortality was 18 while child mortality was 3. That means most under-5 mortality occurs before the first birthday. Neonatal mortality alone was 12, twice the post-neonatal rate of 6, so the first month of life remains the largest component of early childhood mortality in this table."
+      },
+      {
+        "heading": "The longer period pattern is relatively stable",
+        "body": "Across the three periods shown for 2025, under-5 mortality is 22 for 0-4 years, 20 for 5-9 years, and 22 for 10-14 years before the survey. Infant mortality is also close across periods, at 18, 15, and 15. The data do not show a sharp long-run break across these period bands; the clearer movement is the improvement in the most recent period compared with 2022."
+      },
+      {
+        "heading": "Child mortality after infancy is smaller but still visible",
+        "body": "Child mortality was 3 deaths per 1,000 children surviving to age 1 in the 0-4 year period, lower than 5 in the 5-9 year period and 7 in the 10-14 year period. The levels are much lower than infant mortality, but they still contribute to the under-5 total and keep the under-5 rate above infant mortality alone."
+      }
+    ],
+    "takeaways": [
+      "Recent under-5 mortality fell from 26 to 22 deaths per 1,000 live births between the 2022 and 2025 surveys.",
+      "Most early childhood mortality in the recent period occurs before age 1, especially during the neonatal period.",
+      "Across the three period bands, under-5 mortality is fairly stable in 2025, ranging from 20 to 22 deaths per 1,000 live births."
+    ]
+  }
+}

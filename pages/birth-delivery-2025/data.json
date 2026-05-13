@@ -1,0 +1,951 @@
+{
+  "sectionTitle": "Maternal Care",
+  "title": "Birth Delivery",
+  "description": "Among all live births and stillbirths in the 2 years before the survey, percentage delivered by a skilled provider and percentage delivered in a health facility, and percentage delivered by a cesarean section. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Among all live births and stillbirths in the 2 years before the survey, percentage delivered by a skilled provider and percentage delivered in a health facility, and percentage delivered by a cesarean section, according to background characteristics: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Birth Delivery",
+    "subtitle": "Among all live births and stillbirths in the 2 years before the survey, percentage delivered by a skilled provider and percentage delivered in a health facility, and percentage delivered by a cesarean section, according to background characteristics: Philippines, 2022 and 2025",
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+    "footnotes": [
+      "¹ Skilled provider includes doctor, nurse, and midwife.",
+      "² Iron tablets and syrup or micronutrient supplements.",
+      "³ Includes mothers with two injections during the pregnancy of her most recent live birth, or two or more injections (the last within 3 years of the most recent live birth), or three or more injections (the last within 5 years of the most recent live birth), or four or more injections (the last within 10 years of the most recent live birth), or five or more injections at any time prior to the last live birth",
+      "⁴ Includes women who received a check from a doctor, nurse, midwife, traditional birth attendant/hilot, or barangay health worker.",
+      "⁵ For women who had both a live birth and a stillbirth in the 2 years preceding the survey, data on antenatal care and postnatal checks are tabulated for the most recent birth only.",
+      "⁶ Region IX includes the province of Sulu in 2025.",
+      "“NA” denotes that an estimate is not reported or not applicable.",
+      "If more than one source of assistance was mentioned, only the provider with the highest qualifications is considered in this tabulation.",
+      "Figures in parentheses are based on 25-49 unweighted cases.",
+      "Details may not add up to total due to rounding."
+    ],
+    "tables": [
+      {
+        "id": "total-live-births",
+        "title": "Total",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct",
+                "field": "delivered_skilled_provider_pct",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "delivered_health_facility_pct",
+                "field": "delivered_health_facility_pct",
+                "label": "Delivered in a health facility"
+              },
+              {
+                "key": "caesarean_section_pct",
+                "field": "caesarean_section_pct",
+                "label": "Delivered by caesarean section"
+              },
+              {
+                "key": "births_total",
+                "field": "births_total",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct_2022",
+                "field": "delivered_skilled_provider_pct_2022",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "delivered_skilled_provider_pct_2022_display"
+              },
+              {
+                "key": "delivered_health_facility_pct_2022",
+                "field": "delivered_health_facility_pct_2022",
+                "label": "Delivered in a health facility",
+                "displayKey": "delivered_health_facility_pct_2022_display"
+              },
+              {
+                "key": "caesarean_section_pct_2022",
+                "field": "caesarean_section_pct_2022",
+                "label": "Delivered by caesarean section",
+                "displayKey": "caesarean_section_pct_2022_display"
+              },
+              {
+                "key": "births_total_2022",
+                "field": "births_total_2022",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Live births and stillbirths",
+            "noteRef": null,
+            "values": [
+              "93.5",
+              "93.5",
+              "21.9",
+              "2,759",
+              "89.6",
+              "88.5",
+              "19.5",
+              "2,983"
+            ],
+            "chartLabel": "Total",
+            "rowClass": "dt-total-row"
+          },
+          {
+            "label": "Live births",
+            "noteRef": null,
+            "values": [
+              "93.6",
+              "93.7",
+              "21.9",
+              "2,730",
+              "89.6",
+              "88.4",
+              "19.5",
+              "2,942"
+            ],
+            "excludeFromCharts": true,
+            "rowClass": "dt-total-row"
+          },
+          {
+            "label": "Stillbirths",
+            "noteRef": null,
+            "values": [
+              "(88.4)",
+              "(82.0)",
+              "(22.1)",
+              "28",
+              "(91.9)",
+              "(91.9)",
+              "(23.8)",
+              "40"
+            ],
+            "excludeFromCharts": true,
+            "rowClass": "dt-total-row"
+          }
+        ]
+      },
+      {
+        "id": "mothers-age-at-birth",
+        "title": "Mother's age at birth (in years)",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct",
+                "field": "delivered_skilled_provider_pct",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "delivered_health_facility_pct",
+                "field": "delivered_health_facility_pct",
+                "label": "Delivered in a health facility"
+              },
+              {
+                "key": "caesarean_section_pct",
+                "field": "caesarean_section_pct",
+                "label": "Delivered by caesarean section"
+              },
+              {
+                "key": "births_total",
+                "field": "births_total",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct_2022",
+                "field": "delivered_skilled_provider_pct_2022",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "delivered_skilled_provider_pct_2022_display"
+              },
+              {
+                "key": "delivered_health_facility_pct_2022",
+                "field": "delivered_health_facility_pct_2022",
+                "label": "Delivered in a health facility",
+                "displayKey": "delivered_health_facility_pct_2022_display"
+              },
+              {
+                "key": "caesarean_section_pct_2022",
+                "field": "caesarean_section_pct_2022",
+                "label": "Delivered by caesarean section",
+                "displayKey": "caesarean_section_pct_2022_display"
+              },
+              {
+                "key": "births_total_2022",
+                "field": "births_total_2022",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "<20",
+            "noteRef": null,
+            "values": [
+              "90.3",
+              "90.7",
+              "11.6",
+              "258",
+              "88.9",
+              "87.0",
+              "14.6",
+              "266"
+            ]
+          },
+          {
+            "label": "20-34",
+            "noteRef": null,
+            "values": [
+              "94.8",
+              "94.8",
+              "21.0",
+              "1,892",
+              "90.5",
+              "89.4",
+              "18.3",
+              "2,158"
+            ]
+          },
+          {
+            "label": "35-49",
+            "noteRef": null,
+            "values": [
+              "91.1",
+              "91.4",
+              "29.5",
+              "580",
+              "85.8",
+              "85.0",
+              "26.9",
+              "518"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "residence",
+        "title": "Residence",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct",
+                "field": "delivered_skilled_provider_pct",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "delivered_health_facility_pct",
+                "field": "delivered_health_facility_pct",
+                "label": "Delivered in a health facility"
+              },
+              {
+                "key": "caesarean_section_pct",
+                "field": "caesarean_section_pct",
+                "label": "Delivered by caesarean section"
+              },
+              {
+                "key": "births_total",
+                "field": "births_total",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct_2022",
+                "field": "delivered_skilled_provider_pct_2022",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "delivered_skilled_provider_pct_2022_display"
+              },
+              {
+                "key": "delivered_health_facility_pct_2022",
+                "field": "delivered_health_facility_pct_2022",
+                "label": "Delivered in a health facility",
+                "displayKey": "delivered_health_facility_pct_2022_display"
+              },
+              {
+                "key": "caesarean_section_pct_2022",
+                "field": "caesarean_section_pct_2022",
+                "label": "Delivered by caesarean section",
+                "displayKey": "caesarean_section_pct_2022_display"
+              },
+              {
+                "key": "births_total_2022",
+                "field": "births_total_2022",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": null,
+            "values": [
+              "95.9",
+              "95.5",
+              "24.6",
+              "1,371",
+              "93.0",
+              "91.8",
+              "22.4",
+              "1,467"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": null,
+            "values": [
+              "91.3",
+              "91.9",
+              "19.2",
+              "1,359",
+              "86.1",
+              "85.0",
+              "16.6",
+              "1,475"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct",
+                "field": "delivered_skilled_provider_pct",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "delivered_health_facility_pct",
+                "field": "delivered_health_facility_pct",
+                "label": "Delivered in a health facility"
+              },
+              {
+                "key": "caesarean_section_pct",
+                "field": "caesarean_section_pct",
+                "label": "Delivered by caesarean section"
+              },
+              {
+                "key": "births_total",
+                "field": "births_total",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct_2022",
+                "field": "delivered_skilled_provider_pct_2022",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "delivered_skilled_provider_pct_2022_display"
+              },
+              {
+                "key": "delivered_health_facility_pct_2022",
+                "field": "delivered_health_facility_pct_2022",
+                "label": "Delivered in a health facility",
+                "displayKey": "delivered_health_facility_pct_2022_display"
+              },
+              {
+                "key": "caesarean_section_pct_2022",
+                "field": "caesarean_section_pct_2022",
+                "label": "Delivered by caesarean section",
+                "displayKey": "caesarean_section_pct_2022_display"
+              },
+              {
+                "key": "births_total_2022",
+                "field": "births_total_2022",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": null,
+            "values": [
+              "98.4",
+              "98.1",
+              "32.7",
+              "326",
+              "95.9",
+              "93.4",
+              "22.3",
+              "291"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": null,
+            "values": [
+              "99.3",
+              "98.7",
+              "29.1",
+              "47",
+              "98.5",
+              "92.9",
+              "30.6",
+              "52"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": null,
+            "values": [
+              "95.0",
+              "99.7",
+              "17.0",
+              "246",
+              "97.9",
+              "97.9",
+              "22.7",
+              "149"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": null,
+            "values": [
+              "98.9",
+              "94.7",
+              "25.7",
+              "68",
+              "95.7",
+              "94.3",
+              "25.1",
+              "103"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": null,
+            "values": [
+              "97.2",
+              "96.6",
+              "38.2",
+              "364",
+              "97.8",
+              "97.0",
+              "35.7",
+              "311"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": null,
+            "values": [
+              "99.5",
+              "99.5",
+              "24.2",
+              "272",
+              "95.8",
+              "93.8",
+              "29.4",
+              "424"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": null,
+            "values": [
+              "85.3",
+              "84.3",
+              "20.7",
+              "82",
+              "79.7",
+              "77.0",
+              "12.8",
+              "91"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": null,
+            "values": [
+              "91.7",
+              "91.7",
+              "15.1",
+              "122",
+              "92.9",
+              "92.0",
+              "18.4",
+              "139"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": null,
+            "values": [
+              "96.7",
+              "96.7",
+              "18.6",
+              "112",
+              "93.6",
+              "93.3",
+              "9.3",
+              "233"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": null,
+            "values": [
+              "97.8",
+              "97.5",
+              "7.5",
+              "110",
+              "NA",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": null,
+            "values": [
+              "99.0",
+              "99.1",
+              "10.8",
+              "169",
+              "93.0",
+              "95.4",
+              "16.0",
+              "216"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": null,
+            "values": [
+              "95.5",
+              "95.1",
+              "27.4",
+              "118",
+              "92.0",
+              "89.9",
+              "14.2",
+              "98"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "⁶",
+            "values": [
+              "76.1",
+              "75.5",
+              "11.5",
+              "146",
+              "75.6",
+              "76.0",
+              "9.5",
+              "138"
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": null,
+            "values": [
+              "89.5",
+              "89.5",
+              "18.0",
+              "123",
+              "93.9",
+              "93.3",
+              "13.3",
+              "127"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": null,
+            "values": [
+              "93.6",
+              "96.9",
+              "20.7",
+              "121",
+              "90.6",
+              "90.6",
+              "15.5",
+              "150"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": null,
+            "values": [
+              "87.9",
+              "83.6",
+              "16.0",
+              "97",
+              "83.2",
+              "81.7",
+              "11.6",
+              "155"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": null,
+            "values": [
+              "97.9",
+              "97.1",
+              "12.0",
+              "75",
+              "92.0",
+              "90.6",
+              "11.7",
+              "77"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": null,
+            "values": [
+              "69.3",
+              "68.6",
+              "7.6",
+              "131",
+              "42.4",
+              "39.1",
+              "4.9",
+              "188"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mothers-educational-attainment",
+        "title": "Mother's educational attainment",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct",
+                "field": "delivered_skilled_provider_pct",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "delivered_health_facility_pct",
+                "field": "delivered_health_facility_pct",
+                "label": "Delivered in a health facility"
+              },
+              {
+                "key": "caesarean_section_pct",
+                "field": "caesarean_section_pct",
+                "label": "Delivered by caesarean section"
+              },
+              {
+                "key": "births_total",
+                "field": "births_total",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct_2022",
+                "field": "delivered_skilled_provider_pct_2022",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "delivered_skilled_provider_pct_2022_display"
+              },
+              {
+                "key": "delivered_health_facility_pct_2022",
+                "field": "delivered_health_facility_pct_2022",
+                "label": "Delivered in a health facility",
+                "displayKey": "delivered_health_facility_pct_2022_display"
+              },
+              {
+                "key": "caesarean_section_pct_2022",
+                "field": "caesarean_section_pct_2022",
+                "label": "Delivered by caesarean section",
+                "displayKey": "caesarean_section_pct_2022_display"
+              },
+              {
+                "key": "births_total_2022",
+                "field": "births_total_2022",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": null,
+            "values": [
+              "(59.2)",
+              "(54.2)",
+              "(3.5)",
+              "19",
+              "(52.4)",
+              "(51.6)",
+              "(4.8)",
+              "30"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": null,
+            "values": [
+              "80.9",
+              "80.0",
+              "13.4",
+              "278",
+              "67.0",
+              "66.7",
+              "7.3",
+              "334"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": null,
+            "values": [
+              "91.9",
+              "92.5",
+              "14.7",
+              "1,090",
+              "89.3",
+              "87.5",
+              "14.7",
+              "1,330"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": null,
+            "values": [
+              "97.1",
+              "97.3",
+              "12.0",
+              "315",
+              "93.7",
+              "93.1",
+              "12.4",
+              "196"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": null,
+            "values": [
+              "97.9",
+              "96.0",
+              "23.0",
+              "60",
+              "97.9",
+              "97.9",
+              "51.5",
+              "58"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": null,
+            "values": [
+              "98.5",
+              "98.4",
+              "35.9",
+              "968",
+              "97.2",
+              "96.6",
+              "29.9",
+              "995"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth-quintile",
+        "title": "Wealth quintile",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct",
+                "field": "delivered_skilled_provider_pct",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "delivered_health_facility_pct",
+                "field": "delivered_health_facility_pct",
+                "label": "Delivered in a health facility"
+              },
+              {
+                "key": "caesarean_section_pct",
+                "field": "caesarean_section_pct",
+                "label": "Delivered by caesarean section"
+              },
+              {
+                "key": "births_total",
+                "field": "births_total",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "delivered_skilled_provider_pct_2022",
+                "field": "delivered_skilled_provider_pct_2022",
+                "label": "Delivered by a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "delivered_skilled_provider_pct_2022_display"
+              },
+              {
+                "key": "delivered_health_facility_pct_2022",
+                "field": "delivered_health_facility_pct_2022",
+                "label": "Delivered in a health facility",
+                "displayKey": "delivered_health_facility_pct_2022_display"
+              },
+              {
+                "key": "caesarean_section_pct_2022",
+                "field": "caesarean_section_pct_2022",
+                "label": "Delivered by caesarean section",
+                "displayKey": "caesarean_section_pct_2022_display"
+              },
+              {
+                "key": "births_total_2022",
+                "field": "births_total_2022",
+                "label": "Total number of births",
+                "isCount": true,
+                "displayKey": "births_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": null,
+            "values": [
+              "82.9",
+              "81.6",
+              "9.3",
+              "701",
+              "72.7",
+              "71.2",
+              "5.5",
+              "817"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": null,
+            "values": [
+              "94.0",
+              "95.5",
+              "13.9",
+              "611",
+              "91.0",
+              "89.9",
+              "14.3",
+              "558"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": null,
+            "values": [
+              "97.9",
+              "97.8",
+              "23.6",
+              "587",
+              "96.1",
+              "94.8",
+              "19.2",
+              "640"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": null,
+            "values": [
+              "99.3",
+              "99.3",
+              "26.8",
+              "468",
+              "99.0",
+              "97.7",
+              "26.9",
+              "463"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": null,
+            "values": [
+              "99.2",
+              "99.7",
+              "50.8",
+              "363",
+              "99.1",
+              "98.9",
+              "43.4",
+              "464"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

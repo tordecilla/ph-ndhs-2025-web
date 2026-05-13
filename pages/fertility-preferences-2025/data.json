@@ -1,0 +1,933 @@
+{
+  "title": "Fertility Preferences",
+  "description": "Desire for children among currently married women aged 15-49 years. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, shown by number of living children and by region: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Fertility Preferences",
+    "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, shown by number of living children and by region: Philippines, 2022 and 2025",
+    "tables": [
+      {
+        "id": "region-total",
+        "title": "Total",
+        "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, according to region: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Have another soon",
+                "field": "another_soon_pct",
+                "noteRef": "²"
+              },
+              {
+                "label": "Have another later",
+                "field": "another_later_pct",
+                "noteRef": "³"
+              },
+              {
+                "label": "Have another, undecided when",
+                "field": "another_undecided_pct"
+              },
+              {
+                "label": "Undecided",
+                "field": "undecided_pct"
+              },
+              {
+                "label": "Want no more",
+                "field": "want_no_more_pct"
+              },
+              {
+                "label": "Sterilized",
+                "field": "sterilized_pct",
+                "noteRef": "⁴"
+              },
+              {
+                "label": "Declared infecund",
+                "field": "declared_infecund_pct"
+              },
+              {
+                "label": "Total"
+              },
+              {
+                "label": "Total number of women aged 15 to 49 years",
+                "field": "total_n"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Have another soon",
+                "field": "another_soon_pct_2022",
+                "noteRef": "²"
+              },
+              {
+                "label": "Have another later",
+                "field": "another_later_pct_2022",
+                "noteRef": "³"
+              },
+              {
+                "label": "Have another, undecided when",
+                "field": "another_undecided_pct_2022"
+              },
+              {
+                "label": "Undecided",
+                "field": "undecided_pct_2022"
+              },
+              {
+                "label": "Want no more",
+                "field": "want_no_more_pct_2022"
+              },
+              {
+                "label": "Sterilized",
+                "field": "sterilized_pct_2022",
+                "noteRef": "⁴"
+              },
+              {
+                "label": "Declared infecund",
+                "field": "declared_infecund_pct_2022"
+              },
+              {
+                "label": "Total"
+              },
+              {
+                "label": "Total number of women aged 15 to 49 years",
+                "field": "total_n_2022"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "rowClass": "dt-total-row",
+            "values": [
+              "13.4",
+              "16.2",
+              "0.6",
+              "10.0",
+              "49.4",
+              "7.9",
+              "2.5",
+              "100.0",
+              "16,092",
+              "13.9",
+              "17.4",
+              "0.2",
+              "8.1",
+              "48.8",
+              "8.7",
+              "2.8",
+              "100.0",
+              "15,306"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "living-children",
+        "title": "By Number of Living Children",
+        "titleNoteRef": "¹",
+        "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, according to number of living children: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "0"
+              },
+              {
+                "label": "1"
+              },
+              {
+                "label": "2"
+              },
+              {
+                "label": "3"
+              },
+              {
+                "label": "4"
+              },
+              {
+                "label": "5"
+              },
+              {
+                "label": "6+"
+              },
+              {
+                "label": "Total"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Have another soon",
+            "noteRef": "²",
+            "values": [
+              "54.9",
+              "22.8",
+              "7.7",
+              "4.5",
+              "2.1",
+              "3.6",
+              "1.1",
+              "13.4",
+              "63.2",
+              "25.3",
+              "7.8",
+              "4.1",
+              "3.3",
+              "2.9",
+              "1.4",
+              "13.9"
+            ]
+          },
+          {
+            "label": "Have another later",
+            "noteRef": "³",
+            "values": [
+              "20.2",
+              "33.8",
+              "15.6",
+              "6.7",
+              "4.6",
+              "2.9",
+              "2.3",
+              "16.2",
+              "17.9",
+              "40.0",
+              "18.2",
+              "7.7",
+              "3.5",
+              "3.9",
+              "2.2",
+              "17.4"
+            ]
+          },
+          {
+            "label": "Have another, undecided when",
+            "noteRef": null,
+            "values": [
+              "1.3",
+              "1.3",
+              "0.2",
+              "0.3",
+              "0.1",
+              "0.0",
+              "0.0",
+              "0.6",
+              "0.5",
+              "0.3",
+              "0.2",
+              "0.1",
+              "0.0",
+              "0.3",
+              "0.1",
+              "0.2"
+            ]
+          },
+          {
+            "label": "Undecided",
+            "noteRef": null,
+            "values": [
+              "9.5",
+              "13.1",
+              "11.5",
+              "8.5",
+              "5.6",
+              "7.1",
+              "5.0",
+              "10.0",
+              "5.7",
+              "10.4",
+              "9.2",
+              "6.9",
+              "5.6",
+              "6.9",
+              "7.9",
+              "8.1"
+            ]
+          },
+          {
+            "label": "Want no more",
+            "noteRef": null,
+            "values": [
+              "6.2",
+              "25.3",
+              "57.5",
+              "63.0",
+              "69.5",
+              "71.7",
+              "72.8",
+              "49.4",
+              "4.3",
+              "21.3",
+              "56.6",
+              "61.8",
+              "69.0",
+              "66.5",
+              "72.0",
+              "48.8"
+            ]
+          },
+          {
+            "label": "Sterilized",
+            "noteRef": "⁴",
+            "values": [
+              "0.3",
+              "0.8",
+              "5.8",
+              "15.4",
+              "16.3",
+              "11.8",
+              "16.7",
+              "7.9",
+              "0.4",
+              "0.9",
+              "5.9",
+              "17.6",
+              "16.1",
+              "15.7",
+              "12.0",
+              "8.7"
+            ]
+          },
+          {
+            "label": "Declared infecund",
+            "noteRef": null,
+            "values": [
+              "7.7",
+              "2.8",
+              "1.7",
+              "1.6",
+              "1.9",
+              "2.9",
+              "2.1",
+              "2.5",
+              "8.0",
+              "1.8",
+              "2.1",
+              "2.0",
+              "2.4",
+              "4.0",
+              "4.4",
+              "2.8"
+            ]
+          },
+          {
+            "label": "Total",
+            "rowClass": "dt-total-row",
+            "values": [
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0",
+              "100.0"
+            ]
+          },
+          {
+            "label": "Number of women",
+            "values": [
+              "1,321",
+              "3,757",
+              "4,729",
+              "3,197",
+              "1,625",
+              "746",
+              "716",
+              "16,092",
+              "1,164",
+              "3,364",
+              "4,212",
+              "2,988",
+              "1,747",
+              "829",
+              "1,002",
+              "15,306"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "subtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, according to region: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "label": "Have another soon",
+                "field": "another_soon_pct",
+                "noteRef": "²"
+              },
+              {
+                "label": "Have another later",
+                "field": "another_later_pct",
+                "noteRef": "³"
+              },
+              {
+                "label": "Have another, undecided when",
+                "field": "another_undecided_pct"
+              },
+              {
+                "label": "Undecided",
+                "field": "undecided_pct"
+              },
+              {
+                "label": "Want no more",
+                "field": "want_no_more_pct"
+              },
+              {
+                "label": "Sterilized",
+                "field": "sterilized_pct",
+                "noteRef": "⁴"
+              },
+              {
+                "label": "Declared infecund",
+                "field": "declared_infecund_pct"
+              },
+              {
+                "label": "Total"
+              },
+              {
+                "label": "Total number of women aged 15 to 49 years",
+                "field": "total_n"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "label": "Have another soon",
+                "field": "another_soon_pct_2022",
+                "noteRef": "²"
+              },
+              {
+                "label": "Have another later",
+                "field": "another_later_pct_2022",
+                "noteRef": "³"
+              },
+              {
+                "label": "Have another, undecided when",
+                "field": "another_undecided_pct_2022"
+              },
+              {
+                "label": "Undecided",
+                "field": "undecided_pct_2022"
+              },
+              {
+                "label": "Want no more",
+                "field": "want_no_more_pct_2022"
+              },
+              {
+                "label": "Sterilized",
+                "field": "sterilized_pct_2022",
+                "noteRef": "⁴"
+              },
+              {
+                "label": "Declared infecund",
+                "field": "declared_infecund_pct_2022"
+              },
+              {
+                "label": "Total"
+              },
+              {
+                "label": "Total number of women aged 15 to 49 years",
+                "field": "total_n_2022"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": null,
+            "values": [
+              "12.1",
+              "16.2",
+              "0.2",
+              "8.8",
+              "52.2",
+              "9.3",
+              "1.2",
+              "100.0",
+              "2,022",
+              "17.7",
+              "13.3",
+              "0.6",
+              "7.1",
+              "47.2",
+              "10.6",
+              "3.5",
+              "100.0",
+              "2,058"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": null,
+            "values": [
+              "13.0",
+              "12.0",
+              "0.1",
+              "7.4",
+              "46.1",
+              "17.6",
+              "3.8",
+              "100.0",
+              "269",
+              "15.0",
+              "17.6",
+              "0.9",
+              "6.5",
+              "40.5",
+              "14.8",
+              "4.6",
+              "100.0",
+              "229"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": null,
+            "values": [
+              "18.4",
+              "17.0",
+              "2.1",
+              "8.6",
+              "41.1",
+              "10.4",
+              "2.5",
+              "100.0",
+              "1,303",
+              "11.4",
+              "20.5",
+              "0.3",
+              "6.8",
+              "44.1",
+              "14.7",
+              "2.1",
+              "100.0",
+              "820"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": null,
+            "values": [
+              "12.7",
+              "14.7",
+              "0.0",
+              "6.3",
+              "49.4",
+              "9.2",
+              "7.7",
+              "100.0",
+              "468",
+              "13.9",
+              "26.1",
+              "0.2",
+              "4.4",
+              "39.8",
+              "13.6",
+              "2.0",
+              "100.0",
+              "479"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": null,
+            "values": [
+              "15.6",
+              "17.9",
+              "0.6",
+              "5.2",
+              "44.9",
+              "14.4",
+              "1.3",
+              "100.0",
+              "2,011",
+              "16.1",
+              "21.7",
+              "0.0",
+              "5.2",
+              "43.2",
+              "12.3",
+              "1.4",
+              "100.0",
+              "1,764"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": null,
+            "values": [
+              "14.0",
+              "15.2",
+              "0.6",
+              "8.6",
+              "51.3",
+              "7.7",
+              "2.7",
+              "100.0",
+              "2,069",
+              "13.5",
+              "19.1",
+              "0.0",
+              "5.1",
+              "51.4",
+              "8.9",
+              "2.0",
+              "100.0",
+              "2,261"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": null,
+            "values": [
+              "10.9",
+              "14.7",
+              "0.6",
+              "7.5",
+              "56.9",
+              "6.2",
+              "3.1",
+              "100.0",
+              "440",
+              "11.4",
+              "17.6",
+              "0.8",
+              "5.4",
+              "56.4",
+              "5.5",
+              "2.9",
+              "100.0",
+              "402"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": null,
+            "values": [
+              "11.4",
+              "17.5",
+              "0.5",
+              "5.2",
+              "57.0",
+              "5.3",
+              "3.2",
+              "100.0",
+              "728",
+              "8.9",
+              "14.4",
+              "0.1",
+              "4.2",
+              "63.9",
+              "6.2",
+              "2.3",
+              "100.0",
+              "730"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": null,
+            "values": [
+              "12.0",
+              "17.8",
+              "0.1",
+              "7.1",
+              "53.1",
+              "5.4",
+              "4.5",
+              "100.0",
+              "626",
+              "10.8",
+              "18.0",
+              "0.1",
+              "4.6",
+              "57.9",
+              "7.1",
+              "1.5",
+              "100.0",
+              "994"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": null,
+            "values": [
+              "9.2",
+              "12.5",
+              "0.4",
+              "12.3",
+              "56.7",
+              "4.3",
+              "4.6",
+              "100.0",
+              "712",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": null,
+            "values": [
+              "12.9",
+              "5.9",
+              "0.4",
+              "20.1",
+              "54.7",
+              "4.9",
+              "1.2",
+              "100.0",
+              "1,034",
+              "12.1",
+              "15.5",
+              "0.1",
+              "6.9",
+              "54.5",
+              "6.9",
+              "3.9",
+              "100.0",
+              "1,181"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": null,
+            "values": [
+              "12.2",
+              "19.2",
+              "0.4",
+              "5.9",
+              "53.3",
+              "7.3",
+              "1.8",
+              "100.0",
+              "612",
+              "12.6",
+              "19.8",
+              "0.0",
+              "1.0",
+              "57.6",
+              "7.2",
+              "1.9",
+              "100.0",
+              "545"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "⁵",
+            "values": [
+              "15.0",
+              "23.5",
+              "0.1",
+              "15.9",
+              "39.9",
+              "2.8",
+              "2.9",
+              "100.0",
+              "712",
+              "14.6",
+              "14.9",
+              "0.8",
+              "10.4",
+              "54.9",
+              "3.9",
+              "0.6",
+              "100.0",
+              "566"
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": null,
+            "values": [
+              "11.6",
+              "17.7",
+              "0.5",
+              "8.9",
+              "53.3",
+              "6.2",
+              "1.8",
+              "100.0",
+              "676",
+              "14.3",
+              "14.9",
+              "0.0",
+              "12.8",
+              "47.0",
+              "7.3",
+              "3.7",
+              "100.0",
+              "606"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": null,
+            "values": [
+              "11.0",
+              "17.5",
+              "0.9",
+              "10.7",
+              "52.9",
+              "6.3",
+              "0.7",
+              "100.0",
+              "855",
+              "14.1",
+              "14.9",
+              "0.0",
+              "8.7",
+              "53.3",
+              "7.9",
+              "1.1",
+              "100.0",
+              "901"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": null,
+            "values": [
+              "11.7",
+              "14.9",
+              "0.6",
+              "13.4",
+              "50.1",
+              "5.1",
+              "4.2",
+              "100.0",
+              "600",
+              "14.4",
+              "19.4",
+              "0.1",
+              "13.5",
+              "46.5",
+              "4.8",
+              "1.3",
+              "100.0",
+              "700"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": null,
+            "values": [
+              "12.2",
+              "17.1",
+              "0.1",
+              "9.3",
+              "53.4",
+              "6.1",
+              "1.8",
+              "100.0",
+              "350",
+              "16.6",
+              "16.7",
+              "0.0",
+              "11.0",
+              "47.4",
+              "6.3",
+              "2.0",
+              "100.0",
+              "372"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": null,
+            "values": [
+              "17.3",
+              "20.4",
+              "0.3",
+              "27.8",
+              "27.3",
+              "2.3",
+              "4.6",
+              "100.0",
+              "605",
+              "14.1",
+              "13.0",
+              "0.4",
+              "37.2",
+              "18.6",
+              "4.0",
+              "12.7",
+              "100.0",
+              "700"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ The number of living children includes a woman's current pregnancy",
+      "² Wants next birth within 2 years",
+      "³ Wants to delay next birth for 2 or more years",
+      "⁴ Includes both female and male sterilization",
+      "⁵ Region IX includes the province of Sulu in 2025.",
+      "“NA” denotes that an estimate is not reported.",
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "Details may not add up to total due to rounding."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  }
+}

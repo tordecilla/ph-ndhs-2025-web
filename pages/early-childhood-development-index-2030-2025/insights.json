@@ -1,0 +1,57 @@
+{
+  "sections": [
+    {
+      "heading": "National ECDI 2030 moved up only modestly",
+      "body": "The national Early Childhood Development Index 2030 rose from 76.8 percent in 2022 to 78.3 percent in 2025. That 1.5-point increase points to improvement, but not a major national shift. The national figure is also a midpoint across much wider regional and socioeconomic differences, so it should be read as a broad summary rather than as a description of conditions across the country."
+    },
+    {
+      "heading": "Regional results span a very wide range",
+      "body": "The 2025 regional spread is large: Negros Island Region had the highest ECDI 2030 value at 93.0 percent, followed closely by Cagayan Valley at 92.2 percent, while BARMM was far lower at 47.2 percent. The gap between the highest and lowest regional values was 45.8 points. This means the national level of 78.3 percent masks sharply different regional profiles."
+    },
+    {
+      "heading": "Several regions improved strongly, especially outside the national center",
+      "body": "Some regions recorded large gains between 2022 and 2025. Bicol Region rose from 73.2 to 84.4 percent, SOCCSKSARGEN from 71.9 to 81.7 percent, Cagayan Valley from 83.2 to 92.2 percent, and the National Capital Region from 73.9 to 81.0 percent. These increases show that the national rise was not evenly distributed; it was shaped by substantial advances in selected regions."
+    },
+    {
+      "heading": "Other regions fell despite the national increase",
+      "body": "Several regions moved in the opposite direction from the national trend. Zamboanga Peninsula¹ declined from 81.1 percent in 2022 to 67.3 percent in 2025, Eastern Visayas from 85.0 to 77.2 percent, Central Luzon from 84.8 to 78.9 percent, and Ilocos Region from 85.2 to 79.8 percent. These declines matter because they show that a rising national average can coexist with setbacks in individual regions."
+    },
+    {
+      "heading": "Most regions clustered near the national level, but BARMM remained a clear outlier",
+      "body": "Many regions in 2025 were concentrated around the high 70s and low 80s, including CALABARZON at 78.4 percent, Central Luzon at 78.9 percent, Central Visayas at 79.5 percent, Davao Region at 79.6 percent, Ilocos Region at 79.8 percent, and CAR at 80.6 percent. BARMM, at 47.2 percent, sat well below that cluster. The inference is that the regional distribution is not just a smooth gradient; it includes one especially low regional value that pulls attention away from otherwise moderate variation among many regions."
+    },
+    {
+      "heading": "The oldest child group remained the lowest, even after improving",
+      "body": "By age in months, children aged 48 to 59 months had the lowest ECDI 2030 value in 2025 at 75.1 percent, although this was up from 69.4 percent in 2022. Children aged 24 to 35 months were higher at 81.9 percent, while those aged 36 to 47 months were at 77.8 percent. The pattern shows improvement among the oldest group, but not enough to eliminate the age gradient."
+    },
+    {
+      "heading": "Girls had a clear advantage over boys",
+      "body": "Female children had an ECDI 2030 value of 83.3 percent in 2025, compared with 73.9 percent among male children. The gap was 9.4 points, wider than in 2022, when the corresponding values were 79.6 and 74.3 percent. This is one of the more visible demographic differences in the data."
+    },
+    {
+      "heading": "Urban children scored higher than rural children",
+      "body": "The residence gap persisted in 2025, with urban children at 80.4 percent and rural children at 76.0 percent. Both groups improved from 2022, when urban children were at 78.1 percent and rural children at 75.4 percent, but the urban advantage widened from 2.7 to 4.4 points. The difference is smaller than the regional spread, yet it still indicates a consistent residence pattern."
+    },
+    {
+      "heading": "Early childhood education attendance was associated with higher ECDI",
+      "body": "Children who attended early childhood education had an ECDI 2030 value of 83.4 percent in 2025, compared with 73.3 percent among children who never attended. The never-attended group was unchanged from 2022 at 73.3 percent, while the attended group rose from 80.1 to 83.4 percent. This does not prove that attendance alone caused the difference, but the association is clear in the data."
+    },
+    {
+      "heading": "Mother's education shows one of the largest social gradients",
+      "body": "ECDI 2030 values generally rose with mother's educational attainment. In 2025, children whose mothers had no education were at 59.1 percent and those whose mothers had Grades 1 to 6 were at 61.4 percent, compared with 84.6 percent for college and 88.2 percent for Grades 11 to 12. The gap between Grades 11 to 12 and no education was 29.1 points, making maternal education one of the strongest divides in the page data."
+    },
+    {
+      "heading": "Wealth differences remained substantial",
+      "body": "The lowest wealth quintile reached 70.9 percent in 2025, up from 66.2 percent in 2022, while the highest quintile was at 85.0 percent, up from 83.5 percent. The 2025 gap between the highest and lowest quintiles was 14.1 points. The second and fourth quintiles also improved, but the middle quintile declined from 80.3 to 75.4 percent, so the wealth pattern is broad but not perfectly linear."
+    }
+  ],
+  "takeaways": [
+    "The national ECDI 2030 value increased from 76.8 percent in 2022 to 78.3 percent in 2025.",
+    "Regional differences were much larger than the national change, ranging from 47.2 percent in BARMM to 93.0 percent in Negros Island Region.",
+    "Children who attended early childhood education, girls, urban children, and children of more educated mothers had higher 2025 ECDI values.",
+    "Wealth and maternal education remained important divides, with the lowest values concentrated among children in the poorest households and among children whose mothers had little or no schooling."
+  ],
+  "footnotes": [
+    "¹ Includes the province of Sulu in 2025."
+  ]
+}

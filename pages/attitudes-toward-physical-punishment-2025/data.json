@@ -1,0 +1,768 @@
+{
+  "sectionTitle": "Discipline and Punishment",
+  "title": "Attitudes Toward Physical Punishment",
+  "description": "Among households with a child aged 1 to 14 years, percentage of household respondents who believe that physical punishment is needed to bring up, raise, or educate a child properly. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Among households with a child aged 1 to 14 years, percentage of household respondents who believe that physical punishment is needed to bring up, raise, or educate a child properly, according to background characteristics: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Attitudes Toward Physical Punishment",
+    "subtitle": "Among households with a child aged 1 to 14 years, percentage of household respondents who believe that physical punishment is needed to bring up, raise, or educate a child properly, according to background characteristics: Philippines, 2022 and 2025",
+    "tables": [
+      {
+        "id": "total",
+        "title": "Total",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "physical_punishment_needed",
+                "field": "physical_punishment_needed",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents",
+                "field": "total_respondents",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "physical_punishment_needed_2022",
+                "field": "physical_punishment_needed_2022",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents_2022",
+                "field": "total_respondents_2022",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": "",
+            "values": [
+              "18.3",
+              "18,784",
+              "11.9",
+              "17,416"
+            ],
+            "rowClass": "dt-total-row"
+          }
+        ]
+      },
+      {
+        "id": "sex_of_respondent",
+        "title": "Sex of respondent",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "physical_punishment_needed",
+                "field": "physical_punishment_needed",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents",
+                "field": "total_respondents",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "physical_punishment_needed_2022",
+                "field": "physical_punishment_needed_2022",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents_2022",
+                "field": "total_respondents_2022",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Male",
+            "noteRef": "",
+            "values": [
+              "20.6",
+              "4,326",
+              "10.9",
+              "2,979"
+            ]
+          },
+          {
+            "label": "Female",
+            "noteRef": "",
+            "values": [
+              "17.6",
+              "14,458",
+              "12.2",
+              "14,437"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "residence",
+        "title": "Residence",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "physical_punishment_needed",
+                "field": "physical_punishment_needed",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents",
+                "field": "total_respondents",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "physical_punishment_needed_2022",
+                "field": "physical_punishment_needed_2022",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents_2022",
+                "field": "total_respondents_2022",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": "",
+            "values": [
+              "18.3",
+              "9,598",
+              "12.6",
+              "8,591"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": "",
+            "values": [
+              "18.3",
+              "9,186",
+              "11.3",
+              "8,825"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "physical_punishment_needed",
+                "field": "physical_punishment_needed",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents",
+                "field": "total_respondents",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "physical_punishment_needed_2022",
+                "field": "physical_punishment_needed_2022",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents_2022",
+                "field": "total_respondents_2022",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": "",
+            "values": [
+              "17.6",
+              "2,089",
+              "10.1",
+              "1,962"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": "",
+            "values": [
+              "42.6",
+              "307",
+              "16.7",
+              "277"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": "",
+            "values": [
+              "8.0",
+              "1,471",
+              "8.6",
+              "911"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": "",
+            "values": [
+              "11.3",
+              "495",
+              "7.8",
+              "521"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": "",
+            "values": [
+              "16.4",
+              "2,177",
+              "11.4",
+              "1,796"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": "",
+            "values": [
+              "15.7",
+              "2,203",
+              "10.5",
+              "2,370"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": "",
+            "values": [
+              "11.6",
+              "573",
+              "8.7",
+              "475"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": "",
+            "values": [
+              "14.8",
+              "1,027",
+              "8.6",
+              "1,044"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": "",
+            "values": [
+              "19.0",
+              "689",
+              "13.4",
+              "1,183"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": "",
+            "values": [
+              "22.0",
+              "841",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": "",
+            "values": [
+              "7.7",
+              "1,117",
+              "9.8",
+              "1,192"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": "",
+            "values": [
+              "21.5",
+              "825",
+              "12.9",
+              "703"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "¹",
+            "values": [
+              "25.4",
+              "913",
+              "20.0",
+              "744"
+            ],
+            "note": "Region IX includes the province of Sulu in 2025."
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": "",
+            "values": [
+              "36.6",
+              "903",
+              "19.9",
+              "776"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": "",
+            "values": [
+              "29.0",
+              "1,056",
+              "15.1",
+              "972"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": "",
+            "values": [
+              "19.5",
+              "713",
+              "11.2",
+              "899"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": "",
+            "values": [
+              "26.0",
+              "469",
+              "12.9",
+              "471"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": "",
+            "values": [
+              "15.1",
+              "917",
+              "13.7",
+              "1,118"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "age_of_respondent",
+        "title": "Age of respondent in years",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "physical_punishment_needed",
+                "field": "physical_punishment_needed",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents",
+                "field": "total_respondents",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "physical_punishment_needed_2022",
+                "field": "physical_punishment_needed_2022",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents_2022",
+                "field": "total_respondents_2022",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "<25",
+            "noteRef": "",
+            "values": [
+              "16.5",
+              "1,072",
+              "11.4",
+              "1,197"
+            ]
+          },
+          {
+            "label": "25-34",
+            "noteRef": "",
+            "values": [
+              "20.9",
+              "5,010",
+              "12.3",
+              "4,625"
+            ]
+          },
+          {
+            "label": "35-49",
+            "noteRef": "",
+            "values": [
+              "18.0",
+              "8,064",
+              "12.6",
+              "7,558"
+            ]
+          },
+          {
+            "label": "50+",
+            "noteRef": "",
+            "values": [
+              "16.6",
+              "4,639",
+              "10.4",
+              "4,036"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mother_education",
+        "title": "Mother's educational attainment",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "physical_punishment_needed",
+                "field": "physical_punishment_needed",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents",
+                "field": "total_respondents",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "physical_punishment_needed_2022",
+                "field": "physical_punishment_needed_2022",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents_2022",
+                "field": "total_respondents_2022",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": "",
+            "values": [
+              "16.6",
+              "199",
+              "17.9",
+              "236"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": "",
+            "values": [
+              "20.6",
+              "2,303",
+              "13.6",
+              "2,655"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": "",
+            "values": [
+              "17.4",
+              "7,286",
+              "10.4",
+              "7,081"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": "",
+            "values": [
+              "18.4",
+              "494",
+              "7.8",
+              "133"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": "",
+            "values": [
+              "27.0",
+              "343",
+              "12.0",
+              "365"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": "",
+            "values": [
+              "19.5",
+              "5,075",
+              "13.5",
+              "4,182"
+            ]
+          },
+          {
+            "label": "Missing",
+            "noteRef": "",
+            "values": [
+              "15.9",
+              "3,084",
+              "11.5",
+              "2,764"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth_quintile",
+        "title": "Wealth quintile",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "physical_punishment_needed",
+                "field": "physical_punishment_needed",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents",
+                "field": "total_respondents",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "physical_punishment_needed_2022",
+                "field": "physical_punishment_needed_2022",
+                "label": "Believe physical punishment is needed",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "total_respondents_2022",
+                "field": "total_respondents_2022",
+                "label": "Total number of mothers/caretakers responding to a child discipline module",
+                "noteRef": "",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": "",
+            "values": [
+              "20.1",
+              "4,956",
+              "12.0",
+              "4,648"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": "",
+            "values": [
+              "18.3",
+              "4,126",
+              "11.1",
+              "3,909"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": "",
+            "values": [
+              "16.2",
+              "3,713",
+              "11.9",
+              "3,419"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": "",
+            "values": [
+              "19.9",
+              "3,168",
+              "11.5",
+              "2,894"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": "",
+            "values": [
+              "16.1",
+              "2,821",
+              "13.7",
+              "2,546"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ Region IX includes the province of Sulu in 2025.",
+      "“NA” denotes that an estimate is not reported.",
+      "Notes: Details may not add up to total due to rounding."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "sections": [
+      {
+        "heading": "Support for physical punishment increased",
+        "body": "In 2025, 18.3 percent of mothers and caretakers believed that a child needs to be physically punished, up from 11.9 percent in 2022. This page measures attitudes, not direct disciplining behavior, but the increase is large enough to be the main national finding."
+      },
+      {
+        "heading": "CAR is the clearest regional outlier",
+        "body": "CAR had the highest share of respondents who believe physical punishment is needed, at 42.6 percent. Northern Mindanao followed at 36.6 percent, and Davao Region was third at 29.0 percent. These levels are far above the national average of 18.3 percent."
+      },
+      {
+        "heading": "Some regions remain below 10 percent",
+        "body": "Central Visayas had the lowest level at 7.7 percent, followed by Ilocos Region at 8.0 percent. Cagayan Valley was also relatively low at 11.3 percent. The gap between CAR and Central Visayas is 34.9 points, so regional variation dominates this page."
+      },
+      {
+        "heading": "Attitudes and reported discipline do not map perfectly",
+        "body": "Some regions with high reported violent discipline are also high in attitudes toward physical punishment, but the pattern is not identical. Davao Region is high on both, while CAR is highest on attitudes without being the highest on violent discipline. The attitude measure should therefore be read as related context, not as a direct substitute for behavior."
+      },
+      {
+        "heading": "The national increase is not a small technical change",
+        "body": "The national value rose by 6.4 points between 2022 and 2025. Because the indicator is a belief measure, the increase should be described carefully, but it is still substantial in relative terms. It suggests that the 2025 attitude profile is meaningfully different from the 2022 profile."
+      }
+    ],
+    "takeaways": [
+      "The share of mothers and caretakers who believe physical punishment is needed rose from 11.9 percent in 2022 to 18.3 percent in 2025.",
+      "CAR and Northern Mindanao are the highest regions on this attitude measure.",
+      "Regional variation is large, with Central Visayas and Ilocos Region below 10 percent."
+    ]
+  }
+}

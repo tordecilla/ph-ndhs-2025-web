@@ -1,0 +1,60 @@
+{
+  "sections": [
+    {
+      "heading": "Modern use rose while overall use barely moved",
+      "body": "Among currently married women, any modern contraceptive use rose from 41.8 percent in 2022 to 44.5 percent in 2025, while any-method use was almost flat at 58.6 percent. The increase came mainly from implants, injectables, male condoms, and the pill, while female sterilization and IUD use were lower than in 2022. Compared with the all-women view, where modern use was 25.7 percent in 2025, this page shows higher levels for the major modern methods because it centers currently married women and separately reports sexually active unmarried women."
+    },
+    {
+      "heading": "The strongest modern-use regions are not spread evenly across the country",
+      "body": "Davao Region had the highest modern contraceptive use among currently married women at 58.2 percent, followed by MIMAROPA at 53.9 percent, Caraga at 52.9 percent, and SOCCSKSARGEN at 50.8 percent. These high-use regions are concentrated outside the largest metropolitan center, while NCR was lower at 41.6 percent. The all-women regional pattern is similar at the top, with Davao Region, MIMAROPA, SOCCSKSARGEN, and Caraga also among the highest, so the pattern is not only a denominator effect."
+    },
+    {
+      "heading": "BARMM remains the clear low outlier",
+      "body": "BARMM was far below every other region, with 20.2 percent of currently married women using a modern method in 2025. The next-lowest regions were Bicol Region at 38.4 percent, Central Visayas at 39.3 percent, and Zamboanga Peninsula¹ at 40.4 percent. That leaves a 38.0-point gap between Davao Region and BARMM, making the regional spread much wider than most background-characteristic gaps."
+    },
+    {
+      "heading": "Regional change moved in different directions",
+      "body": "The national increase in modern use masks sharp regional movement between 2022 and 2025. MIMAROPA rose 8.8 points and Davao Region rose 8.4 points, while Cagayan Valley fell 9.9 points and Zamboanga Peninsula¹ fell 7.5 points. The result is not a simple nationwide lift; some regions moved further upward while others lost ground from already high 2022 levels."
+    },
+    {
+      "heading": "Method mix gives regions different modern-use profiles",
+      "body": "The same modern-use total can reflect very different method mixes across regions. Davao Region led pill use at 29.7 percent, MIMAROPA led injectables at 12.6 percent and implants at 9.2 percent, while CAR had the highest female sterilization at 17.6 percent. This matters because a high modern-use region may be leaning on short-acting methods, long-acting reversible methods, or permanent methods in very different ways."
+    },
+    {
+      "heading": "Modern use peaks in the middle reproductive ages",
+      "body": "Modern contraceptive use among currently married women was highest at ages 35-39, at 48.7 percent, and nearly as high at ages 30-34, at 48.3 percent. It was lower among women aged 15-19 at 34.0 percent and women aged 45-49 at 33.9 percent. The age pattern therefore looks less like a steady rise with age and more like a middle-age plateau, with younger and older married women using modern methods less often."
+    },
+    {
+      "heading": "Use rises sharply after the first births, then eases at five or more children",
+      "body": "By number of living children, modern use was lowest among currently married women with no children, at 7.6 percent, and much higher among those with 1-2 children, at 42.1 percent. It peaked among women with 3-4 children at 59.1 percent, before falling to 49.3 percent among women with five or more children. The largest contrast is therefore not between adjacent high-parity groups, but between women with no children and those already raising children."
+    },
+    {
+      "heading": "Rural modern use is higher than urban modern use",
+      "body": "Currently married women in rural areas had higher modern contraceptive use than those in urban areas, 47.2 percent compared with 42.1 percent. Both residence groups increased from 2022, with rural use rising from 44.3 percent and urban use from 39.7 percent. The residence gap is meaningful, but it is much smaller than the gap between the highest and lowest regions."
+    },
+    {
+      "heading": "Education does not form a simple upward gradient",
+      "body": "Modern contraceptive use was highest among currently married women with Grades 7-10 education at 48.3 percent, followed closely by Grades 1-6 and Grades 11-12 at 46.7 percent and 46.6 percent. It was lower among women with college education at 39.3 percent and no education at 34.8 percent. The pattern is therefore not a simple story of more schooling corresponding to higher modern use."
+    },
+    {
+      "heading": "Modern use is highest in the lower wealth quintiles",
+      "body": "The wealth pattern slopes downward rather than upward: modern use was 48.6 percent in the lowest quintile and 48.2 percent in the second quintile, compared with 37.7 percent in the highest quintile. The fourth quintile had the largest increase from 2022, rising from 34.8 percent to 42.6 percent. The pattern shows that wealth alone does not form a simple upward gradient in modern contraceptive use among currently married women."
+    },
+    {
+      "heading": "Sexually active unmarried women show a different modern-method mix",
+      "body": "Among sexually active unmarried women, modern contraceptive use was 26.2 percent in 2025, up from 23.8 percent in 2022, even as any-method use fell from 41.4 percent to 37.9 percent. The pill more than doubled from 7.1 percent to 15.3 percent, while male condom use fell from 11.9 percent to 6.6 percent. This is a distinct pattern from currently married women, where modern use is higher overall and the method mix includes much larger shares of female sterilization, injectables, and implants."
+    },
+    {
+      "heading": "Residence barely changes modern use among sexually active unmarried women",
+      "body": "For sexually active unmarried women, modern use was almost the same in rural and urban areas: 26.7 percent in rural areas and 26.0 percent in urban areas. The method mix differed more than the overall level, with rural male condom use at 10.2 percent compared with 4.9 percent in urban areas, while urban pill use was slightly higher at 15.8 percent compared with 14.4 percent. This makes residence a weak divider for overall modern use in this denominator, but still relevant for the methods women report."
+    }
+  ],
+  "takeaways": [
+    "Modern contraceptive use among currently married women rose to 44.5 percent in 2025, with gains concentrated in selected reversible methods rather than across every method.",
+    "Regional variation is the sharpest divide: Davao Region, MIMAROPA, Caraga, and SOCCSKSARGEN are high-use areas, while BARMM remains a clear low outlier.",
+    "Sexually active unmarried women have lower modern use at 26.2 percent, with a notable shift toward pills and away from male condoms between 2022 and 2025."
+  ],
+  "footnotes": [
+    "¹ Includes the province of Sulu in 2025."
+  ]
+}

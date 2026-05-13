@@ -1,0 +1,56 @@
+{
+  "sections": [
+    {
+      "heading": "National coverage was high for first doses, with visible drop-off by later polio doses",
+      "body": "In 2025, 93.0 percent of children aged 12 to 23 months had received OPV 1, compared with 89.5 percent for OPV 2 and 83.0 percent for OPV 3. Polio 3 coverage was 83.3 percent, while IPV coverage moved from 89.1 percent for IPV 1 to 78.9 percent for IPV 2. This pattern points to stronger early-dose reach than later-dose completion."
+    },
+    {
+      "heading": "Ilocos Region sustained the strongest regional sequence",
+      "body": "Ilocos Region had 100.0 percent OPV 1 coverage in 2025 and remained near that level at later points in the sequence, with 99.6 percent for OPV 2, 97.7 percent for OPV 3, and 98.0 percent for Polio 3. Its IPV coverage was also high, at 98.8 percent for IPV 1 and 97.5 percent for IPV 2."
+    },
+    {
+      "heading": "BARMM had the lowest regional coverage and the steepest later-dose drop-off",
+      "body": "BARMM stood apart from other regions in 2025, with 63.3 percent coverage for OPV 1 and 29.7 percent for both OPV 3 and Polio 3. IPV coverage also declined sharply within the sequence, from 52.2 percent for IPV 1 to 30.2 percent for IPV 2. This is an inference, but the size of the gaps suggests that both first-dose reach and later-dose completion were major constraints in the region."
+    },
+    {
+      "heading": "Zamboanga Peninsula¹ was below most regions and lower than its 2022 levels on several measures",
+      "body": "Zamboanga Peninsula recorded 77.6 percent OPV 1 coverage in 2025, then 73.9 percent for OPV 2 and 66.3 percent for OPV 3 and Polio 3. Its 2025 values were also below its 2022 levels for OPV 3, which was 77.5 percent in 2022, and Polio 3, which was 71.9 percent in 2022."
+    },
+    {
+      "heading": "Some regions kept OPV coverage high while IPV 2 lagged",
+      "body": "Western Visayas reached 98.6 percent for OPV 1 and 93.5 percent for Polio 3 in 2025, but its IPV 2 coverage was 69.6 percent. Northern Mindanao showed a similar split, with 85.2 percent for OPV 1 and 76.3 percent for Polio 3, alongside 54.2 percent for IPV 2. The pattern suggests that OPV and IPV completion did not always move together across regions."
+    },
+    {
+      "heading": "Sex differences were small compared with the overall dose sequence gap",
+      "body": "Female children had slightly higher 2025 coverage than male children across the listed polio measures. Polio 3 coverage was 84.3 percent among female children and 82.5 percent among male children, while OPV 1 coverage was 93.9 percent and 92.4 percent, respectively. The sex gap was narrower than the national gap between OPV 1 and Polio 3."
+    },
+    {
+      "heading": "Higher birth order was associated with lower completion",
+      "body": "Polio 3 coverage declined by birth order in 2025, from 84.7 percent among first-born children and 85.3 percent among children of birth order 2 to 3, to 78.3 percent for birth order 4 to 5 and 70.4 percent for birth order 6 or higher. OPV 1 coverage also fell across the same range, from 93.7 percent for first-born children to 88.5 percent for birth order 6 or higher."
+    },
+    {
+      "heading": "Vaccination-card status was the largest nonregional stratifier",
+      "body": "Children whose vaccination card was seen had very high 2025 coverage: 98.9 percent for OPV 1, 96.1 percent for OPV 3, and 96.5 percent for Polio 3. Among children who never had a card, coverage was much lower, at 45.2 percent for OPV 1 and 25.5 percent for both OPV 3 and Polio 3. This is an inference, but card status appears to separate children with documented contact from those much less likely to have completed the sequence."
+    },
+    {
+      "heading": "Urban-rural differences were modest but consistent",
+      "body": "Urban children had higher 2025 coverage than rural children on each listed polio measure. The difference was 1.9 percentage points for OPV 1, with 94.0 percent in urban areas and 92.1 percent in rural areas, and 3.5 percentage points for Polio 3, with 85.0 percent in urban areas and 81.5 percent in rural areas."
+    },
+    {
+      "heading": "Mother's education showed lower coverage at the primary-school level",
+      "body": "Among children whose mothers had Grades 1-6 education, 2025 coverage was 85.5 percent for OPV 1 and 71.7 percent for both OPV 3 and Polio 3. Children whose mothers had college education had higher values, at 93.7 percent for OPV 1, 85.4 percent for OPV 3, and 85.8 percent for Polio 3. Rows for mothers with no education were suppressed in 2025 and are not treated as zero."
+    },
+    {
+      "heading": "Wealth differences remained visible at completion",
+      "body": "Polio 3 coverage in 2025 was 75.2 percent among children in the lowest wealth quintile, compared with 90.9 percent in the highest quintile. OPV 1 coverage also differed, at 88.0 percent in the lowest quintile and 95.3 percent in the highest quintile. The gap was larger at Polio 3 than at OPV 1, indicating that later-dose completion was more unequal than early-dose receipt."
+    }
+  ],
+  "takeaways": [
+    "Nationally, OPV 1 coverage was 93.0 percent in 2025, while Polio 3 coverage was 83.3 percent.",
+    "Regional completion ranged from 98.0 percent Polio 3 coverage in Ilocos Region to 29.7 percent in BARMM.",
+    "Children with a seen vaccination card had 96.5 percent Polio 3 coverage, compared with 25.5 percent among children who never had a card."
+  ],
+  "footnotes": [
+    "¹ Includes the province of Sulu in 2025."
+  ]
+}

@@ -1,0 +1,1623 @@
+{
+  "sectionTitle": "Contraception",
+  "title": "Current Use of Traditional Contraception Methods Among Currently Married and Sexually Active Unmarried Women",
+  "description": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by traditional contraceptive method currently used. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Current Use of Traditional Contraception Methods Among Currently Married and Sexually Active Unmarried Women",
+    "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+    "tables": [
+      {
+        "id": "total",
+        "groupTitle": "Currently married women",
+        "title": "Total",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct",
+                "field": "any_traditional_method_pct",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct",
+                "field": "calendar_rhythm_pct",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct",
+                "field": "withdrawal_pct",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct",
+                "field": "traditional_other_pct",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct_2022",
+                "field": "any_traditional_method_pct_2022",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct_2022",
+                "field": "calendar_rhythm_pct_2022",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct_2022",
+                "field": "withdrawal_pct_2022",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct_2022",
+                "field": "traditional_other_pct_2022",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": null,
+            "values": [
+              "14.1",
+              "2.3",
+              "11.8",
+              "0.0",
+              "100.0",
+              "16,092",
+              "16.5",
+              "3.0",
+              "13.4",
+              "0.1",
+              "100.0",
+              "15,306"
+            ],
+            "rowClass": "dt-total-row"
+          }
+        ]
+      },
+      {
+        "id": "number-of-living-children",
+        "groupTitle": "Currently married women",
+        "title": "Number of living children",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct",
+                "field": "any_traditional_method_pct",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct",
+                "field": "calendar_rhythm_pct",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct",
+                "field": "withdrawal_pct",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct",
+                "field": "traditional_other_pct",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct_2022",
+                "field": "any_traditional_method_pct_2022",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct_2022",
+                "field": "calendar_rhythm_pct_2022",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct_2022",
+                "field": "withdrawal_pct_2022",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct_2022",
+                "field": "traditional_other_pct_2022",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "0",
+            "noteRef": null,
+            "values": [
+              "9.0",
+              "1.8",
+              "7.0",
+              "0.2",
+              "100.0",
+              "1,516",
+              "7.9",
+              "1.1",
+              "6.9",
+              "0.0",
+              "100.0",
+              "1,423"
+            ]
+          },
+          {
+            "label": "1-2",
+            "noteRef": null,
+            "values": [
+              "16.7",
+              "2.6",
+              "14.1",
+              "0.0",
+              "100.0",
+              "8,423",
+              "18.7",
+              "3.0",
+              "15.7",
+              "0.0",
+              "100.0",
+              "7,478"
+            ]
+          },
+          {
+            "label": "3-4",
+            "noteRef": null,
+            "values": [
+              "11.9",
+              "2.3",
+              "9.6",
+              "0.0",
+              "100.0",
+              "4,723",
+              "15.6",
+              "3.5",
+              "12.0",
+              "0.1",
+              "100.0",
+              "4,612"
+            ]
+          },
+          {
+            "label": "5+",
+            "noteRef": null,
+            "values": [
+              "12.0",
+              "1.8",
+              "10.1",
+              "0.0",
+              "100.0",
+              "1,430",
+              "16.3",
+              "3.5",
+              "12.7",
+              "0.2",
+              "100.0",
+              "1,793"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "age",
+        "groupTitle": "Currently married women",
+        "title": "Age in years",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct",
+                "field": "any_traditional_method_pct",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct",
+                "field": "calendar_rhythm_pct",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct",
+                "field": "withdrawal_pct",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct",
+                "field": "traditional_other_pct",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct_2022",
+                "field": "any_traditional_method_pct_2022",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct_2022",
+                "field": "calendar_rhythm_pct_2022",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct_2022",
+                "field": "withdrawal_pct_2022",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct_2022",
+                "field": "traditional_other_pct_2022",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "15-19",
+            "noteRef": null,
+            "values": [
+              "8.7",
+              "0.0",
+              "8.7",
+              "0.0",
+              "100.0",
+              "307",
+              "11.7",
+              "0.7",
+              "10.9",
+              "0.0",
+              "100.0",
+              "307"
+            ]
+          },
+          {
+            "label": "20-24",
+            "noteRef": null,
+            "values": [
+              "13.0",
+              "0.8",
+              "12.1",
+              "0.0",
+              "100.0",
+              "1,212",
+              "14.9",
+              "1.4",
+              "13.5",
+              "0.0",
+              "100.0",
+              "1,303"
+            ]
+          },
+          {
+            "label": "25-29",
+            "noteRef": null,
+            "values": [
+              "14.5",
+              "1.6",
+              "12.9",
+              "0.0",
+              "100.0",
+              "2,369",
+              "15.7",
+              "1.5",
+              "14.2",
+              "0.0",
+              "100.0",
+              "2,384"
+            ]
+          },
+          {
+            "label": "30-34",
+            "noteRef": null,
+            "values": [
+              "14.5",
+              "1.7",
+              "12.8",
+              "0.0",
+              "100.0",
+              "3,159",
+              "17.4",
+              "2.8",
+              "14.6",
+              "0.0",
+              "100.0",
+              "2,935"
+            ]
+          },
+          {
+            "label": "35-39",
+            "noteRef": null,
+            "values": [
+              "15.4",
+              "2.5",
+              "12.8",
+              "0.1",
+              "100.0",
+              "3,307",
+              "17.5",
+              "3.3",
+              "14.0",
+              "0.1",
+              "100.0",
+              "2,808"
+            ]
+          },
+          {
+            "label": "40-44",
+            "noteRef": null,
+            "values": [
+              "15.0",
+              "3.2",
+              "11.8",
+              "0.0",
+              "100.0",
+              "3,021",
+              "17.7",
+              "4.4",
+              "13.2",
+              "0.1",
+              "100.0",
+              "2,915"
+            ]
+          },
+          {
+            "label": "45-49",
+            "noteRef": null,
+            "values": [
+              "12.1",
+              "3.6",
+              "8.5",
+              "0.0",
+              "100.0",
+              "2,717",
+              "15.2",
+              "3.8",
+              "11.3",
+              "0.1",
+              "100.0",
+              "2,654"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "residence",
+        "groupTitle": "Currently married women",
+        "title": "Residence",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct",
+                "field": "any_traditional_method_pct",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct",
+                "field": "calendar_rhythm_pct",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct",
+                "field": "withdrawal_pct",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct",
+                "field": "traditional_other_pct",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct_2022",
+                "field": "any_traditional_method_pct_2022",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct_2022",
+                "field": "calendar_rhythm_pct_2022",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct_2022",
+                "field": "withdrawal_pct_2022",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct_2022",
+                "field": "traditional_other_pct_2022",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": null,
+            "values": [
+              "15.8",
+              "2.7",
+              "13.1",
+              "0.0",
+              "100.0",
+              "8,698",
+              "17.6",
+              "2.9",
+              "14.7",
+              "0.0",
+              "100.0",
+              "8,263"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": null,
+            "values": [
+              "12.2",
+              "2.0",
+              "10.2",
+              "0.0",
+              "100.0",
+              "7,394",
+              "15.2",
+              "3.2",
+              "11.9",
+              "0.1",
+              "100.0",
+              "7,043"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "groupTitle": "Currently married women",
+        "title": "Region",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct",
+                "field": "any_traditional_method_pct",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct",
+                "field": "calendar_rhythm_pct",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct",
+                "field": "withdrawal_pct",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct",
+                "field": "traditional_other_pct",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct_2022",
+                "field": "any_traditional_method_pct_2022",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct_2022",
+                "field": "calendar_rhythm_pct_2022",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct_2022",
+                "field": "withdrawal_pct_2022",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct_2022",
+                "field": "traditional_other_pct_2022",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": null,
+            "values": [
+              "14.1",
+              "2.5",
+              "11.6",
+              "0.0",
+              "100.0",
+              "2,022",
+              "15.5",
+              "1.8",
+              "13.8",
+              "0.0",
+              "100.0",
+              "2,058"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": null,
+            "values": [
+              "13.6",
+              "1.0",
+              "12.6",
+              "0.0",
+              "100.0",
+              "269",
+              "13.3",
+              "4.0",
+              "9.3",
+              "0.0",
+              "100.0",
+              "229"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": null,
+            "values": [
+              "22.3",
+              "2.0",
+              "20.2",
+              "0.0",
+              "100.0",
+              "1,303",
+              "21.3",
+              "3.0",
+              "18.3",
+              "0.0",
+              "100.0",
+              "820"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": null,
+            "values": [
+              "6.9",
+              "0.6",
+              "6.4",
+              "0.0",
+              "100.0",
+              "468",
+              "9.7",
+              "1.3",
+              "8.4",
+              "0.0",
+              "100.0",
+              "479"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": null,
+            "values": [
+              "17.2",
+              "2.1",
+              "15.0",
+              "0.0",
+              "100.0",
+              "2,011",
+              "19.3",
+              "1.9",
+              "17.4",
+              "0.0",
+              "100.0",
+              "1,764"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": null,
+            "values": [
+              "18.1",
+              "3.2",
+              "14.8",
+              "0.1",
+              "100.0",
+              "2,069",
+              "20.0",
+              "2.5",
+              "17.4",
+              "0.0",
+              "100.0",
+              "2,261"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": null,
+            "values": [
+              "8.6",
+              "1.5",
+              "7.1",
+              "0.0",
+              "100.0",
+              "440",
+              "14.5",
+              "3.2",
+              "10.9",
+              "0.4",
+              "100.0",
+              "402"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": null,
+            "values": [
+              "17.2",
+              "2.2",
+              "15.0",
+              "0.0",
+              "100.0",
+              "728",
+              "25.7",
+              "5.5",
+              "19.9",
+              "0.3",
+              "100.0",
+              "730"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": null,
+            "values": [
+              "17.0",
+              "5.2",
+              "11.9",
+              "0.0",
+              "100.0",
+              "626",
+              "17.5",
+              "5.8",
+              "11.7",
+              "0.0",
+              "100.0",
+              "994"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": null,
+            "values": [
+              "9.0",
+              "2.6",
+              "6.4",
+              "0.0",
+              "100.0",
+              "712",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": null,
+            "values": [
+              "8.4",
+              "2.8",
+              "5.6",
+              "0.0",
+              "100.0",
+              "1,034",
+              "16.3",
+              "4.5",
+              "11.8",
+              "0.0",
+              "100.0",
+              "1,181"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": null,
+            "values": [
+              "20.4",
+              "2.2",
+              "18.3",
+              "0.0",
+              "100.0",
+              "612",
+              "23.2",
+              "4.2",
+              "18.9",
+              "0.1",
+              "100.0",
+              "545"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "²",
+            "values": [
+              "9.4",
+              "2.0",
+              "7.3",
+              "0.1",
+              "100.0",
+              "712",
+              "8.1",
+              "4.4",
+              "3.6",
+              "0.2",
+              "100.0",
+              "566"
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": null,
+            "values": [
+              "9.8",
+              "1.8",
+              "7.9",
+              "0.1",
+              "100.0",
+              "676",
+              "8.8",
+              "2.5",
+              "6.2",
+              "0.0",
+              "100.0",
+              "606"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": null,
+            "values": [
+              "12.2",
+              "3.0",
+              "9.2",
+              "0.0",
+              "100.0",
+              "855",
+              "13.5",
+              "3.3",
+              "10.3",
+              "0.0",
+              "100.0",
+              "901"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": null,
+            "values": [
+              "9.8",
+              "1.7",
+              "8.1",
+              "0.0",
+              "100.0",
+              "600",
+              "8.9",
+              "3.0",
+              "5.8",
+              "0.0",
+              "100.0",
+              "700"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": null,
+            "values": [
+              "11.4",
+              "2.7",
+              "8.8",
+              "0.0",
+              "100.0",
+              "350",
+              "10.0",
+              "3.4",
+              "6.6",
+              "0.0",
+              "100.0",
+              "372"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": null,
+            "values": [
+              "5.1",
+              "0.1",
+              "4.8",
+              "0.2",
+              "100.0",
+              "605",
+              "14.7",
+              "0.6",
+              "13.7",
+              "0.4",
+              "100.0",
+              "700"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "education",
+        "groupTitle": "Currently married women",
+        "title": "Educational attainment",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct",
+                "field": "any_traditional_method_pct",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct",
+                "field": "calendar_rhythm_pct",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct",
+                "field": "withdrawal_pct",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct",
+                "field": "traditional_other_pct",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct_2022",
+                "field": "any_traditional_method_pct_2022",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct_2022",
+                "field": "calendar_rhythm_pct_2022",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct_2022",
+                "field": "withdrawal_pct_2022",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct_2022",
+                "field": "traditional_other_pct_2022",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": null,
+            "values": [
+              "7.6",
+              "0.7",
+              "6.9",
+              "0.0",
+              "100.0",
+              "132",
+              "4.3",
+              "0.7",
+              "3.6",
+              "0.0",
+              "100.0",
+              "135"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": null,
+            "values": [
+              "9.3",
+              "0.7",
+              "8.6",
+              "0.0",
+              "100.0",
+              "1,842",
+              "12.4",
+              "2.6",
+              "9.6",
+              "0.2",
+              "100.0",
+              "2,144"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": null,
+            "values": [
+              "13.3",
+              "1.6",
+              "11.6",
+              "0.0",
+              "100.0",
+              "6,988",
+              "16.6",
+              "2.5",
+              "14.1",
+              "0.0",
+              "100.0",
+              "7,102"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": null,
+            "values": [
+              "13.7",
+              "0.7",
+              "13.0",
+              "0.0",
+              "100.0",
+              "814",
+              "14.0",
+              "0.5",
+              "13.5",
+              "0.0",
+              "100.0",
+              "371"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": null,
+            "values": [
+              "18.4",
+              "2.4",
+              "15.9",
+              "0.0",
+              "100.0",
+              "321",
+              "12.1",
+              "3.4",
+              "8.5",
+              "0.2",
+              "100.0",
+              "439"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": null,
+            "values": [
+              "16.6",
+              "4.0",
+              "12.6",
+              "0.0",
+              "100.0",
+              "5,994",
+              "19.0",
+              "4.1",
+              "14.9",
+              "0.0",
+              "100.0",
+              "5,114"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth",
+        "groupTitle": "Currently married women",
+        "title": "Wealth quintile",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct",
+                "field": "any_traditional_method_pct",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct",
+                "field": "calendar_rhythm_pct",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct",
+                "field": "withdrawal_pct",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct",
+                "field": "traditional_other_pct",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct_2022",
+                "field": "any_traditional_method_pct_2022",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct_2022",
+                "field": "calendar_rhythm_pct_2022",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct_2022",
+                "field": "withdrawal_pct_2022",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct_2022",
+                "field": "traditional_other_pct_2022",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": null,
+            "values": [
+              "10.4",
+              "2.2",
+              "8.2",
+              "0.0",
+              "100.0",
+              "3,343",
+              "14.5",
+              "3.0",
+              "11.3",
+              "0.2",
+              "100.0",
+              "3,071"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": null,
+            "values": [
+              "13.6",
+              "1.2",
+              "12.3",
+              "0.0",
+              "100.0",
+              "3,192",
+              "15.2",
+              "2.5",
+              "12.7",
+              "0.1",
+              "100.0",
+              "3,111"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": null,
+            "values": [
+              "16.0",
+              "1.8",
+              "14.2",
+              "0.0",
+              "100.0",
+              "3,344",
+              "16.1",
+              "2.4",
+              "13.7",
+              "0.0",
+              "100.0",
+              "3,139"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": null,
+            "values": [
+              "15.0",
+              "2.4",
+              "12.5",
+              "0.1",
+              "100.0",
+              "3,137",
+              "19.5",
+              "3.9",
+              "15.6",
+              "0.0",
+              "100.0",
+              "3,016"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": null,
+            "values": [
+              "15.9",
+              "4.3",
+              "11.7",
+              "0.0",
+              "100.0",
+              "3,076",
+              "17.2",
+              "3.3",
+              "13.9",
+              "0.0",
+              "100.0",
+              "2,970"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sexually-active-unmarried-total",
+        "groupTitle": "Sexually active unmarried women",
+        "title": "Total",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct",
+                "field": "any_traditional_method_pct",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct",
+                "field": "calendar_rhythm_pct",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct",
+                "field": "withdrawal_pct",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct",
+                "field": "traditional_other_pct",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct_2022",
+                "field": "any_traditional_method_pct_2022",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct_2022",
+                "field": "calendar_rhythm_pct_2022",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct_2022",
+                "field": "withdrawal_pct_2022",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct_2022",
+                "field": "traditional_other_pct_2022",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": null,
+            "values": [
+              "11.7",
+              "1.2",
+              "10.4",
+              "0.0",
+              "100.0",
+              "463",
+              "17.6",
+              "2.3",
+              "15.0",
+              "0.3",
+              "100.0",
+              "506"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sexually-active-unmarried-residence",
+        "groupTitle": "Sexually active unmarried women",
+        "title": "Residence",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct",
+                "field": "any_traditional_method_pct",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct",
+                "field": "calendar_rhythm_pct",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct",
+                "field": "withdrawal_pct",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct",
+                "field": "traditional_other_pct",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_traditional_method_pct_2022",
+                "field": "any_traditional_method_pct_2022",
+                "label": "Any traditional method"
+              },
+              {
+                "key": "calendar_rhythm_pct_2022",
+                "field": "calendar_rhythm_pct_2022",
+                "label": "Calendar/Rhythm"
+              },
+              {
+                "key": "withdrawal_pct_2022",
+                "field": "withdrawal_pct_2022",
+                "label": "Withdrawal"
+              },
+              {
+                "key": "traditional_other_pct_2022",
+                "field": "traditional_other_pct_2022",
+                "label": "Other traditional method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": null,
+            "values": [
+              "10.3",
+              "1.8",
+              "8.6",
+              "0.0",
+              "100.0",
+              "310",
+              "16.0",
+              "3.0",
+              "12.5",
+              "0.5",
+              "100.0",
+              "339"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": null,
+            "values": [
+              "14.4",
+              "0.2",
+              "14.2",
+              "0.0",
+              "100.0",
+              "153",
+              "20.8",
+              "0.8",
+              "20.0",
+              "0.0",
+              "100.0",
+              "167"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "² Region IX includes the province of Sulu in 2025.",
+      "“NA” denotes that an estimate is not reported."
+    ],
+    "notes": [
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "If more than one method is used, only the most effective method is considered in this tabulation.",
+      "Other modern methods include other methods mentioned by respondent and also includes patch, emergency contraception, and standard days method.",
+      "Details may not add up to total due to rounding."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "sections": [
+      {
+        "heading": "Traditional use declined, but remains important in some regions",
+        "body": "Traditional method use among currently married women fell from 16.5 percent in 2022 to 14.1 percent in 2025. Withdrawal accounts for most of the level and much of the decline, dropping from 13.4 to 11.8 percent. Calendar or rhythm use also fell, from 3.0 to 2.3 percent. Even after the decline, traditional methods remain a substantial part of use in several regions."
+      },
+      {
+        "heading": "Ilocos and Eastern Visayas stand out for traditional use",
+        "body": "Ilocos Region had the highest traditional method use among currently married women at 22.3 percent, followed by Eastern Visayas at 20.4 percent. CALABARZON, Central Luzon, and Bicol were also above the national level. BARMM was lowest at 5.1 percent. This regional pattern is distinct from the modern-use map, where Davao, MIMAROPA, and Caraga stand out."
+      },
+      {
+        "heading": "Withdrawal drives the traditional method profile",
+        "body": "Withdrawal was 11.8 percent nationally among currently married women, compared with 2.3 percent for calendar or rhythm. In the highest-traditional regions, withdrawal is even more central: Ilocos Region was at 20.2 percent, Eastern Visayas at 18.3 percent, and Central Luzon at 15.0 percent. Calendar or rhythm is highest in Western Visayas at 5.2 percent, but withdrawal carries most of the traditional-use pattern."
+      },
+      {
+        "heading": "The all-women comparison sharpens the withdrawal story",
+        "body": "The same traditional-use regions appear in the all-women data, but the currently married page makes the withdrawal-heavy pattern clearer. Ilocos Region is 22.3 percent for traditional use among currently married women and 11.8 percent among all women; Eastern Visayas is 20.4 versus 12.1 percent. The comparison is useful because it shows which traditional-use patterns intensify among currently married women."
+      },
+      {
+        "heading": "Sexually active unmarried women show a rural tilt",
+        "body": "Among sexually active unmarried women, traditional use was 11.7 percent in 2025. Rural sexually active unmarried women had higher traditional use than urban women, 14.4 versus 10.3 percent. That rural tilt is more visible for traditional methods than for modern methods in the sexually active unmarried group."
+      },
+      {
+        "heading": "Traditional use is not simply a low-income pattern",
+        "body": "Traditional use among currently married women was highest in the middle wealth quintile at 16.0 percent and lowest in the lowest quintile at 10.4 percent. Education also does not form a simple gradient: post-secondary women had the highest traditional use at 18.4 percent, while women with no education had the lowest at 7.6 percent. The sharper story is regional and method-specific."
+      }
+    ],
+    "takeaways": [
+      "Traditional method use among currently married women declined from 16.5 percent in 2022 to 14.1 percent in 2025.",
+      "Ilocos Region and Eastern Visayas had the highest traditional-use levels among currently married women.",
+      "Withdrawal accounts for most traditional use, especially in the regions where traditional use is highest."
+    ]
+  }
+}

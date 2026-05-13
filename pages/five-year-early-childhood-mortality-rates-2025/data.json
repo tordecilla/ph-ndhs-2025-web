@@ -1,0 +1,360 @@
+{
+  "sectionTitle": "Childhood Mortality",
+  "title": "Five-Year Early Childhood Mortality Rates",
+  "description": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the 5-year period preceding the survey, according to background characteristics: Philippines, 2022 and 2025.",
+  "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the 5-year period preceding the survey, according to background characteristics: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Five-Year Early Childhood Mortality Rates",
+    "subtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the 5-year period preceding the survey, according to background characteristics: Philippines, 2022 and 2025",
+    "tables": [
+      {
+        "id": "total",
+        "title": "Total",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "neonatal_mortality",
+                "field": "neonatal_mortality",
+                "label": "Neonatal mortality (NN)",
+                "noteRef": ""
+              },
+              {
+                "key": "post_neonatal_mortality",
+                "field": "post_neonatal_mortality",
+                "label": "Post-neonatal mortality (PNN)",
+                "noteRef": "¹"
+              },
+              {
+                "key": "infant_mortality",
+                "field": "infant_mortality",
+                "label": "Infant mortality (1q0)",
+                "noteRef": ""
+              },
+              {
+                "key": "child_mortality",
+                "field": "child_mortality",
+                "label": "Child mortality (4q1)",
+                "noteRef": ""
+              },
+              {
+                "key": "under_5_mortality",
+                "field": "under_5_mortality",
+                "label": "Under-5 mortality (5q0)",
+                "noteRef": ""
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "neonatal_mortality_2022",
+                "field": "neonatal_mortality_2022",
+                "label": "Neonatal mortality (NN)",
+                "noteRef": ""
+              },
+              {
+                "key": "post_neonatal_mortality_2022",
+                "field": "post_neonatal_mortality_2022",
+                "label": "Post-neonatal mortality (PNN)",
+                "noteRef": "¹"
+              },
+              {
+                "key": "infant_mortality_2022",
+                "field": "infant_mortality_2022",
+                "label": "Infant mortality (1q0)",
+                "noteRef": ""
+              },
+              {
+                "key": "child_mortality_2022",
+                "field": "child_mortality_2022",
+                "label": "Child mortality (4q1)",
+                "noteRef": ""
+              },
+              {
+                "key": "under_5_mortality_2022",
+                "field": "under_5_mortality_2022",
+                "label": "Under-5 mortality (5q0)",
+                "noteRef": ""
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": "",
+            "values": [
+              "12",
+              "6",
+              "18",
+              "3",
+              "22",
+              "15",
+              "7",
+              "22",
+              "5",
+              "26"
+            ],
+            "rowClass": "dt-total-row"
+          }
+        ]
+      },
+      {
+        "id": "child_s_sex",
+        "title": "Child's sex",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "neonatal_mortality",
+                "field": "neonatal_mortality",
+                "label": "Neonatal mortality (NN)",
+                "noteRef": ""
+              },
+              {
+                "key": "post_neonatal_mortality",
+                "field": "post_neonatal_mortality",
+                "label": "Post-neonatal mortality (PNN)",
+                "noteRef": "¹"
+              },
+              {
+                "key": "infant_mortality",
+                "field": "infant_mortality",
+                "label": "Infant mortality (1q0)",
+                "noteRef": ""
+              },
+              {
+                "key": "child_mortality",
+                "field": "child_mortality",
+                "label": "Child mortality (4q1)",
+                "noteRef": ""
+              },
+              {
+                "key": "under_5_mortality",
+                "field": "under_5_mortality",
+                "label": "Under-5 mortality (5q0)",
+                "noteRef": ""
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "neonatal_mortality_2022",
+                "field": "neonatal_mortality_2022",
+                "label": "Neonatal mortality (NN)",
+                "noteRef": ""
+              },
+              {
+                "key": "post_neonatal_mortality_2022",
+                "field": "post_neonatal_mortality_2022",
+                "label": "Post-neonatal mortality (PNN)",
+                "noteRef": "¹"
+              },
+              {
+                "key": "infant_mortality_2022",
+                "field": "infant_mortality_2022",
+                "label": "Infant mortality (1q0)",
+                "noteRef": ""
+              },
+              {
+                "key": "child_mortality_2022",
+                "field": "child_mortality_2022",
+                "label": "Child mortality (4q1)",
+                "noteRef": ""
+              },
+              {
+                "key": "under_5_mortality_2022",
+                "field": "under_5_mortality_2022",
+                "label": "Under-5 mortality (5q0)",
+                "noteRef": ""
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Male",
+            "noteRef": "",
+            "values": [
+              "13",
+              "6",
+              "19",
+              "5",
+              "24",
+              "17",
+              "8",
+              "25",
+              "5",
+              "29"
+            ]
+          },
+          {
+            "label": "Female",
+            "noteRef": "",
+            "values": [
+              "11",
+              "6",
+              "17",
+              "2",
+              "19",
+              "13",
+              "6",
+              "19",
+              "5",
+              "23"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "residence",
+        "title": "Residence",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "neonatal_mortality",
+                "field": "neonatal_mortality",
+                "label": "Neonatal mortality (NN)",
+                "noteRef": ""
+              },
+              {
+                "key": "post_neonatal_mortality",
+                "field": "post_neonatal_mortality",
+                "label": "Post-neonatal mortality (PNN)",
+                "noteRef": "¹"
+              },
+              {
+                "key": "infant_mortality",
+                "field": "infant_mortality",
+                "label": "Infant mortality (1q0)",
+                "noteRef": ""
+              },
+              {
+                "key": "child_mortality",
+                "field": "child_mortality",
+                "label": "Child mortality (4q1)",
+                "noteRef": ""
+              },
+              {
+                "key": "under_5_mortality",
+                "field": "under_5_mortality",
+                "label": "Under-5 mortality (5q0)",
+                "noteRef": ""
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "neonatal_mortality_2022",
+                "field": "neonatal_mortality_2022",
+                "label": "Neonatal mortality (NN)",
+                "noteRef": ""
+              },
+              {
+                "key": "post_neonatal_mortality_2022",
+                "field": "post_neonatal_mortality_2022",
+                "label": "Post-neonatal mortality (PNN)",
+                "noteRef": "¹"
+              },
+              {
+                "key": "infant_mortality_2022",
+                "field": "infant_mortality_2022",
+                "label": "Infant mortality (1q0)",
+                "noteRef": ""
+              },
+              {
+                "key": "child_mortality_2022",
+                "field": "child_mortality_2022",
+                "label": "Child mortality (4q1)",
+                "noteRef": ""
+              },
+              {
+                "key": "under_5_mortality_2022",
+                "field": "under_5_mortality_2022",
+                "label": "Under-5 mortality (5q0)",
+                "noteRef": ""
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": "",
+            "values": [
+              "14",
+              "5",
+              "19",
+              "2",
+              "21",
+              "16",
+              "7",
+              "23",
+              "3",
+              "27"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": "",
+            "values": [
+              "10",
+              "7",
+              "18",
+              "4",
+              "22",
+              "14",
+              "6",
+              "20",
+              "6",
+              "26"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ Computed as the difference between the infant and neonatal mortality rates",
+      "Childhood mortality rates are expressed as the number of deaths per 1,000 live births."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "sections": [
+      {
+        "heading": "The recent five-year profile improved from 2022",
+        "body": "Under-5 mortality was 22 deaths per 1,000 live births in 2025, down from 26 in 2022. Infant mortality fell from 22 to 18, and neonatal mortality fell from 15 to 12. The changes point to lower mortality in the most recent five-year period, with the largest absolute part of the under-5 total still occurring before age 1."
+      },
+      {
+        "heading": "Male mortality is slightly higher than female mortality",
+        "body": "Male under-5 mortality was 24 deaths per 1,000 live births, compared with 19 for females. Infant mortality was also higher for males, at 19 compared with 17 for females. The sex gap is present, but it is smaller than the difference between infant mortality and mortality after age 1."
+      },
+      {
+        "heading": "Urban and rural under-5 mortality are nearly the same",
+        "body": "Urban under-5 mortality was 21, while rural under-5 mortality was 22. Infant mortality is also close, at 19 in urban areas and 18 in rural areas. In this page, residence does not create the kind of sharp divide seen in some other NDHS indicators."
+      },
+      {
+        "heading": "Neonatal mortality remains the largest component",
+        "body": "Nationally, neonatal mortality was 12 and post-neonatal mortality was 6. Together they produce infant mortality of 18, far above child mortality at 3. The recent mortality pattern is therefore mainly an infant and newborn pattern rather than a pattern concentrated after the first birthday."
+      }
+    ],
+    "takeaways": [
+      "Under-5 mortality declined from 26 to 22 deaths per 1,000 live births between 2022 and 2025.",
+      "Male under-5 mortality is higher than female under-5 mortality, but the gap is modest.",
+      "Urban and rural under-5 mortality are nearly identical in the recent five-year data."
+    ]
+  }
+}

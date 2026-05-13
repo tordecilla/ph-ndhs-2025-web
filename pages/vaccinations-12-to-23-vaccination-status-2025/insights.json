@@ -1,0 +1,57 @@
+{
+  "sections": [
+    {
+      "heading": "Coverage improved nationally, but schedule completion still trails basic-antigen completion",
+      "body": "Among children aged 12 to 23 months, full vaccination with basic antigens rose from 71.8 percent in 2022 to 77.1 percent in 2025. Full vaccination according to the national schedule also increased, but more modestly, from 59.4 to 62.4 percent. At the same time, the share with no vaccinations fell by half, from 11.2 to 5.7 percent. The pattern shows progress at both ends of the vaccination status distribution, while also showing that timely completion under the national schedule remains harder to achieve than broad basic-antigen completion."
+    },
+    {
+      "heading": "Regional coverage ranges from near-universal completion to very low completion",
+      "body": "Ilocos Region had the highest 2025 coverage on both core completion measures, with 95.6 percent fully vaccinated for basic antigens and 94.3 percent fully vaccinated according to the national schedule. Davao Region was also high at 88.4 and 86.3 percent. At the other end, BARMM had 22.1 percent basic-antigen completion and 13.0 percent national-schedule completion. The regional spread is therefore much larger than the national average suggests."
+    },
+    {
+      "heading": "BARMM reduced zero-dose status but remained the main low-coverage outlier",
+      "body": "BARMM's share of children with no vaccinations fell from 59.9 percent in 2022 to 28.1 percent in 2025, a large improvement. Even after that decline, BARMM still had the highest no-vaccination level among regions and the lowest completion levels for both basic antigens and the national schedule. The data point to real movement away from complete non-vaccination, but not enough to close the gap in completed vaccination status."
+    },
+    {
+      "heading": "Some regions with decent basic coverage still lag on schedule completion",
+      "body": "Several regions show a large gap between basic-antigen completion and national-schedule completion in 2025. Western Visayas had 86.9 percent basic-antigen completion but 60.2 percent national-schedule completion, and the Negros Island Region had 81.3 percent basic-antigen completion but 59.8 percent national-schedule completion. SOCCSKSARGEN was at 80.0 percent for basic antigens and 52.2 percent for the national schedule. The inference is that many children may receive the core antigens eventually, while timing and full schedule adherence remain more uneven."
+    },
+    {
+      "heading": "Zamboanga Peninsula¹ combined falling schedule completion with rising non-vaccination",
+      "body": "Zamboanga Peninsula moved against the national direction on several measures. Basic-antigen completion declined from 65.8 percent in 2022 to 61.7 percent in 2025, while national-schedule completion fell from 60.1 to 42.1 percent. No vaccinations rose from 11.8 to 20.3 percent. This makes the region one of the clearest cases where lower completion and higher non-vaccination appear together in the 2025 profile."
+    },
+    {
+      "heading": "Girls had slightly higher completion than boys in 2025",
+      "body": "Female children had 78.1 percent basic-antigen completion and 64.5 percent national-schedule completion in 2025, compared with 76.2 and 60.7 percent among male children. No vaccination was also slightly lower for girls, at 5.3 percent compared with 5.9 percent for boys. The sex gap is modest, but it is consistent across the three status measures."
+    },
+    {
+      "heading": "Higher birth order remains associated with lower completion",
+      "body": "First-born children had the highest 2025 vaccination completion, with 81.3 percent fully vaccinated for basic antigens and 67.1 percent fully vaccinated according to the national schedule. Children of birth order 6 or higher had lower basic-antigen completion at 66.2 percent and national-schedule completion at 56.6 percent, while no vaccinations were higher at 9.5 percent. The gradient is not perfectly linear, but the broad pattern links larger birth order with weaker vaccination status."
+    },
+    {
+      "heading": "Vaccination card status is the sharpest divide in the data",
+      "body": "Children whose vaccination card was seen had 92.6 percent basic-antigen completion and 77.4 percent national-schedule completion in 2025, with no vaccinations at 0.0 percent. Among children who never had a card, basic-antigen completion was 14.5 percent, national-schedule completion was 11.3 percent, and no vaccinations reached 51.7 percent. This does not prove that the card itself causes vaccination, but it shows that documented contact with the vaccination system is strongly aligned with completed vaccination."
+    },
+    {
+      "heading": "Urban children had an advantage, especially on zero-dose status",
+      "body": "Urban children had higher 2025 completion than rural children: 78.7 percent versus 75.4 percent for basic antigens, and 64.6 percent versus 60.2 percent for the national schedule. The more visible difference was in no vaccinations, at 4.3 percent in urban areas and 7.0 percent in rural areas. The residence gap is smaller than the regional, wealth, and card-status gaps, but it still points to weaker access or continuity outside urban areas."
+    },
+    {
+      "heading": "Mother's education shows a broad completion gradient",
+      "body": "Children whose mothers had college education had 82.5 percent basic-antigen completion and 69.1 percent national-schedule completion in 2025. Among children whose mothers had Grades 1 to 6 education, the corresponding levels were 59.4 and 45.6 percent, with no vaccinations at 10.4 percent. Post-secondary values were higher but flagged in the display data, while the no-education group was suppressed in 2025. Within the usable rows, vaccination status generally improves as maternal schooling rises."
+    },
+    {
+      "heading": "Wealth differences remain large despite improvement at the bottom",
+      "body": "Children in the lowest wealth quintile had 66.1 percent basic-antigen completion and 52.4 percent national-schedule completion in 2025, while those in the highest quintile had 88.3 and 75.8 percent. No vaccinations were 10.1 percent in the lowest quintile and 1.9 percent in the highest. The lowest quintile improved from 2022 on all three measures, but the 2025 gap still shows a strong wealth gradient in vaccination status."
+    }
+  ],
+  "takeaways": [
+    "National vaccination status improved from 2022 to 2025, with basic-antigen completion rising to 77.1 percent and no vaccinations falling to 5.7 percent.",
+    "National-schedule completion remained lower than basic-antigen completion, showing that timing and full schedule adherence are still major gaps.",
+    "Regional inequality is substantial, ranging from 94.3 percent national-schedule completion in Ilocos Region to 13.0 percent in BARMM.",
+    "Children with a seen vaccination card were far more likely to be fully vaccinated and far less likely to have no vaccinations than children who never had a card."
+  ],
+  "footnotes": [
+    "¹ Includes the province of Sulu in 2025."
+  ]
+}

@@ -1,0 +1,2734 @@
+{
+  "sectionTitle": "Contraception",
+  "title": "Current Use of Modern Contraception Methods Among Currently Married and Sexually Active Unmarried Women",
+  "description": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by modern contraceptive method currently used. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Current Use of Modern Contraception Methods Among Currently Married and Sexually Active Unmarried Women",
+    "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+    "tables": [
+      {
+        "id": "total",
+        "groupTitle": "Currently married women",
+        "title": "Total",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_modern_method_pct",
+                "field": "any_modern_method_pct",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct",
+                "field": "female_sterilization_pct",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct",
+                "field": "male_sterilization_pct",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct",
+                "field": "iud_pct",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct",
+                "field": "injectables_pct",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct",
+                "field": "implants_pct",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct",
+                "field": "pill_pct",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct",
+                "field": "male_condom_pct",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct",
+                "field": "lam_pct",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct",
+                "field": "modern_other_pct",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_modern_method_pct_2022",
+                "field": "any_modern_method_pct_2022",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct_2022",
+                "field": "female_sterilization_pct_2022",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct_2022",
+                "field": "male_sterilization_pct_2022",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct_2022",
+                "field": "iud_pct_2022",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct_2022",
+                "field": "injectables_pct_2022",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct_2022",
+                "field": "implants_pct_2022",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct_2022",
+                "field": "pill_pct_2022",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct_2022",
+                "field": "male_condom_pct_2022",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct_2022",
+                "field": "lam_pct_2022",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct_2022",
+                "field": "modern_other_pct_2022",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": null,
+            "values": [
+              "44.5",
+              "7.8",
+              "0.1",
+              "2.8",
+              "6.1",
+              "4.2",
+              "20.5",
+              "2.5",
+              "0.2",
+              "0.1",
+              "100.0",
+              "16,092",
+              "41.8",
+              "8.7",
+              "0.1",
+              "3.0",
+              "5.0",
+              "2.8",
+              "19.8",
+              "2.0",
+              "0.4",
+              "0.1",
+              "100.0",
+              "15,306"
+            ],
+            "rowClass": "dt-total-row"
+          }
+        ]
+      },
+      {
+        "id": "number-of-living-children",
+        "groupTitle": "Currently married women",
+        "title": "Number of living children",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_modern_method_pct",
+                "field": "any_modern_method_pct",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct",
+                "field": "female_sterilization_pct",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct",
+                "field": "male_sterilization_pct",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct",
+                "field": "iud_pct",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct",
+                "field": "injectables_pct",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct",
+                "field": "implants_pct",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct",
+                "field": "pill_pct",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct",
+                "field": "male_condom_pct",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct",
+                "field": "lam_pct",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct",
+                "field": "modern_other_pct",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_modern_method_pct_2022",
+                "field": "any_modern_method_pct_2022",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct_2022",
+                "field": "female_sterilization_pct_2022",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct_2022",
+                "field": "male_sterilization_pct_2022",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct_2022",
+                "field": "iud_pct_2022",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct_2022",
+                "field": "injectables_pct_2022",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct_2022",
+                "field": "implants_pct_2022",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct_2022",
+                "field": "pill_pct_2022",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct_2022",
+                "field": "male_condom_pct_2022",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct_2022",
+                "field": "lam_pct_2022",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct_2022",
+                "field": "modern_other_pct_2022",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "0",
+            "noteRef": null,
+            "values": [
+              "7.6",
+              "0.2",
+              "0.0",
+              "0.0",
+              "0.6",
+              "0.2",
+              "2.7",
+              "3.9",
+              "0.0",
+              "0.0",
+              "100.0",
+              "1,516",
+              "5.2",
+              "0.3",
+              "0.0",
+              "0.0",
+              "0.0",
+              "0.0",
+              "3.7",
+              "1.0",
+              "0.0",
+              "0.0",
+              "100.0",
+              "1,423"
+            ]
+          },
+          {
+            "label": "1-2",
+            "noteRef": null,
+            "values": [
+              "42.1",
+              "3.6",
+              "0.0",
+              "2.4",
+              "6.3",
+              "4.2",
+              "22.3",
+              "2.8",
+              "0.3",
+              "0.1",
+              "100.0",
+              "8,423",
+              "39.8",
+              "3.6",
+              "0.1",
+              "2.8",
+              "5.0",
+              "2.4",
+              "22.9",
+              "2.4",
+              "0.5",
+              "0.1",
+              "100.0",
+              "7,478"
+            ]
+          },
+          {
+            "label": "3-4",
+            "noteRef": null,
+            "values": [
+              "59.1",
+              "15.9",
+              "0.2",
+              "4.2",
+              "7.0",
+              "5.3",
+              "24.6",
+              "1.6",
+              "0.1",
+              "0.1",
+              "100.0",
+              "4,723",
+              "54.4",
+              "17.4",
+              "0.1",
+              "3.9",
+              "5.9",
+              "3.8",
+              "21.0",
+              "1.9",
+              "0.3",
+              "0.1",
+              "100.0",
+              "4,612"
+            ]
+          },
+          {
+            "label": "5+",
+            "noteRef": null,
+            "values": [
+              "49.3",
+              "14.5",
+              "0.0",
+              "3.7",
+              "7.7",
+              "5.4",
+              "15.9",
+              "1.8",
+              "0.2",
+              "0.1",
+              "100.0",
+              "1,430",
+              "47.0",
+              "13.8",
+              "0.2",
+              "4.3",
+              "6.2",
+              "4.2",
+              "16.7",
+              "1.1",
+              "0.6",
+              "0.1",
+              "100.0",
+              "1,793"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "age",
+        "groupTitle": "Currently married women",
+        "title": "Age in years",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_modern_method_pct",
+                "field": "any_modern_method_pct",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct",
+                "field": "female_sterilization_pct",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct",
+                "field": "male_sterilization_pct",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct",
+                "field": "iud_pct",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct",
+                "field": "injectables_pct",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct",
+                "field": "implants_pct",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct",
+                "field": "pill_pct",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct",
+                "field": "male_condom_pct",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct",
+                "field": "lam_pct",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct",
+                "field": "modern_other_pct",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_modern_method_pct_2022",
+                "field": "any_modern_method_pct_2022",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct_2022",
+                "field": "female_sterilization_pct_2022",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct_2022",
+                "field": "male_sterilization_pct_2022",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct_2022",
+                "field": "iud_pct_2022",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct_2022",
+                "field": "injectables_pct_2022",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct_2022",
+                "field": "implants_pct_2022",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct_2022",
+                "field": "pill_pct_2022",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct_2022",
+                "field": "male_condom_pct_2022",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct_2022",
+                "field": "lam_pct_2022",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct_2022",
+                "field": "modern_other_pct_2022",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "15-19",
+            "noteRef": null,
+            "values": [
+              "34.0",
+              "0.0",
+              "0.0",
+              "1.9",
+              "9.7",
+              "8.5",
+              "11.5",
+              "1.7",
+              "0.6",
+              "0.0",
+              "100.0",
+              "307",
+              "34.5",
+              "0.0",
+              "0.0",
+              "1.6",
+              "3.3",
+              "4.9",
+              "20.6",
+              "2.3",
+              "1.7",
+              "0.1",
+              "100.0",
+              "307"
+            ]
+          },
+          {
+            "label": "20-24",
+            "noteRef": null,
+            "values": [
+              "47.0",
+              "0.1",
+              "0.0",
+              "2.7",
+              "10.6",
+              "7.9",
+              "21.6",
+              "3.5",
+              "0.6",
+              "0.0",
+              "100.0",
+              "1,212",
+              "41.6",
+              "0.0",
+              "0.0",
+              "3.2",
+              "7.6",
+              "5.9",
+              "22.1",
+              "1.5",
+              "1.3",
+              "0.0",
+              "100.0",
+              "1,303"
+            ]
+          },
+          {
+            "label": "25-29",
+            "noteRef": null,
+            "values": [
+              "45.4",
+              "0.8",
+              "0.0",
+              "1.7",
+              "8.2",
+              "7.6",
+              "23.0",
+              "3.4",
+              "0.6",
+              "0.1",
+              "100.0",
+              "2,369",
+              "44.6",
+              "1.3",
+              "0.0",
+              "2.4",
+              "6.8",
+              "4.2",
+              "26.8",
+              "2.3",
+              "0.7",
+              "0.0",
+              "100.0",
+              "2,384"
+            ]
+          },
+          {
+            "label": "30-34",
+            "noteRef": null,
+            "values": [
+              "48.3",
+              "4.4",
+              "0.1",
+              "2.6",
+              "7.5",
+              "5.4",
+              "25.2",
+              "2.8",
+              "0.3",
+              "0.1",
+              "100.0",
+              "3,159",
+              "43.8",
+              "4.7",
+              "0.1",
+              "3.0",
+              "5.7",
+              "3.2",
+              "24.3",
+              "2.4",
+              "0.4",
+              "0.0",
+              "100.0",
+              "2,935"
+            ]
+          },
+          {
+            "label": "35-39",
+            "noteRef": null,
+            "values": [
+              "48.7",
+              "10.4",
+              "0.0",
+              "3.5",
+              "5.7",
+              "3.4",
+              "23.2",
+              "2.0",
+              "0.1",
+              "0.3",
+              "100.0",
+              "3,307",
+              "47.6",
+              "10.3",
+              "0.0",
+              "4.1",
+              "5.5",
+              "2.8",
+              "21.7",
+              "2.8",
+              "0.3",
+              "0.1",
+              "100.0",
+              "2,808"
+            ]
+          },
+          {
+            "label": "40-44",
+            "noteRef": null,
+            "values": [
+              "44.7",
+              "13.0",
+              "0.1",
+              "3.8",
+              "4.6",
+              "2.4",
+              "19.0",
+              "1.6",
+              "0.0",
+              "0.1",
+              "100.0",
+              "3,021",
+              "42.1",
+              "15.1",
+              "0.1",
+              "2.9",
+              "4.0",
+              "1.6",
+              "16.3",
+              "1.7",
+              "0.1",
+              "0.3",
+              "100.0",
+              "2,915"
+            ]
+          },
+          {
+            "label": "45-49",
+            "noteRef": null,
+            "values": [
+              "33.9",
+              "13.5",
+              "0.1",
+              "2.4",
+              "2.3",
+              "1.0",
+              "12.0",
+              "2.5",
+              "0.0",
+              "0.0",
+              "100.0",
+              "2,717",
+              "31.7",
+              "16.0",
+              "0.3",
+              "2.6",
+              "1.9",
+              "0.6",
+              "9.2",
+              "1.0",
+              "0.0",
+              "0.1",
+              "100.0",
+              "2,654"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "residence",
+        "groupTitle": "Currently married women",
+        "title": "Residence",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_modern_method_pct",
+                "field": "any_modern_method_pct",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct",
+                "field": "female_sterilization_pct",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct",
+                "field": "male_sterilization_pct",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct",
+                "field": "iud_pct",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct",
+                "field": "injectables_pct",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct",
+                "field": "implants_pct",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct",
+                "field": "pill_pct",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct",
+                "field": "male_condom_pct",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct",
+                "field": "lam_pct",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct",
+                "field": "modern_other_pct",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_modern_method_pct_2022",
+                "field": "any_modern_method_pct_2022",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct_2022",
+                "field": "female_sterilization_pct_2022",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct_2022",
+                "field": "male_sterilization_pct_2022",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct_2022",
+                "field": "iud_pct_2022",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct_2022",
+                "field": "injectables_pct_2022",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct_2022",
+                "field": "implants_pct_2022",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct_2022",
+                "field": "pill_pct_2022",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct_2022",
+                "field": "male_condom_pct_2022",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct_2022",
+                "field": "lam_pct_2022",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct_2022",
+                "field": "modern_other_pct_2022",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": null,
+            "values": [
+              "42.1",
+              "8.2",
+              "0.1",
+              "2.7",
+              "5.9",
+              "3.7",
+              "17.9",
+              "3.3",
+              "0.2",
+              "0.1",
+              "100.0",
+              "8,698",
+              "39.7",
+              "9.0",
+              "0.1",
+              "2.7",
+              "5.0",
+              "2.5",
+              "17.6",
+              "2.5",
+              "0.2",
+              "0.1",
+              "100.0",
+              "8,263"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": null,
+            "values": [
+              "47.2",
+              "7.4",
+              "0.0",
+              "3.0",
+              "6.3",
+              "4.9",
+              "23.7",
+              "1.5",
+              "0.3",
+              "0.1",
+              "100.0",
+              "7,394",
+              "44.3",
+              "8.2",
+              "0.1",
+              "3.4",
+              "5.0",
+              "3.1",
+              "22.4",
+              "1.3",
+              "0.6",
+              "0.1",
+              "100.0",
+              "7,043"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "groupTitle": "Currently married women",
+        "title": "Region",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_modern_method_pct",
+                "field": "any_modern_method_pct",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct",
+                "field": "female_sterilization_pct",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct",
+                "field": "male_sterilization_pct",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct",
+                "field": "iud_pct",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct",
+                "field": "injectables_pct",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct",
+                "field": "implants_pct",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct",
+                "field": "pill_pct",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct",
+                "field": "male_condom_pct",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct",
+                "field": "lam_pct",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct",
+                "field": "modern_other_pct",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_modern_method_pct_2022",
+                "field": "any_modern_method_pct_2022",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct_2022",
+                "field": "female_sterilization_pct_2022",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct_2022",
+                "field": "male_sterilization_pct_2022",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct_2022",
+                "field": "iud_pct_2022",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct_2022",
+                "field": "injectables_pct_2022",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct_2022",
+                "field": "implants_pct_2022",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct_2022",
+                "field": "pill_pct_2022",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct_2022",
+                "field": "male_condom_pct_2022",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct_2022",
+                "field": "lam_pct_2022",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct_2022",
+                "field": "modern_other_pct_2022",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": null,
+            "values": [
+              "41.6",
+              "9.1",
+              "0.3",
+              "2.6",
+              "7.4",
+              "4.2",
+              "13.3",
+              "4.5",
+              "0.1",
+              "0.2",
+              "100.0",
+              "2,022",
+              "38.4",
+              "10.3",
+              "0.3",
+              "1.9",
+              "4.8",
+              "2.1",
+              "15.7",
+              "3.1",
+              "0.1",
+              "0.0",
+              "100.0",
+              "2,058"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": null,
+            "values": [
+              "45.8",
+              "17.6",
+              "0.0",
+              "0.9",
+              "4.2",
+              "4.7",
+              "15.2",
+              "2.9",
+              "0.2",
+              "0.0",
+              "100.0",
+              "269",
+              "42.9",
+              "14.8",
+              "0.0",
+              "2.6",
+              "4.1",
+              "2.5",
+              "16.8",
+              "1.6",
+              "0.4",
+              "0.1",
+              "100.0",
+              "229"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": null,
+            "values": [
+              "45.3",
+              "10.4",
+              "0.0",
+              "1.7",
+              "6.5",
+              "1.9",
+              "21.1",
+              "2.9",
+              "0.2",
+              "0.5",
+              "100.0",
+              "1,303",
+              "43.4",
+              "14.5",
+              "0.2",
+              "1.1",
+              "5.4",
+              "0.3",
+              "19.9",
+              "1.2",
+              "0.7",
+              "0.0",
+              "100.0",
+              "820"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": null,
+            "values": [
+              "48.4",
+              "9.2",
+              "0.0",
+              "2.0",
+              "5.1",
+              "1.7",
+              "29.5",
+              "0.8",
+              "0.0",
+              "0.0",
+              "100.0",
+              "468",
+              "58.3",
+              "13.6",
+              "0.0",
+              "3.9",
+              "4.1",
+              "2.0",
+              "33.5",
+              "1.2",
+              "0.1",
+              "0.0",
+              "100.0",
+              "479"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": null,
+            "values": [
+              "47.8",
+              "14.4",
+              "0.0",
+              "0.9",
+              "6.1",
+              "3.3",
+              "19.4",
+              "3.4",
+              "0.3",
+              "0.0",
+              "100.0",
+              "2,011",
+              "41.2",
+              "12.3",
+              "0.0",
+              "0.7",
+              "6.7",
+              "1.9",
+              "17.2",
+              "2.2",
+              "0.2",
+              "0.0",
+              "100.0",
+              "1,764"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": null,
+            "values": [
+              "42.1",
+              "7.7",
+              "0.0",
+              "1.6",
+              "5.5",
+              "2.5",
+              "21.1",
+              "3.2",
+              "0.5",
+              "0.0",
+              "100.0",
+              "2,069",
+              "36.9",
+              "8.8",
+              "0.1",
+              "1.0",
+              "3.3",
+              "2.0",
+              "19.8",
+              "1.6",
+              "0.2",
+              "0.0",
+              "100.0",
+              "2,261"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": null,
+            "values": [
+              "53.9",
+              "6.2",
+              "0.0",
+              "1.2",
+              "12.6",
+              "9.2",
+              "23.4",
+              "1.0",
+              "0.2",
+              "0.0",
+              "100.0",
+              "440",
+              "45.1",
+              "5.5",
+              "0.0",
+              "1.4",
+              "8.4",
+              "4.9",
+              "22.8",
+              "1.9",
+              "0.2",
+              "0.1",
+              "100.0",
+              "402"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": null,
+            "values": [
+              "38.4",
+              "5.3",
+              "0.0",
+              "1.6",
+              "5.0",
+              "5.9",
+              "19.1",
+              "1.3",
+              "0.1",
+              "0.1",
+              "100.0",
+              "728",
+              "38.8",
+              "6.2",
+              "0.0",
+              "1.2",
+              "4.7",
+              "1.9",
+              "20.0",
+              "2.8",
+              "1.5",
+              "0.5",
+              "100.0",
+              "730"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": null,
+            "values": [
+              "44.9",
+              "5.4",
+              "0.0",
+              "2.0",
+              "6.4",
+              "3.2",
+              "23.7",
+              "3.4",
+              "0.8",
+              "0.0",
+              "100.0",
+              "626",
+              "42.9",
+              "6.8",
+              "0.3",
+              "4.6",
+              "3.2",
+              "3.7",
+              "22.3",
+              "1.9",
+              "0.1",
+              "0.0",
+              "100.0",
+              "994"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": null,
+            "values": [
+              "48.2",
+              "4.3",
+              "0.0",
+              "4.9",
+              "8.2",
+              "1.5",
+              "27.6",
+              "1.7",
+              "0.0",
+              "0.0",
+              "100.0",
+              "712",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": null,
+            "values": [
+              "39.3",
+              "4.8",
+              "0.1",
+              "5.4",
+              "4.4",
+              "3.2",
+              "19.4",
+              "1.9",
+              "0.0",
+              "0.0",
+              "100.0",
+              "1,034",
+              "44.9",
+              "6.9",
+              "0.0",
+              "7.2",
+              "7.0",
+              "2.1",
+              "18.3",
+              "2.9",
+              "0.1",
+              "0.3",
+              "100.0",
+              "1,181"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": null,
+            "values": [
+              "44.0",
+              "7.3",
+              "0.0",
+              "4.2",
+              "4.0",
+              "5.8",
+              "21.1",
+              "0.9",
+              "0.3",
+              "0.4",
+              "100.0",
+              "612",
+              "42.5",
+              "7.2",
+              "0.0",
+              "2.9",
+              "7.4",
+              "2.9",
+              "17.7",
+              "2.9",
+              "0.8",
+              "0.8",
+              "100.0",
+              "545"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "²",
+            "values": [
+              "40.4",
+              "2.8",
+              "0.0",
+              "3.3",
+              "6.3",
+              "7.6",
+              "19.2",
+              "0.5",
+              "0.5",
+              "0.1",
+              "100.0",
+              "712",
+              "47.9",
+              "3.9",
+              "0.0",
+              "4.1",
+              "5.8",
+              "7.3",
+              "23.7",
+              "2.0",
+              "1.1",
+              "0.0",
+              "100.0",
+              "566"
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": null,
+            "values": [
+              "48.5",
+              "6.1",
+              "0.1",
+              "7.1",
+              "4.4",
+              "5.1",
+              "22.7",
+              "2.5",
+              "0.5",
+              "0.0",
+              "100.0",
+              "676",
+              "49.5",
+              "7.3",
+              "0.0",
+              "8.8",
+              "2.9",
+              "5.1",
+              "22.3",
+              "2.2",
+              "0.8",
+              "0.2",
+              "100.0",
+              "606"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": null,
+            "values": [
+              "58.2",
+              "6.1",
+              "0.2",
+              "4.9",
+              "8.1",
+              "7.9",
+              "29.7",
+              "1.1",
+              "0.2",
+              "0.0",
+              "100.0",
+              "855",
+              "49.8",
+              "7.9",
+              "0.0",
+              "5.0",
+              "3.3",
+              "3.6",
+              "28.9",
+              "0.7",
+              "0.4",
+              "0.0",
+              "100.0",
+              "901"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": null,
+            "values": [
+              "50.8",
+              "5.1",
+              "0.0",
+              "5.3",
+              "5.0",
+              "6.9",
+              "27.0",
+              "1.5",
+              "0.0",
+              "0.0",
+              "100.0",
+              "600",
+              "46.0",
+              "4.8",
+              "0.0",
+              "5.5",
+              "5.3",
+              "4.0",
+              "23.7",
+              "1.1",
+              "1.5",
+              "0.0",
+              "100.0",
+              "700"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": null,
+            "values": [
+              "52.9",
+              "6.0",
+              "0.1",
+              "5.7",
+              "5.0",
+              "8.6",
+              "25.2",
+              "2.1",
+              "0.1",
+              "0.2",
+              "100.0",
+              "350",
+              "47.8",
+              "6.3",
+              "0.0",
+              "5.8",
+              "4.2",
+              "5.8",
+              "22.9",
+              "2.4",
+              "0.3",
+              "0.1",
+              "100.0",
+              "372"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": null,
+            "values": [
+              "20.2",
+              "2.3",
+              "0.0",
+              "1.0",
+              "4.4",
+              "4.3",
+              "7.0",
+              "1.0",
+              "0.0",
+              "0.2",
+              "100.0",
+              "605",
+              "20.5",
+              "4.0",
+              "0.0",
+              "1.2",
+              "5.4",
+              "3.1",
+              "6.0",
+              "0.5",
+              "0.2",
+              "0.0",
+              "100.0",
+              "700"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "education",
+        "groupTitle": "Currently married women",
+        "title": "Educational attainment",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_modern_method_pct",
+                "field": "any_modern_method_pct",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct",
+                "field": "female_sterilization_pct",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct",
+                "field": "male_sterilization_pct",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct",
+                "field": "iud_pct",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct",
+                "field": "injectables_pct",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct",
+                "field": "implants_pct",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct",
+                "field": "pill_pct",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct",
+                "field": "male_condom_pct",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct",
+                "field": "lam_pct",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct",
+                "field": "modern_other_pct",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_modern_method_pct_2022",
+                "field": "any_modern_method_pct_2022",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct_2022",
+                "field": "female_sterilization_pct_2022",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct_2022",
+                "field": "male_sterilization_pct_2022",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct_2022",
+                "field": "iud_pct_2022",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct_2022",
+                "field": "injectables_pct_2022",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct_2022",
+                "field": "implants_pct_2022",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct_2022",
+                "field": "pill_pct_2022",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct_2022",
+                "field": "male_condom_pct_2022",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct_2022",
+                "field": "lam_pct_2022",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct_2022",
+                "field": "modern_other_pct_2022",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": null,
+            "values": [
+              "34.8",
+              "4.3",
+              "0.0",
+              "0.7",
+              "12.0",
+              "5.1",
+              "12.4",
+              "0.1",
+              "0.0",
+              "0.0",
+              "100.0",
+              "132",
+              "27.2",
+              "3.0",
+              "0.0",
+              "2.5",
+              "5.2",
+              "7.7",
+              "7.0",
+              "0.0",
+              "1.8",
+              "0.0",
+              "100.0",
+              "135"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": null,
+            "values": [
+              "46.7",
+              "8.4",
+              "0.1",
+              "4.4",
+              "7.3",
+              "5.2",
+              "20.5",
+              "0.9",
+              "0.0",
+              "0.0",
+              "100.0",
+              "1,842",
+              "44.5",
+              "9.9",
+              "0.0",
+              "4.0",
+              "4.3",
+              "3.7",
+              "21.6",
+              "0.6",
+              "0.3",
+              "0.0",
+              "100.0",
+              "2,144"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": null,
+            "values": [
+              "48.3",
+              "7.3",
+              "0.1",
+              "3.0",
+              "7.0",
+              "4.7",
+              "24.0",
+              "1.8",
+              "0.2",
+              "0.2",
+              "100.0",
+              "6,988",
+              "43.9",
+              "8.2",
+              "0.0",
+              "3.3",
+              "5.4",
+              "3.0",
+              "22.0",
+              "1.6",
+              "0.4",
+              "0.1",
+              "100.0",
+              "7,102"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": null,
+            "values": [
+              "46.6",
+              "0.1",
+              "0.0",
+              "2.3",
+              "8.8",
+              "9.6",
+              "23.9",
+              "1.5",
+              "0.2",
+              "0.1",
+              "100.0",
+              "814",
+              "37.5",
+              "0.0",
+              "0.0",
+              "3.6",
+              "9.7",
+              "4.0",
+              "17.3",
+              "1.8",
+              "0.9",
+              "0.1",
+              "100.0",
+              "371"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": null,
+            "values": [
+              "41.6",
+              "10.3",
+              "0.0",
+              "1.5",
+              "4.7",
+              "3.7",
+              "18.8",
+              "1.8",
+              "0.5",
+              "0.3",
+              "100.0",
+              "321",
+              "41.6",
+              "10.1",
+              "0.0",
+              "1.4",
+              "7.4",
+              "3.5",
+              "13.8",
+              "5.2",
+              "0.0",
+              "0.1",
+              "100.0",
+              "439"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": null,
+            "values": [
+              "39.3",
+              "9.3",
+              "0.1",
+              "2.3",
+              "4.2",
+              "2.7",
+              "16.4",
+              "4.0",
+              "0.3",
+              "0.1",
+              "100.0",
+              "5,994",
+              "38.5",
+              "9.4",
+              "0.2",
+              "2.3",
+              "4.1",
+              "1.9",
+              "17.0",
+              "2.9",
+              "0.4",
+              "0.2",
+              "100.0",
+              "5,114"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth",
+        "groupTitle": "Currently married women",
+        "title": "Wealth quintile",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_modern_method_pct",
+                "field": "any_modern_method_pct",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct",
+                "field": "female_sterilization_pct",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct",
+                "field": "male_sterilization_pct",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct",
+                "field": "iud_pct",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct",
+                "field": "injectables_pct",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct",
+                "field": "implants_pct",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct",
+                "field": "pill_pct",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct",
+                "field": "male_condom_pct",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct",
+                "field": "lam_pct",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct",
+                "field": "modern_other_pct",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_modern_method_pct_2022",
+                "field": "any_modern_method_pct_2022",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct_2022",
+                "field": "female_sterilization_pct_2022",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct_2022",
+                "field": "male_sterilization_pct_2022",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct_2022",
+                "field": "iud_pct_2022",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct_2022",
+                "field": "injectables_pct_2022",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct_2022",
+                "field": "implants_pct_2022",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct_2022",
+                "field": "pill_pct_2022",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct_2022",
+                "field": "male_condom_pct_2022",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct_2022",
+                "field": "lam_pct_2022",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct_2022",
+                "field": "modern_other_pct_2022",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": null,
+            "values": [
+              "48.6",
+              "5.0",
+              "0.0",
+              "4.3",
+              "7.8",
+              "8.1",
+              "22.1",
+              "0.9",
+              "0.3",
+              "0.1",
+              "100.0",
+              "3,343",
+              "45.4",
+              "5.5",
+              "0.0",
+              "4.7",
+              "6.1",
+              "4.4",
+              "22.8",
+              "1.0",
+              "0.9",
+              "0.1",
+              "100.0",
+              "3,071"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": null,
+            "values": [
+              "48.2",
+              "7.4",
+              "0.0",
+              "3.5",
+              "7.1",
+              "4.8",
+              "24.1",
+              "1.0",
+              "0.1",
+              "0.1",
+              "100.0",
+              "3,192",
+              "46.4",
+              "8.7",
+              "0.0",
+              "3.8",
+              "5.5",
+              "4.4",
+              "22.1",
+              "1.4",
+              "0.4",
+              "0.0",
+              "100.0",
+              "3,111"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": null,
+            "values": [
+              "44.7",
+              "7.3",
+              "0.2",
+              "2.2",
+              "6.9",
+              "3.5",
+              "21.7",
+              "2.5",
+              "0.4",
+              "0.2",
+              "100.0",
+              "3,344",
+              "43.3",
+              "8.7",
+              "0.0",
+              "2.9",
+              "6.2",
+              "2.9",
+              "20.2",
+              "2.2",
+              "0.1",
+              "0.0",
+              "100.0",
+              "3,139"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": null,
+            "values": [
+              "42.6",
+              "8.3",
+              "0.0",
+              "2.2",
+              "5.0",
+              "2.9",
+              "20.4",
+              "3.5",
+              "0.2",
+              "0.0",
+              "100.0",
+              "3,137",
+              "34.8",
+              "8.5",
+              "0.3",
+              "1.8",
+              "3.4",
+              "1.1",
+              "17.0",
+              "2.2",
+              "0.4",
+              "0.1",
+              "100.0",
+              "3,016"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": null,
+            "values": [
+              "37.7",
+              "11.5",
+              "0.1",
+              "1.8",
+              "3.5",
+              "1.6",
+              "14.1",
+              "4.7",
+              "0.2",
+              "0.2",
+              "100.0",
+              "3,076",
+              "38.8",
+              "11.9",
+              "0.2",
+              "1.8",
+              "3.5",
+              "1.1",
+              "16.6",
+              "3.1",
+              "0.4",
+              "0.3",
+              "100.0",
+              "2,970"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sexually-active-unmarried-total",
+        "groupTitle": "Sexually active unmarried women",
+        "title": "Total",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_modern_method_pct",
+                "field": "any_modern_method_pct",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct",
+                "field": "female_sterilization_pct",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct",
+                "field": "male_sterilization_pct",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct",
+                "field": "iud_pct",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct",
+                "field": "injectables_pct",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct",
+                "field": "implants_pct",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct",
+                "field": "pill_pct",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct",
+                "field": "male_condom_pct",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct",
+                "field": "lam_pct",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct",
+                "field": "modern_other_pct",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_modern_method_pct_2022",
+                "field": "any_modern_method_pct_2022",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct_2022",
+                "field": "female_sterilization_pct_2022",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct_2022",
+                "field": "male_sterilization_pct_2022",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct_2022",
+                "field": "iud_pct_2022",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct_2022",
+                "field": "injectables_pct_2022",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct_2022",
+                "field": "implants_pct_2022",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct_2022",
+                "field": "pill_pct_2022",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct_2022",
+                "field": "male_condom_pct_2022",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct_2022",
+                "field": "lam_pct_2022",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct_2022",
+                "field": "modern_other_pct_2022",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": null,
+            "values": [
+              "26.2",
+              "1.4",
+              "0.0",
+              "1.3",
+              "0.9",
+              "0.8",
+              "15.3",
+              "6.6",
+              "0.0",
+              "0.0",
+              "100.0",
+              "463",
+              "23.8",
+              "1.8",
+              "0.0",
+              "0.2",
+              "1.5",
+              "1.4",
+              "7.1",
+              "11.9",
+              "0.0",
+              "0.0",
+              "100.0",
+              "506"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sexually-active-unmarried-residence",
+        "groupTitle": "Sexually active unmarried women",
+        "title": "Residence",
+        "subtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "any_modern_method_pct",
+                "field": "any_modern_method_pct",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct",
+                "field": "female_sterilization_pct",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct",
+                "field": "male_sterilization_pct",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct",
+                "field": "iud_pct",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct",
+                "field": "injectables_pct",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct",
+                "field": "implants_pct",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct",
+                "field": "pill_pct",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct",
+                "field": "male_condom_pct",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct",
+                "field": "lam_pct",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct",
+                "field": "modern_other_pct",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct",
+                "field": "total_pct",
+                "label": "Total"
+              },
+              {
+                "key": "total_n",
+                "field": "total_n",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "any_modern_method_pct_2022",
+                "field": "any_modern_method_pct_2022",
+                "label": "Any modern method"
+              },
+              {
+                "key": "female_sterilization_pct_2022",
+                "field": "female_sterilization_pct_2022",
+                "label": "Female sterilization"
+              },
+              {
+                "key": "male_sterilization_pct_2022",
+                "field": "male_sterilization_pct_2022",
+                "label": "Male sterilization"
+              },
+              {
+                "key": "iud_pct_2022",
+                "field": "iud_pct_2022",
+                "label": "IUD"
+              },
+              {
+                "key": "injectables_pct_2022",
+                "field": "injectables_pct_2022",
+                "label": "Injectables"
+              },
+              {
+                "key": "implants_pct_2022",
+                "field": "implants_pct_2022",
+                "label": "Implants"
+              },
+              {
+                "key": "pill_pct_2022",
+                "field": "pill_pct_2022",
+                "label": "Pill"
+              },
+              {
+                "key": "male_condom_pct_2022",
+                "field": "male_condom_pct_2022",
+                "label": "Male condom"
+              },
+              {
+                "key": "lam_pct_2022",
+                "field": "lam_pct_2022",
+                "label": "LAM",
+                "noteRef": "¹"
+              },
+              {
+                "key": "modern_other_pct_2022",
+                "field": "modern_other_pct_2022",
+                "label": "Other modern method"
+              },
+              {
+                "key": "total_pct_2022",
+                "field": "total_pct_2022",
+                "label": "Total"
+              },
+              {
+                "key": "total_n_2022",
+                "field": "total_n_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": null,
+            "values": [
+              "26.0",
+              "1.7",
+              "0.0",
+              "1.9",
+              "0.7",
+              "1.1",
+              "15.8",
+              "4.9",
+              "0.0",
+              "0.0",
+              "100.0",
+              "310",
+              "23.4",
+              "2.1",
+              "0.0",
+              "0.2",
+              "1.8",
+              "1.7",
+              "6.0",
+              "11.6",
+              "0.0",
+              "0.0",
+              "100.0",
+              "339"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": null,
+            "values": [
+              "26.7",
+              "0.8",
+              "0.0",
+              "0.0",
+              "1.1",
+              "0.1",
+              "14.4",
+              "10.2",
+              "0.0",
+              "0.0",
+              "100.0",
+              "153",
+              "24.8",
+              "1.1",
+              "0.0",
+              "0.1",
+              "1.0",
+              "0.8",
+              "9.3",
+              "12.6",
+              "0.0",
+              "0.0",
+              "100.0",
+              "167"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ Lactational amenorrhea method",
+      "² Region IX includes the province of Sulu in 2025.",
+      "“NA” denotes that an estimate is not reported."
+    ],
+    "notes": [
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "If more than one method is used, only the most effective method is considered in this tabulation.",
+      "Other modern methods include other methods mentioned by respondent and also includes patch, emergency contraception, and standard days method.",
+      "Details may not add up to total due to rounding."
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "sections": [
+      {
+        "heading": "Modern use rose through several methods",
+        "body": "Modern method use among currently married women rose from 41.8 percent in 2022 to 44.5 percent in 2025. The increase came from several methods: implants rose from 2.8 to 4.2 percent, injectables from 5.0 to 6.1 percent, pills from 19.8 to 20.5 percent, and male condoms from 2.0 to 2.5 percent. Female sterilization declined from 8.7 to 7.8 percent."
+      },
+      {
+        "heading": "Regional differences are much wider than residence differences",
+        "body": "Davao Region had the highest modern method use among currently married women at 58.2 percent. MIMAROPA, Caraga, and SOCCSKSARGEN were also above 50 percent. BARMM was lowest at 20.2 percent, followed by Bicol, Central Visayas, and Zamboanga Peninsula near or below 40 percent. This 38.0-point regional spread is much larger than the 5.1-point rural-urban gap."
+      },
+      {
+        "heading": "Modern method mix changes by region",
+        "body": "Davao Region had the highest pill use at 29.7 percent. MIMAROPA stood out for injectables at 12.6 percent and implants at 9.2 percent. CAR had the highest female sterilization level at 17.6 percent. NCR had the highest male condom use at 4.5 percent. These differences show that modern use is not a single pattern across regions."
+      },
+      {
+        "heading": "The all-women comparison clarifies which method patterns intensify",
+        "body": "The all-women and currently married pages point to many of the same regional signals, but the currently married page makes specific modern methods much more visible. Davao pill use is 29.7 percent among currently married women compared with 18.6 percent among all women, while MIMAROPA injectable use is 12.6 percent compared with 8.0 percent. The comparison is useful because it shows which modern method patterns become more pronounced among currently married women."
+      },
+      {
+        "heading": "Sexually active unmarried women are flatter by residence",
+        "body": "Among sexually active unmarried women, modern use was 26.2 percent in 2025. Urban and rural levels were nearly the same, at 26.0 and 26.7 percent. That differs from currently married women, where rural modern use was higher than urban use. The sexually active unmarried pattern is therefore not simply the currently married pattern at a lower level."
+      },
+      {
+        "heading": "Life-stage concentration remains steep among currently married women",
+        "body": "Modern use among currently married women was highest at ages 35-39, at 48.7 percent, and lowest at ages 45-49, at 33.9 percent. By number of living children, modern use rose from 7.6 percent among women with no living children to 59.1 percent among women with three or four living children. Even within the currently married denominator, modern use is strongly concentrated by life stage."
+      }
+    ],
+    "takeaways": [
+      "Modern method use among currently married women rose from 41.8 percent in 2022 to 44.5 percent in 2025.",
+      "Modern use varies widely by region, from 58.2 percent in Davao Region to 20.2 percent in BARMM.",
+      "Modern method mix differs by place, with pills highest in Davao, injectables and implants highest in MIMAROPA, and sterilization highest in CAR."
+    ]
+  }
+}

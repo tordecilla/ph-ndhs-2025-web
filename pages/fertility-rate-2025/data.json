@@ -1,0 +1,2105 @@
+{
+  "title": "Fertility Rate",
+  "description": "Total fertility rate for the 3 years preceding the survey. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Age-specific and total fertility rates, general fertility rate, and the crude birth rate for the 3 years preceding the survey, according to residence: Philippines, 2022 and 2025",
+  "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+  "dataTables": {
+    "title": "Fertility Rate",
+    "subtitle": "Age-specific and total fertility rates, general fertility rate, and the crude birth rate for the 3 years preceding the survey, according to residence: Philippines, 2022 and 2025",
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+    "tables": [
+      {
+        "id": "national",
+        "title": "Total Fertility Rate",
+        "subtitle": "Total fertility rate for the 3 years preceding the survey, according to background characteristics: Philippines, 2022 and 2025",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          [
+            "Philippines",
+            "1.7",
+            "1.9"
+          ]
+        ],
+        "records": [
+          {
+            "label": "Philippines",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.7,
+                "display": "1.7",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 44,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 1.9,
+                "display": "1.9",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 44,
+                  "column": 3
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "asfr",
+        "title": "Age-Specific and Total Fertility Rates",
+        "subtitle": "Age-specific and total fertility rates, general fertility rate, and the crude birth rate for the 3 years preceding the survey, according to residence: Philippines, 2022 and 2025",
+        "columns": [
+          "Age group or indicator",
+          "2025 Urban",
+          "2025 Rural",
+          "2025 Total",
+          "2022 Urban",
+          "2022 Rural",
+          "2022 Total"
+        ],
+        "rows": [
+          [
+            "10-14",
+            "[0]",
+            "[1]",
+            "[1]",
+            "[0]",
+            "[0]",
+            "[0]"
+          ],
+          [
+            "15-19",
+            "20",
+            "26",
+            "22",
+            "22",
+            "28",
+            "25"
+          ],
+          [
+            "20-24",
+            "56",
+            "84",
+            "67",
+            "71",
+            "102",
+            "84"
+          ],
+          [
+            "25-29",
+            "85",
+            "108",
+            "94",
+            "95",
+            "120",
+            "105"
+          ],
+          [
+            "30-34",
+            "79",
+            "91",
+            "84",
+            "84",
+            "108",
+            "95"
+          ],
+          [
+            "35-39",
+            "50",
+            "68",
+            "58",
+            "55",
+            "63",
+            "58"
+          ],
+          [
+            "40-44",
+            "13",
+            "22",
+            "17",
+            "16",
+            "27",
+            "21"
+          ],
+          [
+            "45-49",
+            "[2]",
+            "[3]",
+            "[3]",
+            "[1]",
+            "[2]",
+            "[2]"
+          ],
+          [
+            "TFR (15-49)",
+            "1.5",
+            "2.0",
+            "1.7",
+            "1.7",
+            "2.2",
+            "1.9"
+          ],
+          [
+            "GFR",
+            "50",
+            "65",
+            "57",
+            "57",
+            "72",
+            "63"
+          ],
+          [
+            "CBR",
+            "11.0",
+            "12.4",
+            "11.6",
+            "12.7",
+            "14.0",
+            "13.3"
+          ]
+        ],
+        "records": [
+          {
+            "label": "10-14",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": "Urban",
+                "value": 0,
+                "display": "[0]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 5,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Rural",
+                "value": 1,
+                "display": "[1]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 5,
+                  "column": 2
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Total",
+                "value": 1,
+                "display": "[1]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 5,
+                  "column": 3
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Urban",
+                "value": 0,
+                "display": "[0]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 5,
+                  "column": 5
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Rural",
+                "value": 0,
+                "display": "[0]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 5,
+                  "column": 6
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Total",
+                "value": 0,
+                "display": "[0]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 5,
+                  "column": 7
+                }
+              }
+            ]
+          },
+          {
+            "label": "15-19",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": "Urban",
+                "value": 20,
+                "display": "20",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 6,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Rural",
+                "value": 26,
+                "display": "26",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 6,
+                  "column": 2
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Total",
+                "value": 22,
+                "display": "22",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 6,
+                  "column": 3
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Urban",
+                "value": 22,
+                "display": "22",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 6,
+                  "column": 5
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Rural",
+                "value": 28,
+                "display": "28",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 6,
+                  "column": 6
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Total",
+                "value": 25,
+                "display": "25",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 6,
+                  "column": 7
+                }
+              }
+            ]
+          },
+          {
+            "label": "20-24",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": "Urban",
+                "value": 56,
+                "display": "56",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 7,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Rural",
+                "value": 84,
+                "display": "84",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 7,
+                  "column": 2
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Total",
+                "value": 67,
+                "display": "67",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 7,
+                  "column": 3
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Urban",
+                "value": 71,
+                "display": "71",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 7,
+                  "column": 5
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Rural",
+                "value": 102,
+                "display": "102",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 7,
+                  "column": 6
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Total",
+                "value": 84,
+                "display": "84",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 7,
+                  "column": 7
+                }
+              }
+            ]
+          },
+          {
+            "label": "25-29",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": "Urban",
+                "value": 85,
+                "display": "85",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 8,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Rural",
+                "value": 108,
+                "display": "108",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 8,
+                  "column": 2
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Total",
+                "value": 94,
+                "display": "94",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 8,
+                  "column": 3
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Urban",
+                "value": 95,
+                "display": "95",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 8,
+                  "column": 5
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Rural",
+                "value": 120,
+                "display": "120",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 8,
+                  "column": 6
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Total",
+                "value": 105,
+                "display": "105",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 8,
+                  "column": 7
+                }
+              }
+            ]
+          },
+          {
+            "label": "30-34",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": "Urban",
+                "value": 79,
+                "display": "79",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 9,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Rural",
+                "value": 91,
+                "display": "91",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 9,
+                  "column": 2
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Total",
+                "value": 84,
+                "display": "84",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 9,
+                  "column": 3
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Urban",
+                "value": 84,
+                "display": "84",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 9,
+                  "column": 5
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Rural",
+                "value": 108,
+                "display": "108",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 9,
+                  "column": 6
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Total",
+                "value": 95,
+                "display": "95",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 9,
+                  "column": 7
+                }
+              }
+            ]
+          },
+          {
+            "label": "35-39",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": "Urban",
+                "value": 50,
+                "display": "50",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 10,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Rural",
+                "value": 68,
+                "display": "68",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 10,
+                  "column": 2
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Total",
+                "value": 58,
+                "display": "58",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 10,
+                  "column": 3
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Urban",
+                "value": 55,
+                "display": "55",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 10,
+                  "column": 5
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Rural",
+                "value": 63,
+                "display": "63",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 10,
+                  "column": 6
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Total",
+                "value": 58,
+                "display": "58",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 10,
+                  "column": 7
+                }
+              }
+            ]
+          },
+          {
+            "label": "40-44",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": "Urban",
+                "value": 13,
+                "display": "13",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 11,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Rural",
+                "value": 22,
+                "display": "22",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 11,
+                  "column": 2
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Total",
+                "value": 17,
+                "display": "17",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 11,
+                  "column": 3
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Urban",
+                "value": 16,
+                "display": "16",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 11,
+                  "column": 5
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Rural",
+                "value": 27,
+                "display": "27",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 11,
+                  "column": 6
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Total",
+                "value": 21,
+                "display": "21",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 11,
+                  "column": 7
+                }
+              }
+            ]
+          },
+          {
+            "label": "45-49",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": "Urban",
+                "value": 2,
+                "display": "[2]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 12,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Rural",
+                "value": 3,
+                "display": "[3]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 12,
+                  "column": 2
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Total",
+                "value": 3,
+                "display": "[3]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 12,
+                  "column": 3
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Urban",
+                "value": 1,
+                "display": "[1]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 12,
+                  "column": 5
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Rural",
+                "value": 2,
+                "display": "[2]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 12,
+                  "column": 6
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Total",
+                "value": 2,
+                "display": "[2]",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 12,
+                  "column": 7
+                }
+              }
+            ]
+          },
+          {
+            "label": "TFR (15-49)",
+            "noteRef": "¹",
+            "cells": [
+              {
+                "year": 2025,
+                "category": "Urban",
+                "value": 1.5,
+                "display": "1.5",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 14,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Rural",
+                "value": 2,
+                "display": "2.0",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 14,
+                  "column": 2
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Total",
+                "value": 1.7,
+                "display": "1.7",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 14,
+                  "column": 3
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Urban",
+                "value": 1.7,
+                "display": "1.7",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 14,
+                  "column": 5
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Rural",
+                "value": 2.2,
+                "display": "2.2",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 14,
+                  "column": 6
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Total",
+                "value": 1.9,
+                "display": "1.9",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 14,
+                  "column": 7
+                }
+              }
+            ]
+          },
+          {
+            "label": "GFR",
+            "noteRef": "²",
+            "cells": [
+              {
+                "year": 2025,
+                "category": "Urban",
+                "value": 50,
+                "display": "50",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 15,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Rural",
+                "value": 65,
+                "display": "65",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 15,
+                  "column": 2
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Total",
+                "value": 57,
+                "display": "57",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 15,
+                  "column": 3
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Urban",
+                "value": 57,
+                "display": "57",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 15,
+                  "column": 5
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Rural",
+                "value": 72,
+                "display": "72",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 15,
+                  "column": 6
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Total",
+                "value": 63,
+                "display": "63",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 15,
+                  "column": 7
+                }
+              }
+            ]
+          },
+          {
+            "label": "CBR",
+            "noteRef": "³",
+            "cells": [
+              {
+                "year": 2025,
+                "category": "Urban",
+                "value": 11,
+                "display": "11.0",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 16,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Rural",
+                "value": 12.4,
+                "display": "12.4",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 16,
+                  "column": 2
+                }
+              },
+              {
+                "year": 2025,
+                "category": "Total",
+                "value": 11.6,
+                "display": "11.6",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 16,
+                  "column": 3
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Urban",
+                "value": 12.7,
+                "display": "12.7",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 16,
+                  "column": 5
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Rural",
+                "value": 14,
+                "display": "14.0",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 16,
+                  "column": 6
+                }
+              },
+              {
+                "year": 2022,
+                "category": "Total",
+                "value": 13.3,
+                "display": "13.3",
+                "source": {
+                  "sheet": "Table 3a",
+                  "row": 16,
+                  "column": 7
+                }
+              }
+            ]
+          }
+        ],
+        "footnotes": [
+          "¹ Total fertility rate expressed per woman aged 15-49 years",
+          "² General fertility rate expressed per 1,000 women aged 15-44 years",
+          "³ Crude birth rate, expressed per 1,000 population"
+        ],
+        "notes": [
+          "1. Age-specific fertility rates are per 1,000 women.",
+          "2. Estimates in brackets are truncated.",
+          "3. Rates are for the period 1-36 months preceding the interview.",
+          "4. Rates for the 10-14 age group are based on retrospective data from women aged 15-17 years."
+        ]
+      },
+      {
+        "id": "residence",
+        "title": "Residence",
+        "subtitle": "Total fertility rate for the 3 years preceding the survey, according to background characteristics: Philippines, 2022 and 2025",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          [
+            "Urban",
+            "1.5",
+            "1.7"
+          ],
+          [
+            "Rural",
+            "2.0",
+            "2.2"
+          ]
+        ],
+        "records": [
+          {
+            "label": "Urban",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.5,
+                "display": "1.5",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 6,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 1.7,
+                "display": "1.7",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 6,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 2,
+                "display": "2.0",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 7,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.2,
+                "display": "2.2",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 7,
+                  "column": 3
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "subtitle": "Total fertility rate for the 3 years preceding the survey, according to background characteristics: Philippines, 2022 and 2025",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          [
+            "National Capital Region (NCR)",
+            "1.4",
+            "1.2"
+          ],
+          [
+            "Cordillera Administrative Region (CAR)",
+            "1.7",
+            "2.1"
+          ],
+          [
+            "I - Ilocos Region",
+            "1.8",
+            "1.9"
+          ],
+          [
+            "II - Cagayan Valley",
+            "1.7",
+            "2.1"
+          ],
+          [
+            "III - Central Luzon",
+            "1.9",
+            "1.9"
+          ],
+          [
+            "IVA - CALABARZON",
+            "1.3",
+            "1.8"
+          ],
+          [
+            "MIMAROPA Region",
+            "2.1",
+            "2.4"
+          ],
+          [
+            "V - Bicol Region",
+            "1.9",
+            "2.2"
+          ],
+          [
+            "VI - Western Visayas",
+            "1.9",
+            "2.2"
+          ],
+          [
+            "Negros Island Region (NIR)",
+            "1.4",
+            "NA"
+          ],
+          [
+            "VII - Central Visayas",
+            "1.7",
+            "2.0"
+          ],
+          [
+            "VIII - Eastern Visayas",
+            "2.0",
+            "2.0"
+          ],
+          [
+            "IX - Zamboanga Peninsula",
+            "2.3",
+            "2.6"
+          ],
+          [
+            "X - Northern Mindanao",
+            "1.9",
+            "2.1"
+          ],
+          [
+            "XI - Davao Region",
+            "1.6",
+            "1.8"
+          ],
+          [
+            "XII - SOCCSKSARGEN",
+            "1.9",
+            "2.5"
+          ],
+          [
+            "XIII - Caraga",
+            "2.2",
+            "2.3"
+          ],
+          [
+            "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "2.4",
+            "3.1"
+          ]
+        ],
+        "records": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.4,
+                "display": "1.4",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 10,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 1.2,
+                "display": "1.2",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 10,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.7,
+                "display": "1.7",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 11,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.1,
+                "display": "2.1",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 11,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.8,
+                "display": "1.8",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 12,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 1.9,
+                "display": "1.9",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 12,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.7,
+                "display": "1.7",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 13,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.1,
+                "display": "2.1",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 13,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.9,
+                "display": "1.9",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 14,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 1.9,
+                "display": "1.9",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 14,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.3,
+                "display": "1.3",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 15,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 1.8,
+                "display": "1.8",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 15,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 2.1,
+                "display": "2.1",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 16,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.4,
+                "display": "2.4",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 16,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.9,
+                "display": "1.9",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 17,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.2,
+                "display": "2.2",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 17,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.9,
+                "display": "1.9",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 18,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.2,
+                "display": "2.2",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 18,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.4,
+                "display": "1.4",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 19,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": null,
+                "display": "NA",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 19,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.7,
+                "display": "1.7",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 20,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2,
+                "display": "2.0",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 20,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 2,
+                "display": "2.0",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 21,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2,
+                "display": "2.0",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 21,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "¹",
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 2.3,
+                "display": "2.3",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 22,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.6,
+                "display": "2.6",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 22,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.9,
+                "display": "1.9",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 23,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.1,
+                "display": "2.1",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 23,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.6,
+                "display": "1.6",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 24,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 1.8,
+                "display": "1.8",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 24,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.9,
+                "display": "1.9",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 25,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.5,
+                "display": "2.5",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 25,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 2.2,
+                "display": "2.2",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 26,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.3,
+                "display": "2.3",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 26,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 2.4,
+                "display": "2.4",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 27,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 3.1,
+                "display": "3.1",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 27,
+                  "column": 3
+                }
+              }
+            ]
+          }
+        ],
+        "footnotes": [
+          "¹ Region IX includes the province of Sulu in 2025."
+        ]
+      },
+      {
+        "id": "education",
+        "title": "Educational Attainment",
+        "subtitle": "Total fertility rate for the 3 years preceding the survey, according to background characteristics: Philippines, 2022 and 2025",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          [
+            "No education",
+            "2.3",
+            "2.5"
+          ],
+          [
+            "Grades 1-6",
+            "3.1",
+            "3.0"
+          ],
+          [
+            "Grades 7-10",
+            "2.3",
+            "2.4"
+          ],
+          [
+            "Grades 11-12",
+            "1.8",
+            "2.7"
+          ],
+          [
+            "Post-secondary",
+            "1.6",
+            "1.6"
+          ],
+          [
+            "College",
+            "1.3",
+            "1.5"
+          ]
+        ],
+        "records": [
+          {
+            "label": "No education",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 2.3,
+                "display": "2.3",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 30,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.5,
+                "display": "2.5",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 30,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 3.1,
+                "display": "3.1",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 31,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 3,
+                "display": "3.0",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 31,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 2.3,
+                "display": "2.3",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 32,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.4,
+                "display": "2.4",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 32,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.8,
+                "display": "1.8",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 33,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.7,
+                "display": "2.7",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 33,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.6,
+                "display": "1.6",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 34,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 1.6,
+                "display": "1.6",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 34,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.3,
+                "display": "1.3",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 35,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 1.5,
+                "display": "1.5",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 35,
+                  "column": 3
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth",
+        "title": "Wealth Quintile",
+        "subtitle": "Total fertility rate for the 3 years preceding the survey, according to background characteristics: Philippines, 2022 and 2025",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          [
+            "Lowest",
+            "2.8",
+            "3.1"
+          ],
+          [
+            "Second",
+            "2.1",
+            "2.2"
+          ],
+          [
+            "Middle",
+            "1.7",
+            "2.0"
+          ],
+          [
+            "Fourth",
+            "1.3",
+            "1.5"
+          ],
+          [
+            "Highest",
+            "1.1",
+            "1.4"
+          ]
+        ],
+        "records": [
+          {
+            "label": "Lowest",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 2.8,
+                "display": "2.8",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 38,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 3.1,
+                "display": "3.1",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 38,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 2.1,
+                "display": "2.1",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 39,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2.2,
+                "display": "2.2",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 39,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.7,
+                "display": "1.7",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 40,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 2,
+                "display": "2.0",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 40,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.3,
+                "display": "1.3",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 41,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 1.5,
+                "display": "1.5",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 41,
+                  "column": 3
+                }
+              }
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": null,
+            "cells": [
+              {
+                "year": 2025,
+                "category": null,
+                "value": 1.1,
+                "display": "1.1",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 42,
+                  "column": 1
+                }
+              },
+              {
+                "year": 2022,
+                "category": null,
+                "value": 1.4,
+                "display": "1.4",
+                "source": {
+                  "sheet": "Table 3b",
+                  "row": 42,
+                  "column": 3
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "“NA” denotes that an estimate is not reported.",
+      "1. Total fertility rate is expressed per woman aged 15-49 years.",
+      "2. Rates are for the period 1-36 months preceding the interview."
+    ]
+  },
+  "insights": {
+    "sections": [
+      {
+        "heading": "Fertility moved lower overall",
+        "body": "The Philippines recorded a total fertility rate of 1.7 children per woman in 2025, down from 1.9 in 2022. The decline also appears in the general fertility rate, which fell from 63 to 57, and in the crude birth rate, which fell from 13.3 to 11.6."
+      },
+      {
+        "heading": "Regional differences remain large",
+        "body": "The 2025 regional range runs from 1.3 children per woman in CALABARZON to 2.4 in the Bangsamoro Autonomous Region in Muslim Mindanao. Zamboanga Peninsula follows at 2.3, with its 2025 figure including Sulu, while Caraga and MIMAROPA are also above 2.0."
+      },
+      {
+        "heading": "The highest-fertility regions declined most",
+        "body": "Bangsamoro Autonomous Region in Muslim Mindanao fell from 3.1 in 2022 to 2.4 in 2025, and SOCCSKSARGEN fell from 2.5 to 1.9. Among regions with comparable values, the gap between the highest and lowest regional fertility rates narrowed from 1.9 children per woman in 2022 to 1.1 in 2025."
+      },
+      {
+        "heading": "Fertility is concentrated in the late twenties",
+        "body": "Age-specific fertility in 2025 peaks at ages 25 to 29, with 94 births per 1,000 women, followed by ages 30 to 34 at 84 and ages 20 to 24 at 67. The largest decline from 2022 was at ages 20 to 24, where the rate dropped by 17 points."
+      },
+      {
+        "heading": "Rural fertility remains higher at every main age",
+        "body": "Rural women had a 2025 total fertility rate of 2.0, compared with 1.5 among urban women. The rural advantage is especially visible at ages 20 to 24, where the rate is 84 versus 56, and at ages 25 to 29, where it is 108 versus 85."
+      },
+      {
+        "heading": "Education divides are steep",
+        "body": "Women with Grades 1 to 6 had the highest 2025 fertility rate at 3.1 children per woman, while women with college education had the lowest at 1.3. The sharpest change since 2022 was among women with Grades 11 to 12, whose rate fell from 2.7 to 1.8."
+      },
+      {
+        "heading": "Wealth shows the clearest social gradient",
+        "body": "Fertility rises steadily as wealth falls: 1.1 children per woman in the highest wealth quintile, 1.3 in the fourth, 1.7 in the middle, 2.1 in the second, and 2.8 in the lowest. This pattern suggests, as an inference, that the national average masks very different family-size realities across economic groups."
+      }
+    ],
+    "takeaways": [
+      "National fertility fell to 1.7 children per woman in 2025 from 1.9 in 2022.",
+      "Regional fertility is highest in BARMM at 2.4 and lowest in CALABARZON at 1.3.",
+      "Fertility is most concentrated at ages 25 to 29, followed by ages 30 to 34.",
+      "Rural, lower-education, and lower-wealth groups continue to show higher fertility."
+    ]
+  }
+}

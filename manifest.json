@@ -1,0 +1,1112 @@
+{
+  "pages": [
+    {
+      "slug": "results-of-household-and-individual-interviews-2025",
+      "sectionTitle": "SURVEY PROFILE",
+      "title": "Results of the Household and Individual Interviews",
+      "description": "Number of households, number of interviews, and response rates, according to residence (unweighted): Philippines, 2025.",
+      "href": "./pages/results-of-household-and-individual-interviews-2025/"
+    },
+    {
+      "slug": "background-characteristics-2025",
+      "sectionTitle": "SURVEY PROFILE",
+      "title": "Background Characteristics of Respondents",
+      "description": "Distribution of survey respondents (women aged 15-49) by region. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "href": "./pages/background-characteristics-2025/"
+    },
+    {
+      "slug": "antenatal-care-2025",
+      "sectionTitle": "Maternal Care",
+      "title": "Antenatal Care",
+      "description": "Among women aged 15 to 49 years who had a live birth and/or a stillbirth in the 2 years preceding the survey, percentage who received antenatal care (ANC) from a skilled provider for the most recent live birth or stillbirth, percentage with four or more ANC visits for the most recent live birth or stillbirth, percentage who took any iron-containing supplements during pregnancy, and percentage whose most recent live birth was protected against neonatal tetanus. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "chartSubtitle": "Among women aged 15 to 49 years who had a live birth and/or a stillbirth in the 2 years preceding the survey, percentage who received antenatal care (ANC) from a skilled provider for the most recent live birth or stillbirth, percentage with four or more ANC visits for the most recent live birth or stillbirth, percentage who took any iron-containing supplements during pregnancy, and percentage whose most recent live birth was protected against neonatal tetanus, according to background characteristics: Philippines, 2022 and 2025",
+      "chartBlockSubtitle": "Women aged 15 to 49 years with a live birth in the 2 years preceding the survey.",
+      "mapMetricOrder": [
+        "antenatal_care_pct",
+        "anc_4plus_visits_pct",
+        "anc_8plus_visits_pct",
+        "iron_supplements_pct",
+        "neonatal_tetanus_pct"
+      ],
+      "mapMetricLabels": {
+        "antenatal_care_pct": "Receiving antenatal care",
+        "anc_4plus_visits_pct": "4+ ANC visits",
+        "anc_8plus_visits_pct": "8+ ANC visits",
+        "iron_supplements_pct": "Took any iron supplements",
+        "neonatal_tetanus_pct": "Protected against neonatal tetanus"
+      },
+      "mapColorDomains": {
+        "antenatal_care_pct": [
+          0,
+          100
+        ],
+        "anc_4plus_visits_pct": [
+          0,
+          100
+        ],
+        "anc_8plus_visits_pct": [
+          0,
+          100
+        ],
+        "iron_supplements_pct": [
+          0,
+          100
+        ],
+        "neonatal_tetanus_pct": [
+          0,
+          100
+        ]
+      },
+      "href": "./pages/antenatal-care-2025/"
+    },
+    {
+      "slug": "birth-delivery-2025",
+      "sectionTitle": "Maternal Care",
+      "title": "Birth Delivery",
+      "description": "Among all live births and stillbirths in the 2 years before the survey, percentage delivered by a skilled provider and percentage delivered in a health facility, and percentage delivered by a cesarean section. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "chartSubtitle": "Among all live births and stillbirths in the 2 years before the survey, percentage delivered by a skilled provider and percentage delivered in a health facility, and percentage delivered by a cesarean section, according to background characteristics: Philippines, 2022 and 2025",
+      "chartBlockSubtitle": "Live births and stillbirths in the 2 years preceding the survey.",
+      "mapMetricOrder": [
+        "delivered_skilled_provider_pct",
+        "delivered_health_facility_pct",
+        "caesarean_section_pct"
+      ],
+      "mapMetricLabels": {
+        "delivered_skilled_provider_pct": "Delivered by a skilled provider",
+        "delivered_health_facility_pct": "Delivered in a health facility",
+        "caesarean_section_pct": "Delivered by caesarean section"
+      },
+      "mapColorDomains": {
+        "delivered_skilled_provider_pct": [
+          0,
+          100
+        ],
+        "delivered_health_facility_pct": [
+          0,
+          100
+        ],
+        "caesarean_section_pct": [
+          0,
+          100
+        ]
+      },
+      "href": "./pages/birth-delivery-2025/"
+    },
+    {
+      "slug": "postnatal-check-2025",
+      "sectionTitle": "Maternal Care",
+      "title": "Postnatal Check",
+      "description": "Among women aged 15 to 49 years with a live birth or stillbirth in the 2 years preceding the survey, percentage who received a postnatal check during the first 2 days after giving birth. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "chartSubtitle": "Selected postnatal check indicators by background characteristic and region: Philippines, 2022 and 2025",
+      "chartBlockSubtitle": "Women aged 15 to 49 years with a live birth in the 2 years preceding the survey.",
+      "mapColorDomains": {
+        "postnatal_check_pct": [
+          0,
+          100
+        ]
+      },
+      "href": "./pages/postnatal-check-2025/"
+    },
+    {
+      "slug": "contraception-all-women-2025",
+      "sectionTitle": "Contraception",
+      "title": "Current Use of Contraception Among All Women",
+      "dataTableTitle": "Current Use of Contraception Among All Women",
+      "description": "Percent distribution of all women aged 15 to 49 years, by contraceptive method currently used, according to background characteristics. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "chartType": "waffle",
+      "chartExcludeTables": [
+        "region"
+      ],
+      "chartSubtitle": "Percent distribution of all women aged 15 to 49 years, by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+      "chartBlockSubtitle": "Percent distribution of all women aged 15 to 49 years.",
+      "waffleMetrics": [
+        "any_modern_method_pct",
+        "any_traditional_method_pct",
+        "not_using_pct"
+      ],
+      "waffleColors": {
+        "any_modern_method_pct": "#f28e2b",
+        "any_traditional_method_pct": "#e15759",
+        "not_using_pct": "#76b7b2"
+      },
+      "mapMetricOrder": [
+        "any_method_pct",
+        "any_modern_method_pct",
+        "any_traditional_method_pct",
+        "not_using_pct"
+      ],
+      "mapMetricLabels": {
+        "any_method_pct": "Any method",
+        "any_modern_method_pct": "Any modern method",
+        "any_traditional_method_pct": "Any traditional method",
+        "not_using_pct": "Not currently using"
+      },
+      "mapColorDomains": {
+        "any_method_pct": [
+          0,
+          100
+        ],
+        "any_modern_method_pct": [
+          0,
+          100
+        ],
+        "any_traditional_method_pct": [
+          0,
+          100
+        ],
+        "not_using_pct": [
+          0,
+          100
+        ]
+      },
+      "href": "./pages/contraception-all-women-2025/"
+    },
+    {
+      "slug": "modern-contraception-all-women-2025",
+      "sectionTitle": "Contraception",
+      "title": "Current Use of Modern Contraception Methods Among All Women",
+      "dataTableTitle": "Current Use of Modern Contraception Methods Among All Women",
+      "description": "Percent distribution of all women aged 15 to 49 years, by modern contraceptive method currently used. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "chartSubtitle": "Percent distribution of all women aged 15 to 49 years, by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+      "href": "./pages/modern-contraception-all-women-2025/",
+      "chartType": "waffle",
+      "chartExcludeTables": [
+        "region"
+      ],
+      "chartTableLabels": {
+        "total": "Total"
+      },
+      "waffleMetrics": [
+        "female_sterilization_pct",
+        "male_sterilization_pct",
+        "iud_pct",
+        "injectables_pct",
+        "implants_pct",
+        "pill_pct",
+        "male_condom_pct",
+        "lam_pct",
+        "modern_other_pct"
+      ],
+      "waffleColors": {
+        "female_sterilization_pct": "#f28e2b",
+        "male_sterilization_pct": "#e15759",
+        "iud_pct": "#76b7b2",
+        "injectables_pct": "#59a14f",
+        "implants_pct": "#edc948",
+        "pill_pct": "#b07aa1",
+        "male_condom_pct": "#ff9da7",
+        "lam_pct": "#9c755f",
+        "modern_other_pct": "#bab0ac"
+      },
+      "waffleTotalKey": "any_modern_method_pct",
+      "mapMetricOrder": [
+        "any_modern_method_pct",
+        "female_sterilization_pct",
+        "male_sterilization_pct",
+        "iud_pct",
+        "injectables_pct",
+        "implants_pct",
+        "pill_pct",
+        "male_condom_pct",
+        "lam_pct",
+        "modern_other_pct"
+      ],
+      "mapMetricLabels": {
+        "any_modern_method_pct": "Any modern method",
+        "female_sterilization_pct": "Female sterilization",
+        "male_sterilization_pct": "Male sterilization",
+        "iud_pct": "IUD",
+        "injectables_pct": "Injectables",
+        "implants_pct": "Implants",
+        "pill_pct": "Pill",
+        "male_condom_pct": "Male condom",
+        "lam_pct": "LAM",
+        "modern_other_pct": "Other"
+      },
+      "mapColorDomains": {
+        "any_modern_method_pct": [
+          0,
+          100
+        ],
+        "female_sterilization_pct": [
+          0,
+          100
+        ],
+        "male_sterilization_pct": [
+          0,
+          100
+        ],
+        "iud_pct": [
+          0,
+          100
+        ],
+        "injectables_pct": [
+          0,
+          100
+        ],
+        "implants_pct": [
+          0,
+          100
+        ],
+        "pill_pct": [
+          0,
+          100
+        ],
+        "male_condom_pct": [
+          0,
+          100
+        ],
+        "lam_pct": [
+          0,
+          100
+        ],
+        "modern_other_pct": [
+          0,
+          100
+        ]
+      }
+    },
+    {
+      "slug": "traditional-contraception-all-women-2025",
+      "sectionTitle": "Contraception",
+      "title": "Current Use of Traditional Contraception Methods Among All Women",
+      "dataTableTitle": "Current Use of Traditional Contraception Methods Among All Women",
+      "description": "Percent distribution of all women aged 15 to 49 years, by traditional contraceptive method currently used. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "chartSubtitle": "Percent distribution of all women aged 15 to 49 years, by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+      "href": "./pages/traditional-contraception-all-women-2025/",
+      "chartType": "waffle",
+      "chartExcludeTables": [
+        "region"
+      ],
+      "chartTableLabels": {
+        "total": "Total"
+      },
+      "waffleMetrics": [
+        "calendar_rhythm_pct",
+        "withdrawal_pct",
+        "traditional_other_pct"
+      ],
+      "waffleColors": {
+        "calendar_rhythm_pct": "#f28e2b",
+        "withdrawal_pct": "#e15759",
+        "traditional_other_pct": "#76b7b2"
+      },
+      "waffleTotalKey": "any_traditional_method_pct",
+      "mapMetricOrder": [
+        "any_traditional_method_pct",
+        "calendar_rhythm_pct",
+        "withdrawal_pct",
+        "traditional_other_pct"
+      ],
+      "mapMetricLabels": {
+        "any_traditional_method_pct": "Any traditional method",
+        "calendar_rhythm_pct": "Calendar/ Rhythm",
+        "withdrawal_pct": "Withdrawal",
+        "traditional_other_pct": "Other"
+      },
+      "mapColorDomains": {
+        "any_traditional_method_pct": [
+          0,
+          100
+        ],
+        "calendar_rhythm_pct": [
+          0,
+          100
+        ],
+        "withdrawal_pct": [
+          0,
+          100
+        ],
+        "traditional_other_pct": [
+          0,
+          100
+        ]
+      }
+    },
+    {
+      "slug": "contraception-married-sexually-active-women-2025",
+      "sectionTitle": "Contraception",
+      "title": "Current Use of Contraception Among Currently Married and Sexually Active Unmarried Women",
+      "dataTableTitle": "Current Use of Contraception Among Currently Married and Sexually Active Unmarried Women",
+      "description": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "chartSubtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+      "href": "./pages/contraception-married-sexually-active-women-2025/",
+      "chartType": "waffle",
+      "chartExcludeTables": [
+        "region"
+      ],
+      "chartTableLabels": {
+        "total": "Total",
+        "sexually-active-unmarried-residence": "Residence",
+        "sexually-active-unmarried-total": "Total"
+      },
+      "waffleMetrics": [
+        "any_modern_method_pct",
+        "any_traditional_method_pct",
+        "not_using_pct"
+      ],
+      "waffleColors": {
+        "any_modern_method_pct": "#f28e2b",
+        "any_traditional_method_pct": "#e15759",
+        "not_using_pct": "#76b7b2"
+      },
+      "mapMetricOrder": [
+        "any_method_pct",
+        "any_modern_method_pct",
+        "any_traditional_method_pct",
+        "not_using_pct"
+      ],
+      "mapMetricLabels": {
+        "any_method_pct": "Any method",
+        "any_modern_method_pct": "Any modern method",
+        "any_traditional_method_pct": "Any traditional method",
+        "not_using_pct": "Not currently using"
+      },
+      "mapColorDomains": {
+        "any_method_pct": [
+          0,
+          100
+        ],
+        "any_modern_method_pct": [
+          0,
+          100
+        ],
+        "any_traditional_method_pct": [
+          0,
+          100
+        ],
+        "not_using_pct": [
+          0,
+          100
+        ]
+      }
+    },
+    {
+      "slug": "modern-contraception-married-sexually-active-women-2025",
+      "sectionTitle": "Contraception",
+      "title": "Current Use of Modern Contraception Methods Among Currently Married and Sexually Active Unmarried Women",
+      "dataTableTitle": "Current Use of Modern Contraception Methods Among Currently Married and Sexually Active Unmarried Women",
+      "description": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by modern contraceptive method currently used. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "chartSubtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+      "href": "./pages/modern-contraception-married-sexually-active-women-2025/",
+      "chartType": "waffle",
+      "chartExcludeTables": [
+        "region"
+      ],
+      "chartTableLabels": {
+        "total": "Total",
+        "sexually-active-unmarried-residence": "Residence",
+        "sexually-active-unmarried-total": "Total"
+      },
+      "waffleMetrics": [
+        "female_sterilization_pct",
+        "male_sterilization_pct",
+        "iud_pct",
+        "injectables_pct",
+        "implants_pct",
+        "pill_pct",
+        "male_condom_pct",
+        "lam_pct",
+        "modern_other_pct"
+      ],
+      "waffleColors": {
+        "female_sterilization_pct": "#f28e2b",
+        "male_sterilization_pct": "#e15759",
+        "iud_pct": "#76b7b2",
+        "injectables_pct": "#59a14f",
+        "implants_pct": "#edc948",
+        "pill_pct": "#b07aa1",
+        "male_condom_pct": "#ff9da7",
+        "lam_pct": "#9c755f",
+        "modern_other_pct": "#bab0ac"
+      },
+      "waffleTotalKey": "any_modern_method_pct",
+      "mapMetricOrder": [
+        "any_modern_method_pct",
+        "female_sterilization_pct",
+        "male_sterilization_pct",
+        "iud_pct",
+        "injectables_pct",
+        "implants_pct",
+        "pill_pct",
+        "male_condom_pct",
+        "lam_pct",
+        "modern_other_pct"
+      ],
+      "mapMetricLabels": {
+        "any_modern_method_pct": "Any modern method",
+        "female_sterilization_pct": "Female sterilization",
+        "male_sterilization_pct": "Male sterilization",
+        "iud_pct": "IUD",
+        "injectables_pct": "Injectables",
+        "implants_pct": "Implants",
+        "pill_pct": "Pill",
+        "male_condom_pct": "Male condom",
+        "lam_pct": "LAM",
+        "modern_other_pct": "Other"
+      },
+      "mapColorDomains": {
+        "any_modern_method_pct": [
+          0,
+          100
+        ],
+        "female_sterilization_pct": [
+          0,
+          100
+        ],
+        "male_sterilization_pct": [
+          0,
+          100
+        ],
+        "iud_pct": [
+          0,
+          100
+        ],
+        "injectables_pct": [
+          0,
+          100
+        ],
+        "implants_pct": [
+          0,
+          100
+        ],
+        "pill_pct": [
+          0,
+          100
+        ],
+        "male_condom_pct": [
+          0,
+          100
+        ],
+        "lam_pct": [
+          0,
+          100
+        ],
+        "modern_other_pct": [
+          0,
+          100
+        ]
+      }
+    },
+    {
+      "slug": "traditional-contraception-married-sexually-active-women-2025",
+      "sectionTitle": "Contraception",
+      "title": "Current Use of Traditional Contraception Methods Among Currently Married and Sexually Active Unmarried Women",
+      "dataTableTitle": "Current Use of Traditional Contraception Methods Among Currently Married and Sexually Active Unmarried Women",
+      "description": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by traditional contraceptive method currently used. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "chartSubtitle": "Percent distribution of currently married and sexually active unmarried women aged 15 to 49 years by contraceptive method currently used, according to background characteristics: Philippines, 2022 and 2025",
+      "href": "./pages/traditional-contraception-married-sexually-active-women-2025/",
+      "chartType": "waffle",
+      "chartExcludeTables": [
+        "region"
+      ],
+      "chartTableLabels": {
+        "total": "Total",
+        "sexually-active-unmarried-residence": "Residence",
+        "sexually-active-unmarried-total": "Total"
+      },
+      "waffleMetrics": [
+        "calendar_rhythm_pct",
+        "withdrawal_pct",
+        "traditional_other_pct"
+      ],
+      "waffleColors": {
+        "calendar_rhythm_pct": "#f28e2b",
+        "withdrawal_pct": "#e15759",
+        "traditional_other_pct": "#76b7b2"
+      },
+      "waffleTotalKey": "any_traditional_method_pct",
+      "mapMetricOrder": [
+        "any_traditional_method_pct",
+        "calendar_rhythm_pct",
+        "withdrawal_pct",
+        "traditional_other_pct"
+      ],
+      "mapMetricLabels": {
+        "any_traditional_method_pct": "Any traditional method",
+        "calendar_rhythm_pct": "Calendar/ Rhythm",
+        "withdrawal_pct": "Withdrawal",
+        "traditional_other_pct": "Other"
+      },
+      "mapColorDomains": {
+        "any_traditional_method_pct": [
+          0,
+          100
+        ],
+        "calendar_rhythm_pct": [
+          0,
+          100
+        ],
+        "withdrawal_pct": [
+          0,
+          100
+        ],
+        "traditional_other_pct": [
+          0,
+          100
+        ]
+      }
+    },
+    {
+      "slug": "source-of-modern-contraception-methods-2025",
+      "sectionTitle": "Contraception",
+      "title": "Source of Modern Contraception Methods",
+      "dataTableTitle": "Source of Modern Contraception Methods",
+      "description": "Percent distribution of users of modern contraceptive methods aged 15 to 49 years by most recent source of method, according to method. Source: Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey.",
+      "chartType": "source-waffle",
+      "chartSubtitle": "Percent distribution of users of modern contraceptive methods aged 15 to 49 years by most recent source of method, according to method: Philippines, 2022 and 2025",
+      "href": "./pages/source-of-modern-contraception-methods-2025/"
+    },
+    {
+      "slug": "family-planning-all-women-2025",
+      "sectionTitle": "Contraception",
+      "title": "Need and Demand for Family Planning Among All Women",
+      "dataTableTitle": "Need and Demand for Family Planning Among All Women",
+      "dataTableSubtitle": "Percentage of all women aged 15-49 with unmet need for family planning, percentage with met need for family planning, percentage with met need for family planning who are using modern methods, percentage with demand for family planning, percentage of the demand for family planning that is satisfied, and percentage of the demand for family planning that is satisfied with modern methods, according to background characteristics: Philippines, 2022 and 2025",
+      "dataTableSectionSubtitle": "All women aged 15 to 49 years.",
+      "description": "Percentage of all women aged 15-49 with unmet need for family planning, percentage with met need for family planning, percentage with met need for family planning who are using modern methods, percentage with demand for family planning, percentage of the demand for family planning that is satisfied, and percentage of the demand for family planning that is satisfied with modern methods. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "chartType": "waffle",
+      "chartSubtitle": "Percentage of all women aged 15-49 with unmet need for family planning, percentage with met need for family planning, percentage with met need for family planning who are using modern methods, percentage with demand for family planning, percentage of the demand for family planning that is satisfied, and percentage of the demand for family planning that is satisfied with modern methods, according to background characteristics: Philippines, 2022 and 2025",
+      "chartBlockSubtitle": "Total demand for family planning represented as unmet need, modern methods, and other methods.",
+      "chartExcludeTables": [
+        "region"
+      ],
+      "waffleMetrics": [
+        "unmet_need",
+        "met_need_modern",
+        "other_methods"
+      ],
+      "waffleColors": {
+        "unmet_need": "#b53d3d",
+        "met_need_modern": "#2a5f8f",
+        "other_methods": "#e9b66d"
+      },
+      "waffleLabels": {
+        "unmet_need": "Unmet need for family planning",
+        "met_need_modern": "Modern methods²",
+        "other_methods": "Other methods³"
+      },
+      "waffleTotalKey": "total_demand",
+      "waffleDerivedMetrics": {
+        "other_methods": {
+          "base": "total_demand",
+          "subtract": [
+            "unmet_need",
+            "met_need_modern"
+          ]
+        }
+      },
+      "mapMetricOrder": [
+        "total_demand",
+        "unmet_need",
+        "met_need_all",
+        "met_need_modern",
+        "satisfied_all",
+        "satisfied_modern"
+      ],
+      "mapMetricLabels": {
+        "total_demand": "Total demand for family planning",
+        "unmet_need": "Unmet need",
+        "met_need_all": "Met need - All methods",
+        "met_need_modern": "Met need - Modern methods",
+        "satisfied_all": "% Satisfied - All methods",
+        "satisfied_modern": "% Satisfied - Modern methods"
+      },
+      "mapColorDomains": {
+        "total_demand": [
+          0,
+          100
+        ],
+        "unmet_need": [
+          0,
+          100
+        ],
+        "met_need_all": [
+          0,
+          100
+        ],
+        "met_need_modern": [
+          0,
+          100
+        ],
+        "satisfied_all": [
+          0,
+          100
+        ],
+        "satisfied_modern": [
+          0,
+          100
+        ]
+      },
+      "href": "./pages/family-planning-all-women-2025/"
+    },
+    {
+      "slug": "family-planning-married-sexually-active-women-2025",
+      "sectionTitle": "Contraception",
+      "title": "Need and Demand for Family Planning Among Currently Married Women",
+      "dataTableTitle": "Need and Demand for Family Planning Among Currently Married and Sexually Active Unmarried Women",
+      "dataTableSubtitle": "Percentage of currently married and sexually active unmarried women aged 15 to 49 years with unmet need for family planning, percentage with met need for family planning, percentage with met need for family planning who are using modern methods, percentage with demand for family planning, percentage of the demand for family planning that is satisfied, and percentage of the demand for family planning that is satisfied with modern methods, according to background characteristics: Philippines, 2022 and 2025",
+      "dataTableSectionSubtitle": "Percent distribution of currently married women aged 15 to 49 years.",
+      "description": "Percentage of currently married and sexually active unmarried women aged 15 to 49 years with unmet need for family planning, percentage with met need for family planning, percentage with met need for family planning who are using modern methods, percentage with demand for family planning, percentage of the demand for family planning that is satisfied, and percentage of the demand for family planning that is satisfied with modern methods. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "chartType": "waffle",
+      "chartSubtitle": "Percentage of currently married and sexually active unmarried women aged 15 to 49 years with unmet need for family planning, percentage with met need for family planning, percentage with met need for family planning who are using modern methods, percentage with demand for family planning, percentage of the demand for family planning that is satisfied, and percentage of the demand for family planning that is satisfied with modern methods, according to background characteristics: Philippines, 2022 and 2025",
+      "chartBlockSubtitle": "Total demand for family planning represented as unmet need, modern methods, and other methods.",
+      "chartExcludeTables": [
+        "region"
+      ],
+      "waffleMetrics": [
+        "unmet_need",
+        "met_need_modern",
+        "other_methods"
+      ],
+      "waffleColors": {
+        "unmet_need": "#b53d3d",
+        "met_need_modern": "#2a5f8f",
+        "other_methods": "#e9b66d"
+      },
+      "waffleLabels": {
+        "unmet_need": "Unmet need for family planning",
+        "met_need_modern": "Modern methods²",
+        "other_methods": "Other methods³"
+      },
+      "waffleTotalKey": "total_demand",
+      "waffleDerivedMetrics": {
+        "other_methods": {
+          "base": "total_demand",
+          "subtract": [
+            "unmet_need",
+            "met_need_modern"
+          ]
+        }
+      },
+      "mapMetricOrder": [
+        "total_demand",
+        "unmet_need",
+        "met_need_all",
+        "met_need_modern",
+        "satisfied_all",
+        "satisfied_modern"
+      ],
+      "mapMetricLabels": {
+        "total_demand": "Total demand for family planning",
+        "unmet_need": "Unmet need",
+        "met_need_all": "Met need - All methods",
+        "met_need_modern": "Met need - Modern methods",
+        "satisfied_all": "% Satisfied - All methods",
+        "satisfied_modern": "% Satisfied - Modern methods"
+      },
+      "mapColorDomains": {
+        "total_demand": [
+          0,
+          100
+        ],
+        "unmet_need": [
+          0,
+          100
+        ],
+        "met_need_all": [
+          0,
+          100
+        ],
+        "met_need_modern": [
+          0,
+          100
+        ],
+        "satisfied_all": [
+          0,
+          100
+        ],
+        "satisfied_modern": [
+          0,
+          100
+        ]
+      },
+      "href": "./pages/family-planning-married-sexually-active-women-2025/"
+    },
+    {
+      "slug": "early-childhood-mortality-rates-2025",
+      "sectionTitle": "Childhood Mortality",
+      "title": "Early Childhood Mortality Rates",
+      "description": "Neonatal, post-neonatal, infant, child and under-5 mortality rates for 5 year periods preceding the survey: Philippines, 2022 and 2025.",
+      "dataTableTitle": "Early Childhood Mortality Rates",
+      "dataTableSubtitle": "Neonatal, post-neonatal, infant, child and under-5 mortality rates for 5-year periods preceding the survey: Philippines, 2022 and 2025",
+      "chartSubtitle": "",
+      "chartWrapLabels": true,
+      "chartTransposeTables": [
+        "years_preceding_the_survey"
+      ],
+      "href": "./pages/early-childhood-mortality-rates-2025/"
+    },
+    {
+      "slug": "five-year-early-childhood-mortality-rates-2025",
+      "sectionTitle": "Childhood Mortality",
+      "title": "Five-Year Early Childhood Mortality Rates",
+      "description": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the 5-year period preceding the survey, according to background characteristics: Philippines, 2022 and 2025.",
+      "dataTableTitle": "Five-Year Early Childhood Mortality Rates",
+      "dataTableSubtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the 5-year period preceding the survey, according to background characteristics: Philippines, 2022 and 2025",
+      "chartSubtitle": "",
+      "chartIncludeTotal": true,
+      "href": "./pages/five-year-early-childhood-mortality-rates-2025/"
+    },
+    {
+      "slug": "ten-year-early-childhood-mortality-rates-2025",
+      "sectionTitle": "Childhood Mortality",
+      "title": "Ten-Year Early Childhood Mortality Rates",
+      "description": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the ten-year period preceding the survey. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "dataTableTitle": "Ten-Year Early Childhood Mortality Rates",
+      "dataTableSubtitle": "Neonatal, post-neonatal, infant, child, and under-5 mortality rates for the ten-year period preceding the survey, according to additional characteristics: Philippines, 2022 and 2025",
+      "chartSubtitle": "",
+      "mapMetricOrder": [
+        "neonatal_mortality",
+        "post_neonatal_mortality",
+        "infant_mortality",
+        "child_mortality",
+        "under_5_mortality"
+      ],
+      "mapMetricLabels": {
+        "neonatal_mortality": "Neonatal mortality",
+        "post_neonatal_mortality": "Post-neonatal mortality",
+        "infant_mortality": "Infant mortality",
+        "child_mortality": "Child mortality",
+        "under_5_mortality": "Under-5 mortality"
+      },
+      "mapColorDomains": {
+        "neonatal_mortality": [
+          0,
+          30
+        ],
+        "post_neonatal_mortality": [
+          0,
+          25
+        ],
+        "infant_mortality": [
+          0,
+          50
+        ],
+        "child_mortality": [
+          0,
+          15
+        ],
+        "under_5_mortality": [
+          0,
+          60
+        ]
+      },
+      "href": "./pages/ten-year-early-childhood-mortality-rates-2025/"
+    },
+    {
+      "slug": "vaccinations-12-to-23-vaccination-status-2025",
+      "sectionTitle": "Vaccinations",
+      "title": "Children Aged 12 to 23 Months - Vaccination Status",
+      "description": "Percentage of children aged 12 to 23 months fully vaccinated (basic antigens), percentage fully vaccinated (according to national schedule), and percentage who received no vaccinations, at any time before the survey (according to a vaccination card or the mother's report). Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "dataTableTitle": "Children Aged 12 to 23 Months - Vaccination Status",
+      "dataTableSubtitle": "Percentage of children aged 12 to 23 months fully vaccinated (basic antigens), percentage fully vaccinated (according to national schedule), and percentage who received no vaccinations, at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
+      "chartSubtitle": "Percentage of children aged 12 to 23 months fully vaccinated (basic antigens), percentage fully vaccinated (according to national schedule), and percentage who received no vaccinations, at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
+      "chartIncludeTotal": true,
+      "chartExcludeNotesContaining": [
+        "Region IX includes the province of Sulu in 2025"
+      ],
+      "href": "./pages/vaccinations-12-to-23-vaccination-status-2025/"
+    },
+    {
+      "slug": "vaccinations-12-to-23-bcg-hepb-mmr1-2025",
+      "sectionTitle": "Vaccinations",
+      "title": "Children Aged 12 to 23 Months - BCG, HepB (birth dose), MMR 1",
+      "description": "Percentage of children aged 12 to 23 months who received BCG, HepB birth dose, and MMR 1 at any time before the survey (according to a vaccination card or the mother's report). Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "dataTableTitle": "Children Aged 12 to 23 Months - BCG, HepB (birth dose), MMR 1",
+      "dataTableSubtitle": "Percentage of children aged 12 to 23 months who received BCG, HepB birth dose, and MMR 1 at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics",
+      "chartSubtitle": "Percentage of children aged 12 to 23 months who received BCG, HepB birth dose, and MMR 1 at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics",
+      "chartIncludeTotal": true,
+      "chartExcludeNotesContaining": [
+        "Region IX includes the province of Sulu in 2025"
+      ],
+      "href": "./pages/vaccinations-12-to-23-bcg-hepb-mmr1-2025/"
+    },
+    {
+      "slug": "vaccinations-12-to-23-polio-vaccinations-2025",
+      "sectionTitle": "Vaccinations",
+      "title": "Children Aged 12 to 23 Months - Polio Vaccinations",
+      "description": "Percentage of children aged 12 to 23 months who received scheduled polio vaccines at any time before the survey (according to a vaccination card or the mother's report). Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "dataTableTitle": "Children Aged 12 to 23 Months - Polio Vaccinations",
+      "dataTableSubtitle": "Percentage of children aged 12 to 23 months who received scheduled polio vaccines at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
+      "chartSubtitle": "Percentage of children aged 12 to 23 months who received scheduled polio vaccines at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
+      "chartIncludeTotal": true,
+      "chartExcludeNotesContaining": [
+        "Region IX includes the province of Sulu in 2025"
+      ],
+      "href": "./pages/vaccinations-12-to-23-polio-vaccinations-2025/"
+    },
+    {
+      "slug": "vaccinations-12-to-23-pcv-vaccinations-2025",
+      "sectionTitle": "Vaccinations",
+      "title": "Children Aged 12 to 23 Months - PCV Vaccinations",
+      "description": "Percentage of children aged 12 to 23 months who received PCV vaccines at any time before the survey (according to a vaccination card or the mother's report). Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "dataTableTitle": "Children Aged 12 to 23 Months - PCV Vaccinations",
+      "dataTableSubtitle": "Percentage of children aged 12 to 23 months who received PCV vaccines at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
+      "chartSubtitle": "Percentage of children aged 12 to 23 months who received PCV vaccines at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
+      "chartIncludeTotal": true,
+      "chartExcludeNotesContaining": [
+        "Region IX includes the province of Sulu in 2025"
+      ],
+      "href": "./pages/vaccinations-12-to-23-pcv-vaccinations-2025/"
+    },
+    {
+      "slug": "vaccinations-24-to-35-mmr2-full-schedule-2025",
+      "sectionTitle": "Vaccinations",
+      "title": "Children Aged 24 to 35 Months - MMR 2 and Full Vaccination Schedule",
+      "description": "Percentage of children aged 24 to 35 months who received MMR 2 vaccines at any time before the survey (according to a vaccination card or the mother's report) and percentage fully vaccinated (according to national schedule). Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "dataTableTitle": "Children Aged 24 to 35 Months - MMR 2 and Full Vaccination Schedule",
+      "dataTableSubtitle": "Percentage of children aged 24-35 months who received MMR 2 vaccines at any time before the survey (according to a vaccination card or the mother's report) and percentage fully vaccinated (according to national schedule), according to background characteristics: Philippines, 2022 and 2025",
+      "chartSubtitle": "Percentage of children aged 24-35 months who received MMR 2 vaccines at any time before the survey (according to a vaccination card or the mother's report) and percentage fully vaccinated (according to national schedule), according to background characteristics: Philippines, 2022 and 2025",
+      "chartIncludeTotal": true,
+      "chartExcludeNotesContaining": [
+        "Region IX includes the province of Sulu in 2025"
+      ],
+      "href": "./pages/vaccinations-24-to-35-mmr2-full-schedule-2025/"
+    },
+    {
+      "slug": "child-discipline-2025",
+      "sectionTitle": "Discipline and Punishment",
+      "title": "Child Discipline",
+      "description": "Percentage of children aged 1 to 14 years by child disciplining methods experienced during the last one month. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "dataTableTitle": "Child Discipline",
+      "dataTableSubtitle": "Percentage of children aged 1 to 14 years by child disciplining methods experienced during the last one month, according to background characteristics: Philippines, 2022 and 2025",
+      "chartSubtitle": "Percentage of children aged 1 to 14 years by child disciplining methods experienced during the last one month, according to background characteristics: Philippines, 2022 and 2025",
+      "chartIncludeTotal": true,
+      "mapMetricOrder": [
+        "non_violent_discipline",
+        "psychological_aggression",
+        "any_physical_punishment",
+        "severe_physical_punishment",
+        "any_violent_discipline"
+      ],
+      "mapMetricLabels": {
+        "non_violent_discipline": "Only non-violent discipline",
+        "psychological_aggression": "Psychological aggression",
+        "any_physical_punishment": "Any physical punishment",
+        "severe_physical_punishment": "Severe physical punishment",
+        "any_violent_discipline": "Any violent discipline method"
+      },
+      "mapColorDomains": {
+        "non_violent_discipline": [
+          0,
+          100
+        ],
+        "psychological_aggression": [
+          0,
+          100
+        ],
+        "any_physical_punishment": [
+          0,
+          100
+        ],
+        "severe_physical_punishment": [
+          0,
+          100
+        ],
+        "any_violent_discipline": [
+          0,
+          100
+        ]
+      },
+      "href": "./pages/child-discipline-2025/"
+    },
+    {
+      "slug": "attitudes-toward-physical-punishment-2025",
+      "sectionTitle": "Discipline and Punishment",
+      "title": "Attitudes Toward Physical Punishment",
+      "description": "Among households with a child aged 1 to 14 years, percentage of household respondents who believe that physical punishment is needed to bring up, raise, or educate a child properly. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "dataTableTitle": "Attitudes Toward Physical Punishment",
+      "dataTableSubtitle": "Among households with a child aged 1 to 14 years, percentage of household respondents who believe that physical punishment is needed to bring up, raise, or educate a child properly, according to background characteristics: Philippines, 2022 and 2025",
+      "chartSubtitle": "Among households with a child aged 1 to 14 years, percentage of household respondents who believe that physical punishment is needed to bring up, raise, or educate a child properly, according to background characteristics: Philippines, 2022 and 2025",
+      "chartIncludeTotal": true,
+      "mapMetricOrder": [
+        "physical_punishment_needed"
+      ],
+      "mapMetricLabels": {
+        "physical_punishment_needed": "Believe physical punishment is needed"
+      },
+      "mapColorDomains": {
+        "physical_punishment_needed": [
+          0,
+          100
+        ]
+      },
+      "href": "./pages/attitudes-toward-physical-punishment-2025/"
+    },
+    {
+      "slug": "early-childhood-development-index-2030-2025",
+      "sectionTitle": "Early Childhood Development",
+      "title": "Early Childhood Development Index 2030",
+      "description": "Percentage of children aged 24 to 59 months who are developmentally on-track in health, learning and psychosocial well-being. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "dataTableTitle": "Early Childhood Development Index 2030",
+      "dataTableSubtitle": "Percentage of children aged 24 to 59 months who are developmentally on-track in health, learning and psychosocial well-being: Philippines, 2022 and 2025",
+      "chartSubtitle": "Percentage of children aged 24 to 59 months who are developmentally on-track in health, learning and psychosocial well-being: Philippines, 2022 and 2025",
+      "chartIncludeTotal": true,
+      "mapMetricOrder": [
+        "ecdi2030"
+      ],
+      "mapMetricLabels": {
+        "ecdi2030": "ECDI 2030"
+      },
+      "mapColorDomains": {
+        "ecdi2030": [
+          0,
+          100
+        ]
+      },
+      "href": "./pages/early-childhood-development-index-2030-2025/"
+    },
+    {
+      "slug": "intimate-partner-violence-2025",
+      "sectionTitle": "Violence",
+      "title": "Intimate Partner Violence",
+      "description": "Percentage of women aged 15 to 49 years who have ever had a husband or intimate partner who have ever experienced emotional, physical, or sexual violence committed by their current or most recent husband/intimate partner. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "dataTableTitle": "Intimate Partner Violence",
+      "dataTableSubtitle": "Percentage of women aged 15 to 49 years who have ever had a husband or intimate partner who have ever experienced emotional, physical, or sexual violence committed by their current or most recent husband/intimate partner, according to background characteristics: Philippines, 2022 and 2025",
+      "chartSubtitle": "Percentage of women aged 15 to 49 years who have ever had a husband or intimate partner who have ever experienced emotional, physical, or sexual violence committed by their current or most recent husband/intimate partner, according to background characteristics: Philippines, 2022 and 2025",
+      "chartIncludeTotal": true,
+      "chartWrapLabelTables": [
+        "marital_status",
+        "employment"
+      ],
+      "mapMetricOrder": [
+        "physical_or_sexual_or_emotional",
+        "emotional_violence",
+        "physical_or_sexual",
+        "physical_violence",
+        "sexual_violence",
+        "physical_and_sexual",
+        "physical_sexual_and_emotional"
+      ],
+      "mapMetricLabels": {
+        "physical_or_sexual_or_emotional": "Physical or sexual or emotional",
+        "emotional_violence": "Emotional violence",
+        "physical_or_sexual": "Physical or sexual",
+        "physical_violence": "Physical violence",
+        "sexual_violence": "Sexual violence",
+        "physical_and_sexual": "Physical and sexual",
+        "physical_sexual_and_emotional": "Physical and sexual and emotional"
+      },
+      "mapColorDomains": {
+        "physical_or_sexual_or_emotional": [
+          0,
+          25
+        ],
+        "emotional_violence": [
+          0,
+          25
+        ],
+        "physical_or_sexual": [
+          0,
+          25
+        ],
+        "physical_violence": [
+          0,
+          25
+        ],
+        "sexual_violence": [
+          0,
+          25
+        ],
+        "physical_and_sexual": [
+          0,
+          25
+        ],
+        "physical_sexual_and_emotional": [
+          0,
+          25
+        ]
+      },
+      "href": "./pages/intimate-partner-violence-2025/"
+    },
+    {
+      "slug": "desire-to-limit-childbearing-2025",
+      "sectionTitle": "Fertility",
+      "title": "Desire to Limit Childbearing",
+      "description": "Want no more children or sterilized by region and number of living children (NDHS 2025)",
+      "chartIncludeTotal": true,
+      "mapMetricOrder": [
+        "children_0_pct",
+        "children_1_pct",
+        "children_2_pct",
+        "children_3_pct",
+        "children_4_pct",
+        "children_5_pct",
+        "children_6plus_pct",
+        "children_total_pct"
+      ],
+      "mapMetricLabels": {
+        "children_0_pct": "0 children",
+        "children_1_pct": "1 child",
+        "children_2_pct": "2 children",
+        "children_3_pct": "3 children",
+        "children_4_pct": "4 children",
+        "children_5_pct": "5 children",
+        "children_6plus_pct": "6+ children",
+        "children_total_pct": "Total"
+      },
+      "href": "./pages/desire-to-limit-childbearing-2025/"
+    },
+    {
+      "slug": "fertility-rate-2025",
+      "sectionTitle": "Fertility",
+      "title": "Fertility Rate",
+      "description": "Total fertility rate for the 3 years preceding the survey. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+      "href": "./pages/fertility-rate-2025/"
+    },
+    {
+      "slug": "teenage-pregnancy-2025",
+      "sectionTitle": "Fertility",
+      "title": "Teenage Pregnancy",
+      "description": "Percentage of women aged 15-19 who have ever been pregnant, by region (NDHS 2025)",
+      "href": "./pages/teenage-pregnancy-2025/",
+      "dataTableTitle": "Teenage Pregnancy",
+      "dataTableSubtitle": "Percentage of women aged 15 to 19 years who have ever had a live birth, percentage who have ever had a pregnancy loss, percentage who are currently pregnant, and percentage who have ever been pregnant, according to background characteristics: Philippines, 2022 and 2025",
+      "chartSubtitle": "Percentage of women aged 15 to 19 years who have ever had a live birth, percentage who have ever had a pregnancy loss, percentage who are currently pregnant, and percentage who have ever been pregnant, according to background characteristics: Philippines, 2022 and 2025",
+      "chartIncludeTotal": true,
+      "mapMetricOrder": [
+        "ever_pregnant_pct",
+        "live_birth_pct",
+        "pregnancy_loss_pct",
+        "currently_pregnant_pct",
+        "begun_childbearing_pct"
+      ],
+      "mapMetricLabels": {
+        "ever_pregnant_pct": "Have ever been pregnant",
+        "live_birth_pct": "Have ever had a live birth",
+        "pregnancy_loss_pct": "Have ever had a pregnancy loss",
+        "currently_pregnant_pct": "Are currently pregnant",
+        "begun_childbearing_pct": "Have begun childbearing"
+      }
+    },
+    {
+      "slug": "fertility-preferences-2025",
+      "sectionTitle": "Fertility",
+      "title": "Fertility Preferences",
+      "description": "Desire for children by region: want no more, timing preferences, sterilization, and declared infecundity (NDHS 2025)",
+      "dataTableSubtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, shown by number of living children and by region: Philippines, 2022 and 2025",
+      "chartSubtitle": "Percent distribution of currently married women aged 15 to 49 years by desire for children, shown by number of living children and by region: Philippines, 2022 and 2025",
+      "chartIncludeTotal": true,
+      "mapMetricOrder": [
+        "another_soon_pct",
+        "another_later_pct",
+        "another_undecided_pct",
+        "undecided_pct",
+        "want_no_more_pct",
+        "sterilized_pct",
+        "declared_infecund_pct"
+      ],
+      "mapMetricLabels": {
+        "another_soon_pct": "Have another soon",
+        "another_later_pct": "Have another later",
+        "another_undecided_pct": "Have another, undecided when",
+        "undecided_pct": "Undecided",
+        "want_no_more_pct": "Want no more",
+        "sterilized_pct": "Sterilized",
+        "declared_infecund_pct": "Declared infecund"
+      },
+      "href": "./pages/fertility-preferences-2025/"
+    }
+  ]
+}

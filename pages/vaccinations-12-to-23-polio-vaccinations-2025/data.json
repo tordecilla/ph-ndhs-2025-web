@@ -1,0 +1,1627 @@
+{
+  "sectionTitle": "Vaccinations",
+  "title": "Children Aged 12 to 23 Months - Polio Vaccinations",
+  "description": "Percentage of children aged 12 to 23 months who received scheduled polio vaccines at any time before the survey (according to a vaccination card or the mother's report). Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Percentage of children aged 12 to 23 months who received scheduled polio vaccines at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Children Aged 12 to 23 Months - Polio Vaccinations",
+    "subtitle": "Percentage of children aged 12 to 23 months who received scheduled polio vaccines at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
+    "tables": [
+      {
+        "id": "total",
+        "title": "Total",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "opv1",
+                "field": "opv1",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2",
+                "field": "opv2",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3",
+                "field": "opv3",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1",
+                "field": "ipv1",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2",
+                "field": "ipv2",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3",
+                "field": "polio3",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "opv1_2022",
+                "field": "opv1_2022",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2_2022",
+                "field": "opv2_2022",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3_2022",
+                "field": "opv3_2022",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1_2022",
+                "field": "ipv1_2022",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2_2022",
+                "field": "ipv2_2022",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3_2022",
+                "field": "polio3_2022",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": "",
+            "values": [
+              "93.0",
+              "89.5",
+              "83.0",
+              "89.1",
+              "78.9",
+              "83.3",
+              "86.3",
+              "82.4",
+              "77.8",
+              "79.1",
+              "81.8",
+              "71.5"
+            ],
+            "rowClass": "dt-total-row"
+          }
+        ]
+      },
+      {
+        "id": "sex",
+        "title": "Sex",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "opv1",
+                "field": "opv1",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2",
+                "field": "opv2",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3",
+                "field": "opv3",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1",
+                "field": "ipv1",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2",
+                "field": "ipv2",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3",
+                "field": "polio3",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "opv1_2022",
+                "field": "opv1_2022",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2_2022",
+                "field": "opv2_2022",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3_2022",
+                "field": "opv3_2022",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1_2022",
+                "field": "ipv1_2022",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2_2022",
+                "field": "ipv2_2022",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3_2022",
+                "field": "polio3_2022",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Male",
+            "noteRef": "",
+            "values": [
+              "92.4",
+              "88.7",
+              "82.1",
+              "88.1",
+              "77.6",
+              "82.5",
+              "87.2",
+              "83.3",
+              "79.9",
+              "79.3",
+              "82.6",
+              "71.2"
+            ]
+          },
+          {
+            "label": "Female",
+            "noteRef": "",
+            "values": [
+              "93.9",
+              "90.6",
+              "84.1",
+              "90.4",
+              "80.5",
+              "84.3",
+              "85.4",
+              "81.6",
+              "75.8",
+              "78.9",
+              "81.1",
+              "71.8"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "birth_order",
+        "title": "Birth order",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "opv1",
+                "field": "opv1",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2",
+                "field": "opv2",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3",
+                "field": "opv3",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1",
+                "field": "ipv1",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2",
+                "field": "ipv2",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3",
+                "field": "polio3",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "opv1_2022",
+                "field": "opv1_2022",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2_2022",
+                "field": "opv2_2022",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3_2022",
+                "field": "opv3_2022",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1_2022",
+                "field": "ipv1_2022",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2_2022",
+                "field": "ipv2_2022",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3_2022",
+                "field": "polio3_2022",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "1",
+            "noteRef": "",
+            "values": [
+              "93.7",
+              "91.0",
+              "84.6",
+              "90.7",
+              "81.2",
+              "84.7",
+              "90.7",
+              "88.0",
+              "84.4",
+              "85.6",
+              "87.4",
+              "79.1"
+            ]
+          },
+          {
+            "label": "2-3",
+            "noteRef": "",
+            "values": [
+              "93.8",
+              "91.0",
+              "84.9",
+              "89.9",
+              "79.4",
+              "85.3",
+              "89.1",
+              "84.9",
+              "79.5",
+              "80.6",
+              "84.9",
+              "72.7"
+            ]
+          },
+          {
+            "label": "4-5",
+            "noteRef": "",
+            "values": [
+              "90.7",
+              "85.9",
+              "77.8",
+              "86.6",
+              "74.7",
+              "78.3",
+              "78.7",
+              "73.7",
+              "69.6",
+              "71.0",
+              "71.8",
+              "63.5"
+            ]
+          },
+          {
+            "label": "6+",
+            "noteRef": "",
+            "values": [
+              "88.5",
+              "77.3",
+              "70.4",
+              "78.5",
+              "71.3",
+              "70.4",
+              "65.0",
+              "61.2",
+              "56.8",
+              "59.1",
+              "59.6",
+              "48.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vaccination_card",
+        "title": "Vaccination card⁵",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "opv1",
+                "field": "opv1",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2",
+                "field": "opv2",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3",
+                "field": "opv3",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1",
+                "field": "ipv1",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2",
+                "field": "ipv2",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3",
+                "field": "polio3",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "opv1_2022",
+                "field": "opv1_2022",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2_2022",
+                "field": "opv2_2022",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3_2022",
+                "field": "opv3_2022",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1_2022",
+                "field": "ipv1_2022",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2_2022",
+                "field": "ipv2_2022",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3_2022",
+                "field": "polio3_2022",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Seen",
+            "noteRef": "",
+            "values": [
+              "98.9",
+              "97.4",
+              "96.1",
+              "95.9",
+              "87.2",
+              "96.5",
+              "98.8",
+              "96.7",
+              "94.5",
+              "90.3",
+              "96.1",
+              "89.2"
+            ]
+          },
+          {
+            "label": "Not seen or no longer has",
+            "noteRef": "",
+            "values": [
+              "87.3",
+              "78.8",
+              "59.2",
+              "80.9",
+              "66.4",
+              "59.2",
+              "74.6",
+              "66.5",
+              "55.2",
+              "69.3",
+              "65.5",
+              "44.9"
+            ]
+          },
+          {
+            "label": "Never had",
+            "noteRef": "",
+            "values": [
+              "45.2",
+              "38.9",
+              "25.5",
+              "40.5",
+              "30.8",
+              "25.5",
+              "22.0",
+              "16.5",
+              "13.0",
+              "20.2",
+              "17.1",
+              "10.9"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "residence",
+        "title": "Residence",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "opv1",
+                "field": "opv1",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2",
+                "field": "opv2",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3",
+                "field": "opv3",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1",
+                "field": "ipv1",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2",
+                "field": "ipv2",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3",
+                "field": "polio3",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "opv1_2022",
+                "field": "opv1_2022",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2_2022",
+                "field": "opv2_2022",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3_2022",
+                "field": "opv3_2022",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1_2022",
+                "field": "ipv1_2022",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2_2022",
+                "field": "ipv2_2022",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3_2022",
+                "field": "polio3_2022",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": "",
+            "values": [
+              "94.0",
+              "91.2",
+              "84.8",
+              "89.5",
+              "81.5",
+              "85.0",
+              "86.8",
+              "81.8",
+              "76.6",
+              "81.7",
+              "82.4",
+              "71.9"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": "",
+            "values": [
+              "92.1",
+              "87.9",
+              "81.1",
+              "88.7",
+              "76.3",
+              "81.5",
+              "85.7",
+              "83.1",
+              "79.0",
+              "76.6",
+              "81.2",
+              "71.1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "opv1",
+                "field": "opv1",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2",
+                "field": "opv2",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3",
+                "field": "opv3",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1",
+                "field": "ipv1",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2",
+                "field": "ipv2",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3",
+                "field": "polio3",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "opv1_2022",
+                "field": "opv1_2022",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2_2022",
+                "field": "opv2_2022",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3_2022",
+                "field": "opv3_2022",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1_2022",
+                "field": "ipv1_2022",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2_2022",
+                "field": "ipv2_2022",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3_2022",
+                "field": "polio3_2022",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": "",
+            "values": [
+              "92.9",
+              "89.4",
+              "81.6",
+              "87.9",
+              "83.4",
+              "81.9",
+              "87.1",
+              "76.5",
+              "70.3",
+              "80.5",
+              "79.9",
+              "66.7"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": "",
+            "values": [
+              "80.0",
+              "78.4",
+              "75.0",
+              "76.9",
+              "65.2",
+              "75.0",
+              "97.8",
+              "90.3",
+              "87.8",
+              "88.7",
+              "86.9",
+              "79.9"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": "",
+            "values": [
+              "100.0",
+              "99.6",
+              "97.7",
+              "98.8",
+              "97.5",
+              "98.0",
+              "90.4",
+              "84.7",
+              "83.7",
+              "83.2",
+              "90.4",
+              "82.0"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": "",
+            "values": [
+              "99.2",
+              "96.1",
+              "92.5",
+              "93.6",
+              "90.7",
+              "92.5",
+              "93.6",
+              "93.6",
+              "92.2",
+              "92.2",
+              "92.4",
+              "85.4"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": "",
+            "values": [
+              "96.7",
+              "94.8",
+              "89.2",
+              "92.5",
+              "83.1",
+              "89.2",
+              "96.9",
+              "92.7",
+              "88.4",
+              "91.1",
+              "89.2",
+              "75.4"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": "",
+            "values": [
+              "97.8",
+              "96.3",
+              "84.7",
+              "95.7",
+              "87.7",
+              "85.4",
+              "94.1",
+              "94.1",
+              "91.4",
+              "91.6",
+              "94.1",
+              "89.0"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": "",
+            "values": [
+              "96.3",
+              "93.7",
+              "93.1",
+              "94.6",
+              "88.7",
+              "93.1",
+              "90.9",
+              "88.7",
+              "77.2",
+              "77.1",
+              "77.1",
+              "60.2"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": "",
+            "values": [
+              "99.1",
+              "98.2",
+              "89.6",
+              "96.1",
+              "84.3",
+              "89.6",
+              "94.0",
+              "90.0",
+              "89.2",
+              "86.3",
+              "94.0",
+              "86.1"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": "",
+            "values": [
+              "98.6",
+              "93.5",
+              "93.5",
+              "89.4",
+              "69.6",
+              "93.5",
+              "89.5",
+              "89.2",
+              "83.5",
+              "79.3",
+              "85.3",
+              "77.2"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": "",
+            "values": [
+              "(100.0)",
+              "(99.8)",
+              "(89.7)",
+              "(95.2)",
+              "(83.7)",
+              "(89.7)",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": "",
+            "values": [
+              "(96.2)",
+              "(96.2)",
+              "(91.6)",
+              "(96.2)",
+              "(83.1)",
+              "(91.6)",
+              "91.6",
+              "87.1",
+              "82.7",
+              "84.9",
+              "87.3",
+              "77.6"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": "",
+            "values": [
+              "95.6",
+              "94.3",
+              "79.4",
+              "94.3",
+              "79.8",
+              "80.5",
+              "96.6",
+              "95.9",
+              "94.1",
+              "85.4",
+              "89.2",
+              "82.6"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "⁵",
+            "values": [
+              "77.6",
+              "73.9",
+              "66.3",
+              "71.7",
+              "61.3",
+              "66.3",
+              "83.3",
+              "79.9",
+              "77.5",
+              "79.1",
+              "77.4",
+              "71.9"
+            ],
+            "note": "Region IX includes the province of Sulu in 2025."
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": "",
+            "values": [
+              "85.2",
+              "78.6",
+              "76.3",
+              "79.9",
+              "54.2",
+              "76.3",
+              "89.8",
+              "88.2",
+              "82.9",
+              "81.5",
+              "86.7",
+              "68.0"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": "",
+            "values": [
+              "95.5",
+              "95.1",
+              "92.6",
+              "94.0",
+              "92.5",
+              "92.6",
+              "81.0",
+              "78.3",
+              "68.3",
+              "67.4",
+              "78.3",
+              "61.9"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": "",
+            "values": [
+              "95.9",
+              "91.0",
+              "83.9",
+              "91.2",
+              "76.6",
+              "85.7",
+              "76.3",
+              "67.9",
+              "63.5",
+              "66.9",
+              "69.8",
+              "59.9"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": "",
+            "values": [
+              "93.0",
+              "87.2",
+              "77.2",
+              "91.1",
+              "79.5",
+              "78.7",
+              "84.0",
+              "79.3",
+              "70.6",
+              "79.9",
+              "83.7",
+              "64.1"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": "",
+            "values": [
+              "63.3",
+              "39.3",
+              "29.7",
+              "52.2",
+              "30.2",
+              "29.7",
+              "33.2",
+              "29.0",
+              "23.2",
+              "24.8",
+              "27.9",
+              "20.8"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mother_s_educational_attainment",
+        "title": "Mother's educational attainment",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "opv1",
+                "field": "opv1",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2",
+                "field": "opv2",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3",
+                "field": "opv3",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1",
+                "field": "ipv1",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2",
+                "field": "ipv2",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3",
+                "field": "polio3",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "opv1_2022",
+                "field": "opv1_2022",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2_2022",
+                "field": "opv2_2022",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3_2022",
+                "field": "opv3_2022",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1_2022",
+                "field": "ipv1_2022",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2_2022",
+                "field": "ipv2_2022",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3_2022",
+                "field": "polio3_2022",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": "",
+            "values": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "*",
+              "*",
+              "(54.9)",
+              "(53.6)",
+              "(53.6)",
+              "(51.7)",
+              "(51.7)",
+              "(35.3)"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": "",
+            "values": [
+              "85.5",
+              "76.2",
+              "71.7",
+              "79.5",
+              "64.7",
+              "71.7",
+              "71.8",
+              "64.9",
+              "59.6",
+              "62.9",
+              "65.1",
+              "49.3"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": "",
+            "values": [
+              "94.1",
+              "90.8",
+              "83.9",
+              "89.9",
+              "78.4",
+              "84.3",
+              "87.3",
+              "84.1",
+              "79.4",
+              "79.7",
+              "83.0",
+              "72.1"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": "",
+            "values": [
+              "93.3",
+              "89.3",
+              "82.6",
+              "90.9",
+              "79.4",
+              "82.6",
+              "89.6",
+              "88.4",
+              "71.5",
+              "78.0",
+              "80.2",
+              "69.6"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": "",
+            "values": [
+              "(99.6)",
+              "(99.6)",
+              "(90.6)",
+              "(92.8)",
+              "(81.8)",
+              "(90.6)",
+              "(88.3)",
+              "(88.3)",
+              "(88.3)",
+              "(88.3)",
+              "(88.2)",
+              "(86.0)"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": "",
+            "values": [
+              "93.7",
+              "91.8",
+              "85.4",
+              "90.2",
+              "83.1",
+              "85.8",
+              "90.3",
+              "86.0",
+              "83.2",
+              "84.4",
+              "87.0",
+              "78.9"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth_quintile",
+        "title": "Wealth quintile",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "opv1",
+                "field": "opv1",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2",
+                "field": "opv2",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3",
+                "field": "opv3",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1",
+                "field": "ipv1",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2",
+                "field": "ipv2",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3",
+                "field": "polio3",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "opv1_2022",
+                "field": "opv1_2022",
+                "label": "OPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv2_2022",
+                "field": "opv2_2022",
+                "label": "OPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "opv3_2022",
+                "field": "opv3_2022",
+                "label": "OPV 3",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv1_2022",
+                "field": "ipv1_2022",
+                "label": "IPV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "ipv2_2022",
+                "field": "ipv2_2022",
+                "label": "IPV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "polio3_2022",
+                "field": "polio3_2022",
+                "label": "Polio 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": "",
+            "values": [
+              "88.0",
+              "81.7",
+              "74.7",
+              "82.4",
+              "69.6",
+              "75.2",
+              "75.2",
+              "72.0",
+              "66.1",
+              "66.0",
+              "71.1",
+              "59.7"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": "",
+            "values": [
+              "92.1",
+              "86.1",
+              "83.0",
+              "86.4",
+              "76.0",
+              "83.1",
+              "89.8",
+              "84.9",
+              "78.7",
+              "82.2",
+              "82.8",
+              "71.5"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": "",
+            "values": [
+              "95.2",
+              "94.5",
+              "90.0",
+              "93.1",
+              "83.9",
+              "90.2",
+              "88.5",
+              "85.8",
+              "80.4",
+              "82.3",
+              "84.6",
+              "74.7"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": "",
+            "values": [
+              "97.6",
+              "95.9",
+              "80.6",
+              "96.3",
+              "85.3",
+              "81.2",
+              "90.9",
+              "86.9",
+              "84.9",
+              "86.1",
+              "85.9",
+              "75.2"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": "",
+            "values": [
+              "95.3",
+              "94.7",
+              "90.9",
+              "91.5",
+              "85.7",
+              "90.9",
+              "95.4",
+              "90.4",
+              "88.7",
+              "89.3",
+              "92.8",
+              "85.3"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ Children are considered to have received HepB (birth dose) if it was recorded on their card or reported by their mother, regardless of timing.",
+      "² BCG, three doses of DPT-containing vaccine, three doses of Polio vaccine given as OPV or IPV, and one dose of measles or MMR",
+      "³ BCG, HepB (birth dose), three doses of DPT-containing vaccine, three doses of OPV, two doses of IPV, three doses of PCV, and one dose of MMR",
+      "⁴ BCG, HepB (birth dose), three doses of DPT-containing vaccine, three doses of OPV, two doses of IPV, three doses of PCV, and two doses of MMR",
+      "⁵ Region IX includes the province of Sulu in 2025.",
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "Children are considered to have received the vaccine if it was either written on the child's vaccination card or reported by the mother.",
+      "For children whose vaccination information is based on the mother's report, date of vaccination is not collected.",
+      "The proportions of vaccinations given during the first and second years of life are assumed to be the same as for children with a written record of vaccination.",
+      "Figures in parentheses are based on 25-49 unweighted cases.",
+      "An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.",
+      "BCG = Bacille Calmette-Guerin",
+      "DPT = Diphtheria-pertussis-tetanus",
+      "HepB = Hepatitis B",
+      "Hib = Haemophilus influenzae type b",
+      "OPV = Oral polio vaccine",
+      "PCV = Pneumococcal conjugate vaccine",
+      "IPV = Inactivated polio vaccine",
+      "MMR= Measles, mumps, rubella"
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "sections": [
+      {
+        "heading": "Polio coverage improved, but later doses remain lower",
+        "body": "OPV 1 reached 93.0 percent in 2025, compared with 83.0 percent for OPV 3. IPV 1 was 89.1 percent and IPV 2 was 78.9 percent. The sequence shows high initial reach but lower completion at later doses."
+      },
+      {
+        "heading": "Polio 3 rose sharply from 2022",
+        "body": "Polio 3 coverage increased from 71.5 percent in 2022 to 83.3 percent in 2025. OPV 1, OPV 2, OPV 3, and IPV 1 also improved. IPV 2 was lower in 2025 than in 2022, at 78.9 percent compared with 81.8 percent, so the improvement is not uniform across every polio-related measure."
+      },
+      {
+        "heading": "BARMM has the steepest dose drop-off",
+        "body": "BARMM had 63.3 percent OPV 1 coverage but only 29.7 percent OPV 3 and 30.2 percent IPV 2. This is the lowest regional level for the later-dose measures and suggests that completion is the main issue in the regional polio profile, not only first contact with vaccination."
+      },
+      {
+        "heading": "Ilocos Region is consistently high across the polio sequence",
+        "body": "Ilocos Region recorded 100.0 percent OPV 1, 97.7 percent OPV 3, and 97.5 percent IPV 2. It also leads Polio 3 coverage. The small gap between early and later polio measures in Ilocos contrasts sharply with the large gap in BARMM."
+      },
+      {
+        "heading": "Regional patterns diverge more at later doses",
+        "body": "Early-dose OPV coverage is high in many regions, but later-dose indicators reveal sharper separation. Zamboanga Peninsula had 77.6 percent OPV 1, 66.3 percent OPV 3, and 61.3 percent IPV 2. Northern Mindanao was not among the lowest for OPV 1 but was low for IPV 2 at 54.2 percent, showing that OPV and IPV completion patterns do not always move together."
+      }
+    ],
+    "takeaways": [
+      "Polio 3 coverage rose from 71.5 percent in 2022 to 83.3 percent in 2025.",
+      "Later-dose polio indicators remain lower than first-dose coverage nationally.",
+      "BARMM has the largest regional completion gap, while Ilocos Region is consistently high across the sequence."
+    ]
+  }
+}

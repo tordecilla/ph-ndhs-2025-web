@@ -1,0 +1,1255 @@
+{
+  "sectionTitle": "Maternal Care",
+  "title": "Antenatal Care",
+  "description": "Among women aged 15 to 49 years who had a live birth and/or a stillbirth in the 2 years preceding the survey, percentage who received antenatal care (ANC) from a skilled provider for the most recent live birth or stillbirth, percentage with four or more ANC visits for the most recent live birth or stillbirth, percentage who took any iron-containing supplements during pregnancy, and percentage whose most recent live birth was protected against neonatal tetanus. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Among women aged 15 to 49 years who had a live birth and/or a stillbirth in the 2 years preceding the survey, percentage who received antenatal care (ANC) from a skilled provider for the most recent live birth or stillbirth, percentage with four or more ANC visits for the most recent live birth or stillbirth, percentage who took any iron-containing supplements during pregnancy, and percentage whose most recent live birth was protected against neonatal tetanus, according to background characteristics: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Antenatal Care",
+    "subtitle": "Among women aged 15 to 49 years who had a live birth and/or a stillbirth in the 2 years preceding the survey, percentage who received antenatal care (ANC) from a skilled provider for the most recent live birth or stillbirth, percentage with four or more ANC visits for the most recent live birth or stillbirth, percentage who took any iron-containing supplements during pregnancy, and percentage whose most recent live birth was protected against neonatal tetanus, according to background characteristics: Philippines, 2022 and 2025",
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+    "footnotes": [
+      "¹ Skilled provider includes doctor, nurse, and midwife.",
+      "² Iron tablets and syrup or micronutrient supplements.",
+      "³ Includes mothers with two injections during the pregnancy of her most recent live birth, or two or more injections (the last within 3 years of the most recent live birth), or three or more injections (the last within 5 years of the most recent live birth), or four or more injections (the last within 10 years of the most recent live birth), or five or more injections at any time prior to the last live birth",
+      "⁴ Includes women who received a check from a doctor, nurse, midwife, traditional birth attendant/hilot, or barangay health worker.",
+      "⁵ For women who had both a live birth and a stillbirth in the 2 years preceding the survey, data on antenatal care and postnatal checks are tabulated for the most recent birth only.",
+      "⁶ Region IX includes the province of Sulu in 2025.",
+      "“NA” denotes that an estimate is not reported or not applicable.",
+      "If more than one source of assistance was mentioned, only the provider with the highest qualifications is considered in this tabulation.",
+      "Figures in parentheses are based on 25-49 unweighted cases.",
+      "Details may not add up to total due to rounding."
+    ],
+    "tables": [
+      {
+        "id": "total-live-births",
+        "title": "Total",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "antenatal_care_pct",
+                "field": "antenatal_care_pct",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "anc_4plus_visits_pct",
+                "field": "anc_4plus_visits_pct",
+                "label": "With 4+ ANC visits"
+              },
+              {
+                "key": "anc_8plus_visits_pct",
+                "field": "anc_8plus_visits_pct",
+                "label": "With 8+ ANC visits"
+              },
+              {
+                "key": "iron_supplements_pct",
+                "field": "iron_supplements_pct",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²"
+              },
+              {
+                "key": "neonatal_tetanus_pct",
+                "field": "neonatal_tetanus_pct",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³"
+              },
+              {
+                "key": "women_total",
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "antenatal_care_pct_2022",
+                "field": "antenatal_care_pct_2022",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "antenatal_care_pct_2022_display"
+              },
+              {
+                "key": "anc_4plus_visits_pct_2022",
+                "field": "anc_4plus_visits_pct_2022",
+                "label": "With 4+ ANC visits",
+                "displayKey": "anc_4plus_visits_pct_2022_display"
+              },
+              {
+                "key": "anc_8plus_visits_pct_2022",
+                "field": "anc_8plus_visits_pct_2022",
+                "label": "With 8+ ANC visits",
+                "displayKey": "anc_8plus_visits_pct_2022_display"
+              },
+              {
+                "key": "iron_supplements_pct_2022",
+                "field": "iron_supplements_pct_2022",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²",
+                "displayKey": "iron_supplements_pct_2022_display"
+              },
+              {
+                "key": "neonatal_tetanus_pct_2022",
+                "field": "neonatal_tetanus_pct_2022",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³",
+                "displayKey": "neonatal_tetanus_pct_2022_display"
+              },
+              {
+                "key": "women_total_2022",
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Live births and stillbirths",
+            "noteRef": null,
+            "values": [
+              "87.3",
+              "84.8",
+              "39.9",
+              "87.7",
+              "NA",
+              "2,689",
+              "86.0",
+              "82.9",
+              "29.1",
+              "86.2",
+              "NA",
+              "2,859"
+            ],
+            "chartLabel": "Total",
+            "rowClass": "dt-total-row"
+          },
+          {
+            "label": "Live births",
+            "noteRef": null,
+            "values": [
+              "87.3",
+              "84.9",
+              "40.0",
+              "87.7",
+              "75.9",
+              "2,668",
+              "85.9",
+              "83.0",
+              "29.2",
+              "86.2",
+              "78.4",
+              "2,826"
+            ],
+            "excludeFromCharts": true,
+            "rowClass": "dt-total-row"
+          },
+          {
+            "label": "Stillbirths",
+            "noteRef": null,
+            "values": [
+              "(77.8)",
+              "(72.0)",
+              "(34.6)",
+              "(90.4)",
+              "NA",
+              "28",
+              "(97.3)",
+              "(76.3)",
+              "(22.6)",
+              "(85.0)",
+              "NA",
+              "39"
+            ],
+            "excludeFromCharts": true,
+            "rowClass": "dt-total-row"
+          }
+        ]
+      },
+      {
+        "id": "mothers-age-at-birth",
+        "title": "Mother's age at birth (in years)",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "antenatal_care_pct",
+                "field": "antenatal_care_pct",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "anc_4plus_visits_pct",
+                "field": "anc_4plus_visits_pct",
+                "label": "With 4+ ANC visits"
+              },
+              {
+                "key": "anc_8plus_visits_pct",
+                "field": "anc_8plus_visits_pct",
+                "label": "With 8+ ANC visits"
+              },
+              {
+                "key": "iron_supplements_pct",
+                "field": "iron_supplements_pct",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²"
+              },
+              {
+                "key": "neonatal_tetanus_pct",
+                "field": "neonatal_tetanus_pct",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³"
+              },
+              {
+                "key": "women_total",
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "antenatal_care_pct_2022",
+                "field": "antenatal_care_pct_2022",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "antenatal_care_pct_2022_display"
+              },
+              {
+                "key": "anc_4plus_visits_pct_2022",
+                "field": "anc_4plus_visits_pct_2022",
+                "label": "With 4+ ANC visits",
+                "displayKey": "anc_4plus_visits_pct_2022_display"
+              },
+              {
+                "key": "anc_8plus_visits_pct_2022",
+                "field": "anc_8plus_visits_pct_2022",
+                "label": "With 8+ ANC visits",
+                "displayKey": "anc_8plus_visits_pct_2022_display"
+              },
+              {
+                "key": "iron_supplements_pct_2022",
+                "field": "iron_supplements_pct_2022",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²",
+                "displayKey": "iron_supplements_pct_2022_display"
+              },
+              {
+                "key": "neonatal_tetanus_pct_2022",
+                "field": "neonatal_tetanus_pct_2022",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³",
+                "displayKey": "neonatal_tetanus_pct_2022_display"
+              },
+              {
+                "key": "women_total_2022",
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "<20",
+            "noteRef": null,
+            "values": [
+              "84.6",
+              "82.2",
+              "25.8",
+              "82.3",
+              "69.4",
+              "251",
+              "84.3",
+              "76.1",
+              "20.4",
+              "85.1",
+              "73.3",
+              "251"
+            ]
+          },
+          {
+            "label": "20-34",
+            "noteRef": null,
+            "values": [
+              "87.8",
+              "85.8",
+              "42.8",
+              "87.8",
+              "78.0",
+              "1,847",
+              "86.0",
+              "83.9",
+              "29.0",
+              "86.1",
+              "80.4",
+              "2,069"
+            ]
+          },
+          {
+            "label": "35-49",
+            "noteRef": null,
+            "values": [
+              "86.8",
+              "83.1",
+              "37.0",
+              "89.6",
+              "71.9",
+              "570",
+              "86.6",
+              "83.0",
+              "34.2",
+              "87.0",
+              "72.8",
+              "506"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "residence",
+        "title": "Residence",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "antenatal_care_pct",
+                "field": "antenatal_care_pct",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "anc_4plus_visits_pct",
+                "field": "anc_4plus_visits_pct",
+                "label": "With 4+ ANC visits"
+              },
+              {
+                "key": "anc_8plus_visits_pct",
+                "field": "anc_8plus_visits_pct",
+                "label": "With 8+ ANC visits"
+              },
+              {
+                "key": "iron_supplements_pct",
+                "field": "iron_supplements_pct",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²"
+              },
+              {
+                "key": "neonatal_tetanus_pct",
+                "field": "neonatal_tetanus_pct",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³"
+              },
+              {
+                "key": "women_total",
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "antenatal_care_pct_2022",
+                "field": "antenatal_care_pct_2022",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "antenatal_care_pct_2022_display"
+              },
+              {
+                "key": "anc_4plus_visits_pct_2022",
+                "field": "anc_4plus_visits_pct_2022",
+                "label": "With 4+ ANC visits",
+                "displayKey": "anc_4plus_visits_pct_2022_display"
+              },
+              {
+                "key": "anc_8plus_visits_pct_2022",
+                "field": "anc_8plus_visits_pct_2022",
+                "label": "With 8+ ANC visits",
+                "displayKey": "anc_8plus_visits_pct_2022_display"
+              },
+              {
+                "key": "iron_supplements_pct_2022",
+                "field": "iron_supplements_pct_2022",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²",
+                "displayKey": "iron_supplements_pct_2022_display"
+              },
+              {
+                "key": "neonatal_tetanus_pct_2022",
+                "field": "neonatal_tetanus_pct_2022",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³",
+                "displayKey": "neonatal_tetanus_pct_2022_display"
+              },
+              {
+                "key": "women_total_2022",
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": null,
+            "values": [
+              "88.6",
+              "89.0",
+              "47.3",
+              "89.3",
+              "76.0",
+              "1,340",
+              "86.3",
+              "86.0",
+              "34.0",
+              "88.1",
+              "79.7",
+              "1,413"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": null,
+            "values": [
+              "86.0",
+              "80.7",
+              "32.6",
+              "86.0",
+              "75.8",
+              "1,328",
+              "85.5",
+              "80.0",
+              "24.3",
+              "84.3",
+              "77.1",
+              "1,414"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "antenatal_care_pct",
+                "field": "antenatal_care_pct",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "anc_4plus_visits_pct",
+                "field": "anc_4plus_visits_pct",
+                "label": "With 4+ ANC visits"
+              },
+              {
+                "key": "anc_8plus_visits_pct",
+                "field": "anc_8plus_visits_pct",
+                "label": "With 8+ ANC visits"
+              },
+              {
+                "key": "iron_supplements_pct",
+                "field": "iron_supplements_pct",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²"
+              },
+              {
+                "key": "neonatal_tetanus_pct",
+                "field": "neonatal_tetanus_pct",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³"
+              },
+              {
+                "key": "women_total",
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "antenatal_care_pct_2022",
+                "field": "antenatal_care_pct_2022",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "antenatal_care_pct_2022_display"
+              },
+              {
+                "key": "anc_4plus_visits_pct_2022",
+                "field": "anc_4plus_visits_pct_2022",
+                "label": "With 4+ ANC visits",
+                "displayKey": "anc_4plus_visits_pct_2022_display"
+              },
+              {
+                "key": "anc_8plus_visits_pct_2022",
+                "field": "anc_8plus_visits_pct_2022",
+                "label": "With 8+ ANC visits",
+                "displayKey": "anc_8plus_visits_pct_2022_display"
+              },
+              {
+                "key": "iron_supplements_pct_2022",
+                "field": "iron_supplements_pct_2022",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²",
+                "displayKey": "iron_supplements_pct_2022_display"
+              },
+              {
+                "key": "neonatal_tetanus_pct_2022",
+                "field": "neonatal_tetanus_pct_2022",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³",
+                "displayKey": "neonatal_tetanus_pct_2022_display"
+              },
+              {
+                "key": "women_total_2022",
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": null,
+            "values": [
+              "91.6",
+              "92.6",
+              "55.3",
+              "89.7",
+              "84.4",
+              "315",
+              "82.2",
+              "84.8",
+              "35.3",
+              "83.4",
+              "81.6",
+              "274"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": null,
+            "values": [
+              "95.6",
+              "89.8",
+              "56.6",
+              "89.6",
+              "71.3",
+              "47",
+              "89.1",
+              "78.6",
+              "29.4",
+              "93.2",
+              "64.1",
+              "50"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": null,
+            "values": [
+              "94.3",
+              "78.4",
+              "22.5",
+              "86.4",
+              "76.2",
+              "245",
+              "87.7",
+              "90.4",
+              "36.9",
+              "87.3",
+              "72.8",
+              "146"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": null,
+            "values": [
+              "88.4",
+              "82.8",
+              "46.9",
+              "88.4",
+              "81.2",
+              "65",
+              "97.2",
+              "81.4",
+              "32.5",
+              "94.5",
+              "94.4",
+              "101"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": null,
+            "values": [
+              "90.9",
+              "90.9",
+              "53.8",
+              "90.0",
+              "76.4",
+              "359",
+              "94.9",
+              "92.9",
+              "40.8",
+              "87.9",
+              "84.5",
+              "304"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": null,
+            "values": [
+              "90.3",
+              "91.2",
+              "58.9",
+              "90.3",
+              "75.6",
+              "271",
+              "91.3",
+              "92.2",
+              "49.8",
+              "91.2",
+              "84.4",
+              "415"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": null,
+            "values": [
+              "85.7",
+              "80.0",
+              "25.6",
+              "82.9",
+              "75.6",
+              "80",
+              "89.4",
+              "75.9",
+              "23.1",
+              "74.7",
+              "82.6",
+              "88"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": null,
+            "values": [
+              "88.0",
+              "82.3",
+              "28.6",
+              "84.0",
+              "76.0",
+              "120",
+              "86.9",
+              "76.1",
+              "25.1",
+              "83.2",
+              "78.4",
+              "131"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": null,
+            "values": [
+              "98.5",
+              "91.3",
+              "47.7",
+              "97.7",
+              "82.8",
+              "107",
+              "96.9",
+              "85.6",
+              "21.8",
+              "93.0",
+              "78.8",
+              "226"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": null,
+            "values": [
+              "90.1",
+              "77.5",
+              "33.3",
+              "89.5",
+              "76.2",
+              "108",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": null,
+            "values": [
+              "76.0",
+              "94.0",
+              "64.3",
+              "95.1",
+              "79.2",
+              "164",
+              "86.6",
+              "90.1",
+              "35.1",
+              "93.8",
+              "68.8",
+              "205"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": null,
+            "values": [
+              "93.0",
+              "87.4",
+              "33.5",
+              "84.9",
+              "77.2",
+              "115",
+              "98.9",
+              "88.5",
+              "20.6",
+              "86.8",
+              "94.9",
+              "90"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "⁶",
+            "values": [
+              "87.1",
+              "79.2",
+              "22.8",
+              "83.3",
+              "74.4",
+              "141",
+              "70.7",
+              "84.6",
+              "9.9",
+              "78.9",
+              "77.6",
+              "129"
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": null,
+            "values": [
+              "78.5",
+              "78.5",
+              "16.1",
+              "85.2",
+              "66.4",
+              "118",
+              "87.2",
+              "84.4",
+              "9.5",
+              "83.4",
+              "75.6",
+              "120"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": null,
+            "values": [
+              "90.9",
+              "91.1",
+              "27.3",
+              "97.5",
+              "77.9",
+              "119",
+              "87.9",
+              "91.3",
+              "17.6",
+              "97.7",
+              "84.6",
+              "144"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": null,
+            "values": [
+              "71.2",
+              "81.5",
+              "19.8",
+              "83.4",
+              "73.0",
+              "94",
+              "73.9",
+              "73.6",
+              "14.1",
+              "77.3",
+              "73.1",
+              "150"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": null,
+            "values": [
+              "87.9",
+              "94.3",
+              "29.3",
+              "87.5",
+              "69.5",
+              "71",
+              "92.1",
+              "91.8",
+              "27.5",
+              "88.7",
+              "73.8",
+              "76"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": null,
+            "values": [
+              "57.2",
+              "43.3",
+              "14.0",
+              "62.6",
+              "54.8",
+              "127",
+              "47.5",
+              "27.9",
+              "6.3",
+              "63.2",
+              "52.6",
+              "178"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mothers-educational-attainment",
+        "title": "Mother's educational attainment",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "antenatal_care_pct",
+                "field": "antenatal_care_pct",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "anc_4plus_visits_pct",
+                "field": "anc_4plus_visits_pct",
+                "label": "With 4+ ANC visits"
+              },
+              {
+                "key": "anc_8plus_visits_pct",
+                "field": "anc_8plus_visits_pct",
+                "label": "With 8+ ANC visits"
+              },
+              {
+                "key": "iron_supplements_pct",
+                "field": "iron_supplements_pct",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²"
+              },
+              {
+                "key": "neonatal_tetanus_pct",
+                "field": "neonatal_tetanus_pct",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³"
+              },
+              {
+                "key": "women_total",
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "antenatal_care_pct_2022",
+                "field": "antenatal_care_pct_2022",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "antenatal_care_pct_2022_display"
+              },
+              {
+                "key": "anc_4plus_visits_pct_2022",
+                "field": "anc_4plus_visits_pct_2022",
+                "label": "With 4+ ANC visits",
+                "displayKey": "anc_4plus_visits_pct_2022_display"
+              },
+              {
+                "key": "anc_8plus_visits_pct_2022",
+                "field": "anc_8plus_visits_pct_2022",
+                "label": "With 8+ ANC visits",
+                "displayKey": "anc_8plus_visits_pct_2022_display"
+              },
+              {
+                "key": "iron_supplements_pct_2022",
+                "field": "iron_supplements_pct_2022",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²",
+                "displayKey": "iron_supplements_pct_2022_display"
+              },
+              {
+                "key": "neonatal_tetanus_pct_2022",
+                "field": "neonatal_tetanus_pct_2022",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³",
+                "displayKey": "neonatal_tetanus_pct_2022_display"
+              },
+              {
+                "key": "women_total_2022",
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": null,
+            "values": [
+              "(49.8)",
+              "(48.2)",
+              "(24.1)",
+              "(41.5)",
+              "(47.0)",
+              "19",
+              "(49.7)",
+              "(28.9)",
+              "(6.0)",
+              "(54.5)",
+              "(42.4)",
+              "27"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": null,
+            "values": [
+              "76.1",
+              "69.2",
+              "14.7",
+              "80.1",
+              "66.7",
+              "267",
+              "74.1",
+              "64.9",
+              "14.5",
+              "72.8",
+              "69.3",
+              "319"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": null,
+            "values": [
+              "84.1",
+              "81.9",
+              "34.9",
+              "84.9",
+              "75.7",
+              "1,065",
+              "84.4",
+              "82.3",
+              "22.4",
+              "86.1",
+              "80.2",
+              "1,267"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": null,
+            "values": [
+              "86.2",
+              "87.5",
+              "37.1",
+              "88.1",
+              "76.9",
+              "310",
+              "88.9",
+              "85.9",
+              "30.3",
+              "85.7",
+              "74.5",
+              "190"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": null,
+            "values": [
+              "89.6",
+              "85.0",
+              "54.2",
+              "91.9",
+              "83.9",
+              "59",
+              "94.5",
+              "89.0",
+              "33.3",
+              "76.3",
+              "85.8",
+              "54"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": null,
+            "values": [
+              "95.0",
+              "92.6",
+              "53.2",
+              "93.5",
+              "78.4",
+              "947",
+              "91.7",
+              "90.5",
+              "42.9",
+              "92.4",
+              "80.4",
+              "969"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth-quintile",
+        "title": "Wealth quintile",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "antenatal_care_pct",
+                "field": "antenatal_care_pct",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹"
+              },
+              {
+                "key": "anc_4plus_visits_pct",
+                "field": "anc_4plus_visits_pct",
+                "label": "With 4+ ANC visits"
+              },
+              {
+                "key": "anc_8plus_visits_pct",
+                "field": "anc_8plus_visits_pct",
+                "label": "With 8+ ANC visits"
+              },
+              {
+                "key": "iron_supplements_pct",
+                "field": "iron_supplements_pct",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²"
+              },
+              {
+                "key": "neonatal_tetanus_pct",
+                "field": "neonatal_tetanus_pct",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³"
+              },
+              {
+                "key": "women_total",
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "antenatal_care_pct_2022",
+                "field": "antenatal_care_pct_2022",
+                "label": "Receiving antenatal care from a skilled provider",
+                "noteRef": "¹",
+                "displayKey": "antenatal_care_pct_2022_display"
+              },
+              {
+                "key": "anc_4plus_visits_pct_2022",
+                "field": "anc_4plus_visits_pct_2022",
+                "label": "With 4+ ANC visits",
+                "displayKey": "anc_4plus_visits_pct_2022_display"
+              },
+              {
+                "key": "anc_8plus_visits_pct_2022",
+                "field": "anc_8plus_visits_pct_2022",
+                "label": "With 8+ ANC visits",
+                "displayKey": "anc_8plus_visits_pct_2022_display"
+              },
+              {
+                "key": "iron_supplements_pct_2022",
+                "field": "iron_supplements_pct_2022",
+                "label": "Took any iron-containing supplements during pregnancy",
+                "noteRef": "²",
+                "displayKey": "iron_supplements_pct_2022_display"
+              },
+              {
+                "key": "neonatal_tetanus_pct_2022",
+                "field": "neonatal_tetanus_pct_2022",
+                "label": "Most recent live birth protected against neonatal tetanus",
+                "noteRef": "³",
+                "displayKey": "neonatal_tetanus_pct_2022_display"
+              },
+              {
+                "key": "women_total_2022",
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": null,
+            "values": [
+              "80.0",
+              "73.6",
+              "20.7",
+              "80.7",
+              "73.1",
+              "676",
+              "73.5",
+              "65.6",
+              "12.6",
+              "77.5",
+              "73.1",
+              "779"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": null,
+            "values": [
+              "86.1",
+              "81.7",
+              "28.8",
+              "88.5",
+              "76.0",
+              "599",
+              "83.2",
+              "84.6",
+              "20.4",
+              "85.8",
+              "76.6",
+              "530"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": null,
+            "values": [
+              "88.1",
+              "88.5",
+              "44.4",
+              "89.0",
+              "77.3",
+              "575",
+              "90.1",
+              "86.2",
+              "28.8",
+              "88.0",
+              "84.6",
+              "614"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": null,
+            "values": [
+              "92.1",
+              "92.3",
+              "56.0",
+              "87.4",
+              "79.7",
+              "464",
+              "94.3",
+              "92.3",
+              "39.7",
+              "91.5",
+              "82.3",
+              "453"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": null,
+            "values": [
+              "95.6",
+              "96.5",
+              "67.5",
+              "97.8",
+              "73.7",
+              "354",
+              "96.5",
+              "97.6",
+              "58.1",
+              "94.0",
+              "77.3",
+              "450"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

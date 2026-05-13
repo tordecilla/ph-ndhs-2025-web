@@ -1,0 +1,601 @@
+{
+  "sectionTitle": "Maternal Care",
+  "title": "Postnatal Check",
+  "description": "Among women aged 15 to 49 years with a live birth or stillbirth in the 2 years preceding the survey, percentage who received a postnatal check during the first 2 days after giving birth. Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Selected postnatal check indicators by background characteristic and region: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Postnatal Check",
+    "subtitle": "Among women aged 15 to 49 years with a live birth or stillbirth in the 2 years preceding the survey, percentage who received a postnatal check during the first 2 days after giving birth, according to background characteristics: Philippines, 2022 and 2025",
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+    "footnotes": [
+      "⁴ Includes women who received a check from a doctor, nurse, midwife, traditional birth attendant/hilot, or barangay health worker.",
+      "⁶ Region IX includes the province of Sulu in 2025.",
+      "Figures in parentheses are based on 25-49 unweighted cases.",
+      "“NA” denotes that an estimate is not reported or not applicable.",
+      "Details may not add up to total due to rounding."
+    ],
+    "tables": [
+      {
+        "id": "total-live-births",
+        "title": "Total",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "postnatal_check_pct",
+                "field": "postnatal_check_pct",
+                "label": "Postnatal check during the first 2 days after birth",
+                "noteRef": "⁴"
+              },
+              {
+                "key": "women_total",
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "postnatal_check_pct_2022",
+                "field": "postnatal_check_pct_2022",
+                "label": "Postnatal check during the first 2 days after birth",
+                "noteRef": "⁴",
+                "displayKey": "postnatal_check_pct_2022_display"
+              },
+              {
+                "key": "women_total_2022",
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Live births and stillbirths",
+            "noteRef": null,
+            "values": [
+              "76.5",
+              "2,689",
+              "75.5",
+              "2,859"
+            ],
+            "chartLabel": "Total",
+            "rowClass": "dt-total-row"
+          },
+          {
+            "label": "Live births",
+            "noteRef": null,
+            "values": [
+              "76.6",
+              "2,668",
+              "75.4",
+              "2,826"
+            ],
+            "excludeFromCharts": true,
+            "rowClass": "dt-total-row"
+          },
+          {
+            "label": "Stillbirths",
+            "noteRef": null,
+            "values": [
+              "(69.7)",
+              "28",
+              "(85.7)",
+              "39"
+            ],
+            "excludeFromCharts": true,
+            "rowClass": "dt-total-row"
+          }
+        ]
+      },
+      {
+        "id": "mothers-age-at-birth",
+        "title": "Mother's age at birth (in years)",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "postnatal_check_pct",
+                "field": "postnatal_check_pct",
+                "label": "Postnatal check during the first 2 days after birth",
+                "noteRef": "⁴"
+              },
+              {
+                "key": "women_total",
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "postnatal_check_pct_2022",
+                "field": "postnatal_check_pct_2022",
+                "label": "Postnatal check during the first 2 days after birth",
+                "noteRef": "⁴",
+                "displayKey": "postnatal_check_pct_2022_display"
+              },
+              {
+                "key": "women_total_2022",
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "<20",
+            "noteRef": null,
+            "values": [
+              "73.0",
+              "251",
+              "67.5",
+              "251"
+            ]
+          },
+          {
+            "label": "20-34",
+            "noteRef": null,
+            "values": [
+              "77.0",
+              "1,847",
+              "76.7",
+              "2,069"
+            ]
+          },
+          {
+            "label": "35-49",
+            "noteRef": null,
+            "values": [
+              "76.7",
+              "570",
+              "73.9",
+              "506"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mothers-educational-attainment",
+        "title": "Mother's educational attainment",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "postnatal_check_pct",
+                "field": "postnatal_check_pct",
+                "label": "Postnatal check during the first 2 days after birth",
+                "noteRef": "⁴"
+              },
+              {
+                "key": "women_total",
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "postnatal_check_pct_2022",
+                "field": "postnatal_check_pct_2022",
+                "label": "Postnatal check during the first 2 days after birth",
+                "noteRef": "⁴",
+                "displayKey": "postnatal_check_pct_2022_display"
+              },
+              {
+                "key": "women_total_2022",
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": null,
+            "values": [
+              "(54.2)",
+              "19",
+              "(54.5)",
+              "27"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": null,
+            "values": [
+              "68.7",
+              "267",
+              "63.4",
+              "319"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": null,
+            "values": [
+              "75.3",
+              "1,065",
+              "74.9",
+              "1,267"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": null,
+            "values": [
+              "81.8",
+              "310",
+              "80.6",
+              "190"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": null,
+            "values": [
+              "77.8",
+              "59",
+              "75.6",
+              "54"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": null,
+            "values": [
+              "79.0",
+              "947",
+              "79.5",
+              "969"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth-quintile",
+        "title": "Wealth quintile",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "postnatal_check_pct",
+                "field": "postnatal_check_pct",
+                "label": "Postnatal check during the first 2 days after birth",
+                "noteRef": "⁴"
+              },
+              {
+                "key": "women_total",
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "postnatal_check_pct_2022",
+                "field": "postnatal_check_pct_2022",
+                "label": "Postnatal check during the first 2 days after birth",
+                "noteRef": "⁴",
+                "displayKey": "postnatal_check_pct_2022_display"
+              },
+              {
+                "key": "women_total_2022",
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": null,
+            "values": [
+              "71.6",
+              "676",
+              "69.4",
+              "779"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": null,
+            "values": [
+              "79.0",
+              "599",
+              "77.8",
+              "530"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": null,
+            "values": [
+              "79.4",
+              "575",
+              "81.8",
+              "614"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": null,
+            "values": [
+              "78.5",
+              "464",
+              "76.1",
+              "453"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": null,
+            "values": [
+              "75.0",
+              "354",
+              "73.5",
+              "450"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "postnatal_check_pct",
+                "field": "postnatal_check_pct",
+                "label": "Postnatal check during the first 2 days after birth",
+                "noteRef": "⁴"
+              },
+              {
+                "key": "women_total",
+                "field": "women_total",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_display"
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "postnatal_check_pct_2022",
+                "field": "postnatal_check_pct_2022",
+                "label": "Postnatal check during the first 2 days after birth",
+                "noteRef": "⁴",
+                "displayKey": "postnatal_check_pct_2022_display"
+              },
+              {
+                "key": "women_total_2022",
+                "field": "women_total_2022",
+                "label": "Total number of women aged 15 to 49 years",
+                "isCount": true,
+                "displayKey": "women_total_2022_display"
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": null,
+            "values": [
+              "76.2",
+              "315",
+              "68.6",
+              "274"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": null,
+            "values": [
+              "78.4",
+              "47",
+              "84.9",
+              "50"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": null,
+            "values": [
+              "81.1",
+              "245",
+              "62.6",
+              "146"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": null,
+            "values": [
+              "61.2",
+              "65",
+              "79.9",
+              "101"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": null,
+            "values": [
+              "74.0",
+              "359",
+              "67.9",
+              "304"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": null,
+            "values": [
+              "80.3",
+              "271",
+              "73.0",
+              "415"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": null,
+            "values": [
+              "62.0",
+              "80",
+              "75.8",
+              "88"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": null,
+            "values": [
+              "78.5",
+              "120",
+              "89.0",
+              "131"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": null,
+            "values": [
+              "91.4",
+              "107",
+              "88.6",
+              "226"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": null,
+            "values": [
+              "72.7",
+              "108",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": null,
+            "values": [
+              "77.5",
+              "164",
+              "89.3",
+              "205"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": null,
+            "values": [
+              "73.9",
+              "115",
+              "81.5",
+              "90"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "⁶",
+            "values": [
+              "72.3",
+              "141",
+              "79.0",
+              "129"
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": null,
+            "values": [
+              "86.5",
+              "118",
+              "89.6",
+              "120"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": null,
+            "values": [
+              "89.0",
+              "119",
+              "82.9",
+              "144"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": null,
+            "values": [
+              "75.4",
+              "94",
+              "72.0",
+              "150"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": null,
+            "values": [
+              "86.2",
+              "71",
+              "84.8",
+              "76"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": null,
+            "values": [
+              "54.1",
+              "127",
+              "44.5",
+              "178"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

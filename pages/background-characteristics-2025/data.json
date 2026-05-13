@@ -1,0 +1,662 @@
+{
+  "title": "Background Characteristics of Respondents",
+  "subtitle": "Percent distribution of women aged 15-49 years: Philippines, 2022 and 2025",
+  "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+  "dataTables": {
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey",
+    "tables": [
+      {
+        "id": "age_group_years",
+        "title": "Age group (years)",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          {
+            "label": "15-19",
+            "noteRef": null,
+            "values": [
+              "19.2",
+              "19.9"
+            ]
+          },
+          {
+            "label": "20-24",
+            "noteRef": null,
+            "values": [
+              "15.6",
+              "16.8"
+            ]
+          },
+          {
+            "label": "25-29",
+            "noteRef": null,
+            "values": [
+              "14.1",
+              "14.0"
+            ]
+          },
+          {
+            "label": "30-34",
+            "noteRef": null,
+            "values": [
+              "14.0",
+              "13.4"
+            ]
+          },
+          {
+            "label": "35-39",
+            "noteRef": null,
+            "values": [
+              "13.6",
+              "12.3"
+            ]
+          },
+          {
+            "label": "40-44",
+            "noteRef": null,
+            "values": [
+              "12.3",
+              "12.2"
+            ]
+          },
+          {
+            "label": "45-49",
+            "noteRef": null,
+            "values": [
+              "11.3",
+              "11.4"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "self_reported_health_status",
+        "title": "Self-reported health status",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          {
+            "label": "Very good",
+            "noteRef": null,
+            "values": [
+              "24.1",
+              "21.7"
+            ]
+          },
+          {
+            "label": "Good",
+            "noteRef": null,
+            "values": [
+              "51.4",
+              "54.0"
+            ]
+          },
+          {
+            "label": "Moderate",
+            "noteRef": null,
+            "values": [
+              "22.5",
+              "23.1"
+            ]
+          },
+          {
+            "label": "Bad",
+            "noteRef": null,
+            "values": [
+              "1.8",
+              "1.1"
+            ]
+          },
+          {
+            "label": "Very bad",
+            "noteRef": null,
+            "values": [
+              "0.2",
+              "0.1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "religion",
+        "title": "Religion",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          {
+            "label": "Roman Catholic",
+            "noteRef": null,
+            "values": [
+              "77.9",
+              "76.5"
+            ]
+          },
+          {
+            "label": "Protestant",
+            "noteRef": "¹",
+            "values": [
+              "12.6",
+              "9.5"
+            ]
+          },
+          {
+            "label": "Iglesia ni Cristo",
+            "noteRef": null,
+            "values": [
+              "2.8",
+              "2.9"
+            ]
+          },
+          {
+            "label": "Aglipay",
+            "noteRef": null,
+            "values": [
+              "0.5",
+              "1.4"
+            ]
+          },
+          {
+            "label": "Islam",
+            "noteRef": null,
+            "values": [
+              "5.6",
+              "6.6"
+            ]
+          },
+          {
+            "label": "Other",
+            "noteRef": null,
+            "values": [
+              "0.5",
+              "0.8"
+            ]
+          },
+          {
+            "label": "No religion",
+            "noteRef": null,
+            "values": [
+              "0.1",
+              "0.1"
+            ]
+          },
+          {
+            "label": "Other Christian",
+            "noteRef": null,
+            "values": [
+              "NA",
+              "2.2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ethnic_group",
+        "title": "Ethnic group",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          {
+            "label": "Tagalog",
+            "noteRef": null,
+            "values": [
+              "29.6",
+              "30.0"
+            ]
+          },
+          {
+            "label": "Cebuano",
+            "noteRef": null,
+            "values": [
+              "16.8",
+              "21.7"
+            ]
+          },
+          {
+            "label": "Ilokano",
+            "noteRef": null,
+            "values": [
+              "9.3",
+              "7.5"
+            ]
+          },
+          {
+            "label": "Hiligaynon/Ilonggo",
+            "noteRef": null,
+            "values": [
+              "8.1",
+              "8.4"
+            ]
+          },
+          {
+            "label": "Bikolano",
+            "noteRef": null,
+            "values": [
+              "6.3",
+              "6.7"
+            ]
+          },
+          {
+            "label": "Kapampangan",
+            "noteRef": null,
+            "values": [
+              "3.6",
+              "3.3"
+            ]
+          },
+          {
+            "label": "Maranao",
+            "noteRef": null,
+            "values": [
+              "1.4",
+              "1.6"
+            ]
+          },
+          {
+            "label": "Tausog",
+            "noteRef": null,
+            "values": [
+              "1.4",
+              "1.5"
+            ]
+          },
+          {
+            "label": "Waray",
+            "noteRef": null,
+            "values": [
+              "4.1",
+              "3.6"
+            ]
+          },
+          {
+            "label": "Aeta",
+            "noteRef": null,
+            "values": [
+              "0.1",
+              "0.1"
+            ]
+          },
+          {
+            "label": "Badjao",
+            "noteRef": null,
+            "values": [
+              "0.1",
+              "0.1"
+            ]
+          },
+          {
+            "label": "Other",
+            "noteRef": null,
+            "values": [
+              "19.3",
+              "15.5"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "marital_status",
+        "title": "Marital status",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          {
+            "label": "Never married",
+            "noteRef": null,
+            "values": [
+              "42.7",
+              "41.7"
+            ]
+          },
+          {
+            "label": "Married",
+            "noteRef": null,
+            "values": [
+              "33.7",
+              "36.2"
+            ]
+          },
+          {
+            "label": "Living together",
+            "noteRef": null,
+            "values": [
+              "20.5",
+              "18.8"
+            ]
+          },
+          {
+            "label": "Divorced/separated",
+            "noteRef": null,
+            "values": [
+              "2.4",
+              "2.4"
+            ]
+          },
+          {
+            "label": "Widowed",
+            "noteRef": null,
+            "values": [
+              "0.7",
+              "0.9"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "residence",
+        "title": "Residence",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": null,
+            "values": [
+              "57.5",
+              "56.0"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": null,
+            "values": [
+              "42.5",
+              "44.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": null,
+            "values": [
+              "15.0",
+              "15.4"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": null,
+            "values": [
+              "1.6",
+              "1.6"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": null,
+            "values": [
+              "8.6",
+              "5.3"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": null,
+            "values": [
+              "2.7",
+              "3.0"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": null,
+            "values": [
+              "12.1",
+              "11.1"
+            ]
+          },
+          {
+            "label": "IV-A - CALABARZON",
+            "noteRef": null,
+            "values": [
+              "13.5",
+              "15.2"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": null,
+            "values": [
+              "2.4",
+              "2.6"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": null,
+            "values": [
+              "4.6",
+              "5.1"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": null,
+            "values": [
+              "3.6",
+              "6.6"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": null,
+            "values": [
+              "4.2",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": null,
+            "values": [
+              "6.8",
+              "7.3"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": null,
+            "values": [
+              "3.6",
+              "3.8"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "²",
+            "values": [
+              "4.1",
+              "3.5"
+            ]
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": null,
+            "values": [
+              "4.0",
+              "3.7"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": null,
+            "values": [
+              "4.7",
+              "5.3"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": null,
+            "values": [
+              "3.2",
+              "4.2"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": null,
+            "values": [
+              "2.0",
+              "2.3"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": null,
+            "values": [
+              "3.2",
+              "4.2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "educational_attainment",
+        "title": "Educational attainment",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": null,
+            "values": [
+              "0.8",
+              "0.7"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": null,
+            "values": [
+              "7.5",
+              "9.1"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": null,
+            "values": [
+              "37.2",
+              "43.0"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": null,
+            "values": [
+              "12.3",
+              "9.9"
+            ]
+          },
+          {
+            "label": "Postsecondary",
+            "noteRef": null,
+            "values": [
+              "1.5",
+              "2.2"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": null,
+            "values": [
+              "40.8",
+              "35.1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth_quintile",
+        "title": "Wealth quintile",
+        "columns": [
+          "",
+          "2025",
+          "2022"
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": null,
+            "values": [
+              "17.3",
+              "16.5"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": null,
+            "values": [
+              "18.9",
+              "18.8"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": null,
+            "values": [
+              "20.7",
+              "20.4"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": null,
+            "values": [
+              "21.9",
+              "21.7"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": null,
+            "values": [
+              "21.3",
+              "22.6"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ Includes Other Christian in 2025",
+      "²  Region IX includes the province of Sulu in 2025."
+    ],
+    "notes": [
+      "“NA” denotes that an estimate is not reported.",
+      "1. Details may not add up to total due to rounding.",
+      "2. Education categories across the report refer to the highest level of education attended, whether or not that level was completed."
+    ]
+  }
+}

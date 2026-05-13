@@ -1,0 +1,1045 @@
+{
+  "sectionTitle": "Vaccinations",
+  "title": "Children Aged 12 to 23 Months - PCV Vaccinations",
+  "description": "Percentage of children aged 12 to 23 months who received PCV vaccines at any time before the survey (according to a vaccination card or the mother's report). Source: Philippine Statistics Authority, 2025 National Demographic and Health Survey.",
+  "subtitle": "Percentage of children aged 12 to 23 months who received PCV vaccines at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
+  "dataTables": {
+    "title": "Children Aged 12 to 23 Months - PCV Vaccinations",
+    "subtitle": "Percentage of children aged 12 to 23 months who received PCV vaccines at any time before the survey (according to a vaccination card or the mother's report), according to background characteristics: Philippines, 2022 and 2025",
+    "tables": [
+      {
+        "id": "total",
+        "title": "Total",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "pcv1",
+                "field": "pcv1",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2",
+                "field": "pcv2",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3",
+                "field": "pcv3",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "pcv1_2022",
+                "field": "pcv1_2022",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2_2022",
+                "field": "pcv2_2022",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3_2022",
+                "field": "pcv3_2022",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Total",
+            "noteRef": "",
+            "values": [
+              "90.9",
+              "85.1",
+              "77.7",
+              "81.8",
+              "78.0",
+              "71.5"
+            ],
+            "rowClass": "dt-total-row"
+          }
+        ]
+      },
+      {
+        "id": "sex",
+        "title": "Sex",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "pcv1",
+                "field": "pcv1",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2",
+                "field": "pcv2",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3",
+                "field": "pcv3",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "pcv1_2022",
+                "field": "pcv1_2022",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2_2022",
+                "field": "pcv2_2022",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3_2022",
+                "field": "pcv3_2022",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Male",
+            "noteRef": "",
+            "values": [
+              "91.0",
+              "84.2",
+              "75.7",
+              "82.6",
+              "78.3",
+              "71.2"
+            ]
+          },
+          {
+            "label": "Female",
+            "noteRef": "",
+            "values": [
+              "90.6",
+              "86.2",
+              "80.1",
+              "81.1",
+              "77.8",
+              "71.8"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "birth_order",
+        "title": "Birth order",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "pcv1",
+                "field": "pcv1",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2",
+                "field": "pcv2",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3",
+                "field": "pcv3",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "pcv1_2022",
+                "field": "pcv1_2022",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2_2022",
+                "field": "pcv2_2022",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3_2022",
+                "field": "pcv3_2022",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "1",
+            "noteRef": "",
+            "values": [
+              "93.8",
+              "88.3",
+              "83.0",
+              "87.4",
+              "85.2",
+              "79.1"
+            ]
+          },
+          {
+            "label": "2-3",
+            "noteRef": "",
+            "values": [
+              "90.1",
+              "84.7",
+              "76.3",
+              "84.9",
+              "80.4",
+              "72.7"
+            ]
+          },
+          {
+            "label": "4-5",
+            "noteRef": "",
+            "values": [
+              "88.1",
+              "83.4",
+              "74.0",
+              "71.8",
+              "67.3",
+              "63.5"
+            ]
+          },
+          {
+            "label": "6+",
+            "noteRef": "",
+            "values": [
+              "85.8",
+              "72.7",
+              "64.8",
+              "59.6",
+              "55.0",
+              "48.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vaccination_card",
+        "title": "Vaccination card⁵",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "pcv1",
+                "field": "pcv1",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2",
+                "field": "pcv2",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3",
+                "field": "pcv3",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "pcv1_2022",
+                "field": "pcv1_2022",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2_2022",
+                "field": "pcv2_2022",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3_2022",
+                "field": "pcv3_2022",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Seen",
+            "noteRef": "",
+            "values": [
+              "97.6",
+              "94.3",
+              "91.7",
+              "96.1",
+              "93.3",
+              "89.2"
+            ]
+          },
+          {
+            "label": "Not seen or no longer has",
+            "noteRef": "",
+            "values": [
+              "83.3",
+              "71.1",
+              "50.3",
+              "65.5",
+              "58.8",
+              "44.9"
+            ]
+          },
+          {
+            "label": "Never had",
+            "noteRef": "",
+            "values": [
+              "40.0",
+              "32.2",
+              "25.0",
+              "17.1",
+              "14.3",
+              "10.9"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "residence",
+        "title": "Residence",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "pcv1",
+                "field": "pcv1",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2",
+                "field": "pcv2",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3",
+                "field": "pcv3",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "pcv1_2022",
+                "field": "pcv1_2022",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2_2022",
+                "field": "pcv2_2022",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3_2022",
+                "field": "pcv3_2022",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Urban",
+            "noteRef": "",
+            "values": [
+              "91.6",
+              "85.4",
+              "77.9",
+              "82.4",
+              "79.6",
+              "71.9"
+            ]
+          },
+          {
+            "label": "Rural",
+            "noteRef": "",
+            "values": [
+              "90.2",
+              "84.8",
+              "77.5",
+              "81.2",
+              "76.5",
+              "71.1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "title": "Region",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "pcv1",
+                "field": "pcv1",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2",
+                "field": "pcv2",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3",
+                "field": "pcv3",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "pcv1_2022",
+                "field": "pcv1_2022",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2_2022",
+                "field": "pcv2_2022",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3_2022",
+                "field": "pcv3_2022",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "National Capital Region (NCR)",
+            "noteRef": "",
+            "values": [
+              "89.8",
+              "79.2",
+              "74.5",
+              "79.9",
+              "75.9",
+              "66.7"
+            ]
+          },
+          {
+            "label": "Cordillera Administrative Region (CAR)",
+            "noteRef": "",
+            "values": [
+              "78.4",
+              "74.0",
+              "69.7",
+              "86.9",
+              "84.1",
+              "79.9"
+            ]
+          },
+          {
+            "label": "I - Ilocos Region",
+            "noteRef": "",
+            "values": [
+              "100.0",
+              "99.6",
+              "97.1",
+              "90.4",
+              "85.0",
+              "82.0"
+            ]
+          },
+          {
+            "label": "II - Cagayan Valley",
+            "noteRef": "",
+            "values": [
+              "94.5",
+              "93.5",
+              "89.4",
+              "92.4",
+              "92.3",
+              "85.4"
+            ]
+          },
+          {
+            "label": "III - Central Luzon",
+            "noteRef": "",
+            "values": [
+              "95.2",
+              "90.9",
+              "83.4",
+              "89.2",
+              "84.1",
+              "75.4"
+            ]
+          },
+          {
+            "label": "IVA - CALABARZON",
+            "noteRef": "",
+            "values": [
+              "97.3",
+              "93.6",
+              "83.6",
+              "94.1",
+              "94.1",
+              "89.0"
+            ]
+          },
+          {
+            "label": "MIMAROPA Region",
+            "noteRef": "",
+            "values": [
+              "92.7",
+              "89.0",
+              "78.2",
+              "77.1",
+              "72.4",
+              "60.2"
+            ]
+          },
+          {
+            "label": "V - Bicol Region",
+            "noteRef": "",
+            "values": [
+              "98.4",
+              "96.2",
+              "88.3",
+              "94.0",
+              "94.0",
+              "86.1"
+            ]
+          },
+          {
+            "label": "VI - Western Visayas",
+            "noteRef": "",
+            "values": [
+              "98.6",
+              "93.3",
+              "92.1",
+              "85.3",
+              "82.1",
+              "77.2"
+            ]
+          },
+          {
+            "label": "Negros Island Region (NIR)",
+            "noteRef": "",
+            "values": [
+              "(100.0)",
+              "(95.0)",
+              "(79.8)",
+              "NA",
+              "NA",
+              "NA"
+            ]
+          },
+          {
+            "label": "VII - Central Visayas",
+            "noteRef": "",
+            "values": [
+              "(91.8)",
+              "(85.0)",
+              "(68.2)",
+              "87.3",
+              "80.9",
+              "77.6"
+            ]
+          },
+          {
+            "label": "VIII - Eastern Visayas",
+            "noteRef": "",
+            "values": [
+              "94.3",
+              "84.7",
+              "77.2",
+              "89.2",
+              "84.0",
+              "82.6"
+            ]
+          },
+          {
+            "label": "IX - Zamboanga Peninsula",
+            "noteRef": "⁵",
+            "values": [
+              "71.8",
+              "71.8",
+              "62.3",
+              "77.4",
+              "73.6",
+              "71.9"
+            ],
+            "note": "Region IX includes the province of Sulu in 2025."
+          },
+          {
+            "label": "X - Northern Mindanao",
+            "noteRef": "",
+            "values": [
+              "84.1",
+              "77.1",
+              "69.7",
+              "86.7",
+              "84.3",
+              "68.0"
+            ]
+          },
+          {
+            "label": "XI - Davao Region",
+            "noteRef": "",
+            "values": [
+              "95.5",
+              "94.2",
+              "91.3",
+              "78.3",
+              "69.7",
+              "61.9"
+            ]
+          },
+          {
+            "label": "XII - SOCCSKSARGEN",
+            "noteRef": "",
+            "values": [
+              "95.1",
+              "89.5",
+              "84.7",
+              "69.8",
+              "63.3",
+              "59.9"
+            ]
+          },
+          {
+            "label": "XIII - Caraga",
+            "noteRef": "",
+            "values": [
+              "92.4",
+              "83.1",
+              "77.5",
+              "83.7",
+              "79.1",
+              "64.1"
+            ]
+          },
+          {
+            "label": "Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)",
+            "noteRef": "",
+            "values": [
+              "52.6",
+              "30.9",
+              "21.2",
+              "27.9",
+              "24.4",
+              "20.8"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mother_s_educational_attainment",
+        "title": "Mother's educational attainment",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "pcv1",
+                "field": "pcv1",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2",
+                "field": "pcv2",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3",
+                "field": "pcv3",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "pcv1_2022",
+                "field": "pcv1_2022",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2_2022",
+                "field": "pcv2_2022",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3_2022",
+                "field": "pcv3_2022",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "No education",
+            "noteRef": "",
+            "values": [
+              "*",
+              "*",
+              "*",
+              "(51.7)",
+              "(35.3)",
+              "(35.3)"
+            ]
+          },
+          {
+            "label": "Grades 1-6",
+            "noteRef": "",
+            "values": [
+              "82.8",
+              "76.0",
+              "64.9",
+              "65.1",
+              "57.5",
+              "49.3"
+            ]
+          },
+          {
+            "label": "Grades 7-10",
+            "noteRef": "",
+            "values": [
+              "91.3",
+              "84.5",
+              "78.0",
+              "83.0",
+              "78.9",
+              "72.1"
+            ]
+          },
+          {
+            "label": "Grades 11-12",
+            "noteRef": "",
+            "values": [
+              "90.1",
+              "84.9",
+              "74.4",
+              "80.2",
+              "73.8",
+              "69.6"
+            ]
+          },
+          {
+            "label": "Post-secondary",
+            "noteRef": "",
+            "values": [
+              "(97.1)",
+              "(96.6)",
+              "(95.5)",
+              "(88.2)",
+              "(88.2)",
+              "(86.0)"
+            ]
+          },
+          {
+            "label": "College",
+            "noteRef": "",
+            "values": [
+              "92.6",
+              "87.7",
+              "81.5",
+              "87.0",
+              "85.4",
+              "78.9"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wealth_quintile",
+        "title": "Wealth quintile",
+        "subtitle": "",
+        "colGroups": [
+          {
+            "label": "2025",
+            "cols": [
+              {
+                "key": "pcv1",
+                "field": "pcv1",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2",
+                "field": "pcv2",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3",
+                "field": "pcv3",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          },
+          {
+            "label": "2022",
+            "cols": [
+              {
+                "key": "pcv1_2022",
+                "field": "pcv1_2022",
+                "label": "PCV 1",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv2_2022",
+                "field": "pcv2_2022",
+                "label": "PCV 2",
+                "noteRef": "",
+                "isCount": false
+              },
+              {
+                "key": "pcv3_2022",
+                "field": "pcv3_2022",
+                "label": "PCV 3",
+                "noteRef": "",
+                "isCount": false
+              }
+            ]
+          }
+        ],
+        "rows": [
+          {
+            "label": "Lowest",
+            "noteRef": "",
+            "values": [
+              "84.5",
+              "78.4",
+              "68.5",
+              "71.1",
+              "65.2",
+              "59.7"
+            ]
+          },
+          {
+            "label": "Second",
+            "noteRef": "",
+            "values": [
+              "89.4",
+              "82.7",
+              "77.7",
+              "82.8",
+              "79.9",
+              "71.5"
+            ]
+          },
+          {
+            "label": "Middle",
+            "noteRef": "",
+            "values": [
+              "93.1",
+              "88.2",
+              "80.7",
+              "84.6",
+              "80.4",
+              "74.7"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "noteRef": "",
+            "values": [
+              "95.0",
+              "87.5",
+              "80.3",
+              "85.9",
+              "84.2",
+              "75.2"
+            ]
+          },
+          {
+            "label": "Highest",
+            "noteRef": "",
+            "values": [
+              "96.8",
+              "93.8",
+              "87.0",
+              "92.8",
+              "90.5",
+              "85.3"
+            ]
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      "¹ Children are considered to have received HepB (birth dose) if it was recorded on their card or reported by their mother, regardless of timing.",
+      "² BCG, three doses of DPT-containing vaccine, three doses of Polio vaccine given as OPV or IPV, and one dose of measles or MMR",
+      "³ BCG, HepB (birth dose), three doses of DPT-containing vaccine, three doses of OPV, two doses of IPV, three doses of PCV, and one dose of MMR",
+      "⁴ BCG, HepB (birth dose), three doses of DPT-containing vaccine, three doses of OPV, two doses of IPV, three doses of PCV, and two doses of MMR",
+      "⁵ Region IX includes the province of Sulu in 2025.",
+      "\"0.0\" indicates that an estimate is less than 0.05 percent.",
+      "Children are considered to have received the vaccine if it was either written on the child's vaccination card or reported by the mother.",
+      "For children whose vaccination information is based on the mother's report, date of vaccination is not collected.",
+      "The proportions of vaccinations given during the first and second years of life are assumed to be the same as for children with a written record of vaccination.",
+      "Figures in parentheses are based on 25-49 unweighted cases.",
+      "An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.",
+      "BCG = Bacille Calmette-Guerin",
+      "DPT = Diphtheria-pertussis-tetanus",
+      "HepB = Hepatitis B",
+      "Hib = Haemophilus influenzae type b",
+      "OPV = Oral polio vaccine",
+      "PCV = Pneumococcal conjugate vaccine",
+      "IPV = Inactivated polio vaccine",
+      "MMR= Measles, mumps, rubella"
+    ],
+    "source": "Philippine Statistics Authority, 2022 and 2025 National Demographic and Health Survey"
+  },
+  "insights": {
+    "sections": [
+      {
+        "heading": "PCV coverage improved at every dose",
+        "body": "PCV 1 coverage rose from 81.8 percent in 2022 to 90.9 percent in 2025. PCV 2 rose from 78.0 to 85.1 percent, and PCV 3 rose from 71.5 to 77.7 percent. The whole PCV sequence improved, but completion still drops from dose 1 to dose 3."
+      },
+      {
+        "heading": "The national dose drop is sizable",
+        "body": "In 2025, PCV 1 coverage was 90.9 percent, while PCV 3 coverage was 77.7 percent. The 13.2-point gap shows that first-dose reach is much stronger than completion of the three-dose series. PCV 2 sits between them at 85.1 percent."
+      },
+      {
+        "heading": "BARMM has low first-dose reach and much lower completion",
+        "body": "BARMM had the lowest PCV 1 coverage at 52.6 percent and the lowest PCV 3 coverage at 21.2 percent. The gap between first and third dose is therefore very large. Zamboanga Peninsula also had low PCV coverage, with 71.8 percent PCV 1 and 62.3 percent PCV 3."
+      },
+      {
+        "heading": "High first-dose regions usually retain high third-dose coverage",
+        "body": "Ilocos Region and Negros Island Region both reached 100.0 percent PCV 1 coverage. Ilocos Region also had the highest PCV 3 coverage at 97.1 percent, while Western Visayas and Davao Region followed at 92.1 and 91.3 percent. The strongest regions are not just high on first contact; they also retain children through the later dose."
+      },
+      {
+        "heading": "Regional completion gaps reveal more than PCV 1 alone",
+        "body": "PCV 1 coverage is above 90 percent nationally, but PCV 3 exposes much wider differences. The regional range for PCV 3 runs from 97.1 percent in Ilocos Region to 21.2 percent in BARMM. That makes PCV 3 the more revealing indicator for where the series is breaking down."
+      }
+    ],
+    "takeaways": [
+      "PCV coverage improved from 2022 to 2025 at all three doses.",
+      "PCV 3 remains well below PCV 1 nationally, showing incomplete series completion.",
+      "BARMM has the lowest PCV coverage across both first-dose reach and third-dose completion."
+    ]
+  }
+}
