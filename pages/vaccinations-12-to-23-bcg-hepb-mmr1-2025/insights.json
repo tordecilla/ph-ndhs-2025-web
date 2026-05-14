@@ -1,54 +1,54 @@
 {
   "sections": [
     {
-      "heading": "National coverage rose across all three vaccines",
-      "body": "Among children aged 12 to 23 months, national coverage in 2025 was highest for BCG at 93.5, followed by MMR 1 at 89.6 and HepB birth dose at 88.7. All three measures increased from 2022: BCG rose from 87.8, HepB birth dose from 82.2, and MMR 1 from 79.2. MMR 1 had the largest gain, but HepB birth dose remained the lowest national value in 2025."
+      "heading": "National coverage improved for all three vaccines",
+      "body": "Among children aged 12 to 23 months, national coverage in 2025 was highest for BCG at 93.5, followed by MMR 1 at 89.6 and HepB birth dose at 88.7. Coverage rose for all three measures from 2022: BCG from 87.8, HepB birth dose from 82.2, and MMR 1 from 79.2. MMR 1 improved the most, while HepB birth dose was still the lowest national value in 2025."
     },
     {
-      "heading": "Sex differences were small in 2025",
-      "body": "Coverage was similar for male and female children. In 2025, female children were slightly higher than male children for BCG, 94.0 compared with 93.1, and for HepB birth dose, 89.9 compared with 87.8. MMR 1 was nearly even at 89.9 for female children and 89.3 for male children."
+      "heading": "Boys and girls had similar coverage in 2025",
+      "body": "Coverage was close for male and female children. In 2025, female children were slightly higher than male children for BCG, at 94.0 compared with 93.1, and for HepB birth dose, at 89.9 compared with 87.8. MMR 1 was almost the same, at 89.9 for female children and 89.3 for male children."
     },
     {
-      "heading": "Higher birth order was linked to lower coverage",
-      "body": "First-born children had 2025 coverage of 95.4 for BCG, 90.7 for HepB birth dose, and 92.5 for MMR 1. Children of birth order 4 to 5 were lower at 88.9, 81.0, and 79.6, respectively, while children of birth order 6 or higher were 89.6, 84.0, and 83.1. As an inference, the lower values at higher birth orders point to a need for follow-up that reaches larger families."
+      "heading": "Later-born children had lower coverage",
+      "body": "First-born children had 2025 coverage of 95.4 for BCG, 90.7 for HepB birth dose, and 92.5 for MMR 1. Children of birth order 4 to 5 were lower, at 88.9, 81.0, and 79.6, respectively. Children of birth order 6 or higher were at 89.6, 84.0, and 83.1. As an inference, the lower values for higher birth orders suggest that follow-up needs to reach larger families."
     },
     {
-      "heading": "Vaccination-card status showed the widest contrast",
-      "body": "Children whose vaccination card was seen had very high 2025 coverage: 99.2 for BCG, 92.8 for HepB birth dose, and 95.8 for MMR 1. Children who never had a card were much lower at 47.3, 42.6, and 42.3. The gap was especially large for MMR 1, where the difference between these two groups was 53.5 points."
+      "heading": "Having a vaccination card made the biggest difference",
+      "body": "Children whose vaccination card was seen had very high 2025 coverage: 99.2 for BCG, 92.8 for HepB birth dose, and 95.8 for MMR 1. Children who never had a card were much lower, at 47.3, 42.6, and 42.3. The gap was especially large for MMR 1, with a 53.5-point difference between these two groups."
     },
     {
-      "heading": "Urban coverage was moderately higher than rural coverage",
-      "body": "In 2025, urban children had coverage of 95.2 for BCG, 92.0 for HepB birth dose, and 90.9 for MMR 1. Rural children were lower at 91.8, 85.5, and 88.3. The largest urban-rural difference was for HepB birth dose, at 6.5 points."
+      "heading": "Urban children had somewhat higher coverage than rural children",
+      "body": "In 2025, urban children had coverage of 95.2 for BCG, 92.0 for HepB birth dose, and 90.9 for MMR 1. Rural children were lower, at 91.8, 85.5, and 88.3. The biggest urban-rural difference was for HepB birth dose, at 6.5 points."
     },
     {
-      "heading": "Maternal education differences were clearest at lower grades",
-      "body": "Children of mothers with Grades 1 to 6 education had 2025 coverage of 87.1 for BCG, 77.9 for HepB birth dose, and 74.1 for MMR 1. Children of mothers with college education were higher at 94.7, 92.6, and 92.2. Rows for mothers with no education were suppressed in 2025, so the clearest measured contrast is between Grades 1 to 6 and college."
+      "heading": "Coverage was lower when mothers had only Grades 1 to 6 education",
+      "body": "Children of mothers with Grades 1 to 6 education had 2025 coverage of 87.1 for BCG, 77.9 for HepB birth dose, and 74.1 for MMR 1. Children of mothers with college education were higher, at 94.7, 92.6, and 92.2. Rows for mothers with no education were suppressed in 2025, so the clearest measured comparison is between Grades 1 to 6 and college."
     },
     {
-      "heading": "Wealth gradients persisted across the vaccine sequence",
-      "body": "Coverage rose with wealth quintile in 2025. Children in the lowest quintile had coverage of 88.0 for BCG, 81.8 for HepB birth dose, and 81.2 for MMR 1, while children in the highest quintile had 97.7, 97.4, and 97.1. The lowest-quintile gap was most visible after BCG, with both HepB birth dose and MMR 1 near 81."
+      "heading": "Coverage was higher among children in wealthier households",
+      "body": "Coverage rose with wealth quintile in 2025. Children in the lowest quintile had coverage of 88.0 for BCG, 81.8 for HepB birth dose, and 81.2 for MMR 1. Children in the highest quintile had 97.7, 97.4, and 97.1. The gap for the lowest quintile was most visible after BCG, with both HepB birth dose and MMR 1 near 81."
     },
     {
-      "heading": "Several regions were near universal for all three vaccines",
-      "body": "Some regions combined high BCG coverage with high later-dose coverage in 2025. Ilocos Region recorded 99.5 for BCG, 98.6 for HepB birth dose, and 98.5 for MMR 1, while CALABARZON recorded 97.8, 96.4, and 97.1. Bicol Region also had high BCG and MMR 1 at 97.7 and 98.0, with HepB birth dose somewhat lower at 93.3."
+      "heading": "Several regions had very high coverage for all three vaccines",
+      "body": "Some regions had high BCG coverage and high coverage for later doses in 2025. Ilocos Region recorded 99.5 for BCG, 98.6 for HepB birth dose, and 98.5 for MMR 1. CALABARZON recorded 97.8, 96.4, and 97.1. Bicol Region also had high BCG and MMR 1 coverage, at 97.7 and 98.0, with HepB birth dose somewhat lower at 93.3."
     },
     {
-      "heading": "BARMM improved but remained far below other regions",
-      "body": "BARMM had the lowest 2025 values among regions for all three measures: 66.3 for BCG, 55.6 for HepB birth dose, and 47.8 for MMR 1. These were substantial improvements from 2022 values of 38.2, 31.8, and 21.9, but the 2025 levels still left a wide distance from the national pattern."
+      "heading": "BARMM improved, but still had the lowest regional coverage",
+      "body": "BARMM had the lowest 2025 values among regions for all three measures: 66.3 for BCG, 55.6 for HepB birth dose, and 47.8 for MMR 1. These were large improvements from 2022 values of 38.2, 31.8, and 21.9, but the 2025 levels were still far from the national pattern."
     },
     {
-      "heading": "Some regions moved in opposite directions from the national trend",
-      "body": "Cordillera Administrative Region declined across all three measures, from 97.0 to 79.3 for BCG, 93.5 to 73.9 for HepB birth dose, and 92.5 to 75.3 for MMR 1. Northern Mindanao also declined, from 90.2 to 86.1 for BCG, 85.9 to 78.7 for HepB birth dose, and 83.0 to 79.7 for MMR 1. These regional shifts contrast with the national increases over the same period."
+      "heading": "Some regions declined even as national coverage rose",
+      "body": "Cordillera Administrative Region declined across all three measures, from 97.0 to 79.3 for BCG, 93.5 to 73.9 for HepB birth dose, and 92.5 to 75.3 for MMR 1. Northern Mindanao also declined, from 90.2 to 86.1 for BCG, 85.9 to 78.7 for HepB birth dose, and 83.0 to 79.7 for MMR 1. These regional changes went in the opposite direction from the national increases over the same period."
     },
     {
-      "heading": "HepB birth dose was often the regional weak point",
+      "heading": "HepB birth dose often lagged behind the other vaccines",
       "body": "In 2025, HepB birth dose was lower than BCG in most regions and was sometimes the lowest of the three measures. Central Luzon recorded 96.3 for BCG and 95.5 for MMR 1, but 87.8 for HepB birth dose. SOCCSKSARGEN showed a similar pattern, with 93.9 for BCG, 93.6 for MMR 1, and 81.3 for HepB birth dose."
     }
   ],
   "takeaways": [
-    "Coverage improved nationally from 2022 to 2025, with MMR 1 posting the largest national gain.",
-    "HepB birth dose remained a common point of weakness, especially in several regional and lower-resource groups.",
-    "The largest disparities appeared by vaccination-card status, birth order, wealth, and region."
+    "National coverage improved from 2022 to 2025, and MMR 1 had the largest national gain.",
+    "HepB birth dose remained a common weak spot, especially in several regional and lower-resource groups.",
+    "The largest gaps appeared by vaccination-card status, birth order, wealth, and region."
   ],
   "footnotes": []
 }

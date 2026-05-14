@@ -1,54 +1,54 @@
 {
   "sections": [
     {
-      "heading": "PCV coverage improved nationally, but the third dose still trails the first",
-      "body": "Among children aged 12 to 23 months, national PCV 1 coverage rose from 81.8 percent in 2022 to 90.9 percent in 2025. PCV 2 increased from 78.0 to 85.1 percent, and PCV 3 increased from 71.5 to 77.7 percent. The sequence still shows a 13.2-point drop from PCV 1 to PCV 3 in 2025, so the main national gap is not first-dose reach alone but continuation through the third dose."
+      "heading": "National PCV coverage rose, but many children still missed the third dose",
+      "body": "Among children aged 12 to 23 months, national PCV 1 coverage increased from 81.8 percent in 2022 to 90.9 percent in 2025. PCV 2 also rose, from 78.0 to 85.1 percent, and PCV 3 rose from 71.5 to 77.7 percent. Even with these gains, PCV 3 was still 13.2 points lower than PCV 1 in 2025, showing that the bigger national issue is not only reaching children for the first dose but helping them complete the third dose."
     },
     {
-      "heading": "Top regional coverage stayed high through the third PCV dose",
-      "body": "Ilocos Region had the highest 2025 PCV 3 coverage at 97.1 percent, after PCV 1 coverage of 100.0 percent and PCV 2 coverage of 99.6 percent. Western Visayas and Davao Region also remained above 90 percent on PCV 3, at 92.1 and 91.3 percent. These regions show that high first-dose reach can be paired with relatively strong completion of the PCV sequence."
+      "heading": "Some regions kept PCV coverage high through the third dose",
+      "body": "Ilocos Region had the highest PCV 3 coverage in 2025, at 97.1 percent, after reaching 100.0 percent for PCV 1 and 99.6 percent for PCV 2. Western Visayas and Davao Region also stayed above 90 percent for PCV 3, at 92.1 and 91.3 percent. These regions show that strong first-dose reach can go together with strong completion of the PCV sequence."
     },
     {
-      "heading": "BARMM remained the lowest regional outlier across the full PCV sequence",
-      "body": "BARMM had the lowest 2025 coverage for all three PCV doses: 52.6 percent for PCV 1, 30.9 percent for PCV 2, and 21.2 percent for PCV 3. Its first-to-third-dose drop was 31.4 points, the largest among regions. The data show both weak initial reach and substantial loss across the sequence."
+      "heading": "BARMM had the lowest PCV coverage at every dose",
+      "body": "BARMM had the lowest 2025 coverage for all three PCV doses: 52.6 percent for PCV 1, 30.9 percent for PCV 2, and 21.2 percent for PCV 3. Coverage fell by 31.4 points from the first dose to the third dose, the largest drop among regions. This points to both low first-dose reach and a large loss of children before the sequence is completed."
     },
     {
-      "heading": "Some regions with high first-dose coverage had large completion drop-offs",
-      "body": "Central Visayas reached 91.8 percent for PCV 1 in 2025 but fell to 68.2 percent for PCV 3, a 23.6-point drop. The Negros Island Region reached 100.0 percent for PCV 1 and 95.0 percent for PCV 2, but PCV 3 was 79.8 percent, a 20.2-point drop from the first dose. The inference is that missed later doses, not just first contact, shape regional PCV gaps."
+      "heading": "High first-dose coverage did not always mean children finished the PCV series",
+      "body": "Central Visayas reached 91.8 percent for PCV 1 in 2025, but PCV 3 coverage was lower at 68.2 percent, a 23.6-point drop. The Negros Island Region reached 100.0 percent for PCV 1 and 95.0 percent for PCV 2, but PCV 3 coverage was 79.8 percent, a 20.2-point drop from the first dose. This suggests that missed later doses, not only missed first contact, help explain regional PCV gaps."
     },
     {
-      "heading": "Several regions improved sharply from 2022 to 2025",
-      "body": "Davao Region's PCV 3 coverage rose from 61.9 percent in 2022 to 91.3 percent in 2025, and SOCCSKSARGEN rose from 59.9 to 84.7 percent. MIMAROPA Region also increased from 60.2 to 78.2 percent. These gains show that regional ordering changed in places where later-dose coverage improved faster than the national average."
+      "heading": "Several regions made large gains in PCV 3 coverage",
+      "body": "Davao Region's PCV 3 coverage rose from 61.9 percent in 2022 to 91.3 percent in 2025, while SOCCSKSARGEN rose from 59.9 to 84.7 percent. MIMAROPA Region also increased, from 60.2 to 78.2 percent. These gains show that the regional rankings changed in places where later-dose coverage improved faster than the national average."
     },
     {
-      "heading": "Girls had slightly higher third-dose PCV coverage than boys",
-      "body": "PCV 1 coverage was nearly the same for male and female children in 2025, at 91.0 and 90.6 percent. The gap widened by PCV 3: female children reached 80.1 percent, while male children reached 75.7 percent. The sex difference is modest compared with regional and card-status gaps, but it appears more clearly at the end of the sequence."
+      "heading": "Girls were slightly more likely than boys to get the third PCV dose",
+      "body": "PCV 1 coverage was almost the same for male and female children in 2025, at 91.0 and 90.6 percent. By PCV 3, the gap was wider: female children reached 80.1 percent, while male children reached 75.7 percent. This sex difference is modest compared with gaps by region and vaccination card status, but it is clearer by the end of the PCV sequence."
     },
     {
-      "heading": "Higher birth order was linked to lower PCV completion",
-      "body": "First-born children had 93.8 percent PCV 1 coverage and 83.0 percent PCV 3 coverage in 2025. Children of birth order 6 or higher had lower coverage at every dose, with 85.8 percent for PCV 1 and 64.8 percent for PCV 3. Their first-to-third-dose drop was 21.0 points, nearly double the 10.8-point drop among first-born children."
+      "heading": "Children born later in the family were less likely to complete PCV doses",
+      "body": "First-born children had 93.8 percent PCV 1 coverage and 83.0 percent PCV 3 coverage in 2025. Children of birth order 6 or higher had lower coverage at every dose, with 85.8 percent for PCV 1 and 64.8 percent for PCV 3. Their drop from the first dose to the third dose was 21.0 points, nearly double the 10.8-point drop among first-born children."
     },
     {
-      "heading": "Vaccination card status showed the widest non-regional divide",
-      "body": "Children whose vaccination card was seen had 97.6 percent PCV 1 coverage and 91.7 percent PCV 3 coverage in 2025. Among children who never had a card, the corresponding levels were 40.0 and 25.0 percent. Children whose card was not seen or who no longer had a card were between those groups for PCV 1 at 83.3 percent, but fell to 50.3 percent by PCV 3. This does not prove the card causes vaccination, but documented contact is strongly aligned with completing the PCV sequence."
+      "heading": "Children with a seen vaccination card had much higher PCV completion",
+      "body": "Children whose vaccination card was seen had 97.6 percent PCV 1 coverage and 91.7 percent PCV 3 coverage in 2025. Among children who never had a card, the levels were much lower, at 40.0 and 25.0 percent. Children whose card was not seen or who no longer had a card were in between for PCV 1 at 83.3 percent, but dropped to 50.3 percent by PCV 3. This does not prove that the card causes vaccination, but it shows that documented contact is strongly linked with completing the PCV sequence."
     },
     {
-      "heading": "Urban and rural PCV coverage was very similar in 2025",
-      "body": "Urban children had 91.6 percent PCV 1 coverage, 85.4 percent PCV 2 coverage, and 77.9 percent PCV 3 coverage in 2025. Rural children were close behind at 90.2, 84.8, and 77.5 percent. The residence gap was therefore small compared with the differences by region, birth order, card status, education, and wealth."
+      "heading": "Urban and rural children had almost the same PCV coverage",
+      "body": "Urban children had 91.6 percent PCV 1 coverage, 85.4 percent PCV 2 coverage, and 77.9 percent PCV 3 coverage in 2025. Rural children were close behind at 90.2, 84.8, and 77.5 percent. The urban-rural gap was therefore small compared with differences by region, birth order, card status, education, and wealth."
     },
     {
-      "heading": "Mother's education showed a clear gradient in PCV completion",
-      "body": "Among children whose mothers had Grades 1 to 6 education, 2025 PCV 3 coverage was 64.9 percent, after PCV 1 coverage of 82.8 percent. Among children whose mothers had college education, PCV 3 coverage was 81.5 percent, after PCV 1 coverage of 92.6 percent. Post-secondary values were higher, at 95.5 percent for PCV 3, but the display data flagged them, while the no-education group was suppressed in 2025. Within the usable rows, higher maternal schooling is associated with stronger completion."
+      "heading": "PCV completion was higher for children whose mothers had more schooling",
+      "body": "Among children whose mothers had Grades 1 to 6 education, PCV 3 coverage in 2025 was 64.9 percent, after PCV 1 coverage of 82.8 percent. Among children whose mothers had college education, PCV 3 coverage was higher at 81.5 percent, after PCV 1 coverage of 92.6 percent. Post-secondary values were higher still, at 95.5 percent for PCV 3, but the display data flagged them, while the no-education group was suppressed in 2025. Among the usable rows, higher maternal schooling is associated with stronger PCV completion."
     },
     {
-      "heading": "Wealth differences persisted across all three PCV doses",
-      "body": "Children in the lowest wealth quintile had 84.5 percent PCV 1 coverage and 68.5 percent PCV 3 coverage in 2025. Children in the highest quintile had 96.8 percent PCV 1 coverage and 87.0 percent PCV 3 coverage. The gap was 12.3 points for the first dose and 18.5 points for the third dose, indicating that wealth differences are larger at completion than at initial PCV reach."
+      "heading": "Wealth gaps were larger by the third PCV dose",
+      "body": "Children in the lowest wealth quintile had 84.5 percent PCV 1 coverage and 68.5 percent PCV 3 coverage in 2025. Children in the highest quintile had higher coverage, at 96.8 percent for PCV 1 and 87.0 percent for PCV 3. The gap was 12.3 points for the first dose and 18.5 points for the third dose, meaning the wealth gap was larger for completion than for initial PCV reach."
     }
   ],
   "takeaways": [
-    "National PCV coverage improved from 2022 to 2025, but PCV 3 coverage still lagged PCV 1 by 13.2 percentage points.",
-    "Regional variation was large, with PCV 3 coverage ranging from 97.1 percent in Ilocos Region to 21.2 percent in BARMM.",
-    "Children with a seen vaccination card, lower birth order, higher maternal education, and higher wealth were more likely to complete the PCV sequence."
+    "National PCV coverage improved from 2022 to 2025, but PCV 3 coverage was still 13.2 percentage points lower than PCV 1 coverage.",
+    "PCV 3 coverage varied widely by region, from 97.1 percent in Ilocos Region to 21.2 percent in BARMM.",
+    "Children were more likely to complete the PCV sequence when their vaccination card was seen, they had lower birth order, their mothers had higher education, and their households had higher wealth."
   ],
   "footnotes": []
 }

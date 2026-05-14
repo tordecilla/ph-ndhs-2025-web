@@ -1,47 +1,47 @@
 {
   "sections": [
     {
-      "heading": "Regional under-5 mortality ranged widely in 2025",
-      "body": "Under-5 mortality varied from 7 deaths per 1,000 live births in II - Cagayan Valley to 41 in MIMAROPA Region. The upper end was not confined to one island group: MIMAROPA Region recorded 41, while V - Bicol Region and XI - Davao Region each recorded 30. At the lower end, Bangsamoro Autonomous Region in Muslim Mindanao (BARMM) recorded 8, while Cordillera Administrative Region (CAR), VII - Central Visayas, and X - Northern Mindanao each recorded 12. This spread suggests that the national pattern is made up of sharply different regional mortality profiles."
+      "heading": "Under-5 mortality differed widely by region in 2025",
+      "body": "In 2025, under-5 mortality ranged from 7 deaths per 1,000 live births in II - Cagayan Valley to 41 in MIMAROPA Region. The highest rates were not limited to one island group: MIMAROPA Region recorded 41, while V - Bicol Region and XI - Davao Region each recorded 30. At the lower end, Bangsamoro Autonomous Region in Muslim Mindanao (BARMM) recorded 8, while Cordillera Administrative Region (CAR), VII - Central Visayas, and X - Northern Mindanao each recorded 12. This wide gap shows that the national picture combines very different regional mortality patterns."
     },
     {
-      "heading": "The highest regional rates had different age components",
-      "body": "The regions with higher under-5 mortality did not reach those levels in the same way. MIMAROPA Region's 41 under-5 deaths per 1,000 live births was driven mainly by infant mortality at 33, including neonatal mortality of 24. XI - Davao Region also recorded under-5 mortality of 30, but its neonatal mortality was 7 while post-neonatal mortality was 16 and child mortality was 8. V - Bicol Region, also at 30 under-5 deaths, showed a more mixed profile, with infant mortality of 23, post-neonatal mortality of 13, and child mortality of 7. The direct observation is that similar under-5 rates can reflect different timing of child deaths."
+      "heading": "High under-5 mortality came from different age periods",
+      "body": "Regions with higher under-5 mortality did not get there in the same way. In MIMAROPA Region, the rate of 41 under-5 deaths per 1,000 live births was mainly tied to infant mortality at 33, including neonatal mortality of 24. XI - Davao Region also had under-5 mortality of 30, but its neonatal mortality was 7, while post-neonatal mortality was 16 and child mortality was 8. V - Bicol Region, also at 30 under-5 deaths, had a more mixed pattern, with infant mortality of 23, post-neonatal mortality of 13, and child mortality of 7. In short, similar under-5 rates can come from child deaths happening at different ages."
     },
     {
-      "heading": "Several regions improved sharply from 2022",
-      "body": "The largest declines were substantial. I - Ilocos Region fell from 39 under-5 deaths per 1,000 live births in 2022 to 15 in 2025, while BARMM fell from 28 to 8. VII - Central Visayas moved from 26 to 12, and XII - SOCCSKSARGEN moved from 29 to 22. These changes show that the 2025 regional distribution includes both persistently high areas and regions where the ten-year mortality profile shifted downward."
+      "heading": "Some regions saw large drops from 2022 to 2025",
+      "body": "Some regions recorded large declines. I - Ilocos Region fell from 39 under-5 deaths per 1,000 live births in 2022 to 15 in 2025, while BARMM fell from 28 to 8. VII - Central Visayas moved from 26 to 12, and XII - SOCCSKSARGEN moved from 29 to 22. These changes show that the 2025 regional pattern includes both areas that remained high and regions where the ten-year mortality profile moved downward."
     },
     {
-      "heading": "Other regions moved upward despite national declines on shorter-period measures",
-      "body": "Some regions recorded higher under-5 mortality in 2025 than in 2022. MIMAROPA Region rose from 27 to 41 deaths per 1,000 live births, XI - Davao Region rose from 13 to 30, National Capital Region (NCR) rose from 10 to 19, and XIII - Caraga rose from 14 to 22. The direct data do not explain why those increases occurred, but they show that improvements were not uniform across regions."
+      "heading": "Some regions had higher rates in 2025 than in 2022",
+      "body": "Not every region moved downward. Some regions had higher under-5 mortality in 2025 than in 2022. MIMAROPA Region rose from 27 to 41 deaths per 1,000 live births, XI - Davao Region rose from 13 to 30, National Capital Region (NCR) rose from 10 to 19, and XIII - Caraga rose from 14 to 22. The data do not explain why these increases happened, but they do show that improvements were not the same across all regions."
     },
     {
-      "heading": "High birth order was the clearest household-sequence risk pattern",
-      "body": "Birth order showed one of the steepest gradients in the 2025 data. Under-5 mortality was 15 deaths per 1,000 live births for birth orders 2-3 and 22 for birth orders 4-6, but it reached 57 for birth order 7 or higher. The high-order group also had infant mortality of 46, with neonatal and post-neonatal mortality both at 23. By comparison, first births had under-5 mortality of 25 and infant mortality of 20. The pattern points to much higher mortality among children born at very high birth orders."
+      "heading": "Children born seventh or later had much higher mortality",
+      "body": "Birth order showed one of the strongest differences in the 2025 data. Under-5 mortality was 15 deaths per 1,000 live births for birth orders 2-3 and 22 for birth orders 4-6, but it reached 57 for birth order 7 or higher. This high-order group also had infant mortality of 46, with neonatal and post-neonatal mortality both at 23. By comparison, first births had under-5 mortality of 25 and infant mortality of 20. The pattern points to much higher mortality among children born at very high birth orders."
     },
     {
-      "heading": "Mortality was higher at the youngest and oldest maternal ages",
-      "body": "Children born to mothers aged 30-39 had the lowest under-5 mortality in 2025, at 18 deaths per 1,000 live births, followed closely by ages 20-29 at 20. The rate was higher for mothers under age 20, at 26, and highest for mothers aged 40-49, at a flagged 37. The older-age group also had infant mortality of 32 and post-neonatal mortality of 15. The data therefore show a U-shaped age pattern, though the flagged older-age value should be read with caution."
+      "heading": "Mortality was higher for the youngest and oldest mothers",
+      "body": "In 2025, children born to mothers aged 30-39 had the lowest under-5 mortality, at 18 deaths per 1,000 live births. Mothers aged 20-29 were close behind at 20. The rate was higher for mothers under age 20, at 26, and highest for mothers aged 40-49, at a flagged 37. The older-age group also had infant mortality of 32 and post-neonatal mortality of 15. Overall, the data show a U-shaped age pattern, but the flagged value for mothers aged 40-49 should be read with caution."
     },
     {
-      "heading": "Education differences were present but affected by flagged categories",
-      "body": "Mother's educational attainment showed lower under-5 mortality among college-educated mothers, at 16 deaths per 1,000 live births, than among mothers with grades 7-10 at 23 or grades 1-6 at 24. The no-education category had a flagged under-5 rate of 30, while postsecondary had a flagged rate of 9. Because several education categories carry flagged values, the strongest comparison is between the larger unflagged groups: college was lower than grades 1-6 and grades 7-10 in 2025."
+      "heading": "Education differences were visible, but some values were flagged",
+      "body": "Mother's education was linked with differences in under-5 mortality. In 2025, the rate was lower among college-educated mothers, at 16 deaths per 1,000 live births, than among mothers with grades 7-10 at 23 or grades 1-6 at 24. The no-education category had a flagged under-5 rate of 30, while postsecondary had a flagged rate of 9. Because several education categories have flagged values, the clearest comparison is among the larger unflagged groups: college was lower than grades 1-6 and grades 7-10 in 2025."
     },
     {
-      "heading": "Longer birth intervals were associated with lower under-5 mortality",
-      "body": "Previous birth interval showed a modest but consistent advantage for the longest interval. Under-5 mortality was 16 deaths per 1,000 live births for intervals of 4 or more years, compared with 20 for 2 years, 21 for less than 2 years, and 22 for 3 years. Infant mortality was also lowest for the 4-or-more-years group, at 13. This supports a cautious inference that longer spacing is associated with lower childhood mortality in the observed data, without treating spacing alone as a causal explanation."
+      "heading": "Longer gaps between births were linked with lower mortality",
+      "body": "The longest previous birth interval had a modest but consistent advantage. Under-5 mortality was 16 deaths per 1,000 live births for intervals of 4 or more years, compared with 20 for 2 years, 21 for less than 2 years, and 22 for 3 years. Infant mortality was also lowest for the 4-or-more-years group, at 13. This supports a cautious reading that longer spacing is associated with lower childhood mortality in the observed data, without saying that spacing alone caused the difference."
     },
     {
-      "heading": "The wealth gradient remained visible but was not perfectly linear",
-      "body": "Under-5 mortality was highest in the lowest wealth quintile, at 25 deaths per 1,000 live births, and lowest in the highest quintile, at 13. The middle quintile was close to the highest at 14, while the second and fourth quintiles were higher at 24 and 22. The broad contrast between the lowest and highest quintiles is clear, but the middle categories show that the 2025 pattern was uneven rather than a smooth step-by-step decline with wealth."
+      "heading": "Wealth differences were clear, but not step by step",
+      "body": "Under-5 mortality was highest in the lowest wealth quintile, at 25 deaths per 1,000 live births, and lowest in the highest quintile, at 13. The middle quintile was close to the highest at 14, while the second and fourth quintiles were higher at 24 and 22. The broad gap between the lowest and highest quintiles is clear, but the middle groups show that the 2025 pattern was uneven rather than a smooth step-by-step decline as wealth rose."
     }
   ],
   "takeaways": [
-    "Under-5 mortality in 2025 varied widely by region, from 7 deaths per 1,000 live births in II - Cagayan Valley to 41 in MIMAROPA Region.",
-    "Similar under-5 mortality levels can reflect different age components, with some regions driven more by neonatal mortality and others by post-neonatal or child mortality.",
-    "Very high birth order stood out: birth order 7 or higher had under-5 mortality of 57 deaths per 1,000 live births.",
-    "Socioeconomic differences remained visible, with under-5 mortality at 25 in the lowest wealth quintile and 13 in the highest."
+    "In 2025, under-5 mortality varied widely by region, from 7 deaths per 1,000 live births in II - Cagayan Valley to 41 in MIMAROPA Region.",
+    "Similar under-5 mortality levels can come from different age periods, with some regions driven more by neonatal mortality and others by post-neonatal or child mortality.",
+    "Very high birth order stood out: children born seventh or later had under-5 mortality of 57 deaths per 1,000 live births.",
+    "Wealth differences remained visible, with under-5 mortality at 25 in the lowest wealth quintile and 13 in the highest."
   ],
   "footnotes": []
 }
